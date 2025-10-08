@@ -1,0 +1,18 @@
+{
+	"extends": "@tsconfig/svelte/tsconfig.json",
+	"compilerOptions": {
+		"target": "ES2022",
+		"isolatedModules": true,
+		"useDefineForClassFields": true,
+		"module": "ESNext",
+		"types": ["svelte", "vite/client"],
+		"noEmit": true,
+		"checkJs": true,
+		"moduleDetection": "force",
+		"baseUrl": "./",
+		"paths": {
+			"@/*": ["src/*"]
+		}
+	},
+	"include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte"]
+}

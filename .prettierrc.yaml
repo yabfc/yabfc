@@ -1,0 +1,6 @@
+singleQuote: true
+arrowParens: avoid
+printWidth: 100
+useTabs: true
+plugins:
+  - prettier-plugin-svelte
