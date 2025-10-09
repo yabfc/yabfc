@@ -1,0 +1,14 @@
+name: yafc
+
+services:
+  app:
+    image: ghcr.io/yafc/yafc:latest
+    container_name: yafc
+    build:
+      context: .
+      dockerfile: Dockerfile
+      tags:
+        - ghcr.io/yafc/yafc:latest
+    restart: unless-stopped
+    ports:
+      - 80:80
