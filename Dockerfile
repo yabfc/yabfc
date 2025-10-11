@@ -1,7 +1,7 @@
 ###########
 ## BUILD ##
 ###########
-FROM node:22-slim AS build
+FROM docker.io/node:22-slim AS build
 
 RUN corepack prepare pnpm@10 --activate
 RUN corepack enable
@@ -20,6 +20,6 @@ RUN pnpm build
 #########
 ## RUN ##
 #########
-FROM nginx:alpine-slim
+FROM docker.io/nginxinc/nginx-unprivileged:alpine-slim
 
 COPY --from=build /app/dist /usr/share/nginx/html
