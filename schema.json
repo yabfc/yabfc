@@ -1,7 +1,7 @@
 {
   "$schema": "todo",
   "$id": "todo",
-  "title": "YAFC Satisfactory Schema",
+  "title": "YABFC Satisfactory Schema",
   "type": "object",
   "properties": {
     "type": {

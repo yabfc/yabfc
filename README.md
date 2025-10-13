@@ -1,10 +1,10 @@
-# Yet Another Factory Calculator
+# Yet Another Beautiful Factory Calculator
 
 ## Run the Application with Docker
 
 1. Get yourself a copy of the `compose.yaml`
    ```bash
-   curl -O https://raw.githubusercontent.com/yafc/yafc/main/compose.yaml
+   curl -O https://raw.githubusercontent.com/yabfc/yabfc/main/compose.yaml
    ```
 2. Start the service
    ```bash
