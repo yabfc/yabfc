@@ -1,6 +1,7 @@
 <script lang="ts">
+	import Navbar from '@/lib/components/Navbar.svelte';
 </script>
 
 <main>
-	<h1>yabfc</h1>
+	<Navbar />
 </main>
