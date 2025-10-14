@@ -3,7 +3,7 @@
 	import { FactoryIcon, ForkliftIcon, SettingsIcon } from '@lucide/svelte';
 </script>
 
-<div class="py-2">
+<div class="py-2 fixed w-full">
 	<nav
 		class="navbar bg-base-200 mx-auto w-11/12 border-base-300 border-2 max-w-4xl px-8 rounded-full shadow-2xl"
 	>
