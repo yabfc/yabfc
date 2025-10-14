@@ -4,3 +4,4 @@ printWidth: 100
 useTabs: true
 plugins:
   - prettier-plugin-svelte
+  - prettier-plugin-tailwindcss
