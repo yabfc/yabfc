@@ -38,7 +38,7 @@
 		</div>
 
 		<a href="#/" class="font-bold h-10 flex items-center text-nowrap text-lg">
-			Yet Another Beautiful Factory Calculator
+			<h1>Yet Another Beautiful Factory Calculator</h1>
 		</a>
 
 		<div class="navbar-end inline-flex">
