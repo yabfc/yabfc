@@ -3,9 +3,9 @@
 	import { FactoryIcon, ForkliftIcon, SettingsIcon } from '@lucide/svelte';
 </script>
 
-<div class="py-2 fixed w-full">
+<div class="fixed w-full py-2">
 	<nav
-		class="navbar bg-base-200 mx-auto w-11/12 border-base-300 border-2 max-w-4xl px-8 rounded-full shadow-2xl"
+		class="navbar bg-base-200 border-base-300 mx-auto w-11/12 max-w-4xl rounded-full border-2 px-8 shadow-2xl"
 	>
 		<div class="navbar-start">
 			<div class="dropdown">
@@ -37,7 +37,7 @@
 			</div>
 		</div>
 
-		<a href="#/" class="font-bold h-10 flex items-center text-nowrap text-lg">
+		<a href="#/" class="flex h-10 items-center text-lg font-bold text-nowrap">
 			<h1>Yet Another Beautiful Factory Calculator</h1>
 		</a>
 
