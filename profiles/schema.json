@@ -2,6 +2,23 @@
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://raw.githubusercontent.com/yabfc/yabfc/refs/heads/main/profiles/schema.json",
 	"$defs": {
+		"recipe-io": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"amount": {
+						"type": "number"
+					},
+					"type": { "type": "string", "enum": ["item", "fluid"] }
+				},
+				"required": ["name", "amount"]
+			},
+			"minItems": 1
+		},
 		"logistic-transport": {
 			"type": "object",
 			"properties": {
@@ -9,11 +26,14 @@
 					"type": "string"
 				},
 				"throughput": {
-					"type": "integer",
-					"description": "per minute"
+					"type": "number"
+				},
+				"duration": {
+					"type": "number",
+					"description": "(in seconds)"
 				}
 			},
-			"required": ["name", "throughput"]
+			"required": ["name", "throughput", "duration"]
 		},
 		"logistics": {
 			"type": "object",
@@ -49,21 +69,35 @@
 						"type": "string"
 					}
 				},
-				"overclocking_unlocked": {
+				"overclocking": {
 					"type": "boolean"
 				},
-				"summerslooping_unlocked": {
+				"summerslooping": {
 					"type": "boolean"
-				},
-				"required": [
-					"unlocked_milestones",
-					"unlocked_alternate_recipes",
-					"overclocking_unlocked",
-					"summerslooping_unlocked"
-				]
-			}
+				}
+			},
+			"required": [
+				"unlocked_milestones",
+				"unlocked_alternate_recipes",
+				"overclocking",
+				"summerslooping"
+			]
 		},
-		"factorio-limitations": {}
+		"factorio-limitations": {
+			"type": "object",
+			"properties": {
+				"unlocked_research": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"spaceage": {
+					"type": "boolean"
+				}
+			},
+			"required": ["unlocked_research", "spaceage"]
+		}
 	},
 	"title": "YABFC Satisfactory Schema",
 	"type": "object",
@@ -86,37 +120,13 @@
 				"type": "object",
 				"properties": {
 					"in": {
-						"type": "array",
-						"items": {
-							"type": "object",
-							"properties": {
-								"name": {
-									"type": "string"
-								},
-								"amount": {
-									"type": "integer"
-								}
-							}
-						},
-						"minItems": 1
+						"$ref": "#/$defs/recipe-io"
 					},
 					"out": {
-						"type": "array",
-						"items": {
-							"type": "object",
-							"properties": {
-								"name": {
-									"type": "string"
-								},
-								"amount": {
-									"type": "integer"
-								}
-							}
-						},
-						"minItems": 1
+						"$ref": "#/$defs/recipe-io"
 					},
 					"duration": {
-						"type": "integer"
+						"type": "number"
 					},
 					"produced_in": {
 						"type": "array",
@@ -141,6 +151,13 @@
 		"properties": {
 			"limitations": {
 				"$ref": "#/$defs/satisfactory-limitations"
+			}
+		}
+	},
+	"else": {
+		"properties": {
+			"limitations": {
+				"$ref": "#/$defs/factorio-limitations"
 			}
 		}
 	}
