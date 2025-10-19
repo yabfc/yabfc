@@ -1,10 +1,16 @@
 <script lang="ts">
 	import { onMount, type Component } from 'svelte';
 
-	let { routes }: { routes: { route: string; entry: Component }[] } = $props();
+	interface Props {
+		routes: { route: string; entry: Component<{ pathParams: string[] }> | Component }[];
+	}
+	let { routes }: Props = $props();
 
-	let path = $state(''),
-		active = $derived(routes.find(x => path.match(`^${x.route}/?$`)) ?? routes[0]);
+	let path = $state('');
+	const matchRoute = (x: string) => path.match(`^${x}/?$`);
+
+	let active = $derived(routes.find(x => matchRoute(x.route)) ?? routes[0]),
+		pathParams = $derived(matchRoute(active.route)?.slice(1) ?? []);
 
 	onMount(updateHash);
 
@@ -15,4 +21,4 @@
 
 <svelte:window on:hashchange={updateHash} />
 
-<active.entry />
+<active.entry {pathParams} />

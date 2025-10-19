@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { ConstructionIcon } from '@lucide/svelte';
+
+	let { pathParams }: { pathParams: string[] } = $props();
 </script>
 
 <div class="flex min-h-screen flex-col items-center justify-center gap-4 p-8 pt-28">
