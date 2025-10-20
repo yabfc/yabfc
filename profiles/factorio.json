@@ -10426,5 +10426,180 @@
 			"category": "crafting-with-fluid"
 		}
 	],
-	"machines": []
+	"machines": [
+		{
+			"id": "assembling-machine-1",
+			"recipeCategories": [
+				"crafting",
+				"basic-crafting",
+				"advanced-crafting",
+				"electronics",
+				"pressing"
+			],
+			"requiredPower": 75000,
+			"features": [
+				{
+					"id": "crafting-speed",
+					"itemSlots": 0,
+					"effectPerSlot": [{ "id": "speed", "modifiable": false, "value": 0.5 }]
+				},
+				{
+					"id": "speed-module-1",
+					"itemSlots": 3,
+					"effectPerSlot": [
+						{ "id": "speed", "modifiable": false, "value": 1.2, "powerEffect": 1.5 },
+						{ "id": "quality", "modifiable": false, "value": 0.99 }
+					]
+				},
+				{
+					"id": "speed-module-2",
+					"itemSlots": 3,
+					"effectPerSlot": [
+						{ "id": "speed", "modifiable": false, "value": 1.3, "powerEffect": 1.6 },
+						{ "id": "quality", "modifiable": false, "value": 0.85 }
+					]
+				},
+				{
+					"id": "speed-module-3",
+					"itemSlots": 3,
+					"effectPerSlot": [
+						{ "id": "speed", "modifiable": false, "value": 1.5, "powerEffect": 1.7 },
+						{ "id": "quality", "modifiable": false, "value": 0.75 }
+					]
+				},
+				{
+					"id": "efficiency-module-1",
+					"itemSlots": 3,
+					"effectPerSlot": [{ "id": "speed", "modifiable": false, "value": 1, "powerEffect": 0.7 }]
+				},
+				{
+					"id": "efficiency-module-2",
+					"itemSlots": 3,
+					"effectPerSlot": [{ "id": "speed", "modifiable": false, "value": 1, "powerEffect": 0.6 }]
+				},
+				{
+					"id": "efficiency-module-3",
+					"itemSlots": 3,
+					"effectPerSlot": [{ "id": "speed", "modifiable": false, "value": 1, "powerEffect": 0.5 }]
+				},
+				{
+					"id": "productivity-module-1",
+					"itemSlots": 3,
+					"effectPerSlot": [
+						{
+							"id": "speed",
+							"modifiable": false,
+							"value": 1.04,
+							"powerEffect": 1.4,
+							"onlyOutputScales": true
+						},
+						{
+							"id": "speed",
+							"modifiable": false,
+							"value": 0.95
+						},
+						{
+							"id": "pollution",
+							"modifiable": false,
+							"value": 1.05
+						}
+					]
+				},
+				{
+					"id": "productivity-module-2",
+					"itemSlots": 3,
+					"effectPerSlot": [
+						{
+							"id": "speed",
+							"modifiable": false,
+							"value": 1.06,
+							"powerEffect": 1.6,
+							"onlyOutputScales": true
+						},
+						{
+							"id": "speed",
+							"modifiable": false,
+							"value": 0.9
+						},
+						{
+							"id": "pollution",
+							"modifiable": false,
+							"value": 1.07
+						}
+					]
+				},
+				{
+					"id": "productivity-module-2",
+					"itemSlots": 3,
+					"effectPerSlot": [
+						{
+							"id": "speed",
+							"modifiable": false,
+							"value": 1.1,
+							"powerEffect": 1.8,
+							"onlyOutputScales": true
+						},
+						{
+							"id": "speed",
+							"modifiable": false,
+							"value": 0.85
+						},
+						{
+							"id": "pollution",
+							"modifiable": false,
+							"value": 1.1
+						}
+					]
+				},
+				{
+					"id": "quality-module-1",
+					"itemSlots": 3,
+					"effectPerSlot": [
+						{
+							"id": "speed",
+							"modifiable": false,
+							"value": 0.95
+						},
+						{
+							"id": "quality",
+							"modifiable": false,
+							"value": 1.1
+						}
+					]
+				},
+				{
+					"id": "quality-module-2",
+					"itemSlots": 3,
+					"effectPerSlot": [
+						{
+							"id": "speed",
+							"modifiable": false,
+							"value": 0.95
+						},
+						{
+							"id": "quality",
+							"modifiable": false,
+							"value": 1.2
+						}
+					]
+				},
+				{
+					"id": "quality-module-1",
+					"itemSlots": 3,
+					"effectPerSlot": [
+						{
+							"id": "speed",
+							"modifiable": false,
+							"value": 0.95
+						},
+						{
+							"id": "quality",
+							"modifiable": false,
+							"value": 1.25
+						}
+					]
+				}
+			]
+		}
+	]
 }
