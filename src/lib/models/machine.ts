@@ -3,12 +3,15 @@ export interface MachineEffect {
 	name?: string;
 	modifiable: boolean;
 	value: number;
+	powerEffect?: number;
+	onlyOutputScales?: boolean;
 }
 
 export interface MachineFeature {
 	id: string;
 	name?: string;
-	effects: MachineEffect[];
+	itemSlots: number;
+	effectPerSlot: MachineEffect[];
 }
 
 export default interface Machine {
