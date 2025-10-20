@@ -10,5 +10,5 @@ export default interface Recipe {
 	in: BaseItemIO[];
 	out: BaseItemIO[];
 	duration: number;
-	recipeCategory: string;
+	category: string;
 }
