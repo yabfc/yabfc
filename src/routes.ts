@@ -16,4 +16,4 @@ export default [
 		route: '/p/(\\w+)',
 		entry: Profile,
 	},
-] satisfies { route: string; entry: Component }[];
+] satisfies { route: string; entry: Component<{ pathParams: string[] }> | Component }[];
