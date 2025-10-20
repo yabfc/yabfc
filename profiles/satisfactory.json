@@ -1,0 +1,360 @@
+{
+	"id": "satisfactory",
+	"name": "Satisfactory",
+	"items": [
+		{
+			"id": "iron-ore",
+			"type": "item",
+			"category": "raw-resource",
+			"stackSize": 100
+		},
+		{
+			"id": "iron-ingot",
+			"type": "item",
+			"category": "processed-resource",
+			"stackSize": 100
+		},
+		{
+			"id": "iron-rod",
+			"type": "item",
+			"category": "processed-ingot",
+			"stackSize": 200
+		},
+		{
+			"id": "screw",
+			"type": "item",
+			"category": "basic-product",
+			"stackSize": 500
+		},
+		{
+			"id": "coal",
+			"type": "item",
+			"category": "raw-resource",
+			"stackSize": 100
+		},
+		{
+			"id": "copper-ore",
+			"type": "item",
+			"category": "raw-resource",
+			"stackSize": 100
+		},
+		{
+			"id": "copper-ingot",
+			"type": "item",
+			"category": "processed-resource",
+			"stackSize": 100
+		},
+		{
+			"id": "wire",
+			"type": "item",
+			"category": "basic-product",
+			"stackSize": 500
+		},
+		{
+			"id": "steel-pipe",
+			"type": "item",
+			"category": "basic-product",
+			"stackSize": 200
+		},
+		{
+			"id": "rotor",
+			"type": "item",
+			"category": "intermediate-product",
+			"stackSize": 100
+		},
+		{
+			"id": "stator",
+			"type": "item",
+			"category": "intermediate-product",
+			"stackSize": 50
+		},
+		{
+			"id": "motor",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 50
+		}
+	],
+	"recipes": [
+		{
+			"id": "iron-ingot",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-ore",
+					"amount": 30
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "iron-ingot",
+					"amount": 30
+				}
+			],
+			"duration": 60,
+			"category": "smelter"
+		},
+		{
+			"id": "copper-ingot",
+			"in": [
+				{
+					"type": "item",
+					"id": "copper-ore",
+					"amount": 30
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "copper-ingot",
+					"amount": 30
+				}
+			],
+			"duration": 60,
+			"category": "smelter"
+		},
+		{
+			"id": "wire",
+			"in": [
+				{
+					"type": "item",
+					"id": "copper-ingot",
+					"amount": 15
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "wire",
+					"amount": 30
+				}
+			],
+			"duration": 60,
+			"category": "smelter"
+		},
+		{
+			"id": "steel-ingot",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-ore",
+					"amount": 45
+				},
+				{
+					"type": "item",
+					"id": "coal",
+					"amount": 45
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "steel-ingot",
+					"amount": 45
+				}
+			],
+			"duration": 60,
+			"category": "foundry"
+		},
+		{
+			"id": "steel-pipe",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-ingot",
+					"amount": 30
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "steel-pipe",
+					"amount": 20
+				}
+			],
+			"duration": 60,
+			"category": "constructor"
+		},
+		{
+			"id": "iron-rod",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-ingot",
+					"amount": 15
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "iron-rod",
+					"amount": 15
+				}
+			],
+			"duration": 60,
+			"category": "constructor"
+		},
+		{
+			"id": "screw",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-rod",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "iron-rod",
+					"amount": 40
+				}
+			],
+			"duration": 60,
+			"category": "constructor"
+		},
+		{
+			"id": "rotor",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-rod",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "screw",
+					"amount": 100
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "rotor",
+					"amount": 4
+				}
+			],
+			"duration": 60,
+			"category": "assembler"
+		},
+		{
+			"id": "stator",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-pipe",
+					"amount": 15
+				},
+				{
+					"type": "item",
+					"id": "wire",
+					"amount": 40
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "stator",
+					"amount": 5
+				}
+			],
+			"duration": 60,
+			"category": "assembler"
+		},
+		{
+			"id": "motor",
+			"in": [
+				{
+					"type": "item",
+					"id": "rotor",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "stator",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "motor",
+					"amount": 5
+				}
+			],
+			"duration": 60,
+			"category": "assembler"
+		}
+	],
+	"machines": [
+		{
+			"id": "constructor",
+			"recipeCategories": ["constructor"],
+			"requiredPower": 4000000,
+			"features": [
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": [
+						{ "id": "overclocking", "modifiable": true, "value": 2.5, "powerEffect": 3.3579 }
+					]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						{ "id": "underclocking", "modifiable": true, "value": 0.01, "powerEffect": 0.0023 }
+					]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 1,
+					"effectPerSlot": [
+						{
+							"id": "summerslooping",
+							"modifiable": true,
+							"value": 100,
+							"powerEffect": 4,
+							"onlyOutputScales": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "assembler",
+			"recipeCategories": ["assembler"],
+			"requiredPower": 15000000,
+			"features": [
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": [
+						{ "id": "overclocking", "modifiable": true, "value": 2.5, "powerEffect": 3.3579 }
+					]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						{ "id": "underclocking", "modifiable": true, "value": 0.01, "powerEffect": 0.0023 }
+					]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 2,
+					"effectPerSlot": [
+						{
+							"id": "summerslooping",
+							"modifiable": true,
+							"value": 100,
+							"powerEffect": 4,
+							"onlyOutputScales": true
+						}
+					]
+				}
+			]
+		}
+	]
+}
