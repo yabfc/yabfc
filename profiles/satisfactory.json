@@ -296,29 +296,17 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": [
-						{ "id": "overclocking", "modifiable": true, "value": 2.5, "powerEffect": 3.3579 }
-					]
+					"effectPerSlot": ["overclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": [
-						{ "id": "underclocking", "modifiable": true, "value": 0.01, "powerEffect": 0.0023 }
-					]
+					"effectPerSlot": ["underclocking"]
 				},
 				{
 					"id": "summerslooping",
 					"itemSlots": 1,
-					"effectPerSlot": [
-						{
-							"id": "summerslooping",
-							"modifiable": true,
-							"value": 100,
-							"powerEffect": 4,
-							"onlyOutputScales": true
-						}
-					]
+					"effectPerSlot": ["summerslooping"]
 				}
 			]
 		},
@@ -330,29 +318,66 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": [
-						{ "id": "overclocking", "modifiable": true, "value": 2.5, "powerEffect": 3.3579 }
-					]
+					"effectPerSlot": ["overclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": [
-						{ "id": "underclocking", "modifiable": true, "value": 0.01, "powerEffect": 0.0023 }
-					]
+					"effectPerSlot": ["underclocking"]
 				},
 				{
 					"id": "summerslooping",
 					"itemSlots": 2,
-					"effectPerSlot": [
-						{
-							"id": "summerslooping",
-							"modifiable": true,
-							"value": 100,
-							"powerEffect": 4,
-							"onlyOutputScales": true
-						}
-					]
+					"effectPerSlot": ["summerslooping"]
+				}
+			]
+		}
+	],
+	"machineEffects": [
+		{
+			"id": "overclocking",
+			"perSlot": true,
+			"modifiers": [
+				{
+					"id": "speed",
+					"value": 1.5,
+					"modifiable": true
+				},
+				{
+					"id": "power",
+					"value": 1.32,
+					"valueScaling": "exponential"
+				}
+			]
+		},
+		{
+			"id": "underclocking",
+			"perSlot": true,
+			"modifiers": [
+				{
+					"id": "speed",
+					"value": 0.5,
+					"modifiable": true
+				},
+				{
+					"id": "power",
+					"value": 1.32,
+					"valueScaling": "exponential"
+				}
+			]
+		},
+		{
+			"id": "summerslooping",
+			"perSlot": false,
+			"modifiers": [
+				{
+					"id": "speed",
+					"value": 2,
+					"modifiable": true
+				},
+				{
+					"id": "power",
+					"value": 4
 				}
 			]
 		}
