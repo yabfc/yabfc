@@ -1,0 +1,16 @@
+export interface Modifier {
+	id: string;
+	name?: string;
+	value: number;
+	modifiable: boolean;
+	onlyOutputScales?: boolean;
+	// by default linear
+	valueScaling?: 'exponential';
+}
+
+export default interface EffectModule {
+	id: string;
+	name?: string;
+	modifiers: Modifier[];
+	perSlot: boolean;
+}

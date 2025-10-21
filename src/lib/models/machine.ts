@@ -1,17 +1,8 @@
-export interface MachineEffect {
-	id: string;
-	name?: string;
-	modifiable: boolean;
-	value: number;
-	powerEffect?: number;
-	onlyOutputScales?: boolean;
-}
-
 export interface MachineFeature {
 	id: string;
 	name?: string;
 	itemSlots: number;
-	effectPerSlot: MachineEffect[];
+	effectPerSlot: string[];
 }
 
 export default interface Machine {
