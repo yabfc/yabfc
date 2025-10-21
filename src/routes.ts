@@ -13,7 +13,7 @@ export default [
 		entry: Settings,
 	},
 	{
-		route: '/p/(\\w+)',
+		route: '/p/([a-zA-Z0-9_-]+)',
 		entry: Profile,
 	},
 ] satisfies { route: string; entry: Component<{ pathParams: string[] }> | Component }[];
