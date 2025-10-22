@@ -1,164 +1,205 @@
 {
-	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://raw.githubusercontent.com/yabfc/yabfc/refs/heads/main/profiles/schema.json",
-	"$defs": {
-		"recipe-io": {
-			"type": "array",
-			"items": {
-				"type": "object",
-				"properties": {
-					"name": {
-						"type": "string"
-					},
-					"amount": {
-						"type": "number"
-					},
-					"type": { "type": "string", "enum": ["item", "fluid"] }
-				},
-				"required": ["name", "amount"]
-			},
-			"minItems": 1
-		},
-		"logistic-transport": {
-			"type": "object",
+	"$ref": "#/definitions/Profile",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"definitions": {
+		"Profile": {
+			"additionalProperties": false,
 			"properties": {
+				"id": {
+					"type": "string"
+				},
+				"items": {
+					"items": {
+						"additionalProperties": false,
+						"properties": {
+							"category": {
+								"type": "string"
+							},
+							"id": {
+								"type": "string"
+							},
+							"name": {
+								"type": "string"
+							},
+							"stackSize": {
+								"type": "number"
+							},
+							"type": {
+								"enum": ["item", "fluid"],
+								"type": "string"
+							}
+						},
+						"required": ["id", "type", "category", "stackSize"],
+						"type": "object"
+					},
+					"type": "array"
+				},
+				"machineEffects": {
+					"items": {
+						"additionalProperties": false,
+						"properties": {
+							"id": {
+								"type": "string"
+							},
+							"modifiers": {
+								"items": {
+									"additionalProperties": false,
+									"properties": {
+										"id": {
+											"type": "string"
+										},
+										"modifiable": {
+											"type": "boolean"
+										},
+										"name": {
+											"type": "string"
+										},
+										"onlyOutputScales": {
+											"type": "boolean"
+										},
+										"value": {
+											"type": "number"
+										},
+										"valueScaling": {
+											"const": "exponential",
+											"type": "string"
+										}
+									},
+									"required": ["id", "value", "modifiable"],
+									"type": "object"
+								},
+								"type": "array"
+							},
+							"name": {
+								"type": "string"
+							},
+							"perSlot": {
+								"type": "boolean"
+							}
+						},
+						"required": ["id", "modifiers", "perSlot"],
+						"type": "object"
+					},
+					"type": "array"
+				},
+				"machines": {
+					"items": {
+						"additionalProperties": false,
+						"properties": {
+							"features": {
+								"items": {
+									"additionalProperties": false,
+									"properties": {
+										"effectPerSlot": {
+											"items": {
+												"type": "string"
+											},
+											"type": "array"
+										},
+										"id": {
+											"type": "string"
+										},
+										"itemSlots": {
+											"type": "number"
+										},
+										"name": {
+											"type": "string"
+										}
+									},
+									"required": ["id", "itemSlots", "effectPerSlot"],
+									"type": "object"
+								},
+								"type": "array"
+							},
+							"id": {
+								"type": "string"
+							},
+							"name": {
+								"type": "string"
+							},
+							"recipeCategories": {
+								"items": {
+									"type": "string"
+								},
+								"type": "array"
+							},
+							"requiredPower": {
+								"type": "number"
+							}
+						},
+						"required": ["id", "recipeCategories", "requiredPower", "features"],
+						"type": "object"
+					},
+					"type": "array"
+				},
 				"name": {
 					"type": "string"
 				},
-				"throughput": {
-					"type": "number"
-				},
-				"duration": {
-					"type": "number",
-					"description": "(in seconds)"
-				}
-			},
-			"required": ["name", "throughput", "duration"]
-		},
-		"logistics": {
-			"type": "object",
-			"properties": {
-				"available_conveyor_belts": {
-					"type": "array",
-					"description": "should be used if mods are used",
+				"recipes": {
 					"items": {
-						"$ref": "#/$defs/logistic-transport"
-					}
-				},
-				"available_pipes": {
-					"type": "array",
-					"description": "should be used if mods are used",
-					"items": {
-						"$ref": "#/$defs/logistic-transport"
-					}
-				}
-			}
-		},
-		"satisfactory-limitations": {
-			"type": "object",
-			"properties": {
-				"unlocked_milestones": {
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				},
-				"unlocked_alternate_recipes": {
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				},
-				"overclocking": {
-					"type": "boolean"
-				},
-				"summerslooping": {
-					"type": "boolean"
-				}
-			},
-			"required": [
-				"unlocked_milestones",
-				"unlocked_alternate_recipes",
-				"overclocking",
-				"summerslooping"
-			]
-		},
-		"factorio-limitations": {
-			"type": "object",
-			"properties": {
-				"unlocked_research": {
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				},
-				"spaceage": {
-					"type": "boolean"
-				}
-			},
-			"required": ["unlocked_research", "spaceage"]
-		}
-	},
-	"title": "YABFC Satisfactory Schema",
-	"type": "object",
-	"properties": {
-		"title": {
-			"type": "string"
-		},
-		"description": {
-			"type": "string"
-		},
-		"type": {
-			"enum": ["satisfactory", "factorio"]
-		},
-		"limitations": {
-			"$ref": "#/$defs/logistics"
-		},
-		"recipes": {
-			"type": "array",
-			"items": {
-				"type": "object",
-				"properties": {
-					"in": {
-						"$ref": "#/$defs/recipe-io"
-					},
-					"out": {
-						"$ref": "#/$defs/recipe-io"
-					},
-					"duration": {
-						"type": "number"
-					},
-					"produced_in": {
-						"type": "array",
-						"items": {
-							"type": "string"
+						"additionalProperties": false,
+						"properties": {
+							"category": {
+								"type": "string"
+							},
+							"duration": {
+								"type": "number"
+							},
+							"id": {
+								"type": "string"
+							},
+							"in": {
+								"items": {
+									"additionalProperties": false,
+									"properties": {
+										"amount": {
+											"type": "number"
+										},
+										"id": {
+											"type": "string"
+										},
+										"type": {
+											"enum": ["item", "fluid"],
+											"type": "string"
+										}
+									},
+									"required": ["id", "type", "amount"],
+									"type": "object"
+								},
+								"type": "array"
+							},
+							"name": {
+								"type": "string"
+							},
+							"out": {
+								"items": {
+									"additionalProperties": false,
+									"properties": {
+										"amount": {
+											"type": "number"
+										},
+										"id": {
+											"type": "string"
+										},
+										"type": {
+											"enum": ["item", "fluid"],
+											"type": "string"
+										}
+									},
+									"required": ["id", "type", "amount"],
+									"type": "object"
+								},
+								"type": "array"
+							}
 						},
-						"minItems": 1
-					}
-				},
-				"required": ["in", "out", "duration", "produced_in"]
-			}
-		}
-	},
-	"if": {
-		"properties": {
-			"type": {
-				"const": "satisfactory"
-			}
-		}
-	},
-	"then": {
-		"properties": {
-			"limitations": {
-				"$ref": "#/$defs/satisfactory-limitations"
-			}
-		}
-	},
-	"else": {
-		"properties": {
-			"limitations": {
-				"$ref": "#/$defs/factorio-limitations"
-			}
+						"required": ["id", "in", "out", "duration", "category"],
+						"type": "object"
+					},
+					"type": "array"
+				}
+			},
+			"required": ["id", "name", "items", "recipes", "machines", "machineEffects"],
+			"type": "object"
 		}
 	}
 }
