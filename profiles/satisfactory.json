@@ -77,9 +77,9 @@
 	],
 	"recipes": [
 		{
-			"category": "quantum encoder",
+			"category": "quantum-encoder",
 			"duration": 60,
-			"id": "ai expansion server",
+			"id": "ai-expansion-server",
 			"in": [
 				{ "amount": 4.0, "id": "magnetic-field-generator", "type": "item" },
 				{ "amount": 4.0, "id": "neural-quantum-processor", "type": "item" },
@@ -94,7 +94,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "ai limiter",
+			"id": "ai-limiter",
 			"in": [
 				{ "amount": 25.0, "id": "copper-sheet", "type": "item" },
 				{ "amount": 100.0, "id": "quickwire", "type": "item" }
@@ -104,7 +104,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "adaptive control unit",
+			"id": "adaptive-control-unit",
 			"in": [
 				{ "amount": 5.0, "id": "automated-wiring", "type": "item" },
 				{ "amount": 5.0, "id": "circuit-board", "type": "item" },
@@ -116,7 +116,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "alclad aluminum sheet",
+			"id": "alclad-aluminum-sheet",
 			"in": [
 				{ "amount": 30.0, "id": "aluminum-ingot", "type": "item" },
 				{ "amount": 10.0, "id": "copper-ingot", "type": "item" }
@@ -126,14 +126,14 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "alien dna capsule",
+			"id": "alien-dna-capsule",
 			"in": [{ "amount": 10.0, "id": "alien-protein", "type": "item" }],
 			"out": [{ "amount": 10.0, "id": "alien-dna-capsule", "type": "item" }]
 		},
 		{
-			"category": "quantum encoder",
+			"category": "quantum-encoder",
 			"duration": 60,
-			"id": "alien power matrix",
+			"id": "alien-power-matrix",
 			"in": [
 				{ "amount": 12.5, "id": "sam-fluctuator", "type": "item" },
 				{ "amount": 7.5, "id": "power-shard", "type": "item" },
@@ -148,7 +148,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "alumina solution",
+			"id": "alumina-solution",
 			"in": [
 				{ "amount": 120.0, "id": "bauxite", "type": "item" },
 				{ "amount": 180.0, "id": "water", "type": "fluid" }
@@ -161,14 +161,14 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "aluminum casing",
+			"id": "aluminum-casing",
 			"in": [{ "amount": 90.0, "id": "aluminum-ingot", "type": "item" }],
 			"out": [{ "amount": 60.0, "id": "aluminum-casing", "type": "item" }]
 		},
 		{
 			"category": "foundry",
 			"duration": 60,
-			"id": "aluminum ingot",
+			"id": "aluminum-ingot",
 			"in": [
 				{ "amount": 90.0, "id": "aluminum-scrap", "type": "item" },
 				{ "amount": 75.0, "id": "silica", "type": "item" }
@@ -178,7 +178,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "aluminum scrap",
+			"id": "aluminum-scrap",
 			"in": [
 				{ "amount": 240.0, "id": "alumina-solution", "type": "fluid" },
 				{ "amount": 120.0, "id": "coal", "type": "item" }
@@ -191,7 +191,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "assembly director system",
+			"id": "assembly-director-system",
 			"in": [
 				{ "amount": 1.5, "id": "adaptive-control-unit", "type": "item" },
 				{ "amount": 0.75, "id": "supercomputer", "type": "item" }
@@ -201,7 +201,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "automated wiring",
+			"id": "automated-wiring",
 			"in": [
 				{ "amount": 2.5, "id": "stator", "type": "item" },
 				{ "amount": 50.0, "id": "cable", "type": "item" }
@@ -211,7 +211,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "ballistic warp drive",
+			"id": "ballistic-warp-drive",
 			"in": [
 				{ "amount": 1.0, "id": "thermal-propulsion-rocket", "type": "item" },
 				{ "amount": 5.0, "id": "singularity-cell", "type": "item" },
@@ -257,7 +257,7 @@
 		{
 			"category": "blender",
 			"duration": 60,
-			"id": "biochemical sculptor",
+			"id": "biochemical-sculptor",
 			"in": [
 				{ "amount": 0.5, "id": "assembly-director-system", "type": "item" },
 				{ "amount": 40.0, "id": "ficsite-trigon", "type": "item" },
@@ -268,7 +268,7 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "biomass (alien protein)",
+			"id": "biomass (alien-protein)",
 			"in": [{ "amount": 15.0, "id": "alien-protein", "type": "item" }],
 			"out": [{ "amount": 1500.0, "id": "biomass", "type": "item" }]
 		},
@@ -294,9 +294,9 @@
 			"out": [{ "amount": 300.0, "id": "biomass", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "black powder",
+			"id": "black-powder",
 			"in": [
 				{ "amount": 15.0, "id": "coal", "type": "item" },
 				{ "amount": 15.0, "id": "sulfur", "type": "item" }
@@ -304,9 +304,9 @@
 			"out": [{ "amount": 30.0, "id": "black-powder", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "blade runners",
+			"id": "blade-runners",
 			"in": [
 				{ "amount": 20.0, "id": "silica", "type": "item" },
 				{ "amount": 3.0, "id": "modular-frame", "type": "item" },
@@ -317,7 +317,7 @@
 		{
 			"category": "smelter",
 			"duration": 60,
-			"id": "blue ficsmas ornamentficsmas",
+			"id": "blue-ficsmas-ornamentficsmas",
 			"in": [{ "amount": 5.0, "id": "ficsmas-gift", "type": "item" }],
 			"out": [{ "amount": 10.0, "id": "blue-ficsmas-ornament", "type": "item" }]
 		},
@@ -331,14 +331,14 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "candy caneficsmas",
+			"id": "candy-caneficsmas",
 			"in": [{ "amount": 15.0, "id": "ficsmas-gift", "type": "item" }],
 			"out": [{ "amount": 5.0, "id": "candy-cane", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "candy cane basherficsmas",
+			"id": "candy-cane-basherficsmas",
 			"in": [
 				{ "amount": 1.5, "id": "xeno-zapper", "type": "item" },
 				{ "amount": 18.75, "id": "candy-cane", "type": "item" },
@@ -349,14 +349,14 @@
 		{
 			"category": "smelter",
 			"duration": 60,
-			"id": "caterium ingot",
+			"id": "caterium-ingot",
 			"in": [{ "amount": 45.0, "id": "caterium-ore", "type": "item" }],
 			"out": [{ "amount": 15.0, "id": "caterium-ingot", "type": "item" }]
 		},
 		{
 			"category": "converter",
 			"duration": 60,
-			"id": "caterium ore (copper)",
+			"id": "caterium-ore (copper)",
 			"in": [
 				{ "amount": 10.0, "id": "reanimated-sam", "type": "item" },
 				{ "amount": 150.0, "id": "copper-ore", "type": "item" }
@@ -366,7 +366,7 @@
 		{
 			"category": "converter",
 			"duration": 60,
-			"id": "caterium ore (quartz)",
+			"id": "caterium-ore (quartz)",
 			"in": [
 				{ "amount": 10.0, "id": "reanimated-sam", "type": "item" },
 				{ "amount": 120.0, "id": "raw-quartz", "type": "item" }
@@ -374,7 +374,7 @@
 			"out": [{ "amount": 120.0, "id": "caterium-ore", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
 			"id": "chainsaw",
 			"in": [
@@ -388,7 +388,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "circuit board",
+			"id": "circuit-board",
 			"in": [
 				{ "amount": 15.0, "id": "copper-sheet", "type": "item" },
 				{ "amount": 30.0, "id": "plastic", "type": "item" }
@@ -396,9 +396,9 @@
 			"out": [{ "amount": 7.5, "id": "circuit-board", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "cluster nobelisk",
+			"id": "cluster-nobelisk",
 			"in": [
 				{ "amount": 7.5, "id": "nobelisk", "type": "item" },
 				{ "amount": 10.0, "id": "smokeless-powder", "type": "item" }
@@ -446,7 +446,7 @@
 		{
 			"category": "blender",
 			"duration": 60,
-			"id": "cooling system",
+			"id": "cooling-system",
 			"in": [
 				{ "amount": 12.0, "id": "heat-sink", "type": "item" },
 				{ "amount": 12.0, "id": "rubber", "type": "item" },
@@ -458,7 +458,7 @@
 		{
 			"category": "foundry",
 			"duration": 60,
-			"id": "copper ficsmas ornamentficsmas",
+			"id": "copper-ficsmas-ornamentficsmas",
 			"in": [
 				{ "amount": 10.0, "id": "red-ficsmas-ornament", "type": "item" },
 				{ "amount": 10.0, "id": "copper-ingot", "type": "item" }
@@ -468,14 +468,14 @@
 		{
 			"category": "smelter",
 			"duration": 60,
-			"id": "copper ingot",
+			"id": "copper-ingot",
 			"in": [{ "amount": 30.0, "id": "copper-ore", "type": "item" }],
 			"out": [{ "amount": 30.0, "id": "copper-ingot", "type": "item" }]
 		},
 		{
 			"category": "converter",
 			"duration": 60,
-			"id": "copper ore (quartz)",
+			"id": "copper-ore (quartz)",
 			"in": [
 				{ "amount": 10.0, "id": "reanimated-sam", "type": "item" },
 				{ "amount": 100.0, "id": "raw-quartz", "type": "item" }
@@ -485,7 +485,7 @@
 		{
 			"category": "converter",
 			"duration": 60,
-			"id": "copper ore (sulfur)",
+			"id": "copper-ore (sulfur)",
 			"in": [
 				{ "amount": 10.0, "id": "reanimated-sam", "type": "item" },
 				{ "amount": 120.0, "id": "sulfur", "type": "item" }
@@ -495,21 +495,21 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "copper powder",
+			"id": "copper-powder",
 			"in": [{ "amount": 300.0, "id": "copper-ingot", "type": "item" }],
 			"out": [{ "amount": 50.0, "id": "copper-powder", "type": "item" }]
 		},
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "copper sheet",
+			"id": "copper-sheet",
 			"in": [{ "amount": 20.0, "id": "copper-ingot", "type": "item" }],
 			"out": [{ "amount": 10.0, "id": "copper-sheet", "type": "item" }]
 		},
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "crystal oscillator",
+			"id": "crystal-oscillator",
 			"in": [
 				{ "amount": 18.0, "id": "quartz-crystal", "type": "item" },
 				{ "amount": 14.0, "id": "cable", "type": "item" },
@@ -518,9 +518,9 @@
 			"out": [{ "amount": 1.0, "id": "crystal-oscillator", "type": "item" }]
 		},
 		{
-			"category": "particle accelerator",
+			"category": "particle-accelerator",
 			"duration": 60,
-			"id": "dark matter crystal",
+			"id": "dark-matter-crystal",
 			"in": [
 				{ "amount": 30.0, "id": "diamonds", "type": "item" },
 				{ "amount": 150.0, "id": "dark-matter-residue", "type": "item" }
@@ -530,12 +530,12 @@
 		{
 			"category": "converter",
 			"duration": 60,
-			"id": "dark matter residue",
+			"id": "dark-matter-residue",
 			"in": [{ "amount": 50.0, "id": "reanimated-sam", "type": "item" }],
 			"out": [{ "amount": 100.0, "id": "dark-matter-residue", "type": "item" }]
 		},
 		{
-			"category": "particle accelerator",
+			"category": "particle-accelerator",
 			"duration": 60,
 			"id": "diamonds",
 			"in": [{ "amount": 600.0, "id": "coal", "type": "item" }],
@@ -544,7 +544,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "electromagnetic control rod",
+			"id": "electromagnetic-control-rod",
 			"in": [
 				{ "amount": 6.0, "id": "stator", "type": "item" },
 				{ "amount": 4.0, "id": "ai-limiter", "type": "item" }
@@ -554,21 +554,21 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "empty canister",
+			"id": "empty-canister",
 			"in": [{ "amount": 30.0, "id": "plastic", "type": "item" }],
 			"out": [{ "amount": 60.0, "id": "empty-canister", "type": "item" }]
 		},
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "empty fluid tank",
+			"id": "empty-fluid-tank",
 			"in": [{ "amount": 60.0, "id": "aluminum-ingot", "type": "item" }],
 			"out": [{ "amount": 60.0, "id": "empty-fluid-tank", "type": "item" }]
 		},
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "encased industrial beam",
+			"id": "encased-industrial-beam",
 			"in": [
 				{ "amount": 18.0, "id": "steel-beam", "type": "item" },
 				{ "amount": 36.0, "id": "concrete", "type": "item" }
@@ -578,7 +578,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "encased plutonium cell",
+			"id": "encased-plutonium-cell",
 			"in": [
 				{ "amount": 10.0, "id": "plutonium-pellet", "type": "item" },
 				{ "amount": 20.0, "id": "concrete", "type": "item" }
@@ -588,7 +588,7 @@
 		{
 			"category": "blender",
 			"duration": 60,
-			"id": "encased uranium cell",
+			"id": "encased-uranium-cell",
 			"in": [
 				{ "amount": 50.0, "id": "uranium", "type": "item" },
 				{ "amount": 15.0, "id": "concrete", "type": "item" },
@@ -602,14 +602,14 @@
 		{
 			"category": "converter",
 			"duration": 60,
-			"id": "excited photonic matter",
+			"id": "excited-photonic-matter",
 			"in": [],
 			"out": [{ "amount": 200.0, "id": "excited-photonic-matter", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "explosive rebar",
+			"id": "explosive-rebar",
 			"in": [
 				{ "amount": 10.0, "id": "iron-rebar", "type": "item" },
 				{ "amount": 10.0, "id": "smokeless-powder", "type": "item" },
@@ -620,21 +620,21 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "ficsmas actual snowficsmas",
+			"id": "ficsmas-actual-snowficsmas",
 			"in": [{ "amount": 25.0, "id": "ficsmas-gift", "type": "item" }],
 			"out": [{ "amount": 10.0, "id": "ficsmas-actual-snow", "type": "item" }]
 		},
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "ficsmas bowficsmas",
+			"id": "ficsmas-bowficsmas",
 			"in": [{ "amount": 10.0, "id": "ficsmas-gift", "type": "item" }],
 			"out": [{ "amount": 5.0, "id": "ficsmas-bow", "type": "item" }]
 		},
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "ficsmas ornament bundleficsmas",
+			"id": "ficsmas-ornament-bundleficsmas",
 			"in": [
 				{ "amount": 5.0, "id": "copper-ficsmas-ornament", "type": "item" },
 				{ "amount": 5.0, "id": "iron-ficsmas-ornament", "type": "item" }
@@ -644,14 +644,14 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "ficsmas tree branchficsmas",
+			"id": "ficsmas-tree-branchficsmas",
 			"in": [{ "amount": 10.0, "id": "ficsmas-gift", "type": "item" }],
 			"out": [{ "amount": 10.0, "id": "ficsmas-tree-branch", "type": "item" }]
 		},
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "ficsmas wonder starficsmas",
+			"id": "ficsmas-wonder-starficsmas",
 			"in": [
 				{ "amount": 5.0, "id": "ficsmas-wreath", "type": "item" },
 				{ "amount": 20.0, "id": "candy-cane", "type": "item" }
@@ -661,7 +661,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "ficsmas wreathficsmas",
+			"id": "ficsmas-wreathficsmas",
 			"in": [
 				{ "amount": 15.0, "id": "ficsmas-tree-branch", "type": "item" },
 				{ "amount": 6.0, "id": "ficsmas-ornament-bundle", "type": "item" }
@@ -679,9 +679,9 @@
 			"out": [{ "amount": 15.0, "id": "fabric", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "factory cart™",
+			"id": "factory-cart™",
 			"in": [
 				{ "amount": 12.0, "id": "reinforced-iron-plate", "type": "item" },
 				{ "amount": 12.0, "id": "iron-rod", "type": "item" },
@@ -690,9 +690,9 @@
 			"out": [{ "amount": 3.0, "id": "factory-cart™", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "fancy fireworks",
+			"id": "fancy-fireworks",
 			"in": [
 				{ "amount": 10.0, "id": "ficsmas-tree-branch", "type": "item" },
 				{ "amount": 7.5, "id": "ficsmas-bow", "type": "item" }
@@ -702,7 +702,7 @@
 		{
 			"category": "converter",
 			"duration": 60,
-			"id": "ficsite ingot (aluminum)",
+			"id": "ficsite-ingot (aluminum)",
 			"in": [
 				{ "amount": 60.0, "id": "reanimated-sam", "type": "item" },
 				{ "amount": 120.0, "id": "aluminum-ingot", "type": "item" }
@@ -712,7 +712,7 @@
 		{
 			"category": "converter",
 			"duration": 60,
-			"id": "ficsite ingot (caterium)",
+			"id": "ficsite-ingot (caterium)",
 			"in": [
 				{ "amount": 45.0, "id": "reanimated-sam", "type": "item" },
 				{ "amount": 60.0, "id": "caterium-ingot", "type": "item" }
@@ -722,7 +722,7 @@
 		{
 			"category": "converter",
 			"duration": 60,
-			"id": "ficsite ingot (iron)",
+			"id": "ficsite-ingot (iron)",
 			"in": [
 				{ "amount": 40.0, "id": "reanimated-sam", "type": "item" },
 				{ "amount": 240.0, "id": "iron-ingot", "type": "item" }
@@ -732,12 +732,12 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "ficsite trigon",
+			"id": "ficsite-trigon",
 			"in": [{ "amount": 10.0, "id": "ficsite-ingot", "type": "item" }],
 			"out": [{ "amount": 30.0, "id": "ficsite-trigon", "type": "item" }]
 		},
 		{
-			"category": "particle accelerator",
+			"category": "particle-accelerator",
 			"duration": 60,
 			"id": "ficsonium",
 			"in": [
@@ -748,9 +748,9 @@
 			"out": [{ "amount": 10.0, "id": "ficsonium", "type": "item" }]
 		},
 		{
-			"category": "quantum encoder",
+			"category": "quantum-encoder",
 			"duration": 60,
-			"id": "ficsonium fuel rod",
+			"id": "ficsonium-fuel-rod",
 			"in": [
 				{ "amount": 5.0, "id": "ficsonium", "type": "item" },
 				{ "amount": 5.0, "id": "electromagnetic-control-rod", "type": "item" },
@@ -775,7 +775,7 @@
 		{
 			"category": "blender",
 			"duration": 60,
-			"id": "fused modular frame",
+			"id": "fused-modular-frame",
 			"in": [
 				{ "amount": 1.5, "id": "heavy-modular-frame", "type": "item" },
 				{ "amount": 75.0, "id": "aluminum-casing", "type": "item" },
@@ -784,9 +784,9 @@
 			"out": [{ "amount": 1.5, "id": "fused-modular-frame", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "gas filter",
+			"id": "gas-filter",
 			"in": [
 				{ "amount": 15.0, "id": "fabric", "type": "item" },
 				{ "amount": 30.0, "id": "coal", "type": "item" },
@@ -795,9 +795,9 @@
 			"out": [{ "amount": 7.5, "id": "gas-filter", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "gas mask",
+			"id": "gas-mask",
 			"in": [
 				{ "amount": 50.0, "id": "fabric", "type": "item" },
 				{ "amount": 10.0, "id": "copper-sheet", "type": "item" },
@@ -806,9 +806,9 @@
 			"out": [{ "amount": 1.0, "id": "gas-mask", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "gas nobelisk",
+			"id": "gas-nobelisk",
 			"in": [
 				{ "amount": 5.0, "id": "nobelisk", "type": "item" },
 				{ "amount": 50.0, "id": "biomass", "type": "item" }
@@ -816,9 +816,9 @@
 			"out": [{ "amount": 5.0, "id": "gas-nobelisk", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "golden factory cart™",
+			"id": "golden-factory-cart™",
 			"in": [
 				{ "amount": 45.0, "id": "caterium-ingot", "type": "item" },
 				{ "amount": 12.0, "id": "iron-rod", "type": "item" },
@@ -829,14 +829,14 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "hatcher protein",
+			"id": "hatcher-protein",
 			"in": [{ "amount": 20.0, "id": "hatcher-remains", "type": "item" }],
 			"out": [{ "amount": 20.0, "id": "alien-protein", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "hazmat suit",
+			"id": "hazmat-suit",
 			"in": [
 				{ "amount": 25.0, "id": "rubber", "type": "item" },
 				{ "amount": 25.0, "id": "plastic", "type": "item" },
@@ -848,7 +848,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "heat sink",
+			"id": "heat-sink",
 			"in": [
 				{ "amount": 37.5, "id": "alclad-aluminum-sheet", "type": "item" },
 				{ "amount": 22.5, "id": "copper-sheet", "type": "item" }
@@ -858,7 +858,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "heavy modular frame",
+			"id": "heavy-modular-frame",
 			"in": [
 				{ "amount": 10.0, "id": "modular-frame", "type": "item" },
 				{ "amount": 40.0, "id": "steel-pipe", "type": "item" },
@@ -870,7 +870,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "high-speed connector",
+			"id": "high-speed-connector",
 			"in": [
 				{ "amount": 210.0, "id": "quickwire", "type": "item" },
 				{ "amount": 37.5, "id": "cable", "type": "item" },
@@ -881,14 +881,14 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "hog protein",
+			"id": "hog-protein",
 			"in": [{ "amount": 20.0, "id": "hog-remains", "type": "item" }],
 			"out": [{ "amount": 20.0, "id": "alien-protein", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "homing rifle ammo",
+			"id": "homing-rifle-ammo",
 			"in": [
 				{ "amount": 50.0, "id": "rifle-ammo", "type": "item" },
 				{ "amount": 2.5, "id": "high-speed-connector", "type": "item" }
@@ -896,7 +896,7 @@
 			"out": [{ "amount": 25.0, "id": "homing-rifle-ammo", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
 			"id": "hoverpack",
 			"in": [
@@ -908,9 +908,9 @@
 			"out": [{ "amount": 0.5, "id": "hoverpack", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "iodine-infused filter",
+			"id": "iodine-infused-filter",
 			"in": [
 				{ "amount": 3.75, "id": "gas-filter", "type": "item" },
 				{ "amount": 30.0, "id": "quickwire", "type": "item" },
@@ -921,7 +921,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "ionized fuel",
+			"id": "ionized-fuel",
 			"in": [
 				{ "amount": 40.0, "id": "rocket-fuel", "type": "item" },
 				{ "amount": 2.5, "id": "power-shard", "type": "item" }
@@ -934,7 +934,7 @@
 		{
 			"category": "foundry",
 			"duration": 60,
-			"id": "iron ficsmas ornamentficsmas",
+			"id": "iron-ficsmas-ornamentficsmas",
 			"in": [
 				{ "amount": 15.0, "id": "blue-ficsmas-ornament", "type": "item" },
 				{ "amount": 15.0, "id": "iron-ingot", "type": "item" }
@@ -944,14 +944,14 @@
 		{
 			"category": "smelter",
 			"duration": 60,
-			"id": "iron ingot",
+			"id": "iron-ingot",
 			"in": [{ "amount": 30.0, "id": "iron-ore", "type": "item" }],
 			"out": [{ "amount": 30.0, "id": "iron-ingot", "type": "item" }]
 		},
 		{
 			"category": "converter",
 			"duration": 60,
-			"id": "iron ore (limestone)",
+			"id": "iron-ore (limestone)",
 			"in": [
 				{ "amount": 10.0, "id": "reanimated-sam", "type": "item" },
 				{ "amount": 240.0, "id": "limestone", "type": "item" }
@@ -961,26 +961,26 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "iron plate",
+			"id": "iron-plate",
 			"in": [{ "amount": 30.0, "id": "iron-ingot", "type": "item" }],
 			"out": [{ "amount": 20.0, "id": "iron-plate", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "iron rebar",
+			"id": "iron-rebar",
 			"in": [{ "amount": 15.0, "id": "iron-rod", "type": "item" }],
 			"out": [{ "amount": 15.0, "id": "iron-rebar", "type": "item" }]
 		},
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "iron rod",
+			"id": "iron-rod",
 			"in": [{ "amount": 15.0, "id": "iron-ingot", "type": "item" }],
 			"out": [{ "amount": 15.0, "id": "iron-rod", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
 			"id": "jetpack",
 			"in": [
@@ -1004,7 +1004,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "liquid biofuel",
+			"id": "liquid-biofuel",
 			"in": [
 				{ "amount": 90.0, "id": "solid-biofuel", "type": "item" },
 				{ "amount": 45.0, "id": "water", "type": "fluid" }
@@ -1014,7 +1014,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "magnetic field generator",
+			"id": "magnetic-field-generator",
 			"in": [
 				{ "amount": 2.5, "id": "versatile-framework", "type": "item" },
 				{ "amount": 1.0, "id": "electromagnetic-control-rod", "type": "item" }
@@ -1024,7 +1024,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "modular engine",
+			"id": "modular-engine",
 			"in": [
 				{ "amount": 2.0, "id": "motor", "type": "item" },
 				{ "amount": 15.0, "id": "rubber", "type": "item" },
@@ -1035,7 +1035,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "modular frame",
+			"id": "modular-frame",
 			"in": [
 				{ "amount": 3.0, "id": "reinforced-iron-plate", "type": "item" },
 				{ "amount": 12.0, "id": "iron-rod", "type": "item" }
@@ -1053,9 +1053,9 @@
 			"out": [{ "amount": 5.0, "id": "motor", "type": "item" }]
 		},
 		{
-			"category": "quantum encoder",
+			"category": "quantum-encoder",
 			"duration": 60,
-			"id": "neural-quantum processor",
+			"id": "neural-quantum-processor",
 			"in": [
 				{ "amount": 15.0, "id": "time-crystal", "type": "item" },
 				{ "amount": 3.0, "id": "supercomputer", "type": "item" },
@@ -1070,7 +1070,7 @@
 		{
 			"category": "blender",
 			"duration": 60,
-			"id": "nitric acid",
+			"id": "nitric-acid",
 			"in": [
 				{ "amount": 120.0, "id": "nitrogen-gas", "type": "fluid" },
 				{ "amount": 30.0, "id": "water", "type": "fluid" },
@@ -1081,7 +1081,7 @@
 		{
 			"category": "converter",
 			"duration": 60,
-			"id": "nitrogen gas (bauxite)",
+			"id": "nitrogen-gas (bauxite)",
 			"in": [
 				{ "amount": 10.0, "id": "reanimated-sam", "type": "item" },
 				{ "amount": 100.0, "id": "bauxite", "type": "item" }
@@ -1091,7 +1091,7 @@
 		{
 			"category": "converter",
 			"duration": 60,
-			"id": "nitrogen gas (caterium)",
+			"id": "nitrogen-gas (caterium)",
 			"in": [
 				{ "amount": 10.0, "id": "reanimated-sam", "type": "item" },
 				{ "amount": 120.0, "id": "caterium-ore", "type": "item" }
@@ -1099,7 +1099,7 @@
 			"out": [{ "amount": 120.0, "id": "nitrogen-gas", "type": "fluid" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
 			"id": "nobelisk",
 			"in": [
@@ -1109,9 +1109,9 @@
 			"out": [{ "amount": 10.0, "id": "nobelisk", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "nobelisk detonator",
+			"id": "nobelisk-detonator",
 			"in": [
 				{ "amount": 0.75, "id": "object-scanner", "type": "item" },
 				{ "amount": 7.5, "id": "steel-beam", "type": "item" },
@@ -1122,7 +1122,7 @@
 		{
 			"category": "blender",
 			"duration": 60,
-			"id": "non-fissile uranium",
+			"id": "non-fissile-uranium",
 			"in": [
 				{ "amount": 37.5, "id": "uranium-waste", "type": "item" },
 				{ "amount": 25.0, "id": "silica", "type": "item" },
@@ -1135,9 +1135,9 @@
 			]
 		},
 		{
-			"category": "particle accelerator",
+			"category": "particle-accelerator",
 			"duration": 60,
-			"id": "nuclear pasta",
+			"id": "nuclear-pasta",
 			"in": [
 				{ "amount": 100.0, "id": "copper-powder", "type": "item" },
 				{ "amount": 0.5, "id": "pressure-conversion-cube", "type": "item" }
@@ -1145,9 +1145,9 @@
 			"out": [{ "amount": 0.5, "id": "nuclear-pasta", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "nuke nobelisk",
+			"id": "nuke-nobelisk",
 			"in": [
 				{ "amount": 2.5, "id": "nobelisk", "type": "item" },
 				{ "amount": 10.0, "id": "encased-uranium-cell", "type": "item" },
@@ -1157,9 +1157,9 @@
 			"out": [{ "amount": 0.5, "id": "nuke-nobelisk", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "nutritional inhaler",
+			"id": "nutritional-inhaler",
 			"in": [
 				{ "amount": 3.0, "id": "bacon-agaric", "type": "item" },
 				{ "amount": 6.0, "id": "paleberry", "type": "item" },
@@ -1168,9 +1168,9 @@
 			"out": [{ "amount": 3.0, "id": "medicinal-inhaler", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "object scanner",
+			"id": "object-scanner",
 			"in": [
 				{ "amount": 6.0, "id": "reinforced-iron-plate", "type": "item" },
 				{ "amount": 30.0, "id": "wire", "type": "item" },
@@ -1181,7 +1181,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "packaged alumina solution",
+			"id": "packaged-alumina-solution",
 			"in": [
 				{ "amount": 120.0, "id": "alumina-solution", "type": "fluid" },
 				{ "amount": 120.0, "id": "empty-canister", "type": "item" }
@@ -1191,7 +1191,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "packaged fuel",
+			"id": "packaged-fuel",
 			"in": [
 				{ "amount": 40.0, "id": "fuel", "type": "fluid" },
 				{ "amount": 40.0, "id": "empty-canister", "type": "item" }
@@ -1201,7 +1201,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "packaged heavy oil residue",
+			"id": "packaged-heavy-oil-residue",
 			"in": [
 				{ "amount": 30.0, "id": "heavy-oil-residue", "type": "fluid" },
 				{ "amount": 30.0, "id": "empty-canister", "type": "item" }
@@ -1211,7 +1211,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "packaged ionized fuel",
+			"id": "packaged-ionized-fuel",
 			"in": [
 				{ "amount": 80.0, "id": "ionized-fuel", "type": "fluid" },
 				{ "amount": 40.0, "id": "empty-fluid-tank", "type": "item" }
@@ -1221,7 +1221,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "packaged liquid biofuel",
+			"id": "packaged-liquid-biofuel",
 			"in": [
 				{ "amount": 40.0, "id": "liquid-biofuel", "type": "fluid" },
 				{ "amount": 40.0, "id": "empty-canister", "type": "item" }
@@ -1231,7 +1231,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "packaged nitric acid",
+			"id": "packaged-nitric-acid",
 			"in": [
 				{ "amount": 30.0, "id": "nitric-acid", "type": "fluid" },
 				{ "amount": 30.0, "id": "empty-fluid-tank", "type": "item" }
@@ -1241,7 +1241,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "packaged nitrogen gas",
+			"id": "packaged-nitrogen-gas",
 			"in": [
 				{ "amount": 240.0, "id": "nitrogen-gas", "type": "fluid" },
 				{ "amount": 60.0, "id": "empty-fluid-tank", "type": "item" }
@@ -1251,7 +1251,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "packaged oil",
+			"id": "packaged-oil",
 			"in": [
 				{ "amount": 30.0, "id": "crude-oil", "type": "fluid" },
 				{ "amount": 30.0, "id": "empty-canister", "type": "item" }
@@ -1261,7 +1261,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "packaged rocket fuel",
+			"id": "packaged-rocket-fuel",
 			"in": [
 				{ "amount": 120.0, "id": "rocket-fuel", "type": "item" },
 				{ "amount": 60.0, "id": "empty-fluid-tank", "type": "item" }
@@ -1271,7 +1271,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "packaged sulfuric acid",
+			"id": "packaged-sulfuric-acid",
 			"in": [
 				{ "amount": 40.0, "id": "sulfuric-acid", "type": "fluid" },
 				{ "amount": 40.0, "id": "empty-canister", "type": "item" }
@@ -1281,7 +1281,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "packaged turbofuel",
+			"id": "packaged-turbofuel",
 			"in": [
 				{ "amount": 20.0, "id": "turbofuel", "type": "fluid" },
 				{ "amount": 20.0, "id": "empty-canister", "type": "item" }
@@ -1291,7 +1291,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "packaged water",
+			"id": "packaged-water",
 			"in": [
 				{ "amount": 60.0, "id": "water", "type": "fluid" },
 				{ "amount": 60.0, "id": "empty-canister", "type": "item" }
@@ -1299,7 +1299,7 @@
 			"out": [{ "amount": 60.0, "id": "packaged-water", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
 			"id": "parachute",
 			"in": [
@@ -1311,7 +1311,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "petroleum coke",
+			"id": "petroleum-coke",
 			"in": [{ "amount": 40.0, "id": "heavy-oil-residue", "type": "fluid" }],
 			"out": [{ "amount": 120.0, "id": "petroleum-coke", "type": "item" }]
 		},
@@ -1328,7 +1328,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "plutonium fuel rod",
+			"id": "plutonium-fuel-rod",
 			"in": [
 				{ "amount": 7.5, "id": "encased-plutonium-cell", "type": "item" },
 				{ "amount": 4.5, "id": "steel-beam", "type": "item" },
@@ -1338,9 +1338,9 @@
 			"out": [{ "amount": 0.25, "id": "plutonium-fuel-rod", "type": "item" }]
 		},
 		{
-			"category": "nuclear power plant",
+			"category": "nuclear-power-plant",
 			"duration": 60,
-			"id": "plutonium fuel rod (burning)",
+			"id": "plutonium-fuel-rod (burning)",
 			"in": [
 				{ "amount": 0.10000000149011612, "id": "plutonium-fuel-rod", "type": "item" },
 				{ "amount": 240.0, "id": "water", "type": "fluid" }
@@ -1348,9 +1348,9 @@
 			"out": [{ "amount": 1.0, "id": "plutonium-waste", "type": "item" }]
 		},
 		{
-			"category": "particle accelerator",
+			"category": "particle-accelerator",
 			"duration": 60,
-			"id": "plutonium pellet",
+			"id": "plutonium-pellet",
 			"in": [
 				{ "amount": 100.0, "id": "non-fissile-uranium", "type": "item" },
 				{ "amount": 25.0, "id": "uranium-waste", "type": "item" }
@@ -1358,9 +1358,9 @@
 			"out": [{ "amount": 30.0, "id": "plutonium-pellet", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "portable miner",
+			"id": "portable-miner",
 			"in": [
 				{ "amount": 3.0, "id": "iron-plate", "type": "item" },
 				{ "amount": 6.0, "id": "iron-rod", "type": "item" }
@@ -1370,28 +1370,28 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "power shard (1)",
+			"id": "power-shard (1)",
 			"in": [{ "amount": 7.5, "id": "blue-power-slug", "type": "item" }],
 			"out": [{ "amount": 7.5, "id": "power-shard", "type": "item" }]
 		},
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "power shard (2)",
+			"id": "power-shard (2)",
 			"in": [{ "amount": 5.0, "id": "yellow-power-slug", "type": "item" }],
 			"out": [{ "amount": 10.0, "id": "power-shard", "type": "item" }]
 		},
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "power shard (5)",
+			"id": "power-shard (5)",
 			"in": [{ "amount": 2.5, "id": "purple-power-slug", "type": "item" }],
 			"out": [{ "amount": 12.5, "id": "power-shard", "type": "item" }]
 		},
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "pressure conversion cube",
+			"id": "pressure-conversion-cube",
 			"in": [
 				{ "amount": 1.0, "id": "fused-modular-frame", "type": "item" },
 				{ "amount": 2.0, "id": "radio-control-unit", "type": "item" }
@@ -1399,9 +1399,9 @@
 			"out": [{ "amount": 1.0, "id": "pressure-conversion-cube", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "protein inhaler",
+			"id": "protein-inhaler",
 			"in": [
 				{ "amount": 3.0, "id": "alien-protein", "type": "item" },
 				{ "amount": 30.0, "id": "beryl-nut", "type": "item" }
@@ -1409,9 +1409,9 @@
 			"out": [{ "amount": 3.0, "id": "medicinal-inhaler", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "pulse nobelisk",
+			"id": "pulse-nobelisk",
 			"in": [
 				{ "amount": 5.0, "id": "nobelisk", "type": "item" },
 				{ "amount": 1.0, "id": "crystal-oscillator", "type": "item" }
@@ -1421,7 +1421,7 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "quartz crystal",
+			"id": "quartz-crystal",
 			"in": [{ "amount": 37.5, "id": "raw-quartz", "type": "item" }],
 			"out": [{ "amount": 22.5, "id": "quartz-crystal", "type": "item" }]
 		},
@@ -1435,7 +1435,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "radio control unit",
+			"id": "radio-control-unit",
 			"in": [
 				{ "amount": 40.0, "id": "aluminum-casing", "type": "item" },
 				{ "amount": 1.25, "id": "crystal-oscillator", "type": "item" },
@@ -1446,7 +1446,7 @@
 		{
 			"category": "converter",
 			"duration": 60,
-			"id": "raw quartz (bauxite)",
+			"id": "raw-quartz (bauxite)",
 			"in": [
 				{ "amount": 10.0, "id": "reanimated-sam", "type": "item" },
 				{ "amount": 100.0, "id": "bauxite", "type": "item" }
@@ -1456,7 +1456,7 @@
 		{
 			"category": "converter",
 			"duration": 60,
-			"id": "raw quartz (coal)",
+			"id": "raw-quartz (coal)",
 			"in": [
 				{ "amount": 10.0, "id": "reanimated-sam", "type": "item" },
 				{ "amount": 240.0, "id": "coal", "type": "item" }
@@ -1466,14 +1466,14 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "reanimated sam",
+			"id": "reanimated-sam",
 			"in": [{ "amount": 120.0, "id": "sam", "type": "item" }],
 			"out": [{ "amount": 30.0, "id": "reanimated-sam", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "rebar gun",
+			"id": "rebar-gun",
 			"in": [
 				{ "amount": 6.0, "id": "reinforced-iron-plate", "type": "item" },
 				{ "amount": 16.0, "id": "iron-rod", "type": "item" },
@@ -1484,14 +1484,14 @@
 		{
 			"category": "smelter",
 			"duration": 60,
-			"id": "red ficsmas ornamentficsmas",
+			"id": "red-ficsmas-ornamentficsmas",
 			"in": [{ "amount": 5.0, "id": "ficsmas-gift", "type": "item" }],
 			"out": [{ "amount": 5.0, "id": "red-ficsmas-ornament", "type": "item" }]
 		},
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "reinforced iron plate",
+			"id": "reinforced-iron-plate",
 			"in": [
 				{ "amount": 30.0, "id": "iron-plate", "type": "item" },
 				{ "amount": 60.0, "id": "screws", "type": "item" }
@@ -1501,14 +1501,14 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "residual fuel",
+			"id": "residual-fuel",
 			"in": [{ "amount": 60.0, "id": "heavy-oil-residue", "type": "fluid" }],
 			"out": [{ "amount": 40.0, "id": "fuel", "type": "fluid" }]
 		},
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "residual plastic",
+			"id": "residual-plastic",
 			"in": [
 				{ "amount": 60.0, "id": "polymer-resin", "type": "item" },
 				{ "amount": 20.0, "id": "water", "type": "fluid" }
@@ -1518,7 +1518,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "residual rubber",
+			"id": "residual-rubber",
 			"in": [
 				{ "amount": 40.0, "id": "polymer-resin", "type": "item" },
 				{ "amount": 40.0, "id": "water", "type": "fluid" }
@@ -1526,7 +1526,7 @@
 			"out": [{ "amount": 20.0, "id": "rubber", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
 			"id": "rifle",
 			"in": [
@@ -1538,9 +1538,9 @@
 			"out": [{ "amount": 0.5, "id": "rifle", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "rifle ammo",
+			"id": "rifle-ammo",
 			"in": [
 				{ "amount": 15.0, "id": "copper-sheet", "type": "item" },
 				{ "amount": 10.0, "id": "smokeless-powder", "type": "item" }
@@ -1550,7 +1550,7 @@
 		{
 			"category": "blender",
 			"duration": 60,
-			"id": "rocket fuel",
+			"id": "rocket-fuel",
 			"in": [
 				{ "amount": 60.0, "id": "turbofuel", "type": "fluid" },
 				{ "amount": 10.0, "id": "nitric-acid", "type": "fluid" }
@@ -1583,7 +1583,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "sam fluctuator",
+			"id": "sam-fluctuator",
 			"in": [
 				{ "amount": 60.0, "id": "reanimated-sam", "type": "item" },
 				{ "amount": 50.0, "id": "wire", "type": "item" },
@@ -1599,9 +1599,9 @@
 			"out": [{ "amount": 40.0, "id": "screws", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "shatter rebar",
+			"id": "shatter-rebar",
 			"in": [
 				{ "amount": 10.0, "id": "iron-rebar", "type": "item" },
 				{ "amount": 15.0, "id": "quartz-crystal", "type": "item" }
@@ -1618,7 +1618,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "singularity cell",
+			"id": "singularity-cell",
 			"in": [
 				{ "amount": 1.0, "id": "nuclear-pasta", "type": "item" },
 				{ "amount": 20.0, "id": "dark-matter-crystal", "type": "item" },
@@ -1630,7 +1630,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "smart plating",
+			"id": "smart-plating",
 			"in": [
 				{ "amount": 2.0, "id": "reinforced-iron-plate", "type": "item" },
 				{ "amount": 2.0, "id": "rotor", "type": "item" }
@@ -1640,7 +1640,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "smokeless powder",
+			"id": "smokeless-powder",
 			"in": [
 				{ "amount": 20.0, "id": "black-powder", "type": "item" },
 				{ "amount": 10.0, "id": "heavy-oil-residue", "type": "fluid" }
@@ -1657,14 +1657,14 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "solid biofuel",
+			"id": "solid-biofuel",
 			"in": [{ "amount": 120.0, "id": "biomass", "type": "item" }],
 			"out": [{ "amount": 60.0, "id": "solid-biofuel", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "sparkly fireworks",
+			"id": "sparkly-fireworks",
 			"in": [
 				{ "amount": 7.5, "id": "ficsmas-tree-branch", "type": "item" },
 				{ "amount": 5.0, "id": "ficsmas-actual-snow", "type": "item" }
@@ -1674,7 +1674,7 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "spitter protein",
+			"id": "spitter-protein",
 			"in": [{ "amount": 20.0, "id": "spitter-remains", "type": "item" }],
 			"out": [{ "amount": 20.0, "id": "alien-protein", "type": "item" }]
 		},
@@ -1691,14 +1691,14 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "steel beam",
+			"id": "steel-beam",
 			"in": [{ "amount": 60.0, "id": "steel-ingot", "type": "item" }],
 			"out": [{ "amount": 15.0, "id": "steel-beam", "type": "item" }]
 		},
 		{
 			"category": "foundry",
 			"duration": 60,
-			"id": "steel ingot",
+			"id": "steel-ingot",
 			"in": [
 				{ "amount": 45.0, "id": "iron-ore", "type": "item" },
 				{ "amount": 45.0, "id": "coal", "type": "item" }
@@ -1708,21 +1708,21 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "steel pipe",
+			"id": "steel-pipe",
 			"in": [{ "amount": 30.0, "id": "steel-ingot", "type": "item" }],
 			"out": [{ "amount": 20.0, "id": "steel-pipe", "type": "item" }]
 		},
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "stinger protein",
+			"id": "stinger-protein",
 			"in": [{ "amount": 20.0, "id": "stinger-remains", "type": "item" }],
 			"out": [{ "amount": 20.0, "id": "alien-protein", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "stun rebar",
+			"id": "stun-rebar",
 			"in": [
 				{ "amount": 10.0, "id": "iron-rebar", "type": "item" },
 				{ "amount": 50.0, "id": "quickwire", "type": "item" }
@@ -1752,7 +1752,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "sulfuric acid",
+			"id": "sulfuric-acid",
 			"in": [
 				{ "amount": 50.0, "id": "sulfur", "type": "item" },
 				{ "amount": 50.0, "id": "water", "type": "fluid" }
@@ -1772,9 +1772,9 @@
 			"out": [{ "amount": 1.8799999952316284, "id": "supercomputer", "type": "item" }]
 		},
 		{
-			"category": "quantum encoder",
+			"category": "quantum-encoder",
 			"duration": 60,
-			"id": "superposition oscillator",
+			"id": "superposition-oscillator",
 			"in": [
 				{ "amount": 30.0, "id": "dark-matter-crystal", "type": "item" },
 				{ "amount": 5.0, "id": "crystal-oscillator", "type": "item" },
@@ -1787,9 +1787,9 @@
 			]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "sweet fireworks",
+			"id": "sweet-fireworks",
 			"in": [
 				{ "amount": 15.0, "id": "ficsmas-tree-branch", "type": "item" },
 				{ "amount": 7.5, "id": "candy-cane", "type": "item" }
@@ -1797,9 +1797,9 @@
 			"out": [{ "amount": 2.5, "id": "sweet-fireworks", "type": "item" }]
 		},
 		{
-			"category": "quantum encoder",
+			"category": "quantum-encoder",
 			"duration": 60,
-			"id": "synthetic power shard",
+			"id": "synthetic-power-shard",
 			"in": [
 				{ "amount": 10.0, "id": "time-crystal", "type": "item" },
 				{ "amount": 10.0, "id": "dark-matter-crystal", "type": "item" },
@@ -1812,9 +1812,9 @@
 			]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "therapeutic inhaler",
+			"id": "therapeutic-inhaler",
 			"in": [
 				{ "amount": 45.0, "id": "mycelia", "type": "item" },
 				{ "amount": 3.0, "id": "alien-protein", "type": "item" },
@@ -1825,7 +1825,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "thermal propulsion rocket",
+			"id": "thermal-propulsion-rocket",
 			"in": [
 				{ "amount": 2.5, "id": "modular-engine", "type": "item" },
 				{ "amount": 1.0, "id": "turbo-motor", "type": "item" },
@@ -1837,14 +1837,14 @@
 		{
 			"category": "converter",
 			"duration": 60,
-			"id": "time crystal",
+			"id": "time-crystal",
 			"in": [{ "amount": 12.0, "id": "diamonds", "type": "item" }],
 			"out": [{ "amount": 6.0, "id": "time-crystal", "type": "item" }]
 		},
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "turbo motor",
+			"id": "turbo-motor",
 			"in": [
 				{ "amount": 7.5, "id": "cooling-system", "type": "item" },
 				{ "amount": 3.75, "id": "radio-control-unit", "type": "item" },
@@ -1854,9 +1854,9 @@
 			"out": [{ "amount": 1.8799999952316284, "id": "turbo-motor", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "turbo rifle ammo",
+			"id": "turbo-rifle-ammo",
 			"in": [
 				{ "amount": 125.0, "id": "rifle-ammo", "type": "item" },
 				{ "amount": 15.0, "id": "aluminum-casing", "type": "item" },
@@ -1867,7 +1867,7 @@
 		{
 			"category": "blender",
 			"duration": 60,
-			"id": "turbo rifle ammo",
+			"id": "turbo-rifle-ammo",
 			"in": [
 				{ "amount": 125.0, "id": "rifle-ammo", "type": "item" },
 				{ "amount": 15.0, "id": "aluminum-casing", "type": "item" },
@@ -1878,7 +1878,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "unpackage alumina solution",
+			"id": "unpackage-alumina-solution",
 			"in": [{ "amount": 120.0, "id": "packaged-alumina-solution", "type": "item" }],
 			"out": [
 				{ "amount": 120.0, "id": "alumina-solution", "type": "fluid" },
@@ -1888,7 +1888,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "unpackage fuel",
+			"id": "unpackage-fuel",
 			"in": [{ "amount": 60.0, "id": "packaged-fuel", "type": "item" }],
 			"out": [
 				{ "amount": 60.0, "id": "fuel", "type": "fluid" },
@@ -1898,7 +1898,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "unpackage heavy oil residue",
+			"id": "unpackage-heavy-oil-residue",
 			"in": [{ "amount": 20.0, "id": "packaged-heavy-oil-residue", "type": "item" }],
 			"out": [
 				{ "amount": 20.0, "id": "heavy-oil-residue", "type": "fluid" },
@@ -1908,7 +1908,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "unpackage ionized fuel",
+			"id": "unpackage-ionized-fuel",
 			"in": [{ "amount": 40.0, "id": "packaged-ionized-fuel", "type": "item" }],
 			"out": [
 				{ "amount": 80.0, "id": "ionized-fuel", "type": "fluid" },
@@ -1918,7 +1918,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "unpackage liquid biofuel",
+			"id": "unpackage-liquid-biofuel",
 			"in": [{ "amount": 60.0, "id": "packaged-liquid-biofuel", "type": "item" }],
 			"out": [
 				{ "amount": 60.0, "id": "liquid-biofuel", "type": "fluid" },
@@ -1928,7 +1928,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "unpackage nitric acid",
+			"id": "unpackage-nitric-acid",
 			"in": [{ "amount": 20.0, "id": "packaged-nitric-acid", "type": "item" }],
 			"out": [
 				{ "amount": 20.0, "id": "nitric-acid", "type": "fluid" },
@@ -1938,7 +1938,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "unpackage nitrogen gas",
+			"id": "unpackage-nitrogen-gas",
 			"in": [{ "amount": 60.0, "id": "packaged-nitrogen-gas", "type": "item" }],
 			"out": [
 				{ "amount": 240.0, "id": "nitrogen-gas", "type": "fluid" },
@@ -1948,7 +1948,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "unpackage oil",
+			"id": "unpackage-oil",
 			"in": [{ "amount": 60.0, "id": "packaged-oil", "type": "item" }],
 			"out": [
 				{ "amount": 60.0, "id": "crude-oil", "type": "fluid" },
@@ -1958,7 +1958,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "unpackage rocket fuel",
+			"id": "unpackage-rocket-fuel",
 			"in": [{ "amount": 60.0, "id": "packaged-rocket-fuel", "type": "item" }],
 			"out": [
 				{ "amount": 120.0, "id": "rocket-fuel", "type": "item" },
@@ -1968,7 +1968,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "unpackage sulfuric acid",
+			"id": "unpackage-sulfuric-acid",
 			"in": [{ "amount": 60.0, "id": "packaged-sulfuric-acid", "type": "item" }],
 			"out": [
 				{ "amount": 60.0, "id": "sulfuric-acid", "type": "fluid" },
@@ -1978,7 +1978,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "unpackage turbofuel",
+			"id": "unpackage-turbofuel",
 			"in": [{ "amount": 20.0, "id": "packaged-turbofuel", "type": "item" }],
 			"out": [
 				{ "amount": 20.0, "id": "turbofuel", "type": "fluid" },
@@ -1988,7 +1988,7 @@
 		{
 			"category": "packager",
 			"duration": 60,
-			"id": "unpackage water",
+			"id": "unpackage-water",
 			"in": [{ "amount": 120.0, "id": "packaged-water", "type": "item" }],
 			"out": [
 				{ "amount": 120.0, "id": "water", "type": "fluid" },
@@ -1998,7 +1998,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "uranium fuel rod",
+			"id": "uranium-fuel-rod",
 			"in": [
 				{ "amount": 20.0, "id": "encased-uranium-cell", "type": "item" },
 				{ "amount": 1.2000000476837158, "id": "encased-industrial-beam", "type": "item" },
@@ -2007,9 +2007,9 @@
 			"out": [{ "amount": 0.4000000059604645, "id": "uranium-fuel-rod", "type": "item" }]
 		},
 		{
-			"category": "nuclear power plant",
+			"category": "nuclear-power-plant",
 			"duration": 60,
-			"id": "uranium fuel rod (burning)",
+			"id": "uranium-fuel-rod (burning)",
 			"in": [
 				{ "amount": 0.20000000298023224, "id": "uranium-fuel-rod", "type": "item" },
 				{ "amount": 240.0, "id": "water", "type": "fluid" }
@@ -2019,7 +2019,7 @@
 		{
 			"category": "converter",
 			"duration": 60,
-			"id": "uranium ore (bauxite)",
+			"id": "uranium-ore (bauxite)",
 			"in": [
 				{ "amount": 10.0, "id": "reanimated-sam", "type": "item" },
 				{ "amount": 480.0, "id": "bauxite", "type": "item" }
@@ -2029,7 +2029,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "versatile framework",
+			"id": "versatile-framework",
 			"in": [
 				{ "amount": 2.5, "id": "modular-frame", "type": "item" },
 				{ "amount": 30.0, "id": "steel-beam", "type": "item" }
@@ -2037,9 +2037,9 @@
 			"out": [{ "amount": 5.0, "id": "versatile-framework", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
-			"id": "vitamin inhaler",
+			"id": "vitamin-inhaler",
 			"in": [
 				{ "amount": 30.0, "id": "mycelia", "type": "item" },
 				{ "amount": 15.0, "id": "paleberry", "type": "item" }
@@ -2054,7 +2054,7 @@
 			"out": [{ "amount": 30.0, "id": "wire", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
 			"id": "xeno-basher",
 			"in": [
@@ -2066,7 +2066,7 @@
 			"out": [{ "amount": 0.75, "id": "xeno-basher", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
 			"id": "xeno-zapper",
 			"in": [
@@ -2078,7 +2078,7 @@
 			"out": [{ "amount": 1.5, "id": "xeno-zapper", "type": "item" }]
 		},
 		{
-			"category": "equipment workshop",
+			"category": "equipment-workshop",
 			"duration": 60,
 			"id": "zipline",
 			"in": [
@@ -2092,7 +2092,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "adhered iron platealternate",
+			"id": "adhered-iron-platealternate",
 			"in": [
 				{ "amount": 11.25, "id": "iron-plate", "type": "item" },
 				{ "amount": 3.75, "id": "rubber", "type": "item" }
@@ -2102,7 +2102,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "alclad casingalternate",
+			"id": "alclad-casingalternate",
 			"in": [
 				{ "amount": 150.0, "id": "aluminum-ingot", "type": "item" },
 				{ "amount": 75.0, "id": "copper-ingot", "type": "item" }
@@ -2112,21 +2112,21 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "aluminum beamalternate",
+			"id": "aluminum-beamalternate",
 			"in": [{ "amount": 22.5, "id": "aluminum-ingot", "type": "item" }],
 			"out": [{ "amount": 22.5, "id": "steel-beam", "type": "item" }]
 		},
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "aluminum rodalternate",
+			"id": "aluminum-rodalternate",
 			"in": [{ "amount": 7.5, "id": "aluminum-ingot", "type": "item" }],
 			"out": [{ "amount": 52.5, "id": "iron-rod", "type": "item" }]
 		},
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "automated mineralternate",
+			"id": "automated-mineralternate",
 			"in": [
 				{ "amount": 4.0, "id": "steel-pipe", "type": "item" },
 				{ "amount": 4.0, "id": "iron-plate", "type": "item" }
@@ -2136,7 +2136,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "automated speed wiringalternate",
+			"id": "automated-speed-wiringalternate",
 			"in": [
 				{ "amount": 3.75, "id": "stator", "type": "item" },
 				{ "amount": 75.0, "id": "wire", "type": "item" },
@@ -2147,7 +2147,7 @@
 		{
 			"category": "foundry",
 			"duration": 60,
-			"id": "basic iron ingotalternate",
+			"id": "basic-iron-ingotalternate",
 			"in": [
 				{ "amount": 25.0, "id": "iron-ore", "type": "item" },
 				{ "amount": 40.0, "id": "limestone", "type": "item" }
@@ -2164,7 +2164,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "bolted framealternate",
+			"id": "bolted-framealternate",
 			"in": [
 				{ "amount": 7.5, "id": "reinforced-iron-plate", "type": "item" },
 				{ "amount": 140.0, "id": "screws", "type": "item" }
@@ -2174,7 +2174,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "bolted iron platealternate",
+			"id": "bolted-iron-platealternate",
 			"in": [
 				{ "amount": 90.0, "id": "iron-plate", "type": "item" },
 				{ "amount": 250.0, "id": "screws", "type": "item" }
@@ -2184,14 +2184,14 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "cast screwsalternate",
+			"id": "cast-screwsalternate",
 			"in": [{ "amount": 12.5, "id": "iron-ingot", "type": "item" }],
 			"out": [{ "amount": 50.0, "id": "screws", "type": "item" }]
 		},
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "caterium circuit boardalternate",
+			"id": "caterium-circuit-boardalternate",
 			"in": [
 				{ "amount": 12.5, "id": "plastic", "type": "item" },
 				{ "amount": 37.5, "id": "quickwire", "type": "item" }
@@ -2201,7 +2201,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "caterium computeralternate",
+			"id": "caterium-computeralternate",
 			"in": [
 				{ "amount": 15.0, "id": "circuit-board", "type": "item" },
 				{ "amount": 52.5, "id": "quickwire", "type": "item" },
@@ -2212,7 +2212,7 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "caterium wirealternate",
+			"id": "caterium-wirealternate",
 			"in": [{ "amount": 15.0, "id": "caterium-ingot", "type": "item" }],
 			"out": [{ "amount": 120.0, "id": "wire", "type": "item" }]
 		},
@@ -2226,7 +2226,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "cheap silicaalternate",
+			"id": "cheap-silicaalternate",
 			"in": [
 				{ "amount": 22.5, "id": "raw-quartz", "type": "item" },
 				{ "amount": 37.5, "id": "limestone", "type": "item" }
@@ -2236,7 +2236,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "classic batteryalternate",
+			"id": "classic-batteryalternate",
 			"in": [
 				{ "amount": 45.0, "id": "sulfur", "type": "item" },
 				{ "amount": 52.5, "id": "alclad-aluminum-sheet", "type": "item" },
@@ -2246,9 +2246,9 @@
 			"out": [{ "amount": 30.0, "id": "battery", "type": "item" }]
 		},
 		{
-			"category": "particle accelerator",
+			"category": "particle-accelerator",
 			"duration": 60,
-			"id": "cloudy diamondsalternate",
+			"id": "cloudy-diamondsalternate",
 			"in": [
 				{ "amount": 240.0, "id": "coal", "type": "item" },
 				{ "amount": 480.0, "id": "limestone", "type": "item" }
@@ -2258,7 +2258,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "coated cablealternate",
+			"id": "coated-cablealternate",
 			"in": [
 				{ "amount": 37.5, "id": "wire", "type": "item" },
 				{ "amount": 15.0, "id": "heavy-oil-residue", "type": "fluid" }
@@ -2268,7 +2268,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "coated iron canisteralternate",
+			"id": "coated-iron-canisteralternate",
 			"in": [
 				{ "amount": 30.0, "id": "iron-plate", "type": "item" },
 				{ "amount": 15.0, "id": "copper-sheet", "type": "item" }
@@ -2278,7 +2278,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "coated iron platealternate",
+			"id": "coated-iron-platealternate",
 			"in": [
 				{ "amount": 37.5, "id": "iron-ingot", "type": "item" },
 				{ "amount": 7.5, "id": "plastic", "type": "item" }
@@ -2288,7 +2288,7 @@
 		{
 			"category": "foundry",
 			"duration": 60,
-			"id": "coke steel ingotalternate",
+			"id": "coke-steel-ingotalternate",
 			"in": [
 				{ "amount": 75.0, "id": "iron-ore", "type": "item" },
 				{ "amount": 75.0, "id": "petroleum-coke", "type": "item" }
@@ -2298,7 +2298,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "compacted coalalternate",
+			"id": "compacted-coalalternate",
 			"in": [
 				{ "amount": 25.0, "id": "coal", "type": "item" },
 				{ "amount": 25.0, "id": "sulfur", "type": "item" }
@@ -2308,7 +2308,7 @@
 		{
 			"category": "foundry",
 			"duration": 60,
-			"id": "compacted steel ingotalternate",
+			"id": "compacted-steel-ingotalternate",
 			"in": [
 				{ "amount": 5.0, "id": "iron-ore", "type": "item" },
 				{ "amount": 2.5, "id": "compacted-coal", "type": "item" }
@@ -2318,7 +2318,7 @@
 		{
 			"category": "blender",
 			"duration": 60,
-			"id": "cooling devicealternate",
+			"id": "cooling-devicealternate",
 			"in": [
 				{ "amount": 10.0, "id": "heat-sink", "type": "item" },
 				{ "amount": 2.5, "id": "motor", "type": "item" },
@@ -2329,7 +2329,7 @@
 		{
 			"category": "foundry",
 			"duration": 60,
-			"id": "copper alloy ingotalternate",
+			"id": "copper-alloy-ingotalternate",
 			"in": [
 				{ "amount": 50.0, "id": "copper-ore", "type": "item" },
 				{ "amount": 50.0, "id": "iron-ore", "type": "item" }
@@ -2339,7 +2339,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "copper rotoralternate",
+			"id": "copper-rotoralternate",
 			"in": [
 				{ "amount": 22.5, "id": "copper-sheet", "type": "item" },
 				{ "amount": 195.0, "id": "screws", "type": "item" }
@@ -2349,7 +2349,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "crystal computeralternate",
+			"id": "crystal-computeralternate",
 			"in": [
 				{ "amount": 5.0, "id": "circuit-board", "type": "item" },
 				{ "amount": 1.6699999570846558, "id": "crystal-oscillator", "type": "item" }
@@ -2357,16 +2357,16 @@
 			"out": [{ "amount": 3.3299999237060547, "id": "computer", "type": "item" }]
 		},
 		{
-			"category": "particle accelerator",
+			"category": "particle-accelerator",
 			"duration": 60,
-			"id": "dark matter crystallizationalternate",
+			"id": "dark-matter-crystallizationalternate",
 			"in": [{ "amount": 200.0, "id": "dark-matter-residue", "type": "item" }],
 			"out": [{ "amount": 20.0, "id": "dark-matter-crystal", "type": "item" }]
 		},
 		{
-			"category": "particle accelerator",
+			"category": "particle-accelerator",
 			"duration": 60,
-			"id": "dark matter trapalternate",
+			"id": "dark-matter-trapalternate",
 			"in": [
 				{ "amount": 30.0, "id": "time-crystal", "type": "item" },
 				{ "amount": 150.0, "id": "dark-matter-residue", "type": "item" }
@@ -2376,7 +2376,7 @@
 		{
 			"category": "converter",
 			"duration": 60,
-			"id": "dark-ion fuelalternate",
+			"id": "dark-ion-fuelalternate",
 			"in": [
 				{ "amount": 240.0, "id": "packaged-rocket-fuel", "type": "item" },
 				{ "amount": 80.0, "id": "dark-matter-crystal", "type": "item" }
@@ -2389,7 +2389,7 @@
 		{
 			"category": "blender",
 			"duration": 60,
-			"id": "diluted fuelalternate",
+			"id": "diluted-fuelalternate",
 			"in": [
 				{ "amount": 50.0, "id": "heavy-oil-residue", "type": "fluid" },
 				{ "amount": 100.0, "id": "water", "type": "fluid" }
@@ -2399,7 +2399,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "diluted packaged fuelalternate",
+			"id": "diluted-packaged-fuelalternate",
 			"in": [
 				{ "amount": 30.0, "id": "heavy-oil-residue", "type": "fluid" },
 				{ "amount": 60.0, "id": "packaged-water", "type": "item" }
@@ -2409,7 +2409,7 @@
 		{
 			"category": "blender",
 			"duration": 60,
-			"id": "distilled silicaalternate",
+			"id": "distilled-silicaalternate",
 			"in": [
 				{ "amount": 120.0, "id": "dissolved-silica", "type": "item" },
 				{ "amount": 50.0, "id": "limestone", "type": "item" },
@@ -2423,7 +2423,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "electric motoralternate",
+			"id": "electric-motoralternate",
 			"in": [
 				{ "amount": 3.75, "id": "electromagnetic-control-rod", "type": "item" },
 				{ "amount": 7.5, "id": "rotor", "type": "item" }
@@ -2433,7 +2433,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "electrode aluminum scrapalternate",
+			"id": "electrode-aluminum-scrapalternate",
 			"in": [
 				{ "amount": 180.0, "id": "alumina-solution", "type": "fluid" },
 				{ "amount": 60.0, "id": "petroleum-coke", "type": "item" }
@@ -2446,7 +2446,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "electrode circuit boardalternate",
+			"id": "electrode-circuit-boardalternate",
 			"in": [
 				{ "amount": 20.0, "id": "rubber", "type": "item" },
 				{ "amount": 40.0, "id": "petroleum-coke", "type": "item" }
@@ -2456,7 +2456,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "electromagnetic connection rodalternate",
+			"id": "electromagnetic-connection-rodalternate",
 			"in": [
 				{ "amount": 8.0, "id": "stator", "type": "item" },
 				{ "amount": 4.0, "id": "high-speed-connector", "type": "item" }
@@ -2466,7 +2466,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "encased industrial pipealternate",
+			"id": "encased-industrial-pipealternate",
 			"in": [
 				{ "amount": 24.0, "id": "steel-pipe", "type": "item" },
 				{ "amount": 20.0, "id": "concrete", "type": "item" }
@@ -2476,7 +2476,7 @@
 		{
 			"category": "blender",
 			"duration": 60,
-			"id": "fertile uraniumalternate",
+			"id": "fertile-uraniumalternate",
 			"in": [
 				{ "amount": 25.0, "id": "uranium", "type": "item" },
 				{ "amount": 25.0, "id": "uranium-waste", "type": "item" },
@@ -2491,7 +2491,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "fine black powderalternate",
+			"id": "fine-black-powderalternate",
 			"in": [
 				{ "amount": 7.5, "id": "sulfur", "type": "item" },
 				{ "amount": 15.0, "id": "compacted-coal", "type": "item" }
@@ -2501,7 +2501,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "fine concretealternate",
+			"id": "fine-concretealternate",
 			"in": [
 				{ "amount": 15.0, "id": "silica", "type": "item" },
 				{ "amount": 60.0, "id": "limestone", "type": "item" }
@@ -2511,7 +2511,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "flexible frameworkalternate",
+			"id": "flexible-frameworkalternate",
 			"in": [
 				{ "amount": 3.75, "id": "modular-frame", "type": "item" },
 				{ "amount": 22.5, "id": "steel-beam", "type": "item" },
@@ -2522,7 +2522,7 @@
 		{
 			"category": "foundry",
 			"duration": 60,
-			"id": "fused quartz crystalalternate",
+			"id": "fused-quartz-crystalalternate",
 			"in": [
 				{ "amount": 75.0, "id": "raw-quartz", "type": "item" },
 				{ "amount": 36.0, "id": "coal", "type": "item" }
@@ -2532,7 +2532,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "fused quickwirealternate",
+			"id": "fused-quickwirealternate",
 			"in": [
 				{ "amount": 7.5, "id": "caterium-ingot", "type": "item" },
 				{ "amount": 37.5, "id": "copper-ingot", "type": "item" }
@@ -2542,7 +2542,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "fused wirealternate",
+			"id": "fused-wirealternate",
 			"in": [
 				{ "amount": 12.0, "id": "copper-ingot", "type": "item" },
 				{ "amount": 3.0, "id": "caterium-ingot", "type": "item" }
@@ -2552,7 +2552,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "heat exchangeralternate",
+			"id": "heat-exchangeralternate",
 			"in": [
 				{ "amount": 30.0, "id": "aluminum-casing", "type": "item" },
 				{ "amount": 30.0, "id": "rubber", "type": "item" }
@@ -2562,7 +2562,7 @@
 		{
 			"category": "blender",
 			"duration": 60,
-			"id": "heat-fused framealternate",
+			"id": "heat-fused-framealternate",
 			"in": [
 				{ "amount": 3.0, "id": "heavy-modular-frame", "type": "item" },
 				{ "amount": 150.0, "id": "aluminum-ingot", "type": "item" },
@@ -2574,7 +2574,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "heavy encased framealternate",
+			"id": "heavy-encased-framealternate",
 			"in": [
 				{ "amount": 7.5, "id": "modular-frame", "type": "item" },
 				{ "amount": 9.380000114440918, "id": "encased-industrial-beam", "type": "item" },
@@ -2586,7 +2586,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "heavy flexible framealternate",
+			"id": "heavy-flexible-framealternate",
 			"in": [
 				{ "amount": 18.75, "id": "modular-frame", "type": "item" },
 				{ "amount": 11.25, "id": "encased-industrial-beam", "type": "item" },
@@ -2598,7 +2598,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "heavy oil residuealternate",
+			"id": "heavy-oil-residuealternate",
 			"in": [{ "amount": 30.0, "id": "crude-oil", "type": "fluid" }],
 			"out": [
 				{ "amount": 40.0, "id": "heavy-oil-residue", "type": "fluid" },
@@ -2608,7 +2608,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "infused uranium cellalternate",
+			"id": "infused-uranium-cellalternate",
 			"in": [
 				{ "amount": 25.0, "id": "uranium", "type": "item" },
 				{ "amount": 15.0, "id": "silica", "type": "item" },
@@ -2618,9 +2618,9 @@
 			"out": [{ "amount": 20.0, "id": "encased-uranium-cell", "type": "item" }]
 		},
 		{
-			"category": "particle accelerator",
+			"category": "particle-accelerator",
 			"duration": 60,
-			"id": "instant plutonium cellalternate",
+			"id": "instant-plutonium-cellalternate",
 			"in": [
 				{ "amount": 75.0, "id": "non-fissile-uranium", "type": "item" },
 				{ "amount": 10.0, "id": "aluminum-casing", "type": "item" }
@@ -2630,7 +2630,7 @@
 		{
 			"category": "blender",
 			"duration": 60,
-			"id": "instant scrapalternate",
+			"id": "instant-scrapalternate",
 			"in": [
 				{ "amount": 150.0, "id": "bauxite", "type": "item" },
 				{ "amount": 100.0, "id": "coal", "type": "item" },
@@ -2645,7 +2645,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "insulated cablealternate",
+			"id": "insulated-cablealternate",
 			"in": [
 				{ "amount": 45.0, "id": "wire", "type": "item" },
 				{ "amount": 30.0, "id": "rubber", "type": "item" }
@@ -2655,7 +2655,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "insulated crystal oscillatoralternate",
+			"id": "insulated-crystal-oscillatoralternate",
 			"in": [
 				{ "amount": 18.75, "id": "quartz-crystal", "type": "item" },
 				{ "amount": 13.130000114440918, "id": "rubber", "type": "item" },
@@ -2666,7 +2666,7 @@
 		{
 			"category": "foundry",
 			"duration": 60,
-			"id": "iron alloy ingotalternate",
+			"id": "iron-alloy-ingotalternate",
 			"in": [
 				{ "amount": 40.0, "id": "iron-ore", "type": "item" },
 				{ "amount": 10.0, "id": "copper-ore", "type": "item" }
@@ -2676,21 +2676,21 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "iron pipealternate",
+			"id": "iron-pipealternate",
 			"in": [{ "amount": 100.0, "id": "iron-ingot", "type": "item" }],
 			"out": [{ "amount": 25.0, "id": "steel-pipe", "type": "item" }]
 		},
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "iron wirealternate",
+			"id": "iron-wirealternate",
 			"in": [{ "amount": 12.5, "id": "iron-ingot", "type": "item" }],
 			"out": [{ "amount": 22.5, "id": "wire", "type": "item" }]
 		},
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "leached caterium ingotalternate",
+			"id": "leached-caterium-ingotalternate",
 			"in": [
 				{ "amount": 54.0, "id": "caterium-ore", "type": "item" },
 				{ "amount": 30.0, "id": "sulfuric-acid", "type": "fluid" }
@@ -2700,7 +2700,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "leached copper ingotalternate",
+			"id": "leached-copper-ingotalternate",
 			"in": [
 				{ "amount": 45.0, "id": "copper-ore", "type": "item" },
 				{ "amount": 25.0, "id": "sulfuric-acid", "type": "fluid" }
@@ -2710,7 +2710,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "leached iron ingotalternate",
+			"id": "leached-iron-ingotalternate",
 			"in": [
 				{ "amount": 50.0, "id": "iron-ore", "type": "item" },
 				{ "amount": 10.0, "id": "sulfuric-acid", "type": "fluid" }
@@ -2720,7 +2720,7 @@
 		{
 			"category": "foundry",
 			"duration": 60,
-			"id": "molded beamalternate",
+			"id": "molded-beamalternate",
 			"in": [
 				{ "amount": 120.0, "id": "steel-ingot", "type": "item" },
 				{ "amount": 80.0, "id": "concrete", "type": "item" }
@@ -2730,7 +2730,7 @@
 		{
 			"category": "foundry",
 			"duration": 60,
-			"id": "molded steel pipealternate",
+			"id": "molded-steel-pipealternate",
 			"in": [
 				{ "amount": 50.0, "id": "steel-ingot", "type": "item" },
 				{ "amount": 30.0, "id": "concrete", "type": "item" }
@@ -2740,7 +2740,7 @@
 		{
 			"category": "blender",
 			"duration": 60,
-			"id": "nitro rocket fuelalternate",
+			"id": "nitro-rocket-fuelalternate",
 			"in": [
 				{ "amount": 100.0, "id": "fuel", "type": "fluid" },
 				{ "amount": 75.0, "id": "nitrogen-gas", "type": "fluid" },
@@ -2755,7 +2755,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "oc supercomputeralternate",
+			"id": "oc-supercomputeralternate",
 			"in": [
 				{ "amount": 6.0, "id": "radio-control-unit", "type": "item" },
 				{ "amount": 6.0, "id": "cooling-system", "type": "item" }
@@ -2763,23 +2763,23 @@
 			"out": [{ "amount": 3.0, "id": "supercomputer", "type": "item" }]
 		},
 		{
-			"category": "particle accelerator",
+			"category": "particle-accelerator",
 			"duration": 60,
-			"id": "oil-based diamondsalternate",
+			"id": "oil-based-diamondsalternate",
 			"in": [{ "amount": 200.0, "id": "crude-oil", "type": "fluid" }],
 			"out": [{ "amount": 40.0, "id": "diamonds", "type": "item" }]
 		},
 		{
-			"category": "particle accelerator",
+			"category": "particle-accelerator",
 			"duration": 60,
-			"id": "petroleum diamondsalternate",
+			"id": "petroleum-diamondsalternate",
 			"in": [{ "amount": 720.0, "id": "petroleum-coke", "type": "item" }],
 			"out": [{ "amount": 30.0, "id": "diamonds", "type": "item" }]
 		},
 		{
 			"category": "converter",
 			"duration": 60,
-			"id": "pink diamondsalternate",
+			"id": "pink-diamondsalternate",
 			"in": [
 				{ "amount": 120.0, "id": "coal", "type": "item" },
 				{ "amount": 45.0, "id": "quartz-crystal", "type": "item" }
@@ -2789,7 +2789,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "plastic ai limiteralternate",
+			"id": "plastic-ai-limiteralternate",
 			"in": [
 				{ "amount": 120.0, "id": "quickwire", "type": "item" },
 				{ "amount": 28.0, "id": "plastic", "type": "item" }
@@ -2799,7 +2799,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "plastic smart platingalternate",
+			"id": "plastic-smart-platingalternate",
 			"in": [
 				{ "amount": 2.5, "id": "reinforced-iron-plate", "type": "item" },
 				{ "amount": 2.5, "id": "rotor", "type": "item" },
@@ -2810,7 +2810,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "plutonium fuel unitalternate",
+			"id": "plutonium-fuel-unitalternate",
 			"in": [
 				{ "amount": 10.0, "id": "encased-plutonium-cell", "type": "item" },
 				{ "amount": 0.5, "id": "pressure-conversion-cube", "type": "item" }
@@ -2820,7 +2820,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "polyester fabricalternate",
+			"id": "polyester-fabricalternate",
 			"in": [
 				{ "amount": 30.0, "id": "polymer-resin", "type": "item" },
 				{ "amount": 30.0, "id": "water", "type": "fluid" }
@@ -2830,7 +2830,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "polymer resinalternate",
+			"id": "polymer-resinalternate",
 			"in": [{ "amount": 60.0, "id": "crude-oil", "type": "fluid" }],
 			"out": [
 				{ "amount": 130.0, "id": "polymer-resin", "type": "item" },
@@ -2840,14 +2840,14 @@
 		{
 			"category": "smelter",
 			"duration": 60,
-			"id": "pure aluminum ingotalternate",
+			"id": "pure-aluminum-ingotalternate",
 			"in": [{ "amount": 60.0, "id": "aluminum-scrap", "type": "item" }],
 			"out": [{ "amount": 30.0, "id": "aluminum-ingot", "type": "item" }]
 		},
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "pure caterium ingotalternate",
+			"id": "pure-caterium-ingotalternate",
 			"in": [
 				{ "amount": 24.0, "id": "caterium-ore", "type": "item" },
 				{ "amount": 24.0, "id": "water", "type": "fluid" }
@@ -2857,7 +2857,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "pure copper ingotalternate",
+			"id": "pure-copper-ingotalternate",
 			"in": [
 				{ "amount": 15.0, "id": "copper-ore", "type": "item" },
 				{ "amount": 10.0, "id": "water", "type": "fluid" }
@@ -2867,7 +2867,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "pure iron ingotalternate",
+			"id": "pure-iron-ingotalternate",
 			"in": [
 				{ "amount": 35.0, "id": "iron-ore", "type": "item" },
 				{ "amount": 20.0, "id": "water", "type": "fluid" }
@@ -2877,7 +2877,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "pure quartz crystalalternate",
+			"id": "pure-quartz-crystalalternate",
 			"in": [
 				{ "amount": 67.5, "id": "raw-quartz", "type": "item" },
 				{ "amount": 37.5, "id": "water", "type": "fluid" }
@@ -2887,7 +2887,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "quartz purificationalternate",
+			"id": "quartz-purificationalternate",
 			"in": [
 				{ "amount": 120.0, "id": "raw-quartz", "type": "item" },
 				{ "amount": 10.0, "id": "nitric-acid", "type": "fluid" }
@@ -2900,7 +2900,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "quickwire cablealternate",
+			"id": "quickwire-cablealternate",
 			"in": [
 				{ "amount": 7.5, "id": "quickwire", "type": "item" },
 				{ "amount": 5.0, "id": "rubber", "type": "item" }
@@ -2910,7 +2910,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "quickwire statoralternate",
+			"id": "quickwire-statoralternate",
 			"in": [
 				{ "amount": 16.0, "id": "steel-pipe", "type": "item" },
 				{ "amount": 60.0, "id": "quickwire", "type": "item" }
@@ -2920,7 +2920,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "radio connection unitalternate",
+			"id": "radio-connection-unitalternate",
 			"in": [
 				{ "amount": 15.0, "id": "heat-sink", "type": "item" },
 				{ "amount": 7.5, "id": "high-speed-connector", "type": "item" },
@@ -2931,7 +2931,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "radio control systemalternate",
+			"id": "radio-control-systemalternate",
 			"in": [
 				{ "amount": 1.5, "id": "crystal-oscillator", "type": "item" },
 				{ "amount": 15.0, "id": "circuit-board", "type": "item" },
@@ -2943,7 +2943,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "recycled plasticalternate",
+			"id": "recycled-plasticalternate",
 			"in": [
 				{ "amount": 30.0, "id": "rubber", "type": "item" },
 				{ "amount": 30.0, "id": "fuel", "type": "fluid" }
@@ -2953,7 +2953,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "recycled rubberalternate",
+			"id": "recycled-rubberalternate",
 			"in": [
 				{ "amount": 30.0, "id": "plastic", "type": "item" },
 				{ "amount": 30.0, "id": "fuel", "type": "fluid" }
@@ -2963,7 +2963,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "rigor motoralternate",
+			"id": "rigor-motoralternate",
 			"in": [
 				{ "amount": 3.75, "id": "rotor", "type": "item" },
 				{ "amount": 3.75, "id": "stator", "type": "item" },
@@ -2974,7 +2974,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "rubber concretealternate",
+			"id": "rubber-concretealternate",
 			"in": [
 				{ "amount": 100.0, "id": "limestone", "type": "item" },
 				{ "amount": 20.0, "id": "rubber", "type": "item" }
@@ -2984,7 +2984,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "silicon circuit boardalternate",
+			"id": "silicon-circuit-boardalternate",
 			"in": [
 				{ "amount": 27.5, "id": "copper-sheet", "type": "item" },
 				{ "amount": 27.5, "id": "silica", "type": "item" }
@@ -2994,7 +2994,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "silicon high-speed connectoralternate",
+			"id": "silicon-high-speed-connectoralternate",
 			"in": [
 				{ "amount": 90.0, "id": "quickwire", "type": "item" },
 				{ "amount": 37.5, "id": "silica", "type": "item" },
@@ -3005,7 +3005,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "sloppy aluminaalternate",
+			"id": "sloppy-aluminaalternate",
 			"in": [
 				{ "amount": 200.0, "id": "bauxite", "type": "item" },
 				{ "amount": 200.0, "id": "water", "type": "fluid" }
@@ -3015,7 +3015,7 @@
 		{
 			"category": "foundry",
 			"duration": 60,
-			"id": "solid steel ingotalternate",
+			"id": "solid-steel-ingotalternate",
 			"in": [
 				{ "amount": 40.0, "id": "iron-ingot", "type": "item" },
 				{ "amount": 40.0, "id": "coal", "type": "item" }
@@ -3025,7 +3025,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "steamed copper sheetalternate",
+			"id": "steamed-copper-sheetalternate",
 			"in": [
 				{ "amount": 22.5, "id": "copper-ingot", "type": "item" },
 				{ "amount": 22.5, "id": "water", "type": "fluid" }
@@ -3035,14 +3035,14 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "steel canisteralternate",
+			"id": "steel-canisteralternate",
 			"in": [{ "amount": 40.0, "id": "steel-ingot", "type": "item" }],
 			"out": [{ "amount": 40.0, "id": "empty-canister", "type": "item" }]
 		},
 		{
 			"category": "foundry",
 			"duration": 60,
-			"id": "steel cast platealternate",
+			"id": "steel-cast-platealternate",
 			"in": [
 				{ "amount": 15.0, "id": "iron-ingot", "type": "item" },
 				{ "amount": 15.0, "id": "steel-ingot", "type": "item" }
@@ -3052,14 +3052,14 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "steel rodalternate",
+			"id": "steel-rodalternate",
 			"in": [{ "amount": 12.0, "id": "steel-ingot", "type": "item" }],
 			"out": [{ "amount": 48.0, "id": "iron-rod", "type": "item" }]
 		},
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "steel rotoralternate",
+			"id": "steel-rotoralternate",
 			"in": [
 				{ "amount": 10.0, "id": "steel-pipe", "type": "item" },
 				{ "amount": 30.0, "id": "wire", "type": "item" }
@@ -3069,14 +3069,14 @@
 		{
 			"category": "constructor",
 			"duration": 60,
-			"id": "steel screwsalternate",
+			"id": "steel-screwsalternate",
 			"in": [{ "amount": 5.0, "id": "steel-beam", "type": "item" }],
 			"out": [{ "amount": 260.0, "id": "screws", "type": "item" }]
 		},
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "steeled framealternate",
+			"id": "steeled-framealternate",
 			"in": [
 				{ "amount": 2.0, "id": "reinforced-iron-plate", "type": "item" },
 				{ "amount": 10.0, "id": "steel-pipe", "type": "item" }
@@ -3086,7 +3086,7 @@
 		{
 			"category": "assembler",
 			"duration": 60,
-			"id": "stitched iron platealternate",
+			"id": "stitched-iron-platealternate",
 			"in": [
 				{ "amount": 18.75, "id": "iron-plate", "type": "item" },
 				{ "amount": 37.5, "id": "wire", "type": "item" }
@@ -3096,7 +3096,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "super-state computeralternate",
+			"id": "super-state-computeralternate",
 			"in": [
 				{ "amount": 7.199999809265137, "id": "computer", "type": "item" },
 				{ "amount": 2.4000000953674316, "id": "electromagnetic-control-rod", "type": "item" },
@@ -3108,7 +3108,7 @@
 		{
 			"category": "foundry",
 			"duration": 60,
-			"id": "tempered caterium ingotalternate",
+			"id": "tempered-caterium-ingotalternate",
 			"in": [
 				{ "amount": 45.0, "id": "caterium-ore", "type": "item" },
 				{ "amount": 15.0, "id": "petroleum-coke", "type": "item" }
@@ -3118,7 +3118,7 @@
 		{
 			"category": "foundry",
 			"duration": 60,
-			"id": "tempered copper ingotalternate",
+			"id": "tempered-copper-ingotalternate",
 			"in": [
 				{ "amount": 25.0, "id": "copper-ore", "type": "item" },
 				{ "amount": 40.0, "id": "petroleum-coke", "type": "item" }
@@ -3128,7 +3128,7 @@
 		{
 			"category": "blender",
 			"duration": 60,
-			"id": "turbo blend fuelalternate",
+			"id": "turbo-blend-fuelalternate",
 			"in": [
 				{ "amount": 15.0, "id": "fuel", "type": "fluid" },
 				{ "amount": 30.0, "id": "heavy-oil-residue", "type": "fluid" },
@@ -3138,9 +3138,9 @@
 			"out": [{ "amount": 45.0, "id": "turbofuel", "type": "fluid" }]
 		},
 		{
-			"category": "particle accelerator",
+			"category": "particle-accelerator",
 			"duration": 60,
-			"id": "turbo diamondsalternate",
+			"id": "turbo-diamondsalternate",
 			"in": [
 				{ "amount": 600.0, "id": "coal", "type": "item" },
 				{ "amount": 40.0, "id": "packaged-turbofuel", "type": "item" }
@@ -3150,7 +3150,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "turbo electric motoralternate",
+			"id": "turbo-electric-motoralternate",
 			"in": [
 				{ "amount": 6.559999942779541, "id": "motor", "type": "item" },
 				{ "amount": 8.4399995803833, "id": "radio-control-unit", "type": "item" },
@@ -3162,7 +3162,7 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "turbo heavy fuelalternate",
+			"id": "turbo-heavy-fuelalternate",
 			"in": [
 				{ "amount": 37.5, "id": "heavy-oil-residue", "type": "fluid" },
 				{ "amount": 30.0, "id": "compacted-coal", "type": "item" }
@@ -3172,7 +3172,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "turbo pressure motoralternate",
+			"id": "turbo-pressure-motoralternate",
 			"in": [
 				{ "amount": 7.5, "id": "motor", "type": "item" },
 				{ "amount": 1.8799999952316284, "id": "pressure-conversion-cube", "type": "item" },
@@ -3194,7 +3194,7 @@
 		{
 			"category": "manufacturer",
 			"duration": 60,
-			"id": "uranium fuel unitalternate",
+			"id": "uranium-fuel-unitalternate",
 			"in": [
 				{ "amount": 20.0, "id": "encased-uranium-cell", "type": "item" },
 				{ "amount": 2.0, "id": "electromagnetic-control-rod", "type": "item" },
@@ -3206,12 +3206,239 @@
 		{
 			"category": "refinery",
 			"duration": 60,
-			"id": "wet concretealternate",
+			"id": "wet-concretealternate",
 			"in": [
 				{ "amount": 120.0, "id": "limestone", "type": "item" },
 				{ "amount": 100.0, "id": "water", "type": "fluid" }
 			],
 			"out": [{ "amount": 80.0, "id": "concrete", "type": "item" }]
+		}
+	],
+	"machines": [
+		{
+			"id": "constructor",
+			"recipeCategories": ["constructor"],
+			"requiredPower": 4000000,
+			"features": [
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 1,
+					"effectPerSlot": ["summerslooping"]
+				}
+			]
+		},
+		{
+			"id": "assembler",
+			"recipeCategories": ["assembler"],
+			"requiredPower": 15000000,
+			"features": [
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 2,
+					"effectPerSlot": ["summerslooping"]
+				}
+			]
+		},
+		{
+			"id": "blender",
+			"recipeCategories": ["blender"],
+			"requiredPower": 75000000,
+			"features": [
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 4,
+					"effectPerSlot": ["summerslooping"]
+				}
+			]
+		},
+		{
+			"id": "foundry",
+			"recipeCategories": ["foundry"],
+			"requiredPower": 16000000,
+			"features": [
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 2,
+					"effectPerSlot": ["summerslooping"]
+				}
+			]
+		},
+		{
+			"id": "manufacturer",
+			"recipeCategories": ["manufacturer"],
+			"requiredPower": 55000000,
+			"features": [
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 4,
+					"effectPerSlot": ["summerslooping"]
+				}
+			]
+		},
+		{
+			"id": "particle-accelerator",
+			"recipeCategories": ["particle-accelerator"],
+			"requiredPower": 0,
+			"features": [
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 4,
+					"effectPerSlot": ["summerslooping"]
+				}
+			]
+		},
+		{
+			"id": "refinery",
+			"recipeCategories": ["refinery"],
+			"requiredPower": 30000000,
+			"features": [
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 2,
+					"effectPerSlot": ["summerslooping"]
+				}
+			]
+		},
+		{
+			"id": "quantum-encoder",
+			"recipeCategories": ["quantum-encoder"],
+			"requiredPower": 0,
+			"features": [
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 2,
+					"effectPerSlot": ["summerslooping"]
+				}
+			]
+		}
+	],
+	"machineEffects": [
+		{
+			"id": "overclocking",
+			"perSlot": true,
+			"modifiers": [
+				{
+					"id": "speed",
+					"value": 1.5,
+					"modifiable": true
+				},
+				{
+					"id": "power",
+					"value": 1.32,
+					"valueScaling": "exponential"
+				}
+			]
+		},
+		{
+			"id": "underclocking",
+			"perSlot": true,
+			"modifiers": [
+				{
+					"id": "speed",
+					"value": 0.5,
+					"modifiable": true
+				},
+				{
+					"id": "power",
+					"value": 1.32,
+					"valueScaling": "exponential"
+				}
+			]
+		},
+		{
+			"id": "summerslooping",
+			"perSlot": false,
+			"modifiers": [
+				{
+					"id": "speed",
+					"value": 2,
+					"modifiable": true
+				},
+				{
+					"id": "power",
+					"value": 4
+				}
+			]
 		}
 	]
 }
