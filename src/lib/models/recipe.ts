@@ -1,4 +1,4 @@
-export interface BaseItemIO {
+export interface BaseItemIo {
 	id: string;
 	type: 'item' | 'fluid';
 	amount: number;
@@ -7,8 +7,8 @@ export interface BaseItemIO {
 export default interface Recipe {
 	id: string;
 	name?: string;
-	in: BaseItemIO[];
-	out: BaseItemIO[];
+	in: BaseItemIo[];
+	out: BaseItemIo[];
 	duration: number;
 	category: string;
 }
