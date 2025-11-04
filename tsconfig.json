@@ -11,7 +11,8 @@
 		"moduleDetection": "force",
 		"baseUrl": "./",
 		"paths": {
-			"@/*": ["src/*"]
+			"@/*": ["src/*"],
+			"@profiles/*": ["profiles/*"]
 		},
 		"resolveJsonModule": true,
 		"allowSyntheticDefaultImports": true

@@ -1,7 +1,7 @@
 import type Profile from '@/lib/models/profile';
-import satisfactory from 'profiles/satisfactory.json';
-import factorio from 'profiles/factorio.json';
-import factorioSpaceage from 'profiles/factorio-spaceage.json';
+import factorioSpaceage from '@profiles/factorio-spaceage.json';
+import factorio from '@profiles/factorio.json';
+import satisfactory from '@profiles/satisfactory.json';
 
 const profiles = $state<Profile[]>([
 	satisfactory as Profile,
