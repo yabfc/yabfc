@@ -1,0 +1,10634 @@
+{
+	"id": "factorio",
+	"name": "Factorio",
+	"items": [
+		{
+			"id": "stone-brick",
+			"type": "item",
+			"category": "terrain",
+			"stackSize": 100
+		},
+		{
+			"id": "wood",
+			"type": "item",
+			"category": "raw-resource",
+			"stackSize": 100
+		},
+		{
+			"id": "coal",
+			"type": "item",
+			"category": "raw-resource",
+			"stackSize": 50
+		},
+		{
+			"id": "stone",
+			"type": "item",
+			"category": "raw-resource",
+			"stackSize": 50
+		},
+		{
+			"id": "iron-ore",
+			"type": "item",
+			"category": "raw-resource",
+			"stackSize": 50
+		},
+		{
+			"id": "copper-ore",
+			"type": "item",
+			"category": "raw-resource",
+			"stackSize": 50
+		},
+		{
+			"id": "iron-plate",
+			"type": "item",
+			"category": "raw-material",
+			"stackSize": 100
+		},
+		{
+			"id": "copper-plate",
+			"type": "item",
+			"category": "raw-material",
+			"stackSize": 100
+		},
+		{
+			"id": "copper-cable",
+			"type": "item",
+			"category": "intermediate-product",
+			"stackSize": 200
+		},
+		{
+			"id": "iron-stick",
+			"type": "item",
+			"category": "intermediate-product",
+			"stackSize": 100
+		},
+		{
+			"id": "iron-gear-wheel",
+			"type": "item",
+			"category": "intermediate-product",
+			"stackSize": 100
+		},
+		{
+			"id": "electronic-circuit",
+			"type": "item",
+			"category": "intermediate-product",
+			"stackSize": 200
+		},
+		{
+			"id": "wooden-chest",
+			"type": "item",
+			"category": "storage",
+			"stackSize": 50
+		},
+		{
+			"id": "stone-furnace",
+			"type": "item",
+			"category": "smelting-machine",
+			"stackSize": 50
+		},
+		{
+			"id": "burner-mining-drill",
+			"type": "item",
+			"category": "extraction-machine",
+			"stackSize": 50
+		},
+		{
+			"id": "electric-mining-drill",
+			"type": "item",
+			"category": "extraction-machine",
+			"stackSize": 50
+		},
+		{
+			"id": "burner-inserter",
+			"type": "item",
+			"category": "inserter",
+			"stackSize": 50
+		},
+		{
+			"id": "inserter",
+			"type": "item",
+			"category": "inserter",
+			"stackSize": 50
+		},
+		{
+			"id": "fast-inserter",
+			"type": "item",
+			"category": "inserter",
+			"stackSize": 50
+		},
+		{
+			"id": "long-handed-inserter",
+			"type": "item",
+			"category": "inserter",
+			"stackSize": 50
+		},
+		{
+			"id": "offshore-pump",
+			"type": "item",
+			"category": "extraction-machine",
+			"stackSize": 20
+		},
+		{
+			"id": "pipe",
+			"type": "item",
+			"category": "energy-pipe-distribution",
+			"stackSize": 100
+		},
+		{
+			"id": "boiler",
+			"type": "item",
+			"category": "energy",
+			"stackSize": 50
+		},
+		{
+			"id": "steam-engine",
+			"type": "item",
+			"category": "energy",
+			"stackSize": 10
+		},
+		{
+			"id": "small-electric-pole",
+			"type": "item",
+			"category": "energy-pipe-distribution",
+			"stackSize": 50
+		},
+		{
+			"id": "radar",
+			"type": "item",
+			"category": "defensive-structure",
+			"stackSize": 50
+		},
+		{
+			"id": "small-lamp",
+			"type": "item",
+			"category": "circuit-network",
+			"stackSize": 50
+		},
+		{
+			"id": "pipe-to-ground",
+			"type": "item",
+			"category": "energy-pipe-distribution",
+			"stackSize": 50
+		},
+		{
+			"id": "assembling-machine-1",
+			"type": "item",
+			"category": "production-machine",
+			"stackSize": 50
+		},
+		{
+			"id": "assembling-machine-2",
+			"type": "item",
+			"category": "production-machine",
+			"stackSize": 50
+		},
+		{
+			"id": "red-wire",
+			"type": "item",
+			"category": "spawnables",
+			"stackSize": 1
+		},
+		{
+			"id": "green-wire",
+			"type": "item",
+			"category": "spawnables",
+			"stackSize": 1
+		},
+		{
+			"id": "copper-wire",
+			"type": "item",
+			"category": "spawnables",
+			"stackSize": 1
+		},
+		{
+			"id": "stone-wall",
+			"type": "item",
+			"category": "defensive-structure",
+			"stackSize": 100
+		},
+		{
+			"id": "lab",
+			"type": "item",
+			"category": "production-machine",
+			"stackSize": 10
+		},
+		{
+			"id": "steel-plate",
+			"type": "item",
+			"category": "raw-material",
+			"stackSize": 100
+		},
+		{
+			"id": "engine-unit",
+			"type": "item",
+			"category": "intermediate-product",
+			"stackSize": 50
+		},
+		{
+			"id": "electric-furnace",
+			"type": "item",
+			"category": "smelting-machine",
+			"stackSize": 50
+		},
+		{
+			"id": "solid-fuel",
+			"type": "item",
+			"category": "raw-material",
+			"stackSize": 50
+		},
+		{
+			"id": "rocket-fuel",
+			"type": "item",
+			"category": "intermediate-product",
+			"stackSize": 20
+		},
+		{
+			"id": "iron-chest",
+			"type": "item",
+			"category": "storage",
+			"stackSize": 50
+		},
+		{
+			"id": "big-electric-pole",
+			"type": "item",
+			"category": "energy-pipe-distribution",
+			"stackSize": 50
+		},
+		{
+			"id": "medium-electric-pole",
+			"type": "item",
+			"category": "energy-pipe-distribution",
+			"stackSize": 50
+		},
+		{
+			"id": "steel-furnace",
+			"type": "item",
+			"category": "smelting-machine",
+			"stackSize": 50
+		},
+		{
+			"id": "gate",
+			"type": "item",
+			"category": "defensive-structure",
+			"stackSize": 50
+		},
+		{
+			"id": "steel-chest",
+			"type": "item",
+			"category": "storage",
+			"stackSize": 50
+		},
+		{
+			"id": "solar-panel",
+			"type": "item",
+			"category": "energy",
+			"stackSize": 50
+		},
+		{
+			"id": "train-stop",
+			"type": "item",
+			"category": "train-transport",
+			"stackSize": 10
+		},
+		{
+			"id": "rail-signal",
+			"type": "item",
+			"category": "train-transport",
+			"stackSize": 50
+		},
+		{
+			"id": "rail-chain-signal",
+			"type": "item",
+			"category": "train-transport",
+			"stackSize": 50
+		},
+		{
+			"id": "concrete",
+			"type": "item",
+			"category": "terrain",
+			"stackSize": 100
+		},
+		{
+			"id": "refined-concrete",
+			"type": "item",
+			"category": "terrain",
+			"stackSize": 100
+		},
+		{
+			"id": "hazard-concrete",
+			"type": "item",
+			"category": "terrain",
+			"stackSize": 100
+		},
+		{
+			"id": "refined-hazard-concrete",
+			"type": "item",
+			"category": "terrain",
+			"stackSize": 100
+		},
+		{
+			"id": "landfill",
+			"type": "item",
+			"category": "terrain",
+			"stackSize": 100
+		},
+		{
+			"id": "accumulator",
+			"type": "item",
+			"category": "energy",
+			"stackSize": 50
+		},
+		{
+			"id": "uranium-ore",
+			"type": "item",
+			"category": "raw-resource",
+			"stackSize": 50
+		},
+		{
+			"id": "transport-belt",
+			"type": "item",
+			"category": "belt",
+			"stackSize": 100
+		},
+		{
+			"id": "fast-transport-belt",
+			"type": "item",
+			"category": "belt",
+			"stackSize": 100
+		},
+		{
+			"id": "express-transport-belt",
+			"type": "item",
+			"category": "belt",
+			"stackSize": 100
+		},
+		{
+			"id": "bulk-inserter",
+			"type": "item",
+			"category": "inserter",
+			"stackSize": 50
+		},
+		{
+			"id": "assembling-machine-3",
+			"type": "item",
+			"category": "production-machine",
+			"stackSize": 50
+		},
+		{
+			"id": "underground-belt",
+			"type": "item",
+			"category": "belt",
+			"stackSize": 50
+		},
+		{
+			"id": "fast-underground-belt",
+			"type": "item",
+			"category": "belt",
+			"stackSize": 50
+		},
+		{
+			"id": "express-underground-belt",
+			"type": "item",
+			"category": "belt",
+			"stackSize": 50
+		},
+		{
+			"id": "splitter",
+			"type": "item",
+			"category": "belt",
+			"stackSize": 50
+		},
+		{
+			"id": "fast-splitter",
+			"type": "item",
+			"category": "belt",
+			"stackSize": 50
+		},
+		{
+			"id": "express-splitter",
+			"type": "item",
+			"category": "belt",
+			"stackSize": 50
+		},
+		{
+			"id": "advanced-circuit",
+			"type": "item",
+			"category": "intermediate-product",
+			"stackSize": 200
+		},
+		{
+			"id": "processing-unit",
+			"type": "item",
+			"category": "intermediate-product",
+			"stackSize": 100
+		},
+		{
+			"id": "logistic-robot",
+			"type": "item",
+			"category": "logistic-network",
+			"stackSize": 50
+		},
+		{
+			"id": "construction-robot",
+			"type": "item",
+			"category": "logistic-network",
+			"stackSize": 50
+		},
+		{
+			"id": "passive-provider-chest",
+			"type": "item",
+			"category": "logistic-network",
+			"stackSize": 50
+		},
+		{
+			"id": "active-provider-chest",
+			"type": "item",
+			"category": "logistic-network",
+			"stackSize": 50
+		},
+		{
+			"id": "storage-chest",
+			"type": "item",
+			"category": "logistic-network",
+			"stackSize": 50
+		},
+		{
+			"id": "buffer-chest",
+			"type": "item",
+			"category": "logistic-network",
+			"stackSize": 50
+		},
+		{
+			"id": "requester-chest",
+			"type": "item",
+			"category": "logistic-network",
+			"stackSize": 50
+		},
+		{
+			"id": "rocket-silo",
+			"type": "item",
+			"category": "space-interactors",
+			"stackSize": 1
+		},
+		{
+			"id": "cargo-landing-pad",
+			"type": "item",
+			"category": "space-interactors",
+			"stackSize": 1
+		},
+		{
+			"id": "roboport",
+			"type": "item",
+			"category": "logistic-network",
+			"stackSize": 10
+		},
+		{
+			"id": "substation",
+			"type": "item",
+			"category": "energy-pipe-distribution",
+			"stackSize": 50
+		},
+		{
+			"id": "beacon",
+			"type": "item",
+			"category": "module",
+			"stackSize": 20
+		},
+		{
+			"id": "storage-tank",
+			"type": "item",
+			"category": "storage",
+			"stackSize": 50
+		},
+		{
+			"id": "pump",
+			"type": "item",
+			"category": "energy-pipe-distribution",
+			"stackSize": 50
+		},
+		{
+			"id": "pumpjack",
+			"type": "item",
+			"category": "extraction-machine",
+			"stackSize": 20
+		},
+		{
+			"id": "oil-refinery",
+			"type": "item",
+			"category": "production-machine",
+			"stackSize": 10
+		},
+		{
+			"id": "chemical-plant",
+			"type": "item",
+			"category": "production-machine",
+			"stackSize": 10
+		},
+		{
+			"id": "sulfur",
+			"type": "item",
+			"category": "raw-material",
+			"stackSize": 50
+		},
+		{
+			"id": "barrel",
+			"type": "item",
+			"category": "intermediate-product",
+			"stackSize": 10
+		},
+		{
+			"id": "plastic-bar",
+			"type": "item",
+			"category": "raw-material",
+			"stackSize": 100
+		},
+		{
+			"id": "electric-engine-unit",
+			"type": "item",
+			"category": "intermediate-product",
+			"stackSize": 50
+		},
+		{
+			"id": "explosives",
+			"type": "item",
+			"category": "raw-material",
+			"stackSize": 50
+		},
+		{
+			"id": "battery",
+			"type": "item",
+			"category": "raw-material",
+			"stackSize": 200
+		},
+		{
+			"id": "flying-robot-frame",
+			"type": "item",
+			"category": "intermediate-product",
+			"stackSize": 50
+		},
+		{
+			"id": "low-density-structure",
+			"type": "item",
+			"category": "intermediate-product",
+			"stackSize": 50
+		},
+		{
+			"id": "nuclear-fuel",
+			"type": "item",
+			"category": "uranium-processing",
+			"stackSize": 1
+		},
+		{
+			"id": "nuclear-reactor",
+			"type": "item",
+			"category": "energy",
+			"stackSize": 10
+		},
+		{
+			"id": "uranium-235",
+			"type": "item",
+			"category": "uranium-processing",
+			"stackSize": 100
+		},
+		{
+			"id": "uranium-238",
+			"type": "item",
+			"category": "uranium-processing",
+			"stackSize": 100
+		},
+		{
+			"id": "centrifuge",
+			"type": "item",
+			"category": "production-machine",
+			"stackSize": 50
+		},
+		{
+			"id": "uranium-fuel-cell",
+			"type": "item",
+			"category": "uranium-processing",
+			"stackSize": 50
+		},
+		{
+			"id": "depleted-uranium-fuel-cell",
+			"type": "item",
+			"category": "uranium-processing",
+			"stackSize": 50
+		},
+		{
+			"id": "heat-exchanger",
+			"type": "item",
+			"category": "energy",
+			"stackSize": 50
+		},
+		{
+			"id": "steam-turbine",
+			"type": "item",
+			"category": "energy",
+			"stackSize": 10
+		},
+		{
+			"id": "heat-pipe",
+			"type": "item",
+			"category": "energy",
+			"stackSize": 50
+		},
+		{
+			"id": "land-mine",
+			"type": "item",
+			"category": "defensive-structure",
+			"stackSize": 100
+		},
+		{
+			"id": "solar-panel-equipment",
+			"type": "item",
+			"category": "equipment",
+			"stackSize": 20
+		},
+		{
+			"id": "fission-reactor-equipment",
+			"type": "item",
+			"category": "equipment",
+			"stackSize": 20
+		},
+		{
+			"id": "battery-equipment",
+			"type": "item",
+			"category": "equipment",
+			"stackSize": 20
+		},
+		{
+			"id": "battery-mk2-equipment",
+			"type": "item",
+			"category": "equipment",
+			"stackSize": 20
+		},
+		{
+			"id": "belt-immunity-equipment",
+			"type": "item",
+			"category": "utility-equipment",
+			"stackSize": 20
+		},
+		{
+			"id": "exoskeleton-equipment",
+			"type": "item",
+			"category": "utility-equipment",
+			"stackSize": 20
+		},
+		{
+			"id": "personal-roboport-equipment",
+			"type": "item",
+			"category": "utility-equipment",
+			"stackSize": 20
+		},
+		{
+			"id": "personal-roboport-mk2-equipment",
+			"type": "item",
+			"category": "utility-equipment",
+			"stackSize": 20
+		},
+		{
+			"id": "night-vision-equipment",
+			"type": "item",
+			"category": "utility-equipment",
+			"stackSize": 20
+		},
+		{
+			"id": "energy-shield-equipment",
+			"type": "item",
+			"category": "military-equipment",
+			"stackSize": 20
+		},
+		{
+			"id": "energy-shield-mk2-equipment",
+			"type": "item",
+			"category": "military-equipment",
+			"stackSize": 20
+		},
+		{
+			"id": "personal-laser-defense-equipment",
+			"type": "item",
+			"category": "military-equipment",
+			"stackSize": 20
+		},
+		{
+			"id": "discharge-defense-equipment",
+			"type": "item",
+			"category": "military-equipment",
+			"stackSize": 20
+		},
+		{
+			"id": "gun-turret",
+			"type": "item",
+			"category": "turret",
+			"stackSize": 50
+		},
+		{
+			"id": "laser-turret",
+			"type": "item",
+			"category": "turret",
+			"stackSize": 50
+		},
+		{
+			"id": "flamethrower-turret",
+			"type": "item",
+			"category": "turret",
+			"stackSize": 50
+		},
+		{
+			"id": "artillery-turret",
+			"type": "item",
+			"category": "turret",
+			"stackSize": 10
+		},
+		{
+			"id": "arithmetic-combinator",
+			"type": "item",
+			"category": "circuit-network",
+			"stackSize": 50
+		},
+		{
+			"id": "decider-combinator",
+			"type": "item",
+			"category": "circuit-network",
+			"stackSize": 50
+		},
+		{
+			"id": "constant-combinator",
+			"type": "item",
+			"category": "circuit-network",
+			"stackSize": 50
+		},
+		{
+			"id": "selector-combinator",
+			"type": "item",
+			"category": "circuit-network",
+			"stackSize": 50
+		},
+		{
+			"id": "power-switch",
+			"type": "item",
+			"category": "circuit-network",
+			"stackSize": 10
+		},
+		{
+			"id": "programmable-speaker",
+			"type": "item",
+			"category": "circuit-network",
+			"stackSize": 10
+		},
+		{
+			"id": "display-panel",
+			"type": "item",
+			"category": "circuit-network",
+			"stackSize": 10
+		},
+		{
+			"id": "rail-support",
+			"type": "item",
+			"category": "train-transport",
+			"stackSize": 20
+		},
+		{
+			"id": "recycler",
+			"type": "item",
+			"category": "smelting-machine",
+			"stackSize": 20
+		},
+		{
+			"id": "space-platform-foundation",
+			"type": "item",
+			"category": "space-platform",
+			"stackSize": 100
+		},
+		{
+			"id": "turbo-transport-belt",
+			"type": "item",
+			"category": "belt",
+			"stackSize": 100
+		},
+		{
+			"id": "turbo-underground-belt",
+			"type": "item",
+			"category": "belt",
+			"stackSize": 50
+		},
+		{
+			"id": "turbo-splitter",
+			"type": "item",
+			"category": "belt",
+			"stackSize": 50
+		},
+		{
+			"id": "toolbelt-equipment",
+			"type": "item",
+			"category": "utility-equipment",
+			"stackSize": 20
+		},
+		{
+			"id": "battery-mk3-equipment",
+			"type": "item",
+			"category": "equipment",
+			"stackSize": 20
+		},
+		{
+			"id": "cargo-bay",
+			"type": "item",
+			"category": "space-platform",
+			"stackSize": 10
+		},
+		{
+			"id": "metallic-asteroid-chunk",
+			"type": "item",
+			"category": "space-material",
+			"stackSize": 1
+		},
+		{
+			"id": "carbonic-asteroid-chunk",
+			"type": "item",
+			"category": "space-material",
+			"stackSize": 1
+		},
+		{
+			"id": "oxide-asteroid-chunk",
+			"type": "item",
+			"category": "space-material",
+			"stackSize": 1
+		},
+		{
+			"id": "promethium-asteroid-chunk",
+			"type": "item",
+			"category": "space-material",
+			"stackSize": 1
+		},
+		{
+			"id": "asteroid-collector",
+			"type": "item",
+			"category": "space-platform",
+			"stackSize": 10
+		},
+		{
+			"id": "crusher",
+			"type": "item",
+			"category": "space-platform",
+			"stackSize": 10
+		},
+		{
+			"id": "thruster",
+			"type": "item",
+			"category": "space-platform",
+			"stackSize": 10
+		},
+		{
+			"id": "ice",
+			"type": "item",
+			"category": "raw-resource",
+			"stackSize": 50
+		},
+		{
+			"id": "carbon",
+			"type": "item",
+			"category": "raw-material",
+			"stackSize": 50
+		},
+		{
+			"id": "calcite",
+			"type": "item",
+			"category": "vulcanus-processes",
+			"stackSize": 50
+		},
+		{
+			"id": "tungsten-ore",
+			"type": "item",
+			"category": "vulcanus-processes",
+			"stackSize": 50
+		},
+		{
+			"id": "tungsten-plate",
+			"type": "item",
+			"category": "vulcanus-processes",
+			"stackSize": 50
+		},
+		{
+			"id": "big-mining-drill",
+			"type": "item",
+			"category": "extraction-machine",
+			"stackSize": 20
+		},
+		{
+			"id": "tungsten-carbide",
+			"type": "item",
+			"category": "vulcanus-processes",
+			"stackSize": 50
+		},
+		{
+			"id": "foundry",
+			"type": "item",
+			"category": "smelting-machine",
+			"stackSize": 20
+		},
+		{
+			"id": "railgun-turret",
+			"type": "item",
+			"category": "turret",
+			"stackSize": 10
+		},
+		{
+			"id": "copper-bacteria",
+			"type": "item",
+			"category": "agriculture-processes",
+			"stackSize": 50
+		},
+		{
+			"id": "iron-bacteria",
+			"type": "item",
+			"category": "agriculture-processes",
+			"stackSize": 50
+		},
+		{
+			"id": "yumako-seed",
+			"type": "item",
+			"category": "agriculture-processes",
+			"stackSize": 10
+		},
+		{
+			"id": "jellynut-seed",
+			"type": "item",
+			"category": "agriculture-processes",
+			"stackSize": 10
+		},
+		{
+			"id": "nutrients",
+			"type": "item",
+			"category": "agriculture-processes",
+			"stackSize": 100
+		},
+		{
+			"id": "artificial-yumako-soil",
+			"type": "item",
+			"category": "terrain",
+			"stackSize": 100
+		},
+		{
+			"id": "overgrowth-yumako-soil",
+			"type": "item",
+			"category": "terrain",
+			"stackSize": 100
+		},
+		{
+			"id": "artificial-jellynut-soil",
+			"type": "item",
+			"category": "terrain",
+			"stackSize": 100
+		},
+		{
+			"id": "overgrowth-jellynut-soil",
+			"type": "item",
+			"category": "terrain",
+			"stackSize": 100
+		},
+		{
+			"id": "agricultural-tower",
+			"type": "item",
+			"category": "agriculture",
+			"stackSize": 20
+		},
+		{
+			"id": "biochamber",
+			"type": "item",
+			"category": "agriculture",
+			"stackSize": 20
+		},
+		{
+			"id": "biolab",
+			"type": "item",
+			"category": "production-machine",
+			"stackSize": 5
+		},
+		{
+			"id": "captive-biter-spawner",
+			"type": "item",
+			"category": "agriculture",
+			"stackSize": 1
+		},
+		{
+			"id": "biter-egg",
+			"type": "item",
+			"category": "agriculture-products",
+			"stackSize": 100
+		},
+		{
+			"id": "pentapod-egg",
+			"type": "item",
+			"category": "agriculture-products",
+			"stackSize": 20
+		},
+		{
+			"id": "carbon-fiber",
+			"type": "item",
+			"category": "agriculture-products",
+			"stackSize": 100
+		},
+		{
+			"id": "stack-inserter",
+			"type": "item",
+			"category": "inserter",
+			"stackSize": 50
+		},
+		{
+			"id": "rocket-turret",
+			"type": "item",
+			"category": "turret",
+			"stackSize": 10
+		},
+		{
+			"id": "holmium-ore",
+			"type": "item",
+			"category": "fulgora-processes",
+			"stackSize": 50
+		},
+		{
+			"id": "holmium-plate",
+			"type": "item",
+			"category": "fulgora-processes",
+			"stackSize": 100
+		},
+		{
+			"id": "lithium",
+			"type": "item",
+			"category": "aquilo-processes",
+			"stackSize": 50
+		},
+		{
+			"id": "lithium-plate",
+			"type": "item",
+			"category": "aquilo-processes",
+			"stackSize": 100
+		},
+		{
+			"id": "scrap",
+			"type": "item",
+			"category": "fulgora-processes",
+			"stackSize": 50
+		},
+		{
+			"id": "lightning-rod",
+			"type": "item",
+			"category": "environmental-protection",
+			"stackSize": 50
+		},
+		{
+			"id": "lightning-collector",
+			"type": "item",
+			"category": "environmental-protection",
+			"stackSize": 20
+		},
+		{
+			"id": "heating-tower",
+			"type": "item",
+			"category": "environmental-protection",
+			"stackSize": 20
+		},
+		{
+			"id": "electromagnetic-plant",
+			"type": "item",
+			"category": "production-machine",
+			"stackSize": 20
+		},
+		{
+			"id": "superconductor",
+			"type": "item",
+			"category": "fulgora-processes",
+			"stackSize": 200
+		},
+		{
+			"id": "supercapacitor",
+			"type": "item",
+			"category": "fulgora-processes",
+			"stackSize": 100
+		},
+		{
+			"id": "tesla-turret",
+			"type": "item",
+			"category": "turret",
+			"stackSize": 10
+		},
+		{
+			"id": "quantum-processor",
+			"type": "item",
+			"category": "aquilo-processes",
+			"stackSize": 100
+		},
+		{
+			"id": "fusion-reactor-equipment",
+			"type": "item",
+			"category": "equipment",
+			"stackSize": 20
+		},
+		{
+			"id": "fusion-power-cell",
+			"type": "item",
+			"category": "aquilo-processes",
+			"stackSize": 50
+		},
+		{
+			"id": "fusion-reactor",
+			"type": "item",
+			"category": "energy",
+			"stackSize": 1
+		},
+		{
+			"id": "fusion-generator",
+			"type": "item",
+			"category": "energy",
+			"stackSize": 5
+		},
+		{
+			"id": "cryogenic-plant",
+			"type": "item",
+			"category": "production-machine",
+			"stackSize": 20
+		},
+		{
+			"id": "spoilage",
+			"type": "item",
+			"category": "agriculture-processes",
+			"stackSize": 200
+		},
+		{
+			"id": "ice-platform",
+			"type": "item",
+			"category": "terrain",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation",
+			"type": "item",
+			"category": "terrain",
+			"stackSize": 50
+		},
+		{
+			"id": "tree-seed",
+			"type": "item",
+			"category": "nauvis-agriculture",
+			"stackSize": 10
+		},
+		{
+			"id": "water-barrel",
+			"type": "item",
+			"category": "barrel",
+			"stackSize": 10
+		},
+		{
+			"id": "sulfuric-acid-barrel",
+			"type": "item",
+			"category": "barrel",
+			"stackSize": 10
+		},
+		{
+			"id": "crude-oil-barrel",
+			"type": "item",
+			"category": "barrel",
+			"stackSize": 10
+		},
+		{
+			"id": "heavy-oil-barrel",
+			"type": "item",
+			"category": "barrel",
+			"stackSize": 10
+		},
+		{
+			"id": "light-oil-barrel",
+			"type": "item",
+			"category": "barrel",
+			"stackSize": 10
+		},
+		{
+			"id": "petroleum-gas-barrel",
+			"type": "item",
+			"category": "barrel",
+			"stackSize": 10
+		},
+		{
+			"id": "lubricant-barrel",
+			"type": "item",
+			"category": "barrel",
+			"stackSize": 10
+		},
+		{
+			"id": "fluoroketone-cold-barrel",
+			"type": "item",
+			"category": "barrel",
+			"stackSize": 10
+		},
+		{
+			"id": "fluoroketone-hot-barrel",
+			"type": "item",
+			"category": "barrel",
+			"stackSize": 10
+		}
+	],
+	"recipes": [
+		{
+			"id": "speed-module",
+			"in": [
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "speed-module",
+					"amount": 1
+				}
+			],
+			"duration": 15,
+			"category": "electronics"
+		},
+		{
+			"id": "speed-module-2",
+			"in": [
+				{
+					"type": "item",
+					"id": "speed-module",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "speed-module-2",
+					"amount": 1
+				}
+			],
+			"duration": 30,
+			"category": "electronics"
+		},
+		{
+			"id": "speed-module-3",
+			"in": [
+				{
+					"type": "item",
+					"id": "speed-module-2",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "tungsten-carbide",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "speed-module-3",
+					"amount": 1
+				}
+			],
+			"duration": 60,
+			"category": "electronics"
+		},
+		{
+			"id": "productivity-module",
+			"in": [
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "productivity-module",
+					"amount": 1
+				}
+			],
+			"duration": 15,
+			"category": "electronics"
+		},
+		{
+			"id": "productivity-module-2",
+			"in": [
+				{
+					"type": "item",
+					"id": "productivity-module",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "productivity-module-2",
+					"amount": 1
+				}
+			],
+			"duration": 30,
+			"category": "electronics"
+		},
+		{
+			"id": "productivity-module-3",
+			"in": [
+				{
+					"type": "item",
+					"id": "productivity-module-2",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "biter-egg",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "productivity-module-3",
+					"amount": 1
+				}
+			],
+			"duration": 60,
+			"category": "electronics"
+		},
+		{
+			"id": "efficiency-module",
+			"in": [
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "efficiency-module",
+					"amount": 1
+				}
+			],
+			"duration": 15,
+			"category": "electronics"
+		},
+		{
+			"id": "efficiency-module-2",
+			"in": [
+				{
+					"type": "item",
+					"id": "efficiency-module",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "efficiency-module-2",
+					"amount": 1
+				}
+			],
+			"duration": 30,
+			"category": "electronics"
+		},
+		{
+			"id": "efficiency-module-3",
+			"in": [
+				{
+					"type": "item",
+					"id": "efficiency-module-2",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "spoilage",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "efficiency-module-3",
+					"amount": 1
+				}
+			],
+			"duration": 60,
+			"category": "electronics"
+		},
+		{
+			"id": "bulk-inserter",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 15
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 15
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "fast-inserter",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "bulk-inserter",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "basic-oil-processing",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "crude-oil",
+					"amount": 100
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "petroleum-gas",
+					"amount": 45
+				}
+			],
+			"duration": 5,
+			"category": "oil-processing"
+		},
+		{
+			"id": "advanced-oil-processing",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 50
+				},
+				{
+					"type": "fluid",
+					"id": "crude-oil",
+					"amount": 100
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "heavy-oil",
+					"amount": 25
+				},
+				{
+					"type": "fluid",
+					"id": "light-oil",
+					"amount": 45
+				},
+				{
+					"type": "fluid",
+					"id": "petroleum-gas",
+					"amount": 55
+				}
+			],
+			"duration": 5,
+			"category": "oil-processing"
+		},
+		{
+			"id": "coal-liquefaction",
+			"in": [
+				{
+					"type": "item",
+					"id": "coal",
+					"amount": 10
+				},
+				{
+					"type": "fluid",
+					"id": "heavy-oil",
+					"amount": 25
+				},
+				{
+					"type": "fluid",
+					"id": "steam",
+					"amount": 50
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "heavy-oil",
+					"amount": 90
+				},
+				{
+					"type": "fluid",
+					"id": "light-oil",
+					"amount": 20
+				},
+				{
+					"type": "fluid",
+					"id": "petroleum-gas",
+					"amount": 10
+				}
+			],
+			"duration": 5,
+			"category": "oil-processing"
+		},
+		{
+			"id": "heavy-oil-cracking",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 30
+				},
+				{
+					"type": "fluid",
+					"id": "heavy-oil",
+					"amount": 40
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "light-oil",
+					"amount": 30
+				}
+			],
+			"duration": 2,
+			"category": "organic-or-chemistry"
+		},
+		{
+			"id": "light-oil-cracking",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 30
+				},
+				{
+					"type": "fluid",
+					"id": "light-oil",
+					"amount": 30
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "petroleum-gas",
+					"amount": 20
+				}
+			],
+			"duration": 2,
+			"category": "organic-or-chemistry"
+		},
+		{
+			"id": "sulfuric-acid",
+			"in": [
+				{
+					"type": "item",
+					"id": "sulfur",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 100
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "sulfuric-acid",
+					"amount": 50
+				}
+			],
+			"duration": 1,
+			"category": "chemistry-or-cryogenics"
+		},
+		{
+			"id": "plastic-bar",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "petroleum-gas",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "coal",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "plastic-bar",
+					"amount": 2
+				}
+			],
+			"duration": 1,
+			"category": "chemistry-or-cryogenics"
+		},
+		{
+			"id": "solid-fuel-from-light-oil",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "light-oil",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "solid-fuel",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "chemistry"
+		},
+		{
+			"id": "solid-fuel-from-petroleum-gas",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "petroleum-gas",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "solid-fuel",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "chemistry"
+		},
+		{
+			"id": "solid-fuel-from-heavy-oil",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "heavy-oil",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "solid-fuel",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "chemistry"
+		},
+		{
+			"id": "sulfur",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 30
+				},
+				{
+					"type": "fluid",
+					"id": "petroleum-gas",
+					"amount": 30
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "sulfur",
+					"amount": 2
+				}
+			],
+			"duration": 1,
+			"category": "chemistry-or-cryogenics"
+		},
+		{
+			"id": "lubricant",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "heavy-oil",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "lubricant",
+					"amount": 10
+				}
+			],
+			"duration": 1,
+			"category": "chemistry"
+		},
+		{
+			"id": "barrel",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "crafting"
+		},
+		{
+			"id": "night-vision-equipment",
+			"in": [
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "night-vision-equipment",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "belt-immunity-equipment",
+			"in": [
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "belt-immunity-equipment",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "energy-shield-equipment",
+			"in": [
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "energy-shield-equipment",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "energy-shield-mk2-equipment",
+			"in": [
+				{
+					"type": "item",
+					"id": "energy-shield-equipment",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "low-density-structure",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "energy-shield-mk2-equipment",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "battery-equipment",
+			"in": [
+				{
+					"type": "item",
+					"id": "battery",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "battery-equipment",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "battery-mk2-equipment",
+			"in": [
+				{
+					"type": "item",
+					"id": "battery-equipment",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 15
+				},
+				{
+					"type": "item",
+					"id": "low-density-structure",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "battery-mk2-equipment",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "solar-panel-equipment",
+			"in": [
+				{
+					"type": "item",
+					"id": "solar-panel",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "solar-panel-equipment",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "fission-reactor-equipment",
+			"in": [
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 200
+				},
+				{
+					"type": "item",
+					"id": "low-density-structure",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "uranium-fuel-cell",
+					"amount": 4
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "fission-reactor-equipment",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "personal-laser-defense-equipment",
+			"in": [
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "low-density-structure",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "laser-turret",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "personal-laser-defense-equipment",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "discharge-defense-equipment",
+			"in": [
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "laser-turret",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "discharge-defense-equipment",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "electronics"
+		},
+		{
+			"id": "exoskeleton-equipment",
+			"in": [
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "electric-engine-unit",
+					"amount": 30
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "exoskeleton-equipment",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "personal-roboport-equipment",
+			"in": [
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 40
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "battery",
+					"amount": 45
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "personal-roboport-equipment",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "personal-roboport-mk2-equipment",
+			"in": [
+				{
+					"type": "item",
+					"id": "personal-roboport-equipment",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "superconductor",
+					"amount": 50
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "personal-roboport-mk2-equipment",
+					"amount": 1
+				}
+			],
+			"duration": 20,
+			"category": "default"
+		},
+		{
+			"id": "laser-turret",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "battery",
+					"amount": 12
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "laser-turret",
+					"amount": 1
+				}
+			],
+			"duration": 20,
+			"category": "default"
+		},
+		{
+			"id": "flamethrower-turret",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 30
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 15
+				},
+				{
+					"type": "item",
+					"id": "pipe",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "engine-unit",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "flamethrower-turret",
+					"amount": 1
+				}
+			],
+			"duration": 20,
+			"category": "default"
+		},
+		{
+			"id": "artillery-turret",
+			"in": [
+				{
+					"type": "item",
+					"id": "tungsten-plate",
+					"amount": 60
+				},
+				{
+					"type": "item",
+					"id": "refined-concrete",
+					"amount": 60
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 40
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "artillery-turret",
+					"amount": 1
+				}
+			],
+			"duration": 40,
+			"category": "default"
+		},
+		{
+			"id": "gun-turret",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "gun-turret",
+					"amount": 1
+				}
+			],
+			"duration": 8,
+			"category": "default"
+		},
+		{
+			"id": "wooden-chest",
+			"in": [
+				{
+					"type": "item",
+					"id": "wood",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "wooden-chest",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "display-panel",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "display-panel",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "iron-stick",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "iron-stick",
+					"amount": 2
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "stone-furnace",
+			"in": [
+				{
+					"type": "item",
+					"id": "stone",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "stone-furnace",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "boiler",
+			"in": [
+				{
+					"type": "item",
+					"id": "stone-furnace",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "pipe",
+					"amount": 4
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "boiler",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "steam-engine",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 8
+				},
+				{
+					"type": "item",
+					"id": "pipe",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "steam-engine",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "iron-gear-wheel",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "electronic-circuit",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "copper-cable",
+					"amount": 3
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "electronics"
+		},
+		{
+			"id": "transport-belt",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "transport-belt",
+					"amount": 2
+				}
+			],
+			"duration": 1,
+			"category": "pressing"
+		},
+		{
+			"id": "electric-mining-drill",
+			"in": [
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "electric-mining-drill",
+					"amount": 1
+				}
+			],
+			"duration": 2,
+			"category": "default"
+		},
+		{
+			"id": "burner-mining-drill",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "stone-furnace",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 3
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "burner-mining-drill",
+					"amount": 1
+				}
+			],
+			"duration": 2,
+			"category": "default"
+		},
+		{
+			"id": "inserter",
+			"in": [
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "inserter",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "fast-inserter",
+			"in": [
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "inserter",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "fast-inserter",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "long-handed-inserter",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "inserter",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "long-handed-inserter",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "burner-inserter",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "burner-inserter",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "pipe",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "pipe",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "offshore-pump",
+			"in": [
+				{
+					"type": "item",
+					"id": "pipe",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "offshore-pump",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "copper-cable",
+			"in": [
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "copper-cable",
+					"amount": 2
+				}
+			],
+			"duration": 1,
+			"category": "electronics"
+		},
+		{
+			"id": "small-electric-pole",
+			"in": [
+				{
+					"type": "item",
+					"id": "wood",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "copper-cable",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "small-electric-pole",
+					"amount": 2
+				}
+			],
+			"duration": 1,
+			"category": "electronics"
+		},
+		{
+			"id": "submachine-gun",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "submachine-gun",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "firearm-magazine",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 4
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "firearm-magazine",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "light-armor",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 40
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "light-armor",
+					"amount": 1
+				}
+			],
+			"duration": 3,
+			"category": "default"
+		},
+		{
+			"id": "radar",
+			"in": [
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "radar",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "small-lamp",
+			"in": [
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "copper-cable",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "small-lamp",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "pipe-to-ground",
+			"in": [
+				{
+					"type": "item",
+					"id": "pipe",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "pipe-to-ground",
+					"amount": 2
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "assembling-machine-1",
+			"in": [
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 9
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "assembling-machine-1",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "repair-pack",
+			"in": [
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "repair-pack",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "automation-science-pack",
+			"in": [
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "automation-science-pack",
+					"amount": 1
+				}
+			],
+			"duration": 5,
+			"category": "default"
+		},
+		{
+			"id": "logistic-science-pack",
+			"in": [
+				{
+					"type": "item",
+					"id": "inserter",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "transport-belt",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "logistic-science-pack",
+					"amount": 1
+				}
+			],
+			"duration": 6,
+			"category": "default"
+		},
+		{
+			"id": "lab",
+			"in": [
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "transport-belt",
+					"amount": 4
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "lab",
+					"amount": 1
+				}
+			],
+			"duration": 2,
+			"category": "default"
+		},
+		{
+			"id": "stone-wall",
+			"in": [
+				{
+					"type": "item",
+					"id": "stone-brick",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "stone-wall",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "assembling-machine-2",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "assembling-machine-1",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "assembling-machine-2",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "splitter",
+			"in": [
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "transport-belt",
+					"amount": 4
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "splitter",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "pressing"
+		},
+		{
+			"id": "underground-belt",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "transport-belt",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "underground-belt",
+					"amount": 2
+				}
+			],
+			"duration": 1,
+			"category": "pressing"
+		},
+		{
+			"id": "car",
+			"in": [
+				{
+					"type": "item",
+					"id": "engine-unit",
+					"amount": 8
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "car",
+					"amount": 1
+				}
+			],
+			"duration": 2,
+			"category": "default"
+		},
+		{
+			"id": "engine-unit",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "pipe",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "engine-unit",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "advanced-crafting"
+		},
+		{
+			"id": "iron-chest",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 8
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "iron-chest",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "big-electric-pole",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-stick",
+					"amount": 8
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "copper-cable",
+					"amount": 4
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "big-electric-pole",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "electronics"
+		},
+		{
+			"id": "medium-electric-pole",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-stick",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "copper-cable",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "medium-electric-pole",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "electronics"
+		},
+		{
+			"id": "shotgun",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 15
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "wood",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "shotgun",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "shotgun-shell",
+			"in": [
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "shotgun-shell",
+					"amount": 1
+				}
+			],
+			"duration": 3,
+			"category": "default"
+		},
+		{
+			"id": "piercing-rounds-magazine",
+			"in": [
+				{
+					"type": "item",
+					"id": "firearm-magazine",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "piercing-rounds-magazine",
+					"amount": 2
+				}
+			],
+			"duration": 6,
+			"category": "default"
+		},
+		{
+			"id": "grenade",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "coal",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "grenade",
+					"amount": 1
+				}
+			],
+			"duration": 8,
+			"category": "default"
+		},
+		{
+			"id": "steel-furnace",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 6
+				},
+				{
+					"type": "item",
+					"id": "stone-brick",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "steel-furnace",
+					"amount": 1
+				}
+			],
+			"duration": 3,
+			"category": "default"
+		},
+		{
+			"id": "gate",
+			"in": [
+				{
+					"type": "item",
+					"id": "stone-wall",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "gate",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "heavy-armor",
+			"in": [
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 100
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 50
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "heavy-armor",
+					"amount": 1
+				}
+			],
+			"duration": 8,
+			"category": "default"
+		},
+		{
+			"id": "steel-chest",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 8
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "steel-chest",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "fast-underground-belt",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 40
+				},
+				{
+					"type": "item",
+					"id": "underground-belt",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "fast-underground-belt",
+					"amount": 2
+				}
+			],
+			"duration": 2,
+			"category": "pressing"
+		},
+		{
+			"id": "fast-splitter",
+			"in": [
+				{
+					"type": "item",
+					"id": "splitter",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "fast-splitter",
+					"amount": 1
+				}
+			],
+			"duration": 2,
+			"category": "pressing"
+		},
+		{
+			"id": "concrete",
+			"in": [
+				{
+					"type": "item",
+					"id": "stone-brick",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "iron-ore",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 100
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "concrete",
+					"amount": 10
+				}
+			],
+			"duration": 10,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "hazard-concrete",
+			"in": [
+				{
+					"type": "item",
+					"id": "concrete",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "hazard-concrete",
+					"amount": 10
+				}
+			],
+			"duration": 0.25,
+			"category": "crafting"
+		},
+		{
+			"id": "refined-concrete",
+			"in": [
+				{
+					"type": "item",
+					"id": "concrete",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "iron-stick",
+					"amount": 8
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 100
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "refined-concrete",
+					"amount": 10
+				}
+			],
+			"duration": 15,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "refined-hazard-concrete",
+			"in": [
+				{
+					"type": "item",
+					"id": "refined-concrete",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "refined-hazard-concrete",
+					"amount": 10
+				}
+			],
+			"duration": 0.25,
+			"category": "crafting"
+		},
+		{
+			"id": "landfill",
+			"in": [
+				{
+					"type": "item",
+					"id": "stone",
+					"amount": 50
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "landfill",
+					"amount": 1
+				}
+			],
+			"duration": 0.5,
+			"category": "crafting"
+		},
+		{
+			"id": "fast-transport-belt",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "transport-belt",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "fast-transport-belt",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "pressing"
+		},
+		{
+			"id": "solar-panel",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 15
+				},
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "solar-panel",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "electronics"
+		},
+		{
+			"id": "rail",
+			"in": [
+				{
+					"type": "item",
+					"id": "stone",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "iron-stick",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "rail",
+					"amount": 2
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "locomotive",
+			"in": [
+				{
+					"type": "item",
+					"id": "engine-unit",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 30
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "locomotive",
+					"amount": 1
+				}
+			],
+			"duration": 4,
+			"category": "default"
+		},
+		{
+			"id": "cargo-wagon",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "cargo-wagon",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "rail-signal",
+			"in": [
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "rail-signal",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "rail-chain-signal",
+			"in": [
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "rail-chain-signal",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "train-stop",
+			"in": [
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 6
+				},
+				{
+					"type": "item",
+					"id": "iron-stick",
+					"amount": 6
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 3
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "train-stop",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "copper-plate",
+			"in": [
+				{
+					"type": "item",
+					"id": "copper-ore",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 1
+				}
+			],
+			"duration": 3.2,
+			"category": "smelting"
+		},
+		{
+			"id": "iron-plate",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-ore",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 1
+				}
+			],
+			"duration": 3.2,
+			"category": "smelting"
+		},
+		{
+			"id": "stone-brick",
+			"in": [
+				{
+					"type": "item",
+					"id": "stone",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "stone-brick",
+					"amount": 1
+				}
+			],
+			"duration": 3.2,
+			"category": "smelting"
+		},
+		{
+			"id": "steel-plate",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 1
+				}
+			],
+			"duration": 16,
+			"category": "smelting"
+		},
+		{
+			"id": "arithmetic-combinator",
+			"in": [
+				{
+					"type": "item",
+					"id": "copper-cable",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "arithmetic-combinator",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "decider-combinator",
+			"in": [
+				{
+					"type": "item",
+					"id": "copper-cable",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "decider-combinator",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "constant-combinator",
+			"in": [
+				{
+					"type": "item",
+					"id": "copper-cable",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "constant-combinator",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "selector-combinator",
+			"in": [
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "decider-combinator",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "selector-combinator",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "power-switch",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "copper-cable",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "power-switch",
+					"amount": 1
+				}
+			],
+			"duration": 2,
+			"category": "default"
+		},
+		{
+			"id": "programmable-speaker",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "iron-stick",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "copper-cable",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 4
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "programmable-speaker",
+					"amount": 1
+				}
+			],
+			"duration": 2,
+			"category": "default"
+		},
+		{
+			"id": "poison-capsule",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "coal",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "poison-capsule",
+					"amount": 1
+				}
+			],
+			"duration": 8,
+			"category": "default"
+		},
+		{
+			"id": "slowdown-capsule",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "coal",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "slowdown-capsule",
+					"amount": 1
+				}
+			],
+			"duration": 8,
+			"category": "default"
+		},
+		{
+			"id": "cluster-grenade",
+			"in": [
+				{
+					"type": "item",
+					"id": "grenade",
+					"amount": 7
+				},
+				{
+					"type": "item",
+					"id": "explosives",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "cluster-grenade",
+					"amount": 1
+				}
+			],
+			"duration": 8,
+			"category": "default"
+		},
+		{
+			"id": "defender-capsule",
+			"in": [
+				{
+					"type": "item",
+					"id": "piercing-rounds-magazine",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 3
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "defender-capsule",
+					"amount": 1
+				}
+			],
+			"duration": 8,
+			"category": "default"
+		},
+		{
+			"id": "distractor-capsule",
+			"in": [
+				{
+					"type": "item",
+					"id": "defender-capsule",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 3
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "distractor-capsule",
+					"amount": 1
+				}
+			],
+			"duration": 15,
+			"category": "default"
+		},
+		{
+			"id": "destroyer-capsule",
+			"in": [
+				{
+					"type": "item",
+					"id": "distractor-capsule",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "destroyer-capsule",
+					"amount": 1
+				}
+			],
+			"duration": 15,
+			"category": "default"
+		},
+		{
+			"id": "cliff-explosives",
+			"in": [
+				{
+					"type": "item",
+					"id": "explosives",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "calcite",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "grenade",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "cliff-explosives",
+					"amount": 1
+				}
+			],
+			"duration": 8,
+			"category": "default"
+		},
+		{
+			"id": "uranium-rounds-magazine",
+			"in": [
+				{
+					"type": "item",
+					"id": "piercing-rounds-magazine",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "uranium-238",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "uranium-rounds-magazine",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "rocket",
+			"in": [
+				{
+					"type": "item",
+					"id": "explosives",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "rocket",
+					"amount": 1
+				}
+			],
+			"duration": 4,
+			"category": "default"
+		},
+		{
+			"id": "explosive-rocket",
+			"in": [
+				{
+					"type": "item",
+					"id": "rocket",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "explosives",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "explosive-rocket",
+					"amount": 1
+				}
+			],
+			"duration": 8,
+			"category": "default"
+		},
+		{
+			"id": "atomic-bomb",
+			"in": [
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "explosives",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "uranium-235",
+					"amount": 100
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "atomic-bomb",
+					"amount": 1
+				}
+			],
+			"duration": 50,
+			"category": "default"
+		},
+		{
+			"id": "piercing-shotgun-shell",
+			"in": [
+				{
+					"type": "item",
+					"id": "shotgun-shell",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "piercing-shotgun-shell",
+					"amount": 1
+				}
+			],
+			"duration": 8,
+			"category": "default"
+		},
+		{
+			"id": "cannon-shell",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "plastic-bar",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "explosives",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "cannon-shell",
+					"amount": 1
+				}
+			],
+			"duration": 8,
+			"category": "default"
+		},
+		{
+			"id": "explosive-cannon-shell",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "plastic-bar",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "explosives",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "explosive-cannon-shell",
+					"amount": 1
+				}
+			],
+			"duration": 8,
+			"category": "default"
+		},
+		{
+			"id": "uranium-cannon-shell",
+			"in": [
+				{
+					"type": "item",
+					"id": "cannon-shell",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "uranium-238",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "uranium-cannon-shell",
+					"amount": 1
+				}
+			],
+			"duration": 12,
+			"category": "default"
+		},
+		{
+			"id": "explosive-uranium-cannon-shell",
+			"in": [
+				{
+					"type": "item",
+					"id": "explosive-cannon-shell",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "uranium-238",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "explosive-uranium-cannon-shell",
+					"amount": 1
+				}
+			],
+			"duration": 12,
+			"category": "default"
+		},
+		{
+			"id": "artillery-shell",
+			"in": [
+				{
+					"type": "item",
+					"id": "radar",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "calcite",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "tungsten-plate",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "explosives",
+					"amount": 8
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "artillery-shell",
+					"amount": 1
+				}
+			],
+			"duration": 15,
+			"category": "default"
+		},
+		{
+			"id": "flamethrower-ammo",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 5
+				},
+				{
+					"type": "fluid",
+					"id": "crude-oil",
+					"amount": 100
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "flamethrower-ammo",
+					"amount": 1
+				}
+			],
+			"duration": 6,
+			"category": "chemistry"
+		},
+		{
+			"id": "express-transport-belt",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "fast-transport-belt",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "lubricant",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "express-transport-belt",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "crafting-with-fluid-or-metallurgy"
+		},
+		{
+			"id": "assembling-machine-3",
+			"in": [
+				{
+					"type": "item",
+					"id": "assembling-machine-2",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "speed-module",
+					"amount": 4
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "assembling-machine-3",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "tank",
+			"in": [
+				{
+					"type": "item",
+					"id": "engine-unit",
+					"amount": 32
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 15
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "tank",
+					"amount": 1
+				}
+			],
+			"duration": 5,
+			"category": "default"
+		},
+		{
+			"id": "spidertron",
+			"in": [
+				{
+					"type": "item",
+					"id": "exoskeleton-equipment",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "fission-reactor-equipment",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "rocket-turret",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "radar",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "raw-fish",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "spidertron",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "fluid-wagon",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 16
+				},
+				{
+					"type": "item",
+					"id": "pipe",
+					"amount": 8
+				},
+				{
+					"type": "item",
+					"id": "storage-tank",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "fluid-wagon",
+					"amount": 1
+				}
+			],
+			"duration": 1.5,
+			"category": "default"
+		},
+		{
+			"id": "artillery-wagon",
+			"in": [
+				{
+					"type": "item",
+					"id": "engine-unit",
+					"amount": 60
+				},
+				{
+					"type": "item",
+					"id": "tungsten-plate",
+					"amount": 60
+				},
+				{
+					"type": "item",
+					"id": "refined-concrete",
+					"amount": 60
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 40
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "artillery-wagon",
+					"amount": 1
+				}
+			],
+			"duration": 4,
+			"category": "default"
+		},
+		{
+			"id": "modular-armor",
+			"in": [
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 30
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 50
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "modular-armor",
+					"amount": 1
+				}
+			],
+			"duration": 15,
+			"category": "default"
+		},
+		{
+			"id": "power-armor",
+			"in": [
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 40
+				},
+				{
+					"type": "item",
+					"id": "electric-engine-unit",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 40
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "power-armor",
+					"amount": 1
+				}
+			],
+			"duration": 20,
+			"category": "default"
+		},
+		{
+			"id": "power-armor-mk2",
+			"in": [
+				{
+					"type": "item",
+					"id": "efficiency-module",
+					"amount": 100
+				},
+				{
+					"type": "item",
+					"id": "speed-module",
+					"amount": 100
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 60
+				},
+				{
+					"type": "item",
+					"id": "electric-engine-unit",
+					"amount": 40
+				},
+				{
+					"type": "item",
+					"id": "low-density-structure",
+					"amount": 30
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "power-armor-mk2",
+					"amount": 1
+				}
+			],
+			"duration": 25,
+			"category": "default"
+		},
+		{
+			"id": "flamethrower",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "flamethrower",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "land-mine",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "explosives",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "land-mine",
+					"amount": 4
+				}
+			],
+			"duration": 5,
+			"category": "default"
+		},
+		{
+			"id": "rocket-launcher",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "rocket-launcher",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "combat-shotgun",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 15
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "wood",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "combat-shotgun",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "chemical-science-pack",
+			"in": [
+				{
+					"type": "item",
+					"id": "engine-unit",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "sulfur",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "chemical-science-pack",
+					"amount": 2
+				}
+			],
+			"duration": 24,
+			"category": "default"
+		},
+		{
+			"id": "military-science-pack",
+			"in": [
+				{
+					"type": "item",
+					"id": "piercing-rounds-magazine",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "grenade",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "stone-wall",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "military-science-pack",
+					"amount": 2
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "production-science-pack",
+			"in": [
+				{
+					"type": "item",
+					"id": "electric-furnace",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "productivity-module",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "rail",
+					"amount": 30
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "production-science-pack",
+					"amount": 3
+				}
+			],
+			"duration": 21,
+			"category": "default"
+		},
+		{
+			"id": "utility-science-pack",
+			"in": [
+				{
+					"type": "item",
+					"id": "low-density-structure",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "flying-robot-frame",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "utility-science-pack",
+					"amount": 3
+				}
+			],
+			"duration": 21,
+			"category": "default"
+		},
+		{
+			"id": "express-underground-belt",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 80
+				},
+				{
+					"type": "item",
+					"id": "fast-underground-belt",
+					"amount": 2
+				},
+				{
+					"type": "fluid",
+					"id": "lubricant",
+					"amount": 40
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "express-underground-belt",
+					"amount": 2
+				}
+			],
+			"duration": 2,
+			"category": "crafting-with-fluid-or-metallurgy"
+		},
+		{
+			"id": "express-splitter",
+			"in": [
+				{
+					"type": "item",
+					"id": "fast-splitter",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 10
+				},
+				{
+					"type": "fluid",
+					"id": "lubricant",
+					"amount": 80
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "express-splitter",
+					"amount": 1
+				}
+			],
+			"duration": 2,
+			"category": "crafting-with-fluid-or-metallurgy"
+		},
+		{
+			"id": "advanced-circuit",
+			"in": [
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "plastic-bar",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "copper-cable",
+					"amount": 4
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 1
+				}
+			],
+			"duration": 6,
+			"category": "electronics"
+		},
+		{
+			"id": "processing-unit",
+			"in": [
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 2
+				},
+				{
+					"type": "fluid",
+					"id": "sulfuric-acid",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "electronics-with-fluid"
+		},
+		{
+			"id": "logistic-robot",
+			"in": [
+				{
+					"type": "item",
+					"id": "flying-robot-frame",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "logistic-robot",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "construction-robot",
+			"in": [
+				{
+					"type": "item",
+					"id": "flying-robot-frame",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "construction-robot",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "passive-provider-chest",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-chest",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "passive-provider-chest",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "active-provider-chest",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-chest",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "active-provider-chest",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "storage-chest",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-chest",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "storage-chest",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "buffer-chest",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-chest",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "buffer-chest",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "requester-chest",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-chest",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "requester-chest",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "rocket-silo",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 1000
+				},
+				{
+					"type": "item",
+					"id": "concrete",
+					"amount": 1000
+				},
+				{
+					"type": "item",
+					"id": "pipe",
+					"amount": 100
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 200
+				},
+				{
+					"type": "item",
+					"id": "electric-engine-unit",
+					"amount": 200
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "rocket-silo",
+					"amount": 1
+				}
+			],
+			"duration": 30,
+			"category": "default"
+		},
+		{
+			"id": "cargo-landing-pad",
+			"in": [
+				{
+					"type": "item",
+					"id": "concrete",
+					"amount": 200
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 25
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "cargo-landing-pad",
+					"amount": 1
+				}
+			],
+			"duration": 30,
+			"category": "default"
+		},
+		{
+			"id": "roboport",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 45
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 45
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 45
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "roboport",
+					"amount": 1
+				}
+			],
+			"duration": 5,
+			"category": "default"
+		},
+		{
+			"id": "substation",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "copper-cable",
+					"amount": 6
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "substation",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "electronics"
+		},
+		{
+			"id": "accumulator",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "battery",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "accumulator",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "electronics"
+		},
+		{
+			"id": "electric-furnace",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "stone-brick",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "electric-furnace",
+					"amount": 1
+				}
+			],
+			"duration": 5,
+			"category": "default"
+		},
+		{
+			"id": "beacon",
+			"in": [
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "copper-cable",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "beacon",
+					"amount": 1
+				}
+			],
+			"duration": 15,
+			"category": "electronics"
+		},
+		{
+			"id": "pumpjack",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "pipe",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "pumpjack",
+					"amount": 1
+				}
+			],
+			"duration": 5,
+			"category": "default"
+		},
+		{
+			"id": "oil-refinery",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 15
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "stone-brick",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "pipe",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "oil-refinery",
+					"amount": 1
+				}
+			],
+			"duration": 8,
+			"category": "default"
+		},
+		{
+			"id": "electric-engine-unit",
+			"in": [
+				{
+					"type": "item",
+					"id": "engine-unit",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "lubricant",
+					"amount": 15
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "electric-engine-unit",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "flying-robot-frame",
+			"in": [
+				{
+					"type": "item",
+					"id": "electric-engine-unit",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "battery",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 3
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "flying-robot-frame",
+					"amount": 1
+				}
+			],
+			"duration": 20,
+			"category": "default"
+		},
+		{
+			"id": "explosives",
+			"in": [
+				{
+					"type": "item",
+					"id": "sulfur",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "coal",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "explosives",
+					"amount": 2
+				}
+			],
+			"duration": 4,
+			"category": "chemistry-or-cryogenics"
+		},
+		{
+			"id": "battery",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "sulfuric-acid",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "battery",
+					"amount": 1
+				}
+			],
+			"duration": 4,
+			"category": "chemistry-or-cryogenics"
+		},
+		{
+			"id": "storage-tank",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "storage-tank",
+					"amount": 1
+				}
+			],
+			"duration": 3,
+			"category": "default"
+		},
+		{
+			"id": "pump",
+			"in": [
+				{
+					"type": "item",
+					"id": "engine-unit",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "pipe",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "pump",
+					"amount": 1
+				}
+			],
+			"duration": 2,
+			"category": "default"
+		},
+		{
+			"id": "chemical-plant",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "pipe",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "chemical-plant",
+					"amount": 1
+				}
+			],
+			"duration": 5,
+			"category": "default"
+		},
+		{
+			"id": "low-density-structure",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "plastic-bar",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "low-density-structure",
+					"amount": 1
+				}
+			],
+			"duration": 15,
+			"category": "crafting"
+		},
+		{
+			"id": "rocket-fuel",
+			"in": [
+				{
+					"type": "item",
+					"id": "solid-fuel",
+					"amount": 10
+				},
+				{
+					"type": "fluid",
+					"id": "light-oil",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "rocket-fuel",
+					"amount": 1
+				}
+			],
+			"duration": 15,
+			"category": "organic-or-assembling"
+		},
+		{
+			"id": "rocket-part",
+			"in": [
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "low-density-structure",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "rocket-fuel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "rocket-part",
+					"amount": 1
+				}
+			],
+			"duration": 3,
+			"category": "rocket-building"
+		},
+		{
+			"id": "nuclear-reactor",
+			"in": [
+				{
+					"type": "item",
+					"id": "concrete",
+					"amount": 500
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 500
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 500
+				},
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 500
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "nuclear-reactor",
+					"amount": 1
+				}
+			],
+			"duration": 8,
+			"category": "default"
+		},
+		{
+			"id": "centrifuge",
+			"in": [
+				{
+					"type": "item",
+					"id": "concrete",
+					"amount": 100
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 100
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 100
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "centrifuge",
+					"amount": 1
+				}
+			],
+			"duration": 4,
+			"category": "default"
+		},
+		{
+			"id": "uranium-processing",
+			"in": [
+				{
+					"type": "item",
+					"id": "uranium-ore",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "uranium-235",
+					"probability": 0.007000000000000001,
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "uranium-238",
+					"probability": 0.993,
+					"amount": 1
+				}
+			],
+			"duration": 12,
+			"category": "centrifuging"
+		},
+		{
+			"id": "kovarex-enrichment-process",
+			"in": [
+				{
+					"type": "item",
+					"id": "uranium-235",
+					"amount": 40
+				},
+				{
+					"type": "item",
+					"id": "uranium-238",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "uranium-235",
+					"amount": 41
+				},
+				{
+					"type": "item",
+					"id": "uranium-238",
+					"amount": 2
+				}
+			],
+			"duration": 60,
+			"category": "centrifuging"
+		},
+		{
+			"id": "nuclear-fuel",
+			"in": [
+				{
+					"type": "item",
+					"id": "uranium-235",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "rocket-fuel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "nuclear-fuel",
+					"amount": 1
+				}
+			],
+			"duration": 90,
+			"category": "centrifuging"
+		},
+		{
+			"id": "nuclear-fuel-reprocessing",
+			"in": [
+				{
+					"type": "item",
+					"id": "depleted-uranium-fuel-cell",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "uranium-238",
+					"amount": 3
+				}
+			],
+			"duration": 60,
+			"category": "centrifuging"
+		},
+		{
+			"id": "uranium-fuel-cell",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "uranium-235",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "uranium-238",
+					"amount": 19
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "uranium-fuel-cell",
+					"amount": 10
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "heat-exchanger",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 100
+				},
+				{
+					"type": "item",
+					"id": "pipe",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "heat-exchanger",
+					"amount": 1
+				}
+			],
+			"duration": 3,
+			"category": "default"
+		},
+		{
+			"id": "heat-pipe",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "heat-pipe",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "steam-turbine",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "pipe",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "steam-turbine",
+					"amount": 1
+				}
+			],
+			"duration": 3,
+			"category": "default"
+		},
+		{
+			"id": "rail-support",
+			"in": [
+				{
+					"type": "item",
+					"id": "refined-concrete",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "rail-support",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "rail-ramp",
+			"in": [
+				{
+					"type": "item",
+					"id": "refined-concrete",
+					"amount": 100
+				},
+				{
+					"type": "item",
+					"id": "rail",
+					"amount": 8
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "rail-ramp",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "default"
+		},
+		{
+			"id": "quality-module",
+			"in": [
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "quality-module",
+					"amount": 1
+				}
+			],
+			"duration": 15,
+			"category": "electronics"
+		},
+		{
+			"id": "quality-module-2",
+			"in": [
+				{
+					"type": "item",
+					"id": "quality-module",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "quality-module-2",
+					"amount": 1
+				}
+			],
+			"duration": 30,
+			"category": "electronics"
+		},
+		{
+			"id": "quality-module-3",
+			"in": [
+				{
+					"type": "item",
+					"id": "quality-module-2",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "superconductor",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "quality-module-3",
+					"amount": 1
+				}
+			],
+			"duration": 60,
+			"category": "electronics"
+		},
+		{
+			"id": "recycler",
+			"in": [
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 6
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 40
+				},
+				{
+					"type": "item",
+					"id": "concrete",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "recycler",
+					"amount": 1
+				}
+			],
+			"duration": 3,
+			"category": "default"
+		},
+		{
+			"id": "simple-coal-liquefaction",
+			"in": [
+				{
+					"type": "item",
+					"id": "coal",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "calcite",
+					"amount": 2
+				},
+				{
+					"type": "fluid",
+					"id": "sulfuric-acid",
+					"amount": 25
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "heavy-oil",
+					"amount": 50
+				}
+			],
+			"duration": 5,
+			"category": "oil-processing"
+		},
+		{
+			"id": "yumako-processing",
+			"in": [
+				{
+					"type": "item",
+					"id": "yumako",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "yumako-seed",
+					"amount": 1,
+					"probability": 0.02
+				},
+				{
+					"type": "item",
+					"id": "yumako-mash",
+					"amount": 2
+				}
+			],
+			"duration": 1,
+			"category": "organic-or-hand-crafting"
+		},
+		{
+			"id": "jellynut-processing",
+			"in": [
+				{
+					"type": "item",
+					"id": "jellynut",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "jellynut-seed",
+					"amount": 1,
+					"probability": 0.02
+				},
+				{
+					"type": "item",
+					"id": "jelly",
+					"amount": 4
+				}
+			],
+			"duration": 1,
+			"category": "organic-or-hand-crafting"
+		},
+		{
+			"id": "copper-bacteria",
+			"in": [
+				{
+					"type": "item",
+					"id": "yumako-mash",
+					"amount": 3
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "copper-bacteria",
+					"amount": 1,
+					"probability": 0.1
+				},
+				{
+					"type": "item",
+					"id": "spoilage",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "organic-or-hand-crafting"
+		},
+		{
+			"id": "copper-bacteria-cultivation",
+			"in": [
+				{
+					"type": "item",
+					"id": "copper-bacteria",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "bioflux",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "copper-bacteria",
+					"amount": 4
+				}
+			],
+			"duration": 4,
+			"category": "organic"
+		},
+		{
+			"id": "iron-bacteria",
+			"in": [
+				{
+					"type": "item",
+					"id": "jelly",
+					"amount": 6
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "iron-bacteria",
+					"amount": 1,
+					"probability": 0.1
+				},
+				{
+					"type": "item",
+					"id": "spoilage",
+					"amount": 4
+				}
+			],
+			"duration": 1,
+			"category": "organic-or-hand-crafting"
+		},
+		{
+			"id": "iron-bacteria-cultivation",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-bacteria",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "bioflux",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "iron-bacteria",
+					"amount": 4
+				}
+			],
+			"duration": 4,
+			"category": "organic"
+		},
+		{
+			"id": "artificial-yumako-soil",
+			"in": [
+				{
+					"type": "item",
+					"id": "yumako-seed",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "nutrients",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "landfill",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "artificial-yumako-soil",
+					"amount": 10
+				}
+			],
+			"duration": 2,
+			"category": "crafting"
+		},
+		{
+			"id": "overgrowth-yumako-soil",
+			"in": [
+				{
+					"type": "item",
+					"id": "artificial-yumako-soil",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "yumako-seed",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "biter-egg",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "spoilage",
+					"amount": 50
+				},
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 100
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "overgrowth-yumako-soil",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "artificial-jellynut-soil",
+			"in": [
+				{
+					"type": "item",
+					"id": "jellynut-seed",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "nutrients",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "landfill",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "artificial-jellynut-soil",
+					"amount": 10
+				}
+			],
+			"duration": 2,
+			"category": "crafting"
+		},
+		{
+			"id": "overgrowth-jellynut-soil",
+			"in": [
+				{
+					"type": "item",
+					"id": "artificial-jellynut-soil",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "jellynut-seed",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "biter-egg",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "spoilage",
+					"amount": 50
+				},
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 100
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "overgrowth-jellynut-soil",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "nutrients-from-spoilage",
+			"in": [
+				{
+					"type": "item",
+					"id": "spoilage",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "nutrients",
+					"amount": 1
+				}
+			],
+			"duration": 2,
+			"category": "organic-or-assembling"
+		},
+		{
+			"id": "nutrients-from-yumako-mash",
+			"in": [
+				{
+					"type": "item",
+					"id": "yumako-mash",
+					"amount": 4
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "nutrients",
+					"amount": 6
+				}
+			],
+			"duration": 4,
+			"category": "organic"
+		},
+		{
+			"id": "nutrients-from-bioflux",
+			"in": [
+				{
+					"type": "item",
+					"id": "bioflux",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "nutrients",
+					"amount": 40
+				}
+			],
+			"duration": 2,
+			"category": "organic"
+		},
+		{
+			"id": "pentapod-egg",
+			"in": [
+				{
+					"type": "item",
+					"id": "pentapod-egg",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "nutrients",
+					"amount": 30
+				},
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 60
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "pentapod-egg",
+					"amount": 2
+				}
+			],
+			"duration": 15,
+			"category": "organic"
+		},
+		{
+			"id": "rocket-fuel-from-jelly",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 30
+				},
+				{
+					"type": "item",
+					"id": "jelly",
+					"amount": 30
+				},
+				{
+					"type": "item",
+					"id": "bioflux",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "rocket-fuel",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "organic"
+		},
+		{
+			"id": "bioflux",
+			"in": [
+				{
+					"type": "item",
+					"id": "yumako-mash",
+					"amount": 15
+				},
+				{
+					"type": "item",
+					"id": "jelly",
+					"amount": 12
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "bioflux",
+					"amount": 4
+				}
+			],
+			"duration": 6,
+			"category": "organic"
+		},
+		{
+			"id": "bioplastic",
+			"in": [
+				{
+					"type": "item",
+					"id": "bioflux",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "yumako-mash",
+					"amount": 4
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "plastic-bar",
+					"amount": 3
+				}
+			],
+			"duration": 2,
+			"category": "organic"
+		},
+		{
+			"id": "biosulfur",
+			"in": [
+				{
+					"type": "item",
+					"id": "spoilage",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "bioflux",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "sulfur",
+					"amount": 2
+				}
+			],
+			"duration": 2,
+			"category": "organic"
+		},
+		{
+			"id": "biolubricant",
+			"in": [
+				{
+					"type": "item",
+					"id": "jelly",
+					"amount": 60
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "lubricant",
+					"amount": 20
+				}
+			],
+			"duration": 3,
+			"category": "organic"
+		},
+		{
+			"id": "carbon-fiber",
+			"in": [
+				{
+					"type": "item",
+					"id": "yumako-mash",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "carbon",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "carbon-fiber",
+					"amount": 1
+				}
+			],
+			"duration": 5,
+			"category": "organic"
+		},
+		{
+			"id": "toolbelt-equipment",
+			"in": [
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "carbon-fiber",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "toolbelt-equipment",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "battery-mk3-equipment",
+			"in": [
+				{
+					"type": "item",
+					"id": "battery-mk2-equipment",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "supercapacitor",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "battery-mk3-equipment",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "space-platform-foundation",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "copper-cable",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "space-platform-foundation",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "crafting"
+		},
+		{
+			"id": "stack-inserter",
+			"in": [
+				{
+					"type": "item",
+					"id": "bulk-inserter",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "carbon-fiber",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "jelly",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "stack-inserter",
+					"amount": 1
+				}
+			],
+			"duration": 0.5,
+			"category": "default"
+		},
+		{
+			"id": "rocket-turret",
+			"in": [
+				{
+					"type": "item",
+					"id": "rocket-launcher",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "carbon-fiber",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "rocket-turret",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "space-platform-starter-pack",
+			"in": [
+				{
+					"type": "item",
+					"id": "space-platform-foundation",
+					"amount": 60
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "space-platform-starter-pack",
+					"amount": 1
+				}
+			],
+			"duration": 60,
+			"category": "default"
+		},
+		{
+			"id": "cargo-bay",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "low-density-structure",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "cargo-bay",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "asteroid-collector",
+			"in": [
+				{
+					"type": "item",
+					"id": "low-density-structure",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "electric-engine-unit",
+					"amount": 8
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "asteroid-collector",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "crusher",
+			"in": [
+				{
+					"type": "item",
+					"id": "low-density-structure",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "electric-engine-unit",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "crusher",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "thruster",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "electric-engine-unit",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "thruster",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "space-science-pack",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "carbon",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "ice",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "space-science-pack",
+					"amount": 5
+				}
+			],
+			"duration": 15,
+			"category": "default"
+		},
+		{
+			"id": "metallurgic-science-pack",
+			"in": [
+				{
+					"type": "item",
+					"id": "tungsten-carbide",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "tungsten-plate",
+					"amount": 2
+				},
+				{
+					"type": "fluid",
+					"id": "molten-copper",
+					"amount": 200
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "metallurgic-science-pack",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "metallurgy"
+		},
+		{
+			"id": "agricultural-science-pack",
+			"in": [
+				{
+					"type": "item",
+					"id": "bioflux",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "pentapod-egg",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "agricultural-science-pack",
+					"amount": 1
+				}
+			],
+			"duration": 4,
+			"category": "organic"
+		},
+		{
+			"id": "electromagnetic-science-pack",
+			"in": [
+				{
+					"type": "item",
+					"id": "supercapacitor",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "accumulator",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "electrolyte",
+					"amount": 25
+				},
+				{
+					"type": "fluid",
+					"id": "holmium-solution",
+					"amount": 25
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "electromagnetic-science-pack",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "electromagnetics"
+		},
+		{
+			"id": "cryogenic-science-pack",
+			"in": [
+				{
+					"type": "item",
+					"id": "ice",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "lithium-plate",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "fluoroketone-cold",
+					"amount": 6
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "cryogenic-science-pack",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "fluoroketone-hot",
+					"amount": 3
+				}
+			],
+			"duration": 20,
+			"category": "cryogenics"
+		},
+		{
+			"id": "metallic-asteroid-crushing",
+			"in": [
+				{
+					"type": "item",
+					"id": "metallic-asteroid-chunk",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "iron-ore",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "metallic-asteroid-chunk",
+					"amount": 1,
+					"probability": 0.2
+				}
+			],
+			"duration": 2,
+			"category": "crushing"
+		},
+		{
+			"id": "carbonic-asteroid-crushing",
+			"in": [
+				{
+					"type": "item",
+					"id": "carbonic-asteroid-chunk",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "carbon",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "carbonic-asteroid-chunk",
+					"amount": 1,
+					"probability": 0.2
+				}
+			],
+			"duration": 2,
+			"category": "crushing"
+		},
+		{
+			"id": "oxide-asteroid-crushing",
+			"in": [
+				{
+					"type": "item",
+					"id": "oxide-asteroid-chunk",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "ice",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "oxide-asteroid-chunk",
+					"amount": 1,
+					"probability": 0.2
+				}
+			],
+			"duration": 2,
+			"category": "crushing"
+		},
+		{
+			"id": "advanced-metallic-asteroid-crushing",
+			"in": [
+				{
+					"type": "item",
+					"id": "metallic-asteroid-chunk",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "iron-ore",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "copper-ore",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "metallic-asteroid-chunk",
+					"amount": 1,
+					"probability": 0.05
+				}
+			],
+			"duration": 5,
+			"category": "crushing"
+		},
+		{
+			"id": "advanced-carbonic-asteroid-crushing",
+			"in": [
+				{
+					"type": "item",
+					"id": "carbonic-asteroid-chunk",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "carbon",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "sulfur",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "carbonic-asteroid-chunk",
+					"amount": 1,
+					"probability": 0.05
+				}
+			],
+			"duration": 5,
+			"category": "crushing"
+		},
+		{
+			"id": "advanced-oxide-asteroid-crushing",
+			"in": [
+				{
+					"type": "item",
+					"id": "oxide-asteroid-chunk",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "ice",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "calcite",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "oxide-asteroid-chunk",
+					"amount": 1,
+					"probability": 0.05
+				}
+			],
+			"duration": 5,
+			"category": "crushing"
+		},
+		{
+			"id": "metallic-asteroid-reprocessing",
+			"in": [
+				{
+					"type": "item",
+					"id": "metallic-asteroid-chunk",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "metallic-asteroid-chunk",
+					"amount": 1,
+					"probability": 0.4
+				},
+				{
+					"type": "item",
+					"id": "carbonic-asteroid-chunk",
+					"amount": 1,
+					"probability": 0.2
+				},
+				{
+					"type": "item",
+					"id": "oxide-asteroid-chunk",
+					"amount": 1,
+					"probability": 0.2
+				}
+			],
+			"duration": 2,
+			"category": "crushing"
+		},
+		{
+			"id": "carbonic-asteroid-reprocessing",
+			"in": [
+				{
+					"type": "item",
+					"id": "carbonic-asteroid-chunk",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "carbonic-asteroid-chunk",
+					"amount": 1,
+					"probability": 0.4
+				},
+				{
+					"type": "item",
+					"id": "metallic-asteroid-chunk",
+					"amount": 1,
+					"probability": 0.2
+				},
+				{
+					"type": "item",
+					"id": "oxide-asteroid-chunk",
+					"amount": 1,
+					"probability": 0.2
+				}
+			],
+			"duration": 2,
+			"category": "crushing"
+		},
+		{
+			"id": "oxide-asteroid-reprocessing",
+			"in": [
+				{
+					"type": "item",
+					"id": "oxide-asteroid-chunk",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "oxide-asteroid-chunk",
+					"amount": 1,
+					"probability": 0.4
+				},
+				{
+					"type": "item",
+					"id": "metallic-asteroid-chunk",
+					"amount": 1,
+					"probability": 0.2
+				},
+				{
+					"type": "item",
+					"id": "carbonic-asteroid-chunk",
+					"amount": 1,
+					"probability": 0.2
+				}
+			],
+			"duration": 1,
+			"category": "crushing"
+		},
+		{
+			"id": "thruster-fuel",
+			"in": [
+				{
+					"type": "item",
+					"id": "carbon",
+					"amount": 2
+				},
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "thruster-fuel",
+					"amount": 75
+				}
+			],
+			"duration": 2,
+			"category": "chemistry"
+		},
+		{
+			"id": "thruster-oxidizer",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-ore",
+					"amount": 2
+				},
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "thruster-oxidizer",
+					"amount": 75
+				}
+			],
+			"duration": 2,
+			"category": "chemistry"
+		},
+		{
+			"id": "ice-melting",
+			"in": [
+				{
+					"type": "item",
+					"id": "ice",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 20
+				}
+			],
+			"duration": 1,
+			"category": "chemistry"
+		},
+		{
+			"id": "advanced-thruster-fuel",
+			"in": [
+				{
+					"type": "item",
+					"id": "carbon",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "calcite",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 100
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "thruster-fuel",
+					"amount": 1500
+				}
+			],
+			"duration": 10,
+			"category": "chemistry"
+		},
+		{
+			"id": "advanced-thruster-oxidizer",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-ore",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "calcite",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 100
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "thruster-oxidizer",
+					"amount": 1500
+				}
+			],
+			"duration": 10,
+			"category": "chemistry"
+		},
+		{
+			"id": "acid-neutralisation",
+			"in": [
+				{
+					"type": "item",
+					"id": "calcite",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "sulfuric-acid",
+					"amount": 1000
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "steam",
+					"amount": 10000,
+					"temperature": 500
+				}
+			],
+			"duration": 5,
+			"category": "chemistry-or-cryogenics"
+		},
+		{
+			"id": "steam-condensation",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "steam",
+					"amount": 1000
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 90
+				}
+			],
+			"duration": 1,
+			"category": "chemistry-or-cryogenics"
+		},
+		{
+			"id": "carbon",
+			"in": [
+				{
+					"type": "item",
+					"id": "coal",
+					"amount": 2
+				},
+				{
+					"type": "fluid",
+					"id": "sulfuric-acid",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "carbon",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "chemistry-or-cryogenics"
+		},
+		{
+			"id": "tungsten-carbide",
+			"in": [
+				{
+					"type": "item",
+					"id": "tungsten-ore",
+					"amount": 2
+				},
+				{
+					"type": "fluid",
+					"id": "sulfuric-acid",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "carbon",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "tungsten-carbide",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "foundry",
+			"in": [
+				{
+					"type": "item",
+					"id": "tungsten-carbide",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 30
+				},
+				{
+					"type": "item",
+					"id": "refined-concrete",
+					"amount": 20
+				},
+				{
+					"type": "fluid",
+					"id": "lubricant",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "foundry",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "metallurgy-or-assembling"
+		},
+		{
+			"id": "molten-iron-from-lava",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "lava",
+					"amount": 500
+				},
+				{
+					"type": "item",
+					"id": "calcite",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "molten-iron",
+					"amount": 250
+				},
+				{
+					"type": "item",
+					"id": "stone",
+					"amount": 10
+				}
+			],
+			"duration": 16,
+			"category": "metallurgy"
+		},
+		{
+			"id": "molten-copper-from-lava",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "lava",
+					"amount": 500
+				},
+				{
+					"type": "item",
+					"id": "calcite",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "molten-copper",
+					"amount": 250
+				},
+				{
+					"type": "item",
+					"id": "stone",
+					"amount": 15
+				}
+			],
+			"duration": 16,
+			"category": "metallurgy"
+		},
+		{
+			"id": "molten-iron",
+			"in": [
+				{
+					"type": "item",
+					"id": "iron-ore",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "calcite",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "molten-iron",
+					"amount": 500
+				}
+			],
+			"duration": 32,
+			"category": "metallurgy"
+		},
+		{
+			"id": "molten-copper",
+			"in": [
+				{
+					"type": "item",
+					"id": "copper-ore",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "calcite",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "molten-copper",
+					"amount": 500
+				}
+			],
+			"duration": 32,
+			"category": "metallurgy"
+		},
+		{
+			"id": "casting-iron",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "molten-iron",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 2
+				}
+			],
+			"duration": 3.2,
+			"category": "metallurgy"
+		},
+		{
+			"id": "casting-steel",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "molten-iron",
+					"amount": 30
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 1
+				}
+			],
+			"duration": 3.2,
+			"category": "metallurgy"
+		},
+		{
+			"id": "casting-copper",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "molten-copper",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 2
+				}
+			],
+			"duration": 3.2,
+			"category": "metallurgy"
+		},
+		{
+			"id": "casting-iron-gear-wheel",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "molten-iron",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "metallurgy"
+		},
+		{
+			"id": "casting-iron-stick",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "molten-iron",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "iron-stick",
+					"amount": 4
+				}
+			],
+			"duration": 1,
+			"category": "metallurgy"
+		},
+		{
+			"id": "casting-pipe",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "molten-iron",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "pipe",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "metallurgy"
+		},
+		{
+			"id": "casting-pipe-to-ground",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "molten-iron",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "pipe",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "pipe-to-ground",
+					"amount": 2
+				}
+			],
+			"duration": 1,
+			"category": "metallurgy"
+		},
+		{
+			"id": "casting-low-density-structure",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "molten-iron",
+					"amount": 80
+				},
+				{
+					"type": "fluid",
+					"id": "molten-copper",
+					"amount": 250
+				},
+				{
+					"type": "item",
+					"id": "plastic-bar",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "low-density-structure",
+					"amount": 1
+				}
+			],
+			"duration": 15,
+			"category": "metallurgy"
+		},
+		{
+			"id": "concrete-from-molten-iron",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "molten-iron",
+					"amount": 20
+				},
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 100
+				},
+				{
+					"type": "item",
+					"id": "stone-brick",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "concrete",
+					"amount": 10
+				}
+			],
+			"duration": 10,
+			"category": "metallurgy"
+		},
+		{
+			"id": "casting-copper-cable",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "molten-copper",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "copper-cable",
+					"amount": 2
+				}
+			],
+			"duration": 1,
+			"category": "metallurgy"
+		},
+		{
+			"id": "tungsten-plate",
+			"in": [
+				{
+					"type": "item",
+					"id": "tungsten-ore",
+					"amount": 4
+				},
+				{
+					"type": "fluid",
+					"id": "molten-iron",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "tungsten-plate",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "metallurgy"
+		},
+		{
+			"id": "turbo-transport-belt",
+			"in": [
+				{
+					"type": "item",
+					"id": "tungsten-plate",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "express-transport-belt",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "lubricant",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "turbo-transport-belt",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "metallurgy"
+		},
+		{
+			"id": "turbo-underground-belt",
+			"in": [
+				{
+					"type": "item",
+					"id": "tungsten-plate",
+					"amount": 40
+				},
+				{
+					"type": "item",
+					"id": "express-underground-belt",
+					"amount": 2
+				},
+				{
+					"type": "fluid",
+					"id": "lubricant",
+					"amount": 40
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "turbo-underground-belt",
+					"amount": 2
+				}
+			],
+			"duration": 2,
+			"category": "metallurgy"
+		},
+		{
+			"id": "turbo-splitter",
+			"in": [
+				{
+					"type": "item",
+					"id": "express-splitter",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "tungsten-plate",
+					"amount": 15
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 2
+				},
+				{
+					"type": "fluid",
+					"id": "lubricant",
+					"amount": 80
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "turbo-splitter",
+					"amount": 1
+				}
+			],
+			"duration": 2,
+			"category": "metallurgy"
+		},
+		{
+			"id": "big-mining-drill",
+			"in": [
+				{
+					"type": "item",
+					"id": "electric-mining-drill",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "molten-iron",
+					"amount": 200
+				},
+				{
+					"type": "item",
+					"id": "tungsten-carbide",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "electric-engine-unit",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "big-mining-drill",
+					"amount": 1
+				}
+			],
+			"duration": 30,
+			"category": "metallurgy"
+		},
+		{
+			"id": "mech-armor",
+			"in": [
+				{
+					"type": "item",
+					"id": "power-armor-mk2",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "holmium-plate",
+					"amount": 200
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 100
+				},
+				{
+					"type": "item",
+					"id": "superconductor",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "supercapacitor",
+					"amount": 50
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "mech-armor",
+					"amount": 1
+				}
+			],
+			"duration": 60,
+			"category": "default"
+		},
+		{
+			"id": "railgun",
+			"in": [
+				{
+					"type": "item",
+					"id": "tungsten-plate",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "superconductor",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "quantum-processor",
+					"amount": 20
+				},
+				{
+					"type": "fluid",
+					"id": "fluoroketone-cold",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "railgun",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "cryogenics"
+		},
+		{
+			"id": "railgun-turret",
+			"in": [
+				{
+					"type": "item",
+					"id": "quantum-processor",
+					"amount": 100
+				},
+				{
+					"type": "item",
+					"id": "tungsten-plate",
+					"amount": 30
+				},
+				{
+					"type": "item",
+					"id": "superconductor",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "carbon-fiber",
+					"amount": 20
+				},
+				{
+					"type": "fluid",
+					"id": "fluoroketone-cold",
+					"amount": 100
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "railgun-turret",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "cryogenics"
+		},
+		{
+			"id": "railgun-ammo",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "copper-cable",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "explosives",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "railgun-ammo",
+					"amount": 1
+				}
+			],
+			"duration": 25,
+			"category": "default"
+		},
+		{
+			"id": "agricultural-tower",
+			"in": [
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 3
+				},
+				{
+					"type": "item",
+					"id": "spoilage",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "landfill",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "agricultural-tower",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "biochamber",
+			"in": [
+				{
+					"type": "item",
+					"id": "nutrients",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "pentapod-egg",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "iron-plate",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "landfill",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "biochamber",
+					"amount": 1
+				}
+			],
+			"duration": 20,
+			"category": "organic-or-assembling"
+		},
+		{
+			"id": "burnt-spoilage",
+			"in": [
+				{
+					"type": "item",
+					"id": "spoilage",
+					"amount": 6
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "carbon",
+					"amount": 1
+				}
+			],
+			"duration": 12,
+			"category": "organic"
+		},
+		{
+			"id": "coal-synthesis",
+			"in": [
+				{
+					"type": "item",
+					"id": "carbon",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "sulfur",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "coal",
+					"amount": 1
+				}
+			],
+			"duration": 2,
+			"category": "chemistry"
+		},
+		{
+			"id": "capture-robot-rocket",
+			"in": [
+				{
+					"type": "item",
+					"id": "flying-robot-frame",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "bioflux",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "capture-robot-rocket",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "biolab",
+			"in": [
+				{
+					"type": "item",
+					"id": "lab",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "biter-egg",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "refined-concrete",
+					"amount": 25
+				},
+				{
+					"type": "item",
+					"id": "capture-robot-rocket",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "uranium-235",
+					"amount": 3
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "biolab",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "captive-biter-spawner",
+			"in": [
+				{
+					"type": "item",
+					"id": "biter-egg",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "capture-robot-rocket",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "uranium-235",
+					"amount": 15
+				},
+				{
+					"type": "fluid",
+					"id": "fluoroketone-cold",
+					"amount": 100
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "captive-biter-spawner",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "cryogenics"
+		},
+		{
+			"id": "biter-egg",
+			"in": {},
+			"out": [
+				{
+					"type": "item",
+					"id": "biter-egg",
+					"amount": 5
+				}
+			],
+			"duration": 10,
+			"category": "captive-spawner-process"
+		},
+		{
+			"id": "fish-breeding",
+			"in": [
+				{
+					"type": "item",
+					"id": "raw-fish",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "nutrients",
+					"amount": 100
+				},
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 100
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "raw-fish",
+					"amount": 3
+				}
+			],
+			"duration": 6,
+			"category": "organic-or-chemistry"
+		},
+		{
+			"id": "nutrients-from-fish",
+			"in": [
+				{
+					"type": "item",
+					"id": "raw-fish",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "nutrients",
+					"amount": 20
+				}
+			],
+			"duration": 2,
+			"category": "organic-or-assembling"
+		},
+		{
+			"id": "nutrients-from-biter-egg",
+			"in": [
+				{
+					"type": "item",
+					"id": "biter-egg",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "nutrients",
+					"amount": 20
+				}
+			],
+			"duration": 2,
+			"category": "organic-or-assembling"
+		},
+		{
+			"id": "scrap-recycling",
+			"in": [
+				{
+					"type": "item",
+					"id": "scrap",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "iron-gear-wheel",
+					"amount": 1,
+					"probability": 0.2
+				},
+				{
+					"type": "item",
+					"id": "solid-fuel",
+					"amount": 1,
+					"probability": 0.07
+				},
+				{
+					"type": "item",
+					"id": "concrete",
+					"amount": 1,
+					"probability": 0.06
+				},
+				{
+					"type": "item",
+					"id": "ice",
+					"amount": 1,
+					"probability": 0.05
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 1,
+					"probability": 0.04
+				},
+				{
+					"type": "item",
+					"id": "battery",
+					"amount": 1,
+					"probability": 0.04
+				},
+				{
+					"type": "item",
+					"id": "stone",
+					"amount": 1,
+					"probability": 0.04
+				},
+				{
+					"type": "item",
+					"id": "advanced-circuit",
+					"amount": 1,
+					"probability": 0.03
+				},
+				{
+					"type": "item",
+					"id": "copper-cable",
+					"amount": 1,
+					"probability": 0.03
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 1,
+					"probability": 0.02
+				},
+				{
+					"type": "item",
+					"id": "low-density-structure",
+					"amount": 1,
+					"probability": 0.01
+				},
+				{
+					"type": "item",
+					"id": "holmium-ore",
+					"amount": 1,
+					"probability": 0.01
+				}
+			],
+			"duration": 0.2,
+			"category": "recycling-or-hand-crafting"
+		},
+		{
+			"id": "lightning-rod",
+			"in": [
+				{
+					"type": "item",
+					"id": "copper-cable",
+					"amount": 12
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 8
+				},
+				{
+					"type": "item",
+					"id": "stone-brick",
+					"amount": 4
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "lightning-rod",
+					"amount": 1
+				}
+			],
+			"duration": 5,
+			"category": "electronics"
+		},
+		{
+			"id": "holmium-solution",
+			"in": [
+				{
+					"type": "item",
+					"id": "holmium-ore",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "stone",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "holmium-solution",
+					"amount": 100
+				}
+			],
+			"duration": 10,
+			"category": "chemistry"
+		},
+		{
+			"id": "holmium-plate",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "holmium-solution",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "holmium-plate",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "crafting-with-fluid-or-metallurgy"
+		},
+		{
+			"id": "electromagnetic-plant",
+			"in": [
+				{
+					"type": "item",
+					"id": "holmium-plate",
+					"amount": 150
+				},
+				{
+					"type": "item",
+					"id": "steel-plate",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "refined-concrete",
+					"amount": 50
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "electromagnetic-plant",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "electronics-or-assembling"
+		},
+		{
+			"id": "superconductor",
+			"in": [
+				{
+					"type": "item",
+					"id": "holmium-plate",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "copper-plate",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "plastic-bar",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "light-oil",
+					"amount": 5
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "superconductor",
+					"amount": 2
+				}
+			],
+			"duration": 5,
+			"category": "electromagnetics"
+		},
+		{
+			"id": "supercapacitor",
+			"in": [
+				{
+					"type": "item",
+					"id": "holmium-plate",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "superconductor",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "electronic-circuit",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "battery",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "electrolyte",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "supercapacitor",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "electromagnetics"
+		},
+		{
+			"id": "electrolyte",
+			"in": [
+				{
+					"type": "item",
+					"id": "stone",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "heavy-oil",
+					"amount": 10
+				},
+				{
+					"type": "fluid",
+					"id": "holmium-solution",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "electrolyte",
+					"amount": 10
+				}
+			],
+			"duration": 5,
+			"category": "electromagnetics"
+		},
+		{
+			"id": "lightning-collector",
+			"in": [
+				{
+					"type": "item",
+					"id": "lightning-rod",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "supercapacitor",
+					"amount": 8
+				},
+				{
+					"type": "item",
+					"id": "accumulator",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "electrolyte",
+					"amount": 80
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "lightning-collector",
+					"amount": 1
+				}
+			],
+			"duration": 5,
+			"category": "electromagnetics"
+		},
+		{
+			"id": "teslagun",
+			"in": [
+				{
+					"type": "item",
+					"id": "holmium-plate",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "superconductor",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "plastic-bar",
+					"amount": 30
+				},
+				{
+					"type": "fluid",
+					"id": "electrolyte",
+					"amount": 100
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "teslagun",
+					"amount": 1
+				}
+			],
+			"duration": 30,
+			"category": "electromagnetics"
+		},
+		{
+			"id": "tesla-turret",
+			"in": [
+				{
+					"type": "item",
+					"id": "teslagun",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "supercapacitor",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "superconductor",
+					"amount": 50
+				},
+				{
+					"type": "fluid",
+					"id": "electrolyte",
+					"amount": 500
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "tesla-turret",
+					"amount": 1
+				}
+			],
+			"duration": 30,
+			"category": "electromagnetics"
+		},
+		{
+			"id": "tesla-ammo",
+			"in": [
+				{
+					"type": "item",
+					"id": "supercapacitor",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "plastic-bar",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "electrolyte",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "tesla-ammo",
+					"amount": 1
+				}
+			],
+			"duration": 30,
+			"category": "electromagnetics"
+		},
+		{
+			"id": "heating-tower",
+			"in": [
+				{
+					"type": "item",
+					"id": "boiler",
+					"amount": 2
+				},
+				{
+					"type": "item",
+					"id": "heat-pipe",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "concrete",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "heating-tower",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "default"
+		},
+		{
+			"id": "lithium",
+			"in": [
+				{
+					"type": "item",
+					"id": "holmium-plate",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "lithium-brine",
+					"amount": 50
+				},
+				{
+					"type": "fluid",
+					"id": "ammonia",
+					"amount": 50
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "lithium",
+					"amount": 5
+				}
+			],
+			"duration": 20,
+			"category": "chemistry-or-cryogenics"
+		},
+		{
+			"id": "lithium-plate",
+			"in": [
+				{
+					"type": "item",
+					"id": "lithium",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "lithium-plate",
+					"amount": 1
+				}
+			],
+			"duration": 6.4,
+			"category": "smelting"
+		},
+		{
+			"id": "fluoroketone",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "fluorine",
+					"amount": 50
+				},
+				{
+					"type": "fluid",
+					"id": "ammonia",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "solid-fuel",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "lithium",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "fluoroketone-hot",
+					"amount": 50,
+					"temperature": 180
+				}
+			],
+			"duration": 10,
+			"category": "cryogenics"
+		},
+		{
+			"id": "fluoroketone-cooling",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "fluoroketone-hot",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "fluoroketone-cold",
+					"amount": 10,
+					"temperature": -150
+				}
+			],
+			"duration": 5,
+			"category": "cryogenics"
+		},
+		{
+			"id": "cryogenic-plant",
+			"in": [
+				{
+					"type": "item",
+					"id": "refined-concrete",
+					"amount": 40
+				},
+				{
+					"type": "item",
+					"id": "superconductor",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 20
+				},
+				{
+					"type": "item",
+					"id": "lithium-plate",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "cryogenic-plant",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "cryogenics-or-assembling"
+		},
+		{
+			"id": "quantum-processor",
+			"in": [
+				{
+					"type": "item",
+					"id": "tungsten-carbide",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "processing-unit",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "superconductor",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "carbon-fiber",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "lithium-plate",
+					"amount": 2
+				},
+				{
+					"type": "fluid",
+					"id": "fluoroketone-cold",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "quantum-processor",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "fluoroketone-hot",
+					"amount": 5,
+					"temperature": 180
+				}
+			],
+			"duration": 30,
+			"category": "electromagnetics"
+		},
+		{
+			"id": "ammoniacal-solution-separation",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "ammoniacal-solution",
+					"amount": 50
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "ice",
+					"amount": 5
+				},
+				{
+					"type": "fluid",
+					"id": "ammonia",
+					"amount": 50
+				}
+			],
+			"duration": 1,
+			"category": "chemistry-or-cryogenics"
+		},
+		{
+			"id": "fusion-reactor-equipment",
+			"in": [
+				{
+					"type": "item",
+					"id": "fission-reactor-equipment",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "fusion-power-cell",
+					"amount": 10
+				},
+				{
+					"type": "item",
+					"id": "tungsten-plate",
+					"amount": 250
+				},
+				{
+					"type": "item",
+					"id": "carbon-fiber",
+					"amount": 100
+				},
+				{
+					"type": "item",
+					"id": "supercapacitor",
+					"amount": 25
+				},
+				{
+					"type": "item",
+					"id": "quantum-processor",
+					"amount": 250
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "fusion-reactor-equipment",
+					"amount": 1
+				}
+			],
+			"duration": 30,
+			"category": "default"
+		},
+		{
+			"id": "fusion-power-cell",
+			"in": [
+				{
+					"type": "item",
+					"id": "lithium-plate",
+					"amount": 5
+				},
+				{
+					"type": "item",
+					"id": "holmium-plate",
+					"amount": 1
+				},
+				{
+					"type": "fluid",
+					"id": "ammonia",
+					"amount": 100
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "fusion-power-cell",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "cryogenics"
+		},
+		{
+			"id": "fusion-reactor",
+			"in": [
+				{
+					"type": "item",
+					"id": "tungsten-plate",
+					"amount": 200
+				},
+				{
+					"type": "item",
+					"id": "superconductor",
+					"amount": 200
+				},
+				{
+					"type": "item",
+					"id": "quantum-processor",
+					"amount": 250
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "fusion-reactor",
+					"amount": 1
+				}
+			],
+			"duration": 60,
+			"category": "cryogenics"
+		},
+		{
+			"id": "fusion-generator",
+			"in": [
+				{
+					"type": "item",
+					"id": "tungsten-plate",
+					"amount": 100
+				},
+				{
+					"type": "item",
+					"id": "superconductor",
+					"amount": 100
+				},
+				{
+					"type": "item",
+					"id": "quantum-processor",
+					"amount": 50
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "fusion-generator",
+					"amount": 1
+				}
+			],
+			"duration": 30,
+			"category": "cryogenics"
+		},
+		{
+			"id": "ice-platform",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "ammonia",
+					"amount": 400
+				},
+				{
+					"type": "item",
+					"id": "ice",
+					"amount": 50
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "ice-platform",
+					"amount": 1
+				}
+			],
+			"duration": 30,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "solid-fuel-from-ammonia",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "ammonia",
+					"amount": 15
+				},
+				{
+					"type": "fluid",
+					"id": "crude-oil",
+					"amount": 6
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "solid-fuel",
+					"amount": 1
+				}
+			],
+			"duration": 0.5,
+			"category": "chemistry-or-cryogenics"
+		},
+		{
+			"id": "ammonia-rocket-fuel",
+			"in": [
+				{
+					"type": "item",
+					"id": "solid-fuel",
+					"amount": 10
+				},
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 50
+				},
+				{
+					"type": "fluid",
+					"id": "ammonia",
+					"amount": 500
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "rocket-fuel",
+					"amount": 1
+				}
+			],
+			"duration": 10,
+			"category": "chemistry-or-cryogenics"
+		},
+		{
+			"id": "foundation",
+			"in": [
+				{
+					"type": "item",
+					"id": "tungsten-plate",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "lithium-plate",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "carbon-fiber",
+					"amount": 4
+				},
+				{
+					"type": "item",
+					"id": "stone",
+					"amount": 20
+				},
+				{
+					"type": "fluid",
+					"id": "fluoroketone-cold",
+					"amount": 20
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "foundation",
+					"amount": 1
+				}
+			],
+			"duration": 30,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "promethium-science-pack",
+			"in": [
+				{
+					"type": "item",
+					"id": "promethium-asteroid-chunk",
+					"amount": 25
+				},
+				{
+					"type": "item",
+					"id": "quantum-processor",
+					"amount": 1
+				},
+				{
+					"type": "item",
+					"id": "biter-egg",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "promethium-science-pack",
+					"amount": 10
+				}
+			],
+			"duration": 5,
+			"category": "cryogenics"
+		},
+		{
+			"id": "wood-processing",
+			"in": [
+				{
+					"type": "item",
+					"id": "wood",
+					"amount": 2
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "tree-seed",
+					"amount": 1
+				}
+			],
+			"duration": 2,
+			"category": "organic-or-assembling"
+		},
+		{
+			"id": "water-barrel",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "water-barrel",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "empty-water-barrel",
+			"in": [
+				{
+					"type": "item",
+					"id": "water-barrel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "water",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "sulfuric-acid-barrel",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "sulfuric-acid",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "sulfuric-acid-barrel",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "empty-sulfuric-acid-barrel",
+			"in": [
+				{
+					"type": "item",
+					"id": "sulfuric-acid-barrel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "sulfuric-acid",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "crude-oil-barrel",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "crude-oil",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "crude-oil-barrel",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "empty-crude-oil-barrel",
+			"in": [
+				{
+					"type": "item",
+					"id": "crude-oil-barrel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "crude-oil",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "heavy-oil-barrel",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "heavy-oil",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "heavy-oil-barrel",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "empty-heavy-oil-barrel",
+			"in": [
+				{
+					"type": "item",
+					"id": "heavy-oil-barrel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "heavy-oil",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "light-oil-barrel",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "light-oil",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "light-oil-barrel",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "empty-light-oil-barrel",
+			"in": [
+				{
+					"type": "item",
+					"id": "light-oil-barrel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "light-oil",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "petroleum-gas-barrel",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "petroleum-gas",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "petroleum-gas-barrel",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "empty-petroleum-gas-barrel",
+			"in": [
+				{
+					"type": "item",
+					"id": "petroleum-gas-barrel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "petroleum-gas",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "lubricant-barrel",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "lubricant",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "lubricant-barrel",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "empty-lubricant-barrel",
+			"in": [
+				{
+					"type": "item",
+					"id": "lubricant-barrel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "lubricant",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "fluoroketone-cold-barrel",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "fluoroketone-cold",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "fluoroketone-cold-barrel",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "empty-fluoroketone-cold-barrel",
+			"in": [
+				{
+					"type": "item",
+					"id": "fluoroketone-cold-barrel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "fluoroketone-cold",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "fluoroketone-hot-barrel",
+			"in": [
+				{
+					"type": "fluid",
+					"id": "fluoroketone-hot",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "item",
+					"id": "fluoroketone-hot-barrel",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "crafting-with-fluid"
+		},
+		{
+			"id": "empty-fluoroketone-hot-barrel",
+			"in": [
+				{
+					"type": "item",
+					"id": "fluoroketone-hot-barrel",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"type": "fluid",
+					"id": "fluoroketone-hot",
+					"amount": 50
+				},
+				{
+					"type": "item",
+					"id": "barrel",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "crafting-with-fluid"
+		}
+	],
+	"machines": [
+		{
+			"id": "assembling-machine-1",
+			"recipeCategories": [
+				"crafting",
+				"basic-crafting",
+				"advanced-crafting",
+				"electronics",
+				"pressing"
+			],
+			"requiredPower": 75000,
+			"features": [
+				{
+					"id": "crafting-speed",
+					"itemSlots": 0,
+					"effectPerSlot": ["crafting-speed-1"]
+				},
+				{
+					"id": "modules",
+					"itemSlots": 1,
+					"effectPerSlot": [
+						"speed-module-1",
+						"speed-module-2",
+						"speed-module-3",
+						"efficency-module-1",
+						"efficency-module-2",
+						"efficency-module-3",
+						"quality-module-1",
+						"quality-module-2",
+						"quality-module-3"
+					]
+				}
+			]
+		},
+		{
+			"id": "assembling-machine-2",
+			"recipeCategories": [
+				"crafting",
+				"basic-crafting",
+				"advanced-crafting",
+				"electronics",
+				"pressing",
+				"metallurgy-or-assembling",
+				"organic-or-hand-crafting",
+				"organic-or-assembling",
+				"electronics-or-assembling",
+				"cryogenics-or-assembling",
+				"crafting-with-fluid-or-metallurgy"
+			],
+			"requiredPower": 150000,
+			"features": [
+				{
+					"id": "crafting-speed",
+					"itemSlots": 0,
+					"effectPerSlot": ["crafting-speed-2"]
+				},
+				{
+					"id": "modules",
+					"itemSlots": 2,
+					"effectPerSlot": [
+						"speed-module-1",
+						"speed-module-2",
+						"speed-module-3",
+						"efficency-module-1",
+						"efficency-module-2",
+						"efficency-module-3",
+						"productivity-module-1",
+						"productivity-module-2",
+						"productivity-module-3",
+						"quality-module-1",
+						"quality-module-2",
+						"quality-module-3"
+					]
+				}
+			]
+		},
+		{
+			"id": "assembling-machine-3",
+			"recipeCategories": [
+				"crafting",
+				"basic-crafting",
+				"advanced-crafting",
+				"electronics",
+				"pressing",
+				"metallurgy-or-assembling",
+				"organic-or-hand-crafting",
+				"organic-or-assembling",
+				"electronics-or-assembling",
+				"cryogenics-or-assembling",
+				"crafting-with-fluid-or-metallurgy"
+			],
+			"requiredPower": 375000,
+			"features": [
+				{
+					"id": "crafting-speed",
+					"itemSlots": 0,
+					"effectPerSlot": ["crafting-speed-3"]
+				},
+				{
+					"id": "modules",
+					"itemSlots": 4,
+					"effectPerSlot": [
+						"speed-module-1",
+						"speed-module-2",
+						"speed-module-3",
+						"efficency-module-1",
+						"efficency-module-2",
+						"efficency-module-3",
+						"productivity-module-1",
+						"productivity-module-2",
+						"productivity-module-3",
+						"quality-module-1",
+						"quality-module-2",
+						"quality-module-3"
+					]
+				}
+			]
+		}
+	],
+	"machineEffects": [
+		{
+			"id": "crafting-speed-1",
+			"itemSlots": 0,
+			"modifiers": [{ "id": "speed", "modifiable": false, "value": 0.5, "onlyOutputScales": true }]
+		},
+		{
+			"id": "crafting-speed-2",
+			"itemSlots": 0,
+			"modifiers": [{ "id": "speed", "modifiable": false, "value": 0.75, "onlyOutputScales": true }]
+		},
+		{
+			"id": "crafting-speed-3",
+			"itemSlots": 0,
+			"modifiers": [{ "id": "speed", "modifiable": false, "value": 1.25, "onlyOutputScales": true }]
+		},
+		{
+			"id": "speed-module-1",
+			"perSlot": true,
+			"modifiers": [
+				{ "id": "speed", "modifiable": false, "value": 1.2 },
+				{ "id": "quality", "modifiable": false, "value": 0.99 },
+				{ "id": "power", "modifiable": false, "value": 1.5 }
+			]
+		},
+		{
+			"id": "speed-module-2",
+			"modifiers": [
+				{ "id": "speed", "modifiable": false, "value": 1.3 },
+				{ "id": "quality", "modifiable": false, "value": 0.85 },
+				{ "id": "power", "modifiable": false, "value": 1.6 }
+			]
+		},
+		{
+			"id": "speed-module-3",
+			"modifiers": [
+				{ "id": "speed", "modifiable": false, "value": 1.5 },
+				{ "id": "quality", "modifiable": false, "value": 0.75 },
+				{ "id": "power", "modifiable": false, "value": 1.7 }
+			]
+		},
+		{
+			"id": "efficiency-module-1",
+			"perSlot": true,
+			"modifiers": [{ "id": "power", "modifiable": false, "value": 0.7 }]
+		},
+		{
+			"id": "efficiency-module-2",
+			"perSlot": true,
+			"modifiers": [{ "id": "power", "modifiable": false, "value": 0.6 }]
+		},
+		{
+			"id": "efficiency-module-3",
+			"perSlot": true,
+			"modifiers": [{ "id": "power", "modifiable": false, "value": 0.5 }]
+		},
+		{
+			"id": "productivity-module-1",
+			"perSlot": true,
+			"modifiers": [
+				{
+					"id": "speed",
+					"modifiable": false,
+					"value": 1.04,
+					"onlyOutputScales": true
+				},
+				{
+					"id": "speed",
+					"modifiable": false,
+					"value": 0.95
+				},
+				{
+					"id": "power",
+					"modifiable": false,
+					"value": 1.4
+				},
+				{
+					"id": "pollution",
+					"modifiable": false,
+					"value": 1.05
+				}
+			]
+		},
+		{
+			"id": "productivity-module-2",
+			"perSlot": true,
+			"modifiers": [
+				{
+					"id": "speed",
+					"modifiable": false,
+					"value": 1.06,
+					"onlyOutputScales": true
+				},
+				{
+					"id": "speed",
+					"modifiable": false,
+					"value": 0.9
+				},
+				{
+					"id": "power",
+					"modifiable": false,
+					"value": 1.6
+				},
+				{
+					"id": "pollution",
+					"modifiable": false,
+					"value": 1.07
+				}
+			]
+		},
+		{
+			"id": "productivity-module-2",
+			"perSlot": true,
+			"modifiers": [
+				{
+					"id": "speed",
+					"modifiable": false,
+					"value": 1.1,
+					"powerEffect": 1.8,
+					"onlyOutputScales": true
+				},
+				{
+					"id": "speed",
+					"modifiable": false,
+					"value": 0.85
+				},
+				{
+					"id": "power",
+					"modifiable": false,
+					"value": 1.8
+				},
+				{
+					"id": "pollution",
+					"modifiable": false,
+					"value": 1.1
+				}
+			]
+		},
+		{
+			"id": "quality-module-1",
+			"perSlot": true,
+			"modifiers": [
+				{
+					"id": "speed",
+					"modifiable": false,
+					"value": 0.95
+				},
+				{
+					"id": "quality",
+					"modifiable": false,
+					"value": 1.1
+				}
+			]
+		},
+		{
+			"id": "quality-module-2",
+			"perSlot": true,
+			"modifiers": [
+				{
+					"id": "speed",
+					"modifiable": false,
+					"value": 0.95
+				},
+				{
+					"id": "quality",
+					"modifiable": false,
+					"value": 1.2
+				}
+			]
+		},
+		{
+			"id": "quality-module-3",
+			"perSlot": true,
+			"modifiers": [
+				{
+					"id": "speed",
+					"modifiable": false,
+					"value": 0.95
+				},
+				{
+					"id": "quality",
+					"modifiable": false,
+					"value": 1.25
+				}
+			]
+		}
+	]
+}

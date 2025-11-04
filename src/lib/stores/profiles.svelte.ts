@@ -1,9 +1,12 @@
 import type Profile from '@/lib/models/profile';
+import factorioSpaceage from '@profiles/factorio-spaceage.json';
+import factorio from '@profiles/factorio.json';
+import satisfactory from '@profiles/satisfactory.json';
 
-// TODO read default profiles
 const profiles = $state<Profile[]>([
-	{ id: 'satisfactory', name: 'Satisfactory' },
-	{ id: 'factorio', name: 'Factorio' },
+	satisfactory as Profile,
+	factorio as Profile,
+	factorioSpaceage as Profile,
 ]);
 
 export default profiles;
