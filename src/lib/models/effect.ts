@@ -4,7 +4,7 @@ export interface Modifier {
 	value: number;
 	modifiable: boolean;
 	onlyOutputScales?: boolean;
-	// by default linear
+	/** @defaults to linear scaling */
 	valueScaling?: 'exponential';
 }
 
