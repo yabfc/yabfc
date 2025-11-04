@@ -1529,16 +1529,14 @@
 				{
 					"type": "fluid",
 					"id": "crude-oil",
-					"amount": 100,
-					"fluidbox_index": 2
+					"amount": 100
 				}
 			],
 			"out": [
 				{
 					"type": "fluid",
 					"id": "petroleum-gas",
-					"amount": 45,
-					"fluidbox_index": 3
+					"amount": 45
 				}
 			],
 			"duration": 5,
@@ -1589,8 +1587,7 @@
 				{
 					"type": "fluid",
 					"id": "heavy-oil",
-					"amount": 25,
-					"ignored_by_stats": 25
+					"amount": 25
 				},
 				{
 					"type": "fluid",
@@ -1602,9 +1599,7 @@
 				{
 					"type": "fluid",
 					"id": "heavy-oil",
-					"amount": 90,
-					"ignored_by_stats": 25,
-					"ignored_by_productivity": 25
+					"amount": 90
 				},
 				{
 					"type": "fluid",
@@ -6146,30 +6141,24 @@
 				{
 					"type": "item",
 					"id": "uranium-235",
-					"amount": 40,
-					"ignored_by_stats": 40
+					"amount": 40
 				},
 				{
 					"type": "item",
 					"id": "uranium-238",
-					"amount": 5,
-					"ignored_by_stats": 2
+					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"type": "item",
 					"id": "uranium-235",
-					"amount": 41,
-					"ignored_by_stats": 40,
-					"ignored_by_productivity": 40
+					"amount": 41
 				},
 				{
 					"type": "item",
 					"id": "uranium-238",
-					"amount": 2,
-					"ignored_by_stats": 2,
-					"ignored_by_productivity": 2
+					"amount": 2
 				}
 			],
 			"duration": 60,
@@ -6829,8 +6818,7 @@
 				{
 					"type": "item",
 					"id": "nutrients",
-					"amount": 1,
-					"percent_spoiled": 0.5
+					"amount": 1
 				}
 			],
 			"duration": 2,
@@ -6880,8 +6868,7 @@
 				{
 					"type": "item",
 					"id": "pentapod-egg",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				},
 				{
 					"type": "item",
@@ -6898,9 +6885,7 @@
 				{
 					"type": "item",
 					"id": "pentapod-egg",
-					"amount": 2,
-					"ignored_by_stats": 1,
-					"ignored_by_productivity": 1
+					"amount": 2
 				}
 			],
 			"duration": 15,
@@ -7472,8 +7457,7 @@
 				{
 					"type": "fluid",
 					"id": "fluoroketone-cold",
-					"amount": 6,
-					"ignored_by_stats": 3
+					"amount": 6
 				}
 			],
 			"out": [
@@ -7485,9 +7469,7 @@
 				{
 					"type": "fluid",
 					"id": "fluoroketone-hot",
-					"amount": 3,
-					"ignored_by_stats": 3,
-					"ignored_by_productivity": 3
+					"amount": 3
 				}
 			],
 			"duration": 20,
@@ -8127,8 +8109,7 @@
 				{
 					"type": "fluid",
 					"id": "molten-iron",
-					"amount": 20,
-					"fluidbox_multiplier": 10
+					"amount": 20
 				}
 			],
 			"out": [
@@ -8147,8 +8128,7 @@
 				{
 					"type": "fluid",
 					"id": "molten-iron",
-					"amount": 30,
-					"fluidbox_multiplier": 10
+					"amount": 30
 				}
 			],
 			"out": [
@@ -8167,8 +8147,7 @@
 				{
 					"type": "fluid",
 					"id": "molten-copper",
-					"amount": 20,
-					"fluidbox_multiplier": 10
+					"amount": 20
 				}
 			],
 			"out": [
@@ -8187,8 +8166,7 @@
 				{
 					"type": "fluid",
 					"id": "molten-iron",
-					"amount": 10,
-					"fluidbox_multiplier": 10
+					"amount": 10
 				}
 			],
 			"out": [
@@ -8207,8 +8185,7 @@
 				{
 					"type": "fluid",
 					"id": "molten-iron",
-					"amount": 20,
-					"fluidbox_multiplier": 10
+					"amount": 20
 				}
 			],
 			"out": [
@@ -8227,8 +8204,7 @@
 				{
 					"type": "fluid",
 					"id": "molten-iron",
-					"amount": 10,
-					"fluidbox_multiplier": 10
+					"amount": 10
 				}
 			],
 			"out": [
@@ -8247,8 +8223,7 @@
 				{
 					"type": "fluid",
 					"id": "molten-iron",
-					"amount": 50,
-					"fluidbox_multiplier": 10
+					"amount": 50
 				},
 				{
 					"type": "item",
@@ -8330,8 +8305,7 @@
 				{
 					"type": "fluid",
 					"id": "molten-copper",
-					"amount": 5,
-					"fluidbox_multiplier": 5
+					"amount": 5
 				}
 			],
 			"out": [
@@ -8887,8 +8861,7 @@
 				{
 					"type": "item",
 					"id": "raw-fish",
-					"amount": 2,
-					"ignored_by_stats": 2
+					"amount": 2
 				},
 				{
 					"type": "item",
@@ -8905,9 +8878,7 @@
 				{
 					"type": "item",
 					"id": "raw-fish",
-					"amount": 3,
-					"ignored_by_stats": 2,
-					"ignored_by_productivity": 2
+					"amount": 3
 				}
 			],
 			"duration": 6,
@@ -8965,85 +8936,73 @@
 					"type": "item",
 					"id": "iron-gear-wheel",
 					"amount": 1,
-					"probability": 0.2,
-					"show_details_in_recipe_tooltip": false
+					"probability": 0.2
 				},
 				{
 					"type": "item",
 					"id": "solid-fuel",
 					"amount": 1,
-					"probability": 0.07,
-					"show_details_in_recipe_tooltip": false
+					"probability": 0.07
 				},
 				{
 					"type": "item",
 					"id": "concrete",
 					"amount": 1,
-					"probability": 0.06,
-					"show_details_in_recipe_tooltip": false
+					"probability": 0.06
 				},
 				{
 					"type": "item",
 					"id": "ice",
 					"amount": 1,
-					"probability": 0.05,
-					"show_details_in_recipe_tooltip": false
+					"probability": 0.05
 				},
 				{
 					"type": "item",
 					"id": "steel-plate",
 					"amount": 1,
-					"probability": 0.04,
-					"show_details_in_recipe_tooltip": false
+					"probability": 0.04
 				},
 				{
 					"type": "item",
 					"id": "battery",
 					"amount": 1,
-					"probability": 0.04,
-					"show_details_in_recipe_tooltip": false
+					"probability": 0.04
 				},
 				{
 					"type": "item",
 					"id": "stone",
 					"amount": 1,
-					"probability": 0.04,
-					"show_details_in_recipe_tooltip": false
+					"probability": 0.04
 				},
 				{
 					"type": "item",
 					"id": "advanced-circuit",
 					"amount": 1,
-					"probability": 0.03,
-					"show_details_in_recipe_tooltip": false
+					"probability": 0.03
 				},
 				{
 					"type": "item",
 					"id": "copper-cable",
 					"amount": 1,
-					"probability": 0.03,
-					"show_details_in_recipe_tooltip": false
+					"probability": 0.03
 				},
 				{
 					"type": "item",
 					"id": "processing-unit",
 					"amount": 1,
-					"probability": 0.02,
-					"show_details_in_recipe_tooltip": false
+					"probability": 0.02
 				},
 				{
 					"type": "item",
 					"id": "low-density-structure",
 					"amount": 1,
-					"probability": 0.01,
-					"show_details_in_recipe_tooltip": false
+					"probability": 0.01
 				},
 				{
 					"type": "item",
 					"id": "holmium-ore",
 					"amount": 1,
-					"probability": 0.01,
-					"show_details_in_recipe_tooltip": false
+					"probability": 0.01
 				}
 			],
 			"duration": 0.2,
@@ -9113,8 +9072,7 @@
 				{
 					"type": "fluid",
 					"id": "holmium-solution",
-					"amount": 20,
-					"fluidbox_multiplier": 10
+					"amount": 20
 				}
 			],
 			"out": [
@@ -9517,8 +9475,7 @@
 				{
 					"type": "fluid",
 					"id": "fluoroketone-hot",
-					"amount": 10,
-					"ignored_by_stats": 10
+					"amount": 10
 				}
 			],
 			"out": [
@@ -9526,8 +9483,7 @@
 					"type": "fluid",
 					"id": "fluoroketone-cold",
 					"amount": 10,
-					"temperature": -150,
-					"ignored_by_stats": 10
+					"temperature": -150
 				}
 			],
 			"duration": 5,
@@ -9598,8 +9554,7 @@
 				{
 					"type": "fluid",
 					"id": "fluoroketone-cold",
-					"amount": 10,
-					"ignored_by_stats": 5
+					"amount": 10
 				}
 			],
 			"out": [
@@ -9612,9 +9567,7 @@
 					"type": "fluid",
 					"id": "fluoroketone-hot",
 					"amount": 5,
-					"temperature": 180,
-					"ignored_by_stats": 5,
-					"ignored_by_productivity": 5
+					"temperature": 180
 				}
 			],
 			"duration": 30,
@@ -9945,22 +9898,19 @@
 				{
 					"type": "fluid",
 					"id": "water",
-					"amount": 50,
-					"ignored_by_stats": 50
+					"amount": 50
 				},
 				{
 					"type": "item",
 					"id": "barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"type": "item",
 					"id": "water-barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"duration": 0.2,
@@ -9972,22 +9922,19 @@
 				{
 					"type": "item",
 					"id": "water-barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"type": "fluid",
 					"id": "water",
-					"amount": 50,
-					"ignored_by_stats": 50
+					"amount": 50
 				},
 				{
 					"type": "item",
 					"id": "barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"duration": 0.2,
@@ -9999,22 +9946,19 @@
 				{
 					"type": "fluid",
 					"id": "sulfuric-acid",
-					"amount": 50,
-					"ignored_by_stats": 50
+					"amount": 50
 				},
 				{
 					"type": "item",
 					"id": "barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"type": "item",
 					"id": "sulfuric-acid-barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"duration": 0.2,
@@ -10026,22 +9970,19 @@
 				{
 					"type": "item",
 					"id": "sulfuric-acid-barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"type": "fluid",
 					"id": "sulfuric-acid",
-					"amount": 50,
-					"ignored_by_stats": 50
+					"amount": 50
 				},
 				{
 					"type": "item",
 					"id": "barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"duration": 0.2,
@@ -10053,22 +9994,19 @@
 				{
 					"type": "fluid",
 					"id": "crude-oil",
-					"amount": 50,
-					"ignored_by_stats": 50
+					"amount": 50
 				},
 				{
 					"type": "item",
 					"id": "barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"type": "item",
 					"id": "crude-oil-barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"duration": 0.2,
@@ -10080,22 +10018,19 @@
 				{
 					"type": "item",
 					"id": "crude-oil-barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"type": "fluid",
 					"id": "crude-oil",
-					"amount": 50,
-					"ignored_by_stats": 50
+					"amount": 50
 				},
 				{
 					"type": "item",
 					"id": "barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"duration": 0.2,
@@ -10107,22 +10042,19 @@
 				{
 					"type": "fluid",
 					"id": "heavy-oil",
-					"amount": 50,
-					"ignored_by_stats": 50
+					"amount": 50
 				},
 				{
 					"type": "item",
 					"id": "barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"type": "item",
 					"id": "heavy-oil-barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"duration": 0.2,
@@ -10134,22 +10066,19 @@
 				{
 					"type": "item",
 					"id": "heavy-oil-barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"type": "fluid",
 					"id": "heavy-oil",
-					"amount": 50,
-					"ignored_by_stats": 50
+					"amount": 50
 				},
 				{
 					"type": "item",
 					"id": "barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"duration": 0.2,
@@ -10161,22 +10090,19 @@
 				{
 					"type": "fluid",
 					"id": "light-oil",
-					"amount": 50,
-					"ignored_by_stats": 50
+					"amount": 50
 				},
 				{
 					"type": "item",
 					"id": "barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"type": "item",
 					"id": "light-oil-barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"duration": 0.2,
@@ -10188,22 +10114,19 @@
 				{
 					"type": "item",
 					"id": "light-oil-barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"type": "fluid",
 					"id": "light-oil",
-					"amount": 50,
-					"ignored_by_stats": 50
+					"amount": 50
 				},
 				{
 					"type": "item",
 					"id": "barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"duration": 0.2,
@@ -10215,22 +10138,19 @@
 				{
 					"type": "fluid",
 					"id": "petroleum-gas",
-					"amount": 50,
-					"ignored_by_stats": 50
+					"amount": 50
 				},
 				{
 					"type": "item",
 					"id": "barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"type": "item",
 					"id": "petroleum-gas-barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"duration": 0.2,
@@ -10242,22 +10162,19 @@
 				{
 					"type": "item",
 					"id": "petroleum-gas-barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"type": "fluid",
 					"id": "petroleum-gas",
-					"amount": 50,
-					"ignored_by_stats": 50
+					"amount": 50
 				},
 				{
 					"type": "item",
 					"id": "barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"duration": 0.2,
@@ -10269,22 +10186,19 @@
 				{
 					"type": "fluid",
 					"id": "lubricant",
-					"amount": 50,
-					"ignored_by_stats": 50
+					"amount": 50
 				},
 				{
 					"type": "item",
 					"id": "barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"type": "item",
 					"id": "lubricant-barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"duration": 0.2,
@@ -10296,22 +10210,19 @@
 				{
 					"type": "item",
 					"id": "lubricant-barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"type": "fluid",
 					"id": "lubricant",
-					"amount": 50,
-					"ignored_by_stats": 50
+					"amount": 50
 				},
 				{
 					"type": "item",
 					"id": "barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"duration": 0.2,
@@ -10323,22 +10234,19 @@
 				{
 					"type": "fluid",
 					"id": "fluoroketone-cold",
-					"amount": 50,
-					"ignored_by_stats": 50
+					"amount": 50
 				},
 				{
 					"type": "item",
 					"id": "barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"type": "item",
 					"id": "fluoroketone-cold-barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"duration": 0.2,
@@ -10350,22 +10258,19 @@
 				{
 					"type": "item",
 					"id": "fluoroketone-cold-barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"type": "fluid",
 					"id": "fluoroketone-cold",
-					"amount": 50,
-					"ignored_by_stats": 50
+					"amount": 50
 				},
 				{
 					"type": "item",
 					"id": "barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"duration": 0.2,
@@ -10377,22 +10282,19 @@
 				{
 					"type": "fluid",
 					"id": "fluoroketone-hot",
-					"amount": 50,
-					"ignored_by_stats": 50
+					"amount": 50
 				},
 				{
 					"type": "item",
 					"id": "barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"type": "item",
 					"id": "fluoroketone-hot-barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"duration": 0.2,
@@ -10404,22 +10306,19 @@
 				{
 					"type": "item",
 					"id": "fluoroketone-hot-barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"type": "fluid",
 					"id": "fluoroketone-hot",
-					"amount": 50,
-					"ignored_by_stats": 50
+					"amount": 50
 				},
 				{
 					"type": "item",
 					"id": "barrel",
-					"amount": 1,
-					"ignored_by_stats": 1
+					"amount": 1
 				}
 			],
 			"duration": 0.2,
