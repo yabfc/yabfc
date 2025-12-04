@@ -7,6 +7,7 @@ export interface BaseItemIo {
 export default interface Recipe {
 	id: string;
 	name?: string;
+	default?: boolean;
 	in: BaseItemIo[];
 	out: BaseItemIo[];
 	duration: number;
