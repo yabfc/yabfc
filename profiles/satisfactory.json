@@ -207,6 +207,102 @@
 			"default": true
 		},
 		{
+			"category": "extractor",
+			"duration": 60,
+			"id": "water",
+			"in": [],
+			"out": [{ "amount": 120.0, "id": "water", "type": "fluid" }],
+			"default": true
+		},
+		{
+			"category": "extractor",
+			"duration": 60,
+			"id": "crude-oil",
+			"in": [],
+			"out": [{ "amount": 120.0, "id": "crude-oil", "type": "fluid" }],
+			"default": true
+		},
+		{
+			"category": "extractor",
+			"duration": 60,
+			"id": "nitrogen-gas",
+			"in": [],
+			"out": [{ "amount": 60.0, "id": "nitrogen-gas", "type": "fluid" }],
+			"default": true
+		},
+		{
+			"category": "extractor-miner",
+			"duration": 60,
+			"id": "iron-ore",
+			"in": [],
+			"out": [{ "amount": 60.0, "id": "iron-ore", "type": "fluid" }],
+			"default": true
+		},
+		{
+			"category": "extractor-miner",
+			"duration": 60,
+			"id": "copper-ore",
+			"in": [],
+			"out": [{ "amount": 60.0, "id": "copper-ore", "type": "fluid" }],
+			"default": true
+		},
+		{
+			"category": "extractor-miner",
+			"duration": 60,
+			"id": "coal",
+			"in": [],
+			"out": [{ "amount": 60.0, "id": "coal", "type": "fluid" }],
+			"default": true
+		},
+		{
+			"category": "extractor-miner",
+			"duration": 60,
+			"id": "quartz",
+			"in": [],
+			"out": [{ "amount": 60.0, "id": "quartz", "type": "fluid" }],
+			"default": true
+		},
+		{
+			"category": "extractor-miner",
+			"duration": 60,
+			"id": "limestone",
+			"in": [],
+			"out": [{ "amount": 60.0, "id": "limestone", "type": "fluid" }],
+			"default": true
+		},
+		{
+			"category": "extractor-miner",
+			"duration": 60,
+			"id": "sulfur",
+			"in": [],
+			"out": [{ "amount": 60.0, "id": "sulfur", "type": "fluid" }],
+			"default": true
+		},
+		{
+			"category": "extractor-miner",
+			"duration": 60,
+			"id": "caterium-ore",
+			"in": [],
+			"out": [{ "amount": 60.0, "id": "caterium-ore", "type": "fluid" }],
+			"default": true
+		},
+		{
+			"category": "extractor-miner",
+			"duration": 60,
+			"id": "bauxite",
+			"in": [],
+			"out": [{ "amount": 60.0, "id": "bauxite", "type": "fluid" }],
+			"default": true
+		},
+		{
+			"category": "extractor-miner",
+			"duration": 60,
+			"id": "sam",
+			"in": [],
+			"out": [{ "amount": 60.0, "id": "sam", "type": "fluid" }],
+			"default": true
+		},
+		{
 			"category": "quantum-encoder",
 			"duration": 60,
 			"id": "alien-power-matrix",
