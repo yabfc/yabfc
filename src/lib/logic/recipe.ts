@@ -11,12 +11,12 @@ function getRecipe(itemId: String, profile: Profile): Recipe[] {
 			}
 		}
 	}
-	// add another condition here so feeding output of a refinery / blender is more feasable
-	for (let recipe of recipes) {
-		if (recipe.category === 'extractor' || recipe.category === 'extractor-miner') {
-			return [recipe];
-		}
-	}
+	// add another condition here so feeding output of a refinery / blender is also an option
+	//for (let recipe of recipes) {
+	//	if (recipe.category === 'extractor' || recipe.category === 'extractor-miner') {
+	//		return [recipe];
+	//	}
+	//}
 	return recipes;
 }
 
@@ -59,15 +59,16 @@ export function getDefaultRecipeChain(itemId: string, profile: Profile): Recipe[
 	return [recipe, ...childRecipes];
 }
 
-const memo = new Map<string, Recipe[][]>();
-
 type NestedRecipeChain = Array<NestedRecipeChain | Recipe>;
+
+export const memo = new Map<string, NestedRecipeChain>();
 
 export function getRecipeChain(
 	itemId: string,
 	profile: Profile,
 	path: string[] = [],
 ): NestedRecipeChain {
+	if (memo.has(itemId)) return memo.get(itemId)!;
 	// avoid possible recursion?
 	if (path.includes(itemId)) {
 		return [];
@@ -76,9 +77,6 @@ export function getRecipeChain(
 	let recipes: NestedRecipeChain = [];
 	const nextPath = [...path, itemId];
 	for (const recipe of getRecipe(itemId, profile)) {
-		if (recipe.category === 'converter') {
-			continue;
-		}
 		let tmp: NestedRecipeChain = [];
 		for (const input of recipe.in) {
 			let childRecipes = getRecipeChain(input.id, profile, nextPath);
@@ -90,6 +88,6 @@ export function getRecipeChain(
 		}
 		recipes.push([recipe, ...tmp]);
 	}
-
+	memo.set(itemId, recipes);
 	return recipes;
 }
