@@ -11,4 +11,6 @@ export default interface Recipe {
 	out: BaseItemIo[];
 	duration: number;
 	category: string;
+	priority: number;
+	planetLimitations?: string[];
 }
