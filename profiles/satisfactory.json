@@ -2796,7 +2796,7 @@
 		{
 			"category": "blender",
 			"duration": 60,
-			"id": "turbo-rifle-ammo",
+			"id": "turbo-rifle-ammo-2",
 			"in": [
 				{ "amount": 125.0, "id": "rifle-ammo", "type": "item" },
 				{ "amount": 15.0, "id": "aluminum-casing", "type": "item" },
