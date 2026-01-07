@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ItemOverview from '@/lib/components/profile/ItemOverview.svelte';
+	import MachineOverview from '@/lib/components/profile/MachineOverview.svelte';
 	import RecipeOverview from '@/lib/components/profile/RecipeOverview.svelte';
 	import type Profile from '@/lib/models/profile';
 
@@ -24,7 +25,7 @@
 		<div
 			class="tab-content bg-base-100 border-base-300 !h-[calc(100%-var(--tab-height)-var(--spacing))] overflow-auto"
 		>
-			Machines
+			<MachineOverview machines={profile.machines} />
 		</div>
 
 		<input type="radio" name="profile-overview-tabs" class="tab" aria-label="Recipes" />
