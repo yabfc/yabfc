@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ItemOverview from '@/lib/components/profile/ItemOverview.svelte';
+	import RecipeOverview from '@/lib/components/profile/RecipeOverview.svelte';
 	import type Profile from '@/lib/models/profile';
 
 	let { profile }: { profile: Profile } = $props();
@@ -30,7 +31,7 @@
 		<div
 			class="tab-content bg-base-100 border-base-300 !h-[calc(100%-var(--tab-height)-var(--spacing))] overflow-auto"
 		>
-			Recipes
+			<RecipeOverview recipes={profile.recipes}></RecipeOverview>
 		</div>
 	</div>
 </div>
