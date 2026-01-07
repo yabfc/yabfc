@@ -2,4 +2,6 @@
 @plugin 'daisyui' {
 	/* prevent a warning, see https://github.com/saadeghi/daisyui/issues/3882 */
 	exclude: properties;
+
+	themes: light --default;
 }
