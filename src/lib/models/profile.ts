@@ -3,11 +3,35 @@ import type Item from '@/lib/models/item';
 import type Recipe from '@/lib/models/recipe';
 import type EffectModule from '@/lib/models/effect';
 
-export default interface Profile {
+export interface ProfileInterface {
 	id: string;
 	name: string;
 	items: Item[];
 	recipes: Recipe[];
 	machines: Machine[];
 	machineEffects: EffectModule[];
+}
+
+export default class Profile {
+	id: string;
+	name: string;
+
+	items: Item[];
+	recipes: Recipe[];
+	machines: Machine[];
+	machineEffects: EffectModule[];
+
+	constructor(profile: ProfileInterface) {
+		this.id = profile.id;
+		this.name = profile.name;
+
+		this.items = profile.items;
+		this.recipes = profile.recipes;
+		this.machines = profile.machines;
+		this.machineEffects = profile.machineEffects;
+	}
+
+	getItemById(id: string): Item | undefined {
+		return this.items.find(x => x.id == id);
+	}
 }

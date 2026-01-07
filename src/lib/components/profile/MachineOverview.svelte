@@ -1,12 +1,12 @@
 <script lang="ts">
-	import type Machine from '@/lib/models/machine';
+	import Profile from '@/lib/models/profile';
 	import { HammerIcon } from '@lucide/svelte';
 
-	let { machines }: { machines: Machine[] } = $props();
+	let { profile }: { profile: Profile } = $props();
 </script>
 
 <ul class="list">
-	{#each machines as machine (machine.id)}
+	{#each profile.machines as machine (machine.id)}
 		<li class="list-row">
 			<div class="">
 				<HammerIcon size="24" class="m-2" />

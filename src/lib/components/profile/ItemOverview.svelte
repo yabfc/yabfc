@@ -1,12 +1,12 @@
 <script lang="ts">
-	import type Item from '@/lib/models/item';
+	import Profile from '@/lib/models/profile';
 	import { AnvilIcon } from '@lucide/svelte';
 
-	let { items }: { items: Item[] } = $props();
+	let { profile }: { profile: Profile } = $props();
 </script>
 
 <ul class="list">
-	{#each items as item (item.id)}
+	{#each profile.items as item (item.id)}
 		<li class="list-row">
 			<div class="">
 				<AnvilIcon size="24" class="m-2" />

@@ -18,21 +18,21 @@
 		<div
 			class="tab-content bg-base-100 border-base-300 !h-[calc(100%-var(--tab-height)-var(--spacing))] overflow-auto"
 		>
-			<ItemOverview items={profile.items} />
+			<ItemOverview {profile} />
 		</div>
 
 		<input type="radio" name="profile-overview-tabs" class="tab" aria-label="Machines" />
 		<div
 			class="tab-content bg-base-100 border-base-300 !h-[calc(100%-var(--tab-height)-var(--spacing))] overflow-auto"
 		>
-			<MachineOverview machines={profile.machines} />
+			<MachineOverview {profile} />
 		</div>
 
 		<input type="radio" name="profile-overview-tabs" class="tab" aria-label="Recipes" />
 		<div
 			class="tab-content bg-base-100 border-base-300 !h-[calc(100%-var(--tab-height)-var(--spacing))] overflow-auto"
 		>
-			<RecipeOverview recipes={profile.recipes}></RecipeOverview>
+			<RecipeOverview {profile}></RecipeOverview>
 		</div>
 	</div>
 </div>
