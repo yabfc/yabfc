@@ -3,1002 +3,1002 @@
 	"name": "Satisfactory",
 	"items": [
 		{
+			"id": "adaptive-control-unit",
 			"category": "bogus",
-			"id": "Adaptive-Control-Unit",
 			"name": "Adaptive Control Unit",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "ai-expansion-server",
 			"category": "bogus",
-			"id": "AI-Expansion-Server",
 			"name": "AI Expansion Server",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "ai-limiter",
 			"category": "bogus",
-			"id": "AI-Limiter",
 			"name": "AI Limiter",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "alclad-aluminum-sheet",
 			"category": "bogus",
-			"id": "Alclad-Aluminum-Sheet",
 			"name": "Alclad Aluminum Sheet",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "alien-dna-capsule",
 			"category": "bogus",
-			"id": "Alien-DNA-Capsule",
 			"name": "Alien DNA Capsule",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "alien-power-matrix",
 			"category": "bogus",
-			"id": "Alien-Power-Matrix",
 			"name": "Alien Power Matrix",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "alien-protein",
 			"category": "bogus",
-			"id": "Alien-Protein",
 			"name": "Alien Protein",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "alien-remains",
 			"category": "bogus",
-			"id": "Alien-Remains",
 			"name": "Alien Remains",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "aluminum-casing",
 			"category": "bogus",
-			"id": "Aluminum-Casing",
 			"name": "Aluminum Casing",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "aluminum-ingot",
 			"category": "bogus",
-			"id": "Aluminum-Ingot",
 			"name": "Aluminum Ingot",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "aluminum-scrap",
 			"category": "bogus",
-			"id": "Aluminum-Scrap",
 			"name": "Aluminum Scrap",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
+			"id": "assembly-director-system",
 			"category": "bogus",
-			"id": "Assembly-Director-System",
 			"name": "Assembly Director System",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "automated-wiring",
 			"category": "bogus",
-			"id": "Automated-Wiring",
 			"name": "Automated Wiring",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "bacon-agaric",
 			"category": "bogus",
-			"id": "Bacon-Agaric",
 			"name": "Bacon Agaric",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "ballistic-warp-drive",
 			"category": "bogus",
-			"id": "Ballistic-Warp-Drive",
 			"name": "Ballistic Warp Drive",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "battery",
 			"category": "bogus",
-			"id": "Battery",
 			"name": "Battery",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "bauxite",
 			"category": "bogus",
-			"id": "Bauxite",
 			"name": "Bauxite",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "beacon",
 			"category": "bogus",
-			"id": "Beacon",
 			"name": "Beacon",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "beryl-nut",
 			"category": "bogus",
-			"id": "Beryl-Nut",
 			"name": "Beryl Nut",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "biochemical-sculptor",
 			"category": "bogus",
-			"id": "Biochemical-Sculptor",
 			"name": "Biochemical Sculptor",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "biomass",
 			"category": "bogus",
-			"id": "Biomass",
 			"name": "Biomass",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "black-powder",
 			"category": "bogus",
-			"id": "Black-Powder",
 			"name": "Black Powder",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "blade-runners",
 			"category": "bogus",
-			"id": "Blade-Runners",
 			"name": "Blade Runners",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
+			"id": "boom-box",
 			"category": "bogus",
-			"id": "Boom-Box",
 			"name": "Boom Box",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
+			"id": "cable",
 			"category": "bogus",
-			"id": "Cable",
 			"name": "Cable",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "caterium-ingot",
 			"category": "bogus",
-			"id": "Caterium-Ingot",
 			"name": "Caterium Ingot",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "caterium-ore",
 			"category": "bogus",
-			"id": "Caterium-Ore",
 			"name": "Caterium Ore",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "chainsaw",
 			"category": "bogus",
-			"id": "Chainsaw",
 			"name": "Chainsaw",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
+			"id": "circuit-board",
 			"category": "bogus",
-			"id": "Circuit-Board",
 			"name": "Circuit Board",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "coal",
 			"category": "bogus",
-			"id": "Coal",
 			"name": "Coal",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "color-cartridge",
 			"category": "bogus",
-			"id": "Color-Cartridge",
 			"name": "Color Cartridge",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "compacted-coal",
 			"category": "bogus",
-			"id": "Compacted-Coal",
 			"name": "Compacted Coal",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "computer",
 			"category": "bogus",
-			"id": "Computer",
 			"name": "Computer",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "concrete",
 			"category": "bogus",
-			"id": "Concrete",
 			"name": "Concrete",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
+			"id": "cooling-system",
 			"category": "bogus",
-			"id": "Cooling-System",
 			"name": "Cooling System",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "copper-ingot",
 			"category": "bogus",
-			"id": "Copper-Ingot",
 			"name": "Copper Ingot",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "copper-ore",
 			"category": "bogus",
-			"id": "Copper-Ore",
 			"name": "Copper Ore",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "copper-powder",
 			"category": "bogus",
-			"id": "Copper-Powder",
 			"name": "Copper Powder",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
+			"id": "copper-sheet",
 			"category": "bogus",
-			"id": "Copper-Sheet",
 			"name": "Copper Sheet",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "crude-oil",
 			"category": "bogus",
-			"id": "Crude-Oil",
 			"name": "Crude Oil",
 			"stackSize": 0,
 			"type": "fluid"
 		},
 		{
+			"id": "crystal-oscillator",
 			"category": "bogus",
-			"id": "Crystal-Oscillator",
 			"name": "Crystal Oscillator",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "cup",
 			"category": "bogus",
-			"id": "Cup",
 			"name": "Cup",
 			"stackSize": 0,
 			"type": "item"
 		},
 		{
+			"id": "dark-matter-crystal",
 			"category": "bogus",
-			"id": "Dark-Matter-Crystal",
 			"name": "Dark Matter Crystal",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "diamonds",
 			"category": "bogus",
-			"id": "Diamonds",
 			"name": "Diamonds",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "electromagnetic-control-rod",
 			"category": "bogus",
-			"id": "Electromagnetic-Control-Rod",
 			"name": "Electromagnetic Control Rod",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "empty-canister",
 			"category": "bogus",
-			"id": "Empty-Canister",
 			"name": "Empty Canister",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "empty-fluid-tank",
 			"category": "bogus",
-			"id": "Empty-Fluid-Tank",
 			"name": "Empty Fluid Tank",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "encased-industrial-beam",
 			"category": "bogus",
-			"id": "Encased-Industrial-Beam",
 			"name": "Encased Industrial Beam",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "encased-plutonium-cell",
 			"category": "bogus",
-			"id": "Encased-Plutonium-Cell",
 			"name": "Encased Plutonium Cell",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "encased-uranium-cell",
 			"category": "bogus",
-			"id": "Encased-Uranium-Cell",
 			"name": "Encased Uranium Cell",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "fabric",
 			"category": "bogus",
-			"id": "Fabric",
 			"name": "Fabric",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "ficsit-coupon",
 			"category": "bogus",
-			"id": "FICSIT-Coupon",
 			"name": "FICSIT Coupon",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
+			"id": "ficsite-ingot",
 			"category": "bogus",
-			"id": "Ficsite-Ingot",
 			"name": "Ficsite Ingot",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "ficsite-trigon",
 			"category": "bogus",
-			"id": "Ficsite-Trigon",
 			"name": "Ficsite Trigon",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "ficsonium",
 			"category": "bogus",
-			"id": "Ficsonium",
 			"name": "Ficsonium",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "ficsonium-fuel-rod",
 			"category": "bogus",
-			"id": "Ficsonium-Fuel-Rod",
 			"name": "Ficsonium Fuel Rod",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "flower-petals",
 			"category": "bogus",
-			"id": "Flower-Petals",
 			"name": "Flower Petals",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
+			"id": "fused-modular-frame",
 			"category": "bogus",
-			"id": "Fused-Modular-Frame",
 			"name": "Fused Modular Frame",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "gas-mask",
 			"category": "bogus",
-			"id": "Gas-Mask",
 			"name": "Gas Mask",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
+			"id": "hard-drive",
 			"category": "bogus",
-			"id": "Hard-Drive",
 			"name": "Hard Drive",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "hazmat-suit",
 			"category": "bogus",
-			"id": "Hazmat-Suit",
 			"name": "Hazmat Suit",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
+			"id": "heat-sink",
 			"category": "bogus",
-			"id": "Heat-Sink",
 			"name": "Heat Sink",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "heavy-modular-frame",
 			"category": "bogus",
-			"id": "Heavy-Modular-Frame",
 			"name": "Heavy Modular Frame",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "hoverpack",
 			"category": "bogus",
-			"id": "Hoverpack",
 			"name": "Hoverpack",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
+			"id": "hub-parts",
 			"category": "bogus",
-			"id": "HUB-Parts",
 			"name": "HUB Parts",
 			"stackSize": 0,
 			"type": "item"
 		},
 		{
+			"id": "iron-ingot",
 			"category": "bogus",
-			"id": "Iron-Ingot",
 			"name": "Iron Ingot",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "iron-ore",
 			"category": "bogus",
-			"id": "Iron-Ore",
 			"name": "Iron Ore",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "iron-plate",
 			"category": "bogus",
-			"id": "Iron-Plate",
 			"name": "Iron Plate",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "iron-rod",
 			"category": "bogus",
-			"id": "Iron-Rod",
 			"name": "Iron Rod",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "jetpack",
 			"category": "bogus",
-			"id": "Jetpack",
 			"name": "Jetpack",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
+			"id": "leaves",
 			"category": "bogus",
-			"id": "Leaves",
 			"name": "Leaves",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
+			"id": "limestone",
 			"category": "bogus",
-			"id": "Limestone",
 			"name": "Limestone",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "magnetic-field-generator",
 			"category": "bogus",
-			"id": "Magnetic-Field-Generator",
 			"name": "Magnetic Field Generator",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "medicinal-inhaler",
 			"category": "bogus",
-			"id": "Medicinal-Inhaler",
 			"name": "Medicinal Inhaler",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "mercer-sphere",
 			"category": "bogus",
-			"id": "Mercer-Sphere",
 			"name": "Mercer Sphere",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "miner",
 			"category": "bogus",
-			"id": "Miner",
 			"name": "Miner",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
+			"id": "modular-engine",
 			"category": "bogus",
-			"id": "Modular-Engine",
 			"name": "Modular Engine",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "modular-frame",
 			"category": "bogus",
-			"id": "Modular-Frame",
 			"name": "Modular Frame",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "motor",
 			"category": "bogus",
-			"id": "Motor",
 			"name": "Motor",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "mycelia",
 			"category": "bogus",
-			"id": "Mycelia",
 			"name": "Mycelia",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "nobelisk-detonator",
 			"category": "bogus",
-			"id": "Nobelisk-Detonator",
 			"name": "Nobelisk Detonator",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
+			"id": "nuclear-pasta",
 			"category": "bogus",
-			"id": "Nuclear-Pasta",
 			"name": "Nuclear Pasta",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "object-scanner",
 			"category": "bogus",
-			"id": "Object-Scanner",
 			"name": "Object Scanner",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
+			"id": "packaged-alumina-solution",
 			"category": "bogus",
-			"id": "Packaged-Alumina-Solution",
 			"name": "Packaged Alumina Solution",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "packaged-fuel",
 			"category": "bogus",
-			"id": "Packaged-Fuel",
 			"name": "Packaged Fuel",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "packaged-heavy-oil-residue",
 			"category": "bogus",
-			"id": "Packaged-Heavy-Oil-Residue",
 			"name": "Packaged Heavy Oil Residue",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "packaged-ionized-fuel",
 			"category": "bogus",
-			"id": "Packaged-Ionized-Fuel",
 			"name": "Packaged Ionized Fuel",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "packaged-liquid-biofuel",
 			"category": "bogus",
-			"id": "Packaged-Liquid-Biofuel",
 			"name": "Packaged Liquid Biofuel",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "packaged-nitric-acid",
 			"category": "bogus",
-			"id": "Packaged-Nitric-Acid",
 			"name": "Packaged Nitric Acid",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "packaged-nitrogen-gas",
 			"category": "bogus",
-			"id": "Packaged-Nitrogen-Gas",
 			"name": "Packaged Nitrogen Gas",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "packaged-oil",
 			"category": "bogus",
-			"id": "Packaged-Oil",
 			"name": "Packaged Oil",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "packaged-rocket-fuel",
 			"category": "bogus",
-			"id": "Packaged-Rocket-Fuel",
 			"name": "Packaged Rocket Fuel",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "packaged-sulfuric-acid",
 			"category": "bogus",
-			"id": "Packaged-Sulfuric-Acid",
 			"name": "Packaged Sulfuric Acid",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "packaged-turbofuel",
 			"category": "bogus",
-			"id": "Packaged-Turbofuel",
 			"name": "Packaged Turbofuel",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "packaged-water",
 			"category": "bogus",
-			"id": "Packaged-Water",
 			"name": "Packaged Water",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "paleberry",
 			"category": "bogus",
-			"id": "Paleberry",
 			"name": "Paleberry",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "parachute",
 			"category": "bogus",
-			"id": "Parachute",
 			"name": "Parachute",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
+			"id": "petroleum-coke",
 			"category": "bogus",
-			"id": "Petroleum-Coke",
 			"name": "Petroleum Coke",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "plastic",
 			"category": "bogus",
-			"id": "Plastic",
 			"name": "Plastic",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "plutonium-fuel-rod",
 			"category": "bogus",
-			"id": "Plutonium-Fuel-Rod",
 			"name": "Plutonium Fuel Rod",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "plutonium-pellet",
 			"category": "bogus",
-			"id": "Plutonium-Pellet",
 			"name": "Plutonium Pellet",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "plutonium-waste",
 			"category": "bogus",
-			"id": "Plutonium-Waste",
 			"name": "Plutonium Waste",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
+			"id": "polymer-resin",
 			"category": "bogus",
-			"id": "Polymer-Resin",
 			"name": "Polymer Resin",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "power-shard",
 			"category": "bogus",
-			"id": "Power-Shard",
 			"name": "Power Shard",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "power-slug",
 			"category": "bogus",
-			"id": "Power-Slug",
 			"name": "Power Slug",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "pressure-conversion-cube",
 			"category": "bogus",
-			"id": "Pressure-Conversion-Cube",
 			"name": "Pressure Conversion Cube",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "quartz-crystal",
 			"category": "bogus",
-			"id": "Quartz-Crystal",
 			"name": "Quartz Crystal",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "quickwire",
 			"category": "bogus",
-			"id": "Quickwire",
 			"name": "Quickwire",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
+			"id": "radio-control-unit",
 			"category": "bogus",
-			"id": "Radio-Control-Unit",
 			"name": "Radio Control Unit",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "raw-quartz",
 			"category": "bogus",
-			"id": "Raw-Quartz",
 			"name": "Raw Quartz",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "reanimated-sam",
 			"category": "bogus",
-			"id": "Reanimated-SAM",
 			"name": "Reanimated SAM",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "rebar-gun",
 			"category": "bogus",
-			"id": "Rebar-Gun",
 			"name": "Rebar Gun",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
+			"id": "reinforced-iron-plate",
 			"category": "bogus",
-			"id": "Reinforced-Iron-Plate",
 			"name": "Reinforced Iron Plate",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "rifle",
 			"category": "bogus",
-			"id": "Rifle",
 			"name": "Rifle",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
+			"id": "rotor",
 			"category": "bogus",
-			"id": "Rotor",
 			"name": "Rotor",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "rubber",
 			"category": "bogus",
-			"id": "Rubber",
 			"name": "Rubber",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "sam",
 			"category": "bogus",
-			"id": "SAM",
 			"name": "SAM",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "sam-fluctuator",
 			"category": "bogus",
-			"id": "SAM-Fluctuator",
 			"name": "SAM Fluctuator",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "screws",
 			"category": "bogus",
-			"id": "Screws",
 			"name": "Screws",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
+			"id": "silica",
 			"category": "bogus",
-			"id": "Silica",
 			"name": "Silica",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "singularity-cell",
 			"category": "bogus",
-			"id": "Singularity-Cell",
 			"name": "Singularity Cell",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "smart-plating",
 			"category": "bogus",
-			"id": "Smart-Plating",
 			"name": "Smart Plating",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "smokeless-powder",
 			"category": "bogus",
-			"id": "Smokeless-Powder",
 			"name": "Smokeless Powder",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "solid-biofuel",
 			"category": "bogus",
-			"id": "Solid-Biofuel",
 			"name": "Solid Biofuel",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "somersloop",
 			"category": "bogus",
-			"id": "Somersloop",
 			"name": "Somersloop",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "stator",
 			"category": "bogus",
-			"id": "Stator",
 			"name": "Stator",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "steel-beam",
 			"category": "bogus",
-			"id": "Steel-Beam",
 			"name": "Steel Beam",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "steel-ingot",
 			"category": "bogus",
-			"id": "Steel-Ingot",
 			"name": "Steel Ingot",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "steel-pipe",
 			"category": "bogus",
-			"id": "Steel-Pipe",
 			"name": "Steel Pipe",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "sulfur",
 			"category": "bogus",
-			"id": "Sulfur",
 			"name": "Sulfur",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "supercomputer",
 			"category": "bogus",
-			"id": "Supercomputer",
 			"name": "Supercomputer",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "superposition-oscillator",
 			"category": "bogus",
-			"id": "Superposition-Oscillator",
 			"name": "Superposition Oscillator",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "thermal-propulsion-rocket",
 			"category": "bogus",
-			"id": "Thermal-Propulsion-Rocket",
 			"name": "Thermal Propulsion Rocket",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "time-crystal",
 			"category": "bogus",
-			"id": "Time-Crystal",
 			"name": "Time Crystal",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "turbo-motor",
 			"category": "bogus",
-			"id": "Turbo-Motor",
 			"name": "Turbo Motor",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "uranium",
 			"category": "bogus",
-			"id": "Uranium",
 			"name": "Uranium",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
+			"id": "uranium-fuel-rod",
 			"category": "bogus",
-			"id": "Uranium-Fuel-Rod",
 			"name": "Uranium Fuel Rod",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "uranium-waste",
 			"category": "bogus",
-			"id": "Uranium-Waste",
 			"name": "Uranium Waste",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
+			"id": "versatile-framework",
 			"category": "bogus",
-			"id": "Versatile-Framework",
 			"name": "Versatile Framework",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
+			"id": "vines",
 			"category": "bogus",
-			"id": "Vines",
 			"name": "Vines",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "wire",
 			"category": "bogus",
-			"id": "Wire",
 			"name": "Wire",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
+			"id": "wood",
 			"category": "bogus",
-			"id": "Wood",
 			"name": "Wood",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
+			"id": "zipline",
 			"category": "bogus",
-			"id": "Zipline",
 			"name": "Zipline",
 			"stackSize": 1,
 			"type": "item"
