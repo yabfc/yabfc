@@ -34,4 +34,16 @@ export default class Profile {
 	getItemById(id: string): Item | undefined {
 		return this.items.find(x => x.id == id);
 	}
+
+	getRecipeById(id: string): Recipe | undefined {
+		return this.recipes.find(x => x.id == id);
+	}
+
+	getRecipesByItemOutputId(id: string): Recipe[] {
+		return this.recipes.filter(x => x.out.find(io => io.id == id));
+	}
+
+	getMachinesByRecipe(recipe: Recipe): Machine[] {
+		return this.machines.filter(x => x.recipeCategories.includes(recipe.category));
+	}
 }
