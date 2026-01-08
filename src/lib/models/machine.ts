@@ -8,6 +8,7 @@ export interface MachineFeature {
 export default interface Machine {
 	id: string;
 	name?: string;
+	available: boolean;
 	recipeCategories: string[];
 	requiredPower: number;
 	features: MachineFeature[];

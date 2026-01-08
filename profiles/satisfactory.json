@@ -9613,7 +9613,8 @@
 					"itemSlots": 1,
 					"effectPerSlot": ["summerslooping"]
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "assembler",
@@ -9635,7 +9636,8 @@
 					"itemSlots": 2,
 					"effectPerSlot": ["summerslooping"]
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "blender",
@@ -9657,7 +9659,8 @@
 					"itemSlots": 4,
 					"effectPerSlot": ["summerslooping"]
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "foundry",
@@ -9679,7 +9682,8 @@
 					"itemSlots": 2,
 					"effectPerSlot": ["summerslooping"]
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "manufacturer",
@@ -9701,7 +9705,8 @@
 					"itemSlots": 4,
 					"effectPerSlot": ["summerslooping"]
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "particle-accelerator",
@@ -9723,7 +9728,8 @@
 					"itemSlots": 4,
 					"effectPerSlot": ["summerslooping"]
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "refinery",
@@ -9745,7 +9751,8 @@
 					"itemSlots": 2,
 					"effectPerSlot": ["summerslooping"]
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "quantum-encoder",
@@ -9767,7 +9774,8 @@
 					"itemSlots": 2,
 					"effectPerSlot": ["summerslooping"]
 				}
-			]
+			],
+			"available": true
 		}
 	],
 	"machineEffects": [
@@ -9785,7 +9793,8 @@
 					"value": 1.32,
 					"valueScaling": "exponential"
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "underclocking",
@@ -9801,7 +9810,8 @@
 					"value": 1.32,
 					"valueScaling": "exponential"
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "summerslooping",
@@ -9816,7 +9826,8 @@
 					"id": "power",
 					"value": 4
 				}
-			]
+			],
+			"available": true
 		}
 	]
 }

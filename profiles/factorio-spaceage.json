@@ -11017,7 +11017,8 @@
 						"quality-module-3"
 					]
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "assembling-machine-2",
@@ -11059,7 +11060,8 @@
 						"quality-module-3"
 					]
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "assembling-machine-3",
@@ -11101,7 +11103,8 @@
 						"quality-module-3"
 					]
 				}
-			]
+			],
+			"available": true
 		}
 	],
 	"machineEffects": [
@@ -11115,7 +11118,8 @@
 					"value": 0.5,
 					"onlyOutputScales": true
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "crafting-speed-2",
@@ -11127,7 +11131,8 @@
 					"value": 0.75,
 					"onlyOutputScales": true
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "crafting-speed-3",
@@ -11139,7 +11144,8 @@
 					"value": 1.25,
 					"onlyOutputScales": true
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "speed-module-1",
@@ -11160,7 +11166,8 @@
 					"modifiable": false,
 					"value": 1.5
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "speed-module-2",
@@ -11180,7 +11187,8 @@
 					"modifiable": false,
 					"value": 1.6
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "speed-module-3",
@@ -11200,7 +11208,8 @@
 					"modifiable": false,
 					"value": 1.7
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "efficiency-module-1",
@@ -11211,7 +11220,8 @@
 					"modifiable": false,
 					"value": 0.7
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "efficiency-module-2",
@@ -11222,7 +11232,8 @@
 					"modifiable": false,
 					"value": 0.6
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "efficiency-module-3",
@@ -11233,7 +11244,8 @@
 					"modifiable": false,
 					"value": 0.5
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "productivity-module-1",
@@ -11260,7 +11272,8 @@
 					"modifiable": false,
 					"value": 1.05
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "productivity-module-2",
@@ -11287,7 +11300,8 @@
 					"modifiable": false,
 					"value": 1.07
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "productivity-module-2",
@@ -11315,7 +11329,8 @@
 					"modifiable": false,
 					"value": 1.1
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "quality-module-1",
@@ -11331,7 +11346,8 @@
 					"modifiable": false,
 					"value": 1.1
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "quality-module-2",
@@ -11347,7 +11363,8 @@
 					"modifiable": false,
 					"value": 1.2
 				}
-			]
+			],
+			"available": true
 		},
 		{
 			"id": "quality-module-3",
@@ -11363,7 +11380,8 @@
 					"modifiable": false,
 					"value": 1.25
 				}
-			]
+			],
+			"available": true
 		}
 	]
 }
