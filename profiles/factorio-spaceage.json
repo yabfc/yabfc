@@ -1251,7 +1251,8 @@
 			],
 			"duration": 15,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "speed-module-2",
@@ -1281,7 +1282,8 @@
 			],
 			"duration": 30,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "speed-module-3",
@@ -1316,7 +1318,8 @@
 			],
 			"duration": 60,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "productivity-module",
@@ -1341,7 +1344,8 @@
 			],
 			"duration": 15,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "productivity-module-2",
@@ -1371,7 +1375,8 @@
 			],
 			"duration": 30,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "productivity-module-3",
@@ -1406,7 +1411,8 @@
 			],
 			"duration": 60,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "efficiency-module",
@@ -1431,7 +1437,8 @@
 			],
 			"duration": 15,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "efficiency-module-2",
@@ -1461,7 +1468,8 @@
 			],
 			"duration": 30,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "efficiency-module-3",
@@ -1496,7 +1504,8 @@
 			],
 			"duration": 60,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "bulk-inserter",
@@ -1531,7 +1540,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "basic-oil-processing",
@@ -1551,7 +1561,8 @@
 			],
 			"duration": 5,
 			"category": "oil-processing",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "advanced-oil-processing",
@@ -1586,7 +1597,8 @@
 			],
 			"duration": 5,
 			"category": "oil-processing",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "coal-liquefaction",
@@ -1626,7 +1638,8 @@
 			],
 			"duration": 5,
 			"category": "oil-processing",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "heavy-oil-cracking",
@@ -1651,7 +1664,8 @@
 			],
 			"duration": 2,
 			"category": "organic-or-chemistry",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "light-oil-cracking",
@@ -1676,7 +1690,8 @@
 			],
 			"duration": 2,
 			"category": "organic-or-chemistry",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "sulfuric-acid",
@@ -1706,7 +1721,8 @@
 			],
 			"duration": 1,
 			"category": "chemistry-or-cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "plastic-bar",
@@ -1731,7 +1747,8 @@
 			],
 			"duration": 1,
 			"category": "chemistry-or-cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "solid-fuel-from-light-oil",
@@ -1751,7 +1768,8 @@
 			],
 			"duration": 1,
 			"category": "chemistry",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "solid-fuel-from-petroleum-gas",
@@ -1771,7 +1789,8 @@
 			],
 			"duration": 1,
 			"category": "chemistry",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "solid-fuel-from-heavy-oil",
@@ -1791,7 +1810,8 @@
 			],
 			"duration": 1,
 			"category": "chemistry",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "sulfur",
@@ -1816,7 +1836,8 @@
 			],
 			"duration": 1,
 			"category": "chemistry-or-cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "lubricant",
@@ -1836,7 +1857,8 @@
 			],
 			"duration": 1,
 			"category": "chemistry",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "barrel",
@@ -1856,7 +1878,8 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "night-vision-equipment",
@@ -1881,7 +1904,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "belt-immunity-equipment",
@@ -1906,7 +1930,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "energy-shield-equipment",
@@ -1931,7 +1956,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "energy-shield-mk2-equipment",
@@ -1961,7 +1987,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "battery-equipment",
@@ -1986,7 +2013,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "battery-mk2-equipment",
@@ -2016,7 +2044,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "solar-panel-equipment",
@@ -2046,7 +2075,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "fission-reactor-equipment",
@@ -2076,7 +2106,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "personal-laser-defense-equipment",
@@ -2106,7 +2137,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "discharge-defense-equipment",
@@ -2136,7 +2168,8 @@
 			],
 			"duration": 10,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "exoskeleton-equipment",
@@ -2166,7 +2199,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "personal-roboport-equipment",
@@ -2201,7 +2235,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "personal-roboport-mk2-equipment",
@@ -2231,7 +2266,8 @@
 			],
 			"duration": 20,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "laser-turret",
@@ -2261,7 +2297,8 @@
 			],
 			"duration": 20,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "flamethrower-turret",
@@ -2296,7 +2333,8 @@
 			],
 			"duration": 20,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "artillery-turret",
@@ -2331,7 +2369,8 @@
 			],
 			"duration": 40,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "gun-turret",
@@ -2361,7 +2400,8 @@
 			],
 			"duration": 8,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "wooden-chest",
@@ -2381,7 +2421,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "display-panel",
@@ -2406,7 +2447,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "iron-stick",
@@ -2426,7 +2468,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "stone-furnace",
@@ -2446,7 +2489,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "boiler",
@@ -2471,7 +2515,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "steam-engine",
@@ -2501,7 +2546,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "iron-gear-wheel",
@@ -2521,7 +2567,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "electronic-circuit",
@@ -2546,7 +2593,8 @@
 			],
 			"duration": 1,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "transport-belt",
@@ -2571,7 +2619,8 @@
 			],
 			"duration": 1,
 			"category": "pressing",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "electric-mining-drill",
@@ -2601,7 +2650,8 @@
 			],
 			"duration": 2,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "burner-mining-drill",
@@ -2631,7 +2681,8 @@
 			],
 			"duration": 2,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "inserter",
@@ -2661,7 +2712,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "fast-inserter",
@@ -2691,7 +2743,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "long-handed-inserter",
@@ -2721,7 +2774,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "burner-inserter",
@@ -2746,7 +2800,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "pipe",
@@ -2766,7 +2821,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "offshore-pump",
@@ -2791,7 +2847,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "copper-cable",
@@ -2811,7 +2868,8 @@
 			],
 			"duration": 1,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "small-electric-pole",
@@ -2836,7 +2894,8 @@
 			],
 			"duration": 1,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "submachine-gun",
@@ -2866,7 +2925,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "firearm-magazine",
@@ -2886,7 +2946,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "light-armor",
@@ -2906,7 +2967,8 @@
 			],
 			"duration": 3,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "radar",
@@ -2936,7 +2998,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "small-lamp",
@@ -2966,7 +3029,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "pipe-to-ground",
@@ -2991,7 +3055,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "assembling-machine-1",
@@ -3021,7 +3086,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "repair-pack",
@@ -3046,7 +3112,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "automation-science-pack",
@@ -3071,7 +3138,8 @@
 			],
 			"duration": 5,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "logistic-science-pack",
@@ -3096,7 +3164,8 @@
 			],
 			"duration": 6,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "lab",
@@ -3126,7 +3195,8 @@
 			],
 			"duration": 2,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "stone-wall",
@@ -3146,7 +3216,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "assembling-machine-2",
@@ -3181,7 +3252,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "splitter",
@@ -3211,7 +3283,8 @@
 			],
 			"duration": 1,
 			"category": "pressing",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "underground-belt",
@@ -3236,7 +3309,8 @@
 			],
 			"duration": 1,
 			"category": "pressing",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "car",
@@ -3266,7 +3340,8 @@
 			],
 			"duration": 2,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "engine-unit",
@@ -3296,7 +3371,8 @@
 			],
 			"duration": 10,
 			"category": "advanced-crafting",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "iron-chest",
@@ -3316,7 +3392,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "big-electric-pole",
@@ -3346,7 +3423,8 @@
 			],
 			"duration": 1,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "medium-electric-pole",
@@ -3376,7 +3454,8 @@
 			],
 			"duration": 1,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "shotgun",
@@ -3411,7 +3490,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "shotgun-shell",
@@ -3436,7 +3516,8 @@
 			],
 			"duration": 3,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "piercing-rounds-magazine",
@@ -3466,7 +3547,8 @@
 			],
 			"duration": 6,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "grenade",
@@ -3491,7 +3573,8 @@
 			],
 			"duration": 8,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "steel-furnace",
@@ -3516,7 +3599,8 @@
 			],
 			"duration": 3,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "gate",
@@ -3546,7 +3630,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "heavy-armor",
@@ -3571,7 +3656,8 @@
 			],
 			"duration": 8,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "steel-chest",
@@ -3591,7 +3677,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "fast-underground-belt",
@@ -3616,7 +3703,8 @@
 			],
 			"duration": 2,
 			"category": "pressing",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "fast-splitter",
@@ -3646,7 +3734,8 @@
 			],
 			"duration": 2,
 			"category": "pressing",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "concrete",
@@ -3676,7 +3765,8 @@
 			],
 			"duration": 10,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "hazard-concrete",
@@ -3696,7 +3786,8 @@
 			],
 			"duration": 0.25,
 			"category": "crafting",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "refined-concrete",
@@ -3731,7 +3822,8 @@
 			],
 			"duration": 15,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "refined-hazard-concrete",
@@ -3751,7 +3843,8 @@
 			],
 			"duration": 0.25,
 			"category": "crafting",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "landfill",
@@ -3771,7 +3864,8 @@
 			],
 			"duration": 0.5,
 			"category": "crafting",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "fast-transport-belt",
@@ -3796,7 +3890,8 @@
 			],
 			"duration": 1,
 			"category": "pressing",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "solar-panel",
@@ -3826,7 +3921,8 @@
 			],
 			"duration": 10,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "rail",
@@ -3856,7 +3952,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "locomotive",
@@ -3886,7 +3983,8 @@
 			],
 			"duration": 4,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "cargo-wagon",
@@ -3916,7 +4014,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "rail-signal",
@@ -3941,7 +4040,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "rail-chain-signal",
@@ -3966,7 +4066,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "train-stop",
@@ -4001,7 +4102,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "copper-plate",
@@ -4021,7 +4123,8 @@
 			],
 			"duration": 3.2,
 			"category": "smelting",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "iron-plate",
@@ -4041,7 +4144,8 @@
 			],
 			"duration": 3.2,
 			"category": "smelting",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "stone-brick",
@@ -4061,7 +4165,8 @@
 			],
 			"duration": 3.2,
 			"category": "smelting",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "steel-plate",
@@ -4081,7 +4186,8 @@
 			],
 			"duration": 16,
 			"category": "smelting",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "arithmetic-combinator",
@@ -4106,7 +4212,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "decider-combinator",
@@ -4131,7 +4238,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "constant-combinator",
@@ -4156,7 +4264,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "selector-combinator",
@@ -4181,7 +4290,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "power-switch",
@@ -4211,7 +4321,8 @@
 			],
 			"duration": 2,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "programmable-speaker",
@@ -4246,7 +4357,8 @@
 			],
 			"duration": 2,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "poison-capsule",
@@ -4276,7 +4388,8 @@
 			],
 			"duration": 8,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "slowdown-capsule",
@@ -4306,7 +4419,8 @@
 			],
 			"duration": 8,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "cluster-grenade",
@@ -4336,7 +4450,8 @@
 			],
 			"duration": 8,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "defender-capsule",
@@ -4366,7 +4481,8 @@
 			],
 			"duration": 8,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "distractor-capsule",
@@ -4391,7 +4507,8 @@
 			],
 			"duration": 15,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "destroyer-capsule",
@@ -4421,7 +4538,8 @@
 			],
 			"duration": 15,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "cliff-explosives",
@@ -4456,7 +4574,8 @@
 			],
 			"duration": 8,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "uranium-rounds-magazine",
@@ -4481,7 +4600,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "rocket",
@@ -4506,7 +4626,8 @@
 			],
 			"duration": 4,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "explosive-rocket",
@@ -4531,7 +4652,8 @@
 			],
 			"duration": 8,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "atomic-bomb",
@@ -4561,7 +4683,8 @@
 			],
 			"duration": 50,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "piercing-shotgun-shell",
@@ -4591,7 +4714,8 @@
 			],
 			"duration": 8,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "cannon-shell",
@@ -4621,7 +4745,8 @@
 			],
 			"duration": 8,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "explosive-cannon-shell",
@@ -4651,7 +4776,8 @@
 			],
 			"duration": 8,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "uranium-cannon-shell",
@@ -4676,7 +4802,8 @@
 			],
 			"duration": 12,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "explosive-uranium-cannon-shell",
@@ -4701,7 +4828,8 @@
 			],
 			"duration": 12,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "artillery-shell",
@@ -4736,7 +4864,8 @@
 			],
 			"duration": 15,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "flamethrower-ammo",
@@ -4761,7 +4890,8 @@
 			],
 			"duration": 6,
 			"category": "chemistry",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "express-transport-belt",
@@ -4791,7 +4921,8 @@
 			],
 			"duration": 1,
 			"category": "crafting-with-fluid-or-metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "assembling-machine-3",
@@ -4816,7 +4947,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "tank",
@@ -4851,7 +4983,8 @@
 			],
 			"duration": 5,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "spidertron",
@@ -4891,7 +5024,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "fluid-wagon",
@@ -4926,7 +5060,8 @@
 			],
 			"duration": 1.5,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "artillery-wagon",
@@ -4966,7 +5101,8 @@
 			],
 			"duration": 4,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "modular-armor",
@@ -4991,7 +5127,8 @@
 			],
 			"duration": 15,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "power-armor",
@@ -5021,7 +5158,8 @@
 			],
 			"duration": 20,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "power-armor-mk2",
@@ -5061,7 +5199,8 @@
 			],
 			"duration": 25,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "flamethrower",
@@ -5086,7 +5225,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "land-mine",
@@ -5111,7 +5251,8 @@
 			],
 			"duration": 5,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "rocket-launcher",
@@ -5141,7 +5282,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "combat-shotgun",
@@ -5176,7 +5318,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "chemical-science-pack",
@@ -5206,7 +5349,8 @@
 			],
 			"duration": 24,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "military-science-pack",
@@ -5236,7 +5380,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "production-science-pack",
@@ -5266,7 +5411,8 @@
 			],
 			"duration": 21,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "utility-science-pack",
@@ -5296,7 +5442,8 @@
 			],
 			"duration": 21,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "express-underground-belt",
@@ -5326,7 +5473,8 @@
 			],
 			"duration": 2,
 			"category": "crafting-with-fluid-or-metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "express-splitter",
@@ -5361,7 +5509,8 @@
 			],
 			"duration": 2,
 			"category": "crafting-with-fluid-or-metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "advanced-circuit",
@@ -5391,7 +5540,8 @@
 			],
 			"duration": 6,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "processing-unit",
@@ -5421,7 +5571,8 @@
 			],
 			"duration": 10,
 			"category": "electronics-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "logistic-robot",
@@ -5446,7 +5597,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "construction-robot",
@@ -5471,7 +5623,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "passive-provider-chest",
@@ -5501,7 +5654,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "active-provider-chest",
@@ -5531,7 +5685,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "storage-chest",
@@ -5561,7 +5716,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "buffer-chest",
@@ -5591,7 +5747,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "requester-chest",
@@ -5621,7 +5778,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "rocket-silo",
@@ -5661,7 +5819,8 @@
 			],
 			"duration": 30,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "cargo-landing-pad",
@@ -5691,7 +5850,8 @@
 			],
 			"duration": 30,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "roboport",
@@ -5721,7 +5881,8 @@
 			],
 			"duration": 5,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "substation",
@@ -5751,7 +5912,8 @@
 			],
 			"duration": 1,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "accumulator",
@@ -5776,7 +5938,8 @@
 			],
 			"duration": 10,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "electric-furnace",
@@ -5806,7 +5969,8 @@
 			],
 			"duration": 5,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "beacon",
@@ -5841,7 +6005,8 @@
 			],
 			"duration": 15,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "pumpjack",
@@ -5876,7 +6041,8 @@
 			],
 			"duration": 5,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "oil-refinery",
@@ -5916,7 +6082,8 @@
 			],
 			"duration": 8,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "electric-engine-unit",
@@ -5946,7 +6113,8 @@
 			],
 			"duration": 10,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "flying-robot-frame",
@@ -5981,7 +6149,8 @@
 			],
 			"duration": 20,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "explosives",
@@ -6011,7 +6180,8 @@
 			],
 			"duration": 4,
 			"category": "chemistry-or-cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "battery",
@@ -6041,7 +6211,8 @@
 			],
 			"duration": 4,
 			"category": "chemistry-or-cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "storage-tank",
@@ -6066,7 +6237,8 @@
 			],
 			"duration": 3,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "pump",
@@ -6096,7 +6268,8 @@
 			],
 			"duration": 2,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "chemical-plant",
@@ -6131,7 +6304,8 @@
 			],
 			"duration": 5,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "low-density-structure",
@@ -6161,7 +6335,8 @@
 			],
 			"duration": 15,
 			"category": "crafting",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "rocket-fuel",
@@ -6186,7 +6361,8 @@
 			],
 			"duration": 15,
 			"category": "organic-or-assembling",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "rocket-part",
@@ -6216,7 +6392,8 @@
 			],
 			"duration": 3,
 			"category": "rocket-building",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "nuclear-reactor",
@@ -6251,7 +6428,8 @@
 			],
 			"duration": 8,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "centrifuge",
@@ -6286,7 +6464,8 @@
 			],
 			"duration": 4,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "uranium-processing",
@@ -6313,7 +6492,8 @@
 			],
 			"duration": 12,
 			"category": "centrifuging",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "kovarex-enrichment-process",
@@ -6343,7 +6523,8 @@
 			],
 			"duration": 60,
 			"category": "centrifuging",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "nuclear-fuel",
@@ -6368,7 +6549,8 @@
 			],
 			"duration": 90,
 			"category": "centrifuging",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "nuclear-fuel-reprocessing",
@@ -6388,7 +6570,8 @@
 			],
 			"duration": 60,
 			"category": "centrifuging",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "uranium-fuel-cell",
@@ -6418,7 +6601,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "heat-exchanger",
@@ -6448,7 +6632,8 @@
 			],
 			"duration": 3,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "heat-pipe",
@@ -6473,7 +6658,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "steam-turbine",
@@ -6503,7 +6689,8 @@
 			],
 			"duration": 3,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "rail-support",
@@ -6528,7 +6715,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "rail-ramp",
@@ -6558,7 +6746,8 @@
 			],
 			"duration": 1,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "quality-module",
@@ -6583,7 +6772,8 @@
 			],
 			"duration": 15,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "quality-module-2",
@@ -6613,7 +6803,8 @@
 			],
 			"duration": 30,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "quality-module-3",
@@ -6648,7 +6839,8 @@
 			],
 			"duration": 60,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "recycler",
@@ -6683,7 +6875,8 @@
 			],
 			"duration": 3,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "simple-coal-liquefaction",
@@ -6713,7 +6906,8 @@
 			],
 			"duration": 5,
 			"category": "oil-processing",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "yumako-processing",
@@ -6739,7 +6933,8 @@
 			],
 			"duration": 1,
 			"category": "organic-or-hand-crafting",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "jellynut-processing",
@@ -6765,7 +6960,8 @@
 			],
 			"duration": 1,
 			"category": "organic-or-hand-crafting",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "copper-bacteria",
@@ -6791,7 +6987,8 @@
 			],
 			"duration": 1,
 			"category": "organic-or-hand-crafting",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "copper-bacteria-cultivation",
@@ -6816,7 +7013,8 @@
 			],
 			"duration": 4,
 			"category": "organic",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "iron-bacteria",
@@ -6842,7 +7040,8 @@
 			],
 			"duration": 1,
 			"category": "organic-or-hand-crafting",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "iron-bacteria-cultivation",
@@ -6867,7 +7066,8 @@
 			],
 			"duration": 4,
 			"category": "organic",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "artificial-yumako-soil",
@@ -6897,7 +7097,8 @@
 			],
 			"duration": 2,
 			"category": "crafting",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "overgrowth-yumako-soil",
@@ -6937,7 +7138,8 @@
 			],
 			"duration": 10,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "artificial-jellynut-soil",
@@ -6967,7 +7169,8 @@
 			],
 			"duration": 2,
 			"category": "crafting",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "overgrowth-jellynut-soil",
@@ -7007,7 +7210,8 @@
 			],
 			"duration": 10,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "nutrients-from-spoilage",
@@ -7027,7 +7231,8 @@
 			],
 			"duration": 2,
 			"category": "organic-or-assembling",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "nutrients-from-yumako-mash",
@@ -7047,7 +7252,8 @@
 			],
 			"duration": 4,
 			"category": "organic",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "nutrients-from-bioflux",
@@ -7067,7 +7273,8 @@
 			],
 			"duration": 2,
 			"category": "organic",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "pentapod-egg",
@@ -7097,7 +7304,8 @@
 			],
 			"duration": 15,
 			"category": "organic",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "rocket-fuel-from-jelly",
@@ -7127,7 +7335,8 @@
 			],
 			"duration": 10,
 			"category": "organic",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "bioflux",
@@ -7152,7 +7361,8 @@
 			],
 			"duration": 6,
 			"category": "organic",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "bioplastic",
@@ -7177,7 +7387,8 @@
 			],
 			"duration": 2,
 			"category": "organic",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "biosulfur",
@@ -7202,7 +7413,8 @@
 			],
 			"duration": 2,
 			"category": "organic",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "biolubricant",
@@ -7222,7 +7434,8 @@
 			],
 			"duration": 3,
 			"category": "organic",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "carbon-fiber",
@@ -7247,7 +7460,8 @@
 			],
 			"duration": 5,
 			"category": "organic",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "toolbelt-equipment",
@@ -7272,7 +7486,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "battery-mk3-equipment",
@@ -7297,7 +7512,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "space-platform-foundation",
@@ -7322,7 +7538,8 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "stack-inserter",
@@ -7357,7 +7574,8 @@
 			],
 			"duration": 0.5,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "rocket-turret",
@@ -7397,7 +7615,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "space-platform-starter-pack",
@@ -7427,7 +7646,8 @@
 			],
 			"duration": 60,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "cargo-bay",
@@ -7457,7 +7677,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "asteroid-collector",
@@ -7487,7 +7708,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "crusher",
@@ -7517,7 +7739,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "thruster",
@@ -7547,7 +7770,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "space-science-pack",
@@ -7577,7 +7801,8 @@
 			],
 			"duration": 15,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "metallurgic-science-pack",
@@ -7607,7 +7832,8 @@
 			],
 			"duration": 10,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "agricultural-science-pack",
@@ -7632,7 +7858,8 @@
 			],
 			"duration": 4,
 			"category": "organic",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "electromagnetic-science-pack",
@@ -7667,7 +7894,8 @@
 			],
 			"duration": 10,
 			"category": "electromagnetics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "cryogenic-science-pack",
@@ -7702,7 +7930,8 @@
 			],
 			"duration": 20,
 			"category": "cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "metallic-asteroid-crushing",
@@ -7728,7 +7957,8 @@
 			],
 			"duration": 2,
 			"category": "crushing",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "carbonic-asteroid-crushing",
@@ -7754,7 +7984,8 @@
 			],
 			"duration": 2,
 			"category": "crushing",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "oxide-asteroid-crushing",
@@ -7780,7 +8011,8 @@
 			],
 			"duration": 2,
 			"category": "crushing",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "advanced-metallic-asteroid-crushing",
@@ -7811,7 +8043,8 @@
 			],
 			"duration": 5,
 			"category": "crushing",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "advanced-carbonic-asteroid-crushing",
@@ -7842,7 +8075,8 @@
 			],
 			"duration": 5,
 			"category": "crushing",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "advanced-oxide-asteroid-crushing",
@@ -7873,7 +8107,8 @@
 			],
 			"duration": 5,
 			"category": "crushing",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "metallic-asteroid-reprocessing",
@@ -7906,7 +8141,8 @@
 			],
 			"duration": 2,
 			"category": "crushing",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "carbonic-asteroid-reprocessing",
@@ -7939,7 +8175,8 @@
 			],
 			"duration": 2,
 			"category": "crushing",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "oxide-asteroid-reprocessing",
@@ -7972,7 +8209,8 @@
 			],
 			"duration": 1,
 			"category": "crushing",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "thruster-fuel",
@@ -7997,7 +8235,8 @@
 			],
 			"duration": 2,
 			"category": "chemistry",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "thruster-oxidizer",
@@ -8022,7 +8261,8 @@
 			],
 			"duration": 2,
 			"category": "chemistry",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "ice-melting",
@@ -8042,7 +8282,8 @@
 			],
 			"duration": 1,
 			"category": "chemistry",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "advanced-thruster-fuel",
@@ -8072,7 +8313,8 @@
 			],
 			"duration": 10,
 			"category": "chemistry",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "advanced-thruster-oxidizer",
@@ -8102,7 +8344,8 @@
 			],
 			"duration": 10,
 			"category": "chemistry",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "acid-neutralisation",
@@ -8128,7 +8371,8 @@
 			],
 			"duration": 5,
 			"category": "chemistry-or-cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "steam-condensation",
@@ -8148,7 +8392,8 @@
 			],
 			"duration": 1,
 			"category": "chemistry-or-cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "carbon",
@@ -8173,7 +8418,8 @@
 			],
 			"duration": 1,
 			"category": "chemistry-or-cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "tungsten-carbide",
@@ -8203,7 +8449,8 @@
 			],
 			"duration": 1,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "foundry",
@@ -8243,7 +8490,8 @@
 			],
 			"duration": 10,
 			"category": "metallurgy-or-assembling",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "molten-iron-from-lava",
@@ -8273,7 +8521,8 @@
 			],
 			"duration": 16,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "molten-copper-from-lava",
@@ -8303,7 +8552,8 @@
 			],
 			"duration": 16,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "molten-iron",
@@ -8328,7 +8578,8 @@
 			],
 			"duration": 32,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "molten-copper",
@@ -8353,7 +8604,8 @@
 			],
 			"duration": 32,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "casting-iron",
@@ -8373,7 +8625,8 @@
 			],
 			"duration": 3.2,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "casting-steel",
@@ -8393,7 +8646,8 @@
 			],
 			"duration": 3.2,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "casting-copper",
@@ -8413,7 +8667,8 @@
 			],
 			"duration": 3.2,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "casting-iron-gear-wheel",
@@ -8433,7 +8688,8 @@
 			],
 			"duration": 1,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "casting-iron-stick",
@@ -8453,7 +8709,8 @@
 			],
 			"duration": 1,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "casting-pipe",
@@ -8473,7 +8730,8 @@
 			],
 			"duration": 1,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "casting-pipe-to-ground",
@@ -8498,7 +8756,8 @@
 			],
 			"duration": 1,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "casting-low-density-structure",
@@ -8528,7 +8787,8 @@
 			],
 			"duration": 15,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "concrete-from-molten-iron",
@@ -8558,7 +8818,8 @@
 			],
 			"duration": 10,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "casting-copper-cable",
@@ -8578,7 +8839,8 @@
 			],
 			"duration": 1,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "tungsten-plate",
@@ -8603,7 +8865,8 @@
 			],
 			"duration": 10,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "turbo-transport-belt",
@@ -8633,7 +8896,8 @@
 			],
 			"duration": 1,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "turbo-underground-belt",
@@ -8663,7 +8927,8 @@
 			],
 			"duration": 2,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "turbo-splitter",
@@ -8698,7 +8963,8 @@
 			],
 			"duration": 2,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "big-mining-drill",
@@ -8738,7 +9004,8 @@
 			],
 			"duration": 30,
 			"category": "metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "mech-armor",
@@ -8778,7 +9045,8 @@
 			],
 			"duration": 60,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "railgun",
@@ -8813,7 +9081,8 @@
 			],
 			"duration": 10,
 			"category": "cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "railgun-turret",
@@ -8853,7 +9122,8 @@
 			],
 			"duration": 10,
 			"category": "cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "railgun-ammo",
@@ -8883,7 +9153,8 @@
 			],
 			"duration": 25,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "agricultural-tower",
@@ -8918,7 +9189,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "biochamber",
@@ -8958,7 +9230,8 @@
 			],
 			"duration": 20,
 			"category": "organic-or-assembling",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "burnt-spoilage",
@@ -8978,7 +9251,8 @@
 			],
 			"duration": 12,
 			"category": "organic",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "coal-synthesis",
@@ -9008,7 +9282,8 @@
 			],
 			"duration": 2,
 			"category": "chemistry",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "capture-robot-rocket",
@@ -9043,7 +9318,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "biolab",
@@ -9083,7 +9359,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "captive-biter-spawner",
@@ -9118,7 +9395,8 @@
 			],
 			"duration": 10,
 			"category": "cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "biter-egg",
@@ -9132,7 +9410,8 @@
 			],
 			"duration": 10,
 			"category": "captive-spawner-process",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "fish-breeding",
@@ -9162,7 +9441,8 @@
 			],
 			"duration": 6,
 			"category": "organic-or-chemistry",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "nutrients-from-fish",
@@ -9182,7 +9462,8 @@
 			],
 			"duration": 2,
 			"category": "organic-or-assembling",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "nutrients-from-biter-egg",
@@ -9202,7 +9483,8 @@
 			],
 			"duration": 2,
 			"category": "organic-or-assembling",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "scrap-recycling",
@@ -9289,7 +9571,8 @@
 			],
 			"duration": 0.2,
 			"category": "recycling-or-hand-crafting",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "lightning-rod",
@@ -9319,7 +9602,8 @@
 			],
 			"duration": 5,
 			"category": "electronics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "holmium-solution",
@@ -9349,7 +9633,8 @@
 			],
 			"duration": 10,
 			"category": "chemistry",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "holmium-plate",
@@ -9369,7 +9654,8 @@
 			],
 			"duration": 1,
 			"category": "crafting-with-fluid-or-metallurgy",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "electromagnetic-plant",
@@ -9404,7 +9690,8 @@
 			],
 			"duration": 10,
 			"category": "electronics-or-assembling",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "superconductor",
@@ -9439,7 +9726,8 @@
 			],
 			"duration": 5,
 			"category": "electromagnetics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "supercapacitor",
@@ -9479,7 +9767,8 @@
 			],
 			"duration": 10,
 			"category": "electromagnetics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "electrolyte",
@@ -9509,7 +9798,8 @@
 			],
 			"duration": 5,
 			"category": "electromagnetics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "lightning-collector",
@@ -9544,7 +9834,8 @@
 			],
 			"duration": 5,
 			"category": "electromagnetics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "teslagun",
@@ -9579,7 +9870,8 @@
 			],
 			"duration": 30,
 			"category": "electromagnetics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "tesla-turret",
@@ -9619,7 +9911,8 @@
 			],
 			"duration": 30,
 			"category": "electromagnetics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "tesla-ammo",
@@ -9649,7 +9942,8 @@
 			],
 			"duration": 30,
 			"category": "electromagnetics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "heating-tower",
@@ -9679,7 +9973,8 @@
 			],
 			"duration": 10,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "lithium",
@@ -9709,7 +10004,8 @@
 			],
 			"duration": 20,
 			"category": "chemistry-or-cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "lithium-plate",
@@ -9729,7 +10025,8 @@
 			],
 			"duration": 6.4,
 			"category": "smelting",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "fluoroketone",
@@ -9765,7 +10062,8 @@
 			],
 			"duration": 10,
 			"category": "cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "fluoroketone-cooling",
@@ -9786,7 +10084,8 @@
 			],
 			"duration": 5,
 			"category": "cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "cryogenic-plant",
@@ -9821,7 +10120,8 @@
 			],
 			"duration": 10,
 			"category": "cryogenics-or-assembling",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "quantum-processor",
@@ -9872,7 +10172,8 @@
 			],
 			"duration": 30,
 			"category": "electromagnetics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "ammoniacal-solution-separation",
@@ -9897,7 +10198,8 @@
 			],
 			"duration": 1,
 			"category": "chemistry-or-cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "fusion-reactor-equipment",
@@ -9942,7 +10244,8 @@
 			],
 			"duration": 30,
 			"category": "default",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "fusion-power-cell",
@@ -9972,7 +10275,8 @@
 			],
 			"duration": 10,
 			"category": "cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "fusion-reactor",
@@ -10002,7 +10306,8 @@
 			],
 			"duration": 60,
 			"category": "cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "fusion-generator",
@@ -10032,7 +10337,8 @@
 			],
 			"duration": 30,
 			"category": "cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "ice-platform",
@@ -10057,7 +10363,8 @@
 			],
 			"duration": 30,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "solid-fuel-from-ammonia",
@@ -10082,7 +10389,8 @@
 			],
 			"duration": 0.5,
 			"category": "chemistry-or-cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "ammonia-rocket-fuel",
@@ -10112,7 +10420,8 @@
 			],
 			"duration": 10,
 			"category": "chemistry-or-cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "foundation",
@@ -10152,7 +10461,8 @@
 			],
 			"duration": 30,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "promethium-science-pack",
@@ -10182,7 +10492,8 @@
 			],
 			"duration": 5,
 			"category": "cryogenics",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "wood-processing",
@@ -10202,7 +10513,8 @@
 			],
 			"duration": 2,
 			"category": "organic-or-assembling",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "water-barrel",
@@ -10227,7 +10539,8 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "empty-water-barrel",
@@ -10252,7 +10565,8 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "sulfuric-acid-barrel",
@@ -10277,7 +10591,8 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "empty-sulfuric-acid-barrel",
@@ -10302,7 +10617,8 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "crude-oil-barrel",
@@ -10327,7 +10643,8 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "empty-crude-oil-barrel",
@@ -10352,7 +10669,8 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "heavy-oil-barrel",
@@ -10377,7 +10695,8 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "empty-heavy-oil-barrel",
@@ -10402,7 +10721,8 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "light-oil-barrel",
@@ -10427,7 +10747,8 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "empty-light-oil-barrel",
@@ -10452,7 +10773,8 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "petroleum-gas-barrel",
@@ -10477,7 +10799,8 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "empty-petroleum-gas-barrel",
@@ -10502,7 +10825,8 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "lubricant-barrel",
@@ -10527,7 +10851,8 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "empty-lubricant-barrel",
@@ -10552,7 +10877,8 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "fluoroketone-cold-barrel",
@@ -10577,7 +10903,8 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "empty-fluoroketone-cold-barrel",
@@ -10602,7 +10929,8 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "fluoroketone-hot-barrel",
@@ -10627,7 +10955,8 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		},
 		{
 			"id": "empty-fluoroketone-hot-barrel",
@@ -10652,7 +10981,8 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"available": true
+			"available": true,
+			"priority": 10
 		}
 	],
 	"machines": [
