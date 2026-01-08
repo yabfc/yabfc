@@ -7,7 +7,9 @@
 	let { profile }: { profile: Profile } = $props();
 </script>
 
-<div class="fixed top-24 right-4 bottom-4 flex h-fit max-h-[calc(100%-var(--spacing)*28)] w-80">
+<div
+	class="fixed top-24 right-4 bottom-4 z-10 flex h-fit max-h-[calc(100%-var(--spacing)*28)] w-80"
+>
 	<div class="tabs tabs-box w-full shadow">
 		<input type="radio" name="profile-overview-tabs" class="tab" aria-label="Items" checked />
 
