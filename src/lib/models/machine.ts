@@ -12,4 +12,5 @@ export default interface Machine {
 	recipeCategories: string[];
 	requiredPower: number;
 	features: MachineFeature[];
+	planetLimitations?: string[];
 }
