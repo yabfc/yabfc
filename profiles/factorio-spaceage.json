@@ -6984,7 +6984,7 @@
 			"category": "organic-or-hand-crafting",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["gleba"]
+			"limitations": ["planet:gleba"]
 		},
 		{
 			"id": "copper-bacteria-cultivation",
@@ -7011,7 +7011,7 @@
 			"category": "organic",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["gleba"]
+			"limitations": ["planet:gleba"]
 		},
 		{
 			"id": "iron-bacteria",
@@ -7038,7 +7038,7 @@
 			"category": "organic-or-hand-crafting",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["gleba"]
+			"limitations": ["planet:gleba"]
 		},
 		{
 			"id": "iron-bacteria-cultivation",
@@ -7065,7 +7065,7 @@
 			"category": "organic",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["gleba"]
+			"limitations": ["planet:gleba"]
 		},
 		{
 			"id": "artificial-yumako-soil",
@@ -7097,7 +7097,7 @@
 			"category": "crafting",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["gleba"]
+			"limitations": ["planet:gleba"]
 		},
 		{
 			"id": "overgrowth-yumako-soil",
@@ -7139,7 +7139,7 @@
 			"category": "crafting-with-fluid",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["gleba"]
+			"limitations": ["planet:gleba"]
 		},
 		{
 			"id": "artificial-jellynut-soil",
@@ -7171,7 +7171,7 @@
 			"category": "crafting",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["gleba"]
+			"limitations": ["planet:gleba"]
 		},
 		{
 			"id": "overgrowth-jellynut-soil",
@@ -7213,7 +7213,7 @@
 			"category": "crafting-with-fluid",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["gleba"]
+			"limitations": ["planet:gleba"]
 		},
 		{
 			"id": "nutrients-from-spoilage",
@@ -7308,7 +7308,7 @@
 			"category": "organic",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["gleba"]
+			"limitations": ["planet:gleba"]
 		},
 		{
 			"id": "rocket-fuel-from-jelly",
@@ -7837,7 +7837,7 @@
 			"category": "metallurgy",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["vulcanus"]
+			"limitations": ["planet:vulcanus"]
 		},
 		{
 			"id": "agricultural-science-pack",
@@ -7864,7 +7864,7 @@
 			"category": "organic",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["gleba"]
+			"limitations": ["planet:gleba"]
 		},
 		{
 			"id": "electromagnetic-science-pack",
@@ -7937,7 +7937,7 @@
 			"category": "cryogenics",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["aquilo"]
+			"limitations": ["planet:aquilo"]
 		},
 		{
 			"id": "metallic-asteroid-crushing",
@@ -8363,7 +8363,7 @@
 			"category": "chemistry-or-cryogenics",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["vulcanus"]
+			"limitations": ["planet:vulcanus"]
 		},
 		{
 			"id": "steam-condensation",
@@ -8483,7 +8483,7 @@
 			"category": "metallurgy-or-assembling",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["vulcanus"]
+			"limitations": ["planet:vulcanus"]
 		},
 		{
 			"id": "molten-iron-from-lava",
@@ -8890,7 +8890,7 @@
 			"category": "metallurgy",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["vulcanus"]
+			"limitations": ["planet:vulcanus"]
 		},
 		{
 			"id": "turbo-underground-belt",
@@ -8922,7 +8922,7 @@
 			"category": "metallurgy",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["vulcanus"]
+			"limitations": ["planet:vulcanus"]
 		},
 		{
 			"id": "turbo-splitter",
@@ -8959,7 +8959,7 @@
 			"category": "metallurgy",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["vulcanus"]
+			"limitations": ["planet:vulcanus"]
 		},
 		{
 			"id": "big-mining-drill",
@@ -9001,7 +9001,7 @@
 			"category": "metallurgy",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["vulcanus"]
+			"limitations": ["planet:vulcanus"]
 		},
 		{
 			"id": "mech-armor",
@@ -9228,7 +9228,7 @@
 			"category": "organic-or-assembling",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["gleba"]
+			"limitations": ["planet:gleba"]
 		},
 		{
 			"id": "burnt-spoilage",
@@ -9440,7 +9440,7 @@
 			"category": "organic-or-chemistry",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["nauvis"]
+			"limitations": ["planet:nauvis"]
 		},
 		{
 			"id": "nutrients-from-fish",
@@ -10106,7 +10106,7 @@
 			"category": "cryogenics-or-assembling",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["aquilo"]
+			"limitations": ["planet:aquilo"]
 		},
 		{
 			"id": "quantum-processor",
@@ -10158,7 +10158,7 @@
 			"category": "electromagnetics",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["aquilo", "space-platform"]
+			"limitations": ["planet:aquilo", "planet:space-platform"]
 		},
 		{
 			"id": "ammoniacal-solution-separation",
@@ -10293,7 +10293,7 @@
 			"category": "cryogenics",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["aquilo"]
+			"limitations": ["planet:aquilo"]
 		},
 		{
 			"id": "fusion-generator",
@@ -10325,7 +10325,7 @@
 			"category": "cryogenics",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["aquilo"]
+			"limitations": ["planet:aquilo"]
 		},
 		{
 			"id": "ice-platform",
@@ -10502,7 +10502,7 @@
 			"category": "organic-or-assembling",
 			"priority": 10,
 			"available": true,
-			"planetLimitations": ["nauvis"]
+			"limitations": ["planet:nauvis"]
 		},
 		{
 			"id": "water-barrel",
@@ -10991,7 +10991,13 @@
 				}
 			],
 			"available": true,
-			"planetLimitations": ["nauvis", "vulcanus", "gleba", "fulgora", "aquilo"]
+			"limitations": [
+				"planet:nauvis",
+				"planet:vulcanus",
+				"planet:gleba",
+				"planet:fulgora",
+				"planet:aquilo"
+			]
 		},
 		{
 			"id": "electric-furnace",
@@ -11028,7 +11034,13 @@
 				}
 			],
 			"available": true,
-			"planetLimitations": ["nauvis", "vulcanus", "gleba", "fulgora", "aquilo"]
+			"limitations": [
+				"planet:nauvis",
+				"planet:vulcanus",
+				"planet:gleba",
+				"planet:fulgora",
+				"planet:aquilo"
+			]
 		},
 		{
 			"id": "recycler",
@@ -11271,7 +11283,7 @@
 				}
 			],
 			"available": true,
-			"planetLimitations": ["nauvis"]
+			"limitations": ["planet:nauvis"]
 		},
 		{
 			"id": "electromagnetic-plant",

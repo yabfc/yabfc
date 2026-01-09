@@ -13,5 +13,5 @@ export default interface Recipe {
 	duration: number;
 	category: string;
 	priority: number;
-	planetLimitations?: string[];
+	limitations?: string[];
 }
