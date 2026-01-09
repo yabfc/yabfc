@@ -7,8 +7,11 @@ export interface BaseItemIo {
 export default interface Recipe {
 	id: string;
 	name?: string;
+	available: boolean;
 	in: BaseItemIo[];
 	out: BaseItemIo[];
 	duration: number;
 	category: string;
+	priority: number;
+	limitations?: string[];
 }

@@ -11,6 +11,7 @@ export interface Modifier {
 export default interface EffectModule {
 	id: string;
 	name?: string;
+	available: boolean;
 	modifiers: Modifier[];
 	perSlot: boolean;
 }
