@@ -12,7 +12,7 @@
 				<HammerIcon size="24" class="m-2" />
 			</div>
 			<div>
-				<div>{machine.name || machine.id}</div>
+				<div>{machine.getDisplayName()}</div>
 				<div class="text-xs font-semibold uppercase opacity-60">
 					{machine.recipeCategories}
 				</div>

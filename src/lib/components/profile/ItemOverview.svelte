@@ -12,8 +12,10 @@
 				<AnvilIcon size="24" class="m-2" />
 			</div>
 			<div>
-				<div>{item.name}</div>
-				<!-- <div class="text-xs font-semibold uppercase opacity-60">TODO</div> -->
+				<div>{item.getDisplayName()}</div>
+				<div class="text-xs font-semibold uppercase opacity-60">
+					{item.category}
+				</div>
 			</div>
 		</li>
 	{:else}

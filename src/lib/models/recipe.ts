@@ -4,7 +4,7 @@ export interface BaseItemIo {
 	amount: number;
 }
 
-export default interface Recipe {
+export interface RecipeInterface {
 	id: string;
 	name?: string;
 	available: boolean;
@@ -14,4 +14,38 @@ export default interface Recipe {
 	category: string;
 	priority: number;
 	limitations?: string[];
+}
+
+export default class Recipe {
+	id: string;
+	name?: string;
+	available: boolean;
+	in: BaseItemIo[];
+	out: BaseItemIo[];
+	duration: number;
+	category: string;
+	priority: number;
+	limitations?: string[];
+
+	constructor(recipe: RecipeInterface) {
+		this.id = recipe.id;
+		this.name = recipe.name;
+		this.available = recipe.available;
+		this.in = recipe.in;
+		this.out = recipe.out;
+		this.duration = recipe.duration;
+		this.category = recipe.category;
+		this.priority = recipe.priority;
+		this.limitations = recipe.limitations;
+	}
+
+	getDisplayName(): string {
+		return (
+			this.name ??
+			this.id
+				.split('-')
+				.map(w => w[0].toUpperCase() + w.slice(1))
+				.join(' ')
+		);
+	}
 }

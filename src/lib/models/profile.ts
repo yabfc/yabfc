@@ -1,7 +1,7 @@
-import type Machine from '@/lib/models/machine';
-import type Item from '@/lib/models/item';
-import type Recipe from '@/lib/models/recipe';
-import type EffectModule from '@/lib/models/effect';
+import Machine from '@/lib/models/machine';
+import Item from '@/lib/models/item';
+import Recipe from '@/lib/models/recipe';
+import EffectModule from '@/lib/models/effect';
 
 export interface ProfileInterface {
 	id: string;
@@ -25,10 +25,10 @@ export default class Profile {
 		this.id = profile.id;
 		this.name = profile.name;
 
-		this.items = profile.items;
-		this.recipes = profile.recipes;
-		this.machines = profile.machines;
-		this.machineEffects = profile.machineEffects;
+		this.items = profile.items.map(x => new Item(x));
+		this.recipes = profile.recipes.map(x => new Recipe(x));
+		this.machines = profile.machines.map(x => new Machine(x));
+		this.machineEffects = profile.machineEffects.map(x => new EffectModule(x));
 	}
 
 	getItemById(id: string): Item | undefined {

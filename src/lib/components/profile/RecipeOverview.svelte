@@ -12,7 +12,7 @@
 				<DrillIcon size="24" class="m-2" />
 			</div>
 			<div>
-				<div>{recipe.name || recipe.id}</div>
+				<div>{recipe.getDisplayName()}</div>
 				<div class="text-xs font-semibold uppercase opacity-60">
 					<ArrowBigRightDashIcon size="16" class="inline" />
 					{recipe.out.map(x => profile.getItemById(x.id)?.name ?? x.id).join(', ')}
