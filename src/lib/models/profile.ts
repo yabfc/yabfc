@@ -2,6 +2,7 @@ import Machine from '@/lib/models/machine';
 import Item from '@/lib/models/item';
 import Recipe from '@/lib/models/recipe';
 import EffectModule from '@/lib/models/effect';
+import type Research from '@/lib/models/research';
 
 export interface ProfileInterface {
 	id: string;
@@ -10,6 +11,7 @@ export interface ProfileInterface {
 	recipes: Recipe[];
 	machines: Machine[];
 	machineEffects: EffectModule[];
+	research: Research[];
 }
 
 export default class Profile {
@@ -20,6 +22,7 @@ export default class Profile {
 	recipes: Recipe[];
 	machines: Machine[];
 	machineEffects: EffectModule[];
+	research: Research[];
 
 	constructor(profile: ProfileInterface) {
 		this.id = profile.id;
@@ -29,6 +32,7 @@ export default class Profile {
 		this.recipes = profile.recipes.map(x => new Recipe(x));
 		this.machines = profile.machines.map(x => new Machine(x));
 		this.machineEffects = profile.machineEffects.map(x => new EffectModule(x));
+		this.research = profile.research;
 	}
 
 	getItemById(id: string): Item | undefined {

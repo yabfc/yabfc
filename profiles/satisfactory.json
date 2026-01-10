@@ -4,1002 +4,861 @@
 	"items": [
 		{
 			"id": "adaptive-control-unit",
-			"category": "bogus",
-			"name": "Adaptive Control Unit",
+			"category": "space-elevator",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "ai-expansion-server",
-			"category": "bogus",
+			"category": "advanced-product",
 			"name": "AI Expansion Server",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "ai-limiter",
-			"category": "bogus",
+			"category": "advanced-product",
 			"name": "AI Limiter",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "alclad-aluminum-sheet",
-			"category": "bogus",
-			"name": "Alclad Aluminum Sheet",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "alien-dna-capsule",
-			"category": "bogus",
-			"name": "Alien DNA Capsule",
+			"category": "advanced-product",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "alien-power-matrix",
-			"category": "bogus",
-			"name": "Alien Power Matrix",
+			"category": "advanced-product",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "alien-protein",
-			"category": "bogus",
-			"name": "Alien Protein",
+			"category": "organic",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "alien-remains",
-			"category": "bogus",
-			"name": "Alien Remains",
+			"category": "organic",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "aluminum-casing",
-			"category": "bogus",
-			"name": "Aluminum Casing",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "aluminum-ingot",
-			"category": "bogus",
-			"name": "Aluminum Ingot",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "aluminum-scrap",
-			"category": "bogus",
-			"name": "Aluminum Scrap",
+			"category": "advanced-product",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
 			"id": "assembly-director-system",
-			"category": "bogus",
-			"name": "Assembly Director System",
+			"category": "space-elevator",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "automated-wiring",
-			"category": "bogus",
-			"name": "Automated Wiring",
+			"category": "space-elevator",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "bacon-agaric",
-			"category": "bogus",
-			"name": "Bacon Agaric",
+			"category": "advanced-product",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "ballistic-warp-drive",
-			"category": "bogus",
-			"name": "Ballistic Warp Drive",
+			"category": "space-elevator",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "battery",
-			"category": "bogus",
-			"name": "Battery",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "bauxite",
-			"category": "bogus",
-			"name": "Bauxite",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "beacon",
-			"category": "bogus",
-			"name": "Beacon",
+			"category": "equipment",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "beryl-nut",
-			"category": "bogus",
-			"name": "Beryl Nut",
+			"category": "organic",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "biochemical-sculptor",
-			"category": "bogus",
-			"name": "Biochemical Sculptor",
+			"category": "advanced-product",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "biomass",
-			"category": "bogus",
-			"name": "Biomass",
+			"category": "organic",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "black-powder",
-			"category": "bogus",
-			"name": "Black Powder",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "blade-runners",
-			"category": "bogus",
-			"name": "Blade Runners",
+			"category": "equipment",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
 			"id": "boom-box",
-			"category": "bogus",
-			"name": "Boom Box",
+			"category": "equipment",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
 			"id": "cable",
-			"category": "bogus",
-			"name": "Cable",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "caterium-ingot",
-			"category": "bogus",
-			"name": "Caterium Ingot",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "caterium-ore",
-			"category": "bogus",
-			"name": "Caterium Ore",
+			"category": "raw-resource",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "chainsaw",
-			"category": "bogus",
-			"name": "Chainsaw",
+			"category": "advanced-product",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
 			"id": "circuit-board",
-			"category": "bogus",
-			"name": "Circuit Board",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "coal",
-			"category": "bogus",
-			"name": "Coal",
+			"category": "raw-resource",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "color-cartridge",
-			"category": "bogus",
-			"name": "Color Cartridge",
+			"category": "equipment",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "compacted-coal",
-			"category": "bogus",
-			"name": "Compacted Coal",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "computer",
-			"category": "bogus",
-			"name": "Computer",
+			"category": "advanced-product",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "concrete",
-			"category": "bogus",
-			"name": "Concrete",
+			"category": "advanced-product",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
 			"id": "cooling-system",
-			"category": "bogus",
-			"name": "Cooling System",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "copper-ingot",
-			"category": "bogus",
-			"name": "Copper Ingot",
+			"category": "basic-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "copper-ore",
-			"category": "bogus",
-			"name": "Copper Ore",
+			"category": "raw-resource",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "copper-powder",
-			"category": "bogus",
-			"name": "Copper Powder",
+			"category": "basic-product",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
 			"id": "copper-sheet",
-			"category": "bogus",
-			"name": "Copper Sheet",
+			"category": "basic-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "crude-oil",
-			"category": "bogus",
-			"name": "Crude Oil",
+			"category": "advanced-product",
 			"stackSize": 0,
 			"type": "fluid"
 		},
 		{
 			"id": "crystal-oscillator",
-			"category": "bogus",
-			"name": "Crystal Oscillator",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "cup",
-			"category": "bogus",
-			"name": "Cup",
+			"category": "equipment",
 			"stackSize": 0,
 			"type": "item"
 		},
 		{
 			"id": "dark-matter-crystal",
-			"category": "bogus",
-			"name": "Dark Matter Crystal",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "diamonds",
-			"category": "bogus",
-			"name": "Diamonds",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "electromagnetic-control-rod",
-			"category": "bogus",
-			"name": "Electromagnetic Control Rod",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "empty-canister",
-			"category": "bogus",
-			"name": "Empty Canister",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "empty-fluid-tank",
-			"category": "bogus",
-			"name": "Empty Fluid Tank",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "encased-industrial-beam",
-			"category": "bogus",
-			"name": "Encased Industrial Beam",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "encased-plutonium-cell",
-			"category": "bogus",
-			"name": "Encased Plutonium Cell",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "encased-uranium-cell",
-			"category": "bogus",
-			"name": "Encased Uranium Cell",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "fabric",
-			"category": "bogus",
-			"name": "Fabric",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "ficsit-coupon",
-			"category": "bogus",
-			"name": "FICSIT Coupon",
+			"category": "advanced-product",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
 			"id": "ficsite-ingot",
-			"category": "bogus",
-			"name": "Ficsite Ingot",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "ficsite-trigon",
-			"category": "bogus",
-			"name": "Ficsite Trigon",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "ficsonium",
-			"category": "bogus",
-			"name": "Ficsonium",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "ficsonium-fuel-rod",
-			"category": "bogus",
-			"name": "Ficsonium Fuel Rod",
+			"category": "advanced-product",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "flower-petals",
-			"category": "bogus",
-			"name": "Flower Petals",
+			"category": "organic",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
 			"id": "fused-modular-frame",
-			"category": "bogus",
-			"name": "Fused Modular Frame",
+			"category": "advanced-product",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "gas-mask",
-			"category": "bogus",
-			"name": "Gas Mask",
+			"category": "equipment",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
 			"id": "hard-drive",
-			"category": "bogus",
-			"name": "Hard Drive",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "hazmat-suit",
-			"category": "bogus",
-			"name": "Hazmat Suit",
+			"category": "equipment",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
 			"id": "heat-sink",
-			"category": "bogus",
-			"name": "Heat Sink",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "heavy-modular-frame",
-			"category": "bogus",
-			"name": "Heavy Modular Frame",
+			"category": "advanced-product",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "hoverpack",
-			"category": "bogus",
-			"name": "Hoverpack",
+			"category": "equipment",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
 			"id": "hub-parts",
-			"category": "bogus",
-			"name": "HUB Parts",
+			"category": "advanced-product",
 			"stackSize": 0,
 			"type": "item"
 		},
 		{
 			"id": "iron-ingot",
-			"category": "bogus",
-			"name": "Iron Ingot",
+			"category": "basic-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "iron-ore",
-			"category": "bogus",
-			"name": "Iron Ore",
+			"category": "raw-resource",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "iron-plate",
-			"category": "bogus",
-			"name": "Iron Plate",
+			"category": "basic-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "iron-rod",
-			"category": "bogus",
-			"name": "Iron Rod",
+			"category": "basic-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "jetpack",
-			"category": "bogus",
-			"name": "Jetpack",
+			"category": "equipment",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
 			"id": "leaves",
-			"category": "bogus",
-			"name": "Leaves",
+			"category": "organic",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
 			"id": "limestone",
-			"category": "bogus",
-			"name": "Limestone",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "magnetic-field-generator",
-			"category": "bogus",
-			"name": "Magnetic Field Generator",
+			"category": "space-elevator",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "medicinal-inhaler",
-			"category": "bogus",
-			"name": "Medicinal Inhaler",
+			"category": "equipment",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "mercer-sphere",
-			"category": "bogus",
-			"name": "Mercer Sphere",
+			"category": "organic",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "miner",
-			"category": "bogus",
-			"name": "Miner",
+			"category": "advanced-product",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
 			"id": "modular-engine",
-			"category": "bogus",
-			"name": "Modular Engine",
+			"category": "advanced-product",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "modular-frame",
-			"category": "bogus",
-			"name": "Modular Frame",
+			"category": "advanced-product",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "motor",
-			"category": "bogus",
-			"name": "Motor",
+			"category": "advanced-product",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "mycelia",
-			"category": "bogus",
-			"name": "Mycelia",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "nobelisk-detonator",
-			"category": "bogus",
-			"name": "Nobelisk Detonator",
+			"category": "equipment",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
 			"id": "nuclear-pasta",
-			"category": "bogus",
-			"name": "Nuclear Pasta",
+			"category": "advanced-product",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "object-scanner",
-			"category": "bogus",
-			"name": "Object Scanner",
+			"category": "equipment",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
 			"id": "packaged-alumina-solution",
-			"category": "bogus",
-			"name": "Packaged Alumina Solution",
+			"category": "packaged-ressource",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "packaged-fuel",
-			"category": "bogus",
-			"name": "Packaged Fuel",
+			"category": "packaged-ressource",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "packaged-heavy-oil-residue",
-			"category": "bogus",
-			"name": "Packaged Heavy Oil Residue",
+			"category": "packaged-ressource",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "packaged-ionized-fuel",
-			"category": "bogus",
-			"name": "Packaged Ionized Fuel",
+			"category": "packaged-ressource",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "packaged-liquid-biofuel",
-			"category": "bogus",
-			"name": "Packaged Liquid Biofuel",
+			"category": "packaged-ressource",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "packaged-nitric-acid",
-			"category": "bogus",
-			"name": "Packaged Nitric Acid",
+			"category": "packaged-ressource",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "packaged-nitrogen-gas",
-			"category": "bogus",
-			"name": "Packaged Nitrogen Gas",
+			"category": "packaged-ressource",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "packaged-oil",
-			"category": "bogus",
-			"name": "Packaged Oil",
+			"category": "packaged-ressource",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "packaged-rocket-fuel",
-			"category": "bogus",
-			"name": "Packaged Rocket Fuel",
+			"category": "packaged-ressource",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "packaged-sulfuric-acid",
-			"category": "bogus",
-			"name": "Packaged Sulfuric Acid",
+			"category": "packaged-ressource",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "packaged-turbofuel",
-			"category": "bogus",
-			"name": "Packaged Turbofuel",
+			"category": "packaged-ressource",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "packaged-water",
-			"category": "bogus",
-			"name": "Packaged Water",
+			"category": "packaged-ressource",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "paleberry",
-			"category": "bogus",
-			"name": "Paleberry",
+			"category": "organic",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "parachute",
-			"category": "bogus",
-			"name": "Parachute",
+			"category": "advanced-product",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
 			"id": "petroleum-coke",
-			"category": "bogus",
-			"name": "Petroleum Coke",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "plastic",
-			"category": "bogus",
-			"name": "Plastic",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "plutonium-fuel-rod",
-			"category": "bogus",
-			"name": "Plutonium Fuel Rod",
+			"category": "advanced-product",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "plutonium-pellet",
-			"category": "bogus",
-			"name": "Plutonium Pellet",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "plutonium-waste",
-			"category": "bogus",
-			"name": "Plutonium Waste",
+			"category": "advanced-product",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
 			"id": "polymer-resin",
-			"category": "bogus",
-			"name": "Polymer Resin",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "power-shard",
-			"category": "bogus",
-			"name": "Power Shard",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "power-slug",
-			"category": "bogus",
-			"name": "Power Slug",
+			"category": "organic",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "pressure-conversion-cube",
-			"category": "bogus",
-			"name": "Pressure Conversion Cube",
+			"category": "advanced-product",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "quartz-crystal",
-			"category": "bogus",
-			"name": "Quartz Crystal",
+			"category": "raw-resource",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "quickwire",
-			"category": "bogus",
-			"name": "Quickwire",
+			"category": "advanced-product",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
 			"id": "radio-control-unit",
-			"category": "bogus",
-			"name": "Radio Control Unit",
+			"category": "advanced-product",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "raw-quartz",
-			"category": "bogus",
-			"name": "Raw Quartz",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "reanimated-sam",
-			"category": "bogus",
-			"name": "Reanimated SAM",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "rebar-gun",
-			"category": "bogus",
-			"name": "Rebar Gun",
+			"category": "equipment",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
 			"id": "reinforced-iron-plate",
-			"category": "bogus",
-			"name": "Reinforced Iron Plate",
+			"category": "basic-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "rifle",
-			"category": "bogus",
-			"name": "Rifle",
+			"category": "equipment",
 			"stackSize": 1,
 			"type": "item"
 		},
 		{
 			"id": "rotor",
-			"category": "bogus",
-			"name": "Rotor",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "rubber",
-			"category": "bogus",
-			"name": "Rubber",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "sam",
-			"category": "bogus",
-			"name": "SAM",
+			"category": "raw-resource",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "sam-fluctuator",
-			"category": "bogus",
-			"name": "SAM Fluctuator",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "screws",
-			"category": "bogus",
-			"name": "Screws",
+			"category": "advanced-product",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
 			"id": "silica",
-			"category": "bogus",
-			"name": "Silica",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "singularity-cell",
-			"category": "bogus",
-			"name": "Singularity Cell",
+			"category": "advanced-product",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "smart-plating",
-			"category": "bogus",
-			"name": "Smart Plating",
+			"category": "space-elevator",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "smokeless-powder",
-			"category": "bogus",
-			"name": "Smokeless Powder",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "solid-biofuel",
-			"category": "bogus",
-			"name": "Solid Biofuel",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "somersloop",
-			"category": "bogus",
-			"name": "Somersloop",
+			"category": "organic",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "stator",
-			"category": "bogus",
-			"name": "Stator",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "steel-beam",
-			"category": "bogus",
-			"name": "Steel Beam",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "steel-ingot",
-			"category": "bogus",
-			"name": "Steel Ingot",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "steel-pipe",
-			"category": "bogus",
-			"name": "Steel Pipe",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "sulfur",
-			"category": "bogus",
-			"name": "Sulfur",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "supercomputer",
-			"category": "bogus",
-			"name": "Supercomputer",
+			"category": "advanced-product",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "superposition-oscillator",
-			"category": "bogus",
-			"name": "Superposition Oscillator",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "thermal-propulsion-rocket",
-			"category": "bogus",
-			"name": "Thermal Propulsion Rocket",
+			"category": "space-elevator",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "time-crystal",
-			"category": "bogus",
-			"name": "Time Crystal",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "turbo-motor",
-			"category": "bogus",
-			"name": "Turbo Motor",
+			"category": "advanced-product",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "uranium",
-			"category": "bogus",
-			"name": "Uranium",
+			"category": "advanced-product",
 			"stackSize": 100,
 			"type": "item"
 		},
 		{
 			"id": "uranium-fuel-rod",
-			"category": "bogus",
-			"name": "Uranium Fuel Rod",
+			"category": "advanced-product",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "uranium-waste",
-			"category": "bogus",
-			"name": "Uranium Waste",
+			"category": "advanced-product",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
 			"id": "versatile-framework",
-			"category": "bogus",
-			"name": "Versatile Framework",
+			"category": "space-elevator",
 			"stackSize": 50,
 			"type": "item"
 		},
 		{
 			"id": "vines",
-			"category": "bogus",
-			"name": "Vines",
+			"category": "advanced-product",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "wire",
-			"category": "bogus",
-			"name": "Wire",
+			"category": "advanced-product",
 			"stackSize": 500,
 			"type": "item"
 		},
 		{
 			"id": "wood",
-			"category": "bogus",
-			"name": "Wood",
+			"category": "organic",
 			"stackSize": 200,
 			"type": "item"
 		},
 		{
 			"id": "zipline",
-			"category": "bogus",
-			"name": "Zipline",
+			"category": "equipment",
 			"stackSize": 1,
 			"type": "item"
 		}
@@ -1017,7 +876,7 @@
 					"type": "fluid"
 				}
 			],
-			"priority": true,
+			"priority": 10,
 			"available": true
 		},
 		{
@@ -9971,6 +9830,632 @@
 				}
 			],
 			"available": true
+		}
+	],
+	"research": [
+		{
+			"id": "hub-upgrade-1",
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["equipmnet-workshop", "portable-miner"]
+				}
+			]
+		},
+		{
+			"id": "hub-upgrade-2",
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["smelter", "copper-ingot", "wire", "cable", "copper-ore"]
+				}
+			],
+			"prerequisites": ["hub-upgrade-1"]
+		},
+		{
+			"id": "hub-upgrade-3",
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["constructor", "concrete", "screw", "reinforced-iron-plate", "limestone"]
+				}
+			],
+			"prerequisites": ["hub-upgrade-2"]
+		},
+		{
+			"id": "hub-upgrade-4",
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["conveyor-belt", "conveyor-pole"]
+				}
+			],
+			"prerequisites": ["hub-upgrade-3"]
+		},
+		{
+			"id": "hub-upgrade-5",
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["miner-mk1", "storage-container"]
+				}
+			],
+			"prerequisites": ["hub-upgrade-4"]
+		},
+		{
+			"id": "hub-upgrade-6",
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["space-elevator", "biomass-burner", "biomass"]
+				}
+			],
+			"prerequisites": ["hub-upgrade-5"]
+		},
+		{
+			"id": "base-building-tier-1",
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["lookout-tower", "foundation", "ramp", "basic-wall"]
+				}
+			],
+			"prerequisites": ["hub-upgrade-6"]
+		},
+		{
+			"id": "phase-1-space-elevator",
+			"prerequisites": ["hub-upgrade-6"]
+		},
+		{
+			"id": "phase-2-space-elevator",
+			"prerequisites": ["phase-1-space-elevator"]
+		},
+		{
+			"id": "phase-3-space-elevator",
+			"prerequisites": ["phase-2-space-elevator"]
+		},
+		{
+			"id": "phase-4-space-elevator",
+			"prerequisites": ["phase-3-space-elevator"]
+		},
+		{
+			"id": "base-building-tier-1",
+			"prerequisites": ["hub-upgrade-6"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": [
+						"lookout-tower",
+						"foundation-8m-x-1m",
+						"foundation-8m-x-2m",
+						"foundation-8m-x-4m",
+						"ramp-8m-x-1m",
+						"ramp-8m-x-2m",
+						"ramp-8m-x-4m",
+						"wall-8m-x-4m"
+					]
+				}
+			]
+		},
+		{
+			"id": "logistics-tier-1",
+			"prerequisites": ["hub-upgrade-6"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["conveyor-splitter", "conveyor-merger", "conveyor-lift"]
+				}
+			]
+		},
+		{
+			"id": "field-research-tier-1",
+			"prerequisites": ["hub-upgrade-6"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["mam", "personal-storage-box", "object-scanner", "beacon"]
+				}
+			]
+		},
+		{
+			"id": "part-assembly-tier-2",
+			"prerequisites": ["hub-upgrade-6"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["assembler", "copper-sheet", "rotor", "modular-frame", "smart-plating"]
+				}
+			]
+		},
+		{
+			"id": "obstacle-clearing-tier-2",
+			"prerequisites": ["hub-upgrade-6"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["solid-biofuel", "chainsaw"]
+				}
+			]
+		},
+		{
+			"id": "jump-pads-tier-2",
+			"prerequisites": ["hub-upgrade-6"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["jump-pad", "u-jelly-landing-pad"]
+				}
+			]
+		},
+		{
+			"id": "resource-sink-bonus-program-tier-2",
+			"prerequisites": ["hub-upgrade-6"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["awesome-sink", "awesome-shop", "color-cartridge"]
+				}
+			]
+		},
+		{
+			"id": "logistics-mk2-tier-2",
+			"prerequisites": ["hub-upgrade-6"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["conveyor-belt-mk2", "stackable-conveyor-pole", "conveyor-lift-mk2"]
+				}
+			]
+		},
+		{
+			"id": "coal-power-tier-3",
+			"prerequisites": ["space-elevator-phase-1"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": [
+						"coal-generator",
+						"water-extractor",
+						"pipeline",
+						"pipeline-support",
+						"pipeline-junction-cross",
+						"pipeline-pump",
+						"fluid-buffer",
+						"coal"
+					]
+				}
+			]
+		},
+		{
+			"id": "vehicular-transport-tier-3",
+			"prerequisites": ["space-elevator-phase-1"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["truck-station", "tractor"]
+				}
+			]
+		},
+		{
+			"id": "basic-steel-production-tier-3",
+			"prerequisites": ["space-elevator-phase-1"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["foundry", "steel-ingot", "steel-beam", "steel-pipe", "versatile-framework"]
+				}
+			]
+		},
+		{
+			"id": "enhanced-asset-security-tier-3",
+			"prerequisites": ["space-elevator-phase-1"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["xeno-basher"]
+				}
+			]
+		},
+		{
+			"id": "ficsit-blueprints-tier-4",
+			"prerequisites": ["space-elevator-phase-1"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["blueprint-designer-mk1"]
+				}
+			]
+		},
+		{
+			"id": "logistics-mk3-tier-4",
+			"prerequisites": ["space-elevator-phase-1"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": [
+						"industrial-storage-container",
+						"conveyor-belt-mk3",
+						"conveyor-lift-mk3",
+						"stackable-pipeline-support"
+					]
+				}
+			]
+		},
+		{
+			"id": "advanced-steel-production-tier-4",
+			"prerequisites": ["space-elevator-phase-1"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": [
+						"miner-mk2",
+						"encased-industrial-beam",
+						"stator",
+						"motor",
+						"automated-wiring",
+						"heavy-modular-frame"
+					]
+				}
+			]
+		},
+		{
+			"id": "expanded-power-infrastructure-tier-4",
+			"prerequisites": ["space-elevator-phase-1"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["power-storage", "power-tower", "power-tower-platform"]
+				}
+			]
+		},
+		{
+			"id": "hypertubes-tier-4",
+			"prerequisites": ["space-elevator-phase-1"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": [
+						"hypertube-entrance",
+						"hypertube",
+						"hypertube-support",
+						"stackable-hypertube-support"
+					]
+				}
+			]
+		},
+		{
+			"id": "jetpack-tier-5",
+			"prerequisites": ["space-elevator-phase-2"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["jetpack"]
+				}
+			]
+		},
+		{
+			"id": "oil-processing-tier-5",
+			"prerequisites": ["space-elevator-phase-2"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": [
+						"oil-extractor",
+						"refinery",
+						"valve",
+						"plastic",
+						"rubber",
+						"fuel",
+						"petroleum-coke",
+						"circuit-board",
+						"heavy-oil-residue",
+						"crude-oil"
+					]
+				}
+			]
+		},
+		{
+			"id": "logistics-mk4-tier-5",
+			"prerequisites": ["space-elevator-phase-2"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["conveyor-belt-mk4", "conveyor-lift-mk4", "truck"]
+				}
+			]
+		},
+		{
+			"id": "fluid-packaging-tier-5",
+			"prerequisites": ["space-elevator-phase-2"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": [
+						"packager",
+						"empty-canister",
+						"packaged-water",
+						"packaged-oil",
+						"packaged-fuel",
+						"packaged-heavy-oil-residue",
+						"packaged-liquid-biofuel",
+						"liquid-biofuel"
+					]
+				}
+			]
+		},
+		{
+			"id": "petroleum-power-tier-5",
+			"prerequisites": ["space-elevator-phase-2"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["fuel-powered-generator", "industrial-fluid-buffer", "caterium-ore"]
+				}
+			]
+		},
+		{
+			"id": "industrial-manufacturing-tier-6",
+			"prerequisites": ["space-elevator-phase-2"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": [
+						"manufacturer",
+						"computer",
+						"heavy-modular-frame",
+						"modular-engine",
+						"adaptive-control-unit"
+					]
+				}
+			]
+		},
+		{
+			"id": "monorail-train-technology-tier-6",
+			"prerequisites": ["space-elevator-phase-2"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": [
+						"railway",
+						"train-station",
+						"freight-platform",
+						"fluid-freight-platform",
+						"empty-platform",
+						"block-signal",
+						"path-signal",
+						"electric-locomotive",
+						"freight-car"
+					]
+				}
+			]
+		},
+		{
+			"id": "pipeline-engineering-mk2-tier-6",
+			"prerequisites": ["space-elevator-phase-2"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["pipeline-mk2", "pipeline-pump-mk2"]
+				}
+			]
+		},
+		{
+			"id": "bauxite-refinement-tier-7",
+			"prerequisites": ["space-elevator-phase-3"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": [
+						"blender",
+						"alumina-solution",
+						"packaged-alumina-solution",
+						"aluminum-scrap",
+						"aluminum-ingot",
+						"alclad-aluminum-sheet",
+						"aluminum-casing",
+						"radio-control-unit",
+						"bauxite",
+						"raw-quartz"
+					]
+				}
+			]
+		},
+		{
+			"id": "logistics-mk5-tier-7",
+			"prerequisites": ["space-elevator-phase-3"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["conveyor-belt-mk5", "conveyor-lift-mk5"]
+				}
+			]
+		},
+		{
+			"id": "hazmat-suit-tier-7",
+			"prerequisites": ["space-elevator-phase-3"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["iodine-infused-filter", "hazmat-suit"]
+				}
+			]
+		},
+		{
+			"id": "hover-pack-tier-7",
+			"prerequisites": ["space-elevator-phase-3"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["hover-pack"]
+				}
+			]
+		},
+		{
+			"id": "aeronautical-engineering-tier-8",
+			"prerequisites": ["space-elevator-phase-3"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": [
+						"drone-port",
+						"sulfuric-acid",
+						"packaged-sulfuric-acid",
+						"battery",
+						"supercomputer",
+						"assembly-director-system",
+						"drone",
+						"sulfur"
+					]
+				}
+			]
+		},
+		{
+			"id": "nuclear-power-tier-8",
+			"prerequisites": ["space-elevator-phase-3"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": [
+						"nuclear-power-plant",
+						"encased-uranium-cell",
+						"electromagnetic-control-rod",
+						"uranium-fuel-rod",
+						"magnetic-field-generator",
+						"uranium"
+					]
+				}
+			]
+		},
+		{
+			"id": "advanced-aluminum-production-tier-8",
+			"prerequisites": ["space-elevator-phase-3"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": [
+						"resource-well-pressurizer",
+						"resource-well-extractor",
+						"empty-fluid-tank",
+						"packaged-nitrogen-gas",
+						"heat-sink",
+						"cooling-system",
+						"fused-modular-frame",
+						"water-well",
+						"crude-oil-well",
+						"nitrogen-gas-well"
+					]
+				}
+			]
+		},
+		{
+			"id": "leading-edge-production-tier-8",
+			"prerequisites": ["space-elevator-phase-3"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["miner-mk3", "turbo-motor", "thermal-propulsion-rocket"]
+				}
+			]
+		},
+		{
+			"id": "particle-enrichment-tier-8",
+			"prerequisites": ["space-elevator-phase-3"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": [
+						"particle-accelerator",
+						"nitric-acid",
+						"packaged-nitric-acid",
+						"non-fissile-uranium",
+						"plutonium-pellet",
+						"encased-plutonium-cell",
+						"plutonium-fuel-rod",
+						"copper-powder",
+						"pressure-conversion-cube",
+						"nuclear-pasta"
+					]
+				}
+			]
+		},
+		{
+			"id": "matter-conversion-tier-9",
+			"prerequisites": ["space-elevator-phase-4"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": [
+						"converter",
+						"ficsite-ingot",
+						"ficsite-trigon",
+						"diamonds",
+						"time-crystal",
+						"biochemical-sculptor",
+						"reanimated-sam",
+						"sam-fluctuator",
+						"sam"
+					]
+				}
+			]
+		},
+		{
+			"id": "quantum-encoding-tier-9",
+			"prerequisites": ["space-elevator-phase-4"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": [
+						"quantum-encoder",
+						"excited-photonic-matter",
+						"dark-matter-residue",
+						"dark-matter-crystal",
+						"superposition-oscillator",
+						"neural-quantum-processor",
+						"qi-expansion-server"
+					]
+				}
+			]
+		},
+		{
+			"id": "ficsit-blueprints-mk3-tier-9",
+			"prerequisites": ["space-elevator-phase-4"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": [
+						"blueprint-designer-mk3",
+						"nitric-acid",
+						"packaged-nitric-acid",
+						"non-fissile-uranium",
+						"plutonium-pellet",
+						"encased-plutonium-cell",
+						"plutonium-fuel-rod",
+						"copper-powder",
+						"pressure-conversion-cube",
+						"nuclear-pasta"
+					]
+				}
+			]
+		},
+		{
+			"id": "spatial-energy-regulation-tier-9",
+			"prerequisites": ["space-elevator-phase-4"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["main-portal", "satellite-portal", "singularity-cell", "ballistic-warp-drive"]
+				}
+			]
+		},
+		{
+			"id": "peak-efficiency-tier-9",
+			"prerequisites": ["space-elevator-phase-4"],
+			"unlocks": [
+				{
+					"type": "recipe",
+					"ids": ["conveyor-belt-mk6", "conveyor-lift-mk6", "ficsonium", "ficsonium-fuel-rod"]
+				}
+			]
 		}
 	]
 }
