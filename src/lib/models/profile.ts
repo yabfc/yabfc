@@ -2,7 +2,7 @@ import Machine from '@/lib/models/machine';
 import Item from '@/lib/models/item';
 import Recipe from '@/lib/models/recipe';
 import EffectModule from '@/lib/models/effect';
-import type Research from '@/lib/models/research';
+import Research from '@/lib/models/research';
 
 export interface ProfileInterface {
 	id: string;
@@ -32,7 +32,7 @@ export default class Profile {
 		this.recipes = profile.recipes.map(x => new Recipe(x));
 		this.machines = profile.machines.map(x => new Machine(x));
 		this.machineEffects = profile.machineEffects.map(x => new EffectModule(x));
-		this.research = profile.research;
+		this.research = profile.research.map(x => new Research(x));
 	}
 
 	getItemById(id: string): Item | undefined {

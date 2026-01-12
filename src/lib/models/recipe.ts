@@ -14,6 +14,7 @@ export interface RecipeInterface {
 	category: string;
 	priority: number;
 	limitations?: string[];
+	craftable?: boolean;
 }
 
 export default class Recipe {
@@ -26,6 +27,7 @@ export default class Recipe {
 	category: string;
 	priority: number;
 	limitations?: string[];
+	craftable?: boolean;
 
 	constructor(recipe: RecipeInterface) {
 		this.id = recipe.id;
@@ -37,6 +39,7 @@ export default class Recipe {
 		this.category = recipe.category;
 		this.priority = recipe.priority;
 		this.limitations = recipe.limitations;
+		this.craftable = recipe.craftable;
 	}
 
 	getDisplayName(): string {
