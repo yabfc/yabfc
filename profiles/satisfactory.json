@@ -22539,8 +22539,244 @@
 			"craftable": false
 		}
 	],
-	"machines": [],
-	"machineEffects": [],
+	"machines": [
+		{
+			"id": "constructor",
+			"recipeCategories": ["constructor"],
+			"requiredPower": 4000000,
+			"features": [
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 1,
+					"effectPerSlot": ["summerslooping"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "assembler",
+			"recipeCategories": ["assembler"],
+			"requiredPower": 15000000,
+			"features": [
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 2,
+					"effectPerSlot": ["summerslooping"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "blender",
+			"recipeCategories": ["blender"],
+			"requiredPower": 75000000,
+			"features": [
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 4,
+					"effectPerSlot": ["summerslooping"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "foundry",
+			"recipeCategories": ["foundry"],
+			"requiredPower": 16000000,
+			"features": [
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 2,
+					"effectPerSlot": ["summerslooping"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "manufacturer",
+			"recipeCategories": ["manufacturer"],
+			"requiredPower": 55000000,
+			"features": [
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 4,
+					"effectPerSlot": ["summerslooping"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "particle-accelerator",
+			"recipeCategories": ["particle-accelerator"],
+			"requiredPower": 0,
+			"features": [
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 4,
+					"effectPerSlot": ["summerslooping"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "refinery",
+			"recipeCategories": ["refinery"],
+			"requiredPower": 30000000,
+			"features": [
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 2,
+					"effectPerSlot": ["summerslooping"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "quantum-encoder",
+			"recipeCategories": ["quantum-encoder"],
+			"requiredPower": 0,
+			"features": [
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 2,
+					"effectPerSlot": ["summerslooping"]
+				}
+			],
+			"available": true
+		}
+	],
+	"machineEffects": [
+		{
+			"id": "overclocking",
+			"perSlot": true,
+			"modifiers": [
+				{
+					"id": "speed",
+					"value": 1.5,
+					"modifiable": true
+				},
+				{
+					"id": "power",
+					"value": 1.32,
+					"valueScaling": "exponential"
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "underclocking",
+			"perSlot": true,
+			"modifiers": [
+				{
+					"id": "speed",
+					"value": 0.5,
+					"modifiable": true
+				},
+				{
+					"id": "power",
+					"value": 1.32,
+					"valueScaling": "exponential"
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "summerslooping",
+			"perSlot": false,
+			"modifiers": [
+				{
+					"id": "speed",
+					"value": 2,
+					"modifiable": true
+				},
+				{
+					"id": "power",
+					"value": 4
+				}
+			],
+			"available": true
+		}
+	],
 	"research": [
 		{
 			"id": "schematic-2-5",
