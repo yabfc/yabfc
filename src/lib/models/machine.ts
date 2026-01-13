@@ -35,7 +35,7 @@ export interface MachineInterface {
 	available: boolean;
 	recipeCategories: string[];
 	requiredPower: number;
-	features: MachineFeature[];
+	features: MachineFeatureInterface[];
 	limitations?: string[];
 }
 

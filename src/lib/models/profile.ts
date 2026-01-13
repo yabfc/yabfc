@@ -1,17 +1,17 @@
-import Machine from '@/lib/models/machine';
-import Item from '@/lib/models/item';
-import Recipe from '@/lib/models/recipe';
-import EffectModule from '@/lib/models/effect';
-import Research from '@/lib/models/research';
+import Machine, { type MachineInterface } from '@/lib/models/machine';
+import Item, { type ItemInterface } from '@/lib/models/item';
+import Recipe, { type RecipeInterface } from '@/lib/models/recipe';
+import EffectModule, { type EffectModuleInterface } from '@/lib/models/effect';
+import Research, { type ResearchInterface } from '@/lib/models/research';
 
 export interface ProfileInterface {
 	id: string;
 	name: string;
-	items: Item[];
-	recipes: Recipe[];
-	machines: Machine[];
-	machineEffects: EffectModule[];
-	research: Research[];
+	items: ItemInterface[];
+	recipes: RecipeInterface[];
+	machines: MachineInterface[];
+	machineEffects: EffectModuleInterface[];
+	research: ResearchInterface[];
 }
 
 export default class Profile {

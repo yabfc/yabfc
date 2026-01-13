@@ -40,7 +40,7 @@ export interface EffectModuleInterface {
 	id: string;
 	name?: string;
 	available: boolean;
-	modifiers: Modifier[];
+	modifiers: ModifierInterface[];
 	perSlot: boolean;
 }
 

@@ -5,7 +5,7 @@ interface UnlockRecipe {
 
 type Unlock = UnlockRecipe;
 
-interface ResearchInterface {
+export interface ResearchInterface {
 	id: string;
 	name?: string;
 	unlocks: Unlock[];
