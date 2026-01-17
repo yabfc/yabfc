@@ -1,12 +1,23 @@
 <script lang="ts">
 	import Profile from '@/lib/models/profile';
 	import { HammerIcon } from '@lucide/svelte';
+	import SearchInput from '@/lib/components/shared/Search.svelte';
 
 	let { profile }: { profile: Profile } = $props();
+	let searchQuery = $state('');
+
+	const filteredMachines = $derived(
+		profile.machines.filter(
+			x =>
+				x.getDisplayName().toLowerCase().includes(searchQuery.toLowerCase()) ||
+				x.recipeCategories.some(x => x.includes(searchQuery.toLowerCase())),
+		),
+	);
 </script>
 
+<SearchInput bind:value={searchQuery} />
 <ul class="list">
-	{#each profile.machines as machine (machine.id)}
+	{#each filteredMachines as machine (machine.id)}
 		<li class="list-row">
 			<div class="">
 				<HammerIcon size="24" class="m-2" />
