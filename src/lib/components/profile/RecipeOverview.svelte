@@ -1,12 +1,24 @@
 <script lang="ts">
 	import Profile from '@/lib/models/profile';
 	import { ArrowBigRightDashIcon, DrillIcon } from '@lucide/svelte';
+	import SearchInput from '@/lib/components/shared/Search.svelte';
 
 	let { profile }: { profile: Profile } = $props();
+	let searchQuery = $state('');
+
+	const filteredRecipes = $derived(
+		profile.recipes.filter(
+			x =>
+				x.craftable !== false &&
+				(x.getDisplayName().toLowerCase().includes(searchQuery.toLowerCase()) ||
+					x.category.includes(searchQuery.toLowerCase())),
+		),
+	);
 </script>
 
+<SearchInput bind:value={searchQuery} />
 <ul class="list">
-	{#each profile.recipes.filter(x => x.craftable !== false) as recipe (recipe.id)}
+	{#each filteredRecipes as recipe (recipe.id)}
 		<li class="list-row">
 			<div class="">
 				<DrillIcon size="24" class="m-2" />
