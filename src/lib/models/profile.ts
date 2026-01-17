@@ -23,8 +23,9 @@ export default class Profile {
 	machines: Machine[];
 	machineEffects: EffectModule[];
 	research: Research[];
+	upload?: boolean;
 
-	constructor(profile: ProfileInterface) {
+	constructor(profile: ProfileInterface, upload?: boolean) {
 		this.id = profile.id;
 		this.name = profile.name;
 
@@ -33,6 +34,7 @@ export default class Profile {
 		this.machines = profile.machines.map(x => new Machine(x));
 		this.machineEffects = profile.machineEffects.map(x => new EffectModule(x));
 		this.research = profile.research.map(x => new Research(x));
+		this.upload = upload;
 	}
 
 	getItemById(id: string): Item | undefined {
