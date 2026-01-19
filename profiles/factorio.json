@@ -829,6 +829,54 @@
 			"type": "item",
 			"category": "barrel",
 			"stackSize": 10
+		},
+		{
+			"id": "water",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "steam",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "sulfuric-acid",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "crude-oil",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "heavy-oil",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "light-oil",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "petroleum-gas",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "lubricant",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
 		}
 	],
 	"recipes": [
@@ -6688,6 +6736,299 @@
 			"category": "crafting-with-fluid",
 			"priority": 30,
 			"available": true
+		},
+		{
+			"id": "water",
+			"in": [],
+			"out": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 1200
+				}
+			],
+			"duration": 1,
+			"category": "offshore-pump",
+			"priority": 10,
+			"available": true,
+			"limitations": ["planet:nauvis"]
+		},
+		{
+			"id": "iron-ore",
+			"in": [],
+			"out": [
+				{
+					"id": "iron-ore",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "basic-solid",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "copper-ore",
+			"in": [],
+			"out": [
+				{
+					"id": "copper-ore",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "basic-solid",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "coal",
+			"in": [],
+			"out": [
+				{
+					"id": "coal",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "basic-solid",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "stone",
+			"in": [],
+			"out": [
+				{
+					"id": "stone",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "basic-solid",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "uranium-ore",
+			"in": [
+				{
+					"id": "sulfuric-acid",
+					"type": "fluid",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"id": "uranium-ore",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 2,
+			"category": "basic-solid",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "crude-oil",
+			"in": [],
+			"out": [
+				{
+					"id": "crude-oil",
+					"type": "fluid",
+					"amount": 10
+				}
+			],
+			"duration": 1,
+			"category": "basic-fluid",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "tree",
+			"in": [],
+			"out": [
+				{
+					"id": "wood",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 0.55,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "fish",
+			"in": [],
+			"out": [
+				{
+					"id": "raw-fish",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 0.4,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "steam-wood",
+			"in": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 60
+				},
+				{
+					"id": "wood",
+					"type": "item",
+					"amount": 9
+				}
+			],
+			"out": [
+				{
+					"id": "steam",
+					"type": "fluid",
+					"amount": 600
+				}
+			],
+			"duration": 10,
+			"category": "boiler",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "steam-coal",
+			"in": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 120
+				},
+				{
+					"id": "coal",
+					"type": "item",
+					"amount": 9
+				}
+			],
+			"out": [
+				{
+					"id": "steam",
+					"type": "fluid",
+					"amount": 1200
+				}
+			],
+			"duration": 20,
+			"category": "boiler",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "steam-solid-fuel",
+			"in": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 120
+				},
+				{
+					"id": "solid-fuel",
+					"type": "item",
+					"amount": 3
+				}
+			],
+			"out": [
+				{
+					"id": "steam",
+					"type": "fluid",
+					"amount": 1200
+				}
+			],
+			"duration": 20,
+			"category": "boiler",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "steam-rocket-fuel",
+			"in": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 3000
+				},
+				{
+					"id": "rocket-fuel",
+					"type": "item",
+					"amount": 9
+				}
+			],
+			"out": [
+				{
+					"id": "steam",
+					"type": "fluid",
+					"amount": 30000
+				}
+			],
+			"duration": 500,
+			"category": "boiler",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "steam-nuclear-fuel",
+			"in": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 36300
+				},
+				{
+					"id": "nuclear-fuel",
+					"type": "item",
+					"amount": 9
+				}
+			],
+			"out": [
+				{
+					"id": "steam",
+					"type": "fluid",
+					"amount": 363000
+				}
+			],
+			"duration": 6050,
+			"category": "boiler",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "depleted-uranium-fuel-cell",
+			"in": [
+				{
+					"id": "depleted-uranium-fuel-cell",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"id": "depleted-uranium-fuel-cell",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 200,
+			"category": "nuclear-reactor",
+			"priority": 10,
+			"available": true
 		}
 	],
 	"machines": [
@@ -6698,7 +7039,7 @@
 			"features": [
 				{
 					"id": "modules",
-					"itemSlots": 1,
+					"itemSlots": 0,
 					"effectPerSlot": ["speed", "consumption", "pollution"]
 				},
 				{
@@ -6734,7 +7075,7 @@
 			"features": [
 				{
 					"id": "modules",
-					"itemSlots": 1,
+					"itemSlots": 0,
 					"effectPerSlot": ["speed", "consumption", "pollution"]
 				},
 				{
@@ -6752,7 +7093,7 @@
 			"features": [
 				{
 					"id": "modules",
-					"itemSlots": 1,
+					"itemSlots": 0,
 					"effectPerSlot": ["speed", "consumption", "pollution"]
 				},
 				{
@@ -6859,6 +7200,45 @@
 					"id": "crafting-speed",
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-centrifuge"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "electric-mining-drill",
+			"recipeCategories": ["basic-solid"],
+			"requiredPower": 90000,
+			"features": [
+				{
+					"id": "modules",
+					"itemSlots": 3,
+					"effectPerSlot": ["pollution", "speed", "productivity", "consumption", "quality"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "burner-mining-drill",
+			"recipeCategories": ["basic-solid"],
+			"requiredPower": 150000,
+			"features": [
+				{
+					"id": "modules",
+					"itemSlots": 0,
+					"effectPerSlot": {}
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "pumpjack",
+			"recipeCategories": ["basic-fluid"],
+			"requiredPower": 90000,
+			"features": [
+				{
+					"id": "modules",
+					"itemSlots": 2,
+					"effectPerSlot": ["pollution", "speed", "productivity", "consumption", "quality"]
 				}
 			],
 			"available": true

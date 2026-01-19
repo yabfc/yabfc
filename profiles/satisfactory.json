@@ -383,7 +383,7 @@
 		{
 			"id": "quartz-crystal",
 			"type": "item",
-			"category": "raw-resource",
+			"category": "advanced-product",
 			"stackSize": 200
 		},
 		{
@@ -656,7 +656,7 @@
 			"id": "crystal",
 			"name": "Blue Power Slug",
 			"type": "item",
-			"category": "advanced-product",
+			"category": "organic",
 			"stackSize": 50
 		},
 		{
@@ -676,14 +676,14 @@
 			"id": "crystal-mk3",
 			"name": "Purple Power Slug",
 			"type": "item",
-			"category": "advanced-product",
+			"category": "organic",
 			"stackSize": 50
 		},
 		{
 			"id": "crystal-mk2",
 			"name": "Yellow Power Slug",
 			"type": "item",
-			"category": "advanced-product",
+			"category": "organic",
 			"stackSize": 50
 		},
 		{
@@ -881,13 +881,13 @@
 			"id": "ore-iron",
 			"name": "Iron Ore",
 			"type": "item",
-			"category": "raw-resource",
+			"category": "raw-ressource",
 			"stackSize": 100
 		},
 		{
 			"id": "coal",
 			"type": "item",
-			"category": "raw-resource",
+			"category": "raw-ressource",
 			"stackSize": 100
 		},
 		{
@@ -911,34 +911,34 @@
 		{
 			"id": "sam",
 			"type": "item",
-			"category": "raw-resource",
+			"category": "raw-ressource",
 			"stackSize": 100
 		},
 		{
 			"id": "ore-bauxite",
 			"name": "Bauxite",
 			"type": "item",
-			"category": "raw-resource",
+			"category": "raw-ressource",
 			"stackSize": 100
 		},
 		{
 			"id": "ore-gold",
 			"name": "Caterium Ore",
 			"type": "item",
-			"category": "raw-resource",
+			"category": "raw-ressource",
 			"stackSize": 100
 		},
 		{
 			"id": "ore-copper",
 			"name": "Copper Ore",
 			"type": "item",
-			"category": "raw-resource",
+			"category": "raw-ressource",
 			"stackSize": 100
 		},
 		{
 			"id": "raw-quartz",
 			"type": "item",
-			"category": "advanced-product",
+			"category": "raw-ressource",
 			"stackSize": 100
 		},
 		{
@@ -952,7 +952,7 @@
 			"id": "ore-uranium",
 			"name": "Uranium",
 			"type": "item",
-			"category": "raw-resource",
+			"category": "raw-ressource",
 			"stackSize": 100
 		},
 		{
@@ -1035,35 +1035,35 @@
 		{
 			"id": "mycelia",
 			"type": "item",
-			"category": "advanced-product",
+			"category": "organic",
 			"stackSize": 200
 		},
 		{
 			"id": "hog-parts",
 			"name": "Hog Remains",
 			"type": "item",
-			"category": "advanced-product",
+			"category": "organic",
 			"stackSize": 50
 		},
 		{
 			"id": "spitter-parts",
 			"name": "Spitter Remains",
 			"type": "item",
-			"category": "advanced-product",
+			"category": "organic",
 			"stackSize": 50
 		},
 		{
 			"id": "stinger-parts",
 			"name": "Stinger Remains",
 			"type": "item",
-			"category": "advanced-product",
+			"category": "organic",
 			"stackSize": 50
 		},
 		{
 			"id": "hatcher-parts",
 			"name": "Hatcher Remains",
 			"type": "item",
-			"category": "advanced-product",
+			"category": "organic",
 			"stackSize": 50
 		},
 		{
@@ -1084,6 +1084,40 @@
 			"type": "item",
 			"category": "advanced-product",
 			"stackSize": 50
+		},
+		{
+			"id": "berry",
+			"name": "Paleberry",
+			"type": "item",
+			"category": "organic",
+			"stackSize": 50
+		},
+		{
+			"id": "nut",
+			"name": "Beryl Nut",
+			"type": "item",
+			"category": "organic",
+			"stackSize": 100
+		},
+		{
+			"id": "medkit",
+			"name": "Medicinal Inhaler",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 50
+		},
+		{
+			"id": "shroom",
+			"name": "Bacon Agaric",
+			"type": "item",
+			"category": "organic",
+			"stackSize": 50
+		},
+		{
+			"id": "parachute",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 1
 		},
 		{
 			"id": "alien-power-fuel",
@@ -22537,14 +22571,455 @@
 			"priority": 10,
 			"available": true,
 			"craftable": false
+		},
+		{
+			"id": "liquid-oil-oil-pump",
+			"in": [],
+			"out": [
+				{
+					"id": "liquid-oil",
+					"type": "fluid",
+					"amount": 2
+				}
+			],
+			"duration": 1,
+			"category": "oil-pump",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "liquid-oil-fracking-extractor",
+			"in": [],
+			"out": [
+				{
+					"id": "liquid-oil",
+					"type": "fluid",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "fracking-extractor",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "nitrogen-gas-fracking-extractor",
+			"in": [],
+			"out": [
+				{
+					"id": "nitrogen-gas",
+					"type": "fluid",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "fracking-extractor",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "water-fracking-extractor",
+			"in": [],
+			"out": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "fracking-extractor",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "nuclear-waste",
+			"name": "Uranium Waste",
+			"in": [],
+			"out": [
+				{
+					"id": "nuclear-waste",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "reactor-TODO",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "plutonium-waste",
+			"in": [],
+			"out": [
+				{
+					"id": "plutonium-waste",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "reactor-TODO",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "alien-protein",
+			"in": [],
+			"out": [
+				{
+					"id": "alien-protein",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "crystal",
+			"name": "Blue Power Slug",
+			"in": [],
+			"out": [
+				{
+					"id": "crystal",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "crystal-mk3",
+			"name": "Purple Power Slug",
+			"in": [],
+			"out": [
+				{
+					"id": "crystal-mk3",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "crystal-mk2",
+			"name": "Yellow Power Slug",
+			"in": [],
+			"out": [
+				{
+					"id": "crystal-mk2",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "ore-iron",
+			"name": "Iron Ore",
+			"in": [],
+			"out": [
+				{
+					"id": "ore-iron",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "miner",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "coal",
+			"in": [],
+			"out": [
+				{
+					"id": "coal",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "miner",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "sam",
+			"in": [],
+			"out": [
+				{
+					"id": "sam",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "miner",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "ore-bauxite",
+			"name": "Bauxite",
+			"in": [],
+			"out": [
+				{
+					"id": "ore-bauxite",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "miner",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "ore-gold",
+			"name": "Caterium Ore",
+			"in": [],
+			"out": [
+				{
+					"id": "ore-gold",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "miner",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "ore-copper",
+			"name": "Copper Ore",
+			"in": [],
+			"out": [
+				{
+					"id": "ore-copper",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "miner",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "raw-quartz",
+			"in": [],
+			"out": [
+				{
+					"id": "raw-quartz",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "miner",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "ore-uranium",
+			"name": "Uranium",
+			"in": [],
+			"out": [
+				{
+					"id": "ore-uranium",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "miner",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "leaves",
+			"in": [],
+			"out": [
+				{
+					"id": "leaves",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "wood",
+			"in": [],
+			"out": [
+				{
+					"id": "wood",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "mycelia",
+			"in": [],
+			"out": [
+				{
+					"id": "mycelia",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "hog-parts",
+			"name": "Hog Remains",
+			"in": [],
+			"out": [
+				{
+					"id": "hog-parts",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "spitter-parts",
+			"name": "Spitter Remains",
+			"in": [],
+			"out": [
+				{
+					"id": "spitter-parts",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "stinger-parts",
+			"name": "Stinger Remains",
+			"in": [],
+			"out": [
+				{
+					"id": "stinger-parts",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "hatcher-parts",
+			"name": "Hatcher Remains",
+			"in": [],
+			"out": [
+				{
+					"id": "hatcher-parts",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "berry",
+			"name": "Paleberry",
+			"in": [],
+			"out": [
+				{
+					"id": "berry",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "nut",
+			"name": "Beryl Nut",
+			"in": [],
+			"out": [
+				{
+					"id": "nut",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "shroom",
+			"name": "Bacon Agaric",
+			"in": [],
+			"out": [
+				{
+					"id": "shroom",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
 		}
 	],
 	"machines": [
 		{
-			"id": "constructor",
-			"recipeCategories": ["constructor"],
-			"requiredPower": 4000000,
+			"id": "oil-pump",
+			"recipeCategories": ["oil-pump"],
+			"requiredPower": 40000000,
 			"features": [
+				{
+					"id": "summerslooping",
+					"itemSlots": 0,
+					"effectPerSlot": ["summerslooping"]
+				},
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
@@ -22554,20 +23029,25 @@
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"]
-				},
-				{
-					"id": "summerslooping",
-					"itemSlots": 1,
-					"effectPerSlot": ["summerslooping"]
 				}
 			],
 			"available": true
 		},
 		{
-			"id": "assembler",
-			"recipeCategories": ["assembler"],
+			"id": "miner-mk2",
+			"recipeCategories": ["miner"],
 			"requiredPower": 15000000,
 			"features": [
+				{
+					"id": "crafting-speed",
+					"itemSlots": 0,
+					"effectPerSlot": ["crafting-speed-miner-mk2"]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 0,
+					"effectPerSlot": ["summerslooping"]
+				},
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
@@ -22577,11 +23057,172 @@
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "miner-mk1",
+			"recipeCategories": ["miner"],
+			"requiredPower": 5000000,
+			"features": [
+				{
+					"id": "summerslooping",
+					"itemSlots": 0,
+					"effectPerSlot": ["summerslooping"]
 				},
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "miner-mk3",
+			"recipeCategories": ["miner"],
+			"requiredPower": 45000000,
+			"features": [
+				{
+					"id": "crafting-speed",
+					"itemSlots": 0,
+					"effectPerSlot": ["crafting-speed-miner-mk3"]
+				},
+				{
+					"id": "summerslooping",
+					"itemSlots": 0,
+					"effectPerSlot": ["summerslooping"]
+				},
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "oil-refinery",
+			"recipeCategories": ["oil-refinery"],
+			"requiredPower": 30000000,
+			"features": [
 				{
 					"id": "summerslooping",
 					"itemSlots": 2,
 					"effectPerSlot": ["summerslooping"]
+				},
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "foundry-mk1",
+			"recipeCategories": ["foundry-mk1"],
+			"requiredPower": 16000000,
+			"features": [
+				{
+					"id": "summerslooping",
+					"itemSlots": 2,
+					"effectPerSlot": ["summerslooping"]
+				},
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "packager",
+			"recipeCategories": ["packager"],
+			"requiredPower": 10000000,
+			"features": [
+				{
+					"id": "summerslooping",
+					"itemSlots": 0,
+					"effectPerSlot": ["summerslooping"]
+				},
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "manufacturer-mk1",
+			"recipeCategories": ["manufacturer-mk1"],
+			"requiredPower": 55000000,
+			"features": [
+				{
+					"id": "summerslooping",
+					"itemSlots": 4,
+					"effectPerSlot": ["summerslooping"]
+				},
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "assembler-mk1",
+			"recipeCategories": ["assembler-mk1"],
+			"requiredPower": 15000000,
+			"features": [
+				{
+					"id": "summerslooping",
+					"itemSlots": 2,
+					"effectPerSlot": ["summerslooping"]
+				},
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
 				}
 			],
 			"available": true
@@ -22592,28 +23233,10 @@
 			"requiredPower": 75000000,
 			"features": [
 				{
-					"id": "overclocking",
-					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
-				},
-				{
-					"id": "underclocking",
-					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
-				},
-				{
 					"id": "summerslooping",
 					"itemSlots": 4,
 					"effectPerSlot": ["summerslooping"]
-				}
-			],
-			"available": true
-		},
-		{
-			"id": "foundry",
-			"recipeCategories": ["foundry"],
-			"requiredPower": 16000000,
-			"features": [
+				},
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
@@ -22623,20 +23246,20 @@
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"]
-				},
-				{
-					"id": "summerslooping",
-					"itemSlots": 2,
-					"effectPerSlot": ["summerslooping"]
 				}
 			],
 			"available": true
 		},
 		{
-			"id": "manufacturer",
-			"recipeCategories": ["manufacturer"],
-			"requiredPower": 55000000,
+			"id": "constructor-mk1",
+			"recipeCategories": ["constructor-mk1"],
+			"requiredPower": 4000000,
 			"features": [
+				{
+					"id": "summerslooping",
+					"itemSlots": 1,
+					"effectPerSlot": ["summerslooping"]
+				},
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
@@ -22646,43 +23269,43 @@
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"]
-				},
-				{
-					"id": "summerslooping",
-					"itemSlots": 4,
-					"effectPerSlot": ["summerslooping"]
 				}
 			],
 			"available": true
 		},
 		{
-			"id": "particle-accelerator",
-			"recipeCategories": ["particle-accelerator"],
+			"id": "smelter-mk1",
+			"recipeCategories": ["smelter-mk1"],
+			"requiredPower": 4000000,
+			"features": [
+				{
+					"id": "summerslooping",
+					"itemSlots": 0,
+					"effectPerSlot": ["summerslooping"]
+				},
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "fracking-extractor",
+			"recipeCategories": ["fracking-extractor"],
 			"requiredPower": 0,
 			"features": [
 				{
-					"id": "overclocking",
-					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
-				},
-				{
-					"id": "underclocking",
-					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
-				},
-				{
 					"id": "summerslooping",
-					"itemSlots": 4,
+					"itemSlots": 0,
 					"effectPerSlot": ["summerslooping"]
-				}
-			],
-			"available": true
-		},
-		{
-			"id": "refinery",
-			"recipeCategories": ["refinery"],
-			"requiredPower": 30000000,
-			"features": [
+				},
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
@@ -22692,34 +23315,6 @@
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"]
-				},
-				{
-					"id": "summerslooping",
-					"itemSlots": 2,
-					"effectPerSlot": ["summerslooping"]
-				}
-			],
-			"available": true
-		},
-		{
-			"id": "quantum-encoder",
-			"recipeCategories": ["quantum-encoder"],
-			"requiredPower": 0,
-			"features": [
-				{
-					"id": "overclocking",
-					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
-				},
-				{
-					"id": "underclocking",
-					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
-				},
-				{
-					"id": "summerslooping",
-					"itemSlots": 2,
-					"effectPerSlot": ["summerslooping"]
 				}
 			],
 			"available": true
@@ -22728,52 +23323,87 @@
 	"machineEffects": [
 		{
 			"id": "overclocking",
-			"perSlot": true,
 			"modifiers": [
 				{
 					"id": "speed",
 					"value": 1.5,
-					"modifiable": true
+					"modifiable": true,
+					"onlyOutputScales": false
 				},
 				{
 					"id": "power",
-					"value": 1.32,
+					"value": 1.321929,
+					"modifiable": false,
+					"onlyOutputScales": false,
 					"valueScaling": "exponential"
 				}
 			],
+			"perSlot": true,
 			"available": true
 		},
 		{
 			"id": "underclocking",
-			"perSlot": true,
 			"modifiers": [
 				{
 					"id": "speed",
 					"value": 0.5,
-					"modifiable": true
+					"modifiable": true,
+					"onlyOutputScales": false
 				},
 				{
 					"id": "power",
-					"value": 1.32,
+					"value": 1.321929,
+					"modifiable": false,
+					"onlyOutputScales": false,
 					"valueScaling": "exponential"
 				}
 			],
+			"perSlot": true,
 			"available": true
 		},
 		{
 			"id": "summerslooping",
-			"perSlot": false,
 			"modifiers": [
 				{
 					"id": "speed",
 					"value": 2,
-					"modifiable": true
+					"modifiable": false,
+					"onlyOutputScales": true
 				},
 				{
 					"id": "power",
-					"value": 4
+					"value": 5,
+					"modifiable": false,
+					"onlyOutputScales": false
 				}
 			],
+			"perSlot": false,
+			"available": true
+		},
+		{
+			"id": "crafting-speed-miner-mk2",
+			"modifiers": [
+				{
+					"id": "speed",
+					"value": 2,
+					"modifiable": false,
+					"onlyOutputScales": true
+				}
+			],
+			"perSlot": true,
+			"available": true
+		},
+		{
+			"id": "crafting-speed-miner-mk3",
+			"modifiers": [
+				{
+					"id": "speed",
+					"value": 4,
+					"modifiable": false,
+					"onlyOutputScales": true
+				}
+			],
+			"perSlot": true,
 			"available": true
 		}
 	],

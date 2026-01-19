@@ -1225,6 +1225,138 @@
 			"type": "item",
 			"category": "barrel",
 			"stackSize": 10
+		},
+		{
+			"id": "water",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "steam",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "sulfuric-acid",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "crude-oil",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "heavy-oil",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "light-oil",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "petroleum-gas",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "lubricant",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "ammoniacal-solution",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "ammonia",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "fluorine",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "fluoroketone-cold",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "fluoroketone-hot",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "holmium-solution",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "electrolyte",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "lithium-brine",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "lava",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "molten-iron",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "molten-copper",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "thruster-fuel",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "thruster-oxidizer",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
+		},
+		{
+			"id": "fusion-plasma",
+			"type": "fluid",
+			"category": "fluid",
+			"stackSize": 0
 		}
 	],
 	"recipes": [
@@ -10971,6 +11103,724 @@
 			"category": "crafting-with-fluid",
 			"priority": 30,
 			"available": true
+		},
+		{
+			"id": "water",
+			"in": [],
+			"out": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 1200
+				}
+			],
+			"duration": 1,
+			"category": "offshore-pump",
+			"priority": 10,
+			"available": true,
+			"limitations": ["planet:gleba", "planet:nauvis"]
+		},
+		{
+			"id": "lava",
+			"in": [],
+			"out": [
+				{
+					"id": "lava",
+					"type": "fluid",
+					"amount": 1200
+				}
+			],
+			"duration": 1,
+			"category": "offshore-pump",
+			"priority": 10,
+			"available": true,
+			"limitations": ["planet:vulcanus"]
+		},
+		{
+			"id": "heavy-oil",
+			"in": [],
+			"out": [
+				{
+					"id": "heavy-oil",
+					"type": "fluid",
+					"amount": 1200
+				}
+			],
+			"duration": 1,
+			"category": "offshore-pump",
+			"priority": 10,
+			"available": true,
+			"limitations": ["planet:fulgora"]
+		},
+		{
+			"id": "ammoniacal-solution",
+			"in": [],
+			"out": [
+				{
+					"id": "ammoniacal-solution",
+					"type": "fluid",
+					"amount": 1200
+				}
+			],
+			"duration": 1,
+			"category": "offshore-pump",
+			"priority": 10,
+			"available": true,
+			"limitations": ["planet:aquilo"]
+		},
+		{
+			"id": "iron-ore",
+			"in": [],
+			"out": [
+				{
+					"id": "iron-ore",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "basic-solid",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "copper-ore",
+			"in": [],
+			"out": [
+				{
+					"id": "copper-ore",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "basic-solid",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "coal",
+			"in": [],
+			"out": [
+				{
+					"id": "coal",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "basic-solid",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "stone",
+			"in": [],
+			"out": [
+				{
+					"id": "stone",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "basic-solid",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "uranium-ore",
+			"in": [
+				{
+					"id": "sulfuric-acid",
+					"type": "fluid",
+					"amount": 10
+				}
+			],
+			"out": [
+				{
+					"id": "uranium-ore",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 2,
+			"category": "basic-solid",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "crude-oil",
+			"in": [],
+			"out": [
+				{
+					"id": "crude-oil",
+					"type": "fluid",
+					"amount": 10
+				}
+			],
+			"duration": 1,
+			"category": "basic-fluid",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "tungsten-ore",
+			"in": [],
+			"out": [
+				{
+					"id": "tungsten-ore",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 5,
+			"category": "hard-solid",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "calcite",
+			"in": [],
+			"out": [
+				{
+					"id": "calcite",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "basic-solid",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "sulfuric-acid-geyser",
+			"in": [],
+			"out": [
+				{
+					"id": "sulfuric-acid",
+					"type": "fluid",
+					"amount": 10
+				}
+			],
+			"duration": 1,
+			"category": "basic-fluid",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "scrap",
+			"in": [],
+			"out": [
+				{
+					"id": "scrap",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 0.5,
+			"category": "basic-solid",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "lithium-brine",
+			"in": [],
+			"out": [
+				{
+					"id": "lithium-brine",
+					"type": "fluid",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "basic-fluid",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "fluorine-vent",
+			"in": [],
+			"out": [
+				{
+					"id": "fluorine",
+					"type": "fluid",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "basic-fluid",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "yumako-tree",
+			"in": [],
+			"out": [
+				{
+					"id": "yumako",
+					"type": "item",
+					"amount": 50
+				}
+			],
+			"duration": 0.5,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "jellystem",
+			"in": [],
+			"out": [
+				{
+					"id": "jellynut",
+					"type": "item",
+					"amount": 50
+				}
+			],
+			"duration": 0.5,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "tree-plant",
+			"in": [],
+			"out": [
+				{
+					"id": "wood",
+					"type": "item",
+					"amount": 4
+				}
+			],
+			"duration": 0.5,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "tree",
+			"in": [],
+			"out": [
+				{
+					"id": "wood",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 0.55,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "fish",
+			"in": [],
+			"out": [
+				{
+					"id": "raw-fish",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 0.4,
+			"category": "manual-harvest",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "metallic-asteroid-chunk",
+			"in": [],
+			"out": [
+				{
+					"id": "metallic-asteroid-chunk",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "asteroid-collector",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "carbonic-asteroid-chunk",
+			"in": [],
+			"out": [
+				{
+					"id": "carbonic-asteroid-chunk",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "asteroid-collector",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "oxide-asteroid-chunk",
+			"in": [],
+			"out": [
+				{
+					"id": "oxide-asteroid-chunk",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "asteroid-collector",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "promethium-asteroid-chunk",
+			"in": [],
+			"out": [
+				{
+					"id": "promethium-asteroid-chunk",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 0.2,
+			"category": "asteroid-collector",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "steam-wood",
+			"in": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 60
+				},
+				{
+					"id": "wood",
+					"type": "item",
+					"amount": 9
+				}
+			],
+			"out": [
+				{
+					"id": "steam",
+					"type": "fluid",
+					"amount": 600
+				}
+			],
+			"duration": 10,
+			"category": "boiler",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "steam-coal",
+			"in": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 120
+				},
+				{
+					"id": "coal",
+					"type": "item",
+					"amount": 9
+				}
+			],
+			"out": [
+				{
+					"id": "steam",
+					"type": "fluid",
+					"amount": 1200
+				}
+			],
+			"duration": 20,
+			"category": "boiler",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "steam-solid-fuel",
+			"in": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 120
+				},
+				{
+					"id": "solid-fuel",
+					"type": "item",
+					"amount": 3
+				}
+			],
+			"out": [
+				{
+					"id": "steam",
+					"type": "fluid",
+					"amount": 1200
+				}
+			],
+			"duration": 20,
+			"category": "boiler",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "steam-rocket-fuel",
+			"in": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 3000
+				},
+				{
+					"id": "rocket-fuel",
+					"type": "item",
+					"amount": 9
+				}
+			],
+			"out": [
+				{
+					"id": "steam",
+					"type": "fluid",
+					"amount": 30000
+				}
+			],
+			"duration": 500,
+			"category": "boiler",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "steam-nuclear-fuel",
+			"in": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 36300
+				},
+				{
+					"id": "nuclear-fuel",
+					"type": "item",
+					"amount": 9
+				}
+			],
+			"out": [
+				{
+					"id": "steam",
+					"type": "fluid",
+					"amount": 363000
+				}
+			],
+			"duration": 6050,
+			"category": "boiler",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "steam-carbon",
+			"in": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 60
+				},
+				{
+					"id": "carbon",
+					"type": "item",
+					"amount": 9
+				}
+			],
+			"out": [
+				{
+					"id": "steam",
+					"type": "fluid",
+					"amount": 600
+				}
+			],
+			"duration": 10,
+			"category": "boiler",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "steam-yumako-seed",
+			"in": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 120
+				},
+				{
+					"id": "yumako-seed",
+					"type": "item",
+					"amount": 9
+				}
+			],
+			"out": [
+				{
+					"id": "steam",
+					"type": "fluid",
+					"amount": 1200
+				}
+			],
+			"duration": 20,
+			"category": "boiler",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "steam-jellynut-seed",
+			"in": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 120
+				},
+				{
+					"id": "jellynut-seed",
+					"type": "item",
+					"amount": 9
+				}
+			],
+			"out": [
+				{
+					"id": "steam",
+					"type": "fluid",
+					"amount": 1200
+				}
+			],
+			"duration": 20,
+			"category": "boiler",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "steam-biter-egg",
+			"in": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 60
+				},
+				{
+					"id": "biter-egg",
+					"type": "item",
+					"amount": 3
+				}
+			],
+			"out": [
+				{
+					"id": "steam",
+					"type": "fluid",
+					"amount": 600
+				}
+			],
+			"duration": 10,
+			"category": "boiler",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "steam-pentapod-egg",
+			"in": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 150
+				},
+				{
+					"id": "pentapod-egg",
+					"type": "item",
+					"amount": 9
+				}
+			],
+			"out": [
+				{
+					"id": "steam",
+					"type": "fluid",
+					"amount": 1500
+				}
+			],
+			"duration": 25,
+			"category": "boiler",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "steam-spoilage",
+			"in": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 30
+				},
+				{
+					"id": "spoilage",
+					"type": "item",
+					"amount": 36
+				}
+			],
+			"out": [
+				{
+					"id": "steam",
+					"type": "fluid",
+					"amount": 300
+				}
+			],
+			"duration": 5,
+			"category": "boiler",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "steam-tree-seed",
+			"in": [
+				{
+					"id": "water",
+					"type": "fluid",
+					"amount": 6
+				},
+				{
+					"id": "tree-seed",
+					"type": "item",
+					"amount": 18
+				}
+			],
+			"out": [
+				{
+					"id": "steam",
+					"type": "fluid",
+					"amount": 60
+				}
+			],
+			"duration": 1,
+			"category": "boiler",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "depleted-uranium-fuel-cell",
+			"in": [
+				{
+					"id": "depleted-uranium-fuel-cell",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"out": [
+				{
+					"id": "depleted-uranium-fuel-cell",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 200,
+			"category": "nuclear-reactor",
+			"priority": 10,
+			"available": true
 		}
 	],
 	"machines": [
@@ -10981,7 +11831,7 @@
 			"features": [
 				{
 					"id": "modules",
-					"itemSlots": 1,
+					"itemSlots": 0,
 					"effectPerSlot": ["speed", "consumption", "pollution"]
 				},
 				{
@@ -11024,7 +11874,7 @@
 			"features": [
 				{
 					"id": "modules",
-					"itemSlots": 1,
+					"itemSlots": 0,
 					"effectPerSlot": ["speed", "consumption", "pollution"]
 				},
 				{
@@ -11073,7 +11923,7 @@
 			"features": [
 				{
 					"id": "modules",
-					"itemSlots": 1,
+					"itemSlots": 0,
 					"effectPerSlot": ["speed", "consumption", "pollution"]
 				},
 				{
@@ -11325,6 +12175,79 @@
 				}
 			],
 			"available": true
+		},
+		{
+			"id": "electric-mining-drill",
+			"recipeCategories": ["basic-solid"],
+			"requiredPower": 90000,
+			"features": [
+				{
+					"id": "modules",
+					"itemSlots": 3,
+					"effectPerSlot": ["pollution", "speed", "productivity", "consumption", "quality"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "burner-mining-drill",
+			"recipeCategories": ["basic-solid"],
+			"requiredPower": 150000,
+			"features": [
+				{
+					"id": "modules",
+					"itemSlots": 0,
+					"effectPerSlot": {}
+				}
+			],
+			"available": true,
+			"limitations": [
+				"planet:nauvis",
+				"planet:vulcanus",
+				"planet:gleba",
+				"planet:fulgora",
+				"planet:aquilo"
+			]
+		},
+		{
+			"id": "pumpjack",
+			"recipeCategories": ["basic-fluid"],
+			"requiredPower": 90000,
+			"features": [
+				{
+					"id": "modules",
+					"itemSlots": 2,
+					"effectPerSlot": ["consumption", "speed", "productivity", "pollution"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "big-mining-drill",
+			"recipeCategories": ["basic-solid", "hard-solid"],
+			"requiredPower": 300000,
+			"features": [
+				{
+					"id": "modules",
+					"itemSlots": 4,
+					"effectPerSlot": ["pollution", "speed", "productivity", "consumption", "quality"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "asteroid-collector",
+			"recipeCategories": ["asteroid-collector"],
+			"requiredPower": 1200,
+			"features": [
+				{
+					"id": "modules",
+					"itemSlots": 0,
+					"effectPerSlot": ["pollution", "speed", "productivity", "consumption", "quality"]
+				}
+			],
+			"available": true,
+			"limitations": ["planet:space-platform"]
 		}
 	],
 	"machineEffects": [
