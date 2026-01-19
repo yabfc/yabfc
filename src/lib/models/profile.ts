@@ -14,35 +14,39 @@ interface ProductionNode {
 export class ProductionManager {
 	constructor(private profile: Profile) {}
 
-	public calculateRecipeChain(endproductId: string, requiredAmount: number = 1): ProductionNode | undefined {
-		console.log(endproductId)
+	public calculateRecipeChain(
+		endproductId: string,
+		requiredAmount: number = 1,
+		seenRecipes: string[] = [],
+	): ProductionNode | undefined {
+		console.log(endproductId);
 		const item = this.profile.items.find(i => i.id === endproductId);
 
 		if (item === undefined) {
-			console.warn("Invalid endproduct ID given.")
-			return;
-		}
-
-		if (item.category === "raw-resource" || item.id.includes("ore") || item.type === "fluid" ) {
+			console.warn('Invalid endproduct ID given.');
 			return;
 		}
 
 		// Change to better priority matching (e.g. based on power, least machines, etc.)
 		const recipe = this.profile.recipes
-			.filter(r => r.out.some(output => output.id === endproductId))
-			.sort((a, b) => b.priority - a.priority)[0];
+			.filter(
+				r =>
+					r.out.some(output => output.id === endproductId) && !seenRecipes.includes(r.id),
+			)
+			.sort((a, b) => a.priority - b.priority)[0];
 
 		if (recipe === undefined) {
-			console.warn("No recipe found for item '" + item.getDisplayName + "'");
+			console.warn("No recipe found for item '" + item.getDisplayName() + "'");
 			return;
 		}
+		seenRecipes.push(recipe.id);
 
 		const node: ProductionNode = {
 			item: item,
 			amount: requiredAmount,
 			recipe: recipe,
-			children: []
-		}
+			children: [],
+		};
 
 		const outputDef = recipe.out.find(o => o.id === endproductId);
 		const amountPerCycle = outputDef?.amount || 1;
@@ -52,9 +56,7 @@ export class ProductionManager {
 		for (const input of recipe.in) {
 			const totalInputNeeded = input.amount * neededCycles;
 
-			node.children.push(
-				this.calculateRecipeChain(input.id, totalInputNeeded)!
-			);
+			node.children.push(this.calculateRecipeChain(input.id, totalInputNeeded, seenRecipes)!);
 		}
 
 		return node;
