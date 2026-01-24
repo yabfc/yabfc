@@ -23016,11 +23016,6 @@
 			"requiredPower": 40000000,
 			"features": [
 				{
-					"id": "summerslooping",
-					"itemSlots": 0,
-					"effectPerSlot": ["summerslooping"]
-				},
-				{
 					"id": "overclocking",
 					"itemSlots": 3,
 					"effectPerSlot": ["overclocking"]
@@ -23044,11 +23039,6 @@
 					"effectPerSlot": ["crafting-speed-miner-mk2"]
 				},
 				{
-					"id": "summerslooping",
-					"itemSlots": 0,
-					"effectPerSlot": ["summerslooping"]
-				},
-				{
 					"id": "overclocking",
 					"itemSlots": 3,
 					"effectPerSlot": ["overclocking"]
@@ -23066,11 +23056,6 @@
 			"recipeCategories": ["miner"],
 			"requiredPower": 5000000,
 			"features": [
-				{
-					"id": "summerslooping",
-					"itemSlots": 0,
-					"effectPerSlot": ["summerslooping"]
-				},
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
@@ -23093,11 +23078,6 @@
 					"id": "crafting-speed",
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-miner-mk3"]
-				},
-				{
-					"id": "summerslooping",
-					"itemSlots": 0,
-					"effectPerSlot": ["summerslooping"]
 				},
 				{
 					"id": "overclocking",
@@ -23163,11 +23143,6 @@
 			"recipeCategories": ["packager"],
 			"requiredPower": 10000000,
 			"features": [
-				{
-					"id": "summerslooping",
-					"itemSlots": 0,
-					"effectPerSlot": ["summerslooping"]
-				},
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
@@ -23279,11 +23254,6 @@
 			"requiredPower": 4000000,
 			"features": [
 				{
-					"id": "summerslooping",
-					"itemSlots": 0,
-					"effectPerSlot": ["summerslooping"]
-				},
-				{
 					"id": "overclocking",
 					"itemSlots": 3,
 					"effectPerSlot": ["overclocking"]
@@ -23301,11 +23271,6 @@
 			"recipeCategories": ["fracking-extractor"],
 			"requiredPower": 0,
 			"features": [
-				{
-					"id": "summerslooping",
-					"itemSlots": 0,
-					"effectPerSlot": ["summerslooping"]
-				},
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
@@ -23326,7 +23291,8 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 1.5,
+					"min_value": 1,
+					"max_value": 2.5,
 					"modifiable": true,
 					"onlyOutputScales": false
 				},
@@ -23338,7 +23304,7 @@
 					"valueScaling": "exponential"
 				}
 			],
-			"perSlot": true,
+			"perSlot": false,
 			"available": true
 		},
 		{
@@ -23346,7 +23312,8 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 0.5,
+					"min_value": 0,
+					"max_value": 1,
 					"modifiable": true,
 					"onlyOutputScales": false
 				},
@@ -23358,7 +23325,7 @@
 					"valueScaling": "exponential"
 				}
 			],
-			"perSlot": true,
+			"perSlot": false,
 			"available": true
 		},
 		{
