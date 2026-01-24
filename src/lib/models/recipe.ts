@@ -4,6 +4,17 @@ export interface BaseItemIo {
 	amount: number;
 }
 
+export interface RecipeVariant {
+	id: string;
+	recipeId: string;
+	recipePriority: number;
+	machineId: string;
+	in: BaseItemIo[];
+	out: BaseItemIo[];
+	requiredPower: number;
+	usedEffectModuleIds: string[];
+}
+
 export interface RecipeInterface {
 	id: string;
 	name?: string;
