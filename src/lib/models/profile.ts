@@ -44,14 +44,14 @@ export default class Profile {
 			.filter(x => x.craftable !== false && x.available)
 			.forEach(recipe => {
 				const machines = this.getMachinesByRecipe(recipe.category).filter(x => x.available);
-				if (machines.length === 0 && recipe.category === 'manual-harvest') {
-					console.log(
-						'Recipe: ' +
-							recipe.id +
-							' with category ' +
-							recipe.category +
-							' has no machines available',
-					);
+				if (machines.length === 0) {
+					// console.log(
+					// 	'Recipe: ' +
+					// 		recipe.id +
+					// 		' with category ' +
+					// 		recipe.category +
+					// 		' has no machines available',
+					// );
 				}
 				machines.forEach(machine => {
 					// default, no effects
@@ -59,36 +59,89 @@ export default class Profile {
 
 					// for over/underclocking
 					const stepCount = 16;
-
-					const allowedModules = machine.getAllowedEffectMoules(this.machineEffects);
-					allowedModules.forEach(module => {
-						if (module.id.includes('crafting-speed')) {
+					machine.features.forEach(f => {
+						if (f.id === 'crafting-speed') {
 							return;
 						}
-						const modifiable = module.modifiers.find(x => x.modifiable);
-						if (modifiable) {
-							const steps =
-								(modifiable.max_value! - modifiable.min_value!) / stepCount;
-							for (let i = 0; i <= stepCount; i++) {
-								variants.push(
-									this.calculateRecipeVariant(
-										recipe,
-										machine,
-										[module],
-										modifiable.min_value! + i * steps,
-									),
-								);
-							}
-						} else {
-							variants.push(
-								this.calculateRecipeVariant(recipe, machine, [module], 1),
+						const allowedModules = f.effectPerSlot;
+						const slots = f.itemSlots;
+						// true for modules
+						if (f.effectPerSlot && slots > 0) {
+							// the normal factorio effects
+							const perSlotEffects = this.machineEffects.filter(
+								x =>
+									allowedModules.includes(x.id) &&
+									!x.id.includes('quality') &&
+									x.perSlot,
 							);
+							const comb = this.getAllModuleCombinations(perSlotEffects, slots);
+							comb.forEach(c => {
+								variants.push(this.calculateRecipeVariant(recipe, machine, c, 1));
+							});
+
+							// e.g summerslooping across 1, 2 or 4 slots
+							const effects = this.machineEffects.filter(
+								x => allowedModules.includes(x.id) && !x.perSlot,
+							);
+
+							effects.forEach(effect => {
+								const modifiable = effect.modifiers.find(x => x.modifiable);
+								if (modifiable) {
+									// under/overclocking
+									const steps =
+										(modifiable.max_value! - modifiable.min_value!) / stepCount;
+									for (let i = 0; i <= stepCount; i++) {
+										variants.push(
+											this.calculateRecipeVariant(
+												recipe,
+												machine,
+												[effect],
+												modifiable.min_value! + i * steps,
+											),
+										);
+									}
+								} else {
+									// summerslooping
+									for (let i = 1; i <= slots; i++) {
+										variants.push(
+											this.calculateRecipeVariant(
+												recipe,
+												machine,
+												[effect],
+												i / slots,
+											),
+										);
+									}
+								}
+							});
 						}
 					});
 				});
 			});
-		console.log(variants);
 		return variants;
+	}
+
+	getAllModuleCombinations(availableModules: EffectModule[], slots: number): EffectModule[][] {
+		if (slots === 0) return [[]];
+
+		const results: EffectModule[][] = [];
+		const currentCombo: EffectModule[] = [];
+
+		function findCombinations(start: number) {
+			if (currentCombo.length === slots) {
+				results.push([...currentCombo]);
+				return;
+			}
+
+			for (let i = start; i < availableModules.length; i++) {
+				currentCombo.push(availableModules[i]);
+				findCombinations(i);
+				currentCombo.pop();
+			}
+		}
+
+		findCombinations(0);
+		return results;
 	}
 
 	calculateRecipeVariant(
@@ -102,7 +155,7 @@ export default class Profile {
 		let productivity = 1;
 		let id = `${recipe.id}__${machine.id}`;
 		if (effects.length > 0) {
-			id += `__${effects.map(x => x.id).join('_')}`;
+			id += `__${effects.map(x => x.id).join('__')}`;
 		}
 		if (scaling !== 1) {
 			id += `__${scaling}`;
@@ -157,28 +210,29 @@ export default class Profile {
 			options: {
 				timeout: 5000,
 				branching: 'strong',
+				//	tolerance: 0.01,
 			},
 			ints: {},
-			tolerance: 0.05,
 		};
 
 		// net production of each item should be >= 0, (for the target item == targetAmount)
 		this.items.filter(x => x.id != itemId).forEach(x => (model.constraints[x.id] = { min: 0 }));
-		model.constraints[itemId] = { equal: targetAmount };
+		model.constraints[itemId] = { equal: targetAmount / duration };
 
 		const variants = this.generateRecipeVariants();
+		console.log(variants);
 		variants.forEach(variant => {
 			const recipeVar: any = {};
 
 			this.items.forEach(item => {
 				const input = variant.in.find(x => x.id === item.id);
 				if (input) {
-					recipeVar[item.id] = -input.amount * duration;
+					recipeVar[item.id] = -input.amount;
 				}
 
 				const output = variant.out.find(x => x.id === item.id);
 				if (output) {
-					recipeVar[item.id] = output.amount * duration;
+					recipeVar[item.id] = output.amount;
 				}
 			});
 
@@ -194,7 +248,7 @@ export default class Profile {
 
 			// would allow optimizing for whole numbers but is 1. way slower & 2. increases the target
 			// amount or starts rounding numbers...
-			// model.ints![variant.id] = 1;
+			model.ints![variant.id] = 1;
 		});
 		const solved = solver.Solve(model) as SolveResult | undefined;
 		if (solved === undefined) {

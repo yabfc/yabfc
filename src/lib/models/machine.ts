@@ -5,6 +5,7 @@ export interface MachineFeatureInterface {
 	name?: string;
 	itemSlots: number;
 	effectPerSlot: string[];
+	disables?: string[];
 }
 
 export class MachineFeature {
@@ -12,12 +13,14 @@ export class MachineFeature {
 	name?: string;
 	itemSlots: number;
 	effectPerSlot: string[];
+	disables?: string[];
 
 	constructor(feature: MachineFeatureInterface) {
 		this.id = feature.id;
 		this.name = feature.name;
 		this.itemSlots = feature.itemSlots;
 		this.effectPerSlot = feature.effectPerSlot;
+		this.disables = feature.disables;
 	}
 
 	getDisplayName(): string {
@@ -111,6 +114,8 @@ export default class Machine {
 					if (!modifier.modifiable && modifier.value !== undefined) {
 						power *= Math.pow(scaling, modifier.value);
 					}
+				} else if (['consumption', 'power'].includes(modifier.id) && !effect.perSlot) {
+					power *= modifier.value! * scaling;
 				} else if (['consumption', 'power'].includes(modifier.id)) {
 					power *= modifier.value!;
 				}
