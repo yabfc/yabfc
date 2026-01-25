@@ -23018,12 +23018,14 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23041,12 +23043,14 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23059,12 +23063,14 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23082,12 +23088,14 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23105,12 +23113,14 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23128,12 +23138,14 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23146,12 +23158,14 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23169,12 +23183,14 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23192,12 +23208,14 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23215,12 +23233,14 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23238,12 +23258,14 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23256,12 +23278,14 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23274,12 +23298,14 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23339,7 +23365,7 @@
 				},
 				{
 					"id": "power",
-					"value": 5,
+					"value": 4,
 					"modifiable": false,
 					"onlyOutputScales": false
 				}
