@@ -167,7 +167,11 @@ export default class Profile {
 					modifier.onlyOutputScales === true &&
 					!modifier.modifiable
 				) {
-					productivity *= modifier.value!;
+					if (!effect.perSlot) {
+						productivity *= modifier.value! * scaling;
+					} else {
+						productivity *= modifier.value!;
+					}
 				} else if (modifier.id === 'speed' && modifier.modifiable) {
 					speed *= scaling;
 				} else if (modifier.id === 'speed') {
