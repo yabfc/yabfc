@@ -13,6 +13,7 @@ export interface RecipeVariant {
 	out: BaseItemIo[];
 	requiredPower: number;
 	usedEffectModuleIds: string[];
+	amount?: number;
 }
 
 export interface RecipeInterface {

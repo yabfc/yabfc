@@ -1,6 +1,10 @@
 import Machine, { type MachineInterface } from '@/lib/models/machine';
 import Item, { type ItemInterface } from '@/lib/models/item';
-import Recipe, { type RecipeInterface, type RecipeVariant } from '@/lib/models/recipe';
+import Recipe, {
+	type BaseItemIo,
+	type RecipeInterface,
+	type RecipeVariant,
+} from '@/lib/models/recipe';
 import EffectModule, { type EffectModuleInterface } from '@/lib/models/effect';
 import Research, { type ResearchInterface } from '@/lib/models/research';
 import solver, { type Model, type SolveResult } from 'javascript-lp-solver';
@@ -13,6 +17,14 @@ export interface ProfileInterface {
 	machines: MachineInterface[];
 	machineEffects: EffectModuleInterface[];
 	research: ResearchInterface[];
+}
+
+interface OptimizationRequest {
+	id: string;
+	in: BaseItemIo[];
+	out: BaseItemIo[];
+	type: 'maximize-output' | `exact-output`;
+	allowedEffectmodules: EffectModule[];
 }
 
 export default class Profile {
@@ -200,7 +212,7 @@ export default class Profile {
 		targetAmount: number,
 		duration: number,
 		weights: { power: number; building: number; priority: number },
-	): Record<string, number> | undefined {
+	): RecipeVariant[] | undefined {
 		if (this.getItemById(itemId) === undefined) {
 			console.log('item does not exist');
 			return;
@@ -246,7 +258,7 @@ export default class Profile {
 			// priority needs a really hard penality. Alternate recipes in satisfactory
 			// bloat the result up by a lot: 40 vs 60+ for turbo-motors
 			const priorityCost = Math.pow(variant.recipePriority, weights.priority);
-			const buildingCost = weights.building * 1;
+			const buildingCost = weights.building;
 			recipeVar.cost = powerCost + priorityCost + buildingCost;
 			model.variables[variant.id] = recipeVar;
 
@@ -268,26 +280,31 @@ export default class Profile {
 					!['feasible', 'result', 'bounded', 'isIntegral'].includes(k) &&
 					typeof v === 'number',
 			),
-		) as Record<string, number>;
-		return recipes;
+		);
+		let selectedVaritans: RecipeVariant[] = [];
+		Object.entries(recipes).forEach(([id, amount]) => {
+			let variant = variants.find(x => x.id === id);
+			if (variant && typeof amount === 'number') {
+				variant.amount = amount;
+				selectedVaritans.push(variant);
+			}
+		});
+		return selectedVaritans;
 	}
 
-	generateMermaidGraph(result: Record<string, number>): string {
-		let variants = this.generateRecipeVariants();
-		const activeVariants = Object.keys(result).map(id => variants.find(x => x.id === id)!);
-
+	generateMermaidGraph(usedVariants: RecipeVariant[]): string {
 		let mermaid = 'graph LR\n';
 
-		activeVariants.forEach(variant => {
-			const rate = (result as any)[variant.id].toFixed(2);
+		usedVariants.forEach(variant => {
+			const rate = variant.amount;
 			const safeId = variant.id.replace(/\s+/g, '_');
 			mermaid += `    ${safeId}["${variant.id}<br/>(Rate: ${rate}/s)"]\n`;
 		});
 
 		// Create Edges based on item flow
-		activeVariants.forEach(producer => {
+		usedVariants.forEach(producer => {
 			producer.out.forEach(output => {
-				const consumers = activeVariants.filter(c =>
+				const consumers = usedVariants.filter(c =>
 					c.in.some(input => input.id === output.id),
 				);
 
