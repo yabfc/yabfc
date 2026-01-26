@@ -1,3 +1,5 @@
+import type { EffectConfiguration } from '@/lib/models/effect';
+
 export interface BaseItemIo {
 	id: string;
 	type: 'item' | 'fluid';
@@ -16,7 +18,7 @@ export interface RecipeVariant {
 	in: BaseItemIo[];
 	out: BaseItemIo[];
 	requiredPower: number;
-	usedEffectModuleIds: string[];
+	usedEffectModuleIds: EffectConfiguration[];
 	amount?: number;
 }
 

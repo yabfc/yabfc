@@ -1,4 +1,4 @@
-import type EffectModule from '@/lib/models/effect';
+import EffectModule, { type EffectConfiguration } from '@/lib/models/effect';
 
 export interface MachineFeatureInterface {
 	id: string;
@@ -6,6 +6,7 @@ export interface MachineFeatureInterface {
 	itemSlots: number;
 	effectPerSlot: string[];
 	disables?: string[];
+	hidden?: boolean;
 }
 
 export class MachineFeature {
@@ -14,6 +15,7 @@ export class MachineFeature {
 	itemSlots: number;
 	effectPerSlot: string[];
 	disables?: string[];
+	hidden?: boolean;
 
 	constructor(feature: MachineFeatureInterface) {
 		this.id = feature.id;
@@ -21,6 +23,7 @@ export class MachineFeature {
 		this.itemSlots = feature.itemSlots;
 		this.effectPerSlot = feature.effectPerSlot;
 		this.disables = feature.disables;
+		this.hidden = feature.hidden;
 	}
 
 	getDisplayName(): string {
@@ -32,6 +35,13 @@ export class MachineFeature {
 				.join(' ')
 		);
 	}
+}
+
+export interface MachineConfiguration {
+	id: string;
+	machineId: string;
+	usedEffects: EffectConfiguration[];
+	amount: number;
 }
 
 export interface MachineInterface {

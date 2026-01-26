@@ -1,4 +1,4 @@
-import Machine, { type MachineInterface } from '@/lib/models/machine';
+import Machine, { type MachineConfiguration, type MachineInterface } from '@/lib/models/machine';
 import Item, { type ItemInterface } from '@/lib/models/item';
 import Recipe, {
 	type RecipeInterface,
@@ -8,6 +8,7 @@ import Recipe, {
 import EffectModule, { type EffectModuleInterface } from '@/lib/models/effect';
 import Research, { type ResearchInterface } from '@/lib/models/research';
 import solver, { type Model, type SolveResult } from 'javascript-lp-solver';
+import { nanoid } from 'nanoid';
 
 export interface ProfileInterface {
 	id: string;
@@ -25,23 +26,41 @@ interface OptimizationWeights {
 	priority: number;
 }
 
-interface OptimizationRequest {
+export interface OptimizationRequestInterface {
 	id: string;
 	in: RequestedBaseItemIo[];
 	out: RequestedBaseItemIo[];
 	duration: number;
-	type: 'maximize-output' | `exact-output`;
 	allowedEffectmodules: EffectModule[];
 	limitations: string[];
 	weights: OptimizationWeights;
+	tolerance: number;
 }
 
-interface MachineConfiguration {
+export class OptimizationRequest {
 	id: string;
-	machineId: string;
-	usedEffects: string;
-	scaling: number;
-	amount: number;
+	in: RequestedBaseItemIo[];
+	out: RequestedBaseItemIo[];
+	duration: number;
+	allowedEffectmodules: EffectModule[];
+	limitations: string[];
+	weights: OptimizationWeights;
+	tolerance: number;
+
+	constructor(request: OptimizationRequestInterface) {
+		this.id = request.id;
+		this.in = request.in;
+		this.out = request.out;
+		this.duration = request.duration;
+		this.allowedEffectmodules = request.allowedEffectmodules;
+		this.limitations = request.limitations;
+		this.weights = request.weights;
+		this.tolerance = 0.05;
+	}
+
+	getAllItemIds(): string[] {
+		return [...this.in, ...this.out].map(x => x.id);
+	}
 }
 
 interface RecipeNode {
@@ -102,7 +121,7 @@ export default class Profile {
 					// for over/underclocking
 					const stepCount = 32;
 					machine.features.forEach(f => {
-						if (f.id === 'crafting-speed') {
+						if (f.hidden === true) {
 							return;
 						}
 						const allowedModules = f.effectPerSlot;
@@ -233,18 +252,20 @@ export default class Profile {
 				amount: (x.amount * productivity * speed) / recipe.duration,
 			})),
 			requiredPower: power,
-			usedEffectModuleIds: effects.map(x => x.id),
+			usedEffectModuleIds: effects.map(x => ({
+				id: nanoid(),
+				effectId: x.id,
+				scaling: scaling,
+			})),
 		};
 	}
 
-	calculateOptimalRecipeChain(
-		itemId: string,
-		targetAmount: number,
-		duration: number,
-		weights: { power: number; building: number; priority: number },
-	): RecipeVariant[] | undefined {
-		if (this.getItemById(itemId) === undefined) {
-			console.log('item does not exist');
+	calculateOptimalRecipeChain(request: OptimizationRequest): RecipeVariant[] | undefined {
+		const requestedItems = request.getAllItemIds();
+		const requestedInputItems = request.in.map(x => x.id);
+
+		if (!this.allItemIdsExist(requestedItems)) {
+			console.log(this.getMissingItemIds(requestedItems).join(', ') + ' do not exist');
 			return;
 		}
 
@@ -262,11 +283,28 @@ export default class Profile {
 		};
 
 		// net production of each item should be >= 0, (for the target item == targetAmount)
-		this.items.filter(x => x.id != itemId).forEach(x => (model.constraints[x.id] = { min: 0 }));
-		model.constraints[itemId] = {
-			//		max: targetAmount / duration * 1.5,
-			min: (targetAmount / duration) * 0.95,
-		};
+		this.items
+			.filter(x => !requestedItems.includes(x.id))
+			.forEach(x => (model.constraints[x.id] = { min: 0 }));
+		request.in.forEach(item => {
+			if (item.exact) {
+				model.constraints[item.id] = { equal: 1 };
+			} else {
+				model.constraints[item.id] = {
+					max: 1,
+					min: 0,
+				};
+			}
+		});
+		request.out.forEach(item => {
+			if (item.exact) {
+				model.constraints[item.id] = { equal: item.amount / request.duration };
+			} else {
+				model.constraints[item.id] = {
+					min: (item.amount / request.duration) * (1 - request.tolerance),
+				};
+			}
+		});
 
 		const variants = this.generateRecipeVariants();
 		console.log(variants);
@@ -280,25 +318,46 @@ export default class Profile {
 				}
 
 				const output = variant.out.find(x => x.id === item.id);
-				if (output) {
+				if (output && !requestedInputItems.includes(output.id)) {
 					recipeVar[item.id] = output.amount;
 				}
 			});
 
 			// cut the power down to MW, otherwise the cost get's way too high
-			const powerCost = (weights.power * variant.requiredPower) / 1_000_000;
+			const powerCost = (request.weights.power * variant.requiredPower) / 1_000_000;
 
 			// priority needs a really hard penality. Alternate recipes in satisfactory
 			// bloat the result up by a lot: 40 vs 60+ for turbo-motors
-			const priorityCost = Math.pow(variant.recipePriority, weights.priority);
-			const buildingCost = weights.building;
+			const priorityCost = Math.pow(variant.recipePriority, request.weights.priority);
+			const buildingCost = request.weights.building;
 			recipeVar.cost = powerCost + priorityCost + buildingCost;
+
 			model.variables[variant.id] = recipeVar;
 
-			// would allow optimizing for whole numbers but is 1. way slower & 2. increases the target
-			// amount or starts rounding numbers...
 			model.ints![variant.id] = 1;
 		});
+		// add pseudovariant if user says they have a spare amount of some ressource
+		variants.push({
+			id: 'requested-inputs',
+			recipeId: 'requested-inputs',
+			recipePriority: 0,
+			machineId: '',
+			in: [],
+			out: request.in,
+			requiredPower: 0,
+			usedEffectModuleIds: [],
+		});
+
+		request.in.forEach(x => {
+			const recipeVar: any = {};
+			recipeVar[x.id] = x.amount;
+			recipeVar.cost = 0;
+			model.variables['requested-inputs'] = recipeVar;
+			if (x.exact) {
+				model.ints!['requested-inputs'] = 1;
+			}
+		});
+
 		const solved = solver.Solve(model) as SolveResult | undefined;
 		if (solved === undefined) {
 			return;
@@ -307,6 +366,7 @@ export default class Profile {
 			console.log('not feasible');
 			return;
 		}
+
 		const recipes = Object.fromEntries(
 			Object.entries(solved).filter(
 				([k, v]) =>
@@ -323,6 +383,81 @@ export default class Profile {
 			}
 		});
 		return selectedVaritans;
+	}
+
+	generateNodes(usedVariants: RecipeVariant[]): RecipeNode[] {
+		// cluster the variants first to each recipe. So e.g two different
+		// machine configs for the same recipe end up in the same node later
+		let nodeMap: Record<string, RecipeNode> = {};
+
+		usedVariants.forEach(variant => {
+			nodeMap[variant.recipeId] ??= { id: variant.recipeId, machines: [], edgeTo: [] };
+			nodeMap[variant.recipeId].machines.push({
+				id: variant.machineId,
+				machineId: variant.machineId,
+				usedEffects: variant.usedEffectModuleIds,
+				amount: variant.amount!,
+			});
+		});
+
+		const supplyMap: Record<string, { recipeId: string; amount: number }[]> = {};
+		const demandMap: Record<string, { recipeId: string; amount: number }[]> = {};
+		usedVariants.forEach(variant => {
+			variant.in.forEach(io => {
+				if (!demandMap[io.id]) demandMap[io.id] = [];
+				demandMap[io.id].push({
+					recipeId: variant.recipeId,
+					amount: io.amount * variant.amount!,
+				});
+			});
+			variant.out.forEach(io => {
+				if (!supplyMap[io.id]) supplyMap[io.id] = [];
+				supplyMap[io.id].push({
+					recipeId: variant.recipeId,
+					amount: io.amount * variant.amount!,
+				});
+			});
+		});
+
+		Object.entries(demandMap).forEach(([itemId, consumers]) => {
+			const producers = [...(supplyMap[itemId] || [])];
+
+			consumers.forEach(consumer => {
+				let needed = consumer.amount;
+
+				while (needed > 0 && producers.length > 0) {
+					const producer = producers[0];
+					const take = Math.min(needed, producer.amount);
+
+					if (take > 0) {
+						console.log(producer);
+						const existing = nodeMap[producer.recipeId].edgeTo.find(
+							e =>
+								e.from === producer.recipeId &&
+								e.to === consumer.recipeId &&
+								e.itemId === itemId,
+						);
+						if (existing) existing.amount += take;
+						else
+							nodeMap[producer.recipeId].edgeTo.push({
+								from: producer.recipeId,
+								to: consumer.recipeId,
+								itemId,
+								amount: take,
+							});
+
+						needed -= take;
+						producer.amount -= take;
+					}
+
+					if (producer.amount <= 0) {
+						producers.shift();
+					}
+				}
+			});
+		});
+
+		return Object.values(nodeMap);
 	}
 
 	generateMermaidGraph(usedVariants: RecipeVariant[]): string {
@@ -354,6 +489,14 @@ export default class Profile {
 
 	getItemById(id: string): Item | undefined {
 		return this.items.find(x => x.id == id);
+	}
+
+	allItemIdsExist(ids: string[]): boolean {
+		return ids.every(id => this.items.some(x => x.id === id));
+	}
+
+	getMissingItemIds(ids: string[]): string[] {
+		return ids.filter(id => !this.items.some(x => x.id === id));
 	}
 
 	getRecipeById(id: string): Recipe | undefined {
