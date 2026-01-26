@@ -4,6 +4,10 @@ export interface BaseItemIo {
 	amount: number;
 }
 
+export interface RequestedBaseItemIo extends BaseItemIo {
+	exact: boolean;
+}
+
 export interface RecipeVariant {
 	id: string;
 	recipeId: string;

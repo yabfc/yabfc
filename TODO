@@ -7,7 +7,7 @@ dfferent input types:
 input limitations:
 1. enabling/disabling machine features
 2. limiting effectmodules for a feature
-
+3. allowing +- 5% of requested item
 
 weight configs:
 1. energy efficient => weights.power = 1000

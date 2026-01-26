@@ -1,9 +1,9 @@
 import Machine, { type MachineInterface } from '@/lib/models/machine';
 import Item, { type ItemInterface } from '@/lib/models/item';
 import Recipe, {
-	type BaseItemIo,
 	type RecipeInterface,
 	type RecipeVariant,
+	type RequestedBaseItemIo,
 } from '@/lib/models/recipe';
 import EffectModule, { type EffectModuleInterface } from '@/lib/models/effect';
 import Research, { type ResearchInterface } from '@/lib/models/research';
@@ -19,12 +19,42 @@ export interface ProfileInterface {
 	research: ResearchInterface[];
 }
 
+interface OptimizationWeights {
+	power: number;
+	building: number;
+	priority: number;
+}
+
 interface OptimizationRequest {
 	id: string;
-	in: BaseItemIo[];
-	out: BaseItemIo[];
+	in: RequestedBaseItemIo[];
+	out: RequestedBaseItemIo[];
+	duration: number;
 	type: 'maximize-output' | `exact-output`;
 	allowedEffectmodules: EffectModule[];
+	limitations: string[];
+	weights: OptimizationWeights;
+}
+
+interface MachineConfiguration {
+	id: string;
+	machineId: string;
+	usedEffects: string;
+	scaling: number;
+	amount: number;
+}
+
+interface RecipeNode {
+	id: string;
+	machines: MachineConfiguration[];
+	edgeTo: Edge[];
+}
+
+interface Edge {
+	from: string;
+	to: string;
+	itemId: string;
+	amount: number;
 }
 
 export default class Profile {
@@ -70,7 +100,7 @@ export default class Profile {
 					variants.push(this.calculateRecipeVariant(recipe, machine, [], 1));
 
 					// for over/underclocking
-					const stepCount = 16;
+					const stepCount = 32;
 					machine.features.forEach(f => {
 						if (f.id === 'crafting-speed') {
 							return;
@@ -226,14 +256,17 @@ export default class Profile {
 			options: {
 				timeout: 5000,
 				branching: 'strong',
-				//	tolerance: 0.01,
+				//tolerance: 0.05,
 			},
 			ints: {},
 		};
 
 		// net production of each item should be >= 0, (for the target item == targetAmount)
 		this.items.filter(x => x.id != itemId).forEach(x => (model.constraints[x.id] = { min: 0 }));
-		model.constraints[itemId] = { equal: targetAmount / duration };
+		model.constraints[itemId] = {
+			//		max: targetAmount / duration * 1.5,
+			min: (targetAmount / duration) * 0.95,
+		};
 
 		const variants = this.generateRecipeVariants();
 		console.log(variants);

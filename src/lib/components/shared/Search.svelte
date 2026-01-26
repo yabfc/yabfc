@@ -7,7 +7,7 @@
 	}
 </script>
 
-<div class="border-base-200 sticky p-1">
+<div class="border-base-200 fixed p-1">
 	<label class="input input-sm gap-2">
 		<Search size="16" class="opacity-50"></Search>
 		<input type="text" class="grow" placeholder="Search ..." bind:value />
