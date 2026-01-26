@@ -7040,7 +7040,8 @@
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-stone-furnace"]
+					"effectPerSlot": ["crafting-speed-stone-furnace"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -7068,7 +7069,8 @@
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-electric-furnace"]
+					"effectPerSlot": ["crafting-speed-electric-furnace"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -7081,7 +7083,8 @@
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-steel-furnace"]
+					"effectPerSlot": ["crafting-speed-steel-furnace"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -7094,7 +7097,8 @@
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-assembling-machine-1"]
+					"effectPerSlot": ["crafting-speed-assembling-machine-1"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -7127,7 +7131,8 @@
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-assembling-machine-2"]
+					"effectPerSlot": ["crafting-speed-assembling-machine-2"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -7160,7 +7165,8 @@
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-assembling-machine-3"]
+					"effectPerSlot": ["crafting-speed-assembling-machine-3"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -7185,7 +7191,8 @@
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-oil-refinery"]
+					"effectPerSlot": ["crafting-speed-oil-refinery"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -7213,7 +7220,8 @@
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-chemical-plant"]
+					"effectPerSlot": ["crafting-speed-chemical-plant"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -7241,7 +7249,8 @@
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-centrifuge"]
+					"effectPerSlot": ["crafting-speed-centrifuge"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -7319,7 +7328,8 @@
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-rocket-silo"]
+					"effectPerSlot": ["crafting-speed-rocket-silo"],
+					"hidden": true
 				}
 			],
 			"available": true

@@ -23038,7 +23038,8 @@
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-miner-mk2"]
+					"effectPerSlot": ["crafting-speed-miner-mk2"],
+					"hidden": true
 				},
 				{
 					"id": "overclocking",
@@ -23083,7 +23084,8 @@
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-miner-mk3"]
+					"effectPerSlot": ["crafting-speed-miner-mk3"],
+					"hidden": true
 				},
 				{
 					"id": "overclocking",
