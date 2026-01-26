@@ -6,9 +6,9 @@
 	const clearSearch = () => (value = '');
 </script>
 
-<div class="p-3">
-	<label class="input input-sm sticky top-0">
-		<SearchIcon size="14" class="" />
+<div class="bg-base-100 sticky top-0 z-10 p-3">
+	<label class="input input-sm">
+		<SearchIcon size="14" />
 
 		<input type="search" bind:value placeholder="Search" class="grow" />
 
