@@ -1,7 +1,7 @@
 <script lang="ts">
+	import SearchInput from '@/lib/components/shared/Search.svelte';
 	import Profile from '@/lib/models/profile';
 	import { AnvilIcon } from '@lucide/svelte';
-	import SearchInput from '@/lib/components/shared/Search.svelte';
 
 	let { profile }: { profile: Profile } = $props();
 	let searchQuery = $state('');
@@ -13,6 +13,7 @@
 				x.category.includes(searchQuery.toLowerCase()),
 		),
 	);
+
 	let expandedId = $state('');
 	const toggleId = (id: string) => {
 		expandedId = expandedId === id ? '' : id;
@@ -20,6 +21,7 @@
 </script>
 
 <SearchInput bind:value={searchQuery} />
+
 <ul class="list">
 	{#each filteredItems as item (item.id)}
 		<li class="list-row">
@@ -59,6 +61,6 @@
 			</div>
 		</li>
 	{:else}
-		<p class="p-4 text-center">No items found for this profile.</p>
+		<p class="p-4 text-center">No items found.</p>
 	{/each}
 </ul>
