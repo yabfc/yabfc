@@ -1,10 +1,14 @@
 <script lang="ts">
+	import RecipeDetailsDialog from '@/lib/components/profile/RecipeDetailsDialog.svelte';
 	import SearchInput from '@/lib/components/shared/Search.svelte';
 	import Profile from '@/lib/models/profile';
-	import { ArrowBigRightDashIcon, DrillIcon } from '@lucide/svelte';
+	import { ArrowBigRightDashIcon, TestTubeDiagonalIcon } from '@lucide/svelte';
 
 	let { profile }: { profile: Profile } = $props();
 	let searchQuery = $state('');
+
+	let dialog = $state<HTMLDialogElement>(),
+		dialogRecipeId = $state<string>();
 
 	const filteredRecipes = $derived(
 		profile.recipes.filter(
@@ -14,6 +18,13 @@
 					x.category.includes(searchQuery.toLowerCase())),
 		),
 	);
+
+	function openDetailsDialog(recipeId: string) {
+		return () => {
+			dialogRecipeId = recipeId;
+			dialog?.showModal();
+		};
+	}
 </script>
 
 <SearchInput bind:value={searchQuery} />
@@ -24,7 +35,7 @@
 			<details class="collapse-arrow list-col-grow collapse" name="accordion-recipe-overview">
 				<summary class="collapse-title select-none">
 					<div class="flex">
-						<DrillIcon size="24" class="m-2" />
+						<TestTubeDiagonalIcon size="24" class="m-2" />
 
 						<div>
 							<div>{recipe.getDisplayName()}</div>
@@ -55,6 +66,13 @@
 							</span>
 						</li>
 					</ul>
+
+					<button
+						onclick={openDetailsDialog(recipe.id)}
+						class="link link-primary mx-2 mt-2"
+					>
+						More Details
+					</button>
 				</div>
 			</details>
 		</li>
@@ -62,3 +80,5 @@
 		<p class="p-4">No recipes found.</p>
 	{/each}
 </ul>
+
+<RecipeDetailsDialog bind:dialog recipeId={dialogRecipeId} {profile} />
