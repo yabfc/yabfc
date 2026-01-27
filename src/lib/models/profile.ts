@@ -20,6 +20,11 @@ export interface ProfileInterface {
 	research: ResearchInterface[];
 }
 
+interface VisualRepresentation {
+	nodes: RecipeNode[];
+	edges: Edge[];
+}
+
 interface OptimizationWeights {
 	power: number;
 	building: number;
@@ -65,8 +70,8 @@ export class OptimizationRequest {
 
 interface RecipeNode {
 	id: string;
+	recipeId: string;
 	machines: MachineConfiguration[];
-	edgeTo: Edge[];
 }
 
 interface Edge {
@@ -385,13 +390,17 @@ export default class Profile {
 		return selectedVaritans;
 	}
 
-	generateNodes(usedVariants: RecipeVariant[]): RecipeNode[] {
+	generateNodes(usedVariants: RecipeVariant[]): VisualRepresentation {
 		// cluster the variants first to each recipe. So e.g two different
 		// machine configs for the same recipe end up in the same node later
 		let nodeMap: Record<string, RecipeNode> = {};
 
 		usedVariants.forEach(variant => {
-			nodeMap[variant.recipeId] ??= { id: variant.recipeId, machines: [], edgeTo: [] };
+			nodeMap[variant.recipeId] ??= {
+				id: nanoid(),
+				recipeId: variant.recipeId,
+				machines: [],
+			};
 			nodeMap[variant.recipeId].machines.push({
 				id: variant.machineId,
 				machineId: variant.machineId,
@@ -419,6 +428,8 @@ export default class Profile {
 			});
 		});
 
+		let edgeMap: Record<string, Edge[]> = {};
+
 		Object.entries(demandMap).forEach(([itemId, consumers]) => {
 			const producers = [...(supplyMap[itemId] || [])];
 
@@ -430,18 +441,18 @@ export default class Profile {
 					const take = Math.min(needed, producer.amount);
 
 					if (take > 0) {
-						console.log(producer);
-						const existing = nodeMap[producer.recipeId].edgeTo.find(
+						const producerId = nodeMap[producer.recipeId].id;
+						const consumerId = nodeMap[consumer.recipeId].id;
+						if (!edgeMap[producer.recipeId]) edgeMap[producer.recipeId] = [];
+						const existing = edgeMap[producer.recipeId].find(
 							e =>
-								e.from === producer.recipeId &&
-								e.to === consumer.recipeId &&
-								e.itemId === itemId,
+								e.from === producerId && e.to === consumerId && e.itemId === itemId,
 						);
 						if (existing) existing.amount += take;
 						else
-							nodeMap[producer.recipeId].edgeTo.push({
-								from: producer.recipeId,
-								to: consumer.recipeId,
+							edgeMap[producer.recipeId].push({
+								from: producerId,
+								to: consumerId,
 								itemId,
 								amount: take,
 							});
@@ -457,7 +468,7 @@ export default class Profile {
 			});
 		});
 
-		return Object.values(nodeMap);
+		return { nodes: Object.values(nodeMap), edges: Object.values(edgeMap).flat() };
 	}
 
 	generateMermaidGraph(usedVariants: RecipeVariant[]): string {
