@@ -47,7 +47,7 @@
 			<span class="sr-only">Inputs</span>
 
 			<ul>
-				{#each recipe?.in as input (input.id)}
+				{#each recipe?.in ?? [] as input (input.id)}
 					{@render itemIO(input)}
 				{/each}
 			</ul>
@@ -62,7 +62,7 @@
 			<span class="sr-only">Outputs</span>
 
 			<ul>
-				{#each recipe?.out as output (output.id)}
+				{#each recipe?.out ?? [] as output (output.id)}
 					{@render itemIO(output)}
 				{/each}
 			</ul>
