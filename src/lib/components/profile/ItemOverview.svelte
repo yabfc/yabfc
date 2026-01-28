@@ -1,17 +1,16 @@
 <script lang="ts">
 	import SearchInput from '@/lib/components/shared/Search.svelte';
-	import Profile from '@/lib/models/profile';
+	import active from '@/lib/stores/active.svelte';
 	import { AnvilIcon } from '@lucide/svelte';
 
-	let { profile }: { profile: Profile } = $props();
 	let searchQuery = $state('');
 
 	const filteredItems = $derived(
-		profile.items.filter(
+		active.profile?.items.filter(
 			x =>
 				x.getDisplayName().toLowerCase().includes(searchQuery.toLowerCase()) ||
 				x.category.includes(searchQuery.toLowerCase()),
-		),
+		) ?? [],
 	);
 </script>
 

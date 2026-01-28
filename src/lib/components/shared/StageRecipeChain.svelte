@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type Profile from '@/lib/models/profile';
 	import type { RecipeVariant } from '@/lib/models/recipe';
+	import active from '@/lib/stores/active.svelte';
 	import dagre from '@dagrejs/dagre';
 	import {
 		Background,
@@ -12,8 +12,7 @@
 	} from '@xyflow/svelte';
 	import { nanoid } from 'nanoid';
 
-	let { profile, recipeChain = [] }: { profile: Profile; recipeChain?: RecipeVariant[] } =
-		$props();
+	let { recipeChain = [] }: { recipeChain?: RecipeVariant[] } = $props();
 
 	let nodes = $state.raw<Node[]>([]);
 	let edges = $state.raw<Edge[]>([]);
@@ -31,7 +30,7 @@
 			const consumers = recipeChain.filter(x => x.in.some(input => input.id === output.id));
 
 			consumers.forEach(consumer => {
-				const item = profile.getItemById(output.id);
+				const item = active.profile?.getItemById(output.id);
 
 				edges = [
 					...edges,

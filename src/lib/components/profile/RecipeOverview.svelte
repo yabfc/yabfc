@@ -1,22 +1,21 @@
 <script lang="ts">
 	import RecipeDetailsDialog from '@/lib/components/profile/RecipeDetailsDialog.svelte';
 	import SearchInput from '@/lib/components/shared/Search.svelte';
-	import Profile from '@/lib/models/profile';
+	import active from '@/lib/stores/active.svelte';
 	import { ArrowBigRightDashIcon, TestTubeDiagonalIcon } from '@lucide/svelte';
 
-	let { profile }: { profile: Profile } = $props();
 	let searchQuery = $state('');
 
 	let dialog = $state<HTMLDialogElement>(),
 		dialogRecipeId = $state<string>();
 
 	const filteredRecipes = $derived(
-		profile.recipes.filter(
+		active.profile?.recipes.filter(
 			x =>
 				x.craftable !== false &&
 				(x.getDisplayName().toLowerCase().includes(searchQuery.toLowerCase()) ||
 					x.category.includes(searchQuery.toLowerCase())),
-		),
+		) ?? [],
 	);
 
 	function openDetailsDialog(recipeId: string) {
@@ -42,7 +41,7 @@
 							<div class="text-xs font-semibold uppercase opacity-60">
 								<ArrowBigRightDashIcon size="16" class="inline" />
 								{recipe.out
-									.map(x => profile.getItemById(x.id)?.name ?? x.id)
+									.map(x => active.profile?.getItemById(x.id)?.name ?? x.id)
 									.join(', ')}
 							</div>
 						</div>
@@ -81,4 +80,4 @@
 	{/each}
 </ul>
 
-<RecipeDetailsDialog bind:dialog recipeId={dialogRecipeId} {profile} />
+<RecipeDetailsDialog bind:dialog recipeId={dialogRecipeId} />

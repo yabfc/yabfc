@@ -1,17 +1,16 @@
 <script lang="ts">
 	import SearchInput from '@/lib/components/shared/Search.svelte';
-	import Profile from '@/lib/models/profile';
+	import active from '@/lib/stores/active.svelte';
 	import { HammerIcon } from '@lucide/svelte';
 
-	let { profile }: { profile: Profile } = $props();
 	let searchQuery = $state('');
 
 	const filteredMachines = $derived(
-		profile.machines.filter(
+		active.profile?.machines.filter(
 			x =>
 				x.getDisplayName().toLowerCase().includes(searchQuery.toLowerCase()) ||
 				x.recipeCategories.some(x => x.includes(searchQuery.toLowerCase())),
-		),
+		) ?? [],
 	);
 </script>
 

@@ -1,17 +1,14 @@
 <script lang="ts">
 	import Dialog from '@/lib/components/shared/Dialog.svelte';
-	import Profile from '@/lib/models/profile';
 	import { type BaseItemIo } from '@/lib/models/recipe';
+	import active from '@/lib/stores/active.svelte';
 	import { ArrowBigRightDashIcon, FactoryIcon, TestTubeDiagonalIcon } from '@lucide/svelte';
 
-	let {
-		dialog = $bindable(),
-		recipeId,
-		profile,
-	}: { dialog?: HTMLDialogElement; recipeId?: string; profile: Profile } = $props();
+	let { dialog = $bindable(), recipeId }: { dialog?: HTMLDialogElement; recipeId?: string } =
+		$props();
 
-	let recipe = $derived(profile.getRecipeById(recipeId ?? ''));
-	let machines = $derived(recipe ? profile.getMachinesByRecipe(recipe) : []);
+	let recipe = $derived(active.profile?.getRecipeById(recipeId ?? ''));
+	let machines = $derived(recipe ? (active.profile?.getMachinesByRecipe(recipe) ?? []) : []);
 </script>
 
 <Dialog bind:dialog>
@@ -36,7 +33,7 @@
 
 	<div class="bg-base-200 rounded-box my-4 flex items-center justify-between gap-2 p-4">
 		{#snippet itemIO(x: BaseItemIo)}
-			{@const item = profile.getItemById(x.id)}
+			{@const item = active.profile?.getItemById(x.id)}
 			<li>
 				<span class="text-base-content/50">{x.amount}x</span>
 				<span class="font-bold">{item?.getDisplayName()}</span>
