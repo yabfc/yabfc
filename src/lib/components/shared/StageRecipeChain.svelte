@@ -1,4 +1,5 @@
 <script lang="ts">
+	import RecipeNode from '@/lib/components/shared/stage/RecipeNode.svelte';
 	import type { RecipeVariant } from '@/lib/models/recipe';
 	import active from '@/lib/stores/active.svelte';
 	import dagre from '@dagrejs/dagre';
@@ -17,9 +18,12 @@
 	let nodes = $state.raw<Node[]>([]);
 	let edges = $state.raw<Edge[]>([]);
 
+	const nodeTypes = { recipe: RecipeNode };
+
 	// generate nodes
 	nodes = recipeChain.map(x => ({
 		id: x.id,
+		type: 'recipe',
 		position: { x: 0, y: 0 },
 		data: { label: x.id },
 	}));
@@ -93,6 +97,7 @@
 <SvelteFlow
 	bind:nodes
 	bind:edges
+	{nodeTypes}
 	proOptions={{ hideAttribution: true }}
 	nodesConnectable={false}
 	deleteKey={null}
