@@ -1,4 +1,5 @@
 <script lang="ts">
+	import RecipeEdgeComponent from '@/lib/components/shared/stage/RecipeEdge.svelte';
 	import RecipeNodeComponent from '@/lib/components/shared/stage/RecipeNode.svelte';
 	import type { RecipeEdge, RecipeNode } from '@/lib/models/node';
 	import dagre from '@dagrejs/dagre';
@@ -21,6 +22,7 @@
 	let edges = $state.raw<Edge[]>([]);
 
 	const nodeTypes = { recipe: RecipeNodeComponent };
+	const edgeTypes = { recipe: RecipeEdgeComponent };
 
 	// map nodes
 	nodes = recipeNodes.map(x => ({
@@ -33,6 +35,7 @@
 	// map edges
 	edges = recipeEdges.map(x => ({
 		id: nanoid(),
+		type: 'recipe',
 		source: x.from,
 		target: x.to,
 		label: `${x.amount}x ${x.itemId}`,
@@ -87,6 +90,7 @@
 	bind:nodes
 	bind:edges
 	{nodeTypes}
+	{edgeTypes}
 	proOptions={{ hideAttribution: true }}
 	nodesConnectable={false}
 	deleteKey={null}
