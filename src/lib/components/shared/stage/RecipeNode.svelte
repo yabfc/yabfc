@@ -1,4 +1,5 @@
 <script lang="ts">
+	import type { RecipeNode } from '@/lib/models/node';
 	import active from '@/lib/stores/active.svelte';
 	import { FactoryIcon } from '@lucide/svelte';
 	import { Handle, Position, type NodeProps } from '@xyflow/svelte';
@@ -7,7 +8,9 @@
 		data,
 		targetPosition = Position.Left,
 		sourcePosition = Position.Right,
-	}: NodeProps = $props();
+	}: NodeProps & { data: { recipeNode: RecipeNode } } = $props();
+
+	const recipe = active.profile?.getRecipeById(data.recipeNode.recipeId);
 </script>
 
 <Handle type="target" position={targetPosition} />
@@ -17,7 +20,7 @@
 >
 	<FactoryIcon size="28" class="text-secondary/70" />
 
-	<span class="font-bold">Recipe Name</span>
+	<span class="font-bold">{recipe?.getDisplayName()}</span>
 
 	<ul class="text-base-content/80 flex flex-col gap-1 text-xs">
 		{#snippet factory(name: string, amount: number, effectStrings: string[])}
@@ -31,7 +34,21 @@
 			</li>
 		{/snippet}
 
-		{@render factory('Factory Name', 2, ['effect'])}
+		{#each data.recipeNode.machines as machine}
+			{@render factory(
+				active.profile?.getMachineById(machine.machineId)?.getDisplayName() ??
+					'Unknown Machine',
+				machine.amount,
+				machine.usedEffects.map(x => {
+					let s =
+						active.profile?.getEffectModuleById(x.effectId)?.getDisplayName() ??
+						'Unknown Effect';
+					if (x.scaling !== 1) s += ` ${x.scaling}x`;
+
+					return s;
+				}),
+			)}
+		{/each}
 	</ul>
 </div>
 
