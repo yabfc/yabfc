@@ -1,3 +1,5 @@
+import { type EffectConfiguration } from '@/lib/models/effect';
+
 export interface MachineFeatureInterface {
 	id: string;
 	name?: string;
@@ -27,6 +29,13 @@ export class MachineFeature {
 				.join(' ')
 		);
 	}
+}
+
+export interface MachineConfiguration {
+	id: string;
+	machineId: string;
+	usedEffects: EffectConfiguration[];
+	amount: number;
 }
 
 export interface MachineInterface {

@@ -1,7 +1,6 @@
 <script lang="ts">
-	import RecipeNode from '@/lib/components/shared/stage/RecipeNode.svelte';
-	import type { RecipeVariant } from '@/lib/models/recipe';
-	import active from '@/lib/stores/active.svelte';
+	import RecipeNodeComponent from '@/lib/components/shared/stage/RecipeNode.svelte';
+	import type { RecipeEdge, RecipeNode } from '@/lib/models/node';
 	import dagre from '@dagrejs/dagre';
 	import {
 		Background,
@@ -13,41 +12,31 @@
 	} from '@xyflow/svelte';
 	import { nanoid } from 'nanoid';
 
-	let { recipeChain = [] }: { recipeChain?: RecipeVariant[] } = $props();
+	let {
+		nodes: recipeNodes = [],
+		edges: recipeEdges = [],
+	}: { nodes?: RecipeNode[]; edges?: RecipeEdge[] } = $props();
 
 	let nodes = $state.raw<Node[]>([]);
 	let edges = $state.raw<Edge[]>([]);
 
-	const nodeTypes = { recipe: RecipeNode };
+	const nodeTypes = { recipe: RecipeNodeComponent };
 
-	// generate nodes
-	nodes = recipeChain.map(x => ({
+	// map nodes
+	nodes = recipeNodes.map(x => ({
 		id: x.id,
 		type: 'recipe',
 		position: { x: 0, y: 0 },
-		data: { label: x.id },
+		data: { recipeNode: x },
 	}));
 
-	// generate edges
-	recipeChain.forEach(producer => {
-		producer.out.forEach(output => {
-			const consumers = recipeChain.filter(x => x.in.some(input => input.id === output.id));
-
-			consumers.forEach(consumer => {
-				const item = active.profile?.getItemById(output.id);
-
-				edges = [
-					...edges,
-					{
-						id: nanoid(),
-						source: producer.id,
-						target: consumer.id,
-						label: item?.name ?? output.id,
-					},
-				];
-			});
-		});
-	});
+	// map edges
+	edges = recipeEdges.map(x => ({
+		id: nanoid(),
+		source: x.from,
+		target: x.to,
+		label: `${x.amount}x ${x.itemId}`,
+	}));
 
 	const dagreGraph = new dagre.graphlib.Graph();
 	dagreGraph.setDefaultEdgeLabel(() => ({}));

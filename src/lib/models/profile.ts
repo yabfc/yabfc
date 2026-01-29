@@ -1,4 +1,4 @@
-import Machine, { type MachineInterface } from '@/lib/models/machine';
+import Machine, { type MachineConfiguration, type MachineInterface } from '@/lib/models/machine';
 import Item, { type ItemInterface } from '@/lib/models/item';
 import Recipe, { type RecipeInterface } from '@/lib/models/recipe';
 import EffectModule, { type EffectModuleInterface } from '@/lib/models/effect';
@@ -47,6 +47,14 @@ export default class Profile {
 
 	getRecipesByItemOutputId(id: string): Recipe[] {
 		return this.recipes.filter(x => x.out.find(io => io.id == id));
+	}
+
+	getEffectModuleById(id: string) {
+		return this.machineEffects.find(x => x.id === id);
+	}
+
+	getMachineById(id: string) {
+		return this.machines.find(x => x.id === id);
 	}
 
 	getMachinesByRecipe(recipe: Recipe): Machine[] {
