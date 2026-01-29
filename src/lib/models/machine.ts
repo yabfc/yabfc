@@ -42,6 +42,7 @@ export interface MachineConfiguration {
 	machineId: string;
 	usedEffects: EffectConfiguration[];
 	amount: number;
+	requiredPower: number;
 }
 
 export interface MachineInterface {

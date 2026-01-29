@@ -36,6 +36,7 @@ function generateNodes(usedVariants: RecipeVariant[]): VisualRepresentation {
 			machineId: variant.machineId,
 			usedEffects: variant.usedEffectModuleIds,
 			amount: variant.amount!,
+			requiredPower: variant.requiredPower,
 		});
 	});
 
