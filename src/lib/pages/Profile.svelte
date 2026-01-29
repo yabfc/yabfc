@@ -1,15 +1,19 @@
 <script lang="ts">
 	import ProfileLayout from '@/lib/components/profile/ProfileLayout.svelte';
+	import active from '@/lib/stores/active.svelte';
 	import profiles from '@/lib/stores/profiles.svelte';
 	import { CableCarIcon } from '@lucide/svelte';
 
 	let { pathParams }: { pathParams: string[] } = $props();
 
-	let activeProfile = $derived(profiles.find(x => x.id === pathParams[0]));
+	$effect(() => {
+		// update active profile
+		active.profile = profiles.find(x => x.id === pathParams[0]);
+	});
 </script>
 
-{#if activeProfile}
-	<ProfileLayout profile={activeProfile} />
+{#if active.profile}
+	<ProfileLayout />
 {:else}
 	<div class="flex min-h-screen flex-col items-center justify-center gap-4 p-8 pt-28">
 		<div>

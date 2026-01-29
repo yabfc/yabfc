@@ -1,20 +1,23 @@
 <script lang="ts">
-	import { Search } from '@lucide/svelte';
+	import { SearchIcon, XIcon } from '@lucide/svelte';
 
 	let { value = $bindable() } = $props();
-	function clearSearch() {
-		value = '';
-	}
+
+	const clearSearch = () => (value = '');
 </script>
 
-<div class="border-base-200 fixed p-1">
-	<label class="input input-sm gap-2">
-		<Search size="16" class="opacity-50"></Search>
-		<input type="text" class="grow" placeholder="Search ..." bind:value />
-		{#if value.length > 0}
-			<button type="button" class="btn btn-ghost btn-xs btn-circle" onclick={clearSearch}>
-				✕
-			</button>
-		{/if}
+<div class="bg-base-100 sticky top-0 z-10 p-3">
+	<label class="input input-sm">
+		<SearchIcon size="14" />
+
+		<input type="search" bind:value placeholder="Search" class="grow" />
+
+		<div class="size-6">
+			{#if value.length > 0}
+				<button class="btn btn-ghost btn-xs btn-square" onclick={clearSearch}>
+					<XIcon size="12" />
+				</button>
+			{/if}
+		</div>
 	</label>
 </div>

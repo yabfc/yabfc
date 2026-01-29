@@ -1,10 +1,10 @@
-import { type RecipeVariant } from '@/lib/models/recipe';
 import { type MachineConfiguration } from '@/lib/models/machine';
+import { type RecipeVariant } from '@/lib/models/recipe';
 import { nanoid } from 'nanoid';
 
 interface VisualRepresentation {
 	nodes: RecipeNode[];
-	edges: Edge[];
+	edges: RecipeEdge[];
 }
 
 interface RecipeNode {
@@ -13,7 +13,7 @@ interface RecipeNode {
 	machines: MachineConfiguration[];
 }
 
-interface Edge {
+export interface RecipeEdge {
 	from: string;
 	to: string;
 	itemId: string;
@@ -59,7 +59,7 @@ function generateNodes(usedVariants: RecipeVariant[]): VisualRepresentation {
 		});
 	});
 
-	let edgeMap: Record<string, Edge[]> = {};
+	let edgeMap: Record<string, RecipeEdge[]> = {};
 
 	Object.entries(demandMap).forEach(([itemId, consumers]) => {
 		const producers = [...(supplyMap[itemId] || [])];

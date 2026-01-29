@@ -1,11 +1,11 @@
-import Machine, { MachineFeature, type MachineInterface } from '@/lib/models/machine';
+import EffectModule, { type EffectModuleInterface } from '@/lib/models/effect';
 import Item, { type ItemInterface } from '@/lib/models/item';
+import Machine, { MachineFeature, type MachineInterface } from '@/lib/models/machine';
 import Recipe, {
 	type RecipeInterface,
 	type RecipeVariant,
 	type RequestedBaseItemIo,
 } from '@/lib/models/recipe';
-import EffectModule, { type EffectModuleInterface } from '@/lib/models/effect';
 import Research, { type ResearchInterface } from '@/lib/models/research';
 import solver, { type Model, type SolveResult } from 'javascript-lp-solver';
 import { nanoid } from 'nanoid';
@@ -389,7 +389,7 @@ export default class Profile {
 		return this.recipes.filter(x => x.out.find(io => io.id == id));
 	}
 
-	getEffectModuleById(id: string): EffectModule | undefined {
+	getEffectModuleById(id: string) {
 		return this.machineEffects.find(x => x.id === id);
 	}
 
@@ -414,5 +414,9 @@ export default class Profile {
 
 	getMachinesByRecipe(recipeCategory: string): Machine[] {
 		return this.machines.filter(x => x.recipeCategories.includes(recipeCategory));
+	}
+
+	getMachineById(id: string) {
+		return this.machines.find(x => x.id === id);
 	}
 }

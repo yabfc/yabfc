@@ -1,8 +1,8 @@
 <script lang="ts">
 	import OverviewWindow from '@/lib/components/profile/OverviewWindow.svelte';
-	import type Profile from '@/lib/models/profile';
-
-	let { profile }: { profile: Profile } = $props();
+	import ProfileStage from '@/lib/components/profile/ProfileStage.svelte';
 </script>
 
-<OverviewWindow {profile} />
+<OverviewWindow />
+
+<ProfileStage />
