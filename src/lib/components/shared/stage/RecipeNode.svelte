@@ -13,7 +13,11 @@
 	const recipe = active.profile?.getRecipeById(data.recipeNode.recipeId);
 </script>
 
-<Handle type="target" position={targetPosition} />
+<Handle
+	type="target"
+	position={targetPosition}
+	class="border-base-content/50 rounded-full border [--xy-handle-background-color:color-mix(in_oklab,var(--color-base-content)_50%,transparent)]"
+/>
 
 <div
 	class="rounded-box bg-base-100 border-base-content/10 flex flex-col items-center gap-1 border p-3"
@@ -52,4 +56,8 @@
 	</ul>
 </div>
 
-<Handle type="source" position={sourcePosition} />
+<Handle
+	type="source"
+	position={sourcePosition}
+	class="border-base-content/50 rounded-full border [--xy-handle-background-color:color-mix(in_oklab,var(--color-base-content)_50%,transparent)]"
+/>
