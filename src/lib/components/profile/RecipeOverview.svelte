@@ -14,6 +14,7 @@
 			x =>
 				x.craftable !== false &&
 				(x.getDisplayName().toLowerCase().includes(searchQuery.toLowerCase()) ||
+					x.id.toLowerCase().includes(searchQuery.toLowerCase()) ||
 					x.category.includes(searchQuery.toLowerCase())),
 		) ?? [],
 	);
