@@ -20,7 +20,7 @@ export interface RecipeEdge {
 	amount: number;
 }
 
-function generateNodes(usedVariants: RecipeVariant[]): VisualRepresentation {
+export function generateNodes(usedVariants: RecipeVariant[]): VisualRepresentation {
 	// cluster the variants first to each recipe. So e.g two different
 	// machine configs for the same recipe end up in the same node later
 	let nodeMap: Record<string, RecipeNode> = {};

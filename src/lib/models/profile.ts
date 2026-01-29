@@ -31,7 +31,7 @@ export interface OptimizationRequestInterface {
 	in: RequestedBaseItemIo[];
 	out: RequestedBaseItemIo[];
 	duration: number;
-	allowedEffectmodules: EffectModule[];
+	allowedEffectModules: EffectModule[];
 	limitations: string[];
 	weights: OptimizationWeights;
 	tolerance: number;
@@ -42,7 +42,7 @@ export class OptimizationRequest {
 	in: RequestedBaseItemIo[];
 	out: RequestedBaseItemIo[];
 	duration: number;
-	allowedEffectmodules: EffectModule[];
+	allowedEffectModules: EffectModule[];
 	limitations: string[];
 	weights: OptimizationWeights;
 	tolerance: number;
@@ -52,7 +52,7 @@ export class OptimizationRequest {
 		this.in = request.in;
 		this.out = request.out;
 		this.duration = request.duration;
-		this.allowedEffectmodules = request.allowedEffectmodules;
+		this.allowedEffectModules = request.allowedEffectModules;
 		this.limitations = request.limitations;
 		this.weights = request.weights;
 		this.tolerance = 0.05;
@@ -141,11 +141,11 @@ export default class Profile {
 			if (modifiable) {
 				// over/underclocking
 				const stepCount = 32;
-				const range = modifiable.max_value! - modifiable.min_value!;
+				const range = modifiable.maxValue! - modifiable.minValue!;
 				const stepSize = range / stepCount;
 
 				for (let i = 0; i <= stepCount; i++) {
-					const value = modifiable.min_value! + i * stepSize;
+					const value = modifiable.minValue! + i * stepSize;
 					variants.push(this.calculateRecipeVariant(recipe, machine, [effect], value));
 				}
 			} else {
@@ -192,14 +192,6 @@ export default class Profile {
 		let speed = machine.getBaseCraftingSpeed(this.machineEffects);
 		let power = machine.getPowerConsumptionWithEffects(effects, scaling);
 		let productivity = 1;
-		// maybe switch to nanoid id
-		let id = `${recipe.id}__${machine.id}`;
-		if (effects.length > 0) {
-			id += `__${effects.map(x => x.id).join('__')}`;
-		}
-		if (scaling !== 1) {
-			id += `__${scaling}`;
-		}
 		effects.forEach(effect => {
 			effect.modifiers.forEach(modifier => {
 				if (
@@ -221,7 +213,7 @@ export default class Profile {
 		});
 
 		return {
-			id: id,
+			id: nanoid(),
 			recipeId: recipe.id,
 			recipePriority: recipe.priority,
 			machineId: machine.id,
@@ -244,7 +236,7 @@ export default class Profile {
 		const requestedInputItems = request.in.map(x => x.id);
 
 		if (!this.allItemIdsExist(requestedItems)) {
-			console.log(this.getMissingItemIds(requestedItems).join(', ') + ' do not exist');
+			// TODO inform the user of the missing item IDs
 			return;
 		}
 
@@ -275,7 +267,7 @@ export default class Profile {
 			}
 		});
 		if (request.in.length !== 0 && request.out.length > 1) {
-			console.log('can only maximize one output item');
+			// TODO inform the user that only one output can be maximized
 			return;
 		}
 		request.out.forEach(item => {
@@ -343,11 +335,7 @@ export default class Profile {
 
 		const solved = solver.Solve(model) as SolveResult | undefined;
 
-		if (solved === undefined) {
-			return;
-		}
-		if (!solved.feasible) {
-			console.log('not feasible');
+		if (!solved || !solved.feasible) {
 			return;
 		}
 
@@ -399,14 +387,14 @@ export default class Profile {
 
 	getMinPowerConsumptionByRecipeId(id: string): number | undefined {
 		const recipe = this.getRecipeById(id);
-		if (recipe === undefined) return;
-		const valid_machines = this.machines.filter(x =>
+		if (!recipe) return;
+		const validMachines = this.machines.filter(x =>
 			x.recipeCategories.includes(recipe.category),
 		);
-		if (valid_machines.length === 0) {
+		if (validMachines.length === 0) {
 			return;
 		}
-		const minConsumption = valid_machines.reduce((min, machine) =>
+		const minConsumption = validMachines.reduce((min, machine) =>
 			machine.requiredPower < min.requiredPower ? machine : min,
 		);
 		return minConsumption.requiredPower;

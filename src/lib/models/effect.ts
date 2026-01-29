@@ -13,8 +13,8 @@ export interface FixedModifier extends BaseModifier {
 
 export interface VariableModifier extends BaseModifier {
 	modifiable: true;
-	min_value: number;
-	max_value: number;
+	minValue: number;
+	maxValue: number;
 }
 
 export type ModifierInterface = FixedModifier | VariableModifier;
@@ -32,8 +32,8 @@ export class Modifier {
 	modifiable: boolean;
 	onlyOutputScales?: boolean;
 	valueScaling?: 'exponential';
-	min_value?: number;
-	max_value?: number;
+	minValue?: number;
+	maxValue?: number;
 
 	constructor(modifier: ModifierInterface) {
 		this.id = modifier.id;
@@ -43,8 +43,8 @@ export class Modifier {
 		this.valueScaling = modifier.valueScaling;
 
 		if (modifier.modifiable) {
-			this.min_value = modifier.min_value;
-			this.max_value = modifier.max_value;
+			this.minValue = modifier.minValue;
+			this.maxValue = modifier.maxValue;
 		} else {
 			this.value = modifier.value;
 		}

@@ -23319,8 +23319,8 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"min_value": 1,
-					"max_value": 2.5,
+					"minValue": 1,
+					"maxValue": 2.5,
 					"modifiable": true,
 					"onlyOutputScales": false
 				},
@@ -23340,8 +23340,8 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"min_value": 0,
-					"max_value": 1,
+					"minValue": 0,
+					"maxValue": 1,
 					"modifiable": true,
 					"onlyOutputScales": false
 				},
