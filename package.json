@@ -26,7 +26,7 @@
 		"vite": "^7.1.7"
 	},
 	"dependencies": {
-		"javascript-lp-solver": "^1.0.1",
+		"javascript-lp-solver": "^1.0.3",
 		"nanoid": "^5.1.6"
 	}
 }
