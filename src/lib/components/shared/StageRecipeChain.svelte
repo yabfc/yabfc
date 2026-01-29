@@ -91,6 +91,10 @@
 	nodesConnectable={false}
 	deleteKey={null}
 	fitView
+	class="[--background-color:var(--color-base-100)]"
 >
-	<Background variant={BackgroundVariant.Dots} />
+	<Background
+		variant={BackgroundVariant.Dots}
+		class="opacity-50 [--xy-background-pattern-color:var(--color-base-content)]"
+	/>
 </SvelteFlow>
