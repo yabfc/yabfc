@@ -9,6 +9,7 @@
 		active.profile?.machines.filter(
 			x =>
 				x.getDisplayName().toLowerCase().includes(searchQuery.toLowerCase()) ||
+				x.id.includes(searchQuery.toLowerCase()) ||
 				x.recipeCategories.some(x => x.includes(searchQuery.toLowerCase())),
 		) ?? [],
 	);
