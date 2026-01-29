@@ -1,4 +1,4 @@
-import Machine, { type MachineInterface } from '@/lib/models/machine';
+import Machine, { MachineFeature, type MachineInterface } from '@/lib/models/machine';
 import Item, { type ItemInterface } from '@/lib/models/item';
 import Recipe, {
 	type RecipeInterface,
@@ -87,86 +87,77 @@ export default class Profile {
 	}
 
 	generateRecipeVariants(): RecipeVariant[] {
-		const variants: RecipeVariant[] = [];
-		this.recipes
-			.filter(x => x.craftable !== false && x.available)
-			.forEach(recipe => {
-				const machines = this.getMachinesByRecipe(recipe.category).filter(x => x.available);
-				if (machines.length === 0) {
-					// console.log(
-					// 	'Recipe: ' +
-					// 		recipe.id +
-					// 		' with category ' +
-					// 		recipe.category +
-					// 		' has no machines available',
-					// );
+		const allVariants: RecipeVariant[] = [];
+		const validRecipes = this.recipes.filter(r => r.craftable !== false && r.available);
+		validRecipes.forEach(recipe => {
+			const machines = this.getMachinesByRecipe(recipe.category).filter(m => m.available);
+			machines.forEach(machine => {
+				// default variant, no effects
+				allVariants.push(this.calculateRecipeVariant(recipe, machine, [], 1));
+
+				// variants with effects
+				for (const feature of machine.features) {
+					if (feature.hidden || !feature.effectPerSlot || feature.itemSlots <= 0) {
+						continue;
+					}
+
+					this.addModuleVariants(allVariants, recipe, machine, feature);
+					this.addEffectVariants(allVariants, recipe, machine, feature);
 				}
-				machines.forEach(machine => {
-					// default, no effects
-					variants.push(this.calculateRecipeVariant(recipe, machine, [], 1));
-
-					// for over/underclocking
-					const stepCount = 32;
-					machine.features.forEach(f => {
-						if (f.hidden === true) {
-							return;
-						}
-						const allowedModules = f.effectPerSlot;
-						const slots = f.itemSlots;
-						// true for modules
-						if (f.effectPerSlot && slots > 0) {
-							// the normal factorio effects
-							const perSlotEffects = this.machineEffects.filter(
-								x =>
-									allowedModules.includes(x.id) &&
-									!x.id.includes('quality') &&
-									x.perSlot,
-							);
-							const comb = this.getAllModuleCombinations(perSlotEffects, slots);
-							comb.forEach(c => {
-								variants.push(this.calculateRecipeVariant(recipe, machine, c, 1));
-							});
-
-							// e.g summerslooping across 1, 2 or 4 slots
-							const effects = this.machineEffects.filter(
-								x => allowedModules.includes(x.id) && !x.perSlot,
-							);
-
-							effects.forEach(effect => {
-								const modifiable = effect.modifiers.find(x => x.modifiable);
-								if (modifiable) {
-									// under/overclocking
-									const steps =
-										(modifiable.max_value! - modifiable.min_value!) / stepCount;
-									for (let i = 0; i <= stepCount; i++) {
-										variants.push(
-											this.calculateRecipeVariant(
-												recipe,
-												machine,
-												[effect],
-												modifiable.min_value! + i * steps,
-											),
-										);
-									}
-								} else {
-									// summerslooping
-									for (let i = 1; i <= slots; i++) {
-										variants.push(
-											this.calculateRecipeVariant(
-												recipe,
-												machine,
-												[effect],
-												i / slots,
-											),
-										);
-									}
-								}
-							});
-						}
-					});
-				});
 			});
-		return variants;
+		});
+		return allVariants;
+	}
+
+	addModuleVariants(
+		variants: RecipeVariant[],
+		recipe: Recipe,
+		machine: Machine,
+		feature: MachineFeature,
+	): void {
+		const perSlotEffects = this.machineEffects.filter(
+			x => feature.effectPerSlot.includes(x.id) && !x.id.includes('quality') && x.perSlot,
+		);
+
+		const combinations = this.getAllModuleCombinations(perSlotEffects, feature.itemSlots);
+		for (const combo of combinations) {
+			variants.push(this.calculateRecipeVariant(recipe, machine, combo, 1));
+		}
+	}
+
+	private addEffectVariants(
+		variants: RecipeVariant[],
+		recipe: Recipe,
+		machine: Machine,
+		feature: MachineFeature,
+	): void {
+		const effects = this.machineEffects.filter(
+			x => feature.effectPerSlot.includes(x.id) && !x.perSlot,
+		);
+
+		for (const effect of effects) {
+			const modifiable = effect.modifiers.find(m => m.modifiable);
+
+			if (modifiable) {
+				// over/underclocking
+				const stepCount = 32;
+				const range = modifiable.max_value! - modifiable.min_value!;
+				const stepSize = range / stepCount;
+
+				for (let i = 0; i <= stepCount; i++) {
+					const value = modifiable.min_value! + i * stepSize;
+					variants.push(this.calculateRecipeVariant(recipe, machine, [effect], value));
+				}
+			} else {
+				// summerslooping
+				for (let i = 1; i <= feature.itemSlots; i++) {
+					const boostRatio = i / feature.itemSlots;
+					variants.push(
+						this.calculateRecipeVariant(recipe, machine, [effect], boostRatio),
+					);
+				}
+			}
+		}
 	}
 
 	getAllModuleCombinations(availableModules: EffectModule[], slots: number): EffectModule[][] {
@@ -258,18 +249,16 @@ export default class Profile {
 		}
 
 		const model: Model = {
-			optimize: { cost: 'min' },
+			optimize: 'cost',
+			opType: 'min',
 			constraints: {},
 			variables: {},
 			options: {
 				timeout: 5000,
 				branching: 'strong',
-				tolerance: request.tolerance,
 			},
 			ints: {},
 		};
-		const multiOptimization: any = {};
-		let multiObjective = false;
 
 		// net production of each item should be >= 0, (for the target item == targetAmount)
 		this.items
@@ -279,58 +268,32 @@ export default class Profile {
 			if (item.exact) {
 				model.constraints[item.id] = { equal: 1 };
 			} else {
-				console.log('here');
 				model.constraints[item.id] = {
 					max: 1,
+					min: 0.000001,
 				};
 			}
 		});
+		if (request.in.length !== 0 && request.out.length > 1) {
+			console.log('can only maximize one output item');
+			return;
+		}
 		request.out.forEach(item => {
-			if (item.amount === 0) {
-				multiOptimization[item.id] = 'max';
-				multiObjective = true;
-				model.constraints[item.id] = { min: 0.00001 };
+			if (request.in.length !== 0 && item.amount === 0) {
+				model.optimize = item.id;
+				model.opType = 'max';
 			}
-			if (item.exact) {
-				model.constraints[item.id] = { equal: item.amount / request.duration };
-			} else {
-				model.constraints[item.id] = {
-					min: (item.amount / request.duration) * (1 - request.tolerance),
-				};
-			}
+			if (request.in.length)
+				if (item.exact) {
+					model.constraints[item.id] = { equal: item.amount / request.duration };
+				} else {
+					model.constraints[item.id] = {
+						min: (item.amount / request.duration) * (1 - request.tolerance),
+					};
+				}
 		});
-		model.optimize = { ...multiOptimization, cost: 'min' };
 
 		const variants = this.generateRecipeVariants();
-		variants.forEach(variant => {
-			const recipeVar: any = {};
-
-			this.items.forEach(item => {
-				const input = variant.in.find(x => x.id === item.id);
-				if (input) {
-					recipeVar[item.id] = -input.amount;
-				}
-
-				const output = variant.out.find(x => x.id === item.id);
-				if (output && !requestedInputItems.includes(output.id)) {
-					recipeVar[item.id] = output.amount;
-				}
-			});
-
-			// cut the power down to MW, otherwise the cost get's way too high
-			const powerCost = (request.weights.power * variant.requiredPower) / 1_000_000;
-
-			// priority needs a really hard penality. Alternate recipes in satisfactory
-			// bloat the result up by a lot: 40 vs 60+ for turbo-motors
-			const priorityCost = Math.pow(variant.recipePriority, request.weights.priority);
-			const buildingCost = request.weights.building;
-			recipeVar.cost = powerCost + priorityCost + buildingCost;
-			model.variables[variant.id] = recipeVar;
-
-			model.ints![variant.id] = 1;
-		});
-
-		//console.log(variants);
 		if (request.in.length !== 0) {
 			// add pseudovariant if user says they have a spare amount of some ressource
 			variants.push({
@@ -344,23 +307,42 @@ export default class Profile {
 				usedEffectModuleIds: [],
 			});
 		}
-		request.in.forEach(x => {
+		variants.forEach(variant => {
 			const recipeVar: any = {};
-			recipeVar[x.id] = x.amount;
-			recipeVar.cost = 0;
-			model.variables['requested-inputs'] = recipeVar;
-			model.ints!['requested-inputs'] = 0;
-			if (x.exact) {
-				model.ints!['requested-inputs'] = 1;
+			if (
+				variant.out.find(
+					x => requestedInputItems.includes(x.id) && variant.id !== 'requested-inputs',
+				)
+			) {
+				return;
 			}
+			this.items.forEach(item => {
+				const input = variant.in.find(x => x.id === item.id);
+				if (input) {
+					recipeVar[item.id] = -input.amount;
+				}
+
+				const output = variant.out.find(x => x.id === item.id);
+				if (output) {
+					recipeVar[item.id] = output.amount;
+				}
+			});
+
+			// cut the power down to MW, otherwise the cost get's way too high
+			const powerCost = (request.weights.power * variant.requiredPower) / 1_000_000;
+
+			// priority needs a really hard penality. Alternate recipes in satisfactory
+			// bloat the result up by a lot: 40 vs 60+ for turbo-motors
+			const priorityCost = Math.pow(variant.recipePriority, request.weights.priority);
+			const buildingCost = request.weights.building;
+			recipeVar.cost = powerCost + priorityCost + buildingCost;
+
+			model.variables[variant.id] = recipeVar;
+			model.ints![variant.id] = 1;
 		});
-		let solved: SolveResult | undefined = undefined;
-		if (multiObjective) {
-			solved = solver.MultiObjective(model) as SolveResult | undefined;
-			console.log(solved);
-		} else {
-			solved = solver.Solve(model) as SolveResult | undefined;
-		}
+
+		const solved = solver.Solve(model) as SolveResult | undefined;
+
 		if (solved === undefined) {
 			return;
 		}
