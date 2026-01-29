@@ -7,7 +7,7 @@ interface VisualRepresentation {
 	edges: RecipeEdge[];
 }
 
-interface RecipeNode {
+export interface RecipeNode {
 	id: string;
 	recipeId: string;
 	machines: MachineConfiguration[];
