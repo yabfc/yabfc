@@ -8,6 +8,12 @@ export interface ModifierInterface {
 	valueScaling?: 'exponential';
 }
 
+export interface EffectConfiguration {
+	id: string;
+	effectId: string;
+	scaling: number;
+}
+
 export class Modifier {
 	id: string;
 	name?: string;
