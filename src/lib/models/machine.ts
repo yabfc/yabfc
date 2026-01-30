@@ -113,25 +113,12 @@ export default class Machine {
 		return speed;
 	}
 
-	getPowerConsumptionWithEffects(effects: EffectModule[], scaling: number): number {
+	getPowerConsumption(effects: EffectModule[], scaling: number): number {
 		let power = this.requiredPower;
 		effects.forEach(effect => {
-			const modifiable = effect.modifiers.find(x => x.modifiable);
-			effect.modifiers.forEach(modifier => {
-				if (
-					['consumption', 'power'].includes(modifier.id) &&
-					modifier.valueScaling === 'exponential'
-				) {
-					if (!modifier.modifiable && modifier.value !== undefined) {
-						power *= Math.pow(scaling, modifier.value);
-					}
-				} else if (['consumption', 'power'].includes(modifier.id) && !effect.perSlot) {
-					power *= modifier.value! * scaling;
-				} else if (['consumption', 'power'].includes(modifier.id)) {
-					power *= modifier.value!;
-				}
-			});
+			power = effect.updatePowerConsumption(power, scaling);
 		});
+
 		return power;
 	}
 }

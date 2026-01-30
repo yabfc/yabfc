@@ -190,7 +190,7 @@ export default class Profile {
 		scaling: number,
 	): RecipeVariant {
 		let speed = machine.getBaseCraftingSpeed(this.machineEffects);
-		let power = machine.getPowerConsumptionWithEffects(effects, scaling);
+		let power = machine.getPowerConsumption(effects, scaling);
 		let productivity = 1;
 		effects.forEach(effect => {
 			effect.modifiers.forEach(modifier => {

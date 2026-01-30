@@ -59,6 +59,17 @@ export class Modifier {
 				.join(' ')
 		);
 	}
+
+	updatePowerConsumption(power: number, scaling: number): number {
+		if (!['consumption', 'power'].includes(this.id)) return power;
+
+		if (this.valueScaling === 'exponential') {
+			if (!this.modifiable && this.value !== undefined)
+				power *= Math.pow(scaling, this.value);
+			return power;
+		}
+		return power * this.value!;
+	}
 }
 
 export interface EffectModuleInterface {
@@ -96,5 +107,13 @@ export default class EffectModule {
 
 	getAllModifierIds(): string[] {
 		return this.modifiers.map(x => x.id);
+	}
+
+	/** @returns power consumption with applied effect */
+	updatePowerConsumption(power: number, scaling: number): number {
+		this.modifiers.forEach(modifier => {
+			power = modifier.updatePowerConsumption(power, scaling);
+		});
+		return power;
 	}
 }
