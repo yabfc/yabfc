@@ -60,4 +60,27 @@ export default class Profile {
 	getMachinesByRecipe(recipe: Recipe): Machine[] {
 		return this.machines.filter(x => x.recipeCategories.includes(recipe.category));
 	}
+
+	getResearchById(id: string): Research | undefined {
+		return this.research.find(x => x.id == id);
+	}
+
+	markResearchAsDone(id: string) {
+		let research = this.getResearchById(id);
+		if (research === undefined) {
+			console.log("no research with id '%s' found", id);
+			return;
+		}
+		for (let unlockedRecipe of research.unlocks) {
+			let unlockedRecipeIds = unlockedRecipe.ids
+			for (let unlockedRecipeId of unlockedRecipeIds) {
+				let recipe = this.getRecipeById(unlockedRecipeId)
+				console.log("searching for recipe with id %s", unlockedRecipeId)
+				if (recipe !== undefined) {
+					console.log("unlocked recipe %s", recipe.id)
+					recipe.available = true;
+				}
+			}
+		}
+	}
 }
