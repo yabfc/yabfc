@@ -65,6 +65,28 @@ export default class Profile {
 		return this.research.find(x => x.id == id);
 	}
 
+	getMissingResearchPrequisites(id: string): string[] {
+		let missingPrerequisites: string[] = [];
+		let research = this.getResearchById(id);
+		if (research === undefined) {
+			console.log("no research with id '%s' found", id);
+			return missingPrerequisites;
+		} else {
+			for (let unlockRecipes of research.unlocks) {
+				for (let unlockRecipeId of unlockRecipes.ids) {
+					let unlockedRecipe = this.getRecipeById(unlockRecipeId);
+					if (unlockedRecipe === undefined) {
+						continue;
+					}
+					if (!unlockedRecipe.available) {
+						missingPrerequisites.push(unlockRecipeId);
+					}
+				}
+			}
+			return missingPrerequisites;
+		}
+	}
+
 	markResearchAsDone(id: string) {
 		let research = this.getResearchById(id);
 		if (research === undefined) {
