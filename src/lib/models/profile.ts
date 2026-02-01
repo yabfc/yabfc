@@ -71,20 +71,20 @@ export default class Profile {
 		if (research === undefined) {
 			console.log("no research with id '%s' found", id);
 			return missingPrerequisites;
+		} else if (research.prerequisites === undefined) {
+			return missingPrerequisites;
 		} else {
-			for (let unlockRecipes of research.unlocks) {
-				for (let unlockRecipeId of unlockRecipes.ids) {
-					let unlockedRecipe = this.getRecipeById(unlockRecipeId);
-					if (unlockedRecipe === undefined) {
-						continue;
-					}
-					if (!unlockedRecipe.available) {
-						missingPrerequisites.push(unlockRecipeId);
-					}
+			for (let prerequisiteResearchId of research.prerequisites) {
+				let prerequisiteResearch = this.getResearchById(prerequisiteResearchId);
+				if (prerequisiteResearch === undefined) {
+					continue;
+				}
+				if (!prerequisiteResearch.unlocked) {
+					missingPrerequisites.push(prerequisiteResearchId);
 				}
 			}
-			return missingPrerequisites;
 		}
+		return missingPrerequisites;
 	}
 
 	markResearchAsDone(id: string) {
@@ -93,13 +93,14 @@ export default class Profile {
 			console.log("no research with id '%s' found", id);
 			return;
 		}
+		research.unlocked = true;
 		for (let unlockedRecipe of research.unlocks) {
-			let unlockedRecipeIds = unlockedRecipe.ids
+			let unlockedRecipeIds = unlockedRecipe.ids;
 			for (let unlockedRecipeId of unlockedRecipeIds) {
-				let recipe = this.getRecipeById(unlockedRecipeId)
-				console.log("searching for recipe with id %s", unlockedRecipeId)
+				let recipe = this.getRecipeById(unlockedRecipeId);
+				console.log('searching for recipe with id %s', unlockedRecipeId);
 				if (recipe !== undefined) {
-					console.log("unlocked recipe %s", recipe.id)
+					console.log('unlocked recipe %s', recipe.id);
 					recipe.available = true;
 				}
 			}
