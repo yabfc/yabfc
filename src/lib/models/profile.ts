@@ -65,26 +65,24 @@ export default class Profile {
 		return this.research.find(x => x.id == id);
 	}
 
-	getMissingResearchPrequisites(id: string): string[] {
-		let missingPrerequisites: string[] = [];
-		let research = this.getResearchById(id);
-		if (research === undefined) {
-			console.log("no research with id '%s' found", id);
-			return missingPrerequisites;
-		} else if (research.prerequisites === undefined) {
-			return missingPrerequisites;
-		} else {
-			for (let prerequisiteResearchId of research.prerequisites) {
-				let prerequisiteResearch = this.getResearchById(prerequisiteResearchId);
-				if (prerequisiteResearch === undefined) {
-					continue;
-				}
-				if (!prerequisiteResearch.unlocked) {
-					missingPrerequisites.push(prerequisiteResearchId);
-				}
+	getMissingResearchPrequisites(
+		id: string,
+		missingPrerequisites: Set<string> = new Set(),
+	): string[] {
+		const research = this.getResearchById(id);
+		if (!research || !research.prerequisites) {
+			return Array.from(missingPrerequisites);
+		}
+
+		for (const prereqId of research.prerequisites) {
+			const prereq = this.getResearchById(prereqId);
+
+			if (prereq && !prereq.unlocked && !missingPrerequisites.has(prereqId)) {
+				this.getMissingResearchPrequisites(prereqId, missingPrerequisites);
+				missingPrerequisites.add(prereqId)
 			}
 		}
-		return missingPrerequisites;
+		return Array.from(missingPrerequisites);
 	}
 
 	markResearchAsDone(id: string) {

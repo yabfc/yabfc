@@ -23583,6 +23583,12 @@
             ]
         },
         {
+            "id": "research-quartz-4-1",
+            "name": "Radio Signal Scanning (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
             "id": "research-sulfur-rocket-fuel",
             "name": "Rocket Fuel (MAM)",
             "unlocked": false,
@@ -23683,6 +23689,12 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "research-sulfur-0",
+            "name": "Sulfur (MAM)",
+            "unlocked": false,
+            "unlocks": []
         },
         {
             "id": "schematic-5-1",
@@ -24044,6 +24056,12 @@
             "prerequisites": [
                 "schematic-5-1"
             ]
+        },
+        {
+            "id": "research-caterium-0",
+            "name": "Caterium (MAM)",
+            "unlocked": false,
+            "unlocks": []
         },
         {
             "id": "schematic-alternate-pure-caterium-ingot",
@@ -25102,6 +25120,12 @@
             ]
         },
         {
+            "id": "research-quartz-0",
+            "name": "Quartz (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
             "id": "schematic-alternate-uranium-cell1",
             "name": "Alternate: Infused Uranium Cell Harddrive",
             "unlocked": false,
@@ -25148,6 +25172,12 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "research-caterium-3",
+            "name": "Caterium Electronics (MAM)",
+            "unlocked": false,
+            "unlocks": []
         },
         {
             "id": "schematic-alternate-turbo-motor1",
@@ -25743,6 +25773,183 @@
             ]
         },
         {
+            "id": "schematic-alternate-inventory-slots2",
+            "name": "Inflated Pocket Dimension Harddrive",
+            "unlocked": false,
+            "unlocks": [],
+            "prerequisites": [
+                "schematic-5-2"
+            ]
+        },
+        {
+            "id": "schematic-alternate-inventory-slots1",
+            "name": "Inflated Pocket Dimension Harddrive",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-skin-buildgun-striped",
+            "name": "Striped Build Gun (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-skin-buildgun-neon",
+            "name": "Neon Build Gun (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-skin-buildgun-half-n-half",
+            "name": "FICSIT Half 'n' Half Build Gun (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-skin-buildgun-golden",
+            "name": "Golden Build Gun (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-skin-buildgun-default",
+            "name": "Standard FICSIT Build Gun (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-skin-buildgun-colored-sides",
+            "name": "Alternative FICSIT Build Gun (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-skin-buildgun-camo",
+            "name": "Camo Build Gun (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-helmet-welder",
+            "name": "Welder Helmet (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-helmet-scout",
+            "name": "Scout Helmet (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-helmet-scarf",
+            "name": "Neko Helmet (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-helmet-neon",
+            "name": "Neon Helmet (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-helmet-neko",
+            "name": "Neko Helmet (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-helmet-golden",
+            "name": "Golden Helmet (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-helmet-ficsmas",
+            "name": "FICSMAS Hat (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-helmet-default",
+            "name": "Standard FICSIT Helmet (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-helmet-bobble",
+            "name": "Bobblehead Helmet (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-helmet-beta",
+            "name": "B-374 Helmet (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-trinket-somersloop",
+            "name": "Somersloop Trinket (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-trinket-nut",
+            "name": "Golden Nut Trinket (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-trinket-nuclear-waste",
+            "name": "Nuclear Waste Trinket (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-trinket-ficsmas-star",
+            "name": "Wonder Star Trinket (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-trinket-ficsmas-ball",
+            "name": "Red Ornament Trinket (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-trinket-ficsit-coupon",
+            "name": "Coupon Trinket (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-trinket-default",
+            "name": "Wrench Trinket (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-trinket-checkit",
+            "name": "Checkit Trinket (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-trinket-alpaca",
+            "name": "Alpaca Trinket (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "schematic-trinket-air-freshener",
+            "name": "Fresh Factory Trinket (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
             "id": "schematic-9-5",
             "name": "Peak Efficiency (Tier 9)",
             "unlocked": false,
@@ -26077,6 +26284,12 @@
             ]
         },
         {
+            "id": "research-alien-somersloop",
+            "name": "Somersloop Analysis (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
             "id": "research-mycelia-1",
             "name": "Mycelia (MAM)",
             "unlocked": false,
@@ -26088,6 +26301,18 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "research-nutrients-0",
+            "name": "Paleberry (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "research-power-slugs-3",
+            "name": "Slug Scanning (MAM)",
+            "unlocked": false,
+            "unlocks": []
         },
         {
             "id": "research-power-slugs-1",
@@ -26180,6 +26405,12 @@
             ]
         },
         {
+            "id": "research-ao-pre-rebar",
+            "name": "Structural Analysis (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
             "id": "research-ao-hatcher",
             "name": "Hatcher Research (MAM)",
             "unlocked": false,
@@ -26207,6 +26438,12 @@
             ]
         },
         {
+            "id": "research-a-organs-3",
+            "name": "Inflated Pocket Dimension (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
             "id": "research-a-organs-2",
             "name": "Protein Inhaler (MAM)",
             "unlocked": false,
@@ -26218,6 +26455,30 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "research-a-organs-1",
+            "name": "Discontinued - Organic Properties (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "research-a-organisms-2",
+            "name": "Hostile Organism Detection (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "research-a-organisms-1",
+            "name": "Discontinued - Object Scanner Improvements (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "research-a-carapace-3",
+            "name": "Expanded Toolbelt (MAM)",
+            "unlocked": false,
+            "unlocks": []
         },
         {
             "id": "research-a-carapace-2-1",
@@ -26247,6 +26508,12 @@
             ]
         },
         {
+            "id": "research-a-carapace-1",
+            "name": "Discontinued - Structural Analysis (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
             "id": "research-alien-sam-fluctuator",
             "name": "SAM Fluctuator (MAM)",
             "unlocked": false,
@@ -26258,6 +26525,18 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "research-alien-sam",
+            "name": "SAM Analysis (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "research-alien-production-booster",
+            "name": "Production Amplifier (MAM)",
+            "unlocked": false,
+            "unlocks": []
         },
         {
             "id": "research-alien-power-booster",
@@ -26273,6 +26552,36 @@
             ]
         },
         {
+            "id": "research-alien-mercer-sphere",
+            "name": "Mercer Sphere Analysis (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "research-alien-central-upload-boost-04",
+            "name": "Upload Upgrade: 240/min (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "research-alien-central-upload-boost-03",
+            "name": "Upload Upgrade: 120/min (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "research-alien-central-upload-boost-02",
+            "name": "Upload Upgrade: 60/min (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "research-alien-central-upload-boost-01",
+            "name": "Upload Upgrade: 30/min (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
             "id": "research-alien-central-storage",
             "name": "Dimensional Depot (MAM)",
             "unlocked": false,
@@ -26286,6 +26595,36 @@
             ]
         },
         {
+            "id": "research-alien-central-stack-expansion-04",
+            "name": "Depot Expansion (500%) (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "research-alien-central-stack-expansion-03",
+            "name": "Depot Expansion (400%) (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "research-alien-central-stack-expansion-02",
+            "name": "Depot Expansion (300%) (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "research-alien-central-stack-expansion-01",
+            "name": "Depot Expansion (200%) (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "research-alien-central-inventory",
+            "name": "Manual Depot Uploader (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
             "id": "research-alien-booster-fuel",
             "name": "Alien Power Matrix (MAM)",
             "unlocked": false,
@@ -26297,6 +26636,12 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "research-alien-booster-blocker",
+            "name": "Alien Energy Harnessing (MAM)",
+            "unlocked": false,
+            "unlocks": []
         },
         {
             "id": "research-alien-active-sam",
@@ -26442,6 +26787,12 @@
             ]
         },
         {
+            "id": "research-caterium-3-1",
+            "name": "Inflated Pocket Dimension (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
             "id": "research-caterium-2-1",
             "name": "Zipline (MAM)",
             "unlocked": false,
@@ -26466,6 +26817,12 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "research-hard-drive-0",
+            "name": "Hard Drives (MAM)",
+            "unlocked": false,
+            "unlocks": []
         },
         {
             "id": "research-mycelia-gas-mask",
@@ -26495,6 +26852,18 @@
             ]
         },
         {
+            "id": "research-mycelia-7",
+            "name": "Expanded Toolbelt (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "research-nutrients-2",
+            "name": "Bacon Agaric (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
             "id": "research-mycelia-6",
             "name": "Therapeutic Inhaler (MAM)",
             "unlocked": false,
@@ -26519,6 +26888,12 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "research-mycelia-4",
+            "name": "Medical Properties (MAM)",
+            "unlocked": false,
+            "unlocks": []
         },
         {
             "id": "research-mycelia-3",
@@ -26573,6 +26948,18 @@
             ]
         },
         {
+            "id": "research-nutrients-3",
+            "name": "Nutritional Processor (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "research-nutrients-1",
+            "name": "Beryl Nut (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
             "id": "research-power-slugs-6",
             "name": "Synthetic Power Shards (MAM)",
             "unlocked": false,
@@ -26610,6 +26997,12 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "research-power-slugs-2",
+            "name": "Overclock Production (MAM)",
+            "unlocked": false,
+            "unlocks": []
         },
         {
             "id": "research-quartz-priority-merger",
@@ -26664,6 +27057,12 @@
             ]
         },
         {
+            "id": "research-quartz-3",
+            "name": "Signal Systems (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
             "id": "research-quartz-2-1",
             "name": "Shatter Rebar (MAM)",
             "unlocked": false,
@@ -26677,6 +27076,12 @@
             ]
         },
         {
+            "id": "research-sulfur-experimental-power",
+            "name": "Experimental Power Generation (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
             "id": "research-sulfur-compacted-coal",
             "name": "Compacted Coal (MAM)",
             "unlocked": false,
@@ -26688,6 +27093,12 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "research-sulfur-6",
+            "name": "Inflated Pocket Dimension (MAM)",
+            "unlocked": false,
+            "unlocks": []
         },
         {
             "id": "research-sulfur-5-2",
@@ -26714,6 +27125,12 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "research-sulfur-5",
+            "name": "Expanded Toolbelt (MAM)",
+            "unlocked": false,
+            "unlocks": []
         },
         {
             "id": "research-sulfur-4-2-1",
@@ -26782,6 +27199,12 @@
             ]
         },
         {
+            "id": "research-sulfur-3-2",
+            "name": " (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
             "id": "research-sulfur-3-1",
             "name": "The Nobelisk Detonator (MAM)",
             "unlocked": false,
@@ -26807,6 +27230,18 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "research-sulfur-2",
+            "name": "Volatile Applications (MAM)",
+            "unlocked": false,
+            "unlocks": []
+        },
+        {
+            "id": "research-x-mas-5",
+            "name": "Giant FICSMAS Tree: Upgrade4 (MAM)",
+            "unlocked": false,
+            "unlocks": []
         },
         {
             "id": "research-x-mas-4",
