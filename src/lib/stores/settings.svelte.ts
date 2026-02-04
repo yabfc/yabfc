@@ -2,7 +2,7 @@ import { writable } from 'svelte/store';
 
 const SETTINGS_LOCAL_STORAGE_KEY = 'settings';
 
-const settings = writable<{}>({});
+const settings = writable<{ theme?: '' | 'dark' | 'light' }>({});
 
 // set initial saved state
 setSettingsFromLocalStorage();
