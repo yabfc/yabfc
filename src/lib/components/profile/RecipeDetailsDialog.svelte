@@ -8,7 +8,9 @@
 		$props();
 
 	let recipe = $derived(active.profile?.getRecipeById(recipeId ?? ''));
-	let machines = $derived(recipe ? (active.profile?.getMachinesByRecipe(recipe) ?? []) : []);
+	let machines = $derived(
+		recipe ? (active.profile?.getMachinesByRecipe(recipe.category) ?? []) : [],
+	);
 </script>
 
 <Dialog bind:dialog>

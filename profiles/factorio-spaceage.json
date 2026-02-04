@@ -1671,7 +1671,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2035,7 +2035,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2061,7 +2061,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2087,7 +2087,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2118,7 +2118,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2144,7 +2144,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2175,7 +2175,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2206,7 +2206,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2237,7 +2237,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2268,7 +2268,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2330,7 +2330,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2366,7 +2366,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2397,7 +2397,7 @@
 				}
 			],
 			"duration": 20,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2428,7 +2428,7 @@
 				}
 			],
 			"duration": 20,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2464,7 +2464,7 @@
 				}
 			],
 			"duration": 20,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2500,7 +2500,7 @@
 				}
 			],
 			"duration": 40,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2531,7 +2531,7 @@
 				}
 			],
 			"duration": 8,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2552,7 +2552,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2578,7 +2578,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2599,7 +2599,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2620,7 +2620,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2646,7 +2646,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2677,7 +2677,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2698,7 +2698,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2781,7 +2781,7 @@
 				}
 			],
 			"duration": 2,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2812,7 +2812,7 @@
 				}
 			],
 			"duration": 2,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2843,7 +2843,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2874,7 +2874,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2905,7 +2905,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2931,7 +2931,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2952,7 +2952,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -2978,7 +2978,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3056,7 +3056,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3077,7 +3077,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3098,7 +3098,7 @@
 				}
 			],
 			"duration": 3,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3129,7 +3129,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3160,7 +3160,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3186,7 +3186,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3217,7 +3217,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3243,7 +3243,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3269,7 +3269,7 @@
 				}
 			],
 			"duration": 5,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3295,7 +3295,7 @@
 				}
 			],
 			"duration": 6,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3326,7 +3326,7 @@
 				}
 			],
 			"duration": 2,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3347,7 +3347,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3383,7 +3383,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3471,7 +3471,7 @@
 				}
 			],
 			"duration": 2,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3523,7 +3523,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3621,7 +3621,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3647,7 +3647,7 @@
 				}
 			],
 			"duration": 3,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3678,7 +3678,7 @@
 				}
 			],
 			"duration": 6,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3704,7 +3704,7 @@
 				}
 			],
 			"duration": 8,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3730,7 +3730,7 @@
 				}
 			],
 			"duration": 3,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3761,7 +3761,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3787,7 +3787,7 @@
 				}
 			],
 			"duration": 8,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -3808,7 +3808,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4083,7 +4083,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4114,7 +4114,7 @@
 				}
 			],
 			"duration": 4,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4145,7 +4145,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4171,7 +4171,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4197,7 +4197,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4233,7 +4233,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4343,7 +4343,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4369,7 +4369,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4395,7 +4395,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4421,7 +4421,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4452,7 +4452,7 @@
 				}
 			],
 			"duration": 2,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4488,7 +4488,7 @@
 				}
 			],
 			"duration": 2,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4519,7 +4519,7 @@
 				}
 			],
 			"duration": 8,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4550,7 +4550,7 @@
 				}
 			],
 			"duration": 8,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4581,7 +4581,7 @@
 				}
 			],
 			"duration": 8,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4612,7 +4612,7 @@
 				}
 			],
 			"duration": 8,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4638,7 +4638,7 @@
 				}
 			],
 			"duration": 15,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4669,7 +4669,7 @@
 				}
 			],
 			"duration": 15,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4705,7 +4705,7 @@
 				}
 			],
 			"duration": 8,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4731,7 +4731,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4757,7 +4757,7 @@
 				}
 			],
 			"duration": 4,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4783,7 +4783,7 @@
 				}
 			],
 			"duration": 8,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4814,7 +4814,7 @@
 				}
 			],
 			"duration": 50,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4845,7 +4845,7 @@
 				}
 			],
 			"duration": 8,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4876,7 +4876,7 @@
 				}
 			],
 			"duration": 8,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4907,7 +4907,7 @@
 				}
 			],
 			"duration": 8,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4933,7 +4933,7 @@
 				}
 			],
 			"duration": 12,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4959,7 +4959,7 @@
 				}
 			],
 			"duration": 12,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -4995,7 +4995,7 @@
 				}
 			],
 			"duration": 15,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5078,7 +5078,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5114,7 +5114,7 @@
 				}
 			],
 			"duration": 5,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5155,7 +5155,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5191,7 +5191,7 @@
 				}
 			],
 			"duration": 1.5,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5232,7 +5232,7 @@
 				}
 			],
 			"duration": 4,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5258,7 +5258,7 @@
 				}
 			],
 			"duration": 15,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5289,7 +5289,7 @@
 				}
 			],
 			"duration": 20,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5330,7 +5330,7 @@
 				}
 			],
 			"duration": 25,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5356,7 +5356,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5382,7 +5382,7 @@
 				}
 			],
 			"duration": 5,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5413,7 +5413,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5449,7 +5449,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5480,7 +5480,7 @@
 				}
 			],
 			"duration": 24,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5511,7 +5511,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5542,7 +5542,7 @@
 				}
 			],
 			"duration": 21,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5573,7 +5573,7 @@
 				}
 			],
 			"duration": 21,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5728,7 +5728,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5754,7 +5754,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5785,7 +5785,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5816,7 +5816,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5847,7 +5847,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5878,7 +5878,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5909,7 +5909,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5950,7 +5950,7 @@
 				}
 			],
 			"duration": 30,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -5981,7 +5981,7 @@
 				}
 			],
 			"duration": 30,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -6012,7 +6012,7 @@
 				}
 			],
 			"duration": 5,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -6100,7 +6100,7 @@
 				}
 			],
 			"duration": 5,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -6172,7 +6172,7 @@
 				}
 			],
 			"duration": 5,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -6213,7 +6213,7 @@
 				}
 			],
 			"duration": 8,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -6280,7 +6280,7 @@
 				}
 			],
 			"duration": 20,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -6368,7 +6368,7 @@
 				}
 			],
 			"duration": 3,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -6399,7 +6399,7 @@
 				}
 			],
 			"duration": 2,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -6435,7 +6435,7 @@
 				}
 			],
 			"duration": 5,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -6559,7 +6559,7 @@
 				}
 			],
 			"duration": 8,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -6595,7 +6595,7 @@
 				}
 			],
 			"duration": 4,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -6730,7 +6730,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -6761,7 +6761,7 @@
 				}
 			],
 			"duration": 3,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -6787,7 +6787,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -6818,7 +6818,7 @@
 				}
 			],
 			"duration": 3,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -6844,7 +6844,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -6875,7 +6875,7 @@
 				}
 			],
 			"duration": 1,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -7004,7 +7004,7 @@
 				}
 			],
 			"duration": 3,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -7620,7 +7620,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -7646,7 +7646,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -7708,7 +7708,7 @@
 				}
 			],
 			"duration": 0.5,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -7749,7 +7749,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -7780,7 +7780,7 @@
 				}
 			],
 			"duration": 60,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -7811,7 +7811,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -7842,7 +7842,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -7873,7 +7873,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -7904,7 +7904,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -7935,7 +7935,7 @@
 				}
 			],
 			"duration": 15,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -9172,7 +9172,7 @@
 				}
 			],
 			"duration": 60,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -9280,7 +9280,7 @@
 				}
 			],
 			"duration": 25,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -9316,7 +9316,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -9446,7 +9446,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -9487,7 +9487,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -9689,7 +9689,7 @@
 			],
 			"duration": 0.2,
 			"category": "recycling-or-hand-crafting",
-			"priority": 10,
+			"priority": 90,
 			"available": true
 		},
 		{
@@ -10090,7 +10090,7 @@
 				}
 			],
 			"duration": 10,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -10360,7 +10360,7 @@
 				}
 			],
 			"duration": 30,
-			"category": "default",
+			"category": "crafting",
 			"priority": 10,
 			"available": true
 		},
@@ -11118,7 +11118,7 @@
 			"category": "offshore-pump",
 			"priority": 10,
 			"available": true,
-			"limitations": ["planet:gleba", "planet:nauvis"]
+			"limitations": ["planet:nauvis", "planet:gleba"]
 		},
 		{
 			"id": "lava",
@@ -11830,14 +11830,10 @@
 			"requiredPower": 90000,
 			"features": [
 				{
-					"id": "modules",
-					"itemSlots": 0,
-					"effectPerSlot": ["speed", "consumption", "pollution"]
-				},
-				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-stone-furnace"]
+					"effectPerSlot": ["crafting-speed-stone-furnace"],
+					"hidden": true
 				}
 			],
 			"available": true,
@@ -11857,12 +11853,26 @@
 				{
 					"id": "modules",
 					"itemSlots": 2,
-					"effectPerSlot": ["consumption", "speed", "productivity", "pollution", "quality"]
+					"effectPerSlot": [
+						"speed-module-1",
+						"speed-module-2",
+						"speed-module-3",
+						"efficiency-module-1",
+						"efficiency-module-2",
+						"efficiency-module-3",
+						"productivity-module-1",
+						"productivity-module-2",
+						"productivity-module-3",
+						"quality-module-1",
+						"quality-module-2",
+						"quality-module-3"
+					]
 				},
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-electric-furnace"]
+					"effectPerSlot": ["crafting-speed-electric-furnace"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -11873,14 +11883,10 @@
 			"requiredPower": 90000,
 			"features": [
 				{
-					"id": "modules",
-					"itemSlots": 0,
-					"effectPerSlot": ["speed", "consumption", "pollution"]
-				},
-				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-steel-furnace"]
+					"effectPerSlot": ["crafting-speed-steel-furnace"],
+					"hidden": true
 				}
 			],
 			"available": true,
@@ -11900,12 +11906,23 @@
 				{
 					"id": "modules",
 					"itemSlots": 4,
-					"effectPerSlot": ["consumption", "speed", "pollution", "quality"]
+					"effectPerSlot": [
+						"speed-module-1",
+						"speed-module-2",
+						"speed-module-3",
+						"efficiency-module-1",
+						"efficiency-module-2",
+						"efficiency-module-3",
+						"quality-module-1",
+						"quality-module-2",
+						"quality-module-3"
+					]
 				},
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-recycler"]
+					"effectPerSlot": ["crafting-speed-recycler"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -11922,14 +11939,10 @@
 			"requiredPower": 75000,
 			"features": [
 				{
-					"id": "modules",
-					"itemSlots": 0,
-					"effectPerSlot": ["speed", "consumption", "pollution"]
-				},
-				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-assembling-machine-1"]
+					"effectPerSlot": ["crafting-speed-assembling-machine-1"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -11956,12 +11969,26 @@
 				{
 					"id": "modules",
 					"itemSlots": 2,
-					"effectPerSlot": ["consumption", "speed", "productivity", "pollution", "quality"]
+					"effectPerSlot": [
+						"speed-module-1",
+						"speed-module-2",
+						"speed-module-3",
+						"efficiency-module-1",
+						"efficiency-module-2",
+						"efficiency-module-3",
+						"productivity-module-1",
+						"productivity-module-2",
+						"productivity-module-3",
+						"quality-module-1",
+						"quality-module-2",
+						"quality-module-3"
+					]
 				},
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-assembling-machine-2"]
+					"effectPerSlot": ["crafting-speed-assembling-machine-2"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -11988,12 +12015,26 @@
 				{
 					"id": "modules",
 					"itemSlots": 4,
-					"effectPerSlot": ["consumption", "speed", "productivity", "pollution", "quality"]
+					"effectPerSlot": [
+						"speed-module-1",
+						"speed-module-2",
+						"speed-module-3",
+						"efficiency-module-1",
+						"efficiency-module-2",
+						"efficiency-module-3",
+						"productivity-module-1",
+						"productivity-module-2",
+						"productivity-module-3",
+						"quality-module-1",
+						"quality-module-2",
+						"quality-module-3"
+					]
 				},
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-assembling-machine-3"]
+					"effectPerSlot": ["crafting-speed-assembling-machine-3"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -12006,12 +12047,20 @@
 				{
 					"id": "modules",
 					"itemSlots": 3,
-					"effectPerSlot": ["consumption", "speed", "productivity", "pollution"]
+					"effectPerSlot": [
+						"efficiency-module-1",
+						"efficiency-module-2",
+						"efficiency-module-3",
+						"productivity-module-1",
+						"productivity-module-2",
+						"productivity-module-3"
+					]
 				},
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-oil-refinery"]
+					"effectPerSlot": ["crafting-speed-oil-refinery"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -12024,12 +12073,26 @@
 				{
 					"id": "modules",
 					"itemSlots": 3,
-					"effectPerSlot": ["consumption", "speed", "productivity", "pollution", "quality"]
+					"effectPerSlot": [
+						"speed-module-1",
+						"speed-module-2",
+						"speed-module-3",
+						"efficiency-module-1",
+						"efficiency-module-2",
+						"efficiency-module-3",
+						"productivity-module-1",
+						"productivity-module-2",
+						"productivity-module-3",
+						"quality-module-1",
+						"quality-module-2",
+						"quality-module-3"
+					]
 				},
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-chemical-plant"]
+					"effectPerSlot": ["crafting-speed-chemical-plant"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -12042,12 +12105,26 @@
 				{
 					"id": "modules",
 					"itemSlots": 2,
-					"effectPerSlot": ["consumption", "speed", "productivity", "pollution", "quality"]
+					"effectPerSlot": [
+						"speed-module-1",
+						"speed-module-2",
+						"speed-module-3",
+						"efficiency-module-1",
+						"efficiency-module-2",
+						"efficiency-module-3",
+						"productivity-module-1",
+						"productivity-module-2",
+						"productivity-module-3",
+						"quality-module-1",
+						"quality-module-2",
+						"quality-module-3"
+					]
 				},
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-centrifuge"]
+					"effectPerSlot": ["crafting-speed-centrifuge"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -12065,12 +12142,26 @@
 				{
 					"id": "modules",
 					"itemSlots": 4,
-					"effectPerSlot": ["consumption", "speed", "productivity", "pollution", "quality"]
+					"effectPerSlot": [
+						"speed-module-1",
+						"speed-module-2",
+						"speed-module-3",
+						"efficiency-module-1",
+						"efficiency-module-2",
+						"efficiency-module-3",
+						"productivity-module-1",
+						"productivity-module-2",
+						"productivity-module-3",
+						"quality-module-1",
+						"quality-module-2",
+						"quality-module-3"
+					]
 				},
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-biochamber"]
+					"effectPerSlot": ["crafting-speed-biochamber"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -12083,12 +12174,26 @@
 				{
 					"id": "modules",
 					"itemSlots": 2,
-					"effectPerSlot": ["consumption", "speed", "productivity", "pollution", "quality"]
+					"effectPerSlot": [
+						"speed-module-1",
+						"speed-module-2",
+						"speed-module-3",
+						"efficiency-module-1",
+						"efficiency-module-2",
+						"efficiency-module-3",
+						"productivity-module-1",
+						"productivity-module-2",
+						"productivity-module-3",
+						"quality-module-1",
+						"quality-module-2",
+						"quality-module-3"
+					]
 				},
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-crusher"]
+					"effectPerSlot": ["crafting-speed-crusher"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -12106,12 +12211,26 @@
 				{
 					"id": "modules",
 					"itemSlots": 4,
-					"effectPerSlot": ["consumption", "speed", "productivity", "pollution", "quality"]
+					"effectPerSlot": [
+						"speed-module-1",
+						"speed-module-2",
+						"speed-module-3",
+						"efficiency-module-1",
+						"efficiency-module-2",
+						"efficiency-module-3",
+						"productivity-module-1",
+						"productivity-module-2",
+						"productivity-module-3",
+						"quality-module-1",
+						"quality-module-2",
+						"quality-module-3"
+					]
 				},
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-foundry"]
+					"effectPerSlot": ["crafting-speed-foundry"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -12122,14 +12241,10 @@
 			"requiredPower": 100000,
 			"features": [
 				{
-					"id": "modules",
-					"itemSlots": 0,
-					"effectPerSlot": {}
-				},
-				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-captive-biter-spawner"]
+					"effectPerSlot": ["crafting-speed-captive-biter-spawner"],
+					"hidden": true
 				}
 			],
 			"available": true,
@@ -12148,12 +12263,26 @@
 				{
 					"id": "modules",
 					"itemSlots": 5,
-					"effectPerSlot": ["consumption", "speed", "productivity", "pollution", "quality"]
+					"effectPerSlot": [
+						"speed-module-1",
+						"speed-module-2",
+						"speed-module-3",
+						"efficiency-module-1",
+						"efficiency-module-2",
+						"efficiency-module-3",
+						"productivity-module-1",
+						"productivity-module-2",
+						"productivity-module-3",
+						"quality-module-1",
+						"quality-module-2",
+						"quality-module-3"
+					]
 				},
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-electromagnetic-plant"]
+					"effectPerSlot": ["crafting-speed-electromagnetic-plant"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -12166,12 +12295,26 @@
 				{
 					"id": "modules",
 					"itemSlots": 8,
-					"effectPerSlot": ["consumption", "speed", "productivity", "pollution", "quality"]
+					"effectPerSlot": [
+						"speed-module-1",
+						"speed-module-2",
+						"speed-module-3",
+						"efficiency-module-1",
+						"efficiency-module-2",
+						"efficiency-module-3",
+						"productivity-module-1",
+						"productivity-module-2",
+						"productivity-module-3",
+						"quality-module-1",
+						"quality-module-2",
+						"quality-module-3"
+					]
 				},
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-cryogenic-plant"]
+					"effectPerSlot": ["crafting-speed-cryogenic-plant"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -12184,7 +12327,20 @@
 				{
 					"id": "modules",
 					"itemSlots": 3,
-					"effectPerSlot": ["pollution", "speed", "productivity", "consumption", "quality"]
+					"effectPerSlot": [
+						"speed-module-1",
+						"speed-module-2",
+						"speed-module-3",
+						"efficiency-module-1",
+						"efficiency-module-2",
+						"efficiency-module-3",
+						"productivity-module-1",
+						"productivity-module-2",
+						"productivity-module-3",
+						"quality-module-1",
+						"quality-module-2",
+						"quality-module-3"
+					]
 				}
 			],
 			"available": true
@@ -12193,13 +12349,7 @@
 			"id": "burner-mining-drill",
 			"recipeCategories": ["basic-solid"],
 			"requiredPower": 150000,
-			"features": [
-				{
-					"id": "modules",
-					"itemSlots": 0,
-					"effectPerSlot": {}
-				}
-			],
+			"features": [],
 			"available": true,
 			"limitations": [
 				"planet:nauvis",
@@ -12217,7 +12367,14 @@
 				{
 					"id": "modules",
 					"itemSlots": 2,
-					"effectPerSlot": ["consumption", "speed", "productivity", "pollution"]
+					"effectPerSlot": [
+						"efficiency-module-1",
+						"efficiency-module-2",
+						"efficiency-module-3",
+						"productivity-module-1",
+						"productivity-module-2",
+						"productivity-module-3"
+					]
 				}
 			],
 			"available": true
@@ -12230,7 +12387,20 @@
 				{
 					"id": "modules",
 					"itemSlots": 4,
-					"effectPerSlot": ["pollution", "speed", "productivity", "consumption", "quality"]
+					"effectPerSlot": [
+						"speed-module-1",
+						"speed-module-2",
+						"speed-module-3",
+						"efficiency-module-1",
+						"efficiency-module-2",
+						"efficiency-module-3",
+						"productivity-module-1",
+						"productivity-module-2",
+						"productivity-module-3",
+						"quality-module-1",
+						"quality-module-2",
+						"quality-module-3"
+					]
 				}
 			],
 			"available": true
@@ -12239,15 +12409,91 @@
 			"id": "asteroid-collector",
 			"recipeCategories": ["asteroid-collector"],
 			"requiredPower": 1200,
+			"features": [],
+			"available": true,
+			"limitations": ["planet:space-platform"]
+		},
+		{
+			"id": "rocket-silo",
+			"recipeCategories": ["rocket-building"],
+			"requiredPower": 250000,
 			"features": [
 				{
 					"id": "modules",
+					"itemSlots": 4,
+					"effectPerSlot": [
+						"efficiency-module-1",
+						"efficiency-module-2",
+						"efficiency-module-3",
+						"productivity-module-1",
+						"productivity-module-2",
+						"productivity-module-3"
+					]
+				},
+				{
+					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["pollution", "speed", "productivity", "consumption", "quality"]
+					"effectPerSlot": ["crafting-speed-rocket-silo"],
+					"hidden": true
 				}
 			],
 			"available": true,
-			"limitations": ["planet:space-platform"]
+			"limitations": [
+				"planet:nauvis",
+				"planet:vulcanus",
+				"planet:gleba",
+				"planet:fulgora",
+				"planet:aquilo"
+			]
+		},
+		{
+			"id": "offshore-pump",
+			"recipeCategories": ["offshore-pump"],
+			"requiredPower": 60000,
+			"features": [],
+			"available": true
+		},
+		{
+			"id": "boiler",
+			"recipeCategories": ["boiler"],
+			"requiredPower": 1800000,
+			"features": [],
+			"available": true,
+			"limitations": [
+				"planet:nauvis",
+				"planet:vulcanus",
+				"planet:gleba",
+				"planet:fulgora",
+				"planet:aquilo"
+			]
+		},
+		{
+			"id": "heat-exchanger",
+			"recipeCategories": ["heat-exchanger"],
+			"requiredPower": 10000000,
+			"features": [],
+			"available": true
+		},
+		{
+			"id": "nuclear-reactor",
+			"recipeCategories": ["nuclear-reactor"],
+			"requiredPower": 40000000,
+			"features": [],
+			"available": true
+		},
+		{
+			"id": "heating-tower",
+			"recipeCategories": ["heating-tower"],
+			"requiredPower": 40000000,
+			"features": [],
+			"available": true,
+			"limitations": [
+				"planet:nauvis",
+				"planet:vulcanus",
+				"planet:gleba",
+				"planet:fulgora",
+				"planet:aquilo"
+			]
 		}
 	],
 	"machineEffects": [
@@ -12256,19 +12502,19 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 0.2,
+					"value": 1.2,
 					"modifiable": false,
 					"onlyOutputScales": false
 				},
 				{
 					"id": "consumption",
-					"value": 0.5,
+					"value": 1.5,
 					"modifiable": false,
 					"onlyOutputScales": false
 				},
 				{
 					"id": "quality",
-					"value": -0.1,
+					"value": 0.9,
 					"modifiable": false,
 					"onlyOutputScales": false
 				}
@@ -12281,19 +12527,19 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 0.3,
+					"value": 1.3,
 					"modifiable": false,
 					"onlyOutputScales": false
 				},
 				{
 					"id": "consumption",
-					"value": 0.6,
+					"value": 1.6,
 					"modifiable": false,
 					"onlyOutputScales": false
 				},
 				{
 					"id": "quality",
-					"value": -0.15,
+					"value": 0.85,
 					"modifiable": false,
 					"onlyOutputScales": false
 				}
@@ -12306,19 +12552,19 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 0.5,
+					"value": 1.5,
 					"modifiable": false,
 					"onlyOutputScales": false
 				},
 				{
 					"id": "consumption",
-					"value": 0.7,
+					"value": 1.7,
 					"modifiable": false,
 					"onlyOutputScales": false
 				},
 				{
 					"id": "quality",
-					"value": -0.25,
+					"value": 0.75,
 					"modifiable": false,
 					"onlyOutputScales": false
 				}
@@ -12331,7 +12577,7 @@
 			"modifiers": [
 				{
 					"id": "consumption",
-					"value": -0.3,
+					"value": 0.7,
 					"modifiable": false,
 					"onlyOutputScales": false
 				}
@@ -12344,7 +12590,7 @@
 			"modifiers": [
 				{
 					"id": "consumption",
-					"value": -0.4,
+					"value": 0.6,
 					"modifiable": false,
 					"onlyOutputScales": false
 				}
@@ -12357,7 +12603,7 @@
 			"modifiers": [
 				{
 					"id": "consumption",
-					"value": -0.5,
+					"value": 0.5,
 					"modifiable": false,
 					"onlyOutputScales": false
 				}
@@ -12370,27 +12616,27 @@
 			"modifiers": [
 				{
 					"id": "productivity",
-					"value": 0.04,
+					"value": 1.04,
 					"modifiable": false,
-					"onlyOutputScales": false
+					"onlyOutputScales": true
 				},
 				{
 					"id": "consumption",
-					"value": 0.4,
+					"value": 1.4,
 					"modifiable": false,
 					"onlyOutputScales": false
 				},
 				{
 					"id": "pollution",
-					"value": 0.05,
+					"value": 1.05,
 					"modifiable": false,
 					"onlyOutputScales": false
 				},
 				{
 					"id": "speed",
-					"value": -0.05,
+					"value": 0.95,
 					"modifiable": false,
-					"onlyOutputScales": true
+					"onlyOutputScales": false
 				}
 			],
 			"perSlot": true,
@@ -12401,27 +12647,27 @@
 			"modifiers": [
 				{
 					"id": "productivity",
-					"value": 0.06,
+					"value": 1.06,
 					"modifiable": false,
-					"onlyOutputScales": false
+					"onlyOutputScales": true
 				},
 				{
 					"id": "consumption",
-					"value": 0.6,
+					"value": 1.6,
 					"modifiable": false,
 					"onlyOutputScales": false
 				},
 				{
 					"id": "pollution",
-					"value": 0.07,
+					"value": 1.07,
 					"modifiable": false,
 					"onlyOutputScales": false
 				},
 				{
 					"id": "speed",
-					"value": -0.1,
+					"value": 0.9,
 					"modifiable": false,
-					"onlyOutputScales": true
+					"onlyOutputScales": false
 				}
 			],
 			"perSlot": true,
@@ -12432,27 +12678,27 @@
 			"modifiers": [
 				{
 					"id": "productivity",
-					"value": 0.1,
+					"value": 1.1,
 					"modifiable": false,
-					"onlyOutputScales": false
+					"onlyOutputScales": true
 				},
 				{
 					"id": "consumption",
-					"value": 0.8,
+					"value": 1.8,
 					"modifiable": false,
 					"onlyOutputScales": false
 				},
 				{
 					"id": "pollution",
-					"value": 0.1,
+					"value": 1.1,
 					"modifiable": false,
 					"onlyOutputScales": false
 				},
 				{
 					"id": "speed",
-					"value": -0.15,
+					"value": 0.85,
 					"modifiable": false,
-					"onlyOutputScales": true
+					"onlyOutputScales": false
 				}
 			],
 			"perSlot": true,
@@ -12463,13 +12709,13 @@
 			"modifiers": [
 				{
 					"id": "quality",
-					"value": 0.1,
+					"value": 1.1,
 					"modifiable": false,
 					"onlyOutputScales": false
 				},
 				{
 					"id": "speed",
-					"value": -0.05,
+					"value": 0.95,
 					"modifiable": false,
 					"onlyOutputScales": false
 				}
@@ -12482,13 +12728,13 @@
 			"modifiers": [
 				{
 					"id": "quality",
-					"value": 0.2,
+					"value": 1.2,
 					"modifiable": false,
 					"onlyOutputScales": false
 				},
 				{
 					"id": "speed",
-					"value": -0.05,
+					"value": 0.95,
 					"modifiable": false,
 					"onlyOutputScales": false
 				}
@@ -12501,13 +12747,13 @@
 			"modifiers": [
 				{
 					"id": "quality",
-					"value": 0.25,
+					"value": 1.25,
 					"modifiable": false,
 					"onlyOutputScales": false
 				},
 				{
 					"id": "speed",
-					"value": -0.05,
+					"value": 0.95,
 					"modifiable": false,
 					"onlyOutputScales": false
 				}
@@ -12716,6 +12962,19 @@
 				{
 					"id": "speed",
 					"value": 2,
+					"modifiable": false,
+					"onlyOutputScales": true
+				}
+			],
+			"perSlot": true,
+			"available": true
+		},
+		{
+			"id": "crafting-speed-rocket-silo",
+			"modifiers": [
+				{
+					"id": "speed",
+					"value": 1,
 					"modifiable": false,
 					"onlyOutputScales": true
 				}

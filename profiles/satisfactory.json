@@ -23016,19 +23016,16 @@
 			"requiredPower": 40000000,
 			"features": [
 				{
-					"id": "summerslooping",
-					"itemSlots": 0,
-					"effectPerSlot": ["summerslooping"]
-				},
-				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23041,22 +23038,20 @@
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-miner-mk2"]
-				},
-				{
-					"id": "summerslooping",
-					"itemSlots": 0,
-					"effectPerSlot": ["summerslooping"]
+					"effectPerSlot": ["crafting-speed-miner-mk2"],
+					"hidden": true
 				},
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23067,19 +23062,16 @@
 			"requiredPower": 5000000,
 			"features": [
 				{
-					"id": "summerslooping",
-					"itemSlots": 0,
-					"effectPerSlot": ["summerslooping"]
-				},
-				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23092,22 +23084,20 @@
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
-					"effectPerSlot": ["crafting-speed-miner-mk3"]
-				},
-				{
-					"id": "summerslooping",
-					"itemSlots": 0,
-					"effectPerSlot": ["summerslooping"]
+					"effectPerSlot": ["crafting-speed-miner-mk3"],
+					"hidden": true
 				},
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23125,12 +23115,14 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23148,12 +23140,14 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23164,19 +23158,16 @@
 			"requiredPower": 10000000,
 			"features": [
 				{
-					"id": "summerslooping",
-					"itemSlots": 0,
-					"effectPerSlot": ["summerslooping"]
-				},
-				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23194,12 +23185,14 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23217,12 +23210,14 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23240,12 +23235,14 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23263,12 +23260,14 @@
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23279,19 +23278,16 @@
 			"requiredPower": 4000000,
 			"features": [
 				{
-					"id": "summerslooping",
-					"itemSlots": 0,
-					"effectPerSlot": ["summerslooping"]
-				},
-				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23302,19 +23298,16 @@
 			"requiredPower": 0,
 			"features": [
 				{
-					"id": "summerslooping",
-					"itemSlots": 0,
-					"effectPerSlot": ["summerslooping"]
-				},
-				{
 					"id": "overclocking",
 					"itemSlots": 3,
-					"effectPerSlot": ["overclocking"]
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
-					"effectPerSlot": ["underclocking"]
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true
@@ -23326,7 +23319,8 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 1.5,
+					"minValue": 1,
+					"maxValue": 2.5,
 					"modifiable": true,
 					"onlyOutputScales": false
 				},
@@ -23338,7 +23332,7 @@
 					"valueScaling": "exponential"
 				}
 			],
-			"perSlot": true,
+			"perSlot": false,
 			"available": true
 		},
 		{
@@ -23346,7 +23340,8 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 0.5,
+					"minValue": 0,
+					"maxValue": 1,
 					"modifiable": true,
 					"onlyOutputScales": false
 				},
@@ -23358,7 +23353,7 @@
 					"valueScaling": "exponential"
 				}
 			],
-			"perSlot": true,
+			"perSlot": false,
 			"available": true
 		},
 		{
@@ -23372,7 +23367,7 @@
 				},
 				{
 					"id": "power",
-					"value": 5,
+					"value": 4,
 					"modifiable": false,
 					"onlyOutputScales": false
 				}
