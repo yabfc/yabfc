@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@dagrejs/dagre':
-        specifier: ^1.1.8
-        version: 1.1.8
+        specifier: ^2.0.3
+        version: 2.0.3
       '@lucide/svelte':
         specifier: ^0.545.0
         version: 0.545.0(svelte@5.39.11)
@@ -62,8 +62,8 @@ importers:
 
 packages:
 
-  '@dagrejs/dagre@1.1.8':
-    resolution: {integrity: sha512-5SEDlndt4W/LaVzPYJW+bSmSEZc9EzTf8rJ20WCKvjS5EAZAN0b+x0Yww7VMT4R3Wootkg+X9bUfUxazYw6Blw==}
+  '@dagrejs/dagre@2.0.3':
+    resolution: {integrity: sha512-ig9Vg52tsijTIKNgW9BAeUVBhDRvqlZ2a6FQ6i41YcPpoAy7VXXt2qye22PXRecGSjAp0OEEVUBhJ4oS9BnBzQ==}
 
   '@dagrejs/graphlib@2.2.4':
     resolution: {integrity: sha512-mepCf/e9+SKYy1d02/UkvSy6+6MoyXhVxP8lLDfA7BPE1X1d4dR0sZznmbM8/XVJ1GPM+Svnx7Xj6ZweByWUkw==}
@@ -846,6 +846,7 @@ packages:
   tar@7.5.1:
     resolution: {integrity: sha512-nlGpxf+hv0v7GkWBK2V9spgactGOp0qvfWRxUMjqHyzrt3SgwE48DIv/FhqPHJYLHpgW1opq3nERbz5Anq7n1g==}
     engines: {node: '>=18'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   tinyglobby@0.2.15:
     resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
@@ -916,7 +917,7 @@ packages:
 
 snapshots:
 
-  '@dagrejs/dagre@1.1.8':
+  '@dagrejs/dagre@2.0.3':
     dependencies:
       '@dagrejs/graphlib': 2.2.4
 
