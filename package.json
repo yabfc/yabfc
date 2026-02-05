@@ -17,7 +17,7 @@
 		"@tailwindcss/vite": "^4.1.14",
 		"@tsconfig/svelte": "^5.0.5",
 		"@xyflow/svelte": "^1.5.0",
-		"daisyui": "^5.1.29",
+		"daisyui": "^5.5.17",
 		"javascript-lp-solver": "^1.0.3",
 		"nanoid": "^5.1.6",
 		"prettier": "^3.6.2",
