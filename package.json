@@ -12,7 +12,7 @@
 	},
 	"devDependencies": {
 		"@dagrejs/dagre": "^1.1.8",
-		"@lucide/svelte": "^0.545.0",
+		"@lucide/svelte": "^0.563.1",
 		"@sveltejs/vite-plugin-svelte": "^6.2.1",
 		"@tailwindcss/vite": "^4.1.14",
 		"@tsconfig/svelte": "^5.0.5",
