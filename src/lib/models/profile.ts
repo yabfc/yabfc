@@ -237,7 +237,6 @@ export default class Profile {
 
 		if (!this.allItemIdsExist(requestedItems)) {
 			// TODO inform the user of the missing item IDs
-			console.log('fuck');
 			return;
 		}
 
