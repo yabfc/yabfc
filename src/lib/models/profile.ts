@@ -237,6 +237,7 @@ export default class Profile {
 
 		if (!this.allItemIdsExist(requestedItems)) {
 			// TODO inform the user of the missing item IDs
+			console.log('fuck');
 			return;
 		}
 
@@ -275,7 +276,7 @@ export default class Profile {
 				model.optimize = item.id;
 				model.opType = 'max';
 			}
-			if (request.in.length)
+			if (request.in.length === 0) {
 				if (item.exact) {
 					model.constraints[item.id] = { equal: item.amount / request.duration };
 				} else {
@@ -283,11 +284,12 @@ export default class Profile {
 						min: (item.amount / request.duration) * (1 - request.tolerance),
 					};
 				}
+			}
 		});
 
 		const variants = this.generateRecipeVariants();
 		if (request.in.length !== 0) {
-			// add pseudovariant if user says they have a spare amount of some ressource
+			// add pseudovariant if user says they have a spare amount of some resource
 			variants.push({
 				id: 'requested-inputs',
 				recipeId: 'requested-inputs',
@@ -323,7 +325,7 @@ export default class Profile {
 			// cut the power down to MW, otherwise the cost get's way too high
 			const powerCost = (request.weights.power * variant.requiredPower) / 1_000_000;
 
-			// priority needs a really hard penality. Alternate recipes in satisfactory
+			// priority needs a really hard penalty. Alternate recipes in satisfactory
 			// bloat the result up by a lot: 40 vs 60+ for turbo-motors
 			const priorityCost = Math.pow(variant.recipePriority, request.weights.priority);
 			const buildingCost = request.weights.building;
