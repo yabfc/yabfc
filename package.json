@@ -20,7 +20,7 @@
 		"daisyui": "^5.5.17",
 		"javascript-lp-solver": "^1.0.3",
 		"nanoid": "^5.1.6",
-		"prettier": "^3.6.2",
+		"prettier": "^3.8.1",
 		"prettier-plugin-svelte": "^3.4.0",
 		"prettier-plugin-tailwindcss": "^0.7.0",
 		"svelte": "^5.39.6",
