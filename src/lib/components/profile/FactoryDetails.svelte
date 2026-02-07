@@ -1,6 +1,7 @@
 <script lang="ts">
 	import ItemSelect from '@/lib/components/shared/ItemSelect.svelte';
 	import Item from '@/lib/models/item';
+	import { ZapIcon } from '@lucide/svelte';
 
 	let inputs = $state<{ item: Item; amount: number }[]>([]),
 		outputs = $state<{ item: Item; amount: number }[]>([]);
@@ -27,6 +28,15 @@
 
 			<ItemSelect bind:items={outputs} />
 		</fieldset>
+
+		<ul class="py-2">
+			<li class="px-2">
+				<ZapIcon size="18" class="text-base-content/50 inline" />
+				<span class="sr-only">Electricity</span>
+				<b class="font-bold">13</b>
+				<span class="text-base-content/80">MW</span>
+			</li>
+		</ul>
 
 		<div class="flex flex-row-reverse gap-2 pt-2">
 			<button onclick={calculate} class="btn btn-primary btn-soft">Calculate</button>
