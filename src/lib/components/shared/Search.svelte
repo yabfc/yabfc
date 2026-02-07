@@ -7,7 +7,7 @@
 </script>
 
 <div class="bg-base-100 sticky top-0 z-10 p-3">
-	<label class="input input-sm">
+	<label class="input input-sm w-full">
 		<SearchIcon size="14" />
 
 		<input type="search" bind:value placeholder="Search" class="grow" />
