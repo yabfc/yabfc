@@ -126,7 +126,7 @@
 		{
 			"id": "packaged-rocket-fuel",
 			"type": "item",
-			"category": "packaged-ressource",
+			"category": "packaged-resource",
 			"stackSize": 100
 		},
 		{
@@ -260,7 +260,7 @@
 		{
 			"id": "packaged-ionized-fuel",
 			"type": "item",
-			"category": "packaged-ressource",
+			"category": "packaged-resource",
 			"stackSize": 100
 		},
 		{
@@ -402,20 +402,20 @@
 		{
 			"id": "packaged-oil",
 			"type": "item",
-			"category": "packaged-ressource",
+			"category": "packaged-resource",
 			"stackSize": 100
 		},
 		{
 			"id": "packaged-oil-residue",
 			"name": "Packaged Heavy Oil Residue",
 			"type": "item",
-			"category": "packaged-ressource",
+			"category": "packaged-resource",
 			"stackSize": 100
 		},
 		{
 			"id": "packaged-water",
 			"type": "item",
-			"category": "packaged-ressource",
+			"category": "packaged-resource",
 			"stackSize": 100
 		},
 		{
@@ -881,13 +881,13 @@
 			"id": "ore-iron",
 			"name": "Iron Ore",
 			"type": "item",
-			"category": "raw-ressource",
+			"category": "raw-resource",
 			"stackSize": 100
 		},
 		{
 			"id": "coal",
 			"type": "item",
-			"category": "raw-ressource",
+			"category": "raw-resource",
 			"stackSize": 100
 		},
 		{
@@ -911,34 +911,34 @@
 		{
 			"id": "sam",
 			"type": "item",
-			"category": "raw-ressource",
+			"category": "raw-resource",
 			"stackSize": 100
 		},
 		{
 			"id": "ore-bauxite",
 			"name": "Bauxite",
 			"type": "item",
-			"category": "raw-ressource",
+			"category": "raw-resource",
 			"stackSize": 100
 		},
 		{
 			"id": "ore-gold",
 			"name": "Caterium Ore",
 			"type": "item",
-			"category": "raw-ressource",
+			"category": "raw-resource",
 			"stackSize": 100
 		},
 		{
 			"id": "ore-copper",
 			"name": "Copper Ore",
 			"type": "item",
-			"category": "raw-ressource",
+			"category": "raw-resource",
 			"stackSize": 100
 		},
 		{
 			"id": "raw-quartz",
 			"type": "item",
-			"category": "raw-ressource",
+			"category": "raw-resource",
 			"stackSize": 100
 		},
 		{
@@ -952,7 +952,7 @@
 			"id": "ore-uranium",
 			"name": "Uranium",
 			"type": "item",
-			"category": "raw-ressource",
+			"category": "raw-resource",
 			"stackSize": 100
 		},
 		{
@@ -998,32 +998,32 @@
 			"id": "packaged-biofuel",
 			"name": "Packaged Liquid Biofuel",
 			"type": "item",
-			"category": "packaged-ressource",
+			"category": "packaged-resource",
 			"stackSize": 100
 		},
 		{
 			"id": "packaged-alumina",
 			"name": "Packaged Alumina Solution",
 			"type": "item",
-			"category": "packaged-ressource",
+			"category": "packaged-resource",
 			"stackSize": 100
 		},
 		{
 			"id": "packaged-nitrogen-gas",
 			"type": "item",
-			"category": "packaged-ressource",
+			"category": "packaged-resource",
 			"stackSize": 100
 		},
 		{
 			"id": "packaged-nitric-acid",
 			"type": "item",
-			"category": "packaged-ressource",
+			"category": "packaged-resource",
 			"stackSize": 100
 		},
 		{
 			"id": "packaged-sulfuric-acid",
 			"type": "item",
-			"category": "packaged-ressource",
+			"category": "packaged-resource",
 			"stackSize": 100
 		},
 		{
@@ -1837,12 +1837,12 @@
 				{
 					"id": "liquid-fuel",
 					"type": "fluid",
-					"amount": 40
+					"amount": 4
 				},
 				{
 					"id": "nitrogen-gas",
 					"type": "fluid",
-					"amount": 30
+					"amount": 3
 				},
 				{
 					"id": "sulfur",
@@ -1859,7 +1859,7 @@
 				{
 					"id": "rocket-fuel",
 					"type": "fluid",
-					"amount": 60
+					"amount": 6
 				},
 				{
 					"id": "compacted-coal",
@@ -2174,19 +2174,19 @@
 				{
 					"id": "liquid-turbo-fuel",
 					"type": "fluid",
-					"amount": 60
+					"amount": 6
 				},
 				{
 					"id": "nitric-acid",
 					"type": "fluid",
-					"amount": 10
+					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "rocket-fuel",
 					"type": "fluid",
-					"amount": 100
+					"amount": 10
 				},
 				{
 					"id": "compacted-coal",
@@ -2206,7 +2206,7 @@
 				{
 					"id": "rocket-fuel",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				},
 				{
 					"id": "gas-tank",
@@ -2240,7 +2240,7 @@
 				{
 					"id": "rocket-fuel",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				},
 				{
 					"id": "gas-tank",
@@ -2272,7 +2272,7 @@
 				{
 					"id": "ionized-fuel",
 					"type": "fluid",
-					"amount": 100
+					"amount": 10
 				},
 				{
 					"id": "compacted-coal",
@@ -2342,7 +2342,7 @@
 				{
 					"id": "dark-energy",
 					"type": "fluid",
-					"amount": 100
+					"amount": 10
 				}
 			],
 			"duration": 6,
@@ -2358,7 +2358,7 @@
 				{
 					"id": "quantum-energy",
 					"type": "fluid",
-					"amount": 100
+					"amount": 10
 				}
 			],
 			"duration": 3,
@@ -2378,7 +2378,7 @@
 				{
 					"id": "dark-energy",
 					"type": "fluid",
-					"amount": 50
+					"amount": 5
 				}
 			],
 			"out": [
@@ -2415,7 +2415,7 @@
 				{
 					"id": "quantum-energy",
 					"type": "fluid",
-					"amount": 250
+					"amount": 25
 				}
 			],
 			"out": [
@@ -2427,7 +2427,7 @@
 				{
 					"id": "dark-energy",
 					"type": "fluid",
-					"amount": 250
+					"amount": 25
 				}
 			],
 			"duration": 12,
@@ -2457,7 +2457,7 @@
 				{
 					"id": "quantum-energy",
 					"type": "fluid",
-					"amount": 250
+					"amount": 25
 				}
 			],
 			"out": [
@@ -2469,7 +2469,7 @@
 				{
 					"id": "dark-energy",
 					"type": "fluid",
-					"amount": 250
+					"amount": 25
 				}
 			],
 			"duration": 20,
@@ -2499,7 +2499,7 @@
 				{
 					"id": "quantum-energy",
 					"type": "fluid",
-					"amount": 250
+					"amount": 25
 				}
 			],
 			"out": [
@@ -2511,7 +2511,7 @@
 				{
 					"id": "dark-energy",
 					"type": "fluid",
-					"amount": 250
+					"amount": 25
 				}
 			],
 			"duration": 15,
@@ -2526,7 +2526,7 @@
 				{
 					"id": "rocket-fuel",
 					"type": "fluid",
-					"amount": 160
+					"amount": 16
 				},
 				{
 					"id": "crystal-shard",
@@ -2538,7 +2538,7 @@
 				{
 					"id": "ionized-fuel",
 					"type": "fluid",
-					"amount": 160
+					"amount": 16
 				},
 				{
 					"id": "compacted-coal",
@@ -2558,7 +2558,7 @@
 				{
 					"id": "ionized-fuel",
 					"type": "fluid",
-					"amount": 40
+					"amount": 4
 				},
 				{
 					"id": "gas-tank",
@@ -2592,7 +2592,7 @@
 				{
 					"id": "ionized-fuel",
 					"type": "fluid",
-					"amount": 40
+					"amount": 4
 				},
 				{
 					"id": "gas-tank",
@@ -2834,7 +2834,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 200
+					"amount": 20
 				}
 			],
 			"out": [
@@ -3192,7 +3192,7 @@
 				{
 					"id": "nitrogen-gas",
 					"type": "fluid",
-					"amount": 120
+					"amount": 12
 				}
 			],
 			"duration": 6,
@@ -3219,7 +3219,7 @@
 				{
 					"id": "nitrogen-gas",
 					"type": "fluid",
-					"amount": 120
+					"amount": 12
 				}
 			],
 			"duration": 6,
@@ -3369,7 +3369,7 @@
 				{
 					"id": "liquid-fuel",
 					"type": "fluid",
-					"amount": 60
+					"amount": 6
 				},
 				{
 					"id": "compacted-coal",
@@ -3381,7 +3381,7 @@
 				{
 					"id": "liquid-turbo-fuel",
 					"type": "fluid",
-					"amount": 50
+					"amount": 5
 				}
 			],
 			"duration": 16,
@@ -3396,7 +3396,7 @@
 				{
 					"id": "liquid-turbo-fuel",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				},
 				{
 					"id": "fluid-canister",
@@ -3430,7 +3430,7 @@
 				{
 					"id": "liquid-turbo-fuel",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				},
 				{
 					"id": "fluid-canister",
@@ -3647,14 +3647,14 @@
 				{
 					"id": "liquid-oil",
 					"type": "fluid",
-					"amount": 60
+					"amount": 6
 				}
 			],
 			"out": [
 				{
 					"id": "liquid-fuel",
 					"type": "fluid",
-					"amount": 40
+					"amount": 4
 				},
 				{
 					"id": "polymer-resin",
@@ -3674,7 +3674,7 @@
 				{
 					"id": "heavy-oil-residue",
 					"type": "fluid",
-					"amount": 40
+					"amount": 4
 				}
 			],
 			"out": [
@@ -3696,7 +3696,7 @@
 				{
 					"id": "liquid-oil",
 					"type": "fluid",
-					"amount": 30
+					"amount": 3
 				}
 			],
 			"out": [
@@ -3708,7 +3708,7 @@
 				{
 					"id": "heavy-oil-residue",
 					"type": "fluid",
-					"amount": 10
+					"amount": 1
 				}
 			],
 			"duration": 6,
@@ -3723,7 +3723,7 @@
 				{
 					"id": "liquid-oil",
 					"type": "fluid",
-					"amount": 30
+					"amount": 3
 				}
 			],
 			"out": [
@@ -3735,7 +3735,7 @@
 				{
 					"id": "heavy-oil-residue",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				}
 			],
 			"duration": 6,
@@ -3750,14 +3750,14 @@
 				{
 					"id": "heavy-oil-residue",
 					"type": "fluid",
-					"amount": 60
+					"amount": 6
 				}
 			],
 			"out": [
 				{
 					"id": "liquid-fuel",
 					"type": "fluid",
-					"amount": 40
+					"amount": 4
 				}
 			],
 			"duration": 6,
@@ -3777,7 +3777,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				}
 			],
 			"out": [
@@ -3804,7 +3804,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 40
+					"amount": 4
 				}
 			],
 			"out": [
@@ -3875,7 +3875,7 @@
 				{
 					"id": "liquid-oil",
 					"type": "fluid",
-					"amount": 100
+					"amount": 10
 				}
 			],
 			"out": [
@@ -3929,7 +3929,7 @@
 				{
 					"id": "dark-energy",
 					"type": "fluid",
-					"amount": 50
+					"amount": 5
 				}
 			],
 			"out": [
@@ -3951,7 +3951,7 @@
 				{
 					"id": "dark-energy",
 					"type": "fluid",
-					"amount": 100
+					"amount": 10
 				}
 			],
 			"out": [
@@ -3978,7 +3978,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 50
+					"amount": 5
 				}
 			],
 			"out": [
@@ -4000,7 +4000,7 @@
 				{
 					"id": "heavy-oil-residue",
 					"type": "fluid",
-					"amount": 50
+					"amount": 5
 				},
 				{
 					"id": "compacted-coal",
@@ -4012,7 +4012,7 @@
 				{
 					"id": "liquid-turbo-fuel",
 					"type": "fluid",
-					"amount": 40
+					"amount": 4
 				}
 			],
 			"duration": 8,
@@ -4257,7 +4257,7 @@
 				{
 					"id": "liquid-fuel",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				},
 				{
 					"id": "fluid-canister",
@@ -4289,14 +4289,14 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 30
+					"amount": 3
 				}
 			],
 			"out": [
 				{
 					"id": "liquid-biofuel",
 					"type": "fluid",
-					"amount": 40
+					"amount": 4
 				}
 			],
 			"duration": 4,
@@ -4311,7 +4311,7 @@
 				{
 					"id": "liquid-biofuel",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				},
 				{
 					"id": "fluid-canister",
@@ -4338,7 +4338,7 @@
 				{
 					"id": "liquid-oil",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				},
 				{
 					"id": "fluid-canister",
@@ -4365,7 +4365,7 @@
 				{
 					"id": "heavy-oil-residue",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				},
 				{
 					"id": "fluid-canister",
@@ -4392,7 +4392,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				},
 				{
 					"id": "fluid-canister",
@@ -4426,7 +4426,7 @@
 				{
 					"id": "liquid-biofuel",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				},
 				{
 					"id": "fluid-canister",
@@ -4453,7 +4453,7 @@
 				{
 					"id": "liquid-fuel",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				},
 				{
 					"id": "fluid-canister",
@@ -4480,7 +4480,7 @@
 				{
 					"id": "liquid-oil",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				},
 				{
 					"id": "fluid-canister",
@@ -4507,7 +4507,7 @@
 				{
 					"id": "heavy-oil-residue",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				},
 				{
 					"id": "fluid-canister",
@@ -4534,7 +4534,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				},
 				{
 					"id": "fluid-canister",
@@ -4559,7 +4559,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 30
+					"amount": 3
 				}
 			],
 			"out": [
@@ -4613,7 +4613,7 @@
 				{
 					"id": "liquid-fuel",
 					"type": "fluid",
-					"amount": 60
+					"amount": 6
 				}
 			],
 			"out": [
@@ -4640,7 +4640,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 50
+					"amount": 5
 				}
 			],
 			"out": [
@@ -4689,7 +4689,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 40
+					"amount": 4
 				}
 			],
 			"out": [
@@ -4716,7 +4716,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 40
+					"amount": 4
 				}
 			],
 			"out": [
@@ -4743,7 +4743,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				}
 			],
 			"out": [
@@ -4841,14 +4841,14 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 180
+					"amount": 18
 				}
 			],
 			"out": [
 				{
 					"id": "alumina-solution",
 					"type": "fluid",
-					"amount": 120
+					"amount": 12
 				},
 				{
 					"id": "silica",
@@ -4868,7 +4868,7 @@
 				{
 					"id": "alumina-solution",
 					"type": "fluid",
-					"amount": 40
+					"amount": 4
 				},
 				{
 					"id": "coal",
@@ -4885,7 +4885,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				}
 			],
 			"duration": 1,
@@ -4900,7 +4900,7 @@
 				{
 					"id": "alumina-solution",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				},
 				{
 					"id": "fluid-canister",
@@ -5015,7 +5015,7 @@
 				{
 					"id": "alumina-solution",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				},
 				{
 					"id": "fluid-canister",
@@ -5035,7 +5035,7 @@
 				{
 					"id": "liquid-oil",
 					"type": "fluid",
-					"amount": 60
+					"amount": 6
 				}
 			],
 			"out": [
@@ -5047,7 +5047,7 @@
 				{
 					"id": "heavy-oil-residue",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				}
 			],
 			"duration": 6,
@@ -5299,14 +5299,14 @@
 				{
 					"id": "liquid-oil",
 					"type": "fluid",
-					"amount": 30
+					"amount": 3
 				}
 			],
 			"out": [
 				{
 					"id": "heavy-oil-residue",
 					"type": "fluid",
-					"amount": 40
+					"amount": 4
 				},
 				{
 					"id": "polymer-resin",
@@ -5625,7 +5625,7 @@
 				{
 					"id": "alumina-solution",
 					"type": "fluid",
-					"amount": 120
+					"amount": 12
 				},
 				{
 					"id": "petroleum-coke",
@@ -5642,7 +5642,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 70
+					"amount": 7
 				}
 			],
 			"duration": 4,
@@ -5657,7 +5657,7 @@
 				{
 					"id": "heavy-oil-residue",
 					"type": "fluid",
-					"amount": 10
+					"amount": 1
 				},
 				{
 					"id": "packaged-water",
@@ -5960,7 +5960,7 @@
 				{
 					"id": "heavy-oil-residue",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				}
 			],
 			"out": [
@@ -6127,12 +6127,12 @@
 				{
 					"id": "nitrogen-gas",
 					"type": "fluid",
-					"amount": 120
+					"amount": 12
 				},
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 30
+					"amount": 3
 				},
 				{
 					"id": "iron-plate",
@@ -6144,7 +6144,7 @@
 				{
 					"id": "nitric-acid",
 					"type": "fluid",
-					"amount": 30
+					"amount": 3
 				}
 			],
 			"duration": 6,
@@ -6169,12 +6169,12 @@
 				{
 					"id": "nitric-acid",
 					"type": "fluid",
-					"amount": 60
+					"amount": 6
 				},
 				{
 					"id": "sulfuric-acid",
 					"type": "fluid",
-					"amount": 60
+					"amount": 6
 				}
 			],
 			"out": [
@@ -6186,7 +6186,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 60
+					"amount": 6
 				}
 			],
 			"duration": 24,
@@ -6330,7 +6330,7 @@
 				{
 					"id": "nitric-acid",
 					"type": "fluid",
-					"amount": 10
+					"amount": 1
 				},
 				{
 					"id": "gas-tank",
@@ -6391,7 +6391,7 @@
 				{
 					"id": "nitric-acid",
 					"type": "fluid",
-					"amount": 10
+					"amount": 1
 				},
 				{
 					"id": "gas-tank",
@@ -6411,12 +6411,12 @@
 				{
 					"id": "liquid-fuel",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				},
 				{
 					"id": "heavy-oil-residue",
 					"type": "fluid",
-					"amount": 40
+					"amount": 4
 				},
 				{
 					"id": "sulfur",
@@ -6433,7 +6433,7 @@
 				{
 					"id": "liquid-turbo-fuel",
 					"type": "fluid",
-					"amount": 60
+					"amount": 6
 				}
 			],
 			"duration": 8,
@@ -6458,7 +6458,7 @@
 				{
 					"id": "sulfuric-acid",
 					"type": "fluid",
-					"amount": 80
+					"amount": 8
 				}
 			],
 			"out": [
@@ -6470,7 +6470,7 @@
 				{
 					"id": "sulfuric-acid",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				}
 			],
 			"duration": 12,
@@ -6495,12 +6495,12 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 50
+					"amount": 5
 				},
 				{
 					"id": "nitrogen-gas",
 					"type": "fluid",
-					"amount": 250
+					"amount": 25
 				}
 			],
 			"out": [
@@ -6560,12 +6560,12 @@
 				{
 					"id": "sulfuric-acid",
 					"type": "fluid",
-					"amount": 25
+					"amount": 2
 				},
 				{
 					"id": "alumina-solution",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				},
 				{
 					"id": "aluminum-casing",
@@ -6582,7 +6582,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 15
+					"amount": 1
 				}
 			],
 			"duration": 3,
@@ -6671,14 +6671,14 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 50
+					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "sulfuric-acid",
 					"type": "fluid",
-					"amount": 50
+					"amount": 5
 				}
 			],
 			"duration": 6,
@@ -6693,7 +6693,7 @@
 				{
 					"id": "sulfuric-acid",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				},
 				{
 					"id": "fluid-canister",
@@ -6786,7 +6786,7 @@
 				{
 					"id": "sulfuric-acid",
 					"type": "fluid",
-					"amount": 10
+					"amount": 1
 				},
 				{
 					"id": "fluid-canister",
@@ -6977,14 +6977,14 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 100
+					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "alumina-solution",
 					"type": "fluid",
-					"amount": 120
+					"amount": 12
 				}
 			],
 			"duration": 3,
@@ -7127,7 +7127,7 @@
 				{
 					"id": "nitrogen-gas",
 					"type": "fluid",
-					"amount": 250
+					"amount": 25
 				}
 			],
 			"out": [
@@ -7242,7 +7242,7 @@
 				{
 					"id": "nitrogen-gas",
 					"type": "fluid",
-					"amount": 40
+					"amount": 4
 				},
 				{
 					"id": "gas-tank",
@@ -7276,7 +7276,7 @@
 				{
 					"id": "nitrogen-gas",
 					"type": "fluid",
-					"amount": 40
+					"amount": 4
 				},
 				{
 					"id": "gas-tank",
@@ -7306,12 +7306,12 @@
 				{
 					"id": "sulfuric-acid",
 					"type": "fluid",
-					"amount": 50
+					"amount": 5
 				},
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 60
+					"amount": 6
 				}
 			],
 			"out": [
@@ -7323,7 +7323,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 50
+					"amount": 5
 				}
 			],
 			"duration": 6,
@@ -7375,12 +7375,12 @@
 				{
 					"id": "nitric-acid",
 					"type": "fluid",
-					"amount": 80
+					"amount": 8
 				},
 				{
 					"id": "liquid-fuel",
 					"type": "fluid",
-					"amount": 100
+					"amount": 10
 				}
 			],
 			"out": [
@@ -7412,12 +7412,12 @@
 				{
 					"id": "nitric-acid",
 					"type": "fluid",
-					"amount": 30
+					"amount": 3
 				},
 				{
 					"id": "sulfuric-acid",
 					"type": "fluid",
-					"amount": 50
+					"amount": 5
 				}
 			],
 			"out": [
@@ -7429,7 +7429,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 80
+					"amount": 8
 				}
 			],
 			"duration": 12,
@@ -7471,19 +7471,19 @@
 				{
 					"id": "heavy-oil-residue",
 					"type": "fluid",
-					"amount": 50
+					"amount": 5
 				},
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 100
+					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "liquid-fuel",
 					"type": "fluid",
-					"amount": 100
+					"amount": 10
 				}
 			],
 			"duration": 6,
@@ -7508,7 +7508,7 @@
 				{
 					"id": "nitrogen-gas",
 					"type": "fluid",
-					"amount": 240
+					"amount": 24
 				}
 			],
 			"out": [
@@ -7795,7 +7795,7 @@
 				{
 					"id": "dissolved-silica",
 					"type": "fluid",
-					"amount": 120
+					"amount": 12
 				},
 				{
 					"id": "stone",
@@ -7805,7 +7805,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 100
+					"amount": 10
 				}
 			],
 			"out": [
@@ -7817,7 +7817,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 80
+					"amount": 8
 				}
 			],
 			"duration": 6,
@@ -7837,7 +7837,7 @@
 				{
 					"id": "nitric-acid",
 					"type": "fluid",
-					"amount": 20
+					"amount": 2
 				}
 			],
 			"out": [
@@ -7849,7 +7849,7 @@
 				{
 					"id": "dissolved-silica",
 					"type": "fluid",
-					"amount": 120
+					"amount": 12
 				}
 			],
 			"duration": 12,
@@ -7896,7 +7896,7 @@
 				{
 					"id": "sulfuric-acid",
 					"type": "fluid",
-					"amount": 10
+					"amount": 1
 				}
 			],
 			"out": [
@@ -7977,7 +7977,7 @@
 				{
 					"id": "sulfuric-acid",
 					"type": "fluid",
-					"amount": 50
+					"amount": 5
 				}
 			],
 			"out": [
@@ -8031,7 +8031,7 @@
 				{
 					"id": "sulfuric-acid",
 					"type": "fluid",
-					"amount": 50
+					"amount": 5
 				}
 			],
 			"out": [
@@ -8712,7 +8712,7 @@
 				{
 					"id": "liquid-fuel",
 					"type": "fluid",
-					"amount": 60
+					"amount": 6
 				}
 			],
 			"out": [
@@ -9353,7 +9353,7 @@
 				{
 					"id": "dark-energy",
 					"type": "fluid",
-					"amount": 200
+					"amount": 20
 				}
 			],
 			"out": [
@@ -9390,7 +9390,7 @@
 				{
 					"id": "quantum-energy",
 					"type": "fluid",
-					"amount": 200
+					"amount": 20
 				}
 			],
 			"out": [
@@ -9402,7 +9402,7 @@
 				{
 					"id": "dark-energy",
 					"type": "fluid",
-					"amount": 200
+					"amount": 20
 				}
 			],
 			"duration": 24,
@@ -16868,7 +16868,7 @@
 				{
 					"id": "quantum-energy",
 					"type": "fluid",
-					"amount": 240
+					"amount": 24
 				}
 			],
 			"out": [
@@ -16880,7 +16880,7 @@
 				{
 					"id": "dark-energy",
 					"type": "fluid",
-					"amount": 240
+					"amount": 24
 				}
 			],
 			"duration": 24,
@@ -17447,7 +17447,7 @@
 				{
 					"id": "water",
 					"type": "fluid",
-					"amount": 10
+					"amount": 1
 				}
 			],
 			"out": [
@@ -17544,7 +17544,7 @@
 				{
 					"id": "quantum-energy",
 					"type": "fluid",
-					"amount": 120
+					"amount": 12
 				}
 			],
 			"out": [
@@ -17556,7 +17556,7 @@
 				{
 					"id": "dark-energy",
 					"type": "fluid",
-					"amount": 120
+					"amount": 12
 				}
 			],
 			"duration": 12,
@@ -17820,7 +17820,7 @@
 				{
 					"id": "liquid-turbo-fuel",
 					"type": "fluid",
-					"amount": 30
+					"amount": 3
 				}
 			],
 			"out": [
@@ -18068,7 +18068,7 @@
 				{
 					"id": "heavy-oil-residue",
 					"type": "fluid",
-					"amount": 10
+					"amount": 1
 				}
 			],
 			"out": [
