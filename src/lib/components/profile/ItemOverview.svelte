@@ -23,7 +23,7 @@
 			<details class="collapse-arrow list-col-grow collapse" name="accordion-item-overview">
 				<summary class="collapse-title select-none">
 					<div class="flex">
-						<AnvilIcon size="24" class="m-2" />
+						<AnvilIcon size="24" class="m-2 shrink-0" />
 
 						<div>
 							<div>{item.getDisplayName()}</div>

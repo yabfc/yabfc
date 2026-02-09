@@ -26,7 +26,7 @@
 			>
 				<summary class="collapse-title select-none">
 					<div class="flex">
-						<HammerIcon size="24" class="m-2" />
+						<HammerIcon size="24" class="m-2 shrink-0" />
 
 						<div>
 							<div>{machine.getDisplayName()}</div>
