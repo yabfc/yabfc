@@ -20,19 +20,23 @@
 />
 
 <div
-	class="rounded-box bg-base-100 border-base-content/10 flex flex-col items-center gap-1 border p-3"
+	class="rounded-box bg-base-100 border-base-content/10 flex w-40 flex-col items-center gap-1 border p-3"
 >
 	<FactoryIcon size="28" class="text-secondary/70" />
 
-	<span class="font-bold">{recipe?.getDisplayName()}</span>
+	<span class="w-full overflow-hidden text-center font-bold text-ellipsis">
+		{recipe?.getDisplayName()}
+	</span>
 
-	<ul class="text-base-content/80 flex flex-col gap-1 text-xs">
+	<ul class="text-base-content/80 flex w-full flex-col gap-1 text-xs">
 		{#snippet factory(name: string, amount: number, effectStrings: string[])}
-			<li>
+			<li class="overflow-hidden text-ellipsis">
 				<span class="text-base-content/50">{amount}x</span>
 				{name}
 
-				<p class="text-base-content/50 text-[0.5rem] font-semibold uppercase">
+				<p
+					class="text-base-content/50 overflow-hidden text-[0.5rem] font-semibold text-ellipsis uppercase"
+				>
 					{effectStrings.join(', ')}
 				</p>
 			</li>
