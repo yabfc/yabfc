@@ -31,7 +31,7 @@
 						<div>
 							<div>{machine.getDisplayName()}</div>
 							<div class="text-xs font-semibold uppercase opacity-60">
-								{machine.recipeCategories}
+								{machine.recipeCategories.join(', ')}
 							</div>
 						</div>
 					</div>
