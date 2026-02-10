@@ -4,6 +4,7 @@
 	import { generateNodes } from '@/lib/models/node';
 	import { OptimizationRequest } from '@/lib/models/profile';
 	import active from '@/lib/stores/active.svelte';
+	import alerts from '@/lib/stores/alerts.svelte';
 	import { stage } from '@/lib/stores/stage.svelte';
 	import { ZapIcon } from '@lucide/svelte';
 
@@ -35,8 +36,7 @@
 
 		// TODO provide visual feedback to user
 		let res = active.profile?.calculateOptimalRecipeChain(optimizationReq);
-		// TODO inform user about abort
-		if (!res) return;
+		if (!res) return alerts.push('Failed to calculate factory', 'ERROR');
 
 		const { nodes, edges } = generateNodes(res);
 
