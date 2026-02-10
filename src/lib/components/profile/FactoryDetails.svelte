@@ -1,13 +1,47 @@
 <script lang="ts">
 	import ItemSelect from '@/lib/components/shared/ItemSelect.svelte';
 	import Item from '@/lib/models/item';
+	import { generateNodes } from '@/lib/models/node';
+	import { OptimizationRequest } from '@/lib/models/profile';
+	import active from '@/lib/stores/active.svelte';
+	import { stage } from '@/lib/stores/stage.svelte';
 	import { ZapIcon } from '@lucide/svelte';
 
 	let inputs = $state<{ item: Item; amount: number }[]>([]),
 		outputs = $state<{ item: Item; amount: number }[]>([]);
 
 	function calculate() {
-		//
+		// TODO refactor optimization request generation (see #45)
+		let optimizationReq = new OptimizationRequest({
+			id: 'bogus-bogus',
+			in: inputs.map(x => ({
+				id: x.item.id,
+				amount: x.amount,
+				type: 'item',
+				exact: false,
+			})),
+			out: outputs.map(x => ({
+				id: x.item.id,
+				amount: x.amount,
+				type: 'item',
+				exact: false,
+			})),
+			duration: 1,
+			allowedEffectModules: [],
+			limitations: [],
+			weights: { power: 1, building: 1, priority: 100 },
+			tolerance: 0.05,
+		});
+
+		// TODO provide visual feedback to user
+		let res = active.profile?.calculateOptimalRecipeChain(optimizationReq);
+		// TODO inform user about abort
+		if (!res) return;
+
+		const { nodes, edges } = generateNodes(res);
+
+		stage.nodes = nodes;
+		stage.edges = edges;
 	}
 </script>
 
