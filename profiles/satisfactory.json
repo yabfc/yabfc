@@ -899,7 +899,7 @@
 		{
 			"id": "sulfur",
 			"type": "item",
-			"category": "advanced-product",
+			"category": "raw-resource",
 			"stackSize": 100
 		},
 		{
@@ -22748,6 +22748,21 @@
 			"out": [
 				{
 					"id": "coal",
+					"type": "item",
+					"amount": 1
+				}
+			],
+			"duration": 1,
+			"category": "miner",
+			"priority": 10,
+			"available": true
+		},
+		{
+			"id": "sulfur",
+			"in": [],
+			"out": [
+				{
+					"id": "sulfur",
 					"type": "item",
 					"amount": 1
 				}
