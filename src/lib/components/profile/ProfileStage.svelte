@@ -9,6 +9,8 @@
 	let nodes = $state.raw<Node[]>([]),
 		edges = $state.raw<Edge[]>([]);
 
+	const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 3 });
+
 	// update nodes and edges if global state recipe nodes or edges change
 	$effect(() => {
 		const newNodes = stage.nodes.map(x => ({
@@ -23,7 +25,7 @@
 			type: 'recipe',
 			source: x.from,
 			target: x.to,
-			label: `${x.amount}x ${active.profile?.getItemById(x.itemId)?.getDisplayName() ?? x.itemId}`,
+			label: `${formatter.format(x.amount)}x ${active.profile?.getItemById(x.itemId)?.getDisplayName() ?? x.itemId}`,
 		}));
 
 		const layouted = layout(newNodes, newEdges);
