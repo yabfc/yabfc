@@ -1365,19 +1365,16 @@
 			"in": [
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "speed-module",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -1391,24 +1388,20 @@
 			"in": [
 				{
 					"id": "speed-module",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "speed-module-2",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -1422,29 +1415,24 @@
 			"in": [
 				{
 					"id": "speed-module-2",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "tungsten-carbide",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "speed-module-3",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -1458,19 +1446,16 @@
 			"in": [
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "productivity-module",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -1484,24 +1469,20 @@
 			"in": [
 				{
 					"id": "productivity-module",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "productivity-module-2",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -1515,29 +1496,24 @@
 			"in": [
 				{
 					"id": "productivity-module-2",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "biter-egg",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "productivity-module-3",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -1551,19 +1527,16 @@
 			"in": [
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "efficiency-module",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -1577,24 +1550,20 @@
 			"in": [
 				{
 					"id": "efficiency-module",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "efficiency-module-2",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -1608,29 +1577,24 @@
 			"in": [
 				{
 					"id": "efficiency-module-2",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "spoilage",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "efficiency-module-3",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -1644,29 +1608,24 @@
 			"in": [
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 15
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 15
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "fast-inserter",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "bulk-inserter",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -1680,14 +1639,12 @@
 			"in": [
 				{
 					"id": "crude-oil",
-					"type": "fluid",
 					"amount": 100
 				}
 			],
 			"out": [
 				{
 					"id": "petroleum-gas",
-					"type": "fluid",
 					"amount": 45
 				}
 			],
@@ -1701,29 +1658,24 @@
 			"in": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "crude-oil",
-					"type": "fluid",
 					"amount": 100
 				}
 			],
 			"out": [
 				{
 					"id": "heavy-oil",
-					"type": "fluid",
 					"amount": 25
 				},
 				{
 					"id": "light-oil",
-					"type": "fluid",
 					"amount": 45
 				},
 				{
 					"id": "petroleum-gas",
-					"type": "fluid",
 					"amount": 55
 				}
 			],
@@ -1737,34 +1689,28 @@
 			"in": [
 				{
 					"id": "coal",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "heavy-oil",
-					"type": "fluid",
 					"amount": 25
 				},
 				{
 					"id": "steam",
-					"type": "fluid",
 					"amount": 50
 				}
 			],
 			"out": [
 				{
 					"id": "heavy-oil",
-					"type": "fluid",
 					"amount": 90
 				},
 				{
 					"id": "light-oil",
-					"type": "fluid",
 					"amount": 20
 				},
 				{
 					"id": "petroleum-gas",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
@@ -1778,19 +1724,16 @@
 			"in": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 30
 				},
 				{
 					"id": "heavy-oil",
-					"type": "fluid",
 					"amount": 40
 				}
 			],
 			"out": [
 				{
 					"id": "light-oil",
-					"type": "fluid",
 					"amount": 30
 				}
 			],
@@ -1804,19 +1747,16 @@
 			"in": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 30
 				},
 				{
 					"id": "light-oil",
-					"type": "fluid",
 					"amount": 30
 				}
 			],
 			"out": [
 				{
 					"id": "petroleum-gas",
-					"type": "fluid",
 					"amount": 20
 				}
 			],
@@ -1830,24 +1770,20 @@
 			"in": [
 				{
 					"id": "sulfur",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 100
 				}
 			],
 			"out": [
 				{
 					"id": "sulfuric-acid",
-					"type": "fluid",
 					"amount": 50
 				}
 			],
@@ -1861,19 +1797,16 @@
 			"in": [
 				{
 					"id": "petroleum-gas",
-					"type": "fluid",
 					"amount": 20
 				},
 				{
 					"id": "coal",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "plastic-bar",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -1887,14 +1820,12 @@
 			"in": [
 				{
 					"id": "light-oil",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "solid-fuel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -1908,14 +1839,12 @@
 			"in": [
 				{
 					"id": "petroleum-gas",
-					"type": "fluid",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "solid-fuel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -1929,14 +1858,12 @@
 			"in": [
 				{
 					"id": "heavy-oil",
-					"type": "fluid",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "solid-fuel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -1950,19 +1877,16 @@
 			"in": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 30
 				},
 				{
 					"id": "petroleum-gas",
-					"type": "fluid",
 					"amount": 30
 				}
 			],
 			"out": [
 				{
 					"id": "sulfur",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -1976,14 +1900,12 @@
 			"in": [
 				{
 					"id": "heavy-oil",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "lubricant",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
@@ -1997,14 +1919,12 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2018,19 +1938,16 @@
 			"in": [
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "night-vision-equipment",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2044,19 +1961,16 @@
 			"in": [
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "belt-immunity-equipment",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2070,19 +1984,16 @@
 			"in": [
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "energy-shield-equipment",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2096,24 +2007,20 @@
 			"in": [
 				{
 					"id": "energy-shield-equipment",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "low-density-structure",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "energy-shield-mk2-equipment",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2127,19 +2034,16 @@
 			"in": [
 				{
 					"id": "battery",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "battery-equipment",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2153,24 +2057,20 @@
 			"in": [
 				{
 					"id": "battery-equipment",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 15
 				},
 				{
 					"id": "low-density-structure",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "battery-mk2-equipment",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2184,24 +2084,20 @@
 			"in": [
 				{
 					"id": "solar-panel",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "solar-panel-equipment",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2215,24 +2111,20 @@
 			"in": [
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 200
 				},
 				{
 					"id": "low-density-structure",
-					"type": "item",
 					"amount": 50
 				},
 				{
 					"id": "uranium-fuel-cell",
-					"type": "item",
 					"amount": 4
 				}
 			],
 			"out": [
 				{
 					"id": "fission-reactor-equipment",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2246,24 +2138,20 @@
 			"in": [
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "low-density-structure",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "laser-turret",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "personal-laser-defense-equipment",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2277,24 +2165,20 @@
 			"in": [
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "laser-turret",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "discharge-defense-equipment",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2308,24 +2192,20 @@
 			"in": [
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "electric-engine-unit",
-					"type": "item",
 					"amount": 30
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "exoskeleton-equipment",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2339,29 +2219,24 @@
 			"in": [
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 40
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "battery",
-					"type": "item",
 					"amount": 45
 				}
 			],
 			"out": [
 				{
 					"id": "personal-roboport-equipment",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2375,24 +2250,20 @@
 			"in": [
 				{
 					"id": "personal-roboport-equipment",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 50
 				},
 				{
 					"id": "superconductor",
-					"type": "item",
 					"amount": 50
 				}
 			],
 			"out": [
 				{
 					"id": "personal-roboport-mk2-equipment",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2406,24 +2277,20 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "battery",
-					"type": "item",
 					"amount": 12
 				}
 			],
 			"out": [
 				{
 					"id": "laser-turret",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2437,29 +2304,24 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 30
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 15
 				},
 				{
 					"id": "pipe",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "engine-unit",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "flamethrower-turret",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2473,29 +2335,24 @@
 			"in": [
 				{
 					"id": "tungsten-plate",
-					"type": "item",
 					"amount": 60
 				},
 				{
 					"id": "refined-concrete",
-					"type": "item",
 					"amount": 60
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 40
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "artillery-turret",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2509,24 +2366,20 @@
 			"in": [
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "gun-turret",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2540,14 +2393,12 @@
 			"in": [
 				{
 					"id": "wood",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "wooden-chest",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2561,19 +2412,16 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "display-panel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2587,14 +2435,12 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "iron-stick",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -2608,14 +2454,12 @@
 			"in": [
 				{
 					"id": "stone",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "stone-furnace",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2629,19 +2473,16 @@
 			"in": [
 				{
 					"id": "stone-furnace",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "pipe",
-					"type": "item",
 					"amount": 4
 				}
 			],
 			"out": [
 				{
 					"id": "boiler",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2655,24 +2496,20 @@
 			"in": [
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 8
 				},
 				{
 					"id": "pipe",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "steam-engine",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2686,14 +2523,12 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2707,19 +2542,16 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "copper-cable",
-					"type": "item",
 					"amount": 3
 				}
 			],
 			"out": [
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2733,19 +2565,16 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "transport-belt",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -2759,24 +2588,20 @@
 			"in": [
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "electric-mining-drill",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2790,24 +2615,20 @@
 			"in": [
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "stone-furnace",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 3
 				}
 			],
 			"out": [
 				{
 					"id": "burner-mining-drill",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2821,24 +2642,20 @@
 			"in": [
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "inserter",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2852,24 +2669,20 @@
 			"in": [
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "inserter",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "fast-inserter",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2883,24 +2696,20 @@
 			"in": [
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "inserter",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "long-handed-inserter",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2914,19 +2723,16 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "burner-inserter",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2940,14 +2746,12 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "pipe",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2961,19 +2765,16 @@
 			"in": [
 				{
 					"id": "pipe",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "offshore-pump",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -2987,14 +2788,12 @@
 			"in": [
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "copper-cable",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -3008,19 +2807,16 @@
 			"in": [
 				{
 					"id": "wood",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "copper-cable",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "small-electric-pole",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -3034,24 +2830,20 @@
 			"in": [
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "submachine-gun",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3065,14 +2857,12 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 4
 				}
 			],
 			"out": [
 				{
 					"id": "firearm-magazine",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3086,14 +2876,12 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 40
 				}
 			],
 			"out": [
 				{
 					"id": "light-armor",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3107,24 +2895,20 @@
 			"in": [
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "radar",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3138,24 +2922,20 @@
 			"in": [
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "copper-cable",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "small-lamp",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3169,19 +2949,16 @@
 			"in": [
 				{
 					"id": "pipe",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "pipe-to-ground",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -3195,24 +2972,20 @@
 			"in": [
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 9
 				}
 			],
 			"out": [
 				{
 					"id": "assembling-machine-1",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3226,19 +2999,16 @@
 			"in": [
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "repair-pack",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3252,19 +3022,16 @@
 			"in": [
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "automation-science-pack",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3278,19 +3045,16 @@
 			"in": [
 				{
 					"id": "inserter",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "transport-belt",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "logistic-science-pack",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3304,24 +3068,20 @@
 			"in": [
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "transport-belt",
-					"type": "item",
 					"amount": 4
 				}
 			],
 			"out": [
 				{
 					"id": "lab",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3335,14 +3095,12 @@
 			"in": [
 				{
 					"id": "stone-brick",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "stone-wall",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3356,29 +3114,24 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "assembling-machine-1",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "assembling-machine-2",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3392,24 +3145,20 @@
 			"in": [
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "transport-belt",
-					"type": "item",
 					"amount": 4
 				}
 			],
 			"out": [
 				{
 					"id": "splitter",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3423,19 +3172,16 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "transport-belt",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "underground-belt",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -3449,24 +3195,20 @@
 			"in": [
 				{
 					"id": "engine-unit",
-					"type": "item",
 					"amount": 8
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "car",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3480,24 +3222,20 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "pipe",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "engine-unit",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3511,14 +3249,12 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 8
 				}
 			],
 			"out": [
 				{
 					"id": "iron-chest",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3532,24 +3268,20 @@
 			"in": [
 				{
 					"id": "iron-stick",
-					"type": "item",
 					"amount": 8
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "copper-cable",
-					"type": "item",
 					"amount": 4
 				}
 			],
 			"out": [
 				{
 					"id": "big-electric-pole",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3563,24 +3295,20 @@
 			"in": [
 				{
 					"id": "iron-stick",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "copper-cable",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "medium-electric-pole",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3594,29 +3322,24 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 15
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "wood",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "shotgun",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3630,19 +3353,16 @@
 			"in": [
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "shotgun-shell",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3656,24 +3376,20 @@
 			"in": [
 				{
 					"id": "firearm-magazine",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "piercing-rounds-magazine",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -3687,19 +3403,16 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "coal",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "grenade",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3713,19 +3426,16 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 6
 				},
 				{
 					"id": "stone-brick",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "steel-furnace",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3739,24 +3449,20 @@
 			"in": [
 				{
 					"id": "stone-wall",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "gate",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3770,19 +3476,16 @@
 			"in": [
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 100
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 50
 				}
 			],
 			"out": [
 				{
 					"id": "heavy-armor",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3796,14 +3499,12 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 8
 				}
 			],
 			"out": [
 				{
 					"id": "steel-chest",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3817,19 +3518,16 @@
 			"in": [
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 40
 				},
 				{
 					"id": "underground-belt",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "fast-underground-belt",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -3843,24 +3541,20 @@
 			"in": [
 				{
 					"id": "splitter",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "fast-splitter",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -3874,24 +3568,20 @@
 			"in": [
 				{
 					"id": "stone-brick",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "iron-ore",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 100
 				}
 			],
 			"out": [
 				{
 					"id": "concrete",
-					"type": "item",
 					"amount": 10
 				}
 			],
@@ -3905,14 +3595,12 @@
 			"in": [
 				{
 					"id": "concrete",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "hazard-concrete",
-					"type": "item",
 					"amount": 10
 				}
 			],
@@ -3926,29 +3614,24 @@
 			"in": [
 				{
 					"id": "concrete",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "iron-stick",
-					"type": "item",
 					"amount": 8
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 100
 				}
 			],
 			"out": [
 				{
 					"id": "refined-concrete",
-					"type": "item",
 					"amount": 10
 				}
 			],
@@ -3962,14 +3645,12 @@
 			"in": [
 				{
 					"id": "refined-concrete",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "refined-hazard-concrete",
-					"type": "item",
 					"amount": 10
 				}
 			],
@@ -3983,14 +3664,12 @@
 			"in": [
 				{
 					"id": "stone",
-					"type": "item",
 					"amount": 50
 				}
 			],
 			"out": [
 				{
 					"id": "landfill",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4004,19 +3683,16 @@
 			"in": [
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "transport-belt",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "fast-transport-belt",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4030,24 +3706,20 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 15
 				},
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "solar-panel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4061,24 +3733,20 @@
 			"in": [
 				{
 					"id": "stone",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "iron-stick",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "rail",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -4092,24 +3760,20 @@
 			"in": [
 				{
 					"id": "engine-unit",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 30
 				}
 			],
 			"out": [
 				{
 					"id": "locomotive",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4123,24 +3787,20 @@
 			"in": [
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "cargo-wagon",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4154,19 +3814,16 @@
 			"in": [
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "rail-signal",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4180,19 +3837,16 @@
 			"in": [
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "rail-chain-signal",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4206,29 +3860,24 @@
 			"in": [
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 6
 				},
 				{
 					"id": "iron-stick",
-					"type": "item",
 					"amount": 6
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 3
 				}
 			],
 			"out": [
 				{
 					"id": "train-stop",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4242,14 +3891,12 @@
 			"in": [
 				{
 					"id": "copper-ore",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4263,14 +3910,12 @@
 			"in": [
 				{
 					"id": "iron-ore",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4284,14 +3929,12 @@
 			"in": [
 				{
 					"id": "stone",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "stone-brick",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4305,14 +3948,12 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4326,19 +3967,16 @@
 			"in": [
 				{
 					"id": "copper-cable",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "arithmetic-combinator",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4352,19 +3990,16 @@
 			"in": [
 				{
 					"id": "copper-cable",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "decider-combinator",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4378,19 +4013,16 @@
 			"in": [
 				{
 					"id": "copper-cable",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "constant-combinator",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4404,19 +4036,16 @@
 			"in": [
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "decider-combinator",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "selector-combinator",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4430,24 +4059,20 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "copper-cable",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "power-switch",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4461,29 +4086,24 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "iron-stick",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "copper-cable",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 4
 				}
 			],
 			"out": [
 				{
 					"id": "programmable-speaker",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4497,24 +4117,20 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "coal",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "poison-capsule",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4528,24 +4144,20 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "coal",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "slowdown-capsule",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4559,24 +4171,20 @@
 			"in": [
 				{
 					"id": "grenade",
-					"type": "item",
 					"amount": 7
 				},
 				{
 					"id": "explosives",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "cluster-grenade",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4590,24 +4198,20 @@
 			"in": [
 				{
 					"id": "piercing-rounds-magazine",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 3
 				}
 			],
 			"out": [
 				{
 					"id": "defender-capsule",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4621,19 +4225,16 @@
 			"in": [
 				{
 					"id": "defender-capsule",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 3
 				}
 			],
 			"out": [
 				{
 					"id": "distractor-capsule",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4647,24 +4248,20 @@
 			"in": [
 				{
 					"id": "distractor-capsule",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "destroyer-capsule",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4678,29 +4275,24 @@
 			"in": [
 				{
 					"id": "explosives",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "calcite",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "grenade",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "cliff-explosives",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4714,19 +4306,16 @@
 			"in": [
 				{
 					"id": "piercing-rounds-magazine",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "uranium-238",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "uranium-rounds-magazine",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4740,19 +4329,16 @@
 			"in": [
 				{
 					"id": "explosives",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "rocket",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4766,19 +4352,16 @@
 			"in": [
 				{
 					"id": "rocket",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "explosives",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "explosive-rocket",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4792,24 +4375,20 @@
 			"in": [
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "explosives",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "uranium-235",
-					"type": "item",
 					"amount": 100
 				}
 			],
 			"out": [
 				{
 					"id": "atomic-bomb",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4823,24 +4402,20 @@
 			"in": [
 				{
 					"id": "shotgun-shell",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "piercing-shotgun-shell",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4854,24 +4429,20 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "plastic-bar",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "explosives",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "cannon-shell",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4885,24 +4456,20 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "plastic-bar",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "explosives",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "explosive-cannon-shell",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4916,19 +4483,16 @@
 			"in": [
 				{
 					"id": "cannon-shell",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "uranium-238",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "uranium-cannon-shell",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4942,19 +4506,16 @@
 			"in": [
 				{
 					"id": "explosive-cannon-shell",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "uranium-238",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "explosive-uranium-cannon-shell",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -4968,29 +4529,24 @@
 			"in": [
 				{
 					"id": "radar",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "calcite",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "tungsten-plate",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "explosives",
-					"type": "item",
 					"amount": 8
 				}
 			],
 			"out": [
 				{
 					"id": "artillery-shell",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5004,19 +4560,16 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "crude-oil",
-					"type": "fluid",
 					"amount": 100
 				}
 			],
 			"out": [
 				{
 					"id": "flamethrower-ammo",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5030,24 +4583,20 @@
 			"in": [
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "fast-transport-belt",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "lubricant",
-					"type": "fluid",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "express-transport-belt",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5061,19 +4610,16 @@
 			"in": [
 				{
 					"id": "assembling-machine-2",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "speed-module",
-					"type": "item",
 					"amount": 4
 				}
 			],
 			"out": [
 				{
 					"id": "assembling-machine-3",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5087,29 +4633,24 @@
 			"in": [
 				{
 					"id": "engine-unit",
-					"type": "item",
 					"amount": 32
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 50
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 15
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "tank",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5123,34 +4664,28 @@
 			"in": [
 				{
 					"id": "exoskeleton-equipment",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "fission-reactor-equipment",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "rocket-turret",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "radar",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "raw-fish",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "spidertron",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5164,29 +4699,24 @@
 			"in": [
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 16
 				},
 				{
 					"id": "pipe",
-					"type": "item",
 					"amount": 8
 				},
 				{
 					"id": "storage-tank",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "fluid-wagon",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5200,34 +4730,28 @@
 			"in": [
 				{
 					"id": "engine-unit",
-					"type": "item",
 					"amount": 60
 				},
 				{
 					"id": "tungsten-plate",
-					"type": "item",
 					"amount": 60
 				},
 				{
 					"id": "refined-concrete",
-					"type": "item",
 					"amount": 60
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 40
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "artillery-wagon",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5241,19 +4765,16 @@
 			"in": [
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 30
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 50
 				}
 			],
 			"out": [
 				{
 					"id": "modular-armor",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5267,24 +4788,20 @@
 			"in": [
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 40
 				},
 				{
 					"id": "electric-engine-unit",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 40
 				}
 			],
 			"out": [
 				{
 					"id": "power-armor",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5298,34 +4815,28 @@
 			"in": [
 				{
 					"id": "efficiency-module",
-					"type": "item",
 					"amount": 100
 				},
 				{
 					"id": "speed-module",
-					"type": "item",
 					"amount": 100
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 60
 				},
 				{
 					"id": "electric-engine-unit",
-					"type": "item",
 					"amount": 40
 				},
 				{
 					"id": "low-density-structure",
-					"type": "item",
 					"amount": 30
 				}
 			],
 			"out": [
 				{
 					"id": "power-armor-mk2",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5339,19 +4850,16 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "flamethrower",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5365,19 +4873,16 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "explosives",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "land-mine",
-					"type": "item",
 					"amount": 4
 				}
 			],
@@ -5391,24 +4896,20 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "rocket-launcher",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5422,29 +4923,24 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 15
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "wood",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "combat-shotgun",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5458,24 +4954,20 @@
 			"in": [
 				{
 					"id": "engine-unit",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "sulfur",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "chemical-science-pack",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -5489,24 +4981,20 @@
 			"in": [
 				{
 					"id": "piercing-rounds-magazine",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "grenade",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "stone-wall",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "military-science-pack",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -5520,24 +5008,20 @@
 			"in": [
 				{
 					"id": "electric-furnace",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "productivity-module",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "rail",
-					"type": "item",
 					"amount": 30
 				}
 			],
 			"out": [
 				{
 					"id": "production-science-pack",
-					"type": "item",
 					"amount": 3
 				}
 			],
@@ -5551,24 +5035,20 @@
 			"in": [
 				{
 					"id": "low-density-structure",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "flying-robot-frame",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "utility-science-pack",
-					"type": "item",
 					"amount": 3
 				}
 			],
@@ -5582,24 +5062,20 @@
 			"in": [
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 80
 				},
 				{
 					"id": "fast-underground-belt",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "lubricant",
-					"type": "fluid",
 					"amount": 40
 				}
 			],
 			"out": [
 				{
 					"id": "express-underground-belt",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -5613,29 +5089,24 @@
 			"in": [
 				{
 					"id": "fast-splitter",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "lubricant",
-					"type": "fluid",
 					"amount": 80
 				}
 			],
 			"out": [
 				{
 					"id": "express-splitter",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5649,24 +5120,20 @@
 			"in": [
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "plastic-bar",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "copper-cable",
-					"type": "item",
 					"amount": 4
 				}
 			],
 			"out": [
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5680,24 +5147,20 @@
 			"in": [
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "sulfuric-acid",
-					"type": "fluid",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5711,19 +5174,16 @@
 			"in": [
 				{
 					"id": "flying-robot-frame",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "logistic-robot",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5737,19 +5197,16 @@
 			"in": [
 				{
 					"id": "flying-robot-frame",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "construction-robot",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5763,24 +5220,20 @@
 			"in": [
 				{
 					"id": "steel-chest",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "passive-provider-chest",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5794,24 +5247,20 @@
 			"in": [
 				{
 					"id": "steel-chest",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "active-provider-chest",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5825,24 +5274,20 @@
 			"in": [
 				{
 					"id": "steel-chest",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "storage-chest",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5856,24 +5301,20 @@
 			"in": [
 				{
 					"id": "steel-chest",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "buffer-chest",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5887,24 +5328,20 @@
 			"in": [
 				{
 					"id": "steel-chest",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "requester-chest",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5918,34 +5355,28 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 1000
 				},
 				{
 					"id": "concrete",
-					"type": "item",
 					"amount": 1000
 				},
 				{
 					"id": "pipe",
-					"type": "item",
 					"amount": 100
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 200
 				},
 				{
 					"id": "electric-engine-unit",
-					"type": "item",
 					"amount": 200
 				}
 			],
 			"out": [
 				{
 					"id": "rocket-silo",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5959,24 +5390,20 @@
 			"in": [
 				{
 					"id": "concrete",
-					"type": "item",
 					"amount": 200
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 25
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "cargo-landing-pad",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -5990,24 +5417,20 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 45
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 45
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 45
 				}
 			],
 			"out": [
 				{
 					"id": "roboport",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6021,24 +5444,20 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "copper-cable",
-					"type": "item",
 					"amount": 6
 				}
 			],
 			"out": [
 				{
 					"id": "substation",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6052,19 +5471,16 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "battery",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "accumulator",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6078,24 +5494,20 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "stone-brick",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "electric-furnace",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6109,29 +5521,24 @@
 			"in": [
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "copper-cable",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "beacon",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6145,29 +5552,24 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "pipe",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "pumpjack",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6181,34 +5583,28 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 15
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "stone-brick",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "pipe",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "oil-refinery",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6222,24 +5618,20 @@
 			"in": [
 				{
 					"id": "engine-unit",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "lubricant",
-					"type": "fluid",
 					"amount": 15
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "electric-engine-unit",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6253,29 +5645,24 @@
 			"in": [
 				{
 					"id": "electric-engine-unit",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "battery",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 3
 				}
 			],
 			"out": [
 				{
 					"id": "flying-robot-frame",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6289,24 +5676,20 @@
 			"in": [
 				{
 					"id": "sulfur",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "coal",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "explosives",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -6320,24 +5703,20 @@
 			"in": [
 				{
 					"id": "sulfuric-acid",
-					"type": "fluid",
 					"amount": 20
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "battery",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6351,19 +5730,16 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "storage-tank",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6377,24 +5753,20 @@
 			"in": [
 				{
 					"id": "engine-unit",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "pipe",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "pump",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6408,29 +5780,24 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "pipe",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "chemical-plant",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6444,24 +5811,20 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "plastic-bar",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "low-density-structure",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6475,19 +5838,16 @@
 			"in": [
 				{
 					"id": "solid-fuel",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "light-oil",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "rocket-fuel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6501,24 +5861,20 @@
 			"in": [
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "low-density-structure",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "rocket-fuel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "rocket-part",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6532,29 +5888,24 @@
 			"in": [
 				{
 					"id": "concrete",
-					"type": "item",
 					"amount": 500
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 500
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 500
 				},
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 500
 				}
 			],
 			"out": [
 				{
 					"id": "nuclear-reactor",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6568,29 +5919,24 @@
 			"in": [
 				{
 					"id": "concrete",
-					"type": "item",
 					"amount": 100
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 50
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 100
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 100
 				}
 			],
 			"out": [
 				{
 					"id": "centrifuge",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6604,19 +5950,16 @@
 			"in": [
 				{
 					"id": "uranium-ore",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "uranium-235",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "uranium-238",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6630,24 +5973,20 @@
 			"in": [
 				{
 					"id": "uranium-235",
-					"type": "item",
 					"amount": 40
 				},
 				{
 					"id": "uranium-238",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "uranium-235",
-					"type": "item",
 					"amount": 41
 				},
 				{
 					"id": "uranium-238",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -6661,19 +6000,16 @@
 			"in": [
 				{
 					"id": "uranium-235",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "rocket-fuel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "nuclear-fuel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6687,14 +6023,12 @@
 			"in": [
 				{
 					"id": "depleted-uranium-fuel-cell",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "uranium-238",
-					"type": "item",
 					"amount": 3
 				}
 			],
@@ -6708,24 +6042,20 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "uranium-235",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "uranium-238",
-					"type": "item",
 					"amount": 19
 				}
 			],
 			"out": [
 				{
 					"id": "uranium-fuel-cell",
-					"type": "item",
 					"amount": 10
 				}
 			],
@@ -6739,24 +6069,20 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 100
 				},
 				{
 					"id": "pipe",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "heat-exchanger",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6770,19 +6096,16 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "heat-pipe",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6796,24 +6119,20 @@
 			"in": [
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 50
 				},
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 50
 				},
 				{
 					"id": "pipe",
-					"type": "item",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "steam-turbine",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6827,19 +6146,16 @@
 			"in": [
 				{
 					"id": "refined-concrete",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "rail-support",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6853,24 +6169,20 @@
 			"in": [
 				{
 					"id": "refined-concrete",
-					"type": "item",
 					"amount": 100
 				},
 				{
 					"id": "rail",
-					"type": "item",
 					"amount": 8
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "rail-ramp",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6884,19 +6196,16 @@
 			"in": [
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "quality-module",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6910,24 +6219,20 @@
 			"in": [
 				{
 					"id": "quality-module",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "quality-module-2",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6941,29 +6246,24 @@
 			"in": [
 				{
 					"id": "quality-module-2",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "superconductor",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "quality-module-3",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -6977,29 +6277,24 @@
 			"in": [
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 6
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 40
 				},
 				{
 					"id": "concrete",
-					"type": "item",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "recycler",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -7013,24 +6308,20 @@
 			"in": [
 				{
 					"id": "coal",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "calcite",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "sulfuric-acid",
-					"type": "fluid",
 					"amount": 25
 				}
 			],
 			"out": [
 				{
 					"id": "heavy-oil",
-					"type": "fluid",
 					"amount": 50
 				}
 			],
@@ -7044,19 +6335,16 @@
 			"in": [
 				{
 					"id": "yumako",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "yumako-seed",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "yumako-mash",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -7070,19 +6358,16 @@
 			"in": [
 				{
 					"id": "jellynut",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "jellynut-seed",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "jelly",
-					"type": "item",
 					"amount": 4
 				}
 			],
@@ -7096,19 +6381,16 @@
 			"in": [
 				{
 					"id": "yumako-mash",
-					"type": "item",
 					"amount": 3
 				}
 			],
 			"out": [
 				{
 					"id": "copper-bacteria",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "spoilage",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -7123,19 +6405,16 @@
 			"in": [
 				{
 					"id": "copper-bacteria",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "bioflux",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "copper-bacteria",
-					"type": "item",
 					"amount": 4
 				}
 			],
@@ -7150,19 +6429,16 @@
 			"in": [
 				{
 					"id": "jelly",
-					"type": "item",
 					"amount": 6
 				}
 			],
 			"out": [
 				{
 					"id": "iron-bacteria",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "spoilage",
-					"type": "item",
 					"amount": 4
 				}
 			],
@@ -7177,19 +6453,16 @@
 			"in": [
 				{
 					"id": "iron-bacteria",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "bioflux",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "iron-bacteria",
-					"type": "item",
 					"amount": 4
 				}
 			],
@@ -7204,24 +6477,20 @@
 			"in": [
 				{
 					"id": "yumako-seed",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "nutrients",
-					"type": "item",
 					"amount": 50
 				},
 				{
 					"id": "landfill",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "artificial-yumako-soil",
-					"type": "item",
 					"amount": 10
 				}
 			],
@@ -7236,34 +6505,28 @@
 			"in": [
 				{
 					"id": "artificial-yumako-soil",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "yumako-seed",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "biter-egg",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "spoilage",
-					"type": "item",
 					"amount": 50
 				},
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 100
 				}
 			],
 			"out": [
 				{
 					"id": "overgrowth-yumako-soil",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -7278,24 +6541,20 @@
 			"in": [
 				{
 					"id": "jellynut-seed",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "nutrients",
-					"type": "item",
 					"amount": 50
 				},
 				{
 					"id": "landfill",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "artificial-jellynut-soil",
-					"type": "item",
 					"amount": 10
 				}
 			],
@@ -7310,34 +6569,28 @@
 			"in": [
 				{
 					"id": "artificial-jellynut-soil",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "jellynut-seed",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "biter-egg",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "spoilage",
-					"type": "item",
 					"amount": 50
 				},
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 100
 				}
 			],
 			"out": [
 				{
 					"id": "overgrowth-jellynut-soil",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -7352,14 +6605,12 @@
 			"in": [
 				{
 					"id": "spoilage",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "nutrients",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -7373,14 +6624,12 @@
 			"in": [
 				{
 					"id": "yumako-mash",
-					"type": "item",
 					"amount": 4
 				}
 			],
 			"out": [
 				{
 					"id": "nutrients",
-					"type": "item",
 					"amount": 6
 				}
 			],
@@ -7394,14 +6643,12 @@
 			"in": [
 				{
 					"id": "bioflux",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "nutrients",
-					"type": "item",
 					"amount": 40
 				}
 			],
@@ -7415,24 +6662,20 @@
 			"in": [
 				{
 					"id": "pentapod-egg",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "nutrients",
-					"type": "item",
 					"amount": 30
 				},
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 60
 				}
 			],
 			"out": [
 				{
 					"id": "pentapod-egg",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -7447,24 +6690,20 @@
 			"in": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 30
 				},
 				{
 					"id": "jelly",
-					"type": "item",
 					"amount": 30
 				},
 				{
 					"id": "bioflux",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "rocket-fuel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -7478,19 +6717,16 @@
 			"in": [
 				{
 					"id": "yumako-mash",
-					"type": "item",
 					"amount": 15
 				},
 				{
 					"id": "jelly",
-					"type": "item",
 					"amount": 12
 				}
 			],
 			"out": [
 				{
 					"id": "bioflux",
-					"type": "item",
 					"amount": 4
 				}
 			],
@@ -7504,19 +6740,16 @@
 			"in": [
 				{
 					"id": "bioflux",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "yumako-mash",
-					"type": "item",
 					"amount": 4
 				}
 			],
 			"out": [
 				{
 					"id": "plastic-bar",
-					"type": "item",
 					"amount": 3
 				}
 			],
@@ -7530,19 +6763,16 @@
 			"in": [
 				{
 					"id": "spoilage",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "bioflux",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "sulfur",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -7556,14 +6786,12 @@
 			"in": [
 				{
 					"id": "jelly",
-					"type": "item",
 					"amount": 60
 				}
 			],
 			"out": [
 				{
 					"id": "lubricant",
-					"type": "fluid",
 					"amount": 20
 				}
 			],
@@ -7577,19 +6805,16 @@
 			"in": [
 				{
 					"id": "yumako-mash",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "carbon",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "carbon-fiber",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -7603,19 +6828,16 @@
 			"in": [
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "carbon-fiber",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "toolbelt-equipment",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -7629,19 +6851,16 @@
 			"in": [
 				{
 					"id": "battery-mk2-equipment",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "supercapacitor",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "battery-mk3-equipment",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -7655,19 +6874,16 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "copper-cable",
-					"type": "item",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "space-platform-foundation",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -7681,29 +6897,24 @@
 			"in": [
 				{
 					"id": "bulk-inserter",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "carbon-fiber",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "jelly",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "stack-inserter",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -7717,34 +6928,28 @@
 			"in": [
 				{
 					"id": "rocket-launcher",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "carbon-fiber",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "rocket-turret",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -7758,24 +6963,20 @@
 			"in": [
 				{
 					"id": "space-platform-foundation",
-					"type": "item",
 					"amount": 60
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "space-platform-starter-pack",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -7789,24 +6990,20 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "low-density-structure",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "cargo-bay",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -7820,24 +7017,20 @@
 			"in": [
 				{
 					"id": "low-density-structure",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "electric-engine-unit",
-					"type": "item",
 					"amount": 8
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "asteroid-collector",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -7851,24 +7044,20 @@
 			"in": [
 				{
 					"id": "low-density-structure",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "electric-engine-unit",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "crusher",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -7882,24 +7071,20 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "electric-engine-unit",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "thruster",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -7913,24 +7098,20 @@
 			"in": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "carbon",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "ice",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "space-science-pack",
-					"type": "item",
 					"amount": 5
 				}
 			],
@@ -7944,24 +7125,20 @@
 			"in": [
 				{
 					"id": "tungsten-carbide",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "tungsten-plate",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "molten-copper",
-					"type": "fluid",
 					"amount": 200
 				}
 			],
 			"out": [
 				{
 					"id": "metallurgic-science-pack",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -7976,19 +7153,16 @@
 			"in": [
 				{
 					"id": "bioflux",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "pentapod-egg",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "agricultural-science-pack",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -8003,29 +7177,24 @@
 			"in": [
 				{
 					"id": "supercapacitor",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "accumulator",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "electrolyte",
-					"type": "fluid",
 					"amount": 25
 				},
 				{
 					"id": "holmium-solution",
-					"type": "fluid",
 					"amount": 25
 				}
 			],
 			"out": [
 				{
 					"id": "electromagnetic-science-pack",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -8039,29 +7208,24 @@
 			"in": [
 				{
 					"id": "ice",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "lithium-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "fluoroketone-cold",
-					"type": "fluid",
 					"amount": 6
 				}
 			],
 			"out": [
 				{
 					"id": "cryogenic-science-pack",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "fluoroketone-hot",
-					"type": "fluid",
 					"amount": 3
 				}
 			],
@@ -8076,19 +7240,16 @@
 			"in": [
 				{
 					"id": "metallic-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "iron-ore",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "metallic-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -8102,19 +7263,16 @@
 			"in": [
 				{
 					"id": "carbonic-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "carbon",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "carbonic-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -8128,19 +7286,16 @@
 			"in": [
 				{
 					"id": "oxide-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "ice",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "oxide-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -8154,24 +7309,20 @@
 			"in": [
 				{
 					"id": "metallic-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "iron-ore",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "copper-ore",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "metallic-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -8185,24 +7336,20 @@
 			"in": [
 				{
 					"id": "carbonic-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "carbon",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "sulfur",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "carbonic-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -8216,24 +7363,20 @@
 			"in": [
 				{
 					"id": "oxide-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "ice",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "calcite",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "oxide-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -8247,24 +7390,20 @@
 			"in": [
 				{
 					"id": "metallic-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "metallic-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "carbonic-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "oxide-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -8278,24 +7417,20 @@
 			"in": [
 				{
 					"id": "carbonic-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "carbonic-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "metallic-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "oxide-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -8309,24 +7444,20 @@
 			"in": [
 				{
 					"id": "oxide-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "oxide-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "metallic-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "carbonic-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -8340,19 +7471,16 @@
 			"in": [
 				{
 					"id": "carbon",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "thruster-fuel",
-					"type": "fluid",
 					"amount": 75
 				}
 			],
@@ -8366,19 +7494,16 @@
 			"in": [
 				{
 					"id": "iron-ore",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "thruster-oxidizer",
-					"type": "fluid",
 					"amount": 75
 				}
 			],
@@ -8392,14 +7517,12 @@
 			"in": [
 				{
 					"id": "ice",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 20
 				}
 			],
@@ -8413,24 +7536,20 @@
 			"in": [
 				{
 					"id": "carbon",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "calcite",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 100
 				}
 			],
 			"out": [
 				{
 					"id": "thruster-fuel",
-					"type": "fluid",
 					"amount": 1500
 				}
 			],
@@ -8444,24 +7563,20 @@
 			"in": [
 				{
 					"id": "iron-ore",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "calcite",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 100
 				}
 			],
 			"out": [
 				{
 					"id": "thruster-oxidizer",
-					"type": "fluid",
 					"amount": 1500
 				}
 			],
@@ -8475,19 +7590,16 @@
 			"in": [
 				{
 					"id": "calcite",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "sulfuric-acid",
-					"type": "fluid",
 					"amount": 1000
 				}
 			],
 			"out": [
 				{
 					"id": "steam",
-					"type": "fluid",
 					"amount": 10000
 				}
 			],
@@ -8502,14 +7614,12 @@
 			"in": [
 				{
 					"id": "steam",
-					"type": "fluid",
 					"amount": 1000
 				}
 			],
 			"out": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 90
 				}
 			],
@@ -8523,19 +7633,16 @@
 			"in": [
 				{
 					"id": "coal",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "sulfuric-acid",
-					"type": "fluid",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "carbon",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -8549,24 +7656,20 @@
 			"in": [
 				{
 					"id": "tungsten-ore",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "sulfuric-acid",
-					"type": "fluid",
 					"amount": 10
 				},
 				{
 					"id": "carbon",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "tungsten-carbide",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -8580,34 +7683,28 @@
 			"in": [
 				{
 					"id": "tungsten-carbide",
-					"type": "item",
 					"amount": 50
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 50
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 30
 				},
 				{
 					"id": "refined-concrete",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "lubricant",
-					"type": "fluid",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "foundry",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -8622,24 +7719,20 @@
 			"in": [
 				{
 					"id": "lava",
-					"type": "fluid",
 					"amount": 500
 				},
 				{
 					"id": "calcite",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "molten-iron",
-					"type": "fluid",
 					"amount": 250
 				},
 				{
 					"id": "stone",
-					"type": "item",
 					"amount": 10
 				}
 			],
@@ -8653,24 +7746,20 @@
 			"in": [
 				{
 					"id": "lava",
-					"type": "fluid",
 					"amount": 500
 				},
 				{
 					"id": "calcite",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "molten-copper",
-					"type": "fluid",
 					"amount": 250
 				},
 				{
 					"id": "stone",
-					"type": "item",
 					"amount": 15
 				}
 			],
@@ -8684,19 +7773,16 @@
 			"in": [
 				{
 					"id": "iron-ore",
-					"type": "item",
 					"amount": 50
 				},
 				{
 					"id": "calcite",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "molten-iron",
-					"type": "fluid",
 					"amount": 500
 				}
 			],
@@ -8710,19 +7796,16 @@
 			"in": [
 				{
 					"id": "copper-ore",
-					"type": "item",
 					"amount": 50
 				},
 				{
 					"id": "calcite",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "molten-copper",
-					"type": "fluid",
 					"amount": 500
 				}
 			],
@@ -8736,14 +7819,12 @@
 			"in": [
 				{
 					"id": "molten-iron",
-					"type": "fluid",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -8757,14 +7838,12 @@
 			"in": [
 				{
 					"id": "molten-iron",
-					"type": "fluid",
 					"amount": 30
 				}
 			],
 			"out": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -8778,14 +7857,12 @@
 			"in": [
 				{
 					"id": "molten-copper",
-					"type": "fluid",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -8799,14 +7876,12 @@
 			"in": [
 				{
 					"id": "molten-iron",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -8820,14 +7895,12 @@
 			"in": [
 				{
 					"id": "molten-iron",
-					"type": "fluid",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "iron-stick",
-					"type": "item",
 					"amount": 4
 				}
 			],
@@ -8841,14 +7914,12 @@
 			"in": [
 				{
 					"id": "molten-iron",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "pipe",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -8862,19 +7933,16 @@
 			"in": [
 				{
 					"id": "molten-iron",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "pipe",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "pipe-to-ground",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -8888,24 +7956,20 @@
 			"in": [
 				{
 					"id": "molten-iron",
-					"type": "fluid",
 					"amount": 80
 				},
 				{
 					"id": "molten-copper",
-					"type": "fluid",
 					"amount": 250
 				},
 				{
 					"id": "plastic-bar",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "low-density-structure",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -8919,24 +7983,20 @@
 			"in": [
 				{
 					"id": "molten-iron",
-					"type": "fluid",
 					"amount": 20
 				},
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 100
 				},
 				{
 					"id": "stone-brick",
-					"type": "item",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "concrete",
-					"type": "item",
 					"amount": 10
 				}
 			],
@@ -8950,14 +8010,12 @@
 			"in": [
 				{
 					"id": "molten-copper",
-					"type": "fluid",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "copper-cable",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -8971,19 +8029,16 @@
 			"in": [
 				{
 					"id": "tungsten-ore",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "molten-iron",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "tungsten-plate",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -8997,24 +8052,20 @@
 			"in": [
 				{
 					"id": "tungsten-plate",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "express-transport-belt",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "lubricant",
-					"type": "fluid",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "turbo-transport-belt",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9029,24 +8080,20 @@
 			"in": [
 				{
 					"id": "tungsten-plate",
-					"type": "item",
 					"amount": 40
 				},
 				{
 					"id": "express-underground-belt",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "lubricant",
-					"type": "fluid",
 					"amount": 40
 				}
 			],
 			"out": [
 				{
 					"id": "turbo-underground-belt",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -9061,29 +8108,24 @@
 			"in": [
 				{
 					"id": "express-splitter",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "tungsten-plate",
-					"type": "item",
 					"amount": 15
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "lubricant",
-					"type": "fluid",
 					"amount": 80
 				}
 			],
 			"out": [
 				{
 					"id": "turbo-splitter",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9098,34 +8140,28 @@
 			"in": [
 				{
 					"id": "electric-mining-drill",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "molten-iron",
-					"type": "fluid",
 					"amount": 200
 				},
 				{
 					"id": "tungsten-carbide",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "electric-engine-unit",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "big-mining-drill",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9140,34 +8176,28 @@
 			"in": [
 				{
 					"id": "power-armor-mk2",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "holmium-plate",
-					"type": "item",
 					"amount": 200
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 100
 				},
 				{
 					"id": "superconductor",
-					"type": "item",
 					"amount": 50
 				},
 				{
 					"id": "supercapacitor",
-					"type": "item",
 					"amount": 50
 				}
 			],
 			"out": [
 				{
 					"id": "mech-armor",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9181,29 +8211,24 @@
 			"in": [
 				{
 					"id": "tungsten-plate",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "superconductor",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "quantum-processor",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "fluoroketone-cold",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "railgun",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9217,34 +8242,28 @@
 			"in": [
 				{
 					"id": "quantum-processor",
-					"type": "item",
 					"amount": 100
 				},
 				{
 					"id": "tungsten-plate",
-					"type": "item",
 					"amount": 30
 				},
 				{
 					"id": "superconductor",
-					"type": "item",
 					"amount": 50
 				},
 				{
 					"id": "carbon-fiber",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "fluoroketone-cold",
-					"type": "fluid",
 					"amount": 100
 				}
 			],
 			"out": [
 				{
 					"id": "railgun-turret",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9258,24 +8277,20 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "copper-cable",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "explosives",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "railgun-ammo",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9289,29 +8304,24 @@
 			"in": [
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 3
 				},
 				{
 					"id": "spoilage",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "landfill",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "agricultural-tower",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9325,34 +8335,28 @@
 			"in": [
 				{
 					"id": "nutrients",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "pentapod-egg",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "iron-plate",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "landfill",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "biochamber",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9367,14 +8371,12 @@
 			"in": [
 				{
 					"id": "spoilage",
-					"type": "item",
 					"amount": 6
 				}
 			],
 			"out": [
 				{
 					"id": "carbon",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9388,24 +8390,20 @@
 			"in": [
 				{
 					"id": "carbon",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "sulfur",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "coal",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9419,29 +8417,24 @@
 			"in": [
 				{
 					"id": "flying-robot-frame",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "bioflux",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "capture-robot-rocket",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9455,34 +8448,28 @@
 			"in": [
 				{
 					"id": "lab",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "biter-egg",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "refined-concrete",
-					"type": "item",
 					"amount": 25
 				},
 				{
 					"id": "capture-robot-rocket",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "uranium-235",
-					"type": "item",
 					"amount": 3
 				}
 			],
 			"out": [
 				{
 					"id": "biolab",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9496,29 +8483,24 @@
 			"in": [
 				{
 					"id": "biter-egg",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "capture-robot-rocket",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "uranium-235",
-					"type": "item",
 					"amount": 15
 				},
 				{
 					"id": "fluoroketone-cold",
-					"type": "fluid",
 					"amount": 100
 				}
 			],
 			"out": [
 				{
 					"id": "captive-biter-spawner",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9533,7 +8515,6 @@
 			"out": [
 				{
 					"id": "biter-egg",
-					"type": "item",
 					"amount": 5
 				}
 			],
@@ -9547,24 +8528,20 @@
 			"in": [
 				{
 					"id": "raw-fish",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "nutrients",
-					"type": "item",
 					"amount": 100
 				},
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 100
 				}
 			],
 			"out": [
 				{
 					"id": "raw-fish",
-					"type": "item",
 					"amount": 3
 				}
 			],
@@ -9579,14 +8556,12 @@
 			"in": [
 				{
 					"id": "raw-fish",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "nutrients",
-					"type": "item",
 					"amount": 20
 				}
 			],
@@ -9600,14 +8575,12 @@
 			"in": [
 				{
 					"id": "biter-egg",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "nutrients",
-					"type": "item",
 					"amount": 20
 				}
 			],
@@ -9621,69 +8594,56 @@
 			"in": [
 				{
 					"id": "scrap",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "iron-gear-wheel",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "solid-fuel",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "concrete",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "ice",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "battery",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "stone",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "advanced-circuit",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "copper-cable",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "low-density-structure",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "holmium-ore",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9697,24 +8657,20 @@
 			"in": [
 				{
 					"id": "copper-cable",
-					"type": "item",
 					"amount": 12
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 8
 				},
 				{
 					"id": "stone-brick",
-					"type": "item",
 					"amount": 4
 				}
 			],
 			"out": [
 				{
 					"id": "lightning-rod",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9728,24 +8684,20 @@
 			"in": [
 				{
 					"id": "holmium-ore",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "stone",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "holmium-solution",
-					"type": "fluid",
 					"amount": 100
 				}
 			],
@@ -9759,14 +8711,12 @@
 			"in": [
 				{
 					"id": "holmium-solution",
-					"type": "fluid",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "holmium-plate",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9780,29 +8730,24 @@
 			"in": [
 				{
 					"id": "holmium-plate",
-					"type": "item",
 					"amount": 150
 				},
 				{
 					"id": "steel-plate",
-					"type": "item",
 					"amount": 50
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 50
 				},
 				{
 					"id": "refined-concrete",
-					"type": "item",
 					"amount": 50
 				}
 			],
 			"out": [
 				{
 					"id": "electromagnetic-plant",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9816,29 +8761,24 @@
 			"in": [
 				{
 					"id": "holmium-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "copper-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "plastic-bar",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "light-oil",
-					"type": "fluid",
 					"amount": 5
 				}
 			],
 			"out": [
 				{
 					"id": "superconductor",
-					"type": "item",
 					"amount": 2
 				}
 			],
@@ -9852,34 +8792,28 @@
 			"in": [
 				{
 					"id": "holmium-plate",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "superconductor",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "electronic-circuit",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "battery",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "electrolyte",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "supercapacitor",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9893,24 +8827,20 @@
 			"in": [
 				{
 					"id": "stone",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "heavy-oil",
-					"type": "fluid",
 					"amount": 10
 				},
 				{
 					"id": "holmium-solution",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "electrolyte",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
@@ -9924,29 +8854,24 @@
 			"in": [
 				{
 					"id": "lightning-rod",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "supercapacitor",
-					"type": "item",
 					"amount": 8
 				},
 				{
 					"id": "accumulator",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "electrolyte",
-					"type": "fluid",
 					"amount": 80
 				}
 			],
 			"out": [
 				{
 					"id": "lightning-collector",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9960,29 +8885,24 @@
 			"in": [
 				{
 					"id": "holmium-plate",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "superconductor",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "plastic-bar",
-					"type": "item",
 					"amount": 30
 				},
 				{
 					"id": "electrolyte",
-					"type": "fluid",
 					"amount": 100
 				}
 			],
 			"out": [
 				{
 					"id": "teslagun",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -9996,34 +8916,28 @@
 			"in": [
 				{
 					"id": "teslagun",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "supercapacitor",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "superconductor",
-					"type": "item",
 					"amount": 50
 				},
 				{
 					"id": "electrolyte",
-					"type": "fluid",
 					"amount": 500
 				}
 			],
 			"out": [
 				{
 					"id": "tesla-turret",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10037,24 +8951,20 @@
 			"in": [
 				{
 					"id": "supercapacitor",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "plastic-bar",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "electrolyte",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "tesla-ammo",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10068,24 +8978,20 @@
 			"in": [
 				{
 					"id": "boiler",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "heat-pipe",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "concrete",
-					"type": "item",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "heating-tower",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10099,24 +9005,20 @@
 			"in": [
 				{
 					"id": "holmium-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "lithium-brine",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "ammonia",
-					"type": "fluid",
 					"amount": 50
 				}
 			],
 			"out": [
 				{
 					"id": "lithium",
-					"type": "item",
 					"amount": 5
 				}
 			],
@@ -10130,14 +9032,12 @@
 			"in": [
 				{
 					"id": "lithium",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "lithium-plate",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10151,29 +9051,24 @@
 			"in": [
 				{
 					"id": "fluorine",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "ammonia",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "solid-fuel",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "lithium",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "fluoroketone-hot",
-					"type": "fluid",
 					"amount": 50
 				}
 			],
@@ -10187,14 +9082,12 @@
 			"in": [
 				{
 					"id": "fluoroketone-hot",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "fluoroketone-cold",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
@@ -10208,29 +9101,24 @@
 			"in": [
 				{
 					"id": "refined-concrete",
-					"type": "item",
 					"amount": 40
 				},
 				{
 					"id": "superconductor",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "lithium-plate",
-					"type": "item",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "cryogenic-plant",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10245,44 +9133,36 @@
 			"in": [
 				{
 					"id": "tungsten-carbide",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "processing-unit",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "superconductor",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "carbon-fiber",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "lithium-plate",
-					"type": "item",
 					"amount": 2
 				},
 				{
 					"id": "fluoroketone-cold",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "quantum-processor",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "fluoroketone-hot",
-					"type": "fluid",
 					"amount": 5
 				}
 			],
@@ -10297,19 +9177,16 @@
 			"in": [
 				{
 					"id": "ammoniacal-solution",
-					"type": "fluid",
 					"amount": 50
 				}
 			],
 			"out": [
 				{
 					"id": "ice",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "ammonia",
-					"type": "fluid",
 					"amount": 50
 				}
 			],
@@ -10323,39 +9200,32 @@
 			"in": [
 				{
 					"id": "fission-reactor-equipment",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "fusion-power-cell",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "tungsten-plate",
-					"type": "item",
 					"amount": 250
 				},
 				{
 					"id": "carbon-fiber",
-					"type": "item",
 					"amount": 100
 				},
 				{
 					"id": "supercapacitor",
-					"type": "item",
 					"amount": 25
 				},
 				{
 					"id": "quantum-processor",
-					"type": "item",
 					"amount": 250
 				}
 			],
 			"out": [
 				{
 					"id": "fusion-reactor-equipment",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10369,24 +9239,20 @@
 			"in": [
 				{
 					"id": "lithium-plate",
-					"type": "item",
 					"amount": 5
 				},
 				{
 					"id": "holmium-plate",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "ammonia",
-					"type": "fluid",
 					"amount": 100
 				}
 			],
 			"out": [
 				{
 					"id": "fusion-power-cell",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10400,24 +9266,20 @@
 			"in": [
 				{
 					"id": "tungsten-plate",
-					"type": "item",
 					"amount": 200
 				},
 				{
 					"id": "superconductor",
-					"type": "item",
 					"amount": 200
 				},
 				{
 					"id": "quantum-processor",
-					"type": "item",
 					"amount": 250
 				}
 			],
 			"out": [
 				{
 					"id": "fusion-reactor",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10432,24 +9294,20 @@
 			"in": [
 				{
 					"id": "tungsten-plate",
-					"type": "item",
 					"amount": 100
 				},
 				{
 					"id": "superconductor",
-					"type": "item",
 					"amount": 100
 				},
 				{
 					"id": "quantum-processor",
-					"type": "item",
 					"amount": 50
 				}
 			],
 			"out": [
 				{
 					"id": "fusion-generator",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10464,19 +9322,16 @@
 			"in": [
 				{
 					"id": "ammonia",
-					"type": "fluid",
 					"amount": 400
 				},
 				{
 					"id": "ice",
-					"type": "item",
 					"amount": 50
 				}
 			],
 			"out": [
 				{
 					"id": "ice-platform",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10490,19 +9345,16 @@
 			"in": [
 				{
 					"id": "ammonia",
-					"type": "fluid",
 					"amount": 15
 				},
 				{
 					"id": "crude-oil",
-					"type": "fluid",
 					"amount": 6
 				}
 			],
 			"out": [
 				{
 					"id": "solid-fuel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10516,24 +9368,20 @@
 			"in": [
 				{
 					"id": "solid-fuel",
-					"type": "item",
 					"amount": 10
 				},
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "ammonia",
-					"type": "fluid",
 					"amount": 500
 				}
 			],
 			"out": [
 				{
 					"id": "rocket-fuel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10547,34 +9395,28 @@
 			"in": [
 				{
 					"id": "tungsten-plate",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "lithium-plate",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "carbon-fiber",
-					"type": "item",
 					"amount": 4
 				},
 				{
 					"id": "stone",
-					"type": "item",
 					"amount": 20
 				},
 				{
 					"id": "fluoroketone-cold",
-					"type": "fluid",
 					"amount": 20
 				}
 			],
 			"out": [
 				{
 					"id": "foundation",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10588,24 +9430,20 @@
 			"in": [
 				{
 					"id": "promethium-asteroid-chunk",
-					"type": "item",
 					"amount": 25
 				},
 				{
 					"id": "quantum-processor",
-					"type": "item",
 					"amount": 1
 				},
 				{
 					"id": "biter-egg",
-					"type": "item",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "promethium-science-pack",
-					"type": "item",
 					"amount": 10
 				}
 			],
@@ -10619,14 +9457,12 @@
 			"in": [
 				{
 					"id": "wood",
-					"type": "item",
 					"amount": 2
 				}
 			],
 			"out": [
 				{
 					"id": "tree-seed",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10641,19 +9477,16 @@
 			"in": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "water-barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10667,19 +9500,16 @@
 			"in": [
 				{
 					"id": "water-barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10693,19 +9523,16 @@
 			"in": [
 				{
 					"id": "sulfuric-acid",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "sulfuric-acid-barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10719,19 +9546,16 @@
 			"in": [
 				{
 					"id": "sulfuric-acid-barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "sulfuric-acid",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10745,19 +9569,16 @@
 			"in": [
 				{
 					"id": "crude-oil",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "crude-oil-barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10771,19 +9592,16 @@
 			"in": [
 				{
 					"id": "crude-oil-barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "crude-oil",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10797,19 +9615,16 @@
 			"in": [
 				{
 					"id": "heavy-oil",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "heavy-oil-barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10823,19 +9638,16 @@
 			"in": [
 				{
 					"id": "heavy-oil-barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "heavy-oil",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10849,19 +9661,16 @@
 			"in": [
 				{
 					"id": "light-oil",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "light-oil-barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10875,19 +9684,16 @@
 			"in": [
 				{
 					"id": "light-oil-barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "light-oil",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10901,19 +9707,16 @@
 			"in": [
 				{
 					"id": "petroleum-gas",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "petroleum-gas-barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10927,19 +9730,16 @@
 			"in": [
 				{
 					"id": "petroleum-gas-barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "petroleum-gas",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10953,19 +9753,16 @@
 			"in": [
 				{
 					"id": "lubricant",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "lubricant-barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -10979,19 +9776,16 @@
 			"in": [
 				{
 					"id": "lubricant-barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "lubricant",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -11005,19 +9799,16 @@
 			"in": [
 				{
 					"id": "fluoroketone-cold",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "fluoroketone-cold-barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -11031,19 +9822,16 @@
 			"in": [
 				{
 					"id": "fluoroketone-cold-barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "fluoroketone-cold",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -11057,19 +9845,16 @@
 			"in": [
 				{
 					"id": "fluoroketone-hot",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "fluoroketone-hot-barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -11083,19 +9868,16 @@
 			"in": [
 				{
 					"id": "fluoroketone-hot-barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "fluoroketone-hot",
-					"type": "fluid",
 					"amount": 50
 				},
 				{
 					"id": "barrel",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -11110,7 +9892,6 @@
 			"out": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 1200
 				}
 			],
@@ -11118,7 +9899,7 @@
 			"category": "offshore-pump",
 			"priority": 10,
 			"available": true,
-			"limitations": ["planet:nauvis", "planet:gleba"]
+			"limitations": ["planet:gleba", "planet:nauvis"]
 		},
 		{
 			"id": "lava",
@@ -11126,7 +9907,6 @@
 			"out": [
 				{
 					"id": "lava",
-					"type": "fluid",
 					"amount": 1200
 				}
 			],
@@ -11142,7 +9922,6 @@
 			"out": [
 				{
 					"id": "heavy-oil",
-					"type": "fluid",
 					"amount": 1200
 				}
 			],
@@ -11158,7 +9937,6 @@
 			"out": [
 				{
 					"id": "ammoniacal-solution",
-					"type": "fluid",
 					"amount": 1200
 				}
 			],
@@ -11174,7 +9952,6 @@
 			"out": [
 				{
 					"id": "iron-ore",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -11189,7 +9966,6 @@
 			"out": [
 				{
 					"id": "copper-ore",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -11204,7 +9980,6 @@
 			"out": [
 				{
 					"id": "coal",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -11219,7 +9994,6 @@
 			"out": [
 				{
 					"id": "stone",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -11233,14 +10007,12 @@
 			"in": [
 				{
 					"id": "sulfuric-acid",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
 			"out": [
 				{
 					"id": "uranium-ore",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -11255,7 +10027,6 @@
 			"out": [
 				{
 					"id": "crude-oil",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
@@ -11270,7 +10041,6 @@
 			"out": [
 				{
 					"id": "tungsten-ore",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -11285,7 +10055,6 @@
 			"out": [
 				{
 					"id": "calcite",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -11300,7 +10069,6 @@
 			"out": [
 				{
 					"id": "sulfuric-acid",
-					"type": "fluid",
 					"amount": 10
 				}
 			],
@@ -11315,7 +10083,6 @@
 			"out": [
 				{
 					"id": "scrap",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -11330,7 +10097,6 @@
 			"out": [
 				{
 					"id": "lithium-brine",
-					"type": "fluid",
 					"amount": 1
 				}
 			],
@@ -11345,7 +10111,6 @@
 			"out": [
 				{
 					"id": "fluorine",
-					"type": "fluid",
 					"amount": 1
 				}
 			],
@@ -11360,7 +10125,6 @@
 			"out": [
 				{
 					"id": "yumako",
-					"type": "item",
 					"amount": 50
 				}
 			],
@@ -11375,7 +10139,6 @@
 			"out": [
 				{
 					"id": "jellynut",
-					"type": "item",
 					"amount": 50
 				}
 			],
@@ -11390,7 +10153,6 @@
 			"out": [
 				{
 					"id": "wood",
-					"type": "item",
 					"amount": 4
 				}
 			],
@@ -11405,7 +10167,6 @@
 			"out": [
 				{
 					"id": "wood",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -11420,7 +10181,6 @@
 			"out": [
 				{
 					"id": "raw-fish",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -11435,7 +10195,6 @@
 			"out": [
 				{
 					"id": "metallic-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -11450,7 +10209,6 @@
 			"out": [
 				{
 					"id": "carbonic-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -11465,7 +10223,6 @@
 			"out": [
 				{
 					"id": "oxide-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -11480,7 +10237,6 @@
 			"out": [
 				{
 					"id": "promethium-asteroid-chunk",
-					"type": "item",
 					"amount": 1
 				}
 			],
@@ -11494,19 +10250,16 @@
 			"in": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 60
 				},
 				{
 					"id": "wood",
-					"type": "item",
 					"amount": 9
 				}
 			],
 			"out": [
 				{
 					"id": "steam",
-					"type": "fluid",
 					"amount": 600
 				}
 			],
@@ -11520,19 +10273,16 @@
 			"in": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 120
 				},
 				{
 					"id": "coal",
-					"type": "item",
 					"amount": 9
 				}
 			],
 			"out": [
 				{
 					"id": "steam",
-					"type": "fluid",
 					"amount": 1200
 				}
 			],
@@ -11546,19 +10296,16 @@
 			"in": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 120
 				},
 				{
 					"id": "solid-fuel",
-					"type": "item",
 					"amount": 3
 				}
 			],
 			"out": [
 				{
 					"id": "steam",
-					"type": "fluid",
 					"amount": 1200
 				}
 			],
@@ -11572,19 +10319,16 @@
 			"in": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 3000
 				},
 				{
 					"id": "rocket-fuel",
-					"type": "item",
 					"amount": 9
 				}
 			],
 			"out": [
 				{
 					"id": "steam",
-					"type": "fluid",
 					"amount": 30000
 				}
 			],
@@ -11598,19 +10342,16 @@
 			"in": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 36300
 				},
 				{
 					"id": "nuclear-fuel",
-					"type": "item",
 					"amount": 9
 				}
 			],
 			"out": [
 				{
 					"id": "steam",
-					"type": "fluid",
 					"amount": 363000
 				}
 			],
@@ -11624,19 +10365,16 @@
 			"in": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 60
 				},
 				{
 					"id": "carbon",
-					"type": "item",
 					"amount": 9
 				}
 			],
 			"out": [
 				{
 					"id": "steam",
-					"type": "fluid",
 					"amount": 600
 				}
 			],
@@ -11650,19 +10388,16 @@
 			"in": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 120
 				},
 				{
 					"id": "yumako-seed",
-					"type": "item",
 					"amount": 9
 				}
 			],
 			"out": [
 				{
 					"id": "steam",
-					"type": "fluid",
 					"amount": 1200
 				}
 			],
@@ -11676,19 +10411,16 @@
 			"in": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 120
 				},
 				{
 					"id": "jellynut-seed",
-					"type": "item",
 					"amount": 9
 				}
 			],
 			"out": [
 				{
 					"id": "steam",
-					"type": "fluid",
 					"amount": 1200
 				}
 			],
@@ -11702,19 +10434,16 @@
 			"in": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 60
 				},
 				{
 					"id": "biter-egg",
-					"type": "item",
 					"amount": 3
 				}
 			],
 			"out": [
 				{
 					"id": "steam",
-					"type": "fluid",
 					"amount": 600
 				}
 			],
@@ -11728,19 +10457,16 @@
 			"in": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 150
 				},
 				{
 					"id": "pentapod-egg",
-					"type": "item",
 					"amount": 9
 				}
 			],
 			"out": [
 				{
 					"id": "steam",
-					"type": "fluid",
 					"amount": 1500
 				}
 			],
@@ -11754,19 +10480,16 @@
 			"in": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 30
 				},
 				{
 					"id": "spoilage",
-					"type": "item",
 					"amount": 36
 				}
 			],
 			"out": [
 				{
 					"id": "steam",
-					"type": "fluid",
 					"amount": 300
 				}
 			],
@@ -11780,19 +10503,16 @@
 			"in": [
 				{
 					"id": "water",
-					"type": "fluid",
 					"amount": 6
 				},
 				{
 					"id": "tree-seed",
-					"type": "item",
 					"amount": 18
 				}
 			],
 			"out": [
 				{
 					"id": "steam",
-					"type": "fluid",
 					"amount": 60
 				}
 			],
@@ -11806,14 +10526,12 @@
 			"in": [
 				{
 					"id": "depleted-uranium-fuel-cell",
-					"type": "item",
 					"amount": 1
 				}
 			],
 			"out": [
 				{
 					"id": "depleted-uranium-fuel-cell",
-					"type": "item",
 					"amount": 1
 				}
 			],
