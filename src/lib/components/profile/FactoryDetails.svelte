@@ -22,7 +22,6 @@
 				inputs.map(x => ({
 					id: x.item.id,
 					amount: x.amount,
-					type: 'item',
 					exact: false,
 				})),
 			)
@@ -30,7 +29,6 @@
 				outputs.map(x => ({
 					id: x.item.id,
 					amount: x.amount,
-					type: 'item',
 					exact: false,
 				})),
 			)

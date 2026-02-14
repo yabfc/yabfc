@@ -2,7 +2,6 @@ import type { EffectConfiguration } from '@/lib/models/effect';
 
 export interface BaseItemIo {
 	id: string;
-	type: 'item' | 'fluid';
 	amount: number;
 }
 
