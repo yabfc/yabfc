@@ -1,13 +1,8 @@
 import EffectModule, { type EffectModuleInterface } from '@/lib/models/effect';
 import Item, { type ItemInterface } from '@/lib/models/item';
 import Machine, { MachineFeature, type MachineInterface } from '@/lib/models/machine';
-import Recipe, {
-	type RecipeInterface,
-	type RecipeVariant,
-	type RequestedBaseItemIo,
-} from '@/lib/models/recipe';
+import Recipe, { type RecipeInterface, type RecipeVariant } from '@/lib/models/recipe';
 import Research, { type ResearchInterface } from '@/lib/models/research';
-import solver, { type Model, type SolveResult } from 'javascript-lp-solver';
 import { nanoid } from 'nanoid';
 
 export interface ProfileInterface {
@@ -18,49 +13,6 @@ export interface ProfileInterface {
 	machines: MachineInterface[];
 	machineEffects: EffectModuleInterface[];
 	research: ResearchInterface[];
-}
-
-interface OptimizationWeights {
-	power: number;
-	building: number;
-	priority: number;
-}
-
-export interface OptimizationRequestInterface {
-	id: string;
-	in: RequestedBaseItemIo[];
-	out: RequestedBaseItemIo[];
-	duration: number;
-	allowedEffectModules: EffectModule[];
-	limitations: string[];
-	weights: OptimizationWeights;
-	tolerance: number;
-}
-
-export class OptimizationRequest {
-	id: string;
-	in: RequestedBaseItemIo[];
-	out: RequestedBaseItemIo[];
-	duration: number;
-	allowedEffectModules: EffectModule[];
-	limitations: string[];
-	weights: OptimizationWeights;
-	tolerance: number;
-
-	constructor(request: OptimizationRequestInterface) {
-		this.id = request.id;
-		this.in = request.in;
-		this.out = request.out;
-		this.duration = request.duration;
-		this.allowedEffectModules = request.allowedEffectModules;
-		this.limitations = request.limitations;
-		this.weights = request.weights;
-		this.tolerance = 0.05;
-	}
-
-	getAllItemIds(): string[] {
-		return [...this.in, ...this.out].map(x => x.id);
-	}
 }
 
 export default class Profile {
@@ -231,143 +183,13 @@ export default class Profile {
 		};
 	}
 
-	calculateOptimalRecipeChain(request: OptimizationRequest): RecipeVariant[] | undefined {
-		const requestedItems = request.getAllItemIds();
-		const requestedInputItems = request.in.map(x => x.id);
-
-		if (!this.allItemIdsExist(requestedItems)) {
-			// TODO inform the user of the missing item IDs
-			return;
-		}
-
-		const model: Model = {
-			optimize: 'cost',
-			opType: 'min',
-			constraints: {},
-			variables: {},
-			options: {
-				timeout: 5000,
-				branching: 'strong',
-			},
-			ints: {},
-		};
-
-		// net production of each item should be >= 0, (for the target item == targetAmount)
-		this.items
-			.filter(x => !requestedItems.includes(x.id))
-			.forEach(x => (model.constraints[x.id] = { min: 0 }));
-		request.in.forEach(item => {
-			if (item.exact) {
-				model.constraints[item.id] = { equal: 1 };
-			} else {
-				model.constraints[item.id] = {
-					max: 1,
-					min: 0.000001,
-				};
-			}
-		});
-		if (request.in.length !== 0 && request.out.length > 1) {
-			// TODO inform the user that only one output can be maximized
-			return;
-		}
-		request.out.forEach(item => {
-			if (request.in.length !== 0 && item.amount === 0) {
-				model.optimize = item.id;
-				model.opType = 'max';
-			}
-			if (request.in.length === 0) {
-				if (item.exact) {
-					model.constraints[item.id] = { equal: item.amount / request.duration };
-				} else {
-					model.constraints[item.id] = {
-						min: (item.amount / request.duration) * (1 - request.tolerance),
-					};
-				}
-			}
-		});
-
-		const variants = this.generateRecipeVariants();
-		if (request.in.length !== 0) {
-			// add pseudovariant if user says they have a spare amount of some resource
-			variants.push({
-				id: 'requested-inputs',
-				recipeId: 'requested-inputs',
-				recipePriority: 0,
-				machineId: '',
-				in: [],
-				out: request.in,
-				requiredPower: 0,
-				usedEffectModuleIds: [],
-			});
-		}
-		variants.forEach(variant => {
-			const recipeVar: any = {};
-			if (
-				variant.out.find(
-					x => requestedInputItems.includes(x.id) && variant.id !== 'requested-inputs',
-				)
-			) {
-				return;
-			}
-			this.items.forEach(item => {
-				const input = variant.in.find(x => x.id === item.id);
-				if (input) {
-					recipeVar[item.id] = -input.amount;
-				}
-
-				const output = variant.out.find(x => x.id === item.id);
-				if (output) {
-					recipeVar[item.id] = output.amount;
-				}
-			});
-
-			// cut the power down to MW, otherwise the cost get's way too high
-			const powerCost = (request.weights.power * variant.requiredPower) / 1_000_000;
-
-			// priority needs a really hard penalty. Alternate recipes in satisfactory
-			// bloat the result up by a lot: 40 vs 60+ for turbo-motors
-			const priorityCost = Math.pow(variant.recipePriority, request.weights.priority);
-			const buildingCost = request.weights.building;
-			recipeVar.cost = powerCost + priorityCost + buildingCost;
-
-			model.variables[variant.id] = recipeVar;
-			model.ints![variant.id] = 1;
-		});
-
-		const solved = solver.Solve(model) as SolveResult | undefined;
-
-		if (!solved || !solved.feasible) {
-			return;
-		}
-
-		const recipes = Object.fromEntries(
-			Object.entries(solved).filter(
-				([k, v]) =>
-					!['feasible', 'result', 'bounded', 'isIntegral'].includes(k) &&
-					typeof v === 'number',
-			),
-		);
-		let selectedVaritans: RecipeVariant[] = [];
-		Object.entries(recipes).forEach(([id, amount]) => {
-			let variant = variants.find(x => x.id === id);
-			if (variant && typeof amount === 'number') {
-				variant.amount = amount;
-				selectedVaritans.push(variant);
-			}
-		});
-		return selectedVaritans;
-	}
-
 	getItemById(id: string): Item | undefined {
 		return this.items.find(x => x.id == id);
 	}
 
-	allItemIdsExist(ids: string[]): boolean {
+	/** Check if all items exist on this profile. */
+	allItemsExist(ids: string[]): boolean {
 		return ids.every(id => this.items.some(x => x.id === id));
-	}
-
-	getMissingItemIds(ids: string[]): string[] {
-		return ids.filter(id => !this.items.some(x => x.id === id));
 	}
 
 	getRecipeById(id: string): Recipe | undefined {
