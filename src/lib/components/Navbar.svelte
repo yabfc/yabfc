@@ -14,7 +14,7 @@
 			</div>
 
 			<ul class="menu dropdown-content rounded-box bg-base-200 mt-3 w-52 p-2 shadow-lg">
-				{#each profiles as profile}
+				{#each $profiles as profile (profile.id)}
 					<li>
 						<details open>
 							<summary><FactoryIcon size="20" /> {profile.name}</summary>
