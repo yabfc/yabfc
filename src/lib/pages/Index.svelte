@@ -1,36 +1,12 @@
 <script lang="ts">
 	import Dialog from '@/lib/components/shared/Dialog.svelte';
 	import profiles from '@/lib/stores/profiles.svelte';
-	import type { ProfileInterface } from '@/lib/models/profile';
-	import Profile from '@/lib/models/profile';
 	import { FactoryIcon, HeartCrackIcon, RocketIcon } from '@lucide/svelte';
 
 	let dialog = $state<HTMLDialogElement>();
 
 	function openSelectDialog() {
 		dialog?.showModal();
-	}
-
-	function handleProfileUpload(e: Event) {
-		const target = e.target as HTMLInputElement;
-		const file = target.files?.[0];
-		if (!file) return;
-
-		file.text()
-			.then(text => {
-				const data = JSON.parse(text);
-				let newProfile = new Profile(data as ProfileInterface);
-				const idExists = profiles.some(x => x.id === newProfile.id);
-				if (idExists) {
-					newProfile.id += `-${crypto.randomUUID()}`;
-				}
-				newProfile.upload = true;
-				profiles.push(newProfile);
-				window.location.hash = `/p/${newProfile.id}`;
-			})
-			.catch(err => {
-				console.error('Upload failed', err);
-			});
 	}
 </script>
 
@@ -57,21 +33,7 @@
 				<a href="#/p/{profile.id}" class="btn btn-block btn-xl dark:btn-soft">
 					{profile.name}
 				</a>
-				{#if profile.upload === true}
-					<span class="indicator-item status status-success"></span>
-				{/if}
 			</div>
 		{/each}
-
-		<label for="profile-upload" class="btn btn-block btn-xl btn-primary cursor-pointer">
-			<span>Import Custom Profile</span>
-		</label>
-		<input
-			id="profile-upload"
-			type="file"
-			accept=".json"
-			class="hidden"
-			onchange={handleProfileUpload}
-		/>
 	</div>
 </Dialog>
