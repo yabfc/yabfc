@@ -8,7 +8,7 @@
 
 	$effect(() => {
 		// update active profile
-		active.profile = profiles.find(x => x.id === pathParams[0]);
+		active.profile = $profiles.find(x => x.id === pathParams[0]);
 	});
 </script>
 

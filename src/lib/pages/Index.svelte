@@ -28,7 +28,7 @@
 	<h3 class="text-lg font-bold">Select the Profile!</h3>
 
 	<div class="flex flex-col gap-2 py-4">
-		{#each profiles as profile}
+		{#each $profiles as profile (profile.id)}
 			<div class="indicator w-full">
 				<a href="#/p/{profile.id}" class="btn btn-block btn-xl dark:btn-soft">
 					{profile.name}

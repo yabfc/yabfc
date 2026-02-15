@@ -4,10 +4,40 @@ import factorioSpaceage from '@profiles/factorio-spaceage.json';
 import factorio from '@profiles/factorio.json';
 import satisfactory from '@profiles/satisfactory.json';
 
-const profiles = $state<Profile[]>([
+import { writable } from 'svelte/store';
+
+const PROFILES_LOCAL_STORAGE_KEY = 'profiles';
+
+const defaultProfiles = [
 	new Profile(satisfactory as ProfileInterface),
 	new Profile(factorio as ProfileInterface),
 	new Profile(factorioSpaceage as ProfileInterface),
-]);
+];
+
+const profiles = writable([...defaultProfiles]);
+
+// set initial saved state
+setProfilesFromLocalStorage();
+
+// update localStorage on every settings update
+profiles.subscribe(x => {
+	if (!localStorage) return;
+
+	const profilesToStore = x.filter(y => !y.isDefault);
+
+	localStorage.setItem(PROFILES_LOCAL_STORAGE_KEY, JSON.stringify(profilesToStore || []));
+});
 
 export default profiles;
+
+function setProfilesFromLocalStorage() {
+	if (!localStorage) return;
+
+	const profilesString = localStorage.getItem(PROFILES_LOCAL_STORAGE_KEY);
+
+	if (!profilesString) return;
+
+	const customProfiles = JSON.parse(profilesString);
+
+	profiles.set([...defaultProfiles, ...customProfiles]);
+}
