@@ -67,23 +67,27 @@ export default class Profile {
 	id: string;
 	name: string;
 
+	private _isDefault: boolean;
+	public get isDefault() {
+		return this._isDefault;
+	}
+
 	items: Item[];
 	recipes: Recipe[];
 	machines: Machine[];
 	machineEffects: EffectModule[];
 	research: Research[];
-	upload?: boolean;
 
-	constructor(profile: ProfileInterface, upload?: boolean) {
+	constructor(profile: ProfileInterface, isDefault = true) {
 		this.id = profile.id;
 		this.name = profile.name;
+		this._isDefault = isDefault;
 
 		this.items = profile.items.map(x => new Item(x));
 		this.recipes = profile.recipes.map(x => new Recipe(x));
 		this.machines = profile.machines.map(x => new Machine(x));
 		this.machineEffects = profile.machineEffects.map(x => new EffectModule(x));
 		this.research = profile.research.map(x => new Research(x));
-		this.upload = upload;
 	}
 
 	generateRecipeVariants(): RecipeVariant[] {
