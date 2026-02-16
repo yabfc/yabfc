@@ -3,6 +3,3222 @@
 	"name": "Satisfactory",
 	"items": [
 		{
+			"id": "beam",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "beam-painted",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "trading-post",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 1
+		},
+		{
+			"id": "work-bench",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-ceiling-attachment",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-pole",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-pole-wall",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-belt-mk1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "power-line",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "power-pole-mk1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "power-pole-wall",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "fence-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pillar-top",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "jump-pad",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "jump-pad-tilted",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "walkway-cross",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "walkway-ramp",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "walkway-straight",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "walkway-t",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "walkway-turn",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "steel-wall-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-conveyor-8x4-04",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-conveyor-8x4-04-steel",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-window-8x4-03-steel",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "generator-coal",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pipeline-support",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pipeline-support-wall",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pipeline",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pipeline-junction-cross",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pipeline-pump",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pipe-storage-tank",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "water-pump",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "resource-sink",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "resource-sink-shop",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quantum-encoder",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "converter",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "oil-pump",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "oil-refinery",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "valve",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundry-mk1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "packager",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "miner-mk2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "manufacturer-mk1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "assembler-mk1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "hadron-collider",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "blender",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "generator-nuclear",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "fracking-extractor",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "fracking-smasher",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "drone-station",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-belt-mk5",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-lift-mk5",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "miner-mk3",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-belt-mk6",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-lift-mk6",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "portal",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "portal-satellite",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "blueprint-designer-mk3",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "railroad-block-signal",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "railroad-path-signal",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "blueprint-designer-mk2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pipeline-mk2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pipeline-pump-mk2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "railroad-end-stop",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "train-docking-station",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "train-docking-station-liquid",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "train-platform-empty",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "train-platform-empty-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "train-station",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "railroad-track",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 1
+		},
+		{
+			"id": "conveyor-belt-mk4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-lift-mk4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "generator-fuel",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "industrial-tank",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-belt-mk3",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-lift-mk3",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pipe-support-stackable",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "storage-container-mk2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "blueprint-designer",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pipe-hyper-start",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "hyper-pole-stackable",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "hyper-tube-junction",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "hypertube-t-junction",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "hyper-tube-wall-support",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pipe-hyper-support",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pipe-hyper",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "power-storage-mk1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "power-tower",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "power-tower-platform",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "truck-station",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-belt-mk2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-lift-mk2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-pole-stackable",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "jump-pad-adjustable",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "landing-pad",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "mam",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "storage-player",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-attachment-merger",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-attachment-splitter",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-lift-mk1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-ficsit-4x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-ficsit-4x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-ficsit-4x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-in-corner-ficsit-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-in-corner-ficsit-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-in-corner-ficsit-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-out-corner-ficsit-4x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-out-corner-ficsit-4x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-out-corner-ficsit-4x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "stair-ficsit-set-8x1-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "stair-ficsit-set-8x2-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "stair-ficsit-set-8x4-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-8x1-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-8x2-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-8x4-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-corner-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-corner-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-corner-03",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-corner-04",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-8x1-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-8x2-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-8x4-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-8x4-inverted-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-8x8x8",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-diagonal-8x1-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-diagonal-8x1-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-diagonal-8x2-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-diagonal-8x2-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-diagonal-8x4-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-diagonal-8x4-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-double",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-double-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-inverted-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-inverted-8x1-corner-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-inverted-8x1-corner-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-inverted-8x2-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-inverted-8x2-corner-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-inverted-8x2-corner-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-inverted-8x4-corner-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-inverted-8x4-corner-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "lookout-tower",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "big-garage-door-16x8",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-8x4-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-conveyor-8x4-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-conveyor-8x4-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-conveyor-8x4-03",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-door-8x4-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-door-8x4-03",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-gate-8x4-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-orange-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-orange-8x4-corner-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-orange-8x4-corner-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-orange-8x8-corner-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-orange-8x8-corner-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-orange-angular-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-orange-angular-8x8",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-orange-8x1-flip-tris",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-orange-8x2-flip-tris",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-orange-8x4-flip-tris",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-orange-8x8-flip-tris",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-orange-8x1-tris",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-orange-8x2-tris",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-orange-8x4-tris",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-orange-8x8-tris",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-window-8x4-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-window-8x4-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-window-8x4-03",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-window-8x4-04",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "down-quarter-pipe-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "down-quarter-pipe-in-corner-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "down-quarter-pipe-out-corner-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-concrete-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-concrete-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-concrete-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-concrete-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-d-corner-concrete-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-d-corner-concrete-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-d-corner-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-u-corner-concrete-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-u-corner-concrete-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-u-corner-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-in-corner-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-concrete-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-concrete-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-in-corner-concrete-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-in-corner-concrete-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-in-corner-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-out-corner-concrete-4x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-out-corner-concrete-4x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-out-corner-concrete-4x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-out-corner-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-concrete-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-concrete-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-down-corner-concrete-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-down-corner-concrete-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-down-corner-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-up-corner-concrete-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-up-corner-concrete-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-up-corner-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-double-concrete-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-double-concrete-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-double-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "stair-concrete-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "stair-concrete-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "stair-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "down-quarter-pipe-grip-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "down-quarter-pipe-in-corner-grip-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "down-quarter-pipe-out-corner-grip-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-metal-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-metal-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-metal-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-d-corner-metal-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-d-corner-metal-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-d-corner-metal-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-metal-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-metal-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-metal-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-u-corner-metal-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-u-corner-metal-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-u-corner-metal-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-grip-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-in-corner-grip-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-grip-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-grip-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-grip-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-in-corner-grip-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-in-corner-grip-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-in-corner-grip-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-out-corner-grip-4x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-out-corner-grip-4x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-out-corner-grip-4x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-out-corner-grip-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-down-corner-metal-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-down-corner-metal-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-down-corner-metal-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-metal-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-metal-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-metal-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-up-corner-metal-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-up-corner-metal-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-up-corner-metal-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-double-metal-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-double-metal-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-double-metal-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "stair-grip-metal-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "stair-grip-metal-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "stair-grip-metal-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "down-quarter-pipe-concrete-polished-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "down-quarter-pipe-in-corner-concrete-polished-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "down-quarter-pipe-out-corner-concrete-polished-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-concrete-polished-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-concrete-polished-8x2-c",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-concrete-polished-8x4-c",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-d-corner-polished-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-d-corner-polished-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-d-corner-polished-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-polished-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-polished-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-polished-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-u-corner-polished-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-u-corner-polished-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-u-corner-polished-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-concrete-polished-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-in-corner-concrete-polished-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-polished-concrete-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-polished-concrete-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-polished-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-in-corner-polished-concrete-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-in-corner-polished-concrete-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-in-corner-polished-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-out-corner-polished-concrete-4x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-out-corner-polished-concrete-4x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-out-corner-polished-concrete-4x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-out-corner-concrete-polished-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-down-corner-polished-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-down-corner-polished-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-down-corner-polished-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-polished-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-polished-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-polished-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-up-corner-polished-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-up-corner-polished-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-up-corner-polished-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-double-polished-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-double-polished-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-double-polished-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "stair-polished-concrete-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "stair-polished-concrete-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "stair-polished-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "down-quarter-pipe-asphalt-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "down-quarter-pipe-in-corner-asphalt-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "down-quarter-pipe-out-corner-asphalt-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-asphalt-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-asphalt-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-asphalt-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-asphalt-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-asphalt-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-asphalt-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-d-corner-asphalt-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-d-corner-asphalt-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-d-corner-asphalt-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-u-corner-asphalt-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-u-corner-asphalt-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "inverted-ramp-u-corner-asphalt-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-asphalt-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-in-corner-asphalt-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-asphalt-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-asphalt-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-asphalt-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-in-corner-asphalt-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-in-corner-asphalt-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-in-corner-asphalt-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-out-corner-asphalt-4x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-out-corner-asphalt-4x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-middle-out-corner-asphalt-4x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "quarter-pipe-out-corner-asphalt-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-asphalt-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-asphalt-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-asphalt-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-down-corner-asphalt-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-down-corner-asphalt-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-down-corner-asphalt-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-up-corner-asphalt-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-up-corner-asphalt-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-up-corner-asphalt-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-double-asphalt-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-double-asphalt-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-double-asphalt-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "stair-asphalt-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "stair-asphalt-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "stair-asphalt-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "alien-power-building",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "central-storage",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 1
+		},
+		{
+			"id": "generator-geo-thermal",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-attachment-splitter-programmable",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "power-pole-mk3",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "priority-power-switch",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "power-pole-mk2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "power-switch",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-attachment-splitter-smart",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-attachment-merger-priority",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "radar-tower",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wreath-decor",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "snow-cannon",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 1
+		},
+		{
+			"id": "snow-dispenser",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "xmass-lights",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "tree-gift-producer",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "snowman",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "x-mass-tree",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 1
+		},
+		{
+			"id": "candy-cane-decor",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "big-garage-door-16x8-concrete",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x4-conveyor-hole-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x4-conveyor-hole-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x4-conveyor-hole-03",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x4-corner-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x4-corner-2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x4-window-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x4-window-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x4-window-03",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x4-window-04",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x8-corner-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x8-corner-2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-angular-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-angular-8x8",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-c-door-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x1-flip-tris",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x2-flip-tris",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x4-flip-tris",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x8-flip-tris",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-gate-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-s-door-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x1-tris",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x2-tris",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x4-tris",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-concrete-8x8-tris",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "big-garage-door-16x8-steel",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "steel-wall-8x4-gate-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "steel-wall-8x4-window-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "steel-wall-8x4-window-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "steel-wall-8x4-window-03",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "steel-wall-8x4-window-04",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-steel-8x4-corner-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-steel-8x4-corner-2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-steel-8x8-corner-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-steel-8x8-corner-2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "steel-wall-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "steel-wall-flip-tris-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "steel-wall-flip-tris-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "steel-wall-flip-tris-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "steel-wall-flip-tris-8x8",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "steel-wall-tris-8x1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "steel-wall-tris-8x2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "steel-wall-tris-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "steel-wall-tris-8x8",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-8x4-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-conveyor-8x4-01-steel",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-conveyor-8x4-02-steel",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-conveyor-8x4-03-steel",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-door-8x4-01-steel",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-door-8x4-03-steel",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-set-steel-angular-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-set-steel-angular-8x8",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "flat-frame-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-frame-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-glass-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-frame-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ramp-frame-inverted-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-frame-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "railing-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pillar-small-metal",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pillar-base-small",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pillar-base",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pillar-middle",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ladder",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "gate-automated-8x4",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "hyper-tube-wall-hole",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pipeline-support-wall-hole",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-passthrough-pipe",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "power-pole-wall-double",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "power-pole-wall-double-mk2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "power-pole-wall-mk2",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "power-pole-wall-double-mk3",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "power-pole-wall-mk3",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "large-fan",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "large-vent",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "street-light",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "ceiling-light",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "floodlight-pole",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "floodlight-wall",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "stackable-shelf",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-orange-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-orange-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-orange-03",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-orange-04",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-orange-in-corner-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-orange-in-corner-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-orange-in-corner-03",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-orange-out-corner-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-orange-out-corner-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-orange-out-corner-03",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-window-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-window-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-window-03",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-window-04",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-window-in-corner-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-window-in-corner-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-window-in-corner-03",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-window-out-corner-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-window-out-corner-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-window-out-corner-03",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-a-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-a-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-a-03",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-a-04",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-metal-in-corner-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-metal-in-corner-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-metal-in-corner-03",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-metal-out-corner-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-metal-out-corner-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-metal-out-corner-03",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-tar-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-tar-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-tar-03",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-tar-04",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-tar-in-corner-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-tar-in-corner-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-tar-in-corner-03",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-tar-out-corner-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-tar-out-corner-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "roof-tar-out-corner-03",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "elevator-floor-stop",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "elevator",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pipeline-mk2-no-indicator",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pipeline-no-indicator",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "storage-medkit",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "lights-control-panel",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "standalone-widget-sign-small",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "standalone-widget-sign-small-very-wide",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "standalone-widget-sign-small-wide",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "standalone-widget-sign-square-tiny",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-passthrough-hypertube",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "storage-hazard",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-window-8x4-05",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-window-8x4-06",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-window-8x4-07",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-window-thin-8x4-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wall-window-thin-8x4-02",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pillar-small-frame",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pillar-middle-frame",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "chain-link-fence",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "tarp-fence",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "barrier-low-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "barrier-tall-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "barrier-corner",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "concrete-barrier-01",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "standalone-widget-sign-medium",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "standalone-widget-sign-portrait",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "standalone-widget-sign-square",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "standalone-widget-sign-square-small",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-wall-hole",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "conveyor-monitor",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "foundation-passthrough-lift",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pillar-small-concrete",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "pillar-middle-concrete",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "catwalk-cross",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "catwalk-ramp",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "catwalk-stairs",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "catwalk-straight",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "catwalk-t",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "catwalk-turn",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "standalone-widget-sign-huge",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "standalone-widget-sign-large",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "beam-cable",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "beam-cable-cluster",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "beam-connector",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "beam-connector-double",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "beam-support",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "beam-concrete",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "beam-h",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "beam-shelf",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "generator-biomass-automated",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "space-elevator",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "miner-mk1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "storage-container-mk1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "constructor-mk1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "smelter-mk1",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "workshop",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
 			"id": "aluminum-ingot",
 			"type": "item",
 			"category": "basic-product",
@@ -771,6 +3987,97 @@
 			"stackSize": 100
 		},
 		{
+			"id": "rebar-explosive",
+			"name": "Explosive Rebar",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "rebar-stunshot",
+			"name": "Stun Rebar",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "spiked-rebar",
+			"name": "Iron Rebar",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "cartridge-smart-projectile",
+			"name": "Homing Rifle Ammo",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 500
+		},
+		{
+			"id": "nobelisk-cluster",
+			"name": "Cluster Nobelisk",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 50
+		},
+		{
+			"id": "nobelisk-explosive",
+			"name": "Nobelisk",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 50
+		},
+		{
+			"id": "nobelisk-gas",
+			"name": "Gas Nobelisk",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 50
+		},
+		{
+			"id": "nobelisk-nuke",
+			"name": "Nuke Nobelisk",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 50
+		},
+		{
+			"id": "nobelisk-shockwave",
+			"name": "Pulse Nobelisk",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 50
+		},
+		{
+			"id": "fireworks-projectile-01",
+			"name": "Sweet Fireworks",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "fireworks-projectile-02",
+			"name": "Fancy Fireworks",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "fireworks-projectile-03",
+			"name": "Sparkly Fireworks",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "snowball-projectile",
+			"name": "Snowball",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
 			"id": "rebar-gun-projectile",
 			"name": "Rebar Gun",
 			"type": "item",
@@ -809,8 +4116,7 @@
 			"stackSize": 1
 		},
 		{
-			"id": "bp-item-descriptor-portable-miner-c",
-			"name": "Portable Miner",
+			"id": "portable-miner",
 			"type": "item",
 			"category": "advanced-product",
 			"stackSize": 50
@@ -850,7 +4156,7 @@
 			"stackSize": 1
 		},
 		{
-			"id": "bp-eq-desc-zip-line-c",
+			"id": "zip-line",
 			"name": "Zipline",
 			"type": "item",
 			"category": "advanced-product",
@@ -876,6 +4182,27 @@
 			"type": "item",
 			"category": "advanced-product",
 			"stackSize": 1
+		},
+		{
+			"id": "rebar-spreadshot",
+			"name": "Shatter Rebar",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "cartridge-chaos",
+			"name": "Turbo Rifle Ammo",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 500
+		},
+		{
+			"id": "cartridge-standard",
+			"name": "Rifle Ammo",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 500
 		},
 		{
 			"id": "ore-iron",
@@ -1067,6 +4394,20 @@
 			"stackSize": 50
 		},
 		{
+			"id": "crystal-shard",
+			"name": "Power Shard",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "wat1",
+			"name": "Somersloop",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 50
+		},
+		{
 			"id": "plutonium-fuel-rod",
 			"type": "item",
 			"category": "advanced-product",
@@ -1084,6 +4425,51 @@
 			"type": "item",
 			"category": "advanced-product",
 			"stackSize": 50
+		},
+		{
+			"id": "drone-transport",
+			"name": "Drone",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "freight-wagon",
+			"name": "Freight Car",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
+			"id": "locomotive",
+			"name": "Electric Locomotive",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 1
+		},
+		{
+			"id": "truck",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 1
+		},
+		{
+			"id": "tractor",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 1
+		},
+		{
+			"id": "explorer",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 1
+		},
+		{
+			"id": "cyber-wagon",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 1
 		},
 		{
 			"id": "berry",
@@ -20745,7 +24131,7 @@
 			"available": false
 		},
 		{
-			"id": "",
+			"id": "ficsonium-fuel-rod-generator-nuclear",
 			"in": [
 				{
 					"id": "ficsonium-fuel-rod",
@@ -21078,6 +24464,81 @@
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking-lin"],
 					"disables": ["overclocking-lin"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "quantum-encoder",
+			"recipeCategories": ["quantum-encoder"],
+			"requiredPower": 100000,
+			"features": [
+				{
+					"id": "summerslooping",
+					"itemSlots": 4,
+					"effectPerSlot": ["summerslooping"]
+				},
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "converter",
+			"recipeCategories": ["converter"],
+			"requiredPower": 100000,
+			"features": [
+				{
+					"id": "summerslooping",
+					"itemSlots": 2,
+					"effectPerSlot": ["summerslooping"]
+				},
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "hadron-collider",
+			"recipeCategories": ["hadron-collider"],
+			"requiredPower": 100000,
+			"features": [
+				{
+					"id": "summerslooping",
+					"itemSlots": 4,
+					"effectPerSlot": ["summerslooping"]
+				},
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
 				}
 			],
 			"available": true

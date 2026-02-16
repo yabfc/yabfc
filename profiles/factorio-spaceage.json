@@ -579,6 +579,12 @@
 			"stackSize": 1
 		},
 		{
+			"id": "rocket-part",
+			"type": "item",
+			"category": "space-interactors",
+			"stackSize": 5
+		},
+		{
 			"id": "nuclear-reactor",
 			"type": "item",
 			"category": "energy",
@@ -1357,6 +1363,498 @@
 			"type": "fluid",
 			"category": "fluid",
 			"stackSize": 0
+		},
+		{
+			"id": "automation-science-pack",
+			"type": "item",
+			"category": "science-pack",
+			"stackSize": 200
+		},
+		{
+			"id": "logistic-science-pack",
+			"type": "item",
+			"category": "science-pack",
+			"stackSize": 200
+		},
+		{
+			"id": "chemical-science-pack",
+			"type": "item",
+			"category": "science-pack",
+			"stackSize": 200
+		},
+		{
+			"id": "military-science-pack",
+			"type": "item",
+			"category": "science-pack",
+			"stackSize": 200
+		},
+		{
+			"id": "production-science-pack",
+			"type": "item",
+			"category": "science-pack",
+			"stackSize": 200
+		},
+		{
+			"id": "utility-science-pack",
+			"type": "item",
+			"category": "science-pack",
+			"stackSize": 200
+		},
+		{
+			"id": "space-science-pack",
+			"type": "item",
+			"category": "science-pack",
+			"stackSize": 200
+		},
+		{
+			"id": "metallurgic-science-pack",
+			"type": "item",
+			"category": "science-pack",
+			"stackSize": 200
+		},
+		{
+			"id": "agricultural-science-pack",
+			"type": "item",
+			"category": "science-pack",
+			"stackSize": 200
+		},
+		{
+			"id": "electromagnetic-science-pack",
+			"type": "item",
+			"category": "science-pack",
+			"stackSize": 200
+		},
+		{
+			"id": "cryogenic-science-pack",
+			"type": "item",
+			"category": "science-pack",
+			"stackSize": 200
+		},
+		{
+			"id": "promethium-science-pack",
+			"type": "item",
+			"category": "science-pack",
+			"stackSize": 200
+		},
+		{
+			"id": "speed-module",
+			"type": "item",
+			"category": "module",
+			"stackSize": 50
+		},
+		{
+			"id": "speed-module-2",
+			"type": "item",
+			"category": "module",
+			"stackSize": 50
+		},
+		{
+			"id": "speed-module-3",
+			"type": "item",
+			"category": "module",
+			"stackSize": 50
+		},
+		{
+			"id": "efficiency-module",
+			"type": "item",
+			"category": "module",
+			"stackSize": 50
+		},
+		{
+			"id": "efficiency-module-2",
+			"type": "item",
+			"category": "module",
+			"stackSize": 50
+		},
+		{
+			"id": "efficiency-module-3",
+			"type": "item",
+			"category": "module",
+			"stackSize": 50
+		},
+		{
+			"id": "productivity-module",
+			"type": "item",
+			"category": "module",
+			"stackSize": 50
+		},
+		{
+			"id": "productivity-module-2",
+			"type": "item",
+			"category": "module",
+			"stackSize": 50
+		},
+		{
+			"id": "productivity-module-3",
+			"type": "item",
+			"category": "module",
+			"stackSize": 50
+		},
+		{
+			"id": "quality-module",
+			"type": "item",
+			"category": "module",
+			"stackSize": 50
+		},
+		{
+			"id": "quality-module-2",
+			"type": "item",
+			"category": "module",
+			"stackSize": 50
+		},
+		{
+			"id": "quality-module-3",
+			"type": "item",
+			"category": "module",
+			"stackSize": 50
+		},
+		{
+			"id": "uranium-rounds-magazine",
+			"type": "item",
+			"category": "ammo",
+			"stackSize": 100
+		},
+		{
+			"id": "flamethrower-ammo",
+			"type": "item",
+			"category": "ammo",
+			"stackSize": 100
+		},
+		{
+			"id": "rocket",
+			"type": "item",
+			"category": "ammo",
+			"stackSize": 100
+		},
+		{
+			"id": "explosive-rocket",
+			"type": "item",
+			"category": "ammo",
+			"stackSize": 100
+		},
+		{
+			"id": "atomic-bomb",
+			"type": "item",
+			"category": "ammo",
+			"stackSize": 10
+		},
+		{
+			"id": "piercing-shotgun-shell",
+			"type": "item",
+			"category": "ammo",
+			"stackSize": 100
+		},
+		{
+			"id": "cannon-shell",
+			"type": "item",
+			"category": "ammo",
+			"stackSize": 100
+		},
+		{
+			"id": "explosive-cannon-shell",
+			"type": "item",
+			"category": "ammo",
+			"stackSize": 100
+		},
+		{
+			"id": "uranium-cannon-shell",
+			"type": "item",
+			"category": "ammo",
+			"stackSize": 100
+		},
+		{
+			"id": "explosive-uranium-cannon-shell",
+			"type": "item",
+			"category": "ammo",
+			"stackSize": 100
+		},
+		{
+			"id": "artillery-shell",
+			"type": "item",
+			"category": "ammo",
+			"stackSize": 1
+		},
+		{
+			"id": "firearm-magazine",
+			"type": "item",
+			"category": "ammo",
+			"stackSize": 100
+		},
+		{
+			"id": "piercing-rounds-magazine",
+			"type": "item",
+			"category": "ammo",
+			"stackSize": 100
+		},
+		{
+			"id": "shotgun-shell",
+			"type": "item",
+			"category": "ammo",
+			"stackSize": 100
+		},
+		{
+			"id": "railgun-ammo",
+			"type": "item",
+			"category": "ammo",
+			"stackSize": 10
+		},
+		{
+			"id": "capture-robot-rocket",
+			"type": "item",
+			"category": "ammo",
+			"stackSize": 10
+		},
+		{
+			"id": "tesla-ammo",
+			"type": "item",
+			"category": "ammo",
+			"stackSize": 100
+		},
+		{
+			"id": "flamethrower",
+			"type": "item",
+			"category": "gun",
+			"stackSize": 5
+		},
+		{
+			"id": "rocket-launcher",
+			"type": "item",
+			"category": "gun",
+			"stackSize": 5
+		},
+		{
+			"id": "combat-shotgun",
+			"type": "item",
+			"category": "gun",
+			"stackSize": 5
+		},
+		{
+			"id": "pistol",
+			"type": "item",
+			"category": "gun",
+			"stackSize": 5
+		},
+		{
+			"id": "submachine-gun",
+			"type": "item",
+			"category": "gun",
+			"stackSize": 5
+		},
+		{
+			"id": "shotgun",
+			"type": "item",
+			"category": "gun",
+			"stackSize": 5
+		},
+		{
+			"id": "railgun",
+			"type": "item",
+			"category": "gun",
+			"stackSize": 1
+		},
+		{
+			"id": "teslagun",
+			"type": "item",
+			"category": "gun",
+			"stackSize": 5
+		},
+		{
+			"id": "car",
+			"type": "item",
+			"category": "transport",
+			"stackSize": 1
+		},
+		{
+			"id": "locomotive",
+			"type": "item",
+			"category": "train-transport",
+			"stackSize": 5
+		},
+		{
+			"id": "cargo-wagon",
+			"type": "item",
+			"category": "train-transport",
+			"stackSize": 5
+		},
+		{
+			"id": "fluid-wagon",
+			"type": "item",
+			"category": "train-transport",
+			"stackSize": 5
+		},
+		{
+			"id": "artillery-wagon",
+			"type": "item",
+			"category": "train-transport",
+			"stackSize": 5
+		},
+		{
+			"id": "tank",
+			"type": "item",
+			"category": "transport",
+			"stackSize": 1
+		},
+		{
+			"id": "spidertron",
+			"type": "item",
+			"category": "transport",
+			"stackSize": 1
+		},
+		{
+			"id": "raw-fish",
+			"type": "item",
+			"category": "raw-resource",
+			"stackSize": 100
+		},
+		{
+			"id": "grenade",
+			"type": "item",
+			"category": "capsule",
+			"stackSize": 100
+		},
+		{
+			"id": "defender-capsule",
+			"type": "item",
+			"category": "capsule",
+			"stackSize": 100
+		},
+		{
+			"id": "cluster-grenade",
+			"type": "item",
+			"category": "capsule",
+			"stackSize": 100
+		},
+		{
+			"id": "poison-capsule",
+			"type": "item",
+			"category": "capsule",
+			"stackSize": 100
+		},
+		{
+			"id": "slowdown-capsule",
+			"type": "item",
+			"category": "capsule",
+			"stackSize": 100
+		},
+		{
+			"id": "distractor-capsule",
+			"type": "item",
+			"category": "capsule",
+			"stackSize": 100
+		},
+		{
+			"id": "destroyer-capsule",
+			"type": "item",
+			"category": "capsule",
+			"stackSize": 100
+		},
+		{
+			"id": "cliff-explosives",
+			"type": "item",
+			"category": "terrain",
+			"stackSize": 20
+		},
+		{
+			"id": "discharge-defense-remote",
+			"type": "item",
+			"category": "spawnables",
+			"stackSize": 1
+		},
+		{
+			"id": "artillery-targeting-remote",
+			"type": "item",
+			"category": "spawnables",
+			"stackSize": 1
+		},
+		{
+			"id": "yumako",
+			"type": "item",
+			"category": "agriculture-processes",
+			"stackSize": 50
+		},
+		{
+			"id": "jellynut",
+			"type": "item",
+			"category": "agriculture-processes",
+			"stackSize": 50
+		},
+		{
+			"id": "yumako-mash",
+			"type": "item",
+			"category": "agriculture-products",
+			"stackSize": 100
+		},
+		{
+			"id": "jelly",
+			"type": "item",
+			"category": "agriculture-products",
+			"stackSize": 100
+		},
+		{
+			"id": "bioflux",
+			"type": "item",
+			"category": "agriculture-products",
+			"stackSize": 100
+		},
+		{
+			"id": "rail",
+			"type": "item",
+			"category": "train-transport",
+			"stackSize": 100
+		},
+		{
+			"id": "rail-ramp",
+			"type": "item",
+			"category": "train-transport",
+			"stackSize": 10
+		},
+		{
+			"id": "modular-armor",
+			"type": "item",
+			"category": "armor",
+			"stackSize": 1
+		},
+		{
+			"id": "power-armor",
+			"type": "item",
+			"category": "armor",
+			"stackSize": 1
+		},
+		{
+			"id": "power-armor-mk2",
+			"type": "item",
+			"category": "armor",
+			"stackSize": 1
+		},
+		{
+			"id": "light-armor",
+			"type": "item",
+			"category": "armor",
+			"stackSize": 1
+		},
+		{
+			"id": "heavy-armor",
+			"type": "item",
+			"category": "armor",
+			"stackSize": 1
+		},
+		{
+			"id": "mech-armor",
+			"type": "item",
+			"category": "armor",
+			"stackSize": 1
+		},
+		{
+			"id": "repair-pack",
+			"type": "item",
+			"category": "tool",
+			"stackSize": 100
+		},
+		{
+			"id": "space-platform-starter-pack",
+			"type": "item",
+			"category": "space-rocket",
+			"stackSize": 1
 		}
 	],
 	"recipes": [
@@ -9899,7 +10397,7 @@
 			"category": "offshore-pump",
 			"priority": 10,
 			"available": true,
-			"limitations": ["planet:gleba", "planet:nauvis"]
+			"limitations": ["planet:nauvis", "planet:gleba"]
 		},
 		{
 			"id": "lava",
