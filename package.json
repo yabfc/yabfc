@@ -13,19 +13,20 @@
 	"devDependencies": {
 		"@dagrejs/dagre": "^1.1.8",
 		"@lucide/svelte": "^0.545.0",
-		"@sveltejs/vite-plugin-svelte": "^6.2.1",
-		"@tailwindcss/vite": "^4.1.14",
-		"@tsconfig/svelte": "^5.0.5",
+		"@sveltejs/vite-plugin-svelte": "^6.2.4",
+		"@tailwindcss/vite": "^4.1.18",
+		"@tsconfig/svelte": "^5.0.7",
 		"@xyflow/svelte": "^1.5.0",
-		"daisyui": "^5.1.29",
+		"daisyui": "^5.5.18",
+		"javascript-lp-solver": "^1.0.3",
 		"nanoid": "^5.1.6",
-		"prettier": "^3.6.2",
-		"prettier-plugin-svelte": "^3.4.0",
-		"prettier-plugin-tailwindcss": "^0.7.0",
-		"svelte": "^5.39.6",
-		"svelte-check": "^4.3.2",
-		"tailwindcss": "^4.1.14",
+		"prettier": "^3.8.1",
+		"prettier-plugin-svelte": "^3.4.1",
+		"prettier-plugin-tailwindcss": "^0.7.2",
+		"svelte": "^5.50.2",
+		"svelte-check": "^4.3.6",
+		"tailwindcss": "^4.1.18",
 		"typescript": "~5.9.3",
-		"vite": "^7.1.7"
+		"vite": "^7.3.1"
 	}
 }

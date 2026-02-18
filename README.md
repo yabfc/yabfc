@@ -21,7 +21,22 @@
 
 ## Development Setup
 
-Install [Node.js LTS](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs) and [pnpm](https://pnpm.io/installation)
+Install:
+
+- [Node.js LTS](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs)
+- [pnpm](https://pnpm.io/installation)
+- [prek](https://github.com/j178/prek)
+
+for pre-commit-hooks (the python pre-commit-hook runner should be compatible as well)
+To install the pre-commit-hooks run:
+
+```bash
+prek install
+```
+
+(does not need external dependencies besides pnpm which needs to be installed either way)
+
+### Basic Commands
 
 ```bash
 # Install dependencies

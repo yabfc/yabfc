@@ -1,12 +1,23 @@
-export interface ModifierInterface {
-	id: string;
+export interface BaseModifier {
+	id: 'speed' | 'power' | 'consumption' | 'productivity' | 'pollution' | 'quality';
 	name?: string;
-	value: number;
-	modifiable: boolean;
 	onlyOutputScales?: boolean;
 	/** @defaults to linear scaling */
 	valueScaling?: 'exponential';
 }
+
+export interface FixedModifier extends BaseModifier {
+	modifiable: false;
+	value: number;
+}
+
+export interface VariableModifier extends BaseModifier {
+	modifiable: true;
+	minValue: number;
+	maxValue: number;
+}
+
+export type ModifierInterface = FixedModifier | VariableModifier;
 
 export interface EffectConfiguration {
 	id: string;
@@ -17,18 +28,26 @@ export interface EffectConfiguration {
 export class Modifier {
 	id: string;
 	name?: string;
-	value: number;
+	value?: number;
 	modifiable: boolean;
 	onlyOutputScales?: boolean;
 	valueScaling?: 'exponential';
+	minValue?: number;
+	maxValue?: number;
 
 	constructor(modifier: ModifierInterface) {
 		this.id = modifier.id;
 		this.name = modifier.name;
-		this.value = modifier.value;
 		this.modifiable = modifier.modifiable;
 		this.onlyOutputScales = modifier.onlyOutputScales;
 		this.valueScaling = modifier.valueScaling;
+
+		if (modifier.modifiable) {
+			this.minValue = modifier.minValue;
+			this.maxValue = modifier.maxValue;
+		} else {
+			this.value = modifier.value;
+		}
 	}
 
 	getDisplayName(): string {
@@ -39,6 +58,17 @@ export class Modifier {
 				.map(w => w[0].toUpperCase() + w.slice(1))
 				.join(' ')
 		);
+	}
+
+	updatePowerConsumption(power: number, scaling: number): number {
+		if (!['consumption', 'power'].includes(this.id)) return power;
+
+		if (this.valueScaling === 'exponential') {
+			if (!this.modifiable && this.value !== undefined)
+				power *= Math.pow(scaling, this.value);
+			return power;
+		}
+		return power * this.value!;
 	}
 }
 
@@ -73,5 +103,17 @@ export default class EffectModule {
 				.map(w => w[0].toUpperCase() + w.slice(1))
 				.join(' ')
 		);
+	}
+
+	getAllModifierIds(): string[] {
+		return this.modifiers.map(x => x.id);
+	}
+
+	/** @returns power consumption with applied effect */
+	updatePowerConsumption(power: number, scaling: number): number {
+		this.modifiers.forEach(modifier => {
+			power = modifier.updatePowerConsumption(power, scaling);
+		});
+		return power;
 	}
 }

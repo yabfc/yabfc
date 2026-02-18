@@ -35,7 +35,7 @@
 			<details class="collapse-arrow list-col-grow collapse" name="accordion-recipe-overview">
 				<summary class="collapse-title select-none">
 					<div class="flex">
-						<TestTubeDiagonalIcon size="24" class="m-2" />
+						<TestTubeDiagonalIcon size="24" class="m-2 shrink-0" />
 
 						<div>
 							<div>{recipe.getDisplayName()}</div>

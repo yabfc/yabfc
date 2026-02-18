@@ -4,7 +4,7 @@
 </script>
 
 <nav
-	class="navbar bg-base-200 border-base-300 fixed left-1/2 z-10 my-2 w-11/12 max-w-4xl -translate-x-1/2 rounded-full border-2 px-8 shadow-2xl"
+	class="navbar bg-base-200 border-base-300 fixed left-1/2 z-30 my-2 w-11/12 max-w-4xl -translate-x-1/2 rounded-full border-2 px-8 shadow-2xl"
 >
 	<div class="navbar-start">
 		<div class="dropdown">
@@ -13,8 +13,8 @@
 				<span class="sr-only">Select Profile</span>
 			</div>
 
-			<ul class="menu dropdown-content rounded-box bg-base-200 z-10 mt-3 w-52 p-2 shadow-lg">
-				{#each profiles as profile}
+			<ul class="menu dropdown-content rounded-box bg-base-200 mt-3 w-52 p-2 shadow-lg">
+				{#each $profiles as profile (profile.id)}
 					<li>
 						<details open>
 							<summary><FactoryIcon size="20" /> {profile.name}</summary>

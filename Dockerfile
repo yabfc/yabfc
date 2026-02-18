@@ -1,7 +1,7 @@
 ###########
 ## BUILD ##
 ###########
-FROM docker.io/node:22-slim AS build
+FROM docker.io/node:24-slim AS build
 
 RUN corepack prepare pnpm@10 --activate
 RUN corepack enable
