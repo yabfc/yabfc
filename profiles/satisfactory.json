@@ -24725,8 +24725,7 @@
 						"ore-iron"
 					]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "schematic-save-compatibility",
@@ -24751,15 +24750,13 @@
 						"steel-wall-8x4"
 					]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "customizer-unlock-colour-swatches",
 			"name": "Customizer Color Swatches (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "customizer-unlock-pipeline-swatch",
@@ -24777,8 +24774,7 @@
 					"type": "recipe",
 					"ids": ["resource-sink", "resource-sink-shop"]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "schematic-3-1",
@@ -25525,8 +25521,7 @@
 						"space-elevator-part-1"
 					]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "schematic-alternate-copper-rotor",
@@ -26038,8 +26033,7 @@
 					"type": "recipe",
 					"ids": ["alternate-silica-distilled"]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "schematic-alternate-quartz-purified",
@@ -26158,8 +26152,7 @@
 					"type": "recipe",
 					"ids": ["alternate-wire-1"]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "schematic-7-4",
@@ -26314,8 +26307,7 @@
 					"type": "recipe",
 					"ids": ["alternate-screw"]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "schematic-alternate-rotor",
@@ -26700,197 +26692,169 @@
 			"id": "schematic-alternate-inventory-slots1",
 			"name": "Inflated Pocket Dimension Harddrive",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-skin-buildgun-striped",
 			"name": "Striped Build Gun (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-skin-buildgun-neon",
 			"name": "Neon Build Gun (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-skin-buildgun-half-n-half",
 			"name": "FICSIT Half 'n' Half Build Gun (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-skin-buildgun-golden",
 			"name": "Golden Build Gun (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-skin-buildgun-default",
 			"name": "Standard FICSIT Build Gun (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-skin-buildgun-colored-sides",
 			"name": "Alternative FICSIT Build Gun (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-skin-buildgun-camo",
 			"name": "Camo Build Gun (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-helmet-welder",
 			"name": "Welder Helmet (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-helmet-scout",
 			"name": "Scout Helmet (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-helmet-scarf",
 			"name": "Neko Helmet (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-helmet-neon",
 			"name": "Neon Helmet (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-helmet-neko",
 			"name": "Neko Helmet (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-helmet-golden",
 			"name": "Golden Helmet (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-helmet-ficsmas",
 			"name": "FICSMAS Hat (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-helmet-default",
 			"name": "Standard FICSIT Helmet (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-helmet-bobble",
 			"name": "Bobblehead Helmet (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-helmet-beta",
 			"name": "B-374 Helmet (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-trinket-somersloop",
 			"name": "Somersloop Trinket (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-trinket-nut",
 			"name": "Golden Nut Trinket (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-trinket-nuclear-waste",
 			"name": "Nuclear Waste Trinket (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-trinket-ficsmas-star",
 			"name": "Wonder Star Trinket (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-trinket-ficsmas-ball",
 			"name": "Red Ornament Trinket (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-trinket-ficsit-coupon",
 			"name": "Coupon Trinket (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-trinket-default",
 			"name": "Wrench Trinket (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-trinket-checkit",
 			"name": "Checkit Trinket (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-trinket-alpaca",
 			"name": "Alpaca Trinket (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-trinket-air-freshener",
 			"name": "Fresh Factory Trinket (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-9-5",
@@ -27148,8 +27112,7 @@
 					"type": "recipe",
 					"ids": ["conveyor-belt-mk2", "conveyor-pole-stackable", "conveyor-lift-mk2"]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "schematic-2-3",
@@ -27160,8 +27123,7 @@
 					"type": "recipe",
 					"ids": ["jump-pad-adjustable", "u-jelly-landing-pad"]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "schematic-2-2",
@@ -27172,8 +27134,7 @@
 					"type": "recipe",
 					"ids": ["chainsaw", "biofuel"]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "research-a-carapace-0",
@@ -27203,8 +27164,7 @@
 			"id": "research-alien-somersloop",
 			"name": "Somersloop Analysis (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "research-mycelia-1",
@@ -27265,8 +27225,7 @@
 					"type": "recipe",
 					"ids": ["mam", "object-scanner", "storage-player"]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "schematic-1-2",
@@ -27277,8 +27236,7 @@
 					"type": "recipe",
 					"ids": ["conveyor-attachment-splitter", "conveyor-attachment-merger", "conveyor-lift-mk1"]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "schematic-1-1",
@@ -27299,8 +27257,7 @@
 						"wall-orange-8x1"
 					]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "research-ao-stinger",
@@ -27432,22 +27389,19 @@
 					"type": "recipe",
 					"ids": ["sam-fluctuator"]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "research-alien-sam",
 			"name": "SAM Analysis (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "research-alien-production-booster",
 			"name": "Production Amplifier (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "research-alien-power-booster",
@@ -27458,43 +27412,37 @@
 					"type": "recipe",
 					"ids": ["alien-power-building"]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "research-alien-mercer-sphere",
 			"name": "Mercer Sphere Analysis (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "research-alien-central-upload-boost-04",
 			"name": "Upload Upgrade: 240/min (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "research-alien-central-upload-boost-03",
 			"name": "Upload Upgrade: 120/min (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "research-alien-central-upload-boost-02",
 			"name": "Upload Upgrade: 60/min (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "research-alien-central-upload-boost-01",
 			"name": "Upload Upgrade: 30/min (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "research-alien-central-storage",
@@ -27505,43 +27453,37 @@
 					"type": "recipe",
 					"ids": ["central-storage"]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "research-alien-central-stack-expansion-04",
 			"name": "Depot Expansion (500%) (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "research-alien-central-stack-expansion-03",
 			"name": "Depot Expansion (400%) (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "research-alien-central-stack-expansion-02",
 			"name": "Depot Expansion (300%) (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "research-alien-central-stack-expansion-01",
 			"name": "Depot Expansion (200%) (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "research-alien-central-inventory",
 			"name": "Manual Depot Uploader (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "research-alien-booster-fuel",
@@ -27552,15 +27494,13 @@
 					"type": "recipe",
 					"ids": ["alien-power-fuel"]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "research-alien-booster-blocker",
 			"name": "Alien Energy Harnessing (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "research-alien-active-sam",
@@ -27571,8 +27511,7 @@
 					"type": "recipe",
 					"ids": ["ingot-sam"]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "research-caterium-7-2",
@@ -27729,8 +27668,7 @@
 			"id": "research-hard-drive-0",
 			"name": "Hard Drives (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "research-mycelia-gas-mask",
@@ -28144,8 +28082,7 @@
 			"id": "schematic-x-mass-tree-t4",
 			"name": " (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "research-x-mas-5",
@@ -28158,8 +28095,7 @@
 			"id": "schematic-x-mass-tree-t3",
 			"name": " (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "research-x-mas-4",
@@ -28201,8 +28137,7 @@
 			"id": "schematic-x-mass-tree-t2",
 			"name": " (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "research-x-mas-3",
@@ -28244,8 +28179,7 @@
 			"id": "schematic-x-mass-tree-t1",
 			"name": " (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "research-x-mas-2",
@@ -28323,15 +28257,13 @@
 			"id": "resource-sink-cyber-wagon-unlock",
 			"name": "Cyber Wagon available in the AWESOME Shop (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "resource-sink-golden-cart-unlock",
 			"name": "Golden Cart available in the AWESOME Shop (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "resource-sink-petroleum-coke",
@@ -28351,29 +28283,25 @@
 			"id": "schematic-songs-of-conquest",
 			"name": "Songs of Conquest Boombox Tape (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-huntdown",
 			"name": "Huntdown Boombox Tape (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-ficsmas-hits",
 			"name": "FICSMAS Greatest Hits (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-deep-rock-galactic",
 			"name": "Deep Rock Galactic Boombox Tape (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "schematic-tutorial1",
@@ -28384,8 +28312,7 @@
 					"type": "recipe",
 					"ids": ["workshop", "portable-miner"]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "schematic-tutorial1-5",
@@ -28458,22 +28385,19 @@
 			"id": "schematic-x-mass-tree",
 			"name": " (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "ficsmas-schematic-skin-bundle-2",
 			"name": "Premium FICSMAS Skins (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "ficsmas-schematic-skin-bundle-1",
 			"name": "Basic FICSMAS Skins (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		},
 		{
 			"id": "ficsmas-schematic-fireworks",
@@ -28484,15 +28408,13 @@
 					"type": "recipe",
 					"ids": ["fireworks-01", "fireworks-02", "fireworks-03"]
 				}
-			],
-			"prerequisites": ["space-elevator-2"]
+			]
 		},
 		{
 			"id": "ficsmas-schematic-finger-gun-emote",
 			"name": "Emote: Finger Guns! (MAM)",
 			"unlocked": false,
-			"unlocks": [],
-			"prerequisites": ["space-elevator-2"]
+			"unlocks": []
 		}
 	]
 }
