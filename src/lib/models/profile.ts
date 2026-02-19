@@ -108,9 +108,7 @@ export default class Profile {
 				// summerslooping
 				for (let i = 1; i <= feature.itemSlots; i++) {
 					const boostRatio = i / feature.itemSlots;
-					variants.push(
-						this.calculateRecipeVariant(recipe, machine, [effect], boostRatio),
-					);
+					variants.push(this.calculateRecipeVariant(recipe, machine, [effect], boostRatio));
 				}
 			}
 		}
@@ -150,11 +148,7 @@ export default class Profile {
 		let productivity = 1;
 		effects.forEach(effect => {
 			effect.modifiers.forEach(modifier => {
-				if (
-					modifier.id === 'speed' &&
-					modifier.onlyOutputScales === true &&
-					!modifier.modifiable
-				) {
+				if (modifier.id === 'speed' && modifier.onlyOutputScales === true && !modifier.modifiable) {
 					if (!effect.perSlot) {
 						productivity *= modifier.value! * scaling;
 					} else {
@@ -215,9 +209,7 @@ export default class Profile {
 	getMinPowerConsumptionByRecipeId(id: string): number | undefined {
 		const recipe = this.getRecipeById(id);
 		if (!recipe) return;
-		const validMachines = this.machines.filter(x =>
-			x.recipeCategories.includes(recipe.category),
-		);
+		const validMachines = this.machines.filter(x => x.recipeCategories.includes(recipe.category));
 		if (validMachines.length === 0) {
 			return;
 		}
@@ -242,7 +234,13 @@ export default class Profile {
 	getMissingResearchPrequisites(
 		id: string,
 		missingPrerequisites: Set<string> = new Set(),
+		visited: Set<string> = new Set(),
 	): string[] {
+		if (visited.has(id)) {
+			return Array.from(missingPrerequisites); // cycle detected
+		}
+		visited.add(id);
+
 		const research = this.getResearchById(id);
 		if (!research || !research.prerequisites) {
 			return Array.from(missingPrerequisites);
@@ -251,9 +249,12 @@ export default class Profile {
 		for (const prereqId of research.prerequisites) {
 			const prereq = this.getResearchById(prereqId);
 
-			if (prereq && !prereq.unlocked && !missingPrerequisites.has(prereqId)) {
-				this.getMissingResearchPrequisites(prereqId, missingPrerequisites);
-				missingPrerequisites.add(prereqId)
+			if (prereq && !visited.has(prereqId)) {
+				// Only add to missing if not unlocked, but traverse all for transitivity
+				if (!prereq.unlocked) {
+					missingPrerequisites.add(prereqId);
+				}
+				this.getMissingResearchPrequisites(prereqId, missingPrerequisites, visited);
 			}
 		}
 		return Array.from(missingPrerequisites);
@@ -276,6 +277,10 @@ export default class Profile {
 					recipe.available = true;
 				}
 			}
+		}
+
+		for (let missingResearch of this.getMissingResearchPrequisites(id)) {
+			this.markResearchAsDone(missingResearch);
 		}
 	}
 }
