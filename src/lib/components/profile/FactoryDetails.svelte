@@ -32,7 +32,7 @@
 					exact: false,
 				})),
 			)
-			.setWeights({ power: 0, building: 1, priority: 0 })
+			.setWeights({ power: 1, building: 2, priority: 0 })
 			.setTolerance(0.05);
 
 		// TODO provide visual feedback to user

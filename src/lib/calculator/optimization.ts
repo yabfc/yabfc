@@ -11,7 +11,7 @@ interface OptimizationWeights {
 export default class OptimizationRequest {
 	in: RequestedBaseItemIo[] = [];
 	out: RequestedBaseItemIo[] = [];
-	duration: number = 1;
+	duration: number = 60;
 	allowedEffectModules: EffectModule[] = [];
 	limitations: string[] = [];
 	weights: OptimizationWeights = { power: 1, building: 1, priority: 1 };
