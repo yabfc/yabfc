@@ -11,6 +11,7 @@ export interface RequestedBaseItemIo extends BaseItemIo {
 
 export interface RecipeVariant {
 	id: string;
+	highsId: string;
 	recipeId: string;
 	recipePriority: number;
 	machineId: string;

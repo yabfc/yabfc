@@ -12,7 +12,7 @@
 	let inputs = $state<{ item: Item; amount: number }[]>([]),
 		outputs = $state<{ item: Item; amount: number }[]>([]);
 
-	function calculate() {
+	async function calculate() {
 		if (!active.profile) return;
 
 		const calculator = new FactoryCalculator(active.profile);
@@ -32,11 +32,11 @@
 					exact: false,
 				})),
 			)
-			.setWeights({ power: 1, building: 1, priority: 100 })
+			.setWeights({ power: 0, building: 1, priority: 0 })
 			.setTolerance(0.05);
 
 		// TODO provide visual feedback to user
-		let res = calculator.calculate(optimizationReq);
+		let res = await calculator.calculate(optimizationReq);
 		if (!res) return alerts.push('Failed to calculate factory', 'ERROR');
 
 		const { nodes, edges } = generateNodes(res);
