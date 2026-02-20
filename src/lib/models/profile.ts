@@ -108,7 +108,9 @@ export default class Profile {
 				// summerslooping
 				for (let i = 1; i <= feature.itemSlots; i++) {
 					const boostRatio = i / feature.itemSlots;
-					variants.push(this.calculateRecipeVariant(recipe, machine, [effect], boostRatio));
+					variants.push(
+						this.calculateRecipeVariant(recipe, machine, [effect], boostRatio),
+					);
 				}
 			}
 		}
@@ -148,7 +150,11 @@ export default class Profile {
 		let productivity = 1;
 		effects.forEach(effect => {
 			effect.modifiers.forEach(modifier => {
-				if (modifier.id === 'speed' && modifier.onlyOutputScales === true && !modifier.modifiable) {
+				if (
+					modifier.id === 'speed' &&
+					modifier.onlyOutputScales === true &&
+					!modifier.modifiable
+				) {
 					if (!effect.perSlot) {
 						productivity *= modifier.value! * scaling;
 					} else {
@@ -209,7 +215,9 @@ export default class Profile {
 	getMinPowerConsumptionByRecipeId(id: string): number | undefined {
 		const recipe = this.getRecipeById(id);
 		if (!recipe) return;
-		const validMachines = this.machines.filter(x => x.recipeCategories.includes(recipe.category));
+		const validMachines = this.machines.filter(x =>
+			x.recipeCategories.includes(recipe.category),
+		);
 		if (validMachines.length === 0) {
 			return;
 		}
@@ -231,7 +239,7 @@ export default class Profile {
 		return this.research.find(x => x.id == id);
 	}
 
-	getMissingResearchPrequisites(
+	getMissingResearchPrerequisites(
 		id: string,
 		missingPrerequisites: Set<string> = new Set(),
 		visited: Set<string> = new Set(),
@@ -254,7 +262,7 @@ export default class Profile {
 				if (!prereq.unlocked) {
 					missingPrerequisites.add(prereqId);
 				}
-				this.getMissingResearchPrequisites(prereqId, missingPrerequisites, visited);
+				this.getMissingResearchPrerequisites(prereqId, missingPrerequisites, visited);
 			}
 		}
 		return Array.from(missingPrerequisites);
@@ -279,7 +287,7 @@ export default class Profile {
 			}
 		}
 
-		for (let missingResearch of this.getMissingResearchPrequisites(id)) {
+		for (let missingResearch of this.getMissingResearchPrerequisites(id)) {
 			this.markResearchAsDone(missingResearch);
 		}
 	}
