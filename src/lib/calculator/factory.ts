@@ -2,7 +2,7 @@ import type OptimizationRequest from '@/lib/calculator/optimization';
 import type Profile from '@/lib/models/profile';
 import { type RecipeVariant } from '@/lib/models/recipe';
 
-import initHighs, { type HighsSolution } from 'highs';
+import { type HighsOptions, type HighsSolution } from 'highs';
 import { LpModel } from '@/lib/calculator/lpmodel';
 
 export interface Subject {
@@ -14,15 +14,41 @@ export interface Subject {
 export type VariantId = string;
 export type ItemId = string;
 
-let highsPromise: Promise<any> | null = null;
+type Res =
+	| { id: number; ok: true; result: HighsSolution }
+	| { id: number; ok: false; error: string };
 
-function getHighs() {
-	if (!highsPromise) {
-		highsPromise = initHighs({
-			locateFile: (file: string) => (file.endsWith('.wasm') ? '/highs.wasm' : file),
+let worker: Worker | null = null;
+let nextId = 1;
+
+const pending = new Map<
+	number,
+	{ resolve: (v: HighsSolution) => void; reject: (e: Error) => void }
+>();
+
+function getWorker() {
+	if (!worker) {
+		worker = new Worker(new URL('./highs.worker.ts', import.meta.url), {
+			type: 'module',
 		});
+
+		worker.onmessage = (ev: MessageEvent<Res>) => {
+			const msg = ev.data;
+			const p = pending.get(msg.id);
+			if (!p) return;
+			pending.delete(msg.id);
+
+			if (msg.ok) p.resolve(msg.result);
+			else p.reject(new Error(msg.error));
+		};
+
+		worker.onerror = err => {
+			const error = new Error(err.message || 'Worker error');
+			for (const { reject } of pending.values()) reject(error);
+			pending.clear();
+		};
 	}
-	return highsPromise;
+	return worker;
 }
 
 export default class FactoryCalculator {
@@ -30,15 +56,19 @@ export default class FactoryCalculator {
 
 	constructor(private profile: Profile) {}
 
-	// TODO throw into web-worker?
 	async runSolver(model: string): Promise<HighsSolution> {
-		const highs = await getHighs();
-		const result = highs.solve(model, {
-			presolve: 'on',
-			time_limit: 10,
+		const w = getWorker();
+		const id = nextId++;
+		const p = new Promise<HighsSolution>((resolve, reject) => {
+			pending.set(id, { resolve, reject });
 		});
 
-		return result;
+		const options: HighsOptions = {
+			presolve: 'on',
+			time_limit: 10,
+		};
+		w.postMessage({ id, model, options });
+		return p;
 	}
 
 	/**
@@ -57,8 +87,8 @@ export default class FactoryCalculator {
 		if (inputsVariant) recipeVariants.push(inputsVariant);
 		let model = new LpModel().generateModel(recipeVariants, optimization);
 
-		//let lp = this.modelToLp(model);
 		let solution = await this.runSolver(model);
+
 		if (!this.isValidSolution(solution)) {
 			return;
 		}
