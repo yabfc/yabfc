@@ -67,6 +67,19 @@ export default class FactoryCalculator {
 		return selectedVariants;
 	}
 
+	getPowerConsumption(variants: RecipeVariant[]): number {
+		var powerConsumption = 0;
+		for (let variant of variants) {
+			if (variant.amount !== undefined) {
+				powerConsumption += variant.requiredPower * variant.amount;
+			} else {
+				powerConsumption += variant.requiredPower;
+			}
+		}
+
+		return powerConsumption;
+	}
+
 	private getDefaultSolverModel(): Model {
 		return {
 			optimize: 'cost',

@@ -12,6 +12,41 @@
 	let inputs = $state<{ item: Item; amount: number }[]>([]),
 		outputs = $state<{ item: Item; amount: number }[]>([]);
 
+	let powerConsumption = $state('0');
+	let powerUnit = $state('W');
+
+	function formatPower(
+		watts: number,
+		decimals: number = 2,
+	): { value: string; unit: string; rawNumber: number } {
+		if (watts === 0) return { value: '0', unit: 'W', rawNumber: 0 };
+
+		const userLocale = typeof navigator !== 'undefined' ? navigator.language : 'en-US';
+
+		const units = [
+			{ value: 1e12, label: 'terawatt', short: 'TW' },
+			{ value: 1e9, label: 'gigawatt', short: 'GW' },
+			{ value: 1e6, label: 'megawatt', short: 'MW' },
+			{ value: 1e3, label: 'kilowatt', short: 'kW' },
+			{ value: 1, label: 'watt', short: 'W' },
+		];
+
+		const absWatts = Math.abs(watts);
+		const match = units.find(u => absWatts >= u.value) || units[units.length - 1];
+		const calculatedValue = watts / match.value;
+
+		const formattedValue = new Intl.NumberFormat(userLocale, {
+			maximumFractionDigits: decimals,
+			minimumFractionDigits: 0,
+		}).format(calculatedValue);
+
+		return {
+			value: formattedValue,
+			unit: match.short,
+			rawNumber: calculatedValue,
+		};
+	}
+
 	function calculate() {
 		if (!active.profile) return;
 
@@ -38,6 +73,10 @@
 		// TODO provide visual feedback to user
 		let res = calculator.calculate(optimizationReq);
 		if (!res) return alerts.push('Failed to calculate factory', 'ERROR');
+
+		let formattedPower = formatPower(calculator.getPowerConsumption(res));
+		powerConsumption = formattedPower.value;
+		powerUnit = formattedPower.unit;
 
 		const { nodes, edges } = generateNodes(res);
 
@@ -68,8 +107,8 @@
 			<li class="px-2">
 				<ZapIcon size="18" class="text-base-content/50 inline" />
 				<span class="sr-only">Electricity</span>
-				<b class="font-bold">13</b>
-				<span class="text-base-content/80">MW</span>
+				<b class="font-bold">{powerConsumption}</b>
+				<span class="text-base-content/80">{powerUnit}</span>
 			</li>
 		</ul>
 
