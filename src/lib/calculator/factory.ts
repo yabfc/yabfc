@@ -72,8 +72,6 @@ export default class FactoryCalculator {
 		for (let variant of variants) {
 			if (variant.amount !== undefined) {
 				powerConsumption += variant.requiredPower * variant.amount;
-			} else {
-				powerConsumption += variant.requiredPower;
 			}
 		}
 
