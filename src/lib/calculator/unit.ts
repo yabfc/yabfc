@@ -2,7 +2,7 @@ export function formatPower(
 	watts: number,
 	decimals: number = 2,
 ): { value: string; unit: string; rawNumber: number; formattedString: string } {
-	if (watts === 0) return { value: '0', unit: 'W', rawNumber: 0, formattedString: '0W' };
+	if (watts === 0) return { value: '0', unit: 'W', rawNumber: 0, formattedString: '0 W' };
 
 	const userLocale = typeof navigator !== 'undefined' ? navigator.language : 'en-US';
 
