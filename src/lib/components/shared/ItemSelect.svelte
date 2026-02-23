@@ -18,9 +18,11 @@ Renders a item multi-select with amount. Item selection via dialog.
 	const filteredItems = $derived(
 		active.profile?.items.filter(
 			x =>
-				x.getDisplayName().toLowerCase().includes(searchQuery.toLowerCase()) ||
-				x.id.toLowerCase().includes(searchQuery.toLowerCase()) ||
-				x.category.includes(searchQuery.toLowerCase()),
+				active.profile!.getRecipesByItemOutputId(x.id).filter(r => r.craftable !== false)
+					.length > 0 &&
+				(x.getDisplayName().toLowerCase().includes(searchQuery.toLowerCase()) ||
+					x.id.toLowerCase().includes(searchQuery.toLowerCase()) ||
+					x.category.includes(searchQuery.toLowerCase())),
 		) ?? [],
 	);
 
