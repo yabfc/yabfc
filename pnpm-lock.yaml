@@ -24,8 +24,8 @@ importers:
         specifier: ^5.0.8
         version: 5.0.8
       '@xyflow/svelte':
-        specifier: ^1.5.0
-        version: 1.5.0(svelte@5.53.0)
+        specifier: ^1.5.1
+        version: 1.5.1(svelte@5.53.0)
       daisyui:
         specifier: ^5.5.18
         version: 5.5.18
@@ -516,13 +516,13 @@ packages:
   '@types/trusted-types@2.0.7':
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
 
-  '@xyflow/svelte@1.5.0':
-    resolution: {integrity: sha512-kHJVwMtabN7xthDJqLvx5wGT5qjOAVV90J9a26geDS51lrGsGb7CCxNRiZCMuVDlRkczGVIy9dkqdph6FL4slQ==}
+  '@xyflow/svelte@1.5.1':
+    resolution: {integrity: sha512-PsurMZxEaTrAwt+PzQtzEkwZwJ9dSc92kusz1rNJTogU1ATxIwheznO2R+RCf2GNuyRuExeDn26WwwBTqkCIhg==}
     peerDependencies:
       svelte: ^5.25.0
 
-  '@xyflow/system@0.0.74':
-    resolution: {integrity: sha512-7v7B/PkiVrkdZzSbL+inGAo6tkR/WQHHG0/jhSvLQToCsfa8YubOGmBYd1s08tpKpihdHDZFwzQZeR69QSBb4Q==}
+  '@xyflow/system@0.0.75':
+    resolution: {integrity: sha512-iXs+AGFLi8w/VlAoc/iSxk+CxfT6o64Uw/k0CKASOPqjqz6E0rb5jFZgJtXGZCpfQI6OQpu5EnumP5fGxQheaQ==}
 
   acorn@8.15.0:
     resolution: {integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==}
@@ -1220,13 +1220,13 @@ snapshots:
 
   '@types/trusted-types@2.0.7': {}
 
-  '@xyflow/svelte@1.5.0(svelte@5.53.0)':
+  '@xyflow/svelte@1.5.1(svelte@5.53.0)':
     dependencies:
       '@svelte-put/shortcut': 4.1.0(svelte@5.53.0)
-      '@xyflow/system': 0.0.74
+      '@xyflow/system': 0.0.75
       svelte: 5.53.0
 
-  '@xyflow/system@0.0.74':
+  '@xyflow/system@0.0.75':
     dependencies:
       '@types/d3-drag': 3.0.7
       '@types/d3-interpolate': 3.0.4
