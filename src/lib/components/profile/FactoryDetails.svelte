@@ -1,6 +1,6 @@
 <script lang="ts">
 	import FactoryCalculator from '@/lib/calculator/factory';
-	import OptimizationRequest from '@/lib/calculator/optimization';
+	import OptimizationRequest, { FEWEST_BUILDINGS } from '@/lib/calculator/optimization';
 	import ItemSelect from '@/lib/components/shared/ItemSelect.svelte';
 	import Item from '@/lib/models/item';
 	import { generateNodes } from '@/lib/models/node';
@@ -32,8 +32,8 @@
 					exact: false,
 				})),
 			)
-			.setWeights({ power: 1, building: 2, priority: 0 })
-			.setTolerance(0.05);
+			.setWeights(FEWEST_BUILDINGS)
+			.setTolerance(0.01);
 
 		// TODO provide visual feedback to user
 		let res = await calculator.calculate(optimizationReq);

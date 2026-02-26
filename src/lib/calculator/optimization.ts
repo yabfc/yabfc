@@ -8,6 +8,12 @@ interface OptimizationWeights {
 	priority: number;
 }
 
+export const FEWEST_BUILDINGS: OptimizationWeights = {
+	power: 0.1,
+	building: 1,
+	priority: 0,
+};
+
 export default class OptimizationRequest {
 	in: RequestedBaseItemIo[] = [];
 	out: RequestedBaseItemIo[] = [];
