@@ -96,6 +96,11 @@ export default class FactoryCalculator {
 		Object.entries(solution.Columns).forEach(([id, col]) => {
 			if (col['Primal'] == 0) return;
 			let amount = col['Primal'];
+			// even though the solver should only return ints, there sometimes are
+			// very small numbers included like e-13 or so, this filtes them out
+			if (amount < 0.001) {
+				return;
+			}
 			let variant = recipeVariants.find(x => x.highsId === id);
 			if (!variant || typeof amount !== 'number') return;
 			variant.amount = amount;
