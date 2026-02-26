@@ -17,7 +17,7 @@ export const FEWEST_BUILDINGS: OptimizationWeights = {
 export default class OptimizationRequest {
 	in: RequestedBaseItemIo[] = [];
 	out: RequestedBaseItemIo[] = [];
-	duration: number = 60;
+	duration: number = 1;
 	allowedEffectModules: EffectModule[] = [];
 	limitations: string[] = [];
 	weights: OptimizationWeights = { power: 1, building: 1, priority: 1 };
