@@ -3,7 +3,12 @@ import Item, { type ItemInterface } from '@/lib/models/item';
 import Machine, { MachineFeature, type MachineInterface } from '@/lib/models/machine';
 import Recipe, { type RecipeInterface, type RecipeVariant } from '@/lib/models/recipe';
 import Research, { type ResearchInterface } from '@/lib/models/research';
+import Ajv from 'ajv';
+import schema from '../../../profiles/schema.json';
 import { nanoid } from 'nanoid';
+
+const ajv = new Ajv();
+const validate = ajv.compile(schema);
 
 export interface ProfileInterface {
 	id: string;
@@ -31,6 +36,12 @@ export default class Profile {
 	research: Research[];
 
 	constructor(profile: ProfileInterface, isDefault = true) {
+		if (!this._verify(profile)) {
+			console.error('invalid profile submitted');
+		} else {
+			console.info('valid profile submitted');
+		}
+
 		this.id = profile.id;
 		this.name = profile.name;
 		this._isDefault = isDefault;
@@ -233,5 +244,131 @@ export default class Profile {
 
 	getMachineById(id: string) {
 		return this.machines.find(x => x.id === id);
+	}
+
+	private _verify(profile: ProfileInterface): boolean {
+		if (!validate(profile)) {
+			const errors = validate.errors
+				?.map(err => `${err.instancePath} ${err.message}`)
+				.join(', ');
+			console.error(errors);
+			return false;
+		}
+
+		if (!this._validateRecipes(profile.recipes)) {
+			console.error('problem with validating recipes');
+			return false;
+		}
+
+		if (!this._validateItems(profile.items, profile.recipes)) {
+			console.error('problem with validating items');
+			return false;
+		}
+
+		if (!this._validateMachines(profile.machines, profile.recipes)) {
+			console.error('problem with validating machines');
+			return false;
+		}
+
+		return true;
+	}
+
+	private _validateRecipes(recipes: RecipeInterface[]): boolean {
+		var ids_all: Set<string> = new Set();
+		var ids_in: Set<string> = new Set();
+		var ids_out: Set<string> = new Set();
+		var recipe_ids: string[] = [];
+
+		for (let r of recipes) {
+			if (recipe_ids.includes(r.id)) {
+				console.error(`duplicated recipe id found in profile: ${r.id}`);
+			} else {
+				recipe_ids.push(r.id);
+			}
+
+			r.in.forEach(input => ids_in.add(input.id));
+			r.out.forEach(output => ids_out.add(output.id));
+			ids_all = new Set(...ids_all, ...ids_in, ...ids_out);
+		}
+
+		const difference = new Set([...ids_in].filter(id => !ids_out.has(id)));
+		for (let notProducedInputId of difference) {
+			console.warn(`item with id ${notProducedInputId} can not be produced`);
+		}
+
+		if (difference.size > 0) {
+			console.error('not produced input items found in profile');
+			return false;
+		}
+
+		return true;
+	}
+
+	private _validateItems(items: ItemInterface[], recipes: RecipeInterface[]): boolean {
+		var ids_recipes: Set<string> = new Set();
+		var item_ids: Set<string> = new Set();
+
+		for (let r of recipes) {
+			r.in.forEach(input => ids_recipes.add(input.id));
+			r.out.forEach(output => ids_recipes.add(output.id));
+		}
+
+		for (let i of items) {
+			if (item_ids.has(i.id)) {
+				console.error(`duplicated item id found in profile: ${i.id}`);
+			} else {
+				item_ids.add(i.id);
+			}
+		}
+
+		const difference = new Set([...ids_recipes].filter(id => !item_ids.has(id)));
+		for (let usedButNotExistingId of difference) {
+			console.warn(
+				`item with id ${usedButNotExistingId} is being used for recipes but does not exist`,
+			);
+		}
+
+		if (difference.size > 0) {
+			console.error('found non existing items being used in recipes in profile');
+			return false;
+		}
+
+		return true;
+	}
+
+	private _validateMachines(machines: MachineInterface[], recipes: RecipeInterface[]): boolean {
+		var categories_recipe: Set<string> = new Set();
+		var categories_machine: Set<string> = new Set();
+
+		for (let r of recipes) {
+			categories_recipe.add(r.category);
+		}
+
+		for (let m of machines) {
+			categories_machine = new Set([...categories_machine, ...m.recipeCategories]);
+		}
+
+		const difference = new Set(
+			[...categories_recipe].filter(id => !categories_machine.has(id)),
+		);
+
+		for (let category in difference) {
+			if (['manual-harvest', 'build-gun', 'equipment-workshop'].includes(category)) {
+				console.log(
+					`$ {category} is not expected to have a machine assigned. You're the machine`,
+				);
+			} else {
+				console.warn(
+					`recipe category ${category} does not have a machine it can be produced in`,
+				);
+			}
+		}
+
+		if (difference.size > 0) {
+			console.error('found recipe category without machine assigned');
+			return false;
+		}
+
+		return true;
 	}
 }
