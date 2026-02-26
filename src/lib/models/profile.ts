@@ -110,14 +110,13 @@ export default class Profile {
 
 		for (const effect of effects) {
 			const modifiable = effect.modifiers.find(m => m.modifiable);
-			//console.log(effect)
 			if (modifiable) {
 				// over/underclocking
-				const stepCount = 16;
+				const stepSize = 0.1;
 				const range = modifiable.maxValue! - modifiable.minValue!;
-				const stepSize = range / stepCount;
+				const stepCount = range / stepSize;
 
-				for (let i = 0; i <= stepCount; i++) {
+				for (let i = 1; i <= stepCount; i++) {
 					const value = modifiable.minValue! + i * stepSize;
 					variants.push(
 						this.calculateRecipeVariant(recipe, machine, [effect], value, counter),
