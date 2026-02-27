@@ -1,4 +1,4 @@
-import EffectModule, { type EffectConfiguration } from '@/lib/models/effect';
+import EffectModule, { type EffectChoice, type EffectConfiguration } from '@/lib/models/effect';
 
 export interface MachineFeatureInterface {
 	id: string;
@@ -113,10 +113,10 @@ export default class Machine {
 		return speed;
 	}
 
-	getPowerConsumption(effects: EffectModule[], scaling: number): number {
+	getPowerConsumption(effects: EffectChoice[]): number {
 		let power = this.requiredPower;
-		effects.forEach(effect => {
-			power = effect.updatePowerConsumption(power, scaling);
+		effects.forEach(choice => {
+			power = choice.effect.updatePowerConsumption(power, choice.scaling);
 		});
 
 		return power;

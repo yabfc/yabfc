@@ -1,4 +1,4 @@
-import EffectModule, { type EffectModuleInterface } from '@/lib/models/effect';
+import EffectModule, { type EffectChoice, type EffectModuleInterface } from '@/lib/models/effect';
 import Item, { type ItemInterface } from '@/lib/models/item';
 import Machine, { MachineFeature, type MachineInterface } from '@/lib/models/machine';
 import Recipe, { type RecipeInterface, type RecipeVariant } from '@/lib/models/recipe';
@@ -53,17 +53,17 @@ export default class Profile {
 			const machines = this.getMachinesByRecipe(recipe.category).filter(m => m.available);
 			machines.forEach(machine => {
 				// default variant, no effects
-				allVariants.push(this.calculateRecipeVariant(recipe, machine, [], 1));
-
+				allVariants.push(this.calculateRecipeVariant(recipe, machine, []));
+				let features: MachineFeature[] = [];
 				// variants with effects
 				for (const feature of machine.features) {
-					if (feature.hidden || !feature.effectPerSlot || feature.itemSlots <= 0) {
+					if (feature.hidden || !feature.effectPerSlot || feature.itemSlots < 0) {
 						continue;
 					}
-
+					features.push(feature);
 					this.addModuleVariants(allVariants, recipe, machine, feature);
-					this.addEffectVariants(allVariants, recipe, machine, feature);
 				}
+				this.addEffectVariants(allVariants, recipe, machine, features);
 			});
 		});
 		return allVariants;
@@ -81,7 +81,7 @@ export default class Profile {
 
 		const combinations = this.getAllModuleCombinations(perSlotEffects, feature.itemSlots);
 		for (const combo of combinations) {
-			variants.push(this.calculateRecipeVariant(recipe, machine, combo, 1));
+			variants.push(this.calculateRecipeVariant(recipe, machine, combo));
 		}
 	}
 
@@ -89,42 +89,61 @@ export default class Profile {
 		variants: RecipeVariant[],
 		recipe: Recipe,
 		machine: Machine,
-		feature: MachineFeature,
+		features: MachineFeature[],
 	): void {
-		const effects = this.machineEffects.filter(
-			x => feature.effectPerSlot.includes(x.id) && !x.perSlot,
-		);
+		let clockChoices: EffectChoice[] = [];
 
-		for (const effect of effects) {
-			const modifiable = effect.modifiers.find(m => m.modifiable);
+		// over/underclocking
+		for (const feature of features) {
+			const effects = this.machineEffects.filter(
+				x => feature.effectPerSlot.includes(x.id) && !x.perSlot,
+			);
 
-			if (modifiable) {
-				// over/underclocking
-				const stepCount = 32;
-				const range = modifiable.maxValue! - modifiable.minValue!;
-				const stepSize = range / stepCount;
+			for (const effect of effects) {
+				const modifiable = effect.modifiers.find(m => m.modifiable);
+				if (modifiable) {
+					const stepCount = 32;
+					const range = modifiable.maxValue! - modifiable.minValue!;
+					const stepSize = range / stepCount;
 
-				for (let i = 0; i <= stepCount; i++) {
-					const value = modifiable.minValue! + i * stepSize;
-					variants.push(this.calculateRecipeVariant(recipe, machine, [effect], value));
+					for (let i = 0; i <= stepCount; i++) {
+						const value = modifiable.minValue! + i * stepSize;
+						let choice = { effect: effect, scaling: value };
+						variants.push(this.calculateRecipeVariant(recipe, machine, [choice]));
+						clockChoices.push(choice);
+					}
 				}
-			} else {
-				// summerslooping
-				for (let i = 1; i <= feature.itemSlots; i++) {
-					const boostRatio = i / feature.itemSlots;
-					variants.push(
-						this.calculateRecipeVariant(recipe, machine, [effect], boostRatio),
-					);
+			}
+		}
+
+		// summerslooping
+		for (const feature of features) {
+			const effects = this.machineEffects.filter(
+				x => feature.effectPerSlot.includes(x.id) && !x.perSlot,
+			);
+			for (const effect of effects) {
+				const modifiable = effect.modifiers.find(m => m.modifiable);
+				if (!modifiable) {
+					for (let i = 1; i <= feature.itemSlots; i++) {
+						const boostRatio = i / feature.itemSlots;
+						const choice = { effect: effect, scaling: boostRatio };
+						variants.push(this.calculateRecipeVariant(recipe, machine, [choice]));
+						for (const clockChoice of clockChoices) {
+							variants.push(
+								this.calculateRecipeVariant(recipe, machine, [choice, clockChoice]),
+							);
+						}
+					}
 				}
 			}
 		}
 	}
 
-	getAllModuleCombinations(availableModules: EffectModule[], slots: number): EffectModule[][] {
+	getAllModuleCombinations(availableModules: EffectModule[], slots: number): EffectChoice[][] {
 		if (slots === 0) return [[]];
 
-		const results: EffectModule[][] = [];
-		const currentCombo: EffectModule[] = [];
+		const results: EffectChoice[][] = [];
+		const currentCombo: EffectChoice[] = [];
 
 		function findCombinations(start: number) {
 			if (currentCombo.length === slots) {
@@ -133,7 +152,7 @@ export default class Profile {
 			}
 
 			for (let i = start; i < availableModules.length; i++) {
-				currentCombo.push(availableModules[i]);
+				currentCombo.push({ effect: availableModules[i], scaling: 1 });
 				findCombinations(i);
 				currentCombo.pop();
 			}
@@ -146,26 +165,25 @@ export default class Profile {
 	calculateRecipeVariant(
 		recipe: Recipe,
 		machine: Machine,
-		effects: EffectModule[],
-		scaling: number,
+		effects: EffectChoice[],
 	): RecipeVariant {
 		let speed = machine.getBaseCraftingSpeed(this.machineEffects);
-		let power = machine.getPowerConsumption(effects, scaling);
+		let power = machine.getPowerConsumption(effects);
 		let productivity = 1;
-		effects.forEach(effect => {
-			effect.modifiers.forEach(modifier => {
+		effects.forEach(choice => {
+			choice.effect.modifiers.forEach(modifier => {
 				if (
 					modifier.id === 'speed' &&
 					modifier.onlyOutputScales === true &&
 					!modifier.modifiable
 				) {
-					if (!effect.perSlot) {
-						productivity *= modifier.value! * scaling;
+					if (!choice.effect.perSlot) {
+						productivity *= modifier.value! * choice.scaling;
 					} else {
 						productivity *= modifier.value!;
 					}
 				} else if (modifier.id === 'speed' && modifier.modifiable) {
-					speed *= scaling;
+					speed *= choice.scaling;
 				} else if (modifier.id === 'speed') {
 					speed *= modifier.value!;
 				}
@@ -190,8 +208,8 @@ export default class Profile {
 			requiredPower: power,
 			usedEffectModuleIds: effects.map(x => ({
 				id: nanoid(),
-				effectId: x.id,
-				scaling: scaling,
+				effectId: x.effect.id,
+				scaling: x.scaling,
 			})),
 		};
 	}
