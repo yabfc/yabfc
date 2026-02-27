@@ -1,5 +1,5 @@
 export default interface SettingInterface {
-	default_duration: number;
-	all_recipes_unlocked: boolean;
+	defaultDuration: number;
+	allRecipesUnlocked: boolean;
 	limitations: string[] | undefined;
 }

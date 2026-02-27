@@ -13989,8 +13989,8 @@
 		}
 	],
 	"settings": {
-		"default_duration": 1,
-		"all_recipes_unlocked": true,
+		"defaultDuration": 1,
+		"allRecipesUnlocked": true,
 		"limitations": [
 			"planet:nauvis",
 			"planet:vulcanus",

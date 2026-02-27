@@ -27246,7 +27246,7 @@
 		}
 	],
 	"settings": {
-		"default_duration": 60,
-		"all_recipes_unlocked": true
+		"defaultDuration": 60,
+		"allRecipesUnlocked": true
 	}
 }
