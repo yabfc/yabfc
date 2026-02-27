@@ -54,12 +54,14 @@ export default class Profile {
 			machines.forEach(machine => {
 				// default variant, no effects
 				allVariants.push(this.calculateRecipeVariant(recipe, machine, []));
+
 				let features: MachineFeature[] = [];
 				// variants with effects
 				for (const feature of machine.features) {
 					if (feature.hidden || !feature.effectPerSlot || feature.itemSlots < 0) {
 						continue;
 					}
+
 					features.push(feature);
 					this.addModuleVariants(allVariants, recipe, machine, feature);
 				}
