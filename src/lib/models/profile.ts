@@ -4,7 +4,7 @@ import Machine, { MachineFeature, type MachineInterface } from '@/lib/models/mac
 import Recipe, { type RecipeInterface, type RecipeVariant } from '@/lib/models/recipe';
 import Research, { type ResearchInterface } from '@/lib/models/research';
 import { nanoid } from 'nanoid';
-import type SettingInterface from './setting';
+import type SettingInterface from '@/lib/models/setting';
 
 export interface ProfileInterface {
 	id: string;
