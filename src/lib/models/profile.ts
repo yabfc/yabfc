@@ -4,6 +4,7 @@ import Machine, { MachineFeature, type MachineInterface } from '@/lib/models/mac
 import Recipe, { type RecipeInterface, type RecipeVariant } from '@/lib/models/recipe';
 import Research, { type ResearchInterface } from '@/lib/models/research';
 import { nanoid } from 'nanoid';
+import type SettingInterface from '@/lib/models/setting';
 
 export interface ProfileInterface {
 	id: string;
@@ -13,6 +14,7 @@ export interface ProfileInterface {
 	machines: MachineInterface[];
 	machineEffects: EffectModuleInterface[];
 	research: ResearchInterface[];
+	settings: SettingInterface;
 }
 
 export default class Profile {
@@ -29,6 +31,7 @@ export default class Profile {
 	machines: Machine[];
 	machineEffects: EffectModule[];
 	research: Research[];
+	settings: SettingInterface;
 
 	constructor(profile: ProfileInterface, isDefault = true) {
 		this.id = profile.id;
@@ -40,6 +43,7 @@ export default class Profile {
 		this.machines = profile.machines.map(x => new Machine(x));
 		this.machineEffects = profile.machineEffects.map(x => new EffectModule(x));
 		this.research = profile.research.map(x => new Research(x));
+		this.settings = profile.settings;
 	}
 
 	generateRecipeVariants(): RecipeVariant[] {
@@ -196,10 +200,15 @@ export default class Profile {
 			recipeId: recipe.id,
 			recipePriority: recipe.priority,
 			machineId: machine.id,
-			in: recipe.in.map(x => ({ ...x, amount: (x.amount * speed) / recipe.duration })),
+			in: recipe.in.map(x => ({
+				...x,
+				amount: ((x.amount * speed) / recipe.duration) * this.settings.defaultDuration,
+			})),
 			out: recipe.out.map(x => ({
 				...x,
-				amount: (x.amount * productivity * speed) / recipe.duration,
+				amount:
+					((x.amount * productivity * speed) / recipe.duration) *
+					this.settings.defaultDuration,
 			})),
 			requiredPower: power,
 			usedEffectModuleIds: effects.map(x => ({

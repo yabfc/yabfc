@@ -33,8 +33,8 @@
 				})),
 			)
 			.setWeights(FEWEST_BUILDINGS)
-			.setTolerance(0.01);
-
+			.setTolerance(0.01)
+			.setDuration(active.profile.settings.defaultDuration);
 		// TODO provide visual feedback to user
 		let res = await calculator.calculate(optimizationReq);
 		if (!res) return alerts.push('Failed to calculate factory', 'ERROR');
