@@ -177,10 +177,15 @@ export default class Profile {
 			recipeId: recipe.id,
 			recipePriority: recipe.priority,
 			machineId: machine.id,
-			in: recipe.in.map(x => ({ ...x, amount: (x.amount * speed) / recipe.duration })),
+			in: recipe.in.map(x => ({
+				...x,
+				amount: ((x.amount * speed) / recipe.duration) * this.settings.default_duration,
+			})),
 			out: recipe.out.map(x => ({
 				...x,
-				amount: (x.amount * productivity * speed) / recipe.duration,
+				amount:
+					((x.amount * productivity * speed) / recipe.duration) *
+					this.settings.default_duration,
 			})),
 			requiredPower: power,
 			usedEffectModuleIds: effects.map(x => ({
