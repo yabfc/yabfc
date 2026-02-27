@@ -1,6 +1,6 @@
 {
 	"id": "satisfactory",
-	"name": "Satisfactory",
+	"name": "Generated Satisfactory Profile",
 	"items": [
 		{
 			"id": "beam",
@@ -3342,7 +3342,7 @@
 		{
 			"id": "packaged-rocket-fuel",
 			"type": "item",
-			"category": "packaged-resource",
+			"category": "packaged-ressource",
 			"stackSize": 100
 		},
 		{
@@ -3476,7 +3476,7 @@
 		{
 			"id": "packaged-ionized-fuel",
 			"type": "item",
-			"category": "packaged-resource",
+			"category": "packaged-ressource",
 			"stackSize": 100
 		},
 		{
@@ -3618,20 +3618,20 @@
 		{
 			"id": "packaged-oil",
 			"type": "item",
-			"category": "packaged-resource",
+			"category": "packaged-ressource",
 			"stackSize": 100
 		},
 		{
 			"id": "packaged-oil-residue",
 			"name": "Packaged Heavy Oil Residue",
 			"type": "item",
-			"category": "packaged-resource",
+			"category": "packaged-ressource",
 			"stackSize": 100
 		},
 		{
 			"id": "packaged-water",
 			"type": "item",
-			"category": "packaged-resource",
+			"category": "packaged-ressource",
 			"stackSize": 100
 		},
 		{
@@ -3938,6 +3938,12 @@
 			"stackSize": 50
 		},
 		{
+			"id": "candy-cane",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
 			"id": "snow",
 			"name": "FICSMAS Actual Snow",
 			"type": "item",
@@ -4170,6 +4176,12 @@
 			"stackSize": 1
 		},
 		{
+			"id": "candy-cane-basher",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 1
+		},
+		{
 			"id": "golf-cart",
 			"name": "Factory Cart",
 			"type": "item",
@@ -4208,13 +4220,13 @@
 			"id": "ore-iron",
 			"name": "Iron Ore",
 			"type": "item",
-			"category": "raw-resource",
+			"category": "raw-ressource",
 			"stackSize": 100
 		},
 		{
 			"id": "coal",
 			"type": "item",
-			"category": "raw-resource",
+			"category": "raw-ressource",
 			"stackSize": 100
 		},
 		{
@@ -4226,7 +4238,7 @@
 		{
 			"id": "sulfur",
 			"type": "item",
-			"category": "raw-resource",
+			"category": "raw-ressource",
 			"stackSize": 100
 		},
 		{
@@ -4238,34 +4250,34 @@
 		{
 			"id": "sam",
 			"type": "item",
-			"category": "raw-resource",
+			"category": "raw-ressource",
 			"stackSize": 100
 		},
 		{
 			"id": "ore-bauxite",
 			"name": "Bauxite",
 			"type": "item",
-			"category": "raw-resource",
+			"category": "raw-ressource",
 			"stackSize": 100
 		},
 		{
 			"id": "ore-gold",
 			"name": "Caterium Ore",
 			"type": "item",
-			"category": "raw-resource",
+			"category": "raw-ressource",
 			"stackSize": 100
 		},
 		{
 			"id": "ore-copper",
 			"name": "Copper Ore",
 			"type": "item",
-			"category": "raw-resource",
+			"category": "raw-ressource",
 			"stackSize": 100
 		},
 		{
 			"id": "raw-quartz",
 			"type": "item",
-			"category": "raw-resource",
+			"category": "raw-ressource",
 			"stackSize": 100
 		},
 		{
@@ -4279,7 +4291,7 @@
 			"id": "ore-uranium",
 			"name": "Uranium",
 			"type": "item",
-			"category": "raw-resource",
+			"category": "raw-ressource",
 			"stackSize": 100
 		},
 		{
@@ -4325,32 +4337,32 @@
 			"id": "packaged-biofuel",
 			"name": "Packaged Liquid Biofuel",
 			"type": "item",
-			"category": "packaged-resource",
+			"category": "packaged-ressource",
 			"stackSize": 100
 		},
 		{
 			"id": "packaged-alumina",
 			"name": "Packaged Alumina Solution",
 			"type": "item",
-			"category": "packaged-resource",
+			"category": "packaged-ressource",
 			"stackSize": 100
 		},
 		{
 			"id": "packaged-nitrogen-gas",
 			"type": "item",
-			"category": "packaged-resource",
+			"category": "packaged-ressource",
 			"stackSize": 100
 		},
 		{
 			"id": "packaged-nitric-acid",
 			"type": "item",
-			"category": "packaged-resource",
+			"category": "packaged-ressource",
 			"stackSize": 100
 		},
 		{
 			"id": "packaged-sulfuric-acid",
 			"type": "item",
-			"category": "packaged-resource",
+			"category": "packaged-ressource",
 			"stackSize": 100
 		},
 		{

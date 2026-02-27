@@ -37,9 +37,9 @@ export default class Profile {
 
 	constructor(profile: ProfileInterface, isDefault = true) {
 		if (!this._verify(profile)) {
-			console.error('invalid profile submitted');
+			console.error(`invalid profile ${profile.name} submitted`);
 		} else {
-			console.info('valid profile submitted');
+			console.info(`valid profile for ${profile.name} submitted`);
 		}
 
 		this.id = profile.id;
@@ -119,9 +119,7 @@ export default class Profile {
 				// summerslooping
 				for (let i = 1; i <= feature.itemSlots; i++) {
 					const boostRatio = i / feature.itemSlots;
-					variants.push(
-						this.calculateRecipeVariant(recipe, machine, [effect], boostRatio),
-					);
+					variants.push(this.calculateRecipeVariant(recipe, machine, [effect], boostRatio));
 				}
 			}
 		}
@@ -161,11 +159,7 @@ export default class Profile {
 		let productivity = 1;
 		effects.forEach(effect => {
 			effect.modifiers.forEach(modifier => {
-				if (
-					modifier.id === 'speed' &&
-					modifier.onlyOutputScales === true &&
-					!modifier.modifiable
-				) {
+				if (modifier.id === 'speed' && modifier.onlyOutputScales === true && !modifier.modifiable) {
 					if (!effect.perSlot) {
 						productivity *= modifier.value! * scaling;
 					} else {
@@ -226,9 +220,7 @@ export default class Profile {
 	getMinPowerConsumptionByRecipeId(id: string): number | undefined {
 		const recipe = this.getRecipeById(id);
 		if (!recipe) return;
-		const validMachines = this.machines.filter(x =>
-			x.recipeCategories.includes(recipe.category),
-		);
+		const validMachines = this.machines.filter(x => x.recipeCategories.includes(recipe.category));
 		if (validMachines.length === 0) {
 			return;
 		}
@@ -248,9 +240,7 @@ export default class Profile {
 
 	private _verify(profile: ProfileInterface): boolean {
 		if (!validate(profile)) {
-			const errors = validate.errors
-				?.map(err => `${err.instancePath} ${err.message}`)
-				.join(', ');
+			const errors = validate.errors?.map(err => `${err.instancePath} ${err.message}`).join(', ');
 			console.error(errors);
 			return false;
 		}
@@ -348,19 +338,14 @@ export default class Profile {
 			categories_machine = new Set([...categories_machine, ...m.recipeCategories]);
 		}
 
-		const difference = new Set(
-			[...categories_recipe].filter(id => !categories_machine.has(id)),
-		);
+		const difference = new Set([...categories_recipe].filter(id => !categories_machine.has(id)));
 
-		for (let category in difference) {
+		for (let category of difference) {
 			if (['manual-harvest', 'build-gun', 'equipment-workshop'].includes(category)) {
-				console.log(
-					`$ {category} is not expected to have a machine assigned. You're the machine`,
-				);
+				console.log(`${category} is not expected to have a machine assigned. You're the machine`);
+				difference.delete(category);
 			} else {
-				console.warn(
-					`recipe category ${category} does not have a machine it can be produced in`,
-				);
+				console.warn(`recipe category ${category} does not have a machine it can be produced in`);
 			}
 		}
 
