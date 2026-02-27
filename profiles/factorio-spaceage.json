@@ -10397,7 +10397,7 @@
 			"category": "offshore-pump",
 			"priority": 10,
 			"available": true,
-			"limitations": ["planet:nauvis", "planet:gleba"]
+			"limitations": ["planet:gleba", "planet:nauvis"]
 		},
 		{
 			"id": "lava",
@@ -13987,5 +13987,17 @@
 			],
 			"prerequisites": ["cryogenic-science-pack"]
 		}
-	]
+	],
+	"settings": {
+		"default_duration": 1,
+		"all_recipes_unlocked": true,
+		"limitations": [
+			"planet:nauvis",
+			"planet:vulcanus",
+			"planet:gleba",
+			"planet:fulgora",
+			"planet:aquilo",
+			"planet:space-platform"
+		]
+	}
 }

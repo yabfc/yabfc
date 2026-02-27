@@ -3938,6 +3938,12 @@
 			"stackSize": 50
 		},
 		{
+			"id": "candy-cane",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 100
+		},
+		{
 			"id": "snow",
 			"name": "FICSMAS Actual Snow",
 			"type": "item",
@@ -4165,6 +4171,12 @@
 		{
 			"id": "gasmask",
 			"name": "Gas Mask",
+			"type": "item",
+			"category": "advanced-product",
+			"stackSize": 1
+		},
+		{
+			"id": "candy-cane-basher",
 			"type": "item",
 			"category": "advanced-product",
 			"stackSize": 1
@@ -27232,5 +27244,9 @@
 			],
 			"prerequisites": ["schematic-tutorial4"]
 		}
-	]
+	],
+	"settings": {
+		"default_duration": 60,
+		"all_recipes_unlocked": true
+	}
 }
