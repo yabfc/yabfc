@@ -252,9 +252,9 @@ export default class Profile {
 	}
 
 	private _validateRecipes(recipes: RecipeInterface[]) {
-		var ids_all: Set<string> = new Set();
-		var ids_in: Set<string> = new Set();
-		var ids_out: Set<string> = new Set();
+		var idsAll: Set<string> = new Set();
+		var idsIn: Set<string> = new Set();
+		var idsOut: Set<string> = new Set();
 		var recipe_ids: string[] = [];
 
 		for (let r of recipes) {
@@ -262,12 +262,12 @@ export default class Profile {
 				recipe_ids.push(r.id);
 			}
 
-			r.in.forEach(input => ids_in.add(input.id));
-			r.out.forEach(output => ids_out.add(output.id));
-			ids_all = new Set(...ids_all, ...ids_in, ...ids_out);
+			r.in.forEach(input => idsIn.add(input.id));
+			r.out.forEach(output => idsOut.add(output.id));
+			idsAll = new Set(...idsAll, ...idsIn, ...idsOut);
 		}
 
-		const difference = new Set([...ids_in].filter(id => !ids_out.has(id)));
+		const difference = new Set([...idsIn].filter(id => !idsOut.has(id)));
 
 		if (difference.size > 0) {
 			return false;
@@ -277,21 +277,21 @@ export default class Profile {
 	}
 
 	private _validateItems(items: ItemInterface[], recipes: RecipeInterface[]) {
-		var ids_recipes: Set<string> = new Set();
-		var item_ids: Set<string> = new Set();
+		var idsRecipes: Set<string> = new Set();
+		var itemIds: Set<string> = new Set();
 
 		for (let r of recipes) {
-			r.in.forEach(input => ids_recipes.add(input.id));
-			r.out.forEach(output => ids_recipes.add(output.id));
+			r.in.forEach(input => idsRecipes.add(input.id));
+			r.out.forEach(output => idsRecipes.add(output.id));
 		}
 
 		for (let i of items) {
-			if (!item_ids.has(i.id)) {
-				item_ids.add(i.id);
+			if (!itemIds.has(i.id)) {
+				itemIds.add(i.id);
 			}
 		}
 
-		const difference = new Set([...ids_recipes].filter(id => !item_ids.has(id)));
+		const difference = new Set([...idsRecipes].filter(id => !itemIds.has(id)));
 
 		if (difference.size > 0) {
 			return false;
@@ -301,18 +301,18 @@ export default class Profile {
 	}
 
 	private _validateMachines(machines: MachineInterface[], recipes: RecipeInterface[]) {
-		var categories_recipe: Set<string> = new Set();
-		var categories_machine: Set<string> = new Set();
+		var categoriesRecipe: Set<string> = new Set();
+		var categoriesMachine: Set<string> = new Set();
 
 		for (let r of recipes) {
-			categories_recipe.add(r.category);
+			categoriesRecipe.add(r.category);
 		}
 
 		for (let m of machines) {
-			categories_machine = new Set([...categories_machine, ...m.recipeCategories]);
+			categoriesMachine = new Set([...categoriesMachine, ...m.recipeCategories]);
 		}
 
-		const difference = new Set([...categories_recipe].filter(id => !categories_machine.has(id)));
+		const difference = new Set([...categoriesRecipe].filter(id => !categoriesMachine.has(id)));
 
 		for (let category of difference) {
 			if (['manual-harvest', 'build-gun', 'equipment-workshop'].includes(category)) {
