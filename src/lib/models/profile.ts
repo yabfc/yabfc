@@ -258,7 +258,9 @@ export default class Profile {
 		var recipe_ids: string[] = [];
 
 		for (let r of recipes) {
-			if (!recipe_ids.includes(r.id)) {
+			if (recipe_ids.includes(r.id)) {
+				return false;
+			} else {
 				recipe_ids.push(r.id);
 			}
 
@@ -286,7 +288,9 @@ export default class Profile {
 		}
 
 		for (let i of items) {
-			if (!itemIds.has(i.id)) {
+			if (itemIds.has(i.id)) {
+				return false;
+			} else {
 				itemIds.add(i.id);
 			}
 		}
