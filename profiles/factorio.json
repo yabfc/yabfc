@@ -8484,5 +8484,9 @@
 			],
 			"prerequisites": ["circuit-network", "chemical-science-pack"]
 		}
-	]
+	],
+	"settings": {
+		"defaultDuration": 1,
+		"allRecipesUnlocked": true
+	}
 }

@@ -27244,5 +27244,9 @@
 			],
 			"prerequisites": ["schematic-tutorial4"]
 		}
-	]
+	],
+	"settings": {
+		"defaultDuration": 60,
+		"allRecipesUnlocked": true
+	}
 }
