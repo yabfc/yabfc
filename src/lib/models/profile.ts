@@ -36,10 +36,8 @@ export default class Profile {
 	research: Research[];
 
 	constructor(profile: ProfileInterface, isDefault = true) {
-		if (!this._verify(profile)) {
-			console.error(`invalid profile ${profile.name} submitted`);
-		} else {
-			console.info(`valid profile for ${profile.name} submitted`);
+		if (!this._validate(profile)) {
+			throw new Error(`invalid profile ${profile.name} submitted`);
 		}
 
 		this.id = profile.id;
@@ -238,7 +236,7 @@ export default class Profile {
 		return this.machines.find(x => x.id === id);
 	}
 
-	private _verify(profile: ProfileInterface): boolean {
+	private _validate(profile: ProfileInterface) {
 		if (!validate(profile)) {
 			const errors = validate.errors?.map(err => `${err.instancePath} ${err.message}`).join(', ');
 			console.error(errors);
