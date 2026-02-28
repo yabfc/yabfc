@@ -239,38 +239,26 @@ export default class Profile {
 	private _validate(profile: ProfileInterface) {
 		if (!validate(profile)) {
 			const errors = validate.errors?.map(err => `${err.instancePath} ${err.message}`).join(', ');
-			console.error(errors);
 			return false;
 		}
 
-		if (!this._validateRecipes(profile.recipes)) {
-			console.error('problem with validating recipes');
-			return false;
-		}
+		if (!this._validateRecipes(profile.recipes)) return false;
 
-		if (!this._validateItems(profile.items, profile.recipes)) {
-			console.error('problem with validating items');
-			return false;
-		}
+		if (!this._validateItems(profile.items, profile.recipes)) return false;
 
-		if (!this._validateMachines(profile.machines, profile.recipes)) {
-			console.error('problem with validating machines');
-			return false;
-		}
+		if (!this._validateMachines(profile.machines, profile.recipes)) return false;
 
 		return true;
 	}
 
-	private _validateRecipes(recipes: RecipeInterface[]): boolean {
+	private _validateRecipes(recipes: RecipeInterface[]) {
 		var ids_all: Set<string> = new Set();
 		var ids_in: Set<string> = new Set();
 		var ids_out: Set<string> = new Set();
 		var recipe_ids: string[] = [];
 
 		for (let r of recipes) {
-			if (recipe_ids.includes(r.id)) {
-				console.error(`duplicated recipe id found in profile: ${r.id}`);
-			} else {
+			if (!recipe_ids.includes(r.id)) {
 				recipe_ids.push(r.id);
 			}
 
@@ -280,19 +268,15 @@ export default class Profile {
 		}
 
 		const difference = new Set([...ids_in].filter(id => !ids_out.has(id)));
-		for (let notProducedInputId of difference) {
-			console.warn(`item with id ${notProducedInputId} can not be produced`);
-		}
 
 		if (difference.size > 0) {
-			console.error('not produced input items found in profile');
 			return false;
 		}
 
 		return true;
 	}
 
-	private _validateItems(items: ItemInterface[], recipes: RecipeInterface[]): boolean {
+	private _validateItems(items: ItemInterface[], recipes: RecipeInterface[]) {
 		var ids_recipes: Set<string> = new Set();
 		var item_ids: Set<string> = new Set();
 
@@ -302,29 +286,21 @@ export default class Profile {
 		}
 
 		for (let i of items) {
-			if (item_ids.has(i.id)) {
-				console.error(`duplicated item id found in profile: ${i.id}`);
-			} else {
+			if (!item_ids.has(i.id)) {
 				item_ids.add(i.id);
 			}
 		}
 
 		const difference = new Set([...ids_recipes].filter(id => !item_ids.has(id)));
-		for (let usedButNotExistingId of difference) {
-			console.warn(
-				`item with id ${usedButNotExistingId} is being used for recipes but does not exist`,
-			);
-		}
 
 		if (difference.size > 0) {
-			console.error('found non existing items being used in recipes in profile');
 			return false;
 		}
 
 		return true;
 	}
 
-	private _validateMachines(machines: MachineInterface[], recipes: RecipeInterface[]): boolean {
+	private _validateMachines(machines: MachineInterface[], recipes: RecipeInterface[]) {
 		var categories_recipe: Set<string> = new Set();
 		var categories_machine: Set<string> = new Set();
 
@@ -340,15 +316,11 @@ export default class Profile {
 
 		for (let category of difference) {
 			if (['manual-harvest', 'build-gun', 'equipment-workshop'].includes(category)) {
-				console.log(`${category} is not expected to have a machine assigned. You're the machine`);
 				difference.delete(category);
-			} else {
-				console.warn(`recipe category ${category} does not have a machine it can be produced in`);
 			}
 		}
 
 		if (difference.size > 0) {
-			console.error('found recipe category without machine assigned');
 			return false;
 		}
 
