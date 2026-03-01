@@ -3,9 +3,8 @@ import Item, { type ItemInterface } from '@/lib/models/item';
 import Machine, { MachineFeature, type MachineInterface } from '@/lib/models/machine';
 import Recipe, { type RecipeInterface, type RecipeVariant } from '@/lib/models/recipe';
 import Research, { type ResearchInterface } from '@/lib/models/research';
-import { nanoid } from 'nanoid';
 import type SettingInterface from '@/lib/models/setting';
-import { CloudOff } from '@lucide/svelte';
+import { nanoid } from 'nanoid';
 
 export interface ProfileInterface {
 	id: string;

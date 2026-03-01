@@ -1,6 +1,6 @@
-import type { RecipeVariant } from '@/lib/models/recipe';
-import type { VariantId, ItemId, Subject } from '@/lib/calculator/factory';
+import type { ItemId, Subject, VariantId } from '@/lib/calculator/factory';
 import type OptimizationRequest from '@/lib/calculator/optimization';
+import type { RecipeVariant } from '@/lib/models/recipe';
 
 interface AllConstraints {
 	flow: Record<ItemId, Record<VariantId, number>>;

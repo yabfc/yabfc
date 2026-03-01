@@ -1,9 +1,8 @@
+import { LpModel } from '@/lib/calculator/lpmodel';
 import type OptimizationRequest from '@/lib/calculator/optimization';
 import type Profile from '@/lib/models/profile';
 import { type RecipeVariant } from '@/lib/models/recipe';
-
 import { type HighsOptions, type HighsSolution } from 'highs';
-import { LpModel } from '@/lib/calculator/lpmodel';
 
 export interface Subject {
 	cons: Record<VariantId, number>;
