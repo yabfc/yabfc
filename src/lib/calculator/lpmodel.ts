@@ -110,13 +110,13 @@ export class LpModel {
 				subjects[item.id] = {
 					cons: flows[item.id] || {},
 					mode: '=',
-					value: item.amount / optimization.duration,
+					value: item.amount,
 				};
 			} else {
 				subjects[item.id] = {
 					cons: flows[item.id] || {},
 					mode: '>=',
-					value: (item.amount / optimization.duration) * (1 - optimization.tolerance),
+					value: item.amount * (1 - optimization.tolerance),
 				};
 			}
 		});
