@@ -210,7 +210,7 @@ export default class Profile {
 			id: nanoid(),
 			highsId: 'x' + this.nextHighsId(),
 			recipeId: recipe.id,
-			recipePriority: recipe.priority,
+			recipeCost: recipe.cost || 0,
 			machineId: machine.id,
 			in: recipe.in.map(x => ({
 				...x,

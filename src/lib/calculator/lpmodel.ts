@@ -153,16 +153,14 @@ export default class LpModel {
 				optimization.weights.power,
 			);
 
-			// priority needs a really hard penalty. Alternate recipes in satisfactory
-			// bloat the result up by a lot: 40 vs 60+ for turbo-motors
-			let priorityCost = Math.pow(variant.recipePriority, optimization.weights.priority);
+			let resourceCost = Math.pow(variant.recipeCost, optimization.weights.cost);
 			let buildingCost = Math.pow(10, optimization.weights.building);
 
 			// actually set it to 0
 			if (optimization.weights.power === 0) powerCost = 0;
-			if (optimization.weights.priority === 0) priorityCost = 0;
+			if (optimization.weights.cost === 0) resourceCost = 0;
 			if (optimization.weights.building === 0) buildingCost = 0;
-			costs[variant.highsId] = powerCost + buildingCost + priorityCost;
+			costs[variant.highsId] = powerCost + buildingCost + resourceCost;
 		});
 		return { flow: flows, costs };
 	}

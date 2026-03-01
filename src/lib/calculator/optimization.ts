@@ -5,13 +5,13 @@ import { type RequestedBaseItemIo } from '@/lib/models/recipe';
 interface OptimizationWeights {
 	power: number;
 	building: number;
-	priority: number;
+	cost: number;
 }
 
 export const FEWEST_BUILDINGS: OptimizationWeights = {
 	power: 0.1,
 	building: 1,
-	priority: 0,
+	cost: 0,
 };
 
 export default class OptimizationRequest {
@@ -20,7 +20,7 @@ export default class OptimizationRequest {
 	duration: number = 1;
 	allowedEffectModules: EffectModule[] = [];
 	limitations: string[] = [];
-	weights: OptimizationWeights = { power: 1, building: 1, priority: 1 };
+	weights: OptimizationWeights = { power: 1, building: 1, cost: 1 };
 	tolerance: number = 0;
 
 	constructor() {}

@@ -13,7 +13,7 @@ export interface RecipeVariant {
 	id: string;
 	highsId: string;
 	recipeId: string;
-	recipePriority: number;
+	recipeCost: number;
 	machineId: string;
 	in: BaseItemIo[];
 	out: BaseItemIo[];
@@ -30,7 +30,7 @@ export interface RecipeInterface {
 	out: BaseItemIo[];
 	duration: number;
 	category: string;
-	priority: number;
+	cost: number | undefined;
 	limitations?: string[];
 	craftable?: boolean;
 }
@@ -43,7 +43,7 @@ export default class Recipe {
 	out: BaseItemIo[];
 	duration: number;
 	category: string;
-	priority: number;
+	cost: number | undefined;
 	limitations?: string[];
 	craftable?: boolean;
 
@@ -55,7 +55,7 @@ export default class Recipe {
 		this.out = recipe.out;
 		this.duration = recipe.duration;
 		this.category = recipe.category;
-		this.priority = recipe.priority;
+		this.cost = recipe.cost;
 		this.limitations = recipe.limitations;
 		this.craftable = recipe.craftable;
 	}

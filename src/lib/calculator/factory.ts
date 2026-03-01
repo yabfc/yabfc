@@ -128,7 +128,7 @@ export default class FactoryCalculator {
 			id: FactoryCalculator.recipeVariantInputs,
 			highsId: 'x0',
 			recipeId: FactoryCalculator.recipeVariantInputs,
-			recipePriority: 0,
+			recipeCost: 0,
 			machineId: '',
 			in: [],
 			out: optimization.in,
