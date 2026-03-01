@@ -1,6 +1,6 @@
 <script lang="ts">
 	import FactoryCalculator from '@/lib/calculator/factory';
-	import OptimizationRequest from '@/lib/calculator/optimization';
+	import OptimizationRequest, { FEWEST_BUILDINGS } from '@/lib/calculator/optimization';
 	import ItemSelect from '@/lib/components/shared/ItemSelect.svelte';
 	import Item from '@/lib/models/item';
 	import { generateNodes } from '@/lib/models/node';
@@ -12,7 +12,9 @@
 	let inputs = $state<{ item: Item; amount: number }[]>([]),
 		outputs = $state<{ item: Item; amount: number }[]>([]);
 
-	function calculate() {
+	let loading = $state(false);
+
+	async function calculate() {
 		if (!active.profile) return;
 
 		const calculator = new FactoryCalculator(active.profile);
@@ -32,11 +34,14 @@
 					exact: false,
 				})),
 			)
-			.setWeights({ power: 1, building: 1, priority: 100 })
-			.setTolerance(0.05)
+			.setWeights(FEWEST_BUILDINGS)
+			.setTolerance(0.01)
 			.setDuration(active.profile.settings.defaultDuration);
-		// TODO provide visual feedback to user
-		let res = calculator.calculate(optimizationReq);
+
+		loading = true;
+		let res = await calculator.calculate(optimizationReq);
+		loading = false;
+
 		if (!res) return alerts.push('Failed to calculate factory', 'ERROR');
 
 		const { nodes, edges } = generateNodes(res);
@@ -74,7 +79,14 @@
 		</ul>
 
 		<div class="flex flex-row-reverse gap-2 pt-2">
-			<button onclick={calculate} class="btn btn-primary btn-soft">Calculate</button>
+			<button onclick={calculate} class="btn btn-primary btn-soft">
+				Calculate
+
+				{#if loading}
+					<span class="loading loading-xs"></span>
+					<span class="sr-only">loading...</span>
+				{/if}
+			</button>
 		</div>
 	</div>
 </div>
