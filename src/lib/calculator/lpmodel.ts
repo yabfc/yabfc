@@ -7,7 +7,7 @@ interface AllConstraints {
 	costs: Record<VariantId, number>;
 }
 
-export class LpModel {
+export default class LpModel {
 	private objective: 'min' | 'max' = 'min';
 	private costs: string[] = [];
 	private subjects: string[] = [];

@@ -1,4 +1,4 @@
-import { LpModel } from '@/lib/calculator/lpmodel';
+import LpModel from '@/lib/calculator/lpmodel';
 import type OptimizationRequest from '@/lib/calculator/optimization';
 import type Profile from '@/lib/models/profile';
 import { type RecipeVariant } from '@/lib/models/recipe';
