@@ -12,6 +12,8 @@
 	let inputs = $state<{ item: Item; amount: number }[]>([]),
 		outputs = $state<{ item: Item; amount: number }[]>([]);
 
+	let loading = $state(false);
+
 	async function calculate() {
 		if (!active.profile) return;
 
@@ -35,8 +37,11 @@
 			.setWeights(FEWEST_BUILDINGS)
 			.setTolerance(0.01)
 			.setDuration(active.profile.settings.defaultDuration);
-		// TODO provide visual feedback to user
+
+		loading = true;
 		let res = await calculator.calculate(optimizationReq);
+		loading = false;
+
 		if (!res) return alerts.push('Failed to calculate factory', 'ERROR');
 
 		const { nodes, edges } = generateNodes(res);
@@ -74,7 +79,14 @@
 		</ul>
 
 		<div class="flex flex-row-reverse gap-2 pt-2">
-			<button onclick={calculate} class="btn btn-primary btn-soft">Calculate</button>
+			<button onclick={calculate} class="btn btn-primary btn-soft">
+				Calculate
+
+				{#if loading}
+					<span class="loading loading-xs"></span>
+					<span class="sr-only">loading...</span>
+				{/if}
+			</button>
 		</div>
 	</div>
 </div>
