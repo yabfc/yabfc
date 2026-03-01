@@ -1878,7 +1878,6 @@
 			],
 			"duration": 15,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -1905,7 +1904,6 @@
 			],
 			"duration": 30,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -1936,7 +1934,6 @@
 			],
 			"duration": 60,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -1959,7 +1956,6 @@
 			],
 			"duration": 15,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -1986,7 +1982,6 @@
 			],
 			"duration": 30,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2017,7 +2012,6 @@
 			],
 			"duration": 60,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2040,7 +2034,6 @@
 			],
 			"duration": 15,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2067,7 +2060,6 @@
 			],
 			"duration": 30,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2098,7 +2090,6 @@
 			],
 			"duration": 60,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2129,7 +2120,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2148,7 +2138,6 @@
 			],
 			"duration": 5,
 			"category": "oil-processing",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2179,7 +2168,6 @@
 			],
 			"duration": 5,
 			"category": "oil-processing",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2214,7 +2202,6 @@
 			],
 			"duration": 5,
 			"category": "oil-processing",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2237,7 +2224,6 @@
 			],
 			"duration": 2,
 			"category": "organic-or-chemistry",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2260,7 +2246,6 @@
 			],
 			"duration": 2,
 			"category": "organic-or-chemistry",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2287,7 +2272,6 @@
 			],
 			"duration": 1,
 			"category": "chemistry-or-cryogenics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2310,7 +2294,6 @@
 			],
 			"duration": 1,
 			"category": "chemistry-or-cryogenics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2329,7 +2312,6 @@
 			],
 			"duration": 1,
 			"category": "chemistry",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2348,7 +2330,6 @@
 			],
 			"duration": 1,
 			"category": "chemistry",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2367,7 +2348,6 @@
 			],
 			"duration": 1,
 			"category": "chemistry",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2390,7 +2370,6 @@
 			],
 			"duration": 1,
 			"category": "chemistry-or-cryogenics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2409,7 +2388,6 @@
 			],
 			"duration": 1,
 			"category": "chemistry",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2428,7 +2406,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2451,7 +2428,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2474,7 +2450,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2497,7 +2472,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2524,7 +2498,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2547,7 +2520,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2574,7 +2546,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2601,7 +2572,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2628,7 +2598,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2655,7 +2624,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2682,7 +2650,6 @@
 			],
 			"duration": 10,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2709,7 +2676,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2740,7 +2706,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2767,7 +2732,6 @@
 			],
 			"duration": 20,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2794,7 +2758,6 @@
 			],
 			"duration": 20,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2825,7 +2788,6 @@
 			],
 			"duration": 20,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2856,7 +2818,6 @@
 			],
 			"duration": 40,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2883,7 +2844,6 @@
 			],
 			"duration": 8,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2902,7 +2862,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2925,7 +2884,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2944,7 +2902,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2963,7 +2920,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -2986,7 +2942,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3013,7 +2968,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3032,7 +2986,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3055,7 +3008,6 @@
 			],
 			"duration": 1,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3078,7 +3030,6 @@
 			],
 			"duration": 1,
 			"category": "pressing",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3105,7 +3056,6 @@
 			],
 			"duration": 2,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3132,7 +3082,6 @@
 			],
 			"duration": 2,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3159,7 +3108,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3186,7 +3134,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3213,7 +3160,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3236,7 +3182,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3255,7 +3200,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3278,7 +3222,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3297,7 +3240,6 @@
 			],
 			"duration": 1,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3320,7 +3262,6 @@
 			],
 			"duration": 1,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3347,7 +3288,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3366,7 +3306,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3385,7 +3324,6 @@
 			],
 			"duration": 3,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3412,7 +3350,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3439,7 +3376,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3462,7 +3398,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3489,7 +3424,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3512,7 +3446,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3535,7 +3468,6 @@
 			],
 			"duration": 5,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3558,7 +3490,6 @@
 			],
 			"duration": 6,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3585,7 +3516,6 @@
 			],
 			"duration": 2,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3604,7 +3534,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3635,7 +3564,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3662,7 +3590,6 @@
 			],
 			"duration": 1,
 			"category": "pressing",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3685,7 +3612,6 @@
 			],
 			"duration": 1,
 			"category": "pressing",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3712,7 +3638,6 @@
 			],
 			"duration": 2,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3739,7 +3664,6 @@
 			],
 			"duration": 10,
 			"category": "advanced-crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3758,7 +3682,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3785,7 +3708,6 @@
 			],
 			"duration": 1,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3812,7 +3734,6 @@
 			],
 			"duration": 1,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3843,7 +3764,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3866,7 +3786,6 @@
 			],
 			"duration": 3,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3893,7 +3812,6 @@
 			],
 			"duration": 6,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3916,7 +3834,6 @@
 			],
 			"duration": 8,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3939,7 +3856,6 @@
 			],
 			"duration": 3,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3966,7 +3882,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -3989,7 +3904,6 @@
 			],
 			"duration": 8,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4008,7 +3922,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4031,7 +3944,6 @@
 			],
 			"duration": 2,
 			"category": "pressing",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4058,7 +3970,6 @@
 			],
 			"duration": 2,
 			"category": "pressing",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4085,7 +3996,6 @@
 			],
 			"duration": 10,
 			"category": "crafting-with-fluid",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4104,7 +4014,6 @@
 			],
 			"duration": 0.25,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4135,7 +4044,6 @@
 			],
 			"duration": 15,
 			"category": "crafting-with-fluid",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4154,7 +4062,6 @@
 			],
 			"duration": 0.25,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4173,7 +4080,6 @@
 			],
 			"duration": 0.5,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4196,7 +4102,6 @@
 			],
 			"duration": 1,
 			"category": "pressing",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4223,7 +4128,6 @@
 			],
 			"duration": 10,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4250,7 +4154,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4277,7 +4180,6 @@
 			],
 			"duration": 4,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4304,7 +4206,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4327,7 +4228,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4350,7 +4250,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4381,7 +4280,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4400,7 +4298,6 @@
 			],
 			"duration": 3.2,
 			"category": "smelting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4419,7 +4316,6 @@
 			],
 			"duration": 3.2,
 			"category": "smelting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4438,7 +4334,6 @@
 			],
 			"duration": 3.2,
 			"category": "smelting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4457,7 +4352,6 @@
 			],
 			"duration": 16,
 			"category": "smelting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4480,7 +4374,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4503,7 +4396,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4526,7 +4418,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4549,7 +4440,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4576,7 +4466,6 @@
 			],
 			"duration": 2,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4607,7 +4496,6 @@
 			],
 			"duration": 2,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4634,7 +4522,6 @@
 			],
 			"duration": 8,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4661,7 +4548,6 @@
 			],
 			"duration": 8,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4688,7 +4574,6 @@
 			],
 			"duration": 8,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4715,7 +4600,6 @@
 			],
 			"duration": 8,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4738,7 +4622,6 @@
 			],
 			"duration": 15,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4765,7 +4648,6 @@
 			],
 			"duration": 15,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4796,7 +4678,6 @@
 			],
 			"duration": 8,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4819,7 +4700,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4842,7 +4722,6 @@
 			],
 			"duration": 4,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4865,7 +4744,6 @@
 			],
 			"duration": 8,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4892,7 +4770,6 @@
 			],
 			"duration": 50,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4919,7 +4796,6 @@
 			],
 			"duration": 8,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4946,7 +4822,6 @@
 			],
 			"duration": 8,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4973,7 +4848,6 @@
 			],
 			"duration": 8,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4996,7 +4870,6 @@
 			],
 			"duration": 12,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5019,7 +4892,6 @@
 			],
 			"duration": 12,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5050,7 +4922,6 @@
 			],
 			"duration": 15,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5073,7 +4944,6 @@
 			],
 			"duration": 6,
 			"category": "chemistry",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5100,7 +4970,6 @@
 			],
 			"duration": 1,
 			"category": "crafting-with-fluid-or-metallurgy",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5123,7 +4992,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5154,7 +5022,6 @@
 			],
 			"duration": 5,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5189,7 +5056,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5220,7 +5086,6 @@
 			],
 			"duration": 1.5,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5255,7 +5120,6 @@
 			],
 			"duration": 4,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5278,7 +5142,6 @@
 			],
 			"duration": 15,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5305,7 +5168,6 @@
 			],
 			"duration": 20,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5340,7 +5202,6 @@
 			],
 			"duration": 25,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5363,7 +5224,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5386,7 +5246,6 @@
 			],
 			"duration": 5,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5413,7 +5272,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5444,7 +5302,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5471,7 +5328,6 @@
 			],
 			"duration": 24,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5498,7 +5354,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5525,7 +5380,6 @@
 			],
 			"duration": 21,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5552,7 +5406,6 @@
 			],
 			"duration": 21,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5579,7 +5432,6 @@
 			],
 			"duration": 2,
 			"category": "crafting-with-fluid-or-metallurgy",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5610,7 +5462,6 @@
 			],
 			"duration": 2,
 			"category": "crafting-with-fluid-or-metallurgy",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5637,7 +5488,6 @@
 			],
 			"duration": 6,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5664,7 +5514,6 @@
 			],
 			"duration": 10,
 			"category": "electronics-with-fluid",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5687,7 +5536,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5710,7 +5558,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5737,7 +5584,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5764,7 +5610,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5791,7 +5636,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5818,7 +5662,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5845,7 +5688,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5880,7 +5722,6 @@
 			],
 			"duration": 30,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5907,7 +5748,6 @@
 			],
 			"duration": 30,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5934,7 +5774,6 @@
 			],
 			"duration": 5,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5961,7 +5800,6 @@
 			],
 			"duration": 1,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5984,7 +5822,6 @@
 			],
 			"duration": 10,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6011,7 +5848,6 @@
 			],
 			"duration": 5,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6042,7 +5878,6 @@
 			],
 			"duration": 15,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6073,7 +5908,6 @@
 			],
 			"duration": 5,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6108,7 +5942,6 @@
 			],
 			"duration": 8,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6135,7 +5968,6 @@
 			],
 			"duration": 10,
 			"category": "crafting-with-fluid",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6166,7 +5998,6 @@
 			],
 			"duration": 20,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6193,7 +6024,6 @@
 			],
 			"duration": 4,
 			"category": "chemistry-or-cryogenics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6220,7 +6050,6 @@
 			],
 			"duration": 4,
 			"category": "chemistry-or-cryogenics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6243,7 +6072,6 @@
 			],
 			"duration": 3,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6270,7 +6098,6 @@
 			],
 			"duration": 2,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6301,7 +6128,6 @@
 			],
 			"duration": 5,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6328,7 +6154,6 @@
 			],
 			"duration": 15,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6351,7 +6176,6 @@
 			],
 			"duration": 15,
 			"category": "organic-or-assembling",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6378,7 +6202,6 @@
 			],
 			"duration": 3,
 			"category": "rocket-building",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6409,7 +6232,6 @@
 			],
 			"duration": 8,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6440,7 +6262,6 @@
 			],
 			"duration": 4,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6463,7 +6284,6 @@
 			],
 			"duration": 12,
 			"category": "centrifuging",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6490,7 +6310,6 @@
 			],
 			"duration": 60,
 			"category": "centrifuging",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6513,7 +6332,6 @@
 			],
 			"duration": 90,
 			"category": "centrifuging",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6532,7 +6350,6 @@
 			],
 			"duration": 60,
 			"category": "centrifuging",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6559,7 +6376,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6586,7 +6402,6 @@
 			],
 			"duration": 3,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6609,7 +6424,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6636,7 +6450,6 @@
 			],
 			"duration": 3,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6659,7 +6472,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6686,7 +6498,6 @@
 			],
 			"duration": 1,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6709,7 +6520,6 @@
 			],
 			"duration": 15,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6736,7 +6546,6 @@
 			],
 			"duration": 30,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6767,7 +6576,6 @@
 			],
 			"duration": 60,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6798,7 +6606,6 @@
 			],
 			"duration": 3,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6825,7 +6632,6 @@
 			],
 			"duration": 5,
 			"category": "oil-processing",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6848,7 +6654,6 @@
 			],
 			"duration": 1,
 			"category": "organic-or-hand-crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6871,7 +6676,6 @@
 			],
 			"duration": 1,
 			"category": "organic-or-hand-crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6894,7 +6698,6 @@
 			],
 			"duration": 1,
 			"category": "organic-or-hand-crafting",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:gleba"]
 		},
@@ -6918,7 +6721,6 @@
 			],
 			"duration": 4,
 			"category": "organic",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:gleba"]
 		},
@@ -6942,7 +6744,6 @@
 			],
 			"duration": 1,
 			"category": "organic-or-hand-crafting",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:gleba"]
 		},
@@ -6966,7 +6767,6 @@
 			],
 			"duration": 4,
 			"category": "organic",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:gleba"]
 		},
@@ -6994,7 +6794,6 @@
 			],
 			"duration": 2,
 			"category": "crafting",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:gleba"]
 		},
@@ -7030,7 +6829,6 @@
 			],
 			"duration": 10,
 			"category": "crafting-with-fluid",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:gleba"]
 		},
@@ -7058,7 +6856,6 @@
 			],
 			"duration": 2,
 			"category": "crafting",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:gleba"]
 		},
@@ -7094,7 +6891,6 @@
 			],
 			"duration": 10,
 			"category": "crafting-with-fluid",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:gleba"]
 		},
@@ -7114,7 +6910,6 @@
 			],
 			"duration": 2,
 			"category": "organic-or-assembling",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7133,7 +6928,6 @@
 			],
 			"duration": 4,
 			"category": "organic",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7152,7 +6946,6 @@
 			],
 			"duration": 2,
 			"category": "organic",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7179,7 +6972,6 @@
 			],
 			"duration": 15,
 			"category": "organic",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:gleba"]
 		},
@@ -7207,7 +6999,6 @@
 			],
 			"duration": 10,
 			"category": "organic",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7230,7 +7021,6 @@
 			],
 			"duration": 6,
 			"category": "organic",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7253,7 +7043,6 @@
 			],
 			"duration": 2,
 			"category": "organic",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7276,7 +7065,6 @@
 			],
 			"duration": 2,
 			"category": "organic",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7295,7 +7083,6 @@
 			],
 			"duration": 3,
 			"category": "organic",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7318,7 +7105,6 @@
 			],
 			"duration": 5,
 			"category": "organic",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7341,7 +7127,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7364,7 +7149,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7387,7 +7171,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7418,7 +7201,6 @@
 			],
 			"duration": 0.5,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7453,7 +7235,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7480,7 +7261,6 @@
 			],
 			"duration": 60,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7507,7 +7287,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7534,7 +7313,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7561,7 +7339,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7588,7 +7365,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7615,7 +7391,6 @@
 			],
 			"duration": 15,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7642,7 +7417,6 @@
 			],
 			"duration": 10,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:vulcanus"]
 		},
@@ -7666,7 +7440,6 @@
 			],
 			"duration": 4,
 			"category": "organic",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:gleba"]
 		},
@@ -7698,7 +7471,6 @@
 			],
 			"duration": 10,
 			"category": "electromagnetics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7729,7 +7501,6 @@
 			],
 			"duration": 20,
 			"category": "cryogenics",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:aquilo"]
 		},
@@ -7753,7 +7524,6 @@
 			],
 			"duration": 2,
 			"category": "crushing",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7776,7 +7546,6 @@
 			],
 			"duration": 2,
 			"category": "crushing",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7799,7 +7568,6 @@
 			],
 			"duration": 2,
 			"category": "crushing",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7826,7 +7594,6 @@
 			],
 			"duration": 5,
 			"category": "crushing",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7853,7 +7620,6 @@
 			],
 			"duration": 5,
 			"category": "crushing",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7880,7 +7646,6 @@
 			],
 			"duration": 5,
 			"category": "crushing",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7907,7 +7672,6 @@
 			],
 			"duration": 2,
 			"category": "crushing",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7934,7 +7698,6 @@
 			],
 			"duration": 2,
 			"category": "crushing",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7961,7 +7724,6 @@
 			],
 			"duration": 1,
 			"category": "crushing",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7984,7 +7746,6 @@
 			],
 			"duration": 2,
 			"category": "chemistry",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8007,7 +7768,6 @@
 			],
 			"duration": 2,
 			"category": "chemistry",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8026,7 +7786,6 @@
 			],
 			"duration": 1,
 			"category": "chemistry",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8053,7 +7812,6 @@
 			],
 			"duration": 10,
 			"category": "chemistry",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8080,7 +7838,6 @@
 			],
 			"duration": 10,
 			"category": "chemistry",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8103,7 +7860,6 @@
 			],
 			"duration": 5,
 			"category": "chemistry-or-cryogenics",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:vulcanus"]
 		},
@@ -8123,7 +7879,6 @@
 			],
 			"duration": 1,
 			"category": "chemistry-or-cryogenics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8146,7 +7901,6 @@
 			],
 			"duration": 1,
 			"category": "chemistry-or-cryogenics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8173,7 +7927,6 @@
 			],
 			"duration": 1,
 			"category": "crafting-with-fluid",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8208,7 +7961,6 @@
 			],
 			"duration": 10,
 			"category": "metallurgy-or-assembling",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:vulcanus"]
 		},
@@ -8236,7 +7988,6 @@
 			],
 			"duration": 16,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8263,7 +8014,6 @@
 			],
 			"duration": 16,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8286,7 +8036,6 @@
 			],
 			"duration": 32,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8309,7 +8058,6 @@
 			],
 			"duration": 32,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8328,7 +8076,6 @@
 			],
 			"duration": 3.2,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8347,7 +8094,6 @@
 			],
 			"duration": 3.2,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8366,7 +8112,6 @@
 			],
 			"duration": 3.2,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8385,7 +8130,6 @@
 			],
 			"duration": 1,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8404,7 +8148,6 @@
 			],
 			"duration": 1,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8423,7 +8166,6 @@
 			],
 			"duration": 1,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8446,7 +8188,6 @@
 			],
 			"duration": 1,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8473,7 +8214,6 @@
 			],
 			"duration": 15,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8500,7 +8240,6 @@
 			],
 			"duration": 10,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8519,7 +8258,6 @@
 			],
 			"duration": 1,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8542,7 +8280,6 @@
 			],
 			"duration": 10,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8569,7 +8306,6 @@
 			],
 			"duration": 1,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:vulcanus"]
 		},
@@ -8597,7 +8333,6 @@
 			],
 			"duration": 2,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:vulcanus"]
 		},
@@ -8629,7 +8364,6 @@
 			],
 			"duration": 2,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:vulcanus"]
 		},
@@ -8665,7 +8399,6 @@
 			],
 			"duration": 30,
 			"category": "metallurgy",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:vulcanus"]
 		},
@@ -8701,7 +8434,6 @@
 			],
 			"duration": 60,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8732,7 +8464,6 @@
 			],
 			"duration": 10,
 			"category": "cryogenics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8767,7 +8498,6 @@
 			],
 			"duration": 10,
 			"category": "cryogenics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8794,7 +8524,6 @@
 			],
 			"duration": 25,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8825,7 +8554,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8860,7 +8588,6 @@
 			],
 			"duration": 20,
 			"category": "organic-or-assembling",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:gleba"]
 		},
@@ -8880,7 +8607,6 @@
 			],
 			"duration": 12,
 			"category": "organic",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8907,7 +8633,6 @@
 			],
 			"duration": 2,
 			"category": "chemistry",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8938,7 +8663,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8973,7 +8697,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9004,7 +8727,6 @@
 			],
 			"duration": 10,
 			"category": "cryogenics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9018,7 +8740,6 @@
 			],
 			"duration": 10,
 			"category": "captive-spawner-process",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9045,7 +8766,6 @@
 			],
 			"duration": 6,
 			"category": "organic-or-chemistry",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:nauvis"]
 		},
@@ -9065,7 +8785,6 @@
 			],
 			"duration": 2,
 			"category": "organic-or-assembling",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9084,7 +8803,6 @@
 			],
 			"duration": 2,
 			"category": "organic-or-assembling",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9147,7 +8865,6 @@
 			],
 			"duration": 0.2,
 			"category": "recycling-or-hand-crafting",
-			"priority": 90,
 			"available": true
 		},
 		{
@@ -9174,7 +8891,6 @@
 			],
 			"duration": 5,
 			"category": "electronics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9201,7 +8917,6 @@
 			],
 			"duration": 10,
 			"category": "chemistry",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9220,7 +8935,6 @@
 			],
 			"duration": 1,
 			"category": "crafting-with-fluid-or-metallurgy",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9251,7 +8965,6 @@
 			],
 			"duration": 10,
 			"category": "electronics-or-assembling",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9282,7 +8995,6 @@
 			],
 			"duration": 5,
 			"category": "electromagnetics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9317,7 +9029,6 @@
 			],
 			"duration": 10,
 			"category": "electromagnetics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9344,7 +9055,6 @@
 			],
 			"duration": 5,
 			"category": "electromagnetics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9375,7 +9085,6 @@
 			],
 			"duration": 5,
 			"category": "electromagnetics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9406,7 +9115,6 @@
 			],
 			"duration": 30,
 			"category": "electromagnetics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9441,7 +9149,6 @@
 			],
 			"duration": 30,
 			"category": "electromagnetics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9468,7 +9175,6 @@
 			],
 			"duration": 30,
 			"category": "electromagnetics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9495,7 +9201,6 @@
 			],
 			"duration": 10,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9522,7 +9227,6 @@
 			],
 			"duration": 20,
 			"category": "chemistry-or-cryogenics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9541,7 +9245,6 @@
 			],
 			"duration": 6.4,
 			"category": "smelting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9572,7 +9275,6 @@
 			],
 			"duration": 10,
 			"category": "cryogenics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9591,7 +9293,6 @@
 			],
 			"duration": 5,
 			"category": "cryogenics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9622,7 +9323,6 @@
 			],
 			"duration": 10,
 			"category": "cryogenics-or-assembling",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:aquilo"]
 		},
@@ -9666,7 +9366,6 @@
 			],
 			"duration": 30,
 			"category": "electromagnetics",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:aquilo", "planet:space-platform"]
 		},
@@ -9690,7 +9389,6 @@
 			],
 			"duration": 1,
 			"category": "chemistry-or-cryogenics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9729,7 +9427,6 @@
 			],
 			"duration": 30,
 			"category": "crafting",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9756,7 +9453,6 @@
 			],
 			"duration": 10,
 			"category": "cryogenics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9783,7 +9479,6 @@
 			],
 			"duration": 60,
 			"category": "cryogenics",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:aquilo"]
 		},
@@ -9811,7 +9506,6 @@
 			],
 			"duration": 30,
 			"category": "cryogenics",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:aquilo"]
 		},
@@ -9835,7 +9529,6 @@
 			],
 			"duration": 30,
 			"category": "crafting-with-fluid",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9858,7 +9551,6 @@
 			],
 			"duration": 0.5,
 			"category": "chemistry-or-cryogenics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9885,7 +9577,6 @@
 			],
 			"duration": 10,
 			"category": "chemistry-or-cryogenics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9920,7 +9611,6 @@
 			],
 			"duration": 30,
 			"category": "crafting-with-fluid",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9947,7 +9637,6 @@
 			],
 			"duration": 5,
 			"category": "cryogenics",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9966,7 +9655,6 @@
 			],
 			"duration": 2,
 			"category": "organic-or-assembling",
-			"priority": 10,
 			"available": true,
 			"limitations": ["planet:nauvis"]
 		},
@@ -9990,7 +9678,6 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -10013,7 +9700,6 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -10036,7 +9722,6 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -10059,7 +9744,6 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -10082,7 +9766,6 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -10105,7 +9788,6 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -10128,7 +9810,6 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -10151,7 +9832,6 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -10174,7 +9854,6 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -10197,7 +9876,6 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -10220,7 +9898,6 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -10243,7 +9920,6 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -10266,7 +9942,6 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -10289,7 +9964,6 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -10312,7 +9986,6 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -10335,7 +10008,6 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -10358,7 +10030,6 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -10381,7 +10052,6 @@
 			],
 			"duration": 0.2,
 			"category": "crafting-with-fluid",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -10395,9 +10065,9 @@
 			],
 			"duration": 1,
 			"category": "offshore-pump",
-			"priority": 10,
 			"available": true,
-			"limitations": ["planet:gleba", "planet:nauvis"]
+			"limitations": ["planet:nauvis", "planet:gleba"],
+			"cost": 1
 		},
 		{
 			"id": "lava",
@@ -10410,9 +10080,9 @@
 			],
 			"duration": 1,
 			"category": "offshore-pump",
-			"priority": 10,
 			"available": true,
-			"limitations": ["planet:vulcanus"]
+			"limitations": ["planet:vulcanus"],
+			"cost": 1
 		},
 		{
 			"id": "heavy-oil",
@@ -10425,9 +10095,9 @@
 			],
 			"duration": 1,
 			"category": "offshore-pump",
-			"priority": 10,
 			"available": true,
-			"limitations": ["planet:fulgora"]
+			"limitations": ["planet:fulgora"],
+			"cost": 1
 		},
 		{
 			"id": "ammoniacal-solution",
@@ -10440,9 +10110,9 @@
 			],
 			"duration": 1,
 			"category": "offshore-pump",
-			"priority": 10,
 			"available": true,
-			"limitations": ["planet:aquilo"]
+			"limitations": ["planet:aquilo"],
+			"cost": 1
 		},
 		{
 			"id": "iron-ore",
@@ -10455,8 +10125,8 @@
 			],
 			"duration": 1,
 			"category": "basic-solid",
-			"priority": 10,
-			"available": true
+			"available": true,
+			"cost": 10
 		},
 		{
 			"id": "copper-ore",
@@ -10469,8 +10139,8 @@
 			],
 			"duration": 1,
 			"category": "basic-solid",
-			"priority": 10,
-			"available": true
+			"available": true,
+			"cost": 10
 		},
 		{
 			"id": "coal",
@@ -10483,8 +10153,9 @@
 			],
 			"duration": 1,
 			"category": "basic-solid",
-			"priority": 10,
-			"available": true
+			"available": true,
+			"limitations": ["planet:vulcanus"],
+			"cost": 10
 		},
 		{
 			"id": "stone",
@@ -10497,8 +10168,9 @@
 			],
 			"duration": 1,
 			"category": "basic-solid",
-			"priority": 10,
-			"available": true
+			"available": true,
+			"limitations": ["planet:gleba"],
+			"cost": 10
 		},
 		{
 			"id": "uranium-ore",
@@ -10516,8 +10188,8 @@
 			],
 			"duration": 2,
 			"category": "basic-solid",
-			"priority": 10,
-			"available": true
+			"available": true,
+			"cost": 50
 		},
 		{
 			"id": "crude-oil",
@@ -10530,8 +10202,9 @@
 			],
 			"duration": 1,
 			"category": "basic-fluid",
-			"priority": 10,
-			"available": true
+			"available": true,
+			"limitations": ["planet:aquilo"],
+			"cost": 5
 		},
 		{
 			"id": "tungsten-ore",
@@ -10544,8 +10217,8 @@
 			],
 			"duration": 5,
 			"category": "hard-solid",
-			"priority": 10,
-			"available": true
+			"available": true,
+			"limitations": ["planet:vulcanus"]
 		},
 		{
 			"id": "calcite",
@@ -10558,8 +10231,9 @@
 			],
 			"duration": 1,
 			"category": "basic-solid",
-			"priority": 10,
-			"available": true
+			"available": true,
+			"limitations": ["planet:vulcanus"],
+			"cost": 10
 		},
 		{
 			"id": "sulfuric-acid-geyser",
@@ -10572,8 +10246,9 @@
 			],
 			"duration": 1,
 			"category": "basic-fluid",
-			"priority": 10,
-			"available": true
+			"available": true,
+			"limitations": ["planet:vulcanus"],
+			"cost": 1
 		},
 		{
 			"id": "scrap",
@@ -10586,7 +10261,6 @@
 			],
 			"duration": 0.5,
 			"category": "basic-solid",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10600,7 +10274,6 @@
 			],
 			"duration": 1,
 			"category": "basic-fluid",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10614,7 +10287,6 @@
 			],
 			"duration": 1,
 			"category": "basic-fluid",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10628,7 +10300,6 @@
 			],
 			"duration": 0.5,
 			"category": "manual-harvest",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10642,7 +10313,6 @@
 			],
 			"duration": 0.5,
 			"category": "manual-harvest",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10656,7 +10326,6 @@
 			],
 			"duration": 0.5,
 			"category": "manual-harvest",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10670,7 +10339,6 @@
 			],
 			"duration": 0.55,
 			"category": "manual-harvest",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10684,7 +10352,6 @@
 			],
 			"duration": 0.4,
 			"category": "manual-harvest",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10698,7 +10365,6 @@
 			],
 			"duration": 0.2,
 			"category": "asteroid-collector",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10712,7 +10378,6 @@
 			],
 			"duration": 0.2,
 			"category": "asteroid-collector",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10726,7 +10391,6 @@
 			],
 			"duration": 0.2,
 			"category": "asteroid-collector",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10740,7 +10404,6 @@
 			],
 			"duration": 0.2,
 			"category": "asteroid-collector",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10763,7 +10426,6 @@
 			],
 			"duration": 10,
 			"category": "boiler",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10786,7 +10448,6 @@
 			],
 			"duration": 20,
 			"category": "boiler",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10809,7 +10470,6 @@
 			],
 			"duration": 20,
 			"category": "boiler",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10832,7 +10492,6 @@
 			],
 			"duration": 500,
 			"category": "boiler",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10855,7 +10514,6 @@
 			],
 			"duration": 6050,
 			"category": "boiler",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10878,7 +10536,6 @@
 			],
 			"duration": 10,
 			"category": "boiler",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10901,7 +10558,6 @@
 			],
 			"duration": 20,
 			"category": "boiler",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10924,7 +10580,6 @@
 			],
 			"duration": 20,
 			"category": "boiler",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10947,7 +10602,6 @@
 			],
 			"duration": 10,
 			"category": "boiler",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10970,7 +10624,6 @@
 			],
 			"duration": 25,
 			"category": "boiler",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10993,7 +10646,6 @@
 			],
 			"duration": 5,
 			"category": "boiler",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -11016,7 +10668,6 @@
 			],
 			"duration": 1,
 			"category": "boiler",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -11035,7 +10686,6 @@
 			],
 			"duration": 200,
 			"category": "nuclear-reactor",
-			"priority": 10,
 			"available": true
 		}
 	],

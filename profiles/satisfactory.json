@@ -4547,7 +4547,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -4568,7 +4567,6 @@
 			],
 			"duration": 6,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4588,7 +4586,6 @@
 			],
 			"duration": 4,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4620,7 +4617,6 @@
 			],
 			"duration": 40,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -4641,7 +4637,6 @@
 			],
 			"duration": 2,
 			"category": "smelter-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -4669,7 +4664,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -4698,7 +4692,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -4727,7 +4720,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -4748,7 +4740,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -4769,7 +4760,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -4798,7 +4788,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -4823,7 +4812,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -4844,7 +4832,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -4865,7 +4852,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -4894,7 +4880,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -4923,7 +4908,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -4948,7 +4932,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -4973,7 +4956,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -4998,7 +4980,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -5023,7 +5004,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -5048,7 +5028,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -5073,7 +5052,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -5098,7 +5076,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -5123,7 +5100,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -5148,7 +5124,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -5185,7 +5160,6 @@
 			],
 			"duration": 2,
 			"category": "blender",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -5213,7 +5187,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -5238,7 +5211,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -5267,7 +5239,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -5288,7 +5259,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -5309,7 +5279,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -5334,7 +5303,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -5359,7 +5327,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -5388,7 +5355,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -5417,7 +5383,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -5446,7 +5411,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -5475,7 +5439,6 @@
 			],
 			"duration": 6,
 			"category": "blender",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5499,7 +5462,6 @@
 			],
 			"duration": 1,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -5523,7 +5485,6 @@
 			],
 			"duration": 1,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -5551,7 +5512,6 @@
 			],
 			"duration": 3,
 			"category": "converter",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -5587,7 +5547,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -5608,7 +5567,6 @@
 			],
 			"duration": 6,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -5623,7 +5581,6 @@
 			],
 			"duration": 3,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -5647,7 +5604,6 @@
 			],
 			"duration": 2,
 			"category": "hadron-collider",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5683,7 +5639,6 @@
 			],
 			"duration": 12,
 			"category": "quantum-encoder",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5719,7 +5674,6 @@
 			],
 			"duration": 20,
 			"category": "quantum-encoder",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5755,7 +5709,6 @@
 			],
 			"duration": 15,
 			"category": "quantum-encoder",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5783,7 +5736,6 @@
 			],
 			"duration": 24,
 			"category": "oil-refinery",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5807,7 +5759,6 @@
 			],
 			"duration": 3,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -5831,7 +5782,6 @@
 			],
 			"duration": 3,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -5855,7 +5805,6 @@
 			],
 			"duration": 3,
 			"category": "hadron-collider",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -5883,7 +5832,6 @@
 			],
 			"duration": 6,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5915,7 +5863,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -5936,7 +5883,6 @@
 			],
 			"duration": 6,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -5960,7 +5906,6 @@
 			],
 			"duration": 6,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -5980,7 +5925,6 @@
 			],
 			"duration": 10,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6000,7 +5944,6 @@
 			],
 			"duration": 2,
 			"category": "hadron-collider",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6020,7 +5963,6 @@
 			],
 			"duration": 2,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6048,7 +5990,6 @@
 			],
 			"duration": 120,
 			"category": "blender",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6072,7 +6013,6 @@
 			],
 			"duration": 2,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6096,7 +6036,6 @@
 			],
 			"duration": 4,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6120,7 +6059,6 @@
 			],
 			"duration": 6,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6144,7 +6082,6 @@
 			],
 			"duration": 6,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6168,7 +6105,6 @@
 			],
 			"duration": 6,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6192,7 +6128,6 @@
 			],
 			"duration": 6,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6216,7 +6151,6 @@
 			],
 			"duration": 6,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6240,7 +6174,6 @@
 			],
 			"duration": 6,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6264,7 +6197,6 @@
 			],
 			"duration": 6,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6288,7 +6220,6 @@
 			],
 			"duration": 6,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6312,7 +6243,6 @@
 			],
 			"duration": 6,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6336,7 +6266,6 @@
 			],
 			"duration": 6,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6360,7 +6289,6 @@
 			],
 			"duration": 6,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6384,7 +6312,6 @@
 			],
 			"duration": 6,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6408,7 +6335,6 @@
 			],
 			"duration": 6,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6432,7 +6358,6 @@
 			],
 			"duration": 6,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6456,7 +6381,6 @@
 			],
 			"duration": 6,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6480,7 +6404,6 @@
 			],
 			"duration": 6,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6504,7 +6427,6 @@
 			],
 			"duration": 6,
 			"category": "converter",
-			"priority": 40,
 			"available": true
 		},
 		{
@@ -6528,7 +6450,6 @@
 			],
 			"duration": 16,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -6552,7 +6473,6 @@
 			],
 			"duration": 6,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -6576,7 +6496,6 @@
 			],
 			"duration": 6,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -6596,7 +6515,6 @@
 			],
 			"duration": 4,
 			"category": "constructor-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -6616,7 +6534,6 @@
 			],
 			"duration": 8,
 			"category": "constructor-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -6640,7 +6557,6 @@
 			],
 			"duration": 12,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -6664,7 +6580,6 @@
 			],
 			"duration": 8,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6692,7 +6607,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -6725,7 +6639,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -6750,7 +6663,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -6775,7 +6687,6 @@
 			],
 			"duration": 6,
 			"category": "oil-refinery",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6795,7 +6706,6 @@
 			],
 			"duration": 6,
 			"category": "oil-refinery",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6819,7 +6729,6 @@
 			],
 			"duration": 6,
 			"category": "oil-refinery",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6843,7 +6752,6 @@
 			],
 			"duration": 6,
 			"category": "oil-refinery",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6863,7 +6771,6 @@
 			],
 			"duration": 6,
 			"category": "oil-refinery",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6887,7 +6794,6 @@
 			],
 			"duration": 6,
 			"category": "oil-refinery",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6911,7 +6817,6 @@
 			],
 			"duration": 6,
 			"category": "oil-refinery",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -6935,7 +6840,6 @@
 			],
 			"duration": 4,
 			"category": "converter",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -6955,7 +6859,6 @@
 			],
 			"duration": 2,
 			"category": "hadron-collider",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -6975,7 +6878,6 @@
 			],
 			"duration": 3,
 			"category": "hadron-collider",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -6999,7 +6901,6 @@
 			],
 			"duration": 3,
 			"category": "hadron-collider",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -7023,7 +6924,6 @@
 			],
 			"duration": 2,
 			"category": "hadron-collider",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -7043,7 +6943,6 @@
 			],
 			"duration": 3,
 			"category": "hadron-collider",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -7067,7 +6966,6 @@
 			],
 			"duration": 3,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -7091,7 +6989,6 @@
 			],
 			"duration": 8,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -7111,7 +7008,6 @@
 			],
 			"duration": 5,
 			"category": "constructor-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -7139,7 +7035,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -7160,7 +7055,6 @@
 			],
 			"duration": 4,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7180,7 +7074,6 @@
 			],
 			"duration": 6,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7204,7 +7097,6 @@
 			],
 			"duration": 4,
 			"category": "foundry-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7228,7 +7120,6 @@
 			],
 			"duration": 24,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7248,7 +7139,6 @@
 			],
 			"duration": 6,
 			"category": "constructor-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -7276,7 +7166,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -7297,7 +7186,6 @@
 			],
 			"duration": 4,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7321,7 +7209,6 @@
 			],
 			"duration": 3,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -7345,7 +7232,6 @@
 			],
 			"duration": 4,
 			"category": "oil-refinery",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7369,7 +7255,6 @@
 			],
 			"duration": 3,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -7393,7 +7278,6 @@
 			],
 			"duration": 4,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -7417,7 +7301,6 @@
 			],
 			"duration": 4,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -7441,7 +7324,6 @@
 			],
 			"duration": 2,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -7465,7 +7347,6 @@
 			],
 			"duration": 2,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -7489,7 +7370,6 @@
 			],
 			"duration": 2,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -7513,7 +7393,6 @@
 			],
 			"duration": 2,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -7537,7 +7416,6 @@
 			],
 			"duration": 6,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -7561,7 +7439,6 @@
 			],
 			"duration": 1,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -7585,7 +7462,6 @@
 			],
 			"duration": 8,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -7609,7 +7485,6 @@
 			],
 			"duration": 6,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -7633,7 +7508,6 @@
 			],
 			"duration": 12,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -7657,7 +7531,6 @@
 			],
 			"duration": 8,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -7677,7 +7550,6 @@
 			],
 			"duration": 8,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7701,7 +7573,6 @@
 			],
 			"duration": 12,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -7725,7 +7596,6 @@
 			],
 			"duration": 24,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -7749,7 +7619,6 @@
 			],
 			"duration": 5,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -7769,7 +7638,6 @@
 			],
 			"duration": 2,
 			"category": "smelter-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7789,7 +7657,6 @@
 			],
 			"duration": 2,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7813,7 +7680,6 @@
 			],
 			"duration": 6,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7841,7 +7707,6 @@
 			],
 			"duration": 6,
 			"category": "oil-refinery",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7869,7 +7734,6 @@
 			],
 			"duration": 1,
 			"category": "oil-refinery",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7893,7 +7757,6 @@
 			],
 			"duration": 1,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -7917,7 +7780,6 @@
 			],
 			"duration": 4,
 			"category": "foundry-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7937,7 +7799,6 @@
 			],
 			"duration": 8,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7965,7 +7826,6 @@
 			],
 			"duration": 120,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -7989,7 +7849,6 @@
 			],
 			"duration": 1,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -8013,7 +7872,6 @@
 			],
 			"duration": 6,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -8041,7 +7899,6 @@
 			],
 			"duration": 24,
 			"category": "manufacturer-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -8069,7 +7926,6 @@
 			],
 			"duration": 32,
 			"category": "manufacturer-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -8093,7 +7949,6 @@
 			],
 			"duration": 10,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8117,7 +7972,6 @@
 			],
 			"duration": 12,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8141,7 +7995,6 @@
 			],
 			"duration": 12,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8173,7 +8026,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -8198,7 +8050,6 @@
 			],
 			"duration": 24,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8222,7 +8073,6 @@
 			],
 			"duration": 12,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8246,7 +8096,6 @@
 			],
 			"duration": 6,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -8278,7 +8127,6 @@
 			],
 			"duration": 16,
 			"category": "manufacturer-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -8310,7 +8158,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -8339,7 +8186,6 @@
 			],
 			"duration": 24,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8371,7 +8217,6 @@
 			],
 			"duration": 30,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8399,7 +8244,6 @@
 			],
 			"duration": 60,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8431,7 +8275,6 @@
 			],
 			"duration": 60,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8455,7 +8298,6 @@
 			],
 			"duration": 20,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -8483,7 +8325,6 @@
 			],
 			"duration": 16,
 			"category": "manufacturer-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -8507,7 +8348,6 @@
 			],
 			"duration": 12,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -8535,7 +8375,6 @@
 			],
 			"duration": 4,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -8559,7 +8398,6 @@
 			],
 			"duration": 2,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -8583,7 +8421,6 @@
 			],
 			"duration": 16,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -8607,7 +8444,6 @@
 			],
 			"duration": 60,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8631,7 +8467,6 @@
 			],
 			"duration": 15,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8659,7 +8494,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -8680,7 +8514,6 @@
 			],
 			"duration": 6,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8704,7 +8537,6 @@
 			],
 			"duration": 30,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8728,7 +8560,6 @@
 			],
 			"duration": 6,
 			"category": "foundry-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -8752,7 +8583,6 @@
 			],
 			"duration": 12,
 			"category": "foundry-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -8776,7 +8606,6 @@
 			],
 			"duration": 8,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -8800,7 +8629,6 @@
 			],
 			"duration": 4,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -8824,7 +8652,6 @@
 			],
 			"duration": 8,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -8848,7 +8675,6 @@
 			],
 			"duration": 24,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -8872,7 +8698,6 @@
 			],
 			"duration": 16,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -8904,7 +8729,6 @@
 			],
 			"duration": 32,
 			"category": "manufacturer-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -8928,7 +8752,6 @@
 			],
 			"duration": 12,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8952,7 +8775,6 @@
 			],
 			"duration": 60,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -8980,7 +8802,6 @@
 			],
 			"duration": 6,
 			"category": "blender",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9016,7 +8837,6 @@
 			],
 			"duration": 24,
 			"category": "blender",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9052,7 +8872,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -9073,7 +8892,6 @@
 			],
 			"duration": 6,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9097,7 +8915,6 @@
 			],
 			"duration": 60,
 			"category": "hadron-collider",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9129,7 +8946,6 @@
 			],
 			"duration": 240,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9153,7 +8969,6 @@
 			],
 			"duration": 2,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -9177,7 +8992,6 @@
 			],
 			"duration": 120,
 			"category": "hadron-collider",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9201,7 +9015,6 @@
 			],
 			"duration": 3,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -9233,7 +9046,6 @@
 			],
 			"duration": 8,
 			"category": "blender",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -9265,7 +9077,6 @@
 			],
 			"duration": 12,
 			"category": "blender",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9297,7 +9108,6 @@
 			],
 			"duration": 10,
 			"category": "blender",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9329,7 +9139,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -9362,7 +9171,6 @@
 			],
 			"duration": 3,
 			"category": "blender",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9394,7 +9202,6 @@
 			],
 			"duration": 32,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9422,7 +9229,6 @@
 			],
 			"duration": 48,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9446,7 +9252,6 @@
 			],
 			"duration": 6,
 			"category": "oil-refinery",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9470,7 +9275,6 @@
 			],
 			"duration": 3,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -9494,7 +9298,6 @@
 			],
 			"duration": 80,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9522,7 +9325,6 @@
 			],
 			"duration": 16,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9546,7 +9348,6 @@
 			],
 			"duration": 1,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -9578,7 +9379,6 @@
 			],
 			"duration": 25,
 			"category": "manufacturer-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -9602,7 +9402,6 @@
 			],
 			"duration": 30,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9638,7 +9437,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -9667,7 +9465,6 @@
 			],
 			"duration": 150,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9691,7 +9488,6 @@
 			],
 			"duration": 120,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9715,7 +9511,6 @@
 			],
 			"duration": 3,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -9747,7 +9542,6 @@
 			],
 			"duration": 40,
 			"category": "manufacturer-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -9771,7 +9565,6 @@
 			],
 			"duration": 120,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -9795,7 +9588,6 @@
 			],
 			"duration": 20,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -9819,7 +9611,6 @@
 			],
 			"duration": 8,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9847,7 +9638,6 @@
 			],
 			"duration": 40,
 			"category": "blender",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9871,7 +9661,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -9908,7 +9697,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -9929,7 +9717,6 @@
 			],
 			"duration": 1,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -9953,7 +9740,6 @@
 			],
 			"duration": 1,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -9977,7 +9763,6 @@
 			],
 			"duration": 1,
 			"category": "packager",
-			"priority": 30,
 			"available": true
 		},
 		{
@@ -10013,7 +9798,6 @@
 			],
 			"duration": 6,
 			"category": "blender",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10037,7 +9821,6 @@
 			],
 			"duration": 120,
 			"category": "hadron-collider",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10069,7 +9852,6 @@
 			],
 			"duration": 20,
 			"category": "blender",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10105,7 +9887,6 @@
 			],
 			"duration": 12,
 			"category": "blender",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10129,7 +9910,6 @@
 			],
 			"duration": 16,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10153,7 +9933,6 @@
 			],
 			"duration": 6,
 			"category": "blender",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10181,7 +9960,6 @@
 			],
 			"duration": 24,
 			"category": "blender",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10213,7 +9991,6 @@
 			],
 			"duration": 8,
 			"category": "manufacturer-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10237,7 +10014,6 @@
 			],
 			"duration": 60,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10261,7 +10037,6 @@
 			],
 			"duration": 8,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10285,7 +10060,6 @@
 			],
 			"duration": 6,
 			"category": "foundry-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10305,7 +10079,6 @@
 			],
 			"duration": 12,
 			"category": "constructor-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10329,7 +10102,6 @@
 			],
 			"duration": 4,
 			"category": "foundry-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10353,7 +10125,6 @@
 			],
 			"duration": 12,
 			"category": "foundry-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10373,7 +10144,6 @@
 			],
 			"duration": 8,
 			"category": "constructor-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10393,7 +10163,6 @@
 			],
 			"duration": 8,
 			"category": "constructor-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10417,7 +10186,6 @@
 			],
 			"duration": 15,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10449,7 +10217,6 @@
 			],
 			"duration": 6,
 			"category": "blender",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10477,7 +10244,6 @@
 			],
 			"duration": 12,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10501,7 +10267,6 @@
 			],
 			"duration": 20,
 			"category": "foundry-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10525,7 +10290,6 @@
 			],
 			"duration": 6,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10549,7 +10313,6 @@
 			],
 			"duration": 12,
 			"category": "foundry-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10573,7 +10336,6 @@
 			],
 			"duration": 12,
 			"category": "foundry-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10597,7 +10359,6 @@
 			],
 			"duration": 12,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10621,7 +10382,6 @@
 			],
 			"duration": 8,
 			"category": "foundry-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10645,7 +10405,6 @@
 			],
 			"duration": 10,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10665,7 +10424,6 @@
 			],
 			"duration": 4,
 			"category": "constructor-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10685,7 +10443,6 @@
 			],
 			"duration": 24,
 			"category": "constructor-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10717,7 +10474,6 @@
 			],
 			"duration": 12,
 			"category": "manufacturer-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10753,7 +10509,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -10790,7 +10545,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -10811,7 +10565,6 @@
 			],
 			"duration": 4,
 			"category": "smelter-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10843,7 +10596,6 @@
 			],
 			"duration": 64,
 			"category": "manufacturer-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -10863,7 +10615,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -10884,7 +10635,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -10921,7 +10671,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -10954,7 +10703,6 @@
 			],
 			"duration": 32,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -10986,7 +10734,6 @@
 			],
 			"duration": 120,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -11010,7 +10757,6 @@
 			],
 			"duration": 15,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11034,7 +10780,6 @@
 			],
 			"duration": 8,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11054,7 +10799,6 @@
 			],
 			"duration": 12,
 			"category": "constructor-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11074,7 +10818,6 @@
 			],
 			"duration": 24,
 			"category": "constructor-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11098,7 +10841,6 @@
 			],
 			"duration": 12,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11122,7 +10864,6 @@
 			],
 			"duration": 15,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11146,7 +10887,6 @@
 			],
 			"duration": 32,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11170,7 +10910,6 @@
 			],
 			"duration": 12,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11198,7 +10937,6 @@
 			],
 			"duration": 16,
 			"category": "manufacturer-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11222,7 +10960,6 @@
 			],
 			"duration": 8,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11246,7 +10983,6 @@
 			],
 			"duration": 12,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11278,7 +11014,6 @@
 			],
 			"duration": 300,
 			"category": "manufacturer-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11306,7 +11041,6 @@
 			],
 			"duration": 48,
 			"category": "manufacturer-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11330,7 +11064,6 @@
 			],
 			"duration": 60,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11354,7 +11087,6 @@
 			],
 			"duration": 24,
 			"category": "foundry-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11378,7 +11110,6 @@
 			],
 			"duration": 3,
 			"category": "foundry-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11402,7 +11133,6 @@
 			],
 			"duration": 12,
 			"category": "foundry-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11430,7 +11160,6 @@
 			],
 			"duration": 40,
 			"category": "manufacturer-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11462,7 +11191,6 @@
 			],
 			"duration": 64,
 			"category": "manufacturer-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11486,7 +11214,6 @@
 			],
 			"duration": 6,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11510,7 +11237,6 @@
 			],
 			"duration": 8,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11534,7 +11260,6 @@
 			],
 			"duration": 15,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11562,7 +11287,6 @@
 			],
 			"duration": 32,
 			"category": "manufacturer-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11586,7 +11310,6 @@
 			],
 			"duration": 12,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11610,7 +11333,6 @@
 			],
 			"duration": 36,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11638,7 +11360,6 @@
 			],
 			"duration": 16,
 			"category": "manufacturer-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11662,7 +11383,6 @@
 			],
 			"duration": 48,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11686,7 +11406,6 @@
 			],
 			"duration": 24,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11710,7 +11429,6 @@
 			],
 			"duration": 24,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11734,7 +11452,6 @@
 			],
 			"duration": 12,
 			"category": "assembler-mk1",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -11758,7 +11475,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -11783,7 +11499,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -11812,7 +11527,6 @@
 			],
 			"duration": 6,
 			"category": "hadron-collider",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -11848,7 +11562,6 @@
 			],
 			"duration": 24,
 			"category": "quantum-encoder",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -11884,7 +11597,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -11917,7 +11629,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -11950,7 +11661,6 @@
 			],
 			"duration": 60,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -11982,7 +11692,6 @@
 			],
 			"duration": 60,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -12014,7 +11723,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12047,7 +11755,6 @@
 			],
 			"duration": 120,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12076,7 +11783,6 @@
 			],
 			"duration": 16,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -12108,7 +11814,6 @@
 			],
 			"duration": 120,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12133,7 +11838,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12158,7 +11862,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12191,7 +11894,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12216,7 +11918,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12245,7 +11946,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12274,7 +11974,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12311,7 +12010,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12348,7 +12046,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12373,7 +12070,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12398,7 +12094,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12431,7 +12126,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12456,7 +12150,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12485,7 +12178,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12522,7 +12214,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12555,7 +12246,6 @@
 			],
 			"duration": 60,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12576,7 +12266,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12597,7 +12286,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12630,7 +12318,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12667,7 +12354,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12696,7 +12382,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12717,7 +12402,6 @@
 			],
 			"duration": 5,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -12737,7 +12421,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12758,7 +12441,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12787,7 +12469,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12812,7 +12493,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12845,7 +12525,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12874,7 +12553,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12903,7 +12581,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12932,7 +12609,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12961,7 +12637,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -12986,7 +12661,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13011,7 +12685,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13036,7 +12709,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13065,7 +12737,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13094,7 +12765,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13123,7 +12793,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13156,7 +12825,6 @@
 			],
 			"duration": 80,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13185,7 +12853,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13214,7 +12881,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13235,7 +12901,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13256,7 +12921,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13285,7 +12949,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13314,7 +12977,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13343,7 +13005,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13364,7 +13025,6 @@
 			],
 			"duration": 4,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -13396,7 +13056,6 @@
 			],
 			"duration": 60,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13417,7 +13076,6 @@
 			],
 			"duration": 3,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -13437,7 +13095,6 @@
 			],
 			"duration": 3,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -13457,7 +13114,6 @@
 			],
 			"duration": 4,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -13477,7 +13133,6 @@
 			],
 			"duration": 8,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -13501,7 +13156,6 @@
 			],
 			"duration": 4,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -13529,7 +13183,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13554,7 +13207,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13583,7 +13235,6 @@
 			],
 			"duration": 40,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13608,7 +13259,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13633,7 +13283,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13654,7 +13303,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13675,7 +13323,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13696,7 +13343,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13717,7 +13363,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13738,7 +13383,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13759,7 +13403,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13780,7 +13423,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13801,7 +13443,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13822,7 +13463,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13843,7 +13483,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13864,7 +13503,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13885,7 +13523,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13906,7 +13543,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13927,7 +13563,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13948,7 +13583,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13969,7 +13603,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -13990,7 +13623,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14011,7 +13643,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14032,7 +13663,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14053,7 +13683,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14074,7 +13703,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14095,7 +13723,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14116,7 +13743,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14137,7 +13763,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14158,7 +13783,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14179,7 +13803,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14200,7 +13823,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14221,7 +13843,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14242,7 +13863,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14263,7 +13883,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14284,7 +13903,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14305,7 +13923,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14326,7 +13943,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14347,7 +13963,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14368,7 +13983,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14389,7 +14003,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14410,7 +14023,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14431,7 +14043,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14452,7 +14063,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14473,7 +14083,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14498,7 +14107,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14523,7 +14131,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14544,7 +14151,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14565,7 +14171,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14586,7 +14191,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14607,7 +14211,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14628,7 +14231,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14649,7 +14251,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14670,7 +14271,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14691,7 +14291,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14712,7 +14311,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14733,7 +14331,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14754,7 +14351,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14775,7 +14371,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14796,7 +14391,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14817,7 +14411,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14838,7 +14431,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14859,7 +14451,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14880,7 +14471,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14901,7 +14491,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14922,7 +14511,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14943,7 +14531,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14964,7 +14551,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -14985,7 +14571,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15006,7 +14591,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15027,7 +14611,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15048,7 +14631,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15069,7 +14651,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15090,7 +14671,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15111,7 +14691,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15132,7 +14711,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15153,7 +14731,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15174,7 +14751,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15195,7 +14771,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15216,7 +14791,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15237,7 +14811,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15258,7 +14831,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15279,7 +14851,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15300,7 +14871,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15321,7 +14891,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15342,7 +14911,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15363,7 +14931,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15384,7 +14951,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15405,7 +14971,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15426,7 +14991,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15447,7 +15011,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15468,7 +15031,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15489,7 +15051,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15510,7 +15071,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15531,7 +15091,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15552,7 +15111,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15573,7 +15131,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15594,7 +15151,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15615,7 +15171,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15636,7 +15191,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15657,7 +15211,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15678,7 +15231,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15699,7 +15251,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15720,7 +15271,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15741,7 +15291,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15762,7 +15311,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15783,7 +15331,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15804,7 +15351,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15825,7 +15371,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15846,7 +15391,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15867,7 +15411,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15888,7 +15431,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15909,7 +15451,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15930,7 +15471,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15951,7 +15491,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15972,7 +15511,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -15993,7 +15531,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16014,7 +15551,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16035,7 +15571,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16056,7 +15591,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16077,7 +15611,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16098,7 +15631,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16119,7 +15651,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16140,7 +15671,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16161,7 +15691,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16182,7 +15711,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16203,7 +15731,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16224,7 +15751,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16245,7 +15771,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16266,7 +15791,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16287,7 +15811,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16308,7 +15831,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16329,7 +15851,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16350,7 +15871,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16371,7 +15891,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16392,7 +15911,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16413,7 +15931,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16434,7 +15951,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16455,7 +15971,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16476,7 +15991,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16497,7 +16011,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16518,7 +16031,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16539,7 +16051,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16560,7 +16071,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16581,7 +16091,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16602,7 +16111,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16623,7 +16131,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16644,7 +16151,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16665,7 +16171,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16686,7 +16191,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16707,7 +16211,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16728,7 +16231,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16749,7 +16251,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16770,7 +16271,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16791,7 +16291,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16812,7 +16311,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16833,7 +16331,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16854,7 +16351,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16875,7 +16371,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16896,7 +16391,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16917,7 +16411,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16938,7 +16431,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16959,7 +16451,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -16980,7 +16471,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17001,7 +16491,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17022,7 +16511,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17043,7 +16531,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17064,7 +16551,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17085,7 +16571,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17106,7 +16591,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17127,7 +16611,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17148,7 +16631,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17169,7 +16651,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17190,7 +16671,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17211,7 +16691,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17232,7 +16711,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17253,7 +16731,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17274,7 +16751,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17295,7 +16771,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17316,7 +16791,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17337,7 +16811,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17358,7 +16831,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17379,7 +16851,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17400,7 +16871,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17421,7 +16891,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17442,7 +16911,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17463,7 +16931,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17484,7 +16951,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17505,7 +16971,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17526,7 +16991,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17547,7 +17011,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17568,7 +17031,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17589,7 +17051,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17610,7 +17071,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17631,7 +17091,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17652,7 +17111,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17673,7 +17131,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17694,7 +17151,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17715,7 +17171,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17736,7 +17191,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17757,7 +17211,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17778,7 +17231,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17799,7 +17251,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17820,7 +17271,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17841,7 +17291,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17862,7 +17311,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17883,7 +17331,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17904,7 +17351,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17925,7 +17371,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17946,7 +17391,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17967,7 +17411,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -17988,7 +17431,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18009,7 +17451,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18030,7 +17471,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18051,7 +17491,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18072,7 +17511,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18093,7 +17531,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18114,7 +17551,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18135,7 +17571,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18156,7 +17591,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18177,7 +17611,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18198,7 +17631,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18219,7 +17651,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18240,7 +17671,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18261,7 +17691,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18282,7 +17711,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18303,7 +17731,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18324,7 +17751,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18345,7 +17771,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18366,7 +17791,6 @@
 			],
 			"duration": 3,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -18386,7 +17810,6 @@
 			],
 			"duration": 3,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -18406,7 +17829,6 @@
 			],
 			"duration": 6,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -18426,7 +17848,6 @@
 			],
 			"duration": 4,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -18450,7 +17871,6 @@
 			],
 			"duration": 20,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18471,7 +17891,6 @@
 			],
 			"duration": 4,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -18499,7 +17918,6 @@
 			],
 			"duration": 60,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18536,7 +17954,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18565,7 +17982,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18602,7 +18018,6 @@
 			],
 			"duration": 24,
 			"category": "quantum-encoder",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -18638,7 +18053,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18667,7 +18081,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18692,7 +18105,6 @@
 			],
 			"duration": 24,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -18720,7 +18132,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18749,7 +18160,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18778,7 +18188,6 @@
 			],
 			"duration": 60,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18807,7 +18216,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18836,7 +18244,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18865,7 +18272,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18890,7 +18296,6 @@
 			],
 			"duration": 6,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -18922,7 +18327,6 @@
 			],
 			"duration": 40,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -18951,7 +18355,6 @@
 			],
 			"duration": 8,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -18979,7 +18382,6 @@
 			],
 			"duration": 60,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19004,7 +18406,6 @@
 			],
 			"duration": 12,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -19032,7 +18433,6 @@
 			],
 			"duration": 20,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19057,7 +18457,6 @@
 			],
 			"duration": 20,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19082,7 +18481,6 @@
 			],
 			"duration": 40,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19107,7 +18505,6 @@
 			],
 			"duration": 2,
 			"category": "oil-refinery",
-			"priority": 20,
 			"available": true
 		},
 		{
@@ -19131,7 +18528,6 @@
 			],
 			"duration": 4,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -19159,7 +18555,6 @@
 			],
 			"duration": 20,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19196,7 +18591,6 @@
 			],
 			"duration": 12,
 			"category": "quantum-encoder",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -19216,7 +18610,6 @@
 			],
 			"duration": 24,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -19236,7 +18629,6 @@
 			],
 			"duration": 12,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -19264,7 +18656,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19297,7 +18688,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19322,7 +18712,6 @@
 			],
 			"duration": 60,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -19354,7 +18743,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19379,7 +18767,6 @@
 			],
 			"duration": 12,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -19407,7 +18794,6 @@
 			],
 			"duration": 12,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -19435,7 +18821,6 @@
 			],
 			"duration": 12,
 			"category": "blender",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -19467,7 +18852,6 @@
 			],
 			"duration": 120,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -19491,7 +18875,6 @@
 			],
 			"duration": 12,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -19519,7 +18902,6 @@
 			],
 			"duration": 12,
 			"category": "manufacturer-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -19551,7 +18933,6 @@
 			],
 			"duration": 120,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19576,7 +18957,6 @@
 			],
 			"duration": 24,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -19600,7 +18980,6 @@
 			],
 			"duration": 6,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -19628,7 +19007,6 @@
 			],
 			"duration": 80,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19653,7 +19031,6 @@
 			],
 			"duration": 6,
 			"category": "oil-refinery",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -19673,7 +19050,6 @@
 			],
 			"duration": 80,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19694,7 +19070,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19715,7 +19090,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19736,7 +19110,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19757,7 +19130,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19778,7 +19150,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19799,7 +19170,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19820,7 +19190,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19841,7 +19210,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19862,7 +19230,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19883,7 +19250,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19904,7 +19270,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19925,7 +19290,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19946,7 +19310,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19967,7 +19330,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -19988,7 +19350,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20009,7 +19370,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20030,7 +19390,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20051,7 +19410,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20072,7 +19430,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20093,7 +19450,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20114,7 +19470,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20135,7 +19490,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20156,7 +19510,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20177,7 +19530,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20198,7 +19550,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20219,7 +19570,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20240,7 +19590,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20265,7 +19614,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20286,7 +19634,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20307,7 +19654,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20328,7 +19674,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20349,7 +19694,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20370,7 +19714,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20391,7 +19734,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20412,7 +19754,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20433,7 +19774,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20454,7 +19794,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20475,7 +19814,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20496,7 +19834,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20517,7 +19854,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20538,7 +19874,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20559,7 +19894,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20580,7 +19914,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20601,7 +19934,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20622,7 +19954,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20643,7 +19974,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20664,7 +19994,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20685,7 +20014,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20706,7 +20034,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20727,7 +20054,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20748,7 +20074,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20769,7 +20094,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20790,7 +20114,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20811,7 +20134,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20832,7 +20154,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20853,7 +20174,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20874,7 +20194,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20895,7 +20214,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20916,7 +20234,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20941,7 +20258,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20962,7 +20278,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -20983,7 +20298,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21008,7 +20322,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21029,7 +20342,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21058,7 +20370,6 @@
 			],
 			"duration": 20,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21079,7 +20390,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21100,7 +20410,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21125,7 +20434,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21154,7 +20462,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21179,7 +20486,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21204,7 +20510,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21229,7 +20534,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21254,7 +20558,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21279,7 +20582,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21304,7 +20606,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21329,7 +20630,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21358,7 +20658,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21387,7 +20686,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21416,7 +20714,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21445,7 +20742,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21470,7 +20766,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21491,7 +20786,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21512,7 +20806,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21533,7 +20826,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21554,7 +20846,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21575,7 +20866,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21596,7 +20886,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21617,7 +20906,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21638,7 +20926,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21659,7 +20946,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21680,7 +20966,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21701,7 +20986,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21722,7 +21006,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21743,7 +21026,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21764,7 +21046,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21785,7 +21066,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21806,7 +21086,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21827,7 +21106,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21848,7 +21126,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21869,7 +21146,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21890,7 +21166,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21911,7 +21186,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21932,7 +21206,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21953,7 +21226,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21974,7 +21246,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -21995,7 +21266,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22016,7 +21286,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22037,7 +21306,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22058,7 +21326,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22079,7 +21346,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22100,7 +21366,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22121,7 +21386,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22142,7 +21406,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22163,7 +21426,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22184,7 +21446,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22205,7 +21466,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22226,7 +21486,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22247,7 +21506,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22268,7 +21526,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22289,7 +21546,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22310,7 +21566,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22339,7 +21594,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22364,7 +21618,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22389,7 +21642,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22410,7 +21662,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22435,7 +21686,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22464,7 +21714,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22489,7 +21738,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22514,7 +21762,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22539,7 +21786,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22564,7 +21810,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22589,7 +21834,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22618,7 +21862,6 @@
 			],
 			"duration": 20,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22643,7 +21886,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22668,7 +21910,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22693,7 +21934,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22718,7 +21958,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22743,7 +21982,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22764,7 +22002,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22785,7 +22022,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22806,7 +22042,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22827,7 +22062,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22852,7 +22086,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22877,7 +22110,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22898,7 +22130,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22919,7 +22150,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22944,7 +22174,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22969,7 +22198,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -22994,7 +22222,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23019,7 +22246,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23048,7 +22274,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23077,7 +22302,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23098,7 +22322,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23119,7 +22342,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23144,7 +22366,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23169,7 +22390,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23194,7 +22414,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23219,7 +22438,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23244,7 +22462,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23269,7 +22486,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23298,7 +22514,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23327,7 +22542,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23356,7 +22570,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23389,7 +22602,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23410,7 +22622,6 @@
 			],
 			"duration": 5,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -23430,7 +22641,6 @@
 			],
 			"duration": 4,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -23458,7 +22668,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23483,7 +22692,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23508,7 +22716,6 @@
 			],
 			"duration": 12,
 			"category": "assembler-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -23532,7 +22739,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23553,7 +22759,6 @@
 			],
 			"duration": 4,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -23573,7 +22778,6 @@
 			],
 			"duration": 6,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -23597,7 +22801,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23618,7 +22821,6 @@
 			],
 			"duration": 2,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -23638,7 +22840,6 @@
 			],
 			"duration": 4,
 			"category": "constructor-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -23658,7 +22859,6 @@
 			],
 			"duration": 2,
 			"category": "smelter-mk1",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -23682,7 +22882,6 @@
 			],
 			"duration": 1,
 			"category": "build-gun",
-			"priority": 10,
 			"available": true,
 			"craftable": false
 		},
@@ -23707,9 +22906,22 @@
 			],
 			"duration": 40,
 			"category": "equipment-workshop",
-			"priority": 10,
 			"available": true,
 			"craftable": false
+		},
+		{
+			"id": "water-water-pump",
+			"in": [],
+			"out": [
+				{
+					"id": "water",
+					"amount": 2
+				}
+			],
+			"duration": 1,
+			"category": "water-pump",
+			"cost": 1,
+			"available": true
 		},
 		{
 			"id": "liquid-oil-oil-pump",
@@ -23722,7 +22934,7 @@
 			],
 			"duration": 1,
 			"category": "oil-pump",
-			"priority": 10,
+			"cost": 9.2593,
 			"available": true
 		},
 		{
@@ -23736,7 +22948,7 @@
 			],
 			"duration": 1,
 			"category": "fracking-extractor",
-			"priority": 10,
+			"cost": 55.5556,
 			"available": true
 		},
 		{
@@ -23750,7 +22962,7 @@
 			],
 			"duration": 1,
 			"category": "fracking-extractor",
-			"priority": 10,
+			"cost": 8.3333,
 			"available": true
 		},
 		{
@@ -23764,7 +22976,7 @@
 			],
 			"duration": 1,
 			"category": "fracking-extractor",
-			"priority": 10,
+			"cost": 7.6336,
 			"available": true
 		},
 		{
@@ -23778,7 +22990,6 @@
 			],
 			"duration": 1,
 			"category": "manual-harvest",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -23793,7 +23004,6 @@
 			],
 			"duration": 1,
 			"category": "manual-harvest",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -23808,7 +23018,6 @@
 			],
 			"duration": 1,
 			"category": "manual-harvest",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -23823,7 +23032,6 @@
 			],
 			"duration": 1,
 			"category": "manual-harvest",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -23838,7 +23046,7 @@
 			],
 			"duration": 1,
 			"category": "miner",
-			"priority": 10,
+			"cost": 1.0858,
 			"available": true
 		},
 		{
@@ -23852,7 +23060,7 @@
 			],
 			"duration": 1,
 			"category": "miner",
-			"priority": 10,
+			"cost": 2.3641,
 			"available": true
 		},
 		{
@@ -23866,7 +23074,7 @@
 			],
 			"duration": 1,
 			"category": "miner",
-			"priority": 10,
+			"cost": 9.2593,
 			"available": true
 		},
 		{
@@ -23880,7 +23088,7 @@
 			],
 			"duration": 1,
 			"category": "miner",
-			"priority": 10,
+			"cost": 9.8039,
 			"available": true
 		},
 		{
@@ -23895,7 +23103,7 @@
 			],
 			"duration": 1,
 			"category": "miner",
-			"priority": 10,
+			"cost": 8.1301,
 			"available": true
 		},
 		{
@@ -23910,7 +23118,7 @@
 			],
 			"duration": 1,
 			"category": "miner",
-			"priority": 10,
+			"cost": 6.6667,
 			"available": true
 		},
 		{
@@ -23925,7 +23133,7 @@
 			],
 			"duration": 1,
 			"category": "miner",
-			"priority": 10,
+			"cost": 2.71,
 			"available": true
 		},
 		{
@@ -23939,7 +23147,7 @@
 			],
 			"duration": 1,
 			"category": "miner",
-			"priority": 10,
+			"cost": 7.4074,
 			"available": true
 		},
 		{
@@ -23954,7 +23162,7 @@
 			],
 			"duration": 1,
 			"category": "miner",
-			"priority": 10,
+			"cost": 47.619,
 			"available": true
 		},
 		{
@@ -23968,7 +23176,6 @@
 			],
 			"duration": 1,
 			"category": "manual-harvest",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -23982,7 +23189,6 @@
 			],
 			"duration": 1,
 			"category": "manual-harvest",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -23996,7 +23202,6 @@
 			],
 			"duration": 1,
 			"category": "manual-harvest",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -24011,7 +23216,6 @@
 			],
 			"duration": 1,
 			"category": "manual-harvest",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -24026,7 +23230,6 @@
 			],
 			"duration": 1,
 			"category": "manual-harvest",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -24041,7 +23244,6 @@
 			],
 			"duration": 1,
 			"category": "manual-harvest",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -24056,7 +23258,6 @@
 			],
 			"duration": 1,
 			"category": "manual-harvest",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -24071,7 +23272,6 @@
 			],
 			"duration": 1,
 			"category": "manual-harvest",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -24086,7 +23286,6 @@
 			],
 			"duration": 1,
 			"category": "manual-harvest",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -24101,7 +23300,6 @@
 			],
 			"duration": 1,
 			"category": "manual-harvest",
-			"priority": 10,
 			"available": true
 		},
 		{
@@ -24120,7 +23318,6 @@
 			],
 			"duration": 300.0,
 			"category": "generator-nuclear",
-			"priority": 10,
 			"available": false
 		},
 		{
@@ -24139,7 +23336,6 @@
 			],
 			"duration": 600.0,
 			"category": "generator-nuclear",
-			"priority": 10,
 			"available": false
 		},
 		{
@@ -24153,7 +23349,6 @@
 			"out": [],
 			"duration": 60.0,
 			"category": "generator-nuclear",
-			"priority": 10,
 			"available": false
 		}
 	],
@@ -24540,6 +23735,26 @@
 					"itemSlots": 4,
 					"effectPerSlot": ["summerslooping"]
 				},
+				{
+					"id": "overclocking",
+					"itemSlots": 3,
+					"effectPerSlot": ["overclocking"],
+					"disables": ["underclocking"]
+				},
+				{
+					"id": "underclocking",
+					"itemSlots": 0,
+					"effectPerSlot": ["underclocking"],
+					"disables": ["overclocking"]
+				}
+			],
+			"available": true
+		},
+		{
+			"id": "water-pump",
+			"recipeCategories": ["water-pump"],
+			"requiredPower": 20000000,
+			"features": [
 				{
 					"id": "overclocking",
 					"itemSlots": 3,
