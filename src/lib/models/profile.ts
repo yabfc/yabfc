@@ -33,6 +33,17 @@ export default class Profile {
 	research: Research[];
 	settings: SettingInterface;
 
+	/**
+	 * **DON'T READ OR WRITE THIS VALUE. USE `nextHighsId()` TO GET AN ID!**
+	 *
+	 * Counts recipe variations to supply a short but unique ID
+	 */
+	private _highsIdCounter = 1;
+	/** Returns the next highs ID */
+	private nextHighsId() {
+		return this._highsIdCounter++;
+	}
+
 	constructor(profile: ProfileInterface, isDefault = true) {
 		this.id = profile.id;
 		this.name = profile.name;
@@ -49,13 +60,11 @@ export default class Profile {
 	generateRecipeVariants(): RecipeVariant[] {
 		const allVariants: RecipeVariant[] = [];
 		const validRecipes = this.recipes.filter(r => r.craftable !== false && r.available);
-		let counter = 1;
 		validRecipes.forEach(recipe => {
 			const machines = this.getMachinesByRecipe(recipe.category).filter(m => m.available);
 			machines.forEach(machine => {
 				// default variant, no effects
-				allVariants.push(this.calculateRecipeVariant(recipe, machine, [], counter));
-				counter++;
+				allVariants.push(this.calculateRecipeVariant(recipe, machine, []));
 
 				let features: MachineFeature[] = [];
 				// variants with effects
@@ -65,19 +74,13 @@ export default class Profile {
 					}
 
 					features.push(feature);
-					if (feature.itemSlots > 0) {
-						counter = this.addModuleVariants(
-							allVariants,
-							recipe,
-							machine,
-							feature,
-							counter,
-						);
-					}
+					if (feature.itemSlots > 0)
+						this.addModuleVariants(allVariants, recipe, machine, feature);
 				}
-				counter = this.addEffectVariants(allVariants, recipe, machine, features, counter);
+				this.addEffectVariants(allVariants, recipe, machine, features);
 			});
 		});
+
 		return allVariants;
 	}
 
@@ -86,18 +89,15 @@ export default class Profile {
 		recipe: Recipe,
 		machine: Machine,
 		feature: MachineFeature,
-		counter: number,
-	): number {
+	) {
 		const perSlotEffects = this.machineEffects.filter(
 			x => feature.effectPerSlot.includes(x.id) && !x.id.includes('quality') && x.perSlot,
 		);
 
 		const combinations = this.getAllModuleCombinations(perSlotEffects, feature.itemSlots);
 		for (const combo of combinations) {
-			variants.push(this.calculateRecipeVariant(recipe, machine, combo, counter));
-			counter++;
+			variants.push(this.calculateRecipeVariant(recipe, machine, combo));
 		}
-		return counter;
 	}
 
 	private addEffectVariants(
@@ -105,8 +105,7 @@ export default class Profile {
 		recipe: Recipe,
 		machine: Machine,
 		features: MachineFeature[],
-		counter: number,
-	): number {
+	) {
 		let clockChoices: EffectChoice[] = [];
 
 		// over/underclocking
@@ -126,11 +125,8 @@ export default class Profile {
 						const value = +(modifiable.minValue! + i * stepSize).toFixed(1);
 						if (value === 1 || value === 0) continue;
 						let choice = { effect: effect, scaling: value };
-						variants.push(
-							this.calculateRecipeVariant(recipe, machine, [choice], counter),
-						);
+						variants.push(this.calculateRecipeVariant(recipe, machine, [choice]));
 						clockChoices.push(choice);
-						counter++;
 					}
 				}
 			}
@@ -147,26 +143,16 @@ export default class Profile {
 					for (let i = 1; i <= feature.itemSlots; i++) {
 						const boostRatio = i / feature.itemSlots;
 						const choice = { effect: effect, scaling: boostRatio };
-						variants.push(
-							this.calculateRecipeVariant(recipe, machine, [choice], counter),
-						);
-						counter++;
-						for (const clockChoice of clockChoices) {
+						variants.push(this.calculateRecipeVariant(recipe, machine, [choice]));
+
+						for (const clockChoice of clockChoices)
 							variants.push(
-								this.calculateRecipeVariant(
-									recipe,
-									machine,
-									[choice, clockChoice],
-									counter,
-								),
+								this.calculateRecipeVariant(recipe, machine, [choice, clockChoice]),
 							);
-							counter++;
-						}
 					}
 				}
 			}
 		}
-		return counter;
 	}
 
 	getAllModuleCombinations(availableModules: EffectModule[], slots: number): EffectChoice[][] {
@@ -196,7 +182,6 @@ export default class Profile {
 		recipe: Recipe,
 		machine: Machine,
 		effects: EffectChoice[],
-		counter: number,
 	): RecipeVariant {
 		let speed = machine.getBaseCraftingSpeed(this.machineEffects);
 		let power = machine.getPowerConsumption(effects);
@@ -223,7 +208,7 @@ export default class Profile {
 
 		return {
 			id: nanoid(),
-			highsId: 'x' + counter,
+			highsId: 'x' + this.nextHighsId(),
 			recipeId: recipe.id,
 			recipePriority: recipe.priority,
 			machineId: machine.id,
