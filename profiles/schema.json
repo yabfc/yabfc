@@ -317,9 +317,37 @@
 						"type": "object"
 					},
 					"type": "array"
+				},
+				"settings": {
+					"additionalProperties": false,
+					"properties": {
+						"allRecipesUnlocked": {
+							"type": "boolean"
+						},
+						"defaultDuration": {
+							"type": "number"
+						},
+						"limitations": {
+							"items": {
+								"type": "string"
+							},
+							"type": "array"
+						}
+					},
+					"required": ["defaultDuration", "allRecipesUnlocked"],
+					"type": "object"
 				}
 			},
-			"required": ["id", "name", "items", "recipes", "machines", "machineEffects", "research"],
+			"required": [
+				"id",
+				"name",
+				"items",
+				"recipes",
+				"machines",
+				"machineEffects",
+				"research",
+				"settings"
+			],
 			"type": "object"
 		}
 	}
