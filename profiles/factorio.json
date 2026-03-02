@@ -5875,11 +5875,11 @@
 			"out": [
 				{
 					"id": "uranium-235",
-					"amount": 1
+					"amount": 0.007000000000000001
 				},
 				{
 					"id": "uranium-238",
-					"amount": 1
+					"amount": 0.993
 				}
 			],
 			"duration": 12,
@@ -8483,6 +8483,20 @@
 				}
 			],
 			"prerequisites": ["circuit-network", "chemical-science-pack"]
+		}
+	],
+	"conveyors": [
+		{
+			"id": "transport-belt",
+			"speed": 15.0
+		},
+		{
+			"id": "fast-transport-belt",
+			"speed": 30.0
+		},
+		{
+			"id": "express-transport-belt",
+			"speed": 45.0
 		}
 	],
 	"settings": {

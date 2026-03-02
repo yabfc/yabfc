@@ -27245,6 +27245,32 @@
 			"prerequisites": ["schematic-tutorial4"]
 		}
 	],
+	"conveyors": [
+		{
+			"id": "conveyor-belt-mk1",
+			"speed": 2.0
+		},
+		{
+			"id": "conveyor-belt-mk5",
+			"speed": 26.0
+		},
+		{
+			"id": "conveyor-belt-mk6",
+			"speed": 40.0
+		},
+		{
+			"id": "conveyor-belt-mk4",
+			"speed": 16.0
+		},
+		{
+			"id": "conveyor-belt-mk3",
+			"speed": 9.0
+		},
+		{
+			"id": "conveyor-belt-mk2",
+			"speed": 4.0
+		}
+	],
 	"settings": {
 		"defaultDuration": 60,
 		"allRecipesUnlocked": true
