@@ -6454,11 +6454,11 @@
 			"out": [
 				{
 					"id": "uranium-235",
-					"amount": 1
+					"amount": 0.007000000000000001
 				},
 				{
 					"id": "uranium-238",
-					"amount": 1
+					"amount": 0.993
 				}
 			],
 			"duration": 12,
@@ -6839,7 +6839,7 @@
 			"out": [
 				{
 					"id": "yumako-seed",
-					"amount": 1
+					"amount": 0.02
 				},
 				{
 					"id": "yumako-mash",
@@ -6862,7 +6862,7 @@
 			"out": [
 				{
 					"id": "jellynut-seed",
-					"amount": 1
+					"amount": 0.02
 				},
 				{
 					"id": "jelly",
@@ -6885,7 +6885,7 @@
 			"out": [
 				{
 					"id": "copper-bacteria",
-					"amount": 1
+					"amount": 0.1
 				},
 				{
 					"id": "spoilage",
@@ -6933,7 +6933,7 @@
 			"out": [
 				{
 					"id": "iron-bacteria",
-					"amount": 1
+					"amount": 0.1
 				},
 				{
 					"id": "spoilage",
@@ -7748,7 +7748,7 @@
 				},
 				{
 					"id": "metallic-asteroid-chunk",
-					"amount": 1
+					"amount": 0.2
 				}
 			],
 			"duration": 2,
@@ -7771,7 +7771,7 @@
 				},
 				{
 					"id": "carbonic-asteroid-chunk",
-					"amount": 1
+					"amount": 0.2
 				}
 			],
 			"duration": 2,
@@ -7794,7 +7794,7 @@
 				},
 				{
 					"id": "oxide-asteroid-chunk",
-					"amount": 1
+					"amount": 0.2
 				}
 			],
 			"duration": 2,
@@ -7821,7 +7821,7 @@
 				},
 				{
 					"id": "metallic-asteroid-chunk",
-					"amount": 1
+					"amount": 0.05
 				}
 			],
 			"duration": 5,
@@ -7848,7 +7848,7 @@
 				},
 				{
 					"id": "carbonic-asteroid-chunk",
-					"amount": 1
+					"amount": 0.05
 				}
 			],
 			"duration": 5,
@@ -7875,7 +7875,7 @@
 				},
 				{
 					"id": "oxide-asteroid-chunk",
-					"amount": 1
+					"amount": 0.05
 				}
 			],
 			"duration": 5,
@@ -7894,15 +7894,15 @@
 			"out": [
 				{
 					"id": "metallic-asteroid-chunk",
-					"amount": 1
+					"amount": 0.4
 				},
 				{
 					"id": "carbonic-asteroid-chunk",
-					"amount": 1
+					"amount": 0.2
 				},
 				{
 					"id": "oxide-asteroid-chunk",
-					"amount": 1
+					"amount": 0.2
 				}
 			],
 			"duration": 2,
@@ -7921,15 +7921,15 @@
 			"out": [
 				{
 					"id": "carbonic-asteroid-chunk",
-					"amount": 1
+					"amount": 0.4
 				},
 				{
 					"id": "metallic-asteroid-chunk",
-					"amount": 1
+					"amount": 0.2
 				},
 				{
 					"id": "oxide-asteroid-chunk",
-					"amount": 1
+					"amount": 0.2
 				}
 			],
 			"duration": 2,
@@ -7948,15 +7948,15 @@
 			"out": [
 				{
 					"id": "oxide-asteroid-chunk",
-					"amount": 1
+					"amount": 0.4
 				},
 				{
 					"id": "metallic-asteroid-chunk",
-					"amount": 1
+					"amount": 0.2
 				},
 				{
 					"id": "carbonic-asteroid-chunk",
-					"amount": 1
+					"amount": 0.2
 				}
 			],
 			"duration": 1,
@@ -9098,51 +9098,51 @@
 			"out": [
 				{
 					"id": "iron-gear-wheel",
-					"amount": 1
+					"amount": 0.2
 				},
 				{
 					"id": "solid-fuel",
-					"amount": 1
+					"amount": 0.07
 				},
 				{
 					"id": "concrete",
-					"amount": 1
+					"amount": 0.06
 				},
 				{
 					"id": "ice",
-					"amount": 1
+					"amount": 0.05
 				},
 				{
 					"id": "steel-plate",
-					"amount": 1
+					"amount": 0.04
 				},
 				{
 					"id": "battery",
-					"amount": 1
+					"amount": 0.04
 				},
 				{
 					"id": "stone",
-					"amount": 1
+					"amount": 0.04
 				},
 				{
 					"id": "advanced-circuit",
-					"amount": 1
+					"amount": 0.03
 				},
 				{
 					"id": "copper-cable",
-					"amount": 1
+					"amount": 0.03
 				},
 				{
 					"id": "processing-unit",
-					"amount": 1
+					"amount": 0.02
 				},
 				{
 					"id": "low-density-structure",
-					"amount": 1
+					"amount": 0.01
 				},
 				{
 					"id": "holmium-ore",
-					"amount": 1
+					"amount": 0.01
 				}
 			],
 			"duration": 0.2,
@@ -10629,7 +10629,8 @@
 			"duration": 0.5,
 			"category": "manual-harvest",
 			"priority": 10,
-			"available": true
+			"available": true,
+			"craftable": false
 		},
 		{
 			"id": "jellystem",
@@ -10643,7 +10644,8 @@
 			"duration": 0.5,
 			"category": "manual-harvest",
 			"priority": 10,
-			"available": true
+			"available": true,
+			"craftable": false
 		},
 		{
 			"id": "tree-plant",
@@ -10657,7 +10659,8 @@
 			"duration": 0.5,
 			"category": "manual-harvest",
 			"priority": 10,
-			"available": true
+			"available": true,
+			"craftable": false
 		},
 		{
 			"id": "tree",
@@ -10671,7 +10674,8 @@
 			"duration": 0.55,
 			"category": "manual-harvest",
 			"priority": 10,
-			"available": true
+			"available": true,
+			"craftable": false
 		},
 		{
 			"id": "fish",
@@ -10685,7 +10689,8 @@
 			"duration": 0.4,
 			"category": "manual-harvest",
 			"priority": 10,
-			"available": true
+			"available": true,
+			"craftable": false
 		},
 		{
 			"id": "metallic-asteroid-chunk",

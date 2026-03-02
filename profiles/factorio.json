@@ -5875,11 +5875,11 @@
 			"out": [
 				{
 					"id": "uranium-235",
-					"amount": 1
+					"amount": 0.007000000000000001
 				},
 				{
 					"id": "uranium-238",
-					"amount": 1
+					"amount": 0.993
 				}
 			],
 			"duration": 12,
@@ -6498,7 +6498,8 @@
 			"duration": 0.55,
 			"category": "manual-harvest",
 			"priority": 10,
-			"available": true
+			"available": true,
+			"craftable": false
 		},
 		{
 			"id": "fish",
@@ -6512,7 +6513,8 @@
 			"duration": 0.4,
 			"category": "manual-harvest",
 			"priority": 10,
-			"available": true
+			"available": true,
+			"craftable": false
 		},
 		{
 			"id": "steam-wood",
