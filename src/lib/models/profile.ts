@@ -5,6 +5,7 @@ import Recipe, { type RecipeInterface, type RecipeVariant } from '@/lib/models/r
 import Research, { type ResearchInterface } from '@/lib/models/research';
 import type SettingInterface from '@/lib/models/setting';
 import { nanoid } from 'nanoid';
+import { Conveyor, type ConveyorInterface } from '@/lib/models/conveyor';
 
 export interface ProfileInterface {
 	id: string;
@@ -12,6 +13,7 @@ export interface ProfileInterface {
 	items: ItemInterface[];
 	recipes: RecipeInterface[];
 	machines: MachineInterface[];
+	conveyors: ConveyorInterface[];
 	machineEffects: EffectModuleInterface[];
 	research: ResearchInterface[];
 	settings: SettingInterface;
@@ -29,6 +31,7 @@ export default class Profile {
 	items: Item[];
 	recipes: Recipe[];
 	machines: Machine[];
+	conveyors: Conveyor[];
 	machineEffects: EffectModule[];
 	research: Research[];
 	settings: SettingInterface;
@@ -52,6 +55,7 @@ export default class Profile {
 		this.items = profile.items.map(x => new Item(x));
 		this.recipes = profile.recipes.map(x => new Recipe(x));
 		this.machines = profile.machines.map(x => new Machine(x));
+		this.conveyors = profile.conveyors.map(x => new Conveyor(x));
 		this.machineEffects = profile.machineEffects.map(x => new EffectModule(x));
 		this.research = profile.research.map(x => new Research(x));
 		this.settings = profile.settings;
