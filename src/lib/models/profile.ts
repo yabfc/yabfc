@@ -140,7 +140,9 @@ export default class Profile {
 						const choice = { effect: effect, scaling: boostRatio };
 						variants.push(this.calculateRecipeVariant(recipe, machine, [choice]));
 						for (const clockChoice of clockChoices) {
-							variants.push(this.calculateRecipeVariant(recipe, machine, [choice, clockChoice]));
+							variants.push(
+								this.calculateRecipeVariant(recipe, machine, [choice, clockChoice]),
+							);
 						}
 					}
 				}
@@ -171,13 +173,21 @@ export default class Profile {
 		return results;
 	}
 
-	calculateRecipeVariant(recipe: Recipe, machine: Machine, effects: EffectChoice[]): RecipeVariant {
+	calculateRecipeVariant(
+		recipe: Recipe,
+		machine: Machine,
+		effects: EffectChoice[],
+	): RecipeVariant {
 		let speed = machine.getBaseCraftingSpeed(this.machineEffects);
 		let power = machine.getPowerConsumption(effects);
 		let productivity = 1;
 		effects.forEach(choice => {
 			choice.effect.modifiers.forEach(modifier => {
-				if (modifier.id === 'speed' && modifier.onlyOutputScales === true && !modifier.modifiable) {
+				if (
+					modifier.id === 'speed' &&
+					modifier.onlyOutputScales === true &&
+					!modifier.modifiable
+				) {
 					if (!choice.effect.perSlot) {
 						productivity *= modifier.value! * choice.scaling;
 					} else {
@@ -203,7 +213,8 @@ export default class Profile {
 			out: recipe.out.map(x => ({
 				...x,
 				amount:
-					((x.amount * productivity * speed) / recipe.duration) * this.settings.defaultDuration,
+					((x.amount * productivity * speed) / recipe.duration) *
+					this.settings.defaultDuration,
 			})),
 			requiredPower: power,
 			usedEffectModuleIds: effects.map(x => ({
@@ -242,7 +253,9 @@ export default class Profile {
 	getMinPowerConsumptionByRecipeId(id: string): number | undefined {
 		const recipe = this.getRecipeById(id);
 		if (!recipe) return;
-		const validMachines = this.machines.filter(x => x.recipeCategories.includes(recipe.category));
+		const validMachines = this.machines.filter(x =>
+			x.recipeCategories.includes(recipe.category),
+		);
 		if (validMachines.length === 0) {
 			return;
 		}
@@ -262,7 +275,9 @@ export default class Profile {
 
 	private _validate(profile: ProfileInterface) {
 		if (!validate(profile)) {
-			const errors = validate.errors?.map(err => `${err.instancePath} ${err.message}`).join(', ');
+			const errors = validate.errors
+				?.map(err => `${err.instancePath} ${err.message}`)
+				.join(', ');
 			return false;
 		}
 
@@ -333,6 +348,9 @@ export default class Profile {
 		var categoriesMachine: Set<string> = new Set();
 
 		for (let r of recipes) {
+			if (r.craftable === false) {
+				continue;
+			}
 			categoriesRecipe.add(r.category);
 		}
 
@@ -341,12 +359,6 @@ export default class Profile {
 		}
 
 		const difference = new Set([...categoriesRecipe].filter(id => !categoriesMachine.has(id)));
-
-		for (let category of difference) {
-			if (['manual-harvest', 'build-gun', 'equipment-workshop'].includes(category)) {
-				difference.delete(category);
-			}
-		}
 
 		if (difference.size > 0) {
 			return false;
