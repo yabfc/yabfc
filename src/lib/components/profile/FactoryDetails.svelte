@@ -8,13 +8,11 @@
 	import alerts from '@/lib/stores/alerts.svelte';
 	import { stage } from '@/lib/stores/stage.svelte';
 	import { ZapIcon } from '@lucide/svelte';
-	import { formatPower } from '@/lib/calculator/unit';
 
 	let inputs = $state<{ item: Item; amount: number }[]>([]),
 		outputs = $state<{ item: Item; amount: number }[]>([]);
 
 	let powerConsumption = $state('0');
-	let powerUnit = $state('W');
 
 	let loading = $state(false);
 
@@ -48,9 +46,7 @@
 
 		if (!res) return alerts.push('Failed to calculate factory', 'ERROR');
 
-		let formattedPower = formatPower(calculator.getPowerConsumption(res));
-		powerConsumption = formattedPower.value;
-		powerUnit = formattedPower.unit;
+		powerConsumption = calculator.getPowerConsumption(res).toString();
 
 		const { nodes, edges } = generateNodes(res);
 
@@ -82,7 +78,7 @@
 				<ZapIcon size="18" class="text-base-content/50 inline" />
 				<span class="sr-only">Electricity</span>
 				<b class="font-bold">{powerConsumption}</b>
-				<span class="text-base-content/80">{powerUnit}</span>
+				<span class="text-base-content/80">W</span>
 			</li>
 		</ul>
 
