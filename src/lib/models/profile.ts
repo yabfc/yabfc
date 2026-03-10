@@ -38,6 +38,17 @@ export default class Profile {
 	research: Research[];
 	settings: SettingInterface;
 
+	/**
+	 * **DON'T READ OR WRITE THIS VALUE. USE `nextHighsId()` TO GET AN ID!**
+	 *
+	 * Counts recipe variations to supply a short but unique ID
+	 */
+	private _highsIdCounter = 1;
+	/** Returns the next highs ID */
+	private nextHighsId() {
+		return this._highsIdCounter++;
+	}
+
 	constructor(profile: ProfileInterface, isDefault = true) {
 		if (!this._validate(profile)) {
 			throw new Error(`invalid profile ${profile.name} submitted`);
@@ -67,16 +78,18 @@ export default class Profile {
 				let features: MachineFeature[] = [];
 				// variants with effects
 				for (const feature of machine.features) {
-					if (feature.hidden || !feature.effectPerSlot || feature.itemSlots < 0) {
+					if (feature.hidden || !feature.effectPerSlot) {
 						continue;
 					}
 
 					features.push(feature);
-					this.addModuleVariants(allVariants, recipe, machine, feature);
+					if (feature.itemSlots > 0)
+						this.addModuleVariants(allVariants, recipe, machine, feature);
 				}
 				this.addEffectVariants(allVariants, recipe, machine, features);
 			});
 		});
+
 		return allVariants;
 	}
 
@@ -85,7 +98,7 @@ export default class Profile {
 		recipe: Recipe,
 		machine: Machine,
 		feature: MachineFeature,
-	): void {
+	) {
 		const perSlotEffects = this.machineEffects.filter(
 			x => feature.effectPerSlot.includes(x.id) && !x.id.includes('quality') && x.perSlot,
 		);
@@ -101,7 +114,7 @@ export default class Profile {
 		recipe: Recipe,
 		machine: Machine,
 		features: MachineFeature[],
-	): void {
+	) {
 		let clockChoices: EffectChoice[] = [];
 
 		// over/underclocking
@@ -113,12 +126,13 @@ export default class Profile {
 			for (const effect of effects) {
 				const modifiable = effect.modifiers.find(m => m.modifiable);
 				if (modifiable) {
-					const stepCount = 32;
+					const stepSize = 0.1;
 					const range = modifiable.maxValue! - modifiable.minValue!;
-					const stepSize = range / stepCount;
+					const stepCount = range / stepSize;
 
 					for (let i = 0; i <= stepCount; i++) {
-						const value = modifiable.minValue! + i * stepSize;
+						const value = +(modifiable.minValue! + i * stepSize).toFixed(1);
+						if (value === 1 || value === 0) continue;
 						let choice = { effect: effect, scaling: value };
 						variants.push(this.calculateRecipeVariant(recipe, machine, [choice]));
 						clockChoices.push(choice);
@@ -139,11 +153,11 @@ export default class Profile {
 						const boostRatio = i / feature.itemSlots;
 						const choice = { effect: effect, scaling: boostRatio };
 						variants.push(this.calculateRecipeVariant(recipe, machine, [choice]));
-						for (const clockChoice of clockChoices) {
+
+						for (const clockChoice of clockChoices)
 							variants.push(
 								this.calculateRecipeVariant(recipe, machine, [choice, clockChoice]),
 							);
-						}
 					}
 				}
 			}
@@ -203,6 +217,7 @@ export default class Profile {
 
 		return {
 			id: nanoid(),
+			highsId: 'x' + this.nextHighsId(),
 			recipeId: recipe.id,
 			recipePriority: recipe.priority,
 			machineId: machine.id,
