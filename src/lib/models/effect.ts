@@ -1,3 +1,8 @@
+export interface EffectChoice {
+	effect: EffectModule;
+	scaling: number;
+}
+
 export interface BaseModifier {
 	id: 'speed' | 'power' | 'consumption' | 'productivity' | 'pollution' | 'quality';
 	name?: string;
