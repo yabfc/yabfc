@@ -278,4 +278,61 @@ export default class Profile {
 	getMachineById(id: string) {
 		return this.machines.find(x => x.id === id);
 	}
+
+	getResearchById(id: string): Research | undefined {
+		return this.research.find(x => x.id == id);
+	}
+
+	getMissingResearchPrerequisites(
+		id: string,
+		missingPrerequisites: Set<string> = new Set(),
+		visited: Set<string> = new Set(),
+	): string[] {
+		if (visited.has(id)) {
+			return Array.from(missingPrerequisites); // cycle detected
+		}
+		visited.add(id);
+
+		const research = this.getResearchById(id);
+		if (!research || !research.prerequisites) {
+			return Array.from(missingPrerequisites);
+		}
+
+		for (const prereqId of research.prerequisites) {
+			const prereq = this.getResearchById(prereqId);
+
+			if (prereq && !visited.has(prereqId)) {
+				// Only add to missing if not unlocked, but traverse all for transitivity
+				if (!prereq.unlocked) {
+					missingPrerequisites.add(prereqId);
+				}
+				this.getMissingResearchPrerequisites(prereqId, missingPrerequisites, visited);
+			}
+		}
+		return Array.from(missingPrerequisites);
+	}
+
+	markResearchAsDone(id: string) {
+		let research = this.getResearchById(id);
+		if (research === undefined) {
+			console.log("no research with id '%s' found", id);
+			return;
+		}
+		research.unlocked = true;
+		for (let unlockedRecipe of research.unlocks) {
+			let unlockedRecipeIds = unlockedRecipe.ids;
+			for (let unlockedRecipeId of unlockedRecipeIds) {
+				let recipe = this.getRecipeById(unlockedRecipeId);
+				console.log('searching for recipe with id %s', unlockedRecipeId);
+				if (recipe !== undefined) {
+					console.log('unlocked recipe %s', recipe.id);
+					recipe.available = true;
+				}
+			}
+		}
+
+		for (let missingResearch of this.getMissingResearchPrerequisites(id)) {
+			this.markResearchAsDone(missingResearch);
+		}
+	}
 }

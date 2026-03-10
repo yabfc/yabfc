@@ -8,6 +8,7 @@ type Unlock = UnlockRecipe;
 export interface ResearchInterface {
 	id: string;
 	name?: string;
+	unlocked: boolean;
 	unlocks: Unlock[];
 	prerequisites?: string[];
 }
@@ -15,12 +16,14 @@ export interface ResearchInterface {
 export default class Research {
 	id: string;
 	name?: string;
+	unlocked: boolean;
 	unlocks: Unlock[];
 	prerequisites?: string[];
 
 	constructor(research: ResearchInterface) {
 		this.id = research.id;
 		this.name = research.name;
+		this.unlocked = research.unlocked;
 		this.unlocks = research.unlocks;
 		this.prerequisites = research.prerequisites;
 	}
