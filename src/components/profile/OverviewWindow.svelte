@@ -1,7 +1,7 @@
 <script lang="ts">
-	import ItemOverview from '@/lib/components/profile/ItemOverview.svelte';
-	import MachineOverview from '@/lib/components/profile/MachineOverview.svelte';
-	import RecipeOverview from '@/lib/components/profile/RecipeOverview.svelte';
+	import ItemOverview from '@/components/profile/ItemOverview.svelte';
+	import MachineOverview from '@/components/profile/MachineOverview.svelte';
+	import RecipeOverview from '@/components/profile/RecipeOverview.svelte';
 </script>
 
 <div

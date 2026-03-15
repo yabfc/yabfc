@@ -1,8 +1,8 @@
 <script lang="ts">
-	import StageRecipeChain from '@/lib/components/shared/StageRecipeChain.svelte';
+	import StageRecipeChain from '@/components/shared/StageRecipeChain.svelte';
 	import layout from '@/lib/stage/layout';
-	import active from '@/lib/stores/active.svelte';
-	import { stage } from '@/lib/stores/stage.svelte';
+	import active from '@/stores/active.svelte';
+	import { stage } from '@/stores/stage.svelte';
 	import { type Edge, type Node } from '@xyflow/svelte';
 	import { nanoid } from 'nanoid';
 

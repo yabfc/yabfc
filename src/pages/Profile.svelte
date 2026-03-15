@@ -1,7 +1,7 @@
 <script lang="ts">
-	import ProfileLayout from '@/lib/components/profile/ProfileLayout.svelte';
-	import active from '@/lib/stores/active.svelte';
-	import profiles from '@/lib/stores/profiles.svelte';
+	import ProfileLayout from '@/components/profile/ProfileLayout.svelte';
+	import active from '@/stores/active.svelte';
+	import profiles from '@/stores/profiles.svelte';
 	import { CableCarIcon } from '@lucide/svelte';
 
 	let { pathParams }: { pathParams: string[] } = $props();

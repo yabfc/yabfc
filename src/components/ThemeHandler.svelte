@@ -4,7 +4,7 @@
  -->
 
 <script lang="ts">
-	import settings from '@/lib/stores/settings.svelte';
+	import settings from '@/stores/settings.svelte';
 
 	$effect(() => {
 		// for the system theme to take effect, we need to explicitly remove the data-theme attribute

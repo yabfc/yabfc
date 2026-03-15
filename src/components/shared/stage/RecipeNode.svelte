@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { RecipeNode } from '@/lib/models/node';
-	import active from '@/lib/stores/active.svelte';
+	import active from '@/stores/active.svelte';
 	import { FactoryIcon } from '@lucide/svelte';
 	import { Handle, Position, type NodeProps } from '@xyflow/svelte';
 

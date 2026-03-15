@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Dialog from '@/lib/components/shared/Dialog.svelte';
-	import profiles from '@/lib/stores/profiles.svelte';
+	import Dialog from '@/components/shared/Dialog.svelte';
+	import profiles from '@/stores/profiles.svelte';
 	import { FactoryIcon, HeartCrackIcon, RocketIcon } from '@lucide/svelte';
 
 	let dialog = $state<HTMLDialogElement>();

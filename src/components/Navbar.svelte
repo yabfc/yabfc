@@ -1,5 +1,5 @@
 <script lang="ts">
-	import profiles from '@/lib/stores/profiles.svelte';
+	import profiles from '@/stores/profiles.svelte';
 	import { FactoryIcon, ForkliftIcon, SettingsIcon } from '@lucide/svelte';
 </script>
 

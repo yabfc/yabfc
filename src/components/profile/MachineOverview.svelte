@@ -1,6 +1,6 @@
 <script lang="ts">
-	import SearchInput from '@/lib/components/shared/Search.svelte';
-	import active from '@/lib/stores/active.svelte';
+	import SearchInput from '@/components/shared/Search.svelte';
+	import active from '@/stores/active.svelte';
 	import { HammerIcon } from '@lucide/svelte';
 
 	let searchQuery = $state('');

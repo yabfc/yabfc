@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Dialog from '@/lib/components/shared/Dialog.svelte';
+	import Dialog from '@/components/shared/Dialog.svelte';
 	import { type BaseItemIo } from '@/lib/models/recipe';
-	import active from '@/lib/stores/active.svelte';
+	import active from '@/stores/active.svelte';
 	import { ArrowBigRightDashIcon, FactoryIcon, TestTubeDiagonalIcon } from '@lucide/svelte';
 
 	let { dialog = $bindable(), recipeId }: { dialog?: HTMLDialogElement; recipeId?: string } =

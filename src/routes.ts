@@ -1,6 +1,6 @@
-import Index from '@/lib/pages/Index.svelte';
-import Profile from '@/lib/pages/Profile.svelte';
-import Settings from '@/lib/pages/Settings.svelte';
+import Index from '@/pages/Index.svelte';
+import Profile from '@/pages/Profile.svelte';
+import Settings from '@/pages/Settings.svelte';
 import type { Component } from 'svelte';
 
 export default [

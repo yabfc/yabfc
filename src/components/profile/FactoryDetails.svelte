@@ -1,12 +1,12 @@
 <script lang="ts">
 	import FactoryCalculator from '@/lib/calculator/factory';
 	import OptimizationRequest, { FEWEST_BUILDINGS } from '@/lib/calculator/optimization';
-	import ItemSelect from '@/lib/components/shared/ItemSelect.svelte';
+	import ItemSelect from '@/components/shared/ItemSelect.svelte';
 	import Item from '@/lib/models/item';
 	import { generateNodes } from '@/lib/models/node';
-	import active from '@/lib/stores/active.svelte';
-	import alerts from '@/lib/stores/alerts.svelte';
-	import { stage } from '@/lib/stores/stage.svelte';
+	import active from '@/stores/active.svelte';
+	import alerts from '@/stores/alerts.svelte';
+	import { stage } from '@/stores/stage.svelte';
 	import { ZapIcon } from '@lucide/svelte';
 
 	let inputs = $state<{ item: Item; amount: number }[]>([]),

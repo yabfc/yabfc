@@ -1,6 +1,6 @@
 <script lang="ts">
-	import RecipeEdgeComponent from '@/lib/components/shared/stage/RecipeEdge.svelte';
-	import RecipeNodeComponent from '@/lib/components/shared/stage/RecipeNode.svelte';
+	import RecipeEdgeComponent from '@/components/shared/stage/RecipeEdge.svelte';
+	import RecipeNodeComponent from '@/components/shared/stage/RecipeNode.svelte';
 	import {
 		Background,
 		BackgroundVariant,

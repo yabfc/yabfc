@@ -1,7 +1,7 @@
 <script lang="ts">
-	import RecipeDetailsDialog from '@/lib/components/profile/RecipeDetailsDialog.svelte';
-	import SearchInput from '@/lib/components/shared/Search.svelte';
-	import active from '@/lib/stores/active.svelte';
+	import RecipeDetailsDialog from '@/components/profile/RecipeDetailsDialog.svelte';
+	import SearchInput from '@/components/shared/Search.svelte';
+	import active from '@/stores/active.svelte';
 	import { ArrowBigRightDashIcon, TestTubeDiagonalIcon } from '@lucide/svelte';
 
 	let searchQuery = $state('');

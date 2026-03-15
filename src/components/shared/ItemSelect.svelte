@@ -4,10 +4,10 @@ Renders a item multi-select with amount. Item selection via dialog.
 -->
 
 <script lang="ts">
-	import Dialog from '@/lib/components/shared/Dialog.svelte';
-	import Search from '@/lib/components/shared/Search.svelte';
+	import Dialog from '@/components/shared/Dialog.svelte';
+	import Search from '@/components/shared/Search.svelte';
 	import Item from '@/lib/models/item';
-	import active from '@/lib/stores/active.svelte';
+	import active from '@/stores/active.svelte';
 	import { AnvilIcon, PlusIcon, Trash2Icon } from '@lucide/svelte';
 
 	let { items = $bindable([]) }: { items: { item: Item; amount: number }[] } = $props();

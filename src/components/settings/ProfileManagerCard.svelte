@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Profile from '@/lib/models/profile';
-	import alerts from '@/lib/stores/alerts.svelte';
-	import profiles from '@/lib/stores/profiles.svelte';
+	import alerts from '@/stores/alerts.svelte';
+	import profiles from '@/stores/profiles.svelte';
 	import { FactoryIcon, Trash2Icon } from '@lucide/svelte';
 	import { nanoid } from 'nanoid';
 
