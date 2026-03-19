@@ -19,7 +19,7 @@
 		"@tsconfig/svelte": "^5.0.8",
 		"@xyflow/svelte": "^1.5.1",
 		"daisyui": "^5.5.19",
-		"nanoid": "^5.1.6",
+		"nanoid": "^5.1.7",
 		"prettier": "^3.8.1",
 		"prettier-plugin-svelte": "^3.5.1",
 		"prettier-plugin-tailwindcss": "^0.7.2",
