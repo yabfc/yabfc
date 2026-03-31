@@ -1,5 +1,6 @@
 import type { Edge, ItemIo, RecipeNode } from '@/lib/factory/recipeNode';
 import type Profile from '@/lib/models/profile';
+import type Recipe from '@/lib/models/recipe';
 
 export function calculateEdges(
 	profile: Profile,
@@ -52,6 +53,13 @@ export function calculateEdges(
 	});
 
 	return edges;
+}
+
+/** Get all recipes (sorted by priority) based on the given item */
+export function getRecipes(profile: Profile, itemOutput: string): Recipe[] {
+	let recipes = profile.getRecipesByItemOutputId(itemOutput);
+	recipes.sort((a, b) => (a.priority < b.priority ? -1 : 1));
+	return recipes;
 }
 
 export function calculateRecipeNodeModifier(profile: Profile, node: RecipeNode) {
