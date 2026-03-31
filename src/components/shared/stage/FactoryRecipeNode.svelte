@@ -20,6 +20,13 @@
 		outputs = $derived(calculateOutput(active.profile, node));
 
 	const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 3 });
+
+	let machine = $state<string>();
+	const addMachine = () => {
+		if (!machine) return;
+
+		node.machines.push({ machineId: machine, efficiency: 1, speed: 1 });
+	};
 </script>
 
 <Handle
@@ -103,6 +110,18 @@
 			<p class="text-xs text-center text-base-content/60">No machines added</p>
 		{/each}
 	</ul>
+
+	<div class="join w-full pt-4">
+		<select bind:value={machine} class="select select-xs join-item">
+			{#each active.profile?.getMachinesByRecipe(recipe?.category || '') as machine}
+				<option value={machine.id}>{machine.getDisplayName()}</option>
+			{:else}
+				<option disabled value={undefined}>No machine available</option>
+			{/each}
+		</select>
+
+		<button onclick={addMachine} class="btn btn-xs btn-soft join-item">Add machine</button>
+	</div>
 </div>
 
 <Handle
