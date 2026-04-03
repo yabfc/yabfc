@@ -62,8 +62,12 @@ export function getRecipes(profile: Profile, itemOutput: string): Recipe[] {
 	return recipes;
 }
 
-export function calculateRecipeNodeModifier(profile: Profile, node: RecipeNode) {
+export function calculateRecipeNodeModifier(
+	profile: Profile | undefined,
+	node: RecipeNode | undefined,
+) {
 	let modifier = { input: 0, output: 0 };
+	if (!profile || !node) return modifier;
 
 	const recipe = profile.getRecipeById(node.recipeId);
 	if (!recipe) return modifier;
@@ -80,9 +84,9 @@ export function calculateRecipeNodeModifier(profile: Profile, node: RecipeNode) 
 }
 
 /** Calculates the output for each output of a RecipeNode */
-export function calculateOutput(profile: Profile | undefined, node: RecipeNode) {
+export function calculateOutput(profile: Profile | undefined, node: RecipeNode | undefined) {
 	let outputs: { [key: string]: number } = {};
-	if (!profile) return outputs;
+	if (!profile || !node) return outputs;
 
 	const recipe = profile.getRecipeById(node.recipeId);
 	if (!recipe) return outputs;
@@ -97,9 +101,9 @@ export function calculateOutput(profile: Profile | undefined, node: RecipeNode) 
 }
 
 /** Calculates the input for each input of a RecipeNode */
-export function calculateInput(profile: Profile | undefined, node: RecipeNode) {
+export function calculateInput(profile: Profile | undefined, node: RecipeNode | undefined) {
 	let inputs: { [key: string]: number } = {};
-	if (!profile) return inputs;
+	if (!profile || !node) return inputs;
 
 	const recipe = profile.getRecipeById(node.recipeId);
 	if (!recipe) return inputs;

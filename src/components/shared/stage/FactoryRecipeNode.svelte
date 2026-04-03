@@ -14,7 +14,7 @@
 
 	let recipe = $derived(active.profile?.getRecipeById(data.recipeNode.recipeId));
 
-	let node = $derived(factory.recipeNodes[data.recipeNode.id]);
+	let node = $derived<RecipeNode | undefined>(factory.recipeNodes[data.recipeNode.id]);
 
 	let inputs = $derived(calculateInput(active.profile, node)),
 		outputs = $derived(calculateOutput(active.profile, node));
@@ -25,7 +25,7 @@
 	const addMachine = () => {
 		if (!machine) return;
 
-		node.machines.push({ machineId: machine, efficiency: 1, speed: 1 });
+		node?.machines.push({ machineId: machine, efficiency: 1, speed: 1 });
 	};
 </script>
 
