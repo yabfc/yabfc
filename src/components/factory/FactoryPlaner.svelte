@@ -6,18 +6,22 @@
 	async function calculate() {
 		if (!active.profile) return;
 
-		const out = { id: 'iron-plate', amount: 10 };
+		const out = [
+			{ id: 'iron-plate', amount: 10 },
+			{ id: 'iron-rod', amount: 10 },
+		];
 
-		factory.outputs = {
-			[out.id]: out,
-		};
+		factory.outputs = Object.fromEntries(out.map(item => [item.id, item]));
 
 		factory.inputs = {
 			'ore-iron': { id: 'ore-iron', amount: 50 },
 		};
 
 		factory.recipeNodes = Object.fromEntries(
-			getRecipeChain(active.profile, out.id).map(x => [x.id, x]),
+			getRecipeChain(
+				active.profile,
+				out.map(x => x.id),
+			).map(x => [x.id, x]),
 		);
 
 		factory.edges = calculateEdges(

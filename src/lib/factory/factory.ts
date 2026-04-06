@@ -64,21 +64,33 @@ export function getRecipes(profile: Profile, itemOutput: string): Recipe[] {
 }
 
 /** @todo this is in early stage and subject to change */
-export function getRecipeChain(profile: Profile, itemOutput: string): RecipeNode[] {
-	const recipe = getRecipes(profile, itemOutput)[0];
+export function getRecipeChain(
+	profile: Profile,
+	itemOutputs: string[],
+	seenRecipes = new Set<string>(),
+): RecipeNode[] {
+	return itemOutputs.flatMap(itemOutput => {
+		const recipe = getRecipes(profile, itemOutput)[0];
 
-	if (!recipe) return []; // TODO do we need to handle this?
+		if (!recipe) return []; // TODO do we need to handle this?
+		if (recipe.in.length === 0) return [];
+		if (seenRecipes.has(recipe.id)) return [];
 
-	if (recipe.in.length === 0) return [];
+		seenRecipes.add(recipe.id);
 
-	return [
-		{
-			id: nanoid(),
-			recipeId: recipe.id,
-			machines: [],
-		},
-		...getRecipeChain(profile, recipe.in[0].id),
-	];
+		return [
+			{
+				id: nanoid(),
+				recipeId: recipe.id,
+				machines: [],
+			},
+			...getRecipeChain(
+				profile,
+				recipe.in.map(x => x.id),
+				seenRecipes,
+			),
+		];
+	});
 }
 
 export function calculateRecipeNodeModifier(
