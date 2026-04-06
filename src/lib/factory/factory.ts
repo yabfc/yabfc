@@ -1,6 +1,7 @@
 import type { Edge, ItemIo, RecipeNode } from '@/lib/factory/recipeNode';
 import type Profile from '@/lib/models/profile';
 import type Recipe from '@/lib/models/recipe';
+import { nanoid } from 'nanoid';
 
 export function calculateEdges(
 	profile: Profile,
@@ -60,6 +61,24 @@ export function getRecipes(profile: Profile, itemOutput: string): Recipe[] {
 	let recipes = profile.getRecipesByItemOutputId(itemOutput);
 	recipes.sort((a, b) => (a.priority < b.priority ? -1 : 1));
 	return recipes;
+}
+
+/** @todo this is in early stage and subject to change */
+export function getRecipeChain(profile: Profile, itemOutput: string): RecipeNode[] {
+	const recipe = getRecipes(profile, itemOutput)[0];
+
+	if (!recipe) return []; // TODO do we need to handle this?
+
+	if (recipe.in.length === 0) return [];
+
+	return [
+		{
+			id: nanoid(),
+			recipeId: recipe.id,
+			machines: [],
+		},
+		...getRecipeChain(profile, recipe.in[0].id),
+	];
 }
 
 export function calculateRecipeNodeModifier(

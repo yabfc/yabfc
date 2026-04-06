@@ -1,10 +1,24 @@
 <script lang="ts">
-	import { calculateEdges } from '@/lib/factory/factory';
+	import { calculateEdges, getRecipeChain } from '@/lib/factory/factory';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
 
 	async function calculate() {
 		if (!active.profile) return;
+
+		const out = { id: 'iron-plate', amount: 10 };
+
+		factory.outputs = {
+			[out.id]: out,
+		};
+
+		factory.inputs = {
+			'ore-iron': { id: 'ore-iron', amount: 50 },
+		};
+
+		factory.recipeNodes = Object.fromEntries(
+			getRecipeChain(active.profile, out.id).map(x => [x.id, x]),
+		);
 
 		factory.edges = calculateEdges(
 			active.profile,
