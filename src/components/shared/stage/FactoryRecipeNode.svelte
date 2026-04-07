@@ -25,7 +25,7 @@
 	const addMachine = () => {
 		if (!machine) return;
 
-		node?.machines.push({ machineId: machine, machineCount: 1, efficiency: 1, speed: 1 });
+		node?.machines.push({ machineId: machine, machineCount: 1, productivity: 1, speed: 1 });
 	};
 
 	let alternatives = $derived.by(() => {
@@ -119,15 +119,20 @@
 					</label>
 
 					<label class="floating-label">
-						<span>Speed</span>
-						<input type="number" bind:value={config.speed} class="input input-sm" />
+						<span>{active.profile?.getSpeedOverrideName()}</span>
+						<input
+							type="number"
+							bind:value={config.speed}
+							step="0.1"
+							class="input input-sm"
+						/>
 					</label>
 
 					<label class="floating-label">
-						<span>Efficiency</span>
+						<span>{active.profile?.getProductivityOverrideName()}</span>
 						<input
 							type="number"
-							bind:value={config.efficiency}
+							bind:value={config.productivity}
 							step="0.1"
 							class="input input-sm"
 						/>

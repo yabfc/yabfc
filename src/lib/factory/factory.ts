@@ -132,7 +132,7 @@ export function calculateRecipeNodeModifier(
 		const baseSpeed =
 			profile.getMachineById(m.machineId)?.getBaseCraftingSpeed(profile.machineEffects) ?? 1;
 
-		const machineSpeed = baseSpeed * m.speed * m.efficiency;
+		const machineSpeed = baseSpeed * m.speed * m.productivity;
 		const contribution = m.machineCount * machineSpeed;
 
 		return sum + contribution;

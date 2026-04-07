@@ -94,4 +94,12 @@ export default class Profile {
 	getMachineById(id: string) {
 		return this.machines.find(x => x.id === id);
 	}
+
+	getProductivityOverrideName(): string {
+		return this.settings.effectNameOverride?.productivity ?? 'Productivity';
+	}
+
+	getSpeedOverrideName(): string {
+		return this.settings.effectNameOverride?.speed ?? 'Speed';
+	}
 }

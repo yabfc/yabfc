@@ -1,7 +1,7 @@
 export interface MachineConfiguration {
 	machineId: string;
 	machineCount: number;
-	efficiency: number;
+	productivity: number;
 	speed: number;
 }
 
