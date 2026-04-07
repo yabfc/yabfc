@@ -3,7 +3,7 @@
 	import type { MachineConfiguration, RecipeNode } from '@/lib/factory/recipeNode';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
-	import { FactoryIcon } from '@lucide/svelte';
+	import { FactoryIcon, PlusIcon } from '@lucide/svelte';
 	import { Handle, Position, type Node, type NodeProps } from '@xyflow/svelte';
 
 	let {
@@ -146,7 +146,9 @@
 			{/each}
 		</select>
 
-		<button onclick={addMachine} class="btn btn-xs btn-soft join-item">Add machine</button>
+		<button onclick={addMachine} class="btn btn-xs btn-soft join-item"
+			><PlusIcon size="13" />
+		</button>
 	</div>
 </div>
 
