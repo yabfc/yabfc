@@ -272,7 +272,9 @@ export default class Profile {
 	}
 
 	getMachinesByRecipe(recipeCategory: string): Machine[] {
-		return this.machines.filter(x => x.recipeCategories.includes(recipeCategory));
+		return this.machines
+			.filter(x => x.recipeCategories.includes(recipeCategory))
+			.sort((a, b) => a.id.localeCompare(b.id));
 	}
 
 	getMachineById(id: string) {
