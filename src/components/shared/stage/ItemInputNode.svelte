@@ -1,15 +1,12 @@
 <script lang="ts">
 	import type { ItemIo } from '@/lib/factory/recipeNode';
 	import active from '@/stores/active.svelte';
-	import factory from '@/stores/factory.svelte';
 	import { AnvilIcon } from '@lucide/svelte';
 	import { Handle, Position, type Node, type NodeProps } from '@xyflow/svelte';
 
 	let { data, sourcePosition = Position.Right }: NodeProps<Node<{ item: ItemIo }>> = $props();
 
 	const item = $derived(active.profile?.getItemById(data.item.id));
-
-	let input = $derived(factory.inputs[data.item.id]);
 </script>
 
 <div
@@ -24,7 +21,7 @@
 	<div class="pt-4">
 		<label class="floating-label">
 			<span>Amount</span>
-			<input type="number" bind:value={input.amount} class="input input-sm" />
+			<input type="number" bind:value={data.item.amount} class="input input-sm" />
 		</label>
 	</div>
 </div>
