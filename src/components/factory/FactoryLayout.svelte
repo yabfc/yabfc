@@ -1,8 +1,8 @@
 <script lang="ts">
-	import FactoryPlaner from '@/components/factory/FactoryPlaner.svelte';
+	import FactoryPlanner from '@/components/factory/FactoryPlanner.svelte';
 	import FactoryStage from '@/components/factory/FactoryStage.svelte';
 </script>
 
-<FactoryPlaner />
+<FactoryPlanner />
 
 <FactoryStage />
