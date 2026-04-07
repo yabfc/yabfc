@@ -3,7 +3,7 @@
 	import type { MachineConfiguration, RecipeNode } from '@/lib/factory/recipeNode';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
-	import { FactoryIcon, PlusIcon } from '@lucide/svelte';
+	import { FactoryIcon, PlusIcon, Trash2Icon } from '@lucide/svelte';
 	import { Handle, Position, type Node, type NodeProps } from '@xyflow/svelte';
 
 	let {
@@ -27,6 +27,11 @@
 
 		node?.machines.push({ machineId: machine, machineCount: 1, productivity: 1, speed: 1 });
 	};
+
+	function deleteMachine(config: MachineConfiguration) {
+		if (!node) return;
+		node.machines = node.machines.filter(x => x !== config);
+	}
 
 	let alternatives = $derived.by(() => {
 		if (!active.profile) return undefined;
@@ -104,8 +109,17 @@
 
 	<ul class="text-base-content/80 flex w-full flex-col gap-1 text-sm">
 		{#snippet factory(name: string, config: MachineConfiguration)}
-			<li>
-				<p class="truncate py-2">{name}</p>
+			<li class="flex flex-col gap-2">
+				<div class="flex items-center gap-2">
+					<p class="flex-1 truncate py-2">{name}</p>
+
+					<button
+						class="btn btn-ghost btn-xs btn-square text-error"
+						onclick={() => deleteMachine(config)}
+					>
+						<Trash2Icon size="12" />
+					</button>
+				</div>
 
 				<div class="flex gap-2">
 					<label class="floating-label">
