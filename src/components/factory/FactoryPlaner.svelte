@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { calculateEdges, getRecipeChain } from '@/lib/factory/factory';
+	import { calculateEdges, getRecipeChain, getResourceInputs } from '@/lib/factory/factory';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
 
@@ -7,22 +7,20 @@
 		if (!active.profile) return;
 
 		const out = [
-			{ id: 'iron-plate', amount: 10 },
+			{ id: 'nuclear-fuel-rod', amount: 10 },
 			{ id: 'iron-rod', amount: 10 },
+			{ id: 'advanced-circuit', amount: 10 },
 		];
 
 		factory.outputs = Object.fromEntries(out.map(item => [item.id, item]));
 
-		factory.inputs = {
-			'ore-iron': { id: 'ore-iron', amount: 50 },
-		};
-
-		factory.recipeNodes = Object.fromEntries(
-			getRecipeChain(
-				active.profile,
-				out.map(x => x.id),
-			).map(x => [x.id, x]),
+		const recipeChain = getRecipeChain(
+			active.profile,
+			out.map(x => x.id),
 		);
+
+		factory.recipeNodes = Object.fromEntries(recipeChain.map(x => [x.id, x]));
+		factory.inputs = getResourceInputs(active.profile, recipeChain);
 
 		factory.edges = calculateEdges(
 			active.profile,

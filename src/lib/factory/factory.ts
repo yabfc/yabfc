@@ -14,7 +14,7 @@ export function calculateEdges(
 	// connect inputs to recipe nodes
 	inputs.forEach(input => {
 		recipeNodes
-			.filter(x => profile.getRecipeById(x.recipeId)?.in.some(y => y.id === input.id))
+			.filter(x => profile.getRecipeById(x.recipeId)?.out.some(y => y.id === input.id))
 			.forEach(recipeNode => {
 				// TODO if item is sent to multiple recipe nodes, amount is wrong
 				edges.push({ from: input.id, to: recipeNode.id, amount: input.amount });
@@ -73,7 +73,7 @@ export function getRecipeChain(
 		const recipe = getRecipes(profile, itemOutput)[0];
 
 		if (!recipe) return []; // TODO do we need to handle this?
-		if (recipe.in.length === 0) return [];
+		//if (recipe.in.length === 0) return [];
 		if (seenRecipes.has(recipe.id)) return [];
 
 		seenRecipes.add(recipe.id);
@@ -91,6 +91,29 @@ export function getRecipeChain(
 			),
 		];
 	});
+}
+
+export function getResourceInputs(
+	profile: Profile,
+	recipeChain: RecipeNode[],
+): Record<string, ItemIo> {
+	const result: Record<string, ItemIo> = {};
+	const inputs = recipeChain.filter(x => profile.getRecipeById(x.recipeId)?.in.length === 0);
+	for (const node of inputs) {
+		const recipe = profile.getRecipeById(node.recipeId);
+		if (!recipe) continue;
+
+		const output = recipe.out[0];
+		if (!output) continue;
+
+		if (!result[output.id]) {
+			result[output.id] = {
+				id: output.id,
+				amount: 0,
+			};
+		}
+	}
+	return result;
 }
 
 export function calculateRecipeNodeModifier(
