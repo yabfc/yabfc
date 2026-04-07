@@ -1,5 +1,6 @@
 export interface MachineConfiguration {
 	machineId: string;
+	machineCount: number;
 	efficiency: number;
 	speed: number;
 }

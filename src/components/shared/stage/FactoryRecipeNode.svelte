@@ -25,7 +25,7 @@
 	const addMachine = () => {
 		if (!machine) return;
 
-		node?.machines.push({ machineId: machine, efficiency: 1, speed: 1 });
+		node?.machines.push({ machineId: machine, machineCount: 1, efficiency: 1, speed: 1 });
 	};
 
 	let alternatives = $derived.by(() => {
@@ -108,6 +108,16 @@
 				<p class="truncate py-2">{name}</p>
 
 				<div class="flex gap-2">
+					<label class="floating-label">
+						<span>Amount</span>
+						<input
+							type="number"
+							bind:value={config.machineCount}
+							step="1"
+							class="input input-sm"
+						/>
+					</label>
+
 					<label class="floating-label">
 						<span>Speed</span>
 						<input type="number" bind:value={config.speed} class="input input-sm" />
