@@ -20,8 +20,11 @@
 
 	let node = $derived<RecipeNode | undefined>(factory.recipeNodes[data.recipeNode.id]);
 
-	let inputs = $derived(calculateInput(active.profile, node)),
-		outputs = $derived(calculateOutput(active.profile, node));
+	let actualInputs = $derived(calculateInput(active.profile, node)),
+		actualOutputs = $derived(calculateOutput(active.profile, node));
+
+	let targetInputs = $derived(data.targetInputs),
+		targetOutputs = $derived(data.targetOutputs);
 
 	const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 3 });
 
@@ -91,12 +94,13 @@
 		</div>
 	{/if}
 
+	<p class="text-base-content/75 flex self-start text-xs font-bold">Target production</p>
 	<div class="flex w-full justify-between gap-2 p-2 text-xs">
 		<div>
 			<p class="text-base-content/50 font-bold uppercase">Input</p>
 
 			<ul>
-				{#each Object.entries(inputs) as input}
+				{#each Object.entries(targetInputs) as input}
 					<li class="text-base-content/80">
 						{active.profile?.getItemById(input[0])?.getDisplayName()}:
 						{formatter.format(input[1])}
@@ -111,7 +115,40 @@
 			<p class="text-base-content/50 font-bold uppercase">Output</p>
 
 			<ul>
-				{#each Object.entries(outputs) as output}
+				{#each Object.entries(targetOutputs) as output}
+					<li class="text-base-content/80">
+						{active.profile?.getItemById(output[0])?.getDisplayName()}:
+						{formatter.format(output[1])}
+					</li>
+				{:else}
+					<li class="text-base-content/80">No output available</li>
+				{/each}
+			</ul>
+		</div>
+	</div>
+
+	<p class="text-base-content/75 flex self-start text-xs font-bold">Actual production</p>
+	<div class="flex w-full justify-between gap-2 p-2 text-xs">
+		<div>
+			<p class="text-base-content/50 font-bold uppercase">Input</p>
+
+			<ul>
+				{#each Object.entries(actualInputs) as input}
+					<li class="text-base-content/80">
+						{active.profile?.getItemById(input[0])?.getDisplayName()}:
+						{formatter.format(input[1])}
+					</li>
+				{:else}
+					<li class="text-base-content/80">No input available</li>
+				{/each}
+			</ul>
+		</div>
+
+		<div>
+			<p class="text-base-content/50 font-bold uppercase">Output</p>
+
+			<ul>
+				{#each Object.entries(actualOutputs) as output}
 					<li class="text-base-content/80">
 						{active.profile?.getItemById(output[0])?.getDisplayName()}:
 						{formatter.format(output[1])}

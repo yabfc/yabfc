@@ -27,9 +27,6 @@ export function calculateEdges(
 
 		if (!recipe) return;
 
-		// TODO amount
-		const outputModifier = calculateRecipeNodeModifier(profile, outputRecipeNode).output;
-
 		recipe.out.forEach(output => {
 			recipeNodes
 				.filter(x => profile.getRecipeById(x.recipeId)?.in.some(y => y.id === output.id))
@@ -37,7 +34,7 @@ export function calculateEdges(
 					edges.push({
 						from: outputRecipeNode.id,
 						to: inputNode.id,
-						amount: output.amount * outputModifier,
+						amount: 0,
 					});
 				});
 
@@ -47,7 +44,7 @@ export function calculateEdges(
 					edges.push({
 						from: outputRecipeNode.id,
 						to: outputNode.id,
-						amount: output.amount * outputModifier,
+						amount: 0,
 					});
 				});
 		});
@@ -281,4 +278,112 @@ export function calculateInput(profile: Profile | undefined, node: RecipeNode | 
 	});
 
 	return inputs;
+}
+
+export type RecipeNodeTargets = Record<
+	string,
+	{
+		targetInputs: Record<string, number>;
+		targetOutputs: Record<string, number>;
+	}
+>;
+
+export function calculateRecipeNodeTargets(profile: Profile, factory: Factory): RecipeNodeTargets {
+	const targets: RecipeNodeTargets = {};
+	const edgesToId = factory.edges.reduce<Record<string, Edge[]>>((acc, edge) => {
+		(acc[edge.to] ??= []).push(edge);
+		return acc;
+	}, {});
+
+	for (const node of Object.values(factory.recipeNodes)) {
+		targets[node.id] = {
+			targetInputs: {},
+			targetOutputs: {},
+		};
+	}
+
+	function findUpstreamProducerNode(consumerNodeId: string, itemId: string): string | undefined {
+		const edges = edgesToId[consumerNodeId];
+		if (!edges) return;
+
+		for (const edge of edges) {
+			const sourceNode = factory.recipeNodes[edge.from];
+			if (!sourceNode) continue;
+
+			const sourceRecipe = profile.getRecipeById(sourceNode.recipeId);
+			if (!sourceRecipe) continue;
+
+			if (sourceRecipe.out.some(x => x.id === itemId)) {
+				return sourceNode.id;
+			}
+		}
+
+		return undefined;
+	}
+
+	function propagateDemand(
+		nodeId: string,
+		requiredOutputItemId: string,
+		requiredOutputAmount: number,
+		path = new Set<string>(),
+	) {
+		if (path.has(nodeId)) return;
+		const node = factory.recipeNodes[nodeId];
+		if (!node) return;
+
+		const recipe = profile.getRecipeById(node.recipeId);
+		if (!recipe) return;
+
+		const producedPerCycle = recipe.out.find(x => x.id === requiredOutputItemId)?.amount ?? 0;
+		if (producedPerCycle <= 0) return;
+
+		const cyclesNeeded = requiredOutputAmount / producedPerCycle;
+
+		const nodeTargets = targets[nodeId];
+		if (!nodeTargets) return;
+
+		for (const output of recipe.out) {
+			const requiredOutputAmount = output.amount * cyclesNeeded;
+			nodeTargets.targetOutputs[output.id] =
+				(nodeTargets.targetInputs[output.id] ?? 0) + requiredOutputAmount;
+		}
+
+		for (const input of recipe.in) {
+			const requiredInputAmount = input.amount * cyclesNeeded;
+			nodeTargets.targetInputs[input.id] =
+				(nodeTargets.targetInputs[input.id] ?? 0) + requiredInputAmount;
+		}
+
+		const nextPath = new Set(path);
+		nextPath.add(nodeId);
+
+		// propagate required inputs upstream
+		for (const input of recipe.in) {
+			const requiredInputAmount = input.amount * cyclesNeeded;
+			const upstreamNodeId = findUpstreamProducerNode(nodeId, input.id);
+
+			// no upstream recipe node => this is an input
+			if (!upstreamNodeId) continue;
+
+			propagateDemand(upstreamNodeId, input.id, requiredInputAmount, nextPath);
+		}
+	}
+
+	for (const output of Object.values(factory.outputs)) {
+		for (const edge of factory.edges) {
+			if (edge.to !== output.id) continue;
+
+			const sourceNode = factory.recipeNodes[edge.from];
+			if (!sourceNode) continue;
+
+			const sourceRecipe = profile.getRecipeById(sourceNode.recipeId);
+			if (!sourceRecipe) continue;
+
+			if (!sourceRecipe.out.some(x => x.id === output.id)) continue;
+
+			propagateDemand(sourceNode.id, output.id, output.amount);
+		}
+	}
+
+	return targets;
 }

@@ -13,6 +13,8 @@ export interface RecipeNode {
 
 export type RecipeNodeData = Record<string, unknown> & {
 	recipeNode: RecipeNode;
+	targetInputs: { [key: string]: number };
+	targetOutputs: { [key: string]: number };
 	onRecipeChange: (nodeId: string, recipeId: string) => void;
 };
 

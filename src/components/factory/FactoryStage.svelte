@@ -3,7 +3,7 @@
 	import ItemInputNode from '@/components/shared/stage/ItemInputNode.svelte';
 	import ItemOutputNode from '@/components/shared/stage/ItemOutputNode.svelte';
 	import RecipeEdgeComponent from '@/components/shared/stage/RecipeEdge.svelte';
-	import { rebuildFactory } from '@/lib/factory/factory';
+	import { calculateRecipeNodeTargets, rebuildFactory } from '@/lib/factory/factory';
 	import layout from '@/lib/stage/layout';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
@@ -22,12 +22,16 @@
 	const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 3 });
 
 	$effect(() => {
+		if (!active.profile) return;
+		const recipeNodeTargets = calculateRecipeNodeTargets(active.profile, factory);
 		let newNodes: Node[] = Object.values(factory.recipeNodes).map(x => ({
 			id: x.id,
 			type: 'recipe',
 			position: { x: 0, y: 0 },
 			data: {
 				recipeNode: x,
+				targetInputs: recipeNodeTargets[x.id]?.targetInputs ?? {},
+				targetOutputs: recipeNodeTargets[x.id]?.targetOutputs ?? {},
 				onRecipeChange: (nodeId: string, recipeId: string) => {
 					if (!active.profile) return;
 					rebuildFactory(active.profile, factory, nodeId, recipeId);
