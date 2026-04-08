@@ -18,6 +18,11 @@ export type RecipeNodeData = Record<string, unknown> & {
 	onRecipeChange: (nodeId: string, recipeId: string) => void;
 };
 
+export type ItemOutputNodeData = Record<string, unknown> & {
+	item: ItemIo;
+	onAmountChange: (itemId: string, amount: number) => void;
+};
+
 export interface ItemIo {
 	id: string;
 	amount: number;

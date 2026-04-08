@@ -1,12 +1,22 @@
 <script lang="ts">
-	import type { ItemIo } from '@/lib/factory/recipeNode';
+	import type { ItemIo, ItemOutputNodeData } from '@/lib/factory/recipeNode';
 	import active from '@/stores/active.svelte';
 	import { AnvilIcon } from '@lucide/svelte';
 	import { Handle, Position, type Node, type NodeProps } from '@xyflow/svelte';
 
-	let { data, targetPosition = Position.Left }: NodeProps<Node<{ item: ItemIo }>> = $props();
+	let { data, targetPosition = Position.Left }: NodeProps<Node<ItemOutputNodeData>> = $props();
 
 	const item = $derived(active.profile?.getItemById(data.item.id));
+
+	let amount = $state(0);
+
+	$effect(() => {
+		amount = data.item.amount;
+	});
+
+	function handleInput() {
+		data.onAmountChange(data.item.id, Number(amount) || 0);
+	}
 </script>
 
 <Handle
@@ -27,7 +37,12 @@
 	<div class="pt-4">
 		<label class="floating-label">
 			<span>Amount</span>
-			<input type="number" bind:value={data.item.amount} class="input input-sm" />
+			<input
+				type="number"
+				bind:value={amount}
+				onchange={handleInput}
+				class="input input-sm"
+			/>
 		</label>
 	</div>
 </div>

@@ -3,7 +3,11 @@
 	import ItemInputNode from '@/components/shared/stage/ItemInputNode.svelte';
 	import ItemOutputNode from '@/components/shared/stage/ItemOutputNode.svelte';
 	import RecipeEdgeComponent from '@/components/shared/stage/RecipeEdge.svelte';
-	import { calculateRecipeNodeTargets, rebuildFactory } from '@/lib/factory/factory';
+	import {
+		calculateRecipeNodeTargets,
+		rebuildFactory,
+		type RecipeNodeTargets,
+	} from '@/lib/factory/factory';
 	import layout from '@/lib/stage/layout';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
@@ -17,21 +21,25 @@
 	import { nanoid } from 'nanoid';
 
 	let nodes = $state.raw<Node[]>([]),
-		edges = $state.raw<Edge[]>([]);
+		edges = $state.raw<Edge[]>([]),
+		recipeNodeTargetIO = $state<RecipeNodeTargets>({});
 
 	const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 3 });
 
 	$effect(() => {
 		if (!active.profile) return;
-		const recipeNodeTargets = calculateRecipeNodeTargets(active.profile, factory);
+		recipeNodeTargetIO = calculateRecipeNodeTargets(active.profile, factory);
+	});
+
+	$effect(() => {
 		let newNodes: Node[] = Object.values(factory.recipeNodes).map(x => ({
 			id: x.id,
 			type: 'recipe',
 			position: { x: 0, y: 0 },
 			data: {
 				recipeNode: x,
-				targetInputs: recipeNodeTargets[x.id]?.targetInputs ?? {},
-				targetOutputs: recipeNodeTargets[x.id]?.targetOutputs ?? {},
+				targetInputs: recipeNodeTargetIO[x.id]?.targetInputs ?? {},
+				targetOutputs: recipeNodeTargetIO[x.id]?.targetOutputs ?? {},
 				onRecipeChange: (nodeId: string, recipeId: string) => {
 					if (!active.profile) return;
 					rebuildFactory(active.profile, factory, nodeId, recipeId);
@@ -55,7 +63,17 @@
 				id: x.id,
 				type: 'itemOutput',
 				position: { x: 0, y: 0 },
-				data: { item: x },
+				data: {
+					item: x,
+					onAmountChange: (itemId: string, amount: number) => {
+						if (!active.profile) return;
+						factory.outputs[itemId] = {
+							...factory.outputs[itemId],
+							amount: amount,
+						};
+						recipeNodeTargetIO = calculateRecipeNodeTargets(active.profile, factory);
+					},
+				},
 			})),
 		);
 
