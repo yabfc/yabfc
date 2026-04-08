@@ -65,7 +65,7 @@
 />
 
 <div
-	class="rounded-box bg-base-100 border-base-content/10 flex w-56 flex-col items-center gap-1 border p-4"
+	class="rounded-box bg-base-100 border-base-content/10 flex w-72 flex-col items-center gap-1 border p-4"
 	class:pt-10={alternatives}
 >
 	<FactoryIcon size="32" class="text-secondary/70" />
