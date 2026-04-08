@@ -143,6 +143,7 @@
 						<input
 							type="number"
 							bind:value={config.machineCount}
+							min="1"
 							step="1"
 							class="input input-sm"
 						/>
@@ -153,6 +154,7 @@
 						<input
 							type="number"
 							bind:value={config.speed}
+							min="0"
 							step="0.1"
 							class="input input-sm"
 						/>
@@ -163,6 +165,7 @@
 						<input
 							type="number"
 							bind:value={config.productivity}
+							min="0"
 							step="0.1"
 							class="input input-sm"
 						/>
