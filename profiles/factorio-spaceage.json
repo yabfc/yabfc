@@ -14562,6 +14562,24 @@
 			"prerequisites": ["cryogenic-science-pack"]
 		}
 	],
+	"conveyors": [
+		{
+			"id": "transport-belt",
+			"speed": 15.0
+		},
+		{
+			"id": "fast-transport-belt",
+			"speed": 30.0
+		},
+		{
+			"id": "express-transport-belt",
+			"speed": 45.0
+		},
+		{
+			"id": "turbo-transport-belt",
+			"speed": 60.0
+		}
+	],
 	"settings": {
 		"defaultDuration": 1,
 		"allRecipesUnlocked": true,
