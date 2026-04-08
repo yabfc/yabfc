@@ -30,7 +30,7 @@
 	<div class="flex flex-col gap-2 py-4">
 		{#each $profiles as profile (profile.id)}
 			<div class="indicator w-full">
-				<a href="#/p/{profile.id}" class="btn btn-block btn-xl dark:btn-soft">
+				<a href="#/f/{profile.id}" class="btn btn-block btn-xl dark:btn-soft">
 					{profile.name}
 				</a>
 			</div>

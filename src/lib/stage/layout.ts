@@ -2,7 +2,7 @@ import dagre from '@dagrejs/dagre';
 import { Position, type Edge, type Node } from '@xyflow/svelte';
 
 // TODO come up with something better to calculate the layout
-const NODE_WIDTH = 200,
+const NODE_WIDTH = 280,
 	NODE_HEIGHT = 160;
 
 /** Layouts the nodes and edges and returns the updated elements. */

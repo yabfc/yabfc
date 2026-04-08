@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ProfileLayout from '@/components/profile/ProfileLayout.svelte';
+	import FactoryLayout from '@/components/factory/FactoryLayout.svelte';
 	import active from '@/stores/active.svelte';
 	import profiles from '@/stores/profiles.svelte';
 	import { CableCarIcon } from '@lucide/svelte';
@@ -13,7 +13,7 @@
 </script>
 
 {#if active.profile}
-	<ProfileLayout />
+	<FactoryLayout />
 {:else}
 	<div class="flex min-h-screen flex-col items-center justify-center gap-4 p-8 pt-28">
 		<div>

@@ -1,5 +1,3 @@
-import type { EffectConfiguration } from '@/lib/models/effect';
-
 export interface BaseItemIo {
 	id: string;
 	amount: number;
@@ -7,19 +5,6 @@ export interface BaseItemIo {
 
 export interface RequestedBaseItemIo extends BaseItemIo {
 	exact: boolean;
-}
-
-export interface RecipeVariant {
-	id: string;
-	highsId: string;
-	recipeId: string;
-	recipePriority: number;
-	machineId: string;
-	in: BaseItemIo[];
-	out: BaseItemIo[];
-	requiredPower: number;
-	usedEffectModuleIds: EffectConfiguration[];
-	amount?: number;
 }
 
 export interface RecipeInterface {

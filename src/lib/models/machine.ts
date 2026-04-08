@@ -1,4 +1,4 @@
-import EffectModule, { type EffectChoice, type EffectConfiguration } from '@/lib/models/effect';
+import EffectModule, { type EffectChoice } from '@/lib/models/effect';
 
 export interface MachineFeatureInterface {
 	id: string;
@@ -35,14 +35,6 @@ export class MachineFeature {
 				.join(' ')
 		);
 	}
-}
-
-export interface MachineConfiguration {
-	id: string;
-	machineId: string;
-	usedEffects: EffectConfiguration[];
-	amount: number;
-	requiredPower: number;
 }
 
 export interface MachineInterface {

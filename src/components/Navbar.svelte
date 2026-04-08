@@ -20,7 +20,7 @@
 							<summary><FactoryIcon size="20" /> {profile.name}</summary>
 							<ul>
 								<li>
-									<a href="#/p/{profile.id}">
+									<a href="#/f/{profile.id}">
 										<ForkliftIcon size="20" /> Sandbox
 									</a>
 								</li>
