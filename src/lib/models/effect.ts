@@ -24,12 +24,6 @@ export interface VariableModifier extends BaseModifier {
 
 export type ModifierInterface = FixedModifier | VariableModifier;
 
-export interface EffectConfiguration {
-	id: string;
-	effectId: string;
-	scaling: number;
-}
-
 export class Modifier {
 	id: string;
 	name?: string;
