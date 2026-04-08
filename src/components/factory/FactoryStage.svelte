@@ -3,7 +3,9 @@
 	import ItemInputNode from '@/components/shared/stage/ItemInputNode.svelte';
 	import ItemOutputNode from '@/components/shared/stage/ItemOutputNode.svelte';
 	import RecipeEdgeComponent from '@/components/shared/stage/RecipeEdge.svelte';
+	import { rebuildFactory } from '@/lib/factory/factory';
 	import layout from '@/lib/stage/layout';
+	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
 	import {
 		Background,
@@ -24,7 +26,13 @@
 			id: x.id,
 			type: 'recipe',
 			position: { x: 0, y: 0 },
-			data: { recipeNode: x },
+			data: {
+				recipeNode: x,
+				onRecipeChange: (nodeId: string, recipeId: string) => {
+					if (!active.profile) return;
+					rebuildFactory(active.profile, factory, nodeId, recipeId);
+				},
+			},
 		}));
 
 		// push inputs

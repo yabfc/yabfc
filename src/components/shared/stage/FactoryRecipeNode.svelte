@@ -1,6 +1,10 @@
 <script lang="ts">
 	import { calculateInput, calculateOutput, getRecipes } from '@/lib/factory/factory';
-	import type { MachineConfiguration, RecipeNode } from '@/lib/factory/recipeNode';
+	import type {
+		MachineConfiguration,
+		RecipeNode,
+		RecipeNodeData,
+	} from '@/lib/factory/recipeNode';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
 	import { FactoryIcon, PlusIcon, Trash2Icon } from '@lucide/svelte';
@@ -10,7 +14,7 @@
 		data,
 		targetPosition = Position.Left,
 		sourcePosition = Position.Right,
-	}: NodeProps<Node<{ recipeNode: RecipeNode }>> = $props();
+	}: NodeProps<Node<RecipeNodeData>> = $props();
 
 	let recipe = $derived(active.profile?.getRecipeById(data.recipeNode.recipeId));
 
@@ -36,11 +40,19 @@
 	let alternatives = $derived.by(() => {
 		if (!active.profile) return undefined;
 
-		// we don't show alternatives if more than one output is generated
-		if (!recipe || recipe.out.length !== 1) return undefined;
+		// todo handle multiple recipe outputs
+		if (!recipe) return undefined;
 
 		return getRecipes(active.profile, recipe.out[0].id);
 	});
+
+	let selectedAlternativeRecipeId = $state('');
+
+	function handleAlternativeChange() {
+		if (!selectedAlternativeRecipeId) return;
+		data.onRecipeChange(data.recipeNode.id, selectedAlternativeRecipeId);
+		selectedAlternativeRecipeId = '';
+	}
 </script>
 
 <Handle
@@ -63,11 +75,15 @@
 		<div class="absolute top-2 right-2 ml-2">
 			<p class="sr-only">Select recipe alternative</p>
 
-			<select class="select select-xs">
-				<option disabled selected>Select alternative</option>
+			<select
+				class="select select-xs"
+				bind:value={selectedAlternativeRecipeId}
+				onchange={handleAlternativeChange}
+			>
+				<option disabled value="">Select alternative</option>
 
 				{#each alternatives as r}
-					<option>
+					<option value={r.id}>
 						{r.getDisplayName()}
 					</option>
 				{/each}

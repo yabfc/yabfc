@@ -1,11 +1,6 @@
-import { type Edge, type ItemIo, type RecipeNode } from '@/lib/factory/recipeNode';
+import { type Factory } from '@/lib/factory/recipeNode';
 
-const factory = $state<{
-	inputs: { [key: string]: ItemIo };
-	outputs: { [key: string]: ItemIo };
-	recipeNodes: { [key: string]: RecipeNode };
-	edges: Edge[];
-}>({
+const factory = $state<Factory>({
 	inputs: {},
 	outputs: {},
 	recipeNodes: {},

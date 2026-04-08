@@ -4,7 +4,10 @@
 	import { AnvilIcon } from '@lucide/svelte';
 	import { Handle, Position, type Node, type NodeProps } from '@xyflow/svelte';
 
-	let { data, sourcePosition = Position.Right }: NodeProps<Node<{ item: ItemIo }>> = $props();
+	let {
+		data,
+		sourcePosition = Position.Right,
+	}: NodeProps<Node<{ item: ItemIo; auto: boolean }>> = $props();
 
 	const item = $derived(active.profile?.getItemById(data.item.id));
 </script>

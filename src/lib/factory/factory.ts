@@ -1,4 +1,4 @@
-import type { Edge, ItemIo, RecipeNode } from '@/lib/factory/recipeNode';
+import type { Edge, Factory, InputItemIo, ItemIo, RecipeNode } from '@/lib/factory/recipeNode';
 import type Profile from '@/lib/models/profile';
 import type Recipe from '@/lib/models/recipe';
 import { nanoid } from 'nanoid';
@@ -96,8 +96,8 @@ export function getRecipeChain(
 export function getResourceInputs(
 	profile: Profile,
 	recipeChain: RecipeNode[],
-): Record<string, ItemIo> {
-	const result: Record<string, ItemIo> = {};
+): Record<string, InputItemIo> {
+	const result: Record<string, InputItemIo> = {};
 	const inputs = recipeChain.filter(x => profile.getRecipeById(x.recipeId)?.in.length === 0);
 	for (const node of inputs) {
 		const recipe = profile.getRecipeById(node.recipeId);
@@ -110,10 +110,106 @@ export function getResourceInputs(
 			result[output.id] = {
 				id: output.id,
 				amount: 0,
+				auto: true,
 			};
 		}
 	}
 	return result;
+}
+
+/** Rebuild the factory with the updated recipe */
+export function rebuildFactory(
+	profile: Profile,
+	factory: Factory,
+	nodeId: string,
+	newRecipeId: string,
+) {
+	const oldRecipeNodes = factory.recipeNodes;
+	const oldEdges = factory.edges;
+
+	const changedNode = oldRecipeNodes[nodeId];
+	if (!changedNode) return;
+
+	const newRecipe = profile.getRecipeById(newRecipeId);
+	if (!newRecipe) return;
+
+	changedNode.recipeId = newRecipeId;
+
+	const prunableNodeIds = collectPrunableNodeIds(nodeId, oldEdges);
+	const prunedRecipeNodes = Object.fromEntries(
+		Object.entries(oldRecipeNodes).filter(([key]) => !prunableNodeIds.has(key)),
+	);
+
+	const updatedRecipeChain = [
+		...Object.values(prunedRecipeNodes),
+		...getRecipeChain(
+			profile,
+			newRecipe.in.map(x => x.id),
+			new Set(Object.values(prunedRecipeNodes).map(x => x.recipeId)),
+		),
+	];
+
+	factory.edges = [];
+	factory.recipeNodes = Object.fromEntries(updatedRecipeChain.map(x => [x.id, x]));
+	factory.inputs = getResourceInputs(profile, updatedRecipeChain);
+	factory.edges = calculateEdges(
+		profile,
+		Object.values(factory.recipeNodes),
+		Object.values(factory.inputs),
+		Object.values(factory.outputs),
+	);
+}
+
+/** Get all Node IDs that can be safely deleted due to the recipe change */
+export function collectPrunableNodeIds(startNodeId: string, edges: Edge[]): Set<string> {
+	const upstreamIds = new Set<string>();
+	const stack = [startNodeId];
+
+	// this can contain nodes that are actually still needed e.g
+	// wire is required by the cable and stator recipe. If the cable recipe
+	// would be changed to the quickwire alternate, this would prune wire
+	// node and its upstreams even though they are still required for stators.
+	while (stack.length) {
+		const current = stack.pop()!;
+
+		for (const edge of edges) {
+			if (edge.to !== current) continue;
+
+			if (!upstreamIds.has(edge.from)) {
+				upstreamIds.add(edge.from);
+				stack.push(edge.from);
+			}
+		}
+	}
+
+	// find the cases where a node is actually still needed due to other dependencies downstream
+	const protectedIds = new Set<string>();
+	for (const nodeId of upstreamIds) {
+		const hasOutgoingOutsideSubtree = edges.some(edge => {
+			return edge.from === nodeId && edge.to !== startNodeId && !upstreamIds.has(edge.to);
+		});
+
+		if (hasOutgoingOutsideSubtree) {
+			protectedIds.add(nodeId);
+		}
+	}
+
+	// mark the upstream nodes of these protected nodes as also protected
+	const protectedStack = [...protectedIds];
+	while (protectedStack.length) {
+		const current = protectedStack.pop()!;
+
+		for (const edge of edges) {
+			if (edge.to !== current) continue;
+			if (!upstreamIds.has(edge.from)) continue;
+			if (protectedIds.has(edge.from)) continue;
+
+			protectedIds.add(edge.from);
+			protectedStack.push(edge.from);
+		}
+	}
+
+	return new Set([...upstreamIds].filter(x => !protectedIds.has(x)));
 }
 
 export function calculateRecipeNodeModifier(
