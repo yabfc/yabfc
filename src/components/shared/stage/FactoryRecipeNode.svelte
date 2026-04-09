@@ -5,11 +5,7 @@
 		getRecipes,
 		recalculateEdgeAmounts,
 	} from '@/lib/factory/factory';
-	import type {
-		MachineConfiguration,
-		RecipeNode,
-		RecipeNodeData,
-	} from '@/lib/factory/recipeNode';
+	import type { MachineConfiguration, RecipeNode, RecipeNodeData } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
 	import { FactoryIcon, PlusIcon, Trash2Icon } from '@lucide/svelte';

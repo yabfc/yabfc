@@ -1,4 +1,4 @@
-import { type Factory } from '@/lib/factory/recipeNode';
+import { type Factory } from '@/lib/models/factory';
 
 const factory = $state<Factory>({
 	inputs: {},

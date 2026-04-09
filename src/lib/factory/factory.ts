@@ -1,4 +1,11 @@
-import type { Edge, Factory, InputItemIo, ItemIo, RecipeNode } from '@/lib/factory/recipeNode';
+import type {
+	Edge,
+	Factory,
+	InputItemIo,
+	ItemIo,
+	RecipeNode,
+	RecipeNodeTargets,
+} from '@/lib/models/factory';
 import type Profile from '@/lib/models/profile';
 import type Recipe from '@/lib/models/recipe';
 import { nanoid } from 'nanoid';
@@ -289,14 +296,6 @@ export function calculateInput(profile: Profile | undefined, node: RecipeNode | 
 
 	return inputs;
 }
-
-export type RecipeNodeTargets = Record<
-	string,
-	{
-		targetInputs: Record<string, number>;
-		targetOutputs: Record<string, number>;
-	}
->;
 
 export function calculateRecipeNodeTargets(profile: Profile, factory: Factory): RecipeNodeTargets {
 	const targets: RecipeNodeTargets = {};

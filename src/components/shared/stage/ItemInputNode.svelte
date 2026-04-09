@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { ItemIo } from '@/lib/factory/recipeNode';
+	import type { ItemIo } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
 	import { AnvilIcon } from '@lucide/svelte';
 	import { Handle, Position, type Node, type NodeProps } from '@xyflow/svelte';
