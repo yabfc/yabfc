@@ -36,7 +36,8 @@ export interface InputItemIo extends ItemIo {
 export interface Edge {
 	from: string;
 	to: string;
-	amount: number;
+	actualAmount: number;
+	targetAmount: number;
 	itemId: string;
 }
 

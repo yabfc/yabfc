@@ -20,7 +20,8 @@ export function calculateEdges(
 				edges.push({
 					from: input.id,
 					to: recipeNode.id,
-					amount: input.amount,
+					actualAmount: input.amount,
+					targetAmount: input.amount,
 					itemId: input.id,
 				});
 			});
@@ -39,7 +40,8 @@ export function calculateEdges(
 					edges.push({
 						from: outputRecipeNode.id,
 						to: inputNode.id,
-						amount: 0,
+						actualAmount: 0,
+						targetAmount: 0,
 						itemId: output.id,
 					});
 				});
@@ -50,7 +52,8 @@ export function calculateEdges(
 					edges.push({
 						from: outputRecipeNode.id,
 						to: outputNode.id,
-						amount: 0,
+						actualAmount: 0,
+						targetAmount: 0,
 						itemId: output.id,
 					});
 				});
@@ -309,9 +312,9 @@ export function calculateRecipeNodeTargets(profile: Profile, factory: Factory): 
 		};
 	}
 
-	function findUpstreamProducerNode(consumerNodeId: string, itemId: string): string | undefined {
+	function findUpstreamProducerEdge(consumerNodeId: string, itemId: string): Edge | undefined {
 		const edges = edgesToId[consumerNodeId];
-		if (!edges) return;
+		if (!edges) return undefined;
 
 		for (const edge of edges) {
 			const sourceNode = factory.recipeNodes[edge.from];
@@ -321,7 +324,7 @@ export function calculateRecipeNodeTargets(profile: Profile, factory: Factory): 
 			if (!sourceRecipe) continue;
 
 			if (sourceRecipe.out.some(x => x.id === itemId)) {
-				return sourceNode.id;
+				return edge;
 			}
 		}
 
@@ -352,7 +355,7 @@ export function calculateRecipeNodeTargets(profile: Profile, factory: Factory): 
 		for (const output of recipe.out) {
 			const requiredOutputAmount = output.amount * cyclesNeeded;
 			nodeTargets.targetOutputs[output.id] =
-				(nodeTargets.targetInputs[output.id] ?? 0) + requiredOutputAmount;
+				(nodeTargets.targetOutputs[output.id] ?? 0) + requiredOutputAmount;
 		}
 
 		for (const input of recipe.in) {
@@ -367,12 +370,12 @@ export function calculateRecipeNodeTargets(profile: Profile, factory: Factory): 
 		// propagate required inputs upstream
 		for (const input of recipe.in) {
 			const requiredInputAmount = input.amount * cyclesNeeded;
-			const upstreamNodeId = findUpstreamProducerNode(nodeId, input.id);
-
+			const upstreamEdge = findUpstreamProducerEdge(nodeId, input.id);
 			// no upstream recipe node => this is an input
-			if (!upstreamNodeId) continue;
+			if (!upstreamEdge) continue;
 
-			propagateDemand(upstreamNodeId, input.id, requiredInputAmount, nextPath);
+			upstreamEdge.targetAmount = requiredInputAmount;
+			propagateDemand(upstreamEdge.from, input.id, requiredInputAmount, nextPath);
 		}
 	}
 
@@ -387,6 +390,8 @@ export function calculateRecipeNodeTargets(profile: Profile, factory: Factory): 
 			if (!sourceRecipe) continue;
 
 			if (!sourceRecipe.out.some(x => x.id === output.id)) continue;
+
+			edge.targetAmount = output.amount;
 
 			propagateDemand(sourceNode.id, output.id, output.amount);
 		}
@@ -405,7 +410,7 @@ export function recalculateEdgeAmounts(profile: Profile, factory: Factory) {
 			const targetInputs = calculateInput(profile, targetNode);
 			return {
 				...edge,
-				amount: targetInputs[edge.itemId] ?? 0,
+				actualAmount: targetInputs[edge.itemId] ?? 0,
 			};
 		}
 
@@ -414,7 +419,7 @@ export function recalculateEdgeAmounts(profile: Profile, factory: Factory) {
 			const sourceOutputs = calculateOutput(profile, sourceNode);
 			return {
 				...edge,
-				amount: sourceOutputs[edge.itemId] ?? 0,
+				actualAmount: sourceOutputs[edge.itemId] ?? 0,
 			};
 		}
 
@@ -425,7 +430,10 @@ export function recalculateEdgeAmounts(profile: Profile, factory: Factory) {
 
 			return {
 				...edge,
-				amount: Math.min(sourceOutputs[edge.itemId] ?? 0, targetInputs[edge.itemId] ?? 0),
+				actualAmount: Math.min(
+					sourceOutputs[edge.itemId] ?? 0,
+					targetInputs[edge.itemId] ?? 0,
+				),
 			};
 		}
 

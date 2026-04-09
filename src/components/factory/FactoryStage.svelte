@@ -82,7 +82,7 @@
 			type: 'recipe',
 			source: x.from,
 			target: x.to,
-			label: `${formatter.format(x.amount)}`,
+			label: `${formatter.format(x.actualAmount)}`,
 		}));
 
 		const layouted = layout(newNodes, newEdges);
