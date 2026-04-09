@@ -1,4 +1,5 @@
 <script lang="ts">
+	import MachineConfigurationModal from '@/components/shared/MachineConfigurationModal.svelte';
 	import {
 		calculateInput,
 		calculateOutput,
@@ -8,7 +9,7 @@
 	import type { MachineConfiguration, RecipeNode, RecipeNodeData } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
-	import { FactoryIcon, PlusIcon, Trash2Icon } from '@lucide/svelte';
+	import { FactoryIcon, PencilIcon, PlusIcon, Trash2Icon } from '@lucide/svelte';
 	import { Handle, Position, type Node, type NodeProps } from '@xyflow/svelte';
 
 	let {
@@ -37,16 +38,20 @@
 		recalculateEdgeAmounts(active.profile, factory);
 	};
 
+	const updateMachineConfig = () => {
+		if (!active.profile) return;
+		recalculateEdgeAmounts(active.profile, factory);
+	};
+
 	function deleteMachine(config: MachineConfiguration) {
 		if (!node || !active.profile) return;
 		node.machines = node.machines.filter(x => x !== config);
 		recalculateEdgeAmounts(active.profile, factory);
 	}
 
-	const updateMachineConfig = () => {
-		if (!active.profile) return;
-		recalculateEdgeAmounts(active.profile, factory);
-	};
+	function openMachineConfigDialog(config: MachineConfiguration) {
+		data.onEditMachineConfig(config);
+	}
 
 	let alternatives = $derived.by(() => {
 		if (!active.profile) return undefined;
@@ -174,19 +179,10 @@
 	<ul class="text-base-content/80 flex w-full flex-col gap-1 text-sm">
 		{#snippet factory(name: string, config: MachineConfiguration)}
 			<li class="flex flex-col gap-2">
+				<p class="flex-1 text-sm">{name}</p>
+
 				<div class="flex items-center gap-2">
-					<p class="flex-1 truncate py-2">{name}</p>
-
-					<button
-						class="btn btn-ghost btn-xs btn-square text-error"
-						onclick={() => deleteMachine(config)}
-					>
-						<Trash2Icon size="12" />
-					</button>
-				</div>
-
-				<div class="flex gap-2">
-					<label class="floating-label">
+					<label class="floating-label flex-1">
 						<span>Amount</span>
 						<input
 							type="number"
@@ -194,33 +190,23 @@
 							onchange={updateMachineConfig}
 							min="1"
 							step="1"
-							class="input input-sm"
+							class="input input-sm w-full"
 						/>
 					</label>
 
-					<label class="floating-label">
-						<span>{active.profile?.getSpeedOverrideName()}</span>
-						<input
-							type="number"
-							bind:value={config.speed}
-							onchange={updateMachineConfig}
-							min="0"
-							step="0.1"
-							class="input input-sm"
-						/>
-					</label>
+					<button
+						class="btn btn-ghost btn-xs btn-square shrink-0"
+						onclick={() => openMachineConfigDialog(config)}
+					>
+						<PencilIcon size="12" />
+					</button>
 
-					<label class="floating-label">
-						<span>{active.profile?.getProductivityOverrideName()}</span>
-						<input
-							type="number"
-							bind:value={config.productivity}
-							onchange={updateMachineConfig}
-							min="0"
-							step="0.1"
-							class="input input-sm"
-						/>
-					</label>
+					<button
+						class="btn btn-ghost btn-xs btn-square text-error shrink-0"
+						onclick={() => deleteMachine(config)}
+					>
+						<Trash2Icon size="12" />
+					</button>
 				</div>
 			</li>
 		{/snippet}

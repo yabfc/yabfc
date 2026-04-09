@@ -16,6 +16,7 @@ export type RecipeNodeData = Record<string, unknown> & {
 	targetInputs: { [key: string]: number };
 	targetOutputs: { [key: string]: number };
 	onRecipeChange: (nodeId: string, recipeId: string) => void;
+	onEditMachineConfig: (config: MachineConfiguration) => void;
 };
 
 export type RecipeNodeTargets = Record<

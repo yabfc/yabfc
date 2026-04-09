@@ -4,7 +4,7 @@
 	import ItemOutputNode from '@/components/shared/stage/ItemOutputNode.svelte';
 	import RecipeEdgeComponent from '@/components/shared/stage/RecipeEdge.svelte';
 	import { calculateRecipeNodeTargets, rebuildFactory } from '@/lib/factory/factory';
-	import type { RecipeNodeTargets } from '@/lib/models/factory';
+	import type { MachineConfiguration, RecipeNodeTargets } from '@/lib/models/factory';
 	import layout from '@/lib/stage/layout';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
@@ -16,6 +16,12 @@
 		type Node,
 	} from '@xyflow/svelte';
 	import { nanoid } from 'nanoid';
+
+	let {
+		onEditMachineConfig,
+	}: {
+		onEditMachineConfig: (config: MachineConfiguration) => void;
+	} = $props();
 
 	let nodes = $state.raw<Node[]>([]),
 		edges = $state.raw<Edge[]>([]),
@@ -40,6 +46,9 @@
 				onRecipeChange: (nodeId: string, recipeId: string) => {
 					if (!active.profile) return;
 					rebuildFactory(active.profile, factory, nodeId, recipeId);
+				},
+				onEditMachineConfig: (config: MachineConfiguration) => {
+					onEditMachineConfig(config);
 				},
 			},
 		}));
