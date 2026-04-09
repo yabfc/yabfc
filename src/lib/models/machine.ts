@@ -80,7 +80,7 @@ export default class Machine {
 		return this.features.map(x => x.effectPerSlot).flat();
 	}
 
-	getAllowedEffectMoules(effects: EffectModule[]): EffectModule[] {
+	getAllowedEffectModules(effects: EffectModule[]): EffectModule[] {
 		const allowed = this.getAllowedEffects();
 		return effects.filter(x => x.available && allowed.includes(x.id) && !x.hidden);
 	}

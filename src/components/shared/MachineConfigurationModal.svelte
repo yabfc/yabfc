@@ -20,15 +20,32 @@
 
 	const selectableEffects = $derived.by(() => {
 		if (!active.profile || !machine) return undefined;
-		const effects = machine.getAllowedEffectMoules(active.profile.machineEffects);
+		const effects = machine.getAllowedEffectModules(active.profile.machineEffects);
 		if (effects.length === 0) return undefined;
 		return effects;
 	});
 
 	const usedEffects = $derived(config?.effects);
 
+	const [speedSum, productivitySum] = $derived.by(() => {
+		if (!usedEffects || !machine || !active.profile) return [undefined, undefined];
+		let speed = machine.getBaseCraftingSpeed(active.profile.machineEffects),
+			productivity = 1;
+		usedEffects.forEach(choice => {
+			const scaling = choice.scaling ?? 1;
+			choice.effect.modifiers.forEach(modifier => {
+				if (modifier.id === 'speed') {
+					speed *= (modifier.value ?? 1) * scaling;
+				} else if (modifier.id === 'productivity') {
+					productivity *= (modifier.value ?? 1) * scaling;
+				}
+			});
+		});
+		return [speed, productivity];
+	});
+
 	const addEffect = () => {
-		if (!machine || !active.profile || !config || !effect) return;
+		if (!active.profile || !config || !effect) return;
 		const pickedEffect = active.profile.getEffectModuleById(effect);
 		if (!pickedEffect) return;
 		config.effects.push({ effect: pickedEffect });
@@ -55,37 +72,23 @@
 					class="input input-bordered w-full"
 				/>
 			</label>
+			<div class="w-full pt-4">
+				<p class="text-base-content/60 pt-1 text-sm uppercase">Applied Modifiers</p>
+				<div class="text-base-content/80 grid grid-cols-[auto_1fr] gap-x-2 text-xs">
+					<span>speed:</span>
+					<span>{speedSum}</span>
 
-			<label class="floating-label">
-				<span>{active.profile?.getSpeedOverrideName()}</span>
-				<input
-					type="number"
-					bind:value={config.speed}
-					onchange={onChange}
-					min="0"
-					step="0.1"
-					class="input input-bordered w-full"
-				/>
-			</label>
-
-			<label class="floating-label">
-				<span>{active.profile?.getProductivityOverrideName()}</span>
-				<input
-					type="number"
-					bind:value={config.productivity}
-					onchange={onChange}
-					min="0"
-					step="0.1"
-					class="input input-bordered w-full"
-				/>
-			</label>
+					<span>productivity:</span>
+					<span>{productivitySum}</span>
+				</div>
+			</div>
 
 			<div class="w-full pt-4">
 				<p class="text-base-content/60 pt-1 text-sm uppercase">Used Effects</p>
 				<ul>
 					{#each usedEffects as choice}
 						<li
-							class="text-base-content/80 grid grid-cols-[1fr_auto] items-center gap-x-4 text-xs"
+							class="text-base-content/80 grid grid-cols-[auto_1fr] items-center gap-x-2 text-xs"
 						>
 							<span>{choice.effect.getDisplayName()}</span>
 							{#if choice.scaling}
