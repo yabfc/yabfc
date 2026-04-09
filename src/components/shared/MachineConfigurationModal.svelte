@@ -6,6 +6,7 @@
 	import Dialog from '@/components/shared/Dialog.svelte';
 	import type { MachineConfiguration } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
+	import alerts from '@/stores/alerts.svelte';
 	import { PlusIcon } from '@lucide/svelte';
 
 	type Props = {
@@ -18,11 +19,12 @@
 	let effect = $state<string>();
 	const machine = $derived(config ? active.profile?.getMachineById(config.machineId) : undefined);
 
-	const selectableEffects = $derived.by(() => {
-		if (!active.profile || !machine) return undefined;
+	const [selectableEffects, slots] = $derived.by(() => {
+		if (!active.profile || !machine) return [undefined, undefined];
 		const effects = machine.getAllowedEffectModules(active.profile.machineEffects);
-		if (effects.length === 0) return undefined;
-		return effects;
+		if (effects.length === 0) return [undefined, undefined];
+		const slots = machine.features.reduce((acc, x) => acc + x.itemSlots, 0);
+		return [effects, slots];
 	});
 
 	const usedEffects = $derived(config?.effects);
@@ -45,9 +47,13 @@
 	});
 
 	const addEffect = () => {
-		if (!active.profile || !config || !effect) return;
+		if (!active.profile || !config || !effect || !slots) return;
 		const pickedEffect = active.profile.getEffectModuleById(effect);
 		if (!pickedEffect) return;
+		if (slots <= config.effects.length) {
+			alerts.push('All effect slots are full', 'ERROR');
+			return;
+		}
 		config.effects.push({ effect: pickedEffect });
 	};
 </script>
@@ -84,7 +90,9 @@
 			</div>
 
 			<div class="w-full pt-4">
-				<p class="text-base-content/60 pt-1 text-sm uppercase">Used Effects</p>
+				<p class="text-base-content/60 pt-1 text-sm uppercase">
+					Used Effects ({usedEffects?.length ?? 0}/{slots ?? 0})
+				</p>
 				<ul>
 					{#each usedEffects as choice}
 						<li
