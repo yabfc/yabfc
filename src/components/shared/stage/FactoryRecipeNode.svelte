@@ -46,7 +46,10 @@
 		// todo handle multiple recipe outputs
 		if (!recipe) return undefined;
 
-		return getRecipes(active.profile, recipe.out[0].id);
+		const recipes = getRecipes(active.profile, recipe.out[0].id);
+		if (recipes.length === 1) return undefined;
+
+		return recipes;
 	});
 
 	let selectedAlternativeRecipeId = $state('');
