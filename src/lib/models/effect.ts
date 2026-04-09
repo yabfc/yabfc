@@ -1,4 +1,5 @@
 export interface EffectChoice {
+	id: string;
 	effect: EffectModule;
 	scaling?: number;
 }

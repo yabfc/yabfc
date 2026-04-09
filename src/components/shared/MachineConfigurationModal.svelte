@@ -7,7 +7,8 @@
 	import type { MachineConfiguration } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
 	import alerts from '@/stores/alerts.svelte';
-	import { PlusIcon } from '@lucide/svelte';
+	import { PlusIcon, Trash2Icon } from '@lucide/svelte';
+	import { nanoid } from 'nanoid';
 
 	type Props = {
 		dialog?: HTMLDialogElement;
@@ -54,8 +55,13 @@
 			alerts.push('All effect slots are full', 'ERROR');
 			return;
 		}
-		config.effects.push({ effect: pickedEffect });
+		config.effects.push({ id: nanoid(), effect: pickedEffect });
 	};
+
+	function deleteEffect(id: string) {
+		if (!active.profile || !config || !effect || !slots) return;
+		config.effects = config.effects.filter(x => x.id !== id);
+	}
 </script>
 
 <Dialog bind:dialog extraClass="max-w-xs">
@@ -93,18 +99,24 @@
 				<p class="text-base-content/60 pt-1 text-sm uppercase">
 					Used Effects ({usedEffects?.length ?? 0}/{slots ?? 0})
 				</p>
-				<ul>
+				<ul class="text-base-content/80 flex w-full flex-col gap-1 text-xs">
 					{#each usedEffects as choice}
-						<li
-							class="text-base-content/80 grid grid-cols-[auto_1fr] items-center gap-x-2 text-xs"
-						>
-							<span>{choice.effect.getDisplayName()}</span>
-							{#if choice.scaling}
-								<span>scaling: {choice.scaling}</span>
-							{/if}
+						<li class="flex items-center justify-between gap-2">
+							<div class="grid flex-1 grid-cols-[170px_1fr] items-center gap-x-2">
+								<span class="truncate">{choice.effect.getDisplayName()}</span>
+								{#if choice.scaling}
+									<span>scaling: {choice.scaling}</span>
+								{/if}
+							</div>
+							<button
+								class="btn btn-ghost btn-xs btn-square text-error shrink-0"
+								onclick={() => deleteEffect(choice.id)}
+							>
+								<Trash2Icon size="12" />
+							</button>
 						</li>
 					{:else}
-						<li class="text-base-content/80 text-xs">No effect used</li>
+						<li>No effect used</li>
 					{/each}
 				</ul>
 			</div>
