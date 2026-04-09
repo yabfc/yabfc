@@ -7202,7 +7202,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-electric-furnace",
@@ -7215,7 +7216,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-steel-furnace",
@@ -7228,7 +7230,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-assembling-machine-1",
@@ -7241,7 +7244,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-assembling-machine-2",
@@ -7254,7 +7258,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-assembling-machine-3",
@@ -7267,7 +7272,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-oil-refinery",
@@ -7280,7 +7286,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-chemical-plant",
@@ -7293,7 +7300,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-centrifuge",
@@ -7306,7 +7314,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-rocket-silo",
@@ -7319,7 +7328,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		}
 	],
 	"research": [

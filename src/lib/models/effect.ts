@@ -77,6 +77,7 @@ export interface EffectModuleInterface {
 	available: boolean;
 	modifiers: ModifierInterface[];
 	perSlot: boolean;
+	hidden: boolean;
 }
 
 export default class EffectModule {
@@ -85,6 +86,7 @@ export default class EffectModule {
 	available: boolean;
 	modifiers: Modifier[];
 	perSlot: boolean;
+	hidden: boolean;
 
 	constructor(item: EffectModuleInterface) {
 		this.id = item.id;
@@ -92,6 +94,7 @@ export default class EffectModule {
 		this.available = item.available;
 		this.modifiers = item.modifiers.map(x => new Modifier(x));
 		this.perSlot = item.perSlot;
+		this.hidden = item.hidden;
 	}
 
 	getDisplayName(): string {

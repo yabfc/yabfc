@@ -10397,7 +10397,7 @@
 			"category": "offshore-pump",
 			"priority": 10,
 			"available": true,
-			"limitations": ["planet:gleba", "planet:nauvis"]
+			"limitations": ["planet:nauvis", "planet:gleba"]
 		},
 		{
 			"id": "lava",
@@ -11993,7 +11993,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-electric-furnace",
@@ -12006,7 +12007,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-steel-furnace",
@@ -12019,7 +12021,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-recycler",
@@ -12032,7 +12035,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-assembling-machine-1",
@@ -12045,7 +12049,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-assembling-machine-2",
@@ -12058,7 +12063,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-assembling-machine-3",
@@ -12071,7 +12077,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-oil-refinery",
@@ -12084,7 +12091,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-chemical-plant",
@@ -12097,7 +12105,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-centrifuge",
@@ -12110,7 +12119,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-biochamber",
@@ -12123,7 +12133,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-crusher",
@@ -12136,7 +12147,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-foundry",
@@ -12149,7 +12161,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-captive-biter-spawner",
@@ -12162,7 +12175,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-electromagnetic-plant",
@@ -12175,7 +12189,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-cryogenic-plant",
@@ -12188,7 +12203,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		},
 		{
 			"id": "crafting-speed-rocket-silo",
@@ -12201,7 +12217,8 @@
 				}
 			],
 			"perSlot": true,
-			"available": true
+			"available": true,
+			"hidden": true
 		}
 	],
 	"research": [
