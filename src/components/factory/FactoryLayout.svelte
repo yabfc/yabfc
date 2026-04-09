@@ -7,6 +7,7 @@
 	import type { MachineConfiguration } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
+	import { ChevronLeftIcon, ChevronRightIcon } from '@lucide/svelte';
 
 	let machineConfigDialog = $state<HTMLDialogElement>();
 	let editingMachineConfig = $state<MachineConfiguration | undefined>();
@@ -20,13 +21,29 @@
 		if (!active.profile) return;
 		recalculateEdgeAmounts(active.profile, factory);
 	}
+
+	let overviewHidden = $state(false);
 </script>
 
 <FactoryPlanner />
 
 <FactoryStage onEditMachineConfig={openMachineConfigDialog} />
 
-<OverviewWindow />
+<button
+	type="button"
+	class="btn btn-sm btn-circle fixed top-26 right-6 z-20 shadow"
+	onclick={() => (overviewHidden = !overviewHidden)}
+>
+	{#if overviewHidden}
+		<ChevronLeftIcon size="16" />
+	{:else}
+		<ChevronRightIcon size="16" />
+	{/if}
+</button>
+
+{#if !overviewHidden}
+	<OverviewWindow />
+{/if}
 
 <MachineConfigurationModal
 	bind:dialog={machineConfigDialog}
