@@ -1,6 +1,6 @@
 export interface EffectChoice {
 	effect: EffectModule;
-	scaling: number;
+	scaling?: number;
 }
 
 export interface BaseModifier {

@@ -34,7 +34,13 @@
 	const addMachine = () => {
 		if (!machine || !node || !active.profile) return;
 
-		node.machines.push({ machineId: machine, machineCount: 1, productivity: 1, speed: 1 });
+		node.machines.push({
+			machineId: machine,
+			machineCount: 1,
+			productivity: 1,
+			speed: 1,
+			effects: [],
+		});
 		recalculateEdgeAmounts(active.profile, factory);
 	};
 

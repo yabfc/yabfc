@@ -1,8 +1,11 @@
+import type { EffectChoice } from '@/lib/models/effect';
+
 export interface MachineConfiguration {
 	machineId: string;
 	machineCount: number;
 	productivity: number;
 	speed: number;
+	effects: EffectChoice[];
 }
 
 export interface RecipeNode {

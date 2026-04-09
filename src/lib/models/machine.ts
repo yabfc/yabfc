@@ -82,7 +82,7 @@ export default class Machine {
 
 	getAllowedEffectMoules(effects: EffectModule[]): EffectModule[] {
 		const allowed = this.getAllowedEffects();
-		return effects.filter(x => x.available && allowed.includes(x.id));
+		return effects.filter(x => x.available && allowed.includes(x.id) && !x.hidden);
 	}
 
 	getBaseCraftingSpeed(effects: EffectModule[]): number {
@@ -108,7 +108,7 @@ export default class Machine {
 	getPowerConsumption(effects: EffectChoice[]): number {
 		let power = this.requiredPower;
 		effects.forEach(choice => {
-			power = choice.effect.updatePowerConsumption(power, choice.scaling);
+			power = choice.effect.updatePowerConsumption(power, choice.scaling ?? 1);
 		});
 
 		return power;
