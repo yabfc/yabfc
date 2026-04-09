@@ -20,6 +20,8 @@
 	let effect = $state<string>();
 	const machine = $derived(config ? active.profile?.getMachineById(config.machineId) : undefined);
 
+	const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 4 });
+
 	const [selectableEffects, slots] = $derived.by(() => {
 		if (!active.profile || !machine) return [undefined, undefined];
 		const effects = machine.getAllowedEffectModules(active.profile.machineEffects);
@@ -87,11 +89,17 @@
 			<div class="w-full pt-4">
 				<p class="text-base-content/60 pt-1 text-sm uppercase">Applied Modifiers</p>
 				<div class="text-base-content/80 grid grid-cols-[auto_1fr] gap-x-2 text-xs">
-					<span>speed:</span>
-					<span>{speedSum}</span>
-
-					<span>productivity:</span>
-					<span>{productivitySum}</span>
+					{#if speedSum}
+						<span>{active.profile?.getSpeedOverrideName() || 'speed'}</span>
+						<span>{formatter.format(speedSum)}</span>
+					{/if}
+					{#if productivitySum}
+						<span
+							>{active.profile?.getProductivityOverrideName() ||
+								'productivity'}:</span
+						>
+						<span>{formatter.format(productivitySum)}</span>
+					{/if}
 				</div>
 			</div>
 
