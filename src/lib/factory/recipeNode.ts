@@ -37,6 +37,7 @@ export interface Edge {
 	from: string;
 	to: string;
 	amount: number;
+	itemId: string;
 }
 
 export interface Factory {

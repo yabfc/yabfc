@@ -1,5 +1,10 @@
 <script lang="ts">
-	import { calculateInput, calculateOutput, getRecipes } from '@/lib/factory/factory';
+	import {
+		calculateInput,
+		calculateOutput,
+		getRecipes,
+		recalculateEdgeAmounts,
+	} from '@/lib/factory/factory';
 	import type {
 		MachineConfiguration,
 		RecipeNode,
@@ -30,15 +35,22 @@
 
 	let machine = $state<string>();
 	const addMachine = () => {
-		if (!machine) return;
+		if (!machine || !node || !active.profile) return;
 
-		node?.machines.push({ machineId: machine, machineCount: 1, productivity: 1, speed: 1 });
+		node.machines.push({ machineId: machine, machineCount: 1, productivity: 1, speed: 1 });
+		recalculateEdgeAmounts(active.profile, factory);
 	};
 
 	function deleteMachine(config: MachineConfiguration) {
-		if (!node) return;
+		if (!node || !active.profile) return;
 		node.machines = node.machines.filter(x => x !== config);
+		recalculateEdgeAmounts(active.profile, factory);
 	}
+
+	const updateMachineConfig = () => {
+		if (!active.profile) return;
+		recalculateEdgeAmounts(active.profile, factory);
+	};
 
 	let alternatives = $derived.by(() => {
 		if (!active.profile) return undefined;
@@ -183,6 +195,7 @@
 						<input
 							type="number"
 							bind:value={config.machineCount}
+							onchange={updateMachineConfig}
 							min="1"
 							step="1"
 							class="input input-sm"
@@ -194,6 +207,7 @@
 						<input
 							type="number"
 							bind:value={config.speed}
+							onchange={updateMachineConfig}
 							min="0"
 							step="0.1"
 							class="input input-sm"
@@ -205,6 +219,7 @@
 						<input
 							type="number"
 							bind:value={config.productivity}
+							onchange={updateMachineConfig}
 							min="0"
 							step="0.1"
 							class="input input-sm"

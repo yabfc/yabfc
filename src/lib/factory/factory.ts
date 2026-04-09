@@ -17,7 +17,12 @@ export function calculateEdges(
 			.filter(x => profile.getRecipeById(x.recipeId)?.out.some(y => y.id === input.id))
 			.forEach(recipeNode => {
 				// TODO if item is sent to multiple recipe nodes, amount is wrong
-				edges.push({ from: input.id, to: recipeNode.id, amount: input.amount });
+				edges.push({
+					from: input.id,
+					to: recipeNode.id,
+					amount: input.amount,
+					itemId: input.id,
+				});
 			});
 	});
 
@@ -35,6 +40,7 @@ export function calculateEdges(
 						from: outputRecipeNode.id,
 						to: inputNode.id,
 						amount: 0,
+						itemId: output.id,
 					});
 				});
 
@@ -45,6 +51,7 @@ export function calculateEdges(
 						from: outputRecipeNode.id,
 						to: outputNode.id,
 						amount: 0,
+						itemId: output.id,
 					});
 				});
 		});
@@ -386,4 +393,42 @@ export function calculateRecipeNodeTargets(profile: Profile, factory: Factory): 
 	}
 
 	return targets;
+}
+
+export function recalculateEdgeAmounts(profile: Profile, factory: Factory) {
+	factory.edges = factory.edges.map(edge => {
+		const sourceNode = factory.recipeNodes[edge.from];
+		const targetNode = factory.recipeNodes[edge.to];
+
+		// input node to recipe node
+		if (!sourceNode && targetNode) {
+			const targetInputs = calculateInput(profile, targetNode);
+			return {
+				...edge,
+				amount: targetInputs[edge.itemId] ?? 0,
+			};
+		}
+
+		// recipe node to outpud node
+		if (sourceNode && !targetNode) {
+			const sourceOutputs = calculateOutput(profile, sourceNode);
+			return {
+				...edge,
+				amount: sourceOutputs[edge.itemId] ?? 0,
+			};
+		}
+
+		// recipe node to recipe node
+		if (sourceNode && targetNode) {
+			const sourceOutputs = calculateOutput(profile, sourceNode);
+			const targetInputs = calculateInput(profile, targetNode);
+
+			return {
+				...edge,
+				amount: Math.min(sourceOutputs[edge.itemId] ?? 0, targetInputs[edge.itemId] ?? 0),
+			};
+		}
+
+		return { ...edge, amount: 0 };
+	});
 }
