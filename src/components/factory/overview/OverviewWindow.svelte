@@ -17,35 +17,35 @@
 			tab-content's height
 		-->
 		<div
-			class="tab-content bg-base-100 border-base-300 !h-[calc(100%-var(--tab-height)-var(--spacing))] overflow-auto"
+			class="tab-content bg-base-100 border-base-300 h-[calc(100%-var(--tab-height)-var(--spacing)-46px)]! overflow-auto"
 		>
 			<ItemOverview />
 		</div>
 
 		<input type="radio" name="profile-overview-tabs" class="tab" aria-label="Machines" />
 		<div
-			class="tab-content bg-base-100 border-base-300 !h-[calc(100%-var(--tab-height)-var(--spacing))] overflow-auto"
+			class="tab-content bg-base-100 border-base-300 h-[calc(100%-var(--tab-height)-var(--spacing)-46px)]! overflow-auto"
 		>
 			<MachineOverview />
 		</div>
 
 		<input type="radio" name="profile-overview-tabs" class="tab" aria-label="Recipes" />
 		<div
-			class="tab-content bg-base-100 border-base-300 !h-[calc(100%-var(--tab-height)-var(--spacing))] overflow-auto"
+			class="tab-content bg-base-100 border-base-300 h-[calc(100%-var(--tab-height)-var(--spacing)-46px)]! overflow-auto"
 		>
 			<RecipeOverview />
 		</div>
 
 		<input type="radio" name="profile-overview-tabs" class="tab" aria-label="Conveyors" />
 		<div
-			class="tab-content bg-base-100 border-base-300 !h-[calc(100%-var(--tab-height)-var(--spacing))] overflow-auto"
+			class="tab-content bg-base-100 border-base-300 h-[calc(100%-var(--tab-height)-var(--spacing)-46px)]! overflow-auto"
 		>
 			<ConveyorOverview />
 		</div>
 
 		<input type="radio" name="profile-overview-tabs" class="tab" aria-label="Effects" />
 		<div
-			class="tab-content bg-base-100 border-base-300 !h-[calc(100%-var(--tab-height)-var(--spacing))] overflow-auto"
+			class="tab-content bg-base-100 border-base-300 h-[calc(100%-var(--tab-height)-var(--spacing)-46px)]! overflow-auto"
 		>
 			<EffectOverview />
 		</div>
