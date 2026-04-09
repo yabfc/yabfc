@@ -106,4 +106,19 @@ export default class Profile {
 	getSpeedOverrideName(): string {
 		return this.settings.effectNameOverride?.speed ?? 'Speed';
 	}
+
+	formatDefaultDuration(): string | undefined {
+		const duration = this.settings.defaultDuration;
+		if (duration == null) return;
+
+		if (duration < 60) {
+			return duration === 1 ? 's' : `${duration}s`;
+		}
+		if (duration === 60) {
+			return 'min';
+		}
+
+		const minutes = duration / 60;
+		return `${Number(minutes.toFixed(1))}min`;
+	}
 }
