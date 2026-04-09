@@ -4,15 +4,19 @@
 	let {
 		id,
 		label,
+		source,
 		sourceX,
 		sourceY,
+		target,
 		targetX,
 		targetY,
 		sourcePosition,
 		targetPosition,
 	}: EdgeProps = $props();
 
-	let [edgePath, labelX, labelY] = $derived(
+	const isSelfLoop = $derived(source === target);
+
+	let [normalPath, normalLabelX, normalLabelY] = $derived(
 		getBezierPath({
 			sourceX,
 			sourceY,
@@ -22,6 +26,25 @@
 			targetPosition,
 		}),
 	);
+
+	let selfLoopPath = $derived.by(() => {
+		const loopOut = 36;
+		const loopUp = 50;
+
+		return `
+			M ${sourceX} ${sourceY}
+			C ${sourceX + loopOut} ${sourceY},
+			 ${sourceX + loopOut} ${sourceY - loopUp},
+			 ${sourceX} ${sourceY - loopUp}
+			L ${targetX} ${targetY - loopUp}
+			C ${targetX - loopOut} ${targetY - loopUp},
+			 ${targetX - loopOut} ${targetY},
+			 ${targetX} ${targetY}
+		`;
+	});
+	let edgePath = $derived(isSelfLoop ? selfLoopPath : normalPath);
+	let labelX = $derived(isSelfLoop ? sourceX + 27 : normalLabelX);
+	let labelY = $derived(isSelfLoop ? sourceY - 25 : normalLabelY);
 </script>
 
 <BaseEdge
