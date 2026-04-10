@@ -6,6 +6,6 @@ export interface EffectNameOverride {
 export default interface SettingInterface {
 	defaultDuration: number;
 	allRecipesUnlocked: boolean;
-	limitations: string[] | undefined;
-	effectNameOverride: EffectNameOverride | undefined;
+	limitations?: string[];
+	effectNameOverride?: EffectNameOverride;
 }
