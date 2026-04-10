@@ -142,6 +142,11 @@
 			productivityOverride = Number(formatter.format(productivitySum ?? 0));
 		}
 	};
+
+	const onScalingChange = () => {
+		if (!active.profile || !factory) return;
+		recalculateEdgeAmounts(active.profile, factory);
+	};
 </script>
 
 <Dialog bind:dialog extraClass="max-w-xs">
@@ -225,6 +230,7 @@
 										max={choice.effect.maxValue ?? 10}
 										step={choice.effect.step ?? 0.1}
 										bind:value={choice.scaling}
+										onchange={onScalingChange}
 										class="input input-xs"
 										required
 									/>
