@@ -21,28 +21,30 @@
 	};
 
 	let { dialog = $bindable(), config = $bindable(), onChange }: Props = $props();
-	let selectedEffect = $state<string>();
+	let selectedEffect = $state('');
 	const machine = $derived(config ? active.profile?.getMachineById(config.machineId) : undefined);
 
 	const formatter = new NumberFormatter(undefined, { maximumFractionDigits: 4 });
 
 	const [selectableEffects, slots] = $derived.by(() => {
 		if (!active.profile || !machine) return [undefined, undefined];
-		const effects = machine.getAllowedEffectModules(active.profile.machineEffects);
+		const effects = machine
+			.getAllowedEffectModules(active.profile.machineEffects)
+			.filter(x => !(x.singleUse && (usedEffectIds ?? []).includes(x.id)));
 		if (effects.length === 0) return [undefined, undefined];
-		const slots = machine.features
-			.filter(x => !x.modifiable)
-			.reduce((acc, x) => acc + x.itemSlots, 0);
+		const slots = machine.features.reduce((acc, x) => acc + x.itemSlots, 0);
 		if (slots === 0) return [effects, undefined];
 		return [effects, slots];
 	});
 
 	const usedEffects = $derived(config?.effects);
+	const usedEffectIds = $derived(config?.effects.map(x => x.effect.id));
 
 	const [speedSum, productivitySum] = $derived.by(() => {
 		if (!usedEffects || !machine || !active.profile || !config) return [undefined, undefined];
-		let speed = machine.getBaseCraftingSpeed(active.profile.machineEffects) * config.speed,
-			productivity = 1 * config.productivity;
+		let speed =
+				machine.getBaseCraftingSpeed(active.profile.machineEffects) * config.speedOverride,
+			productivity = 1 * config.productivityOverride;
 		usedEffects.forEach(choice => {
 			const scaling = choice.scaling ?? 1;
 			choice.effect.modifiers.forEach(modifier => {
@@ -56,6 +58,13 @@
 		return [speed, productivity];
 	});
 
+	$effect(() => {
+		if (!config || speedSum == null || productivitySum == null) return;
+
+		config.speed = speedSum;
+		config.productivity = productivitySum;
+	});
+
 	const addEffect = () => {
 		if (!active.profile || !config || !selectedEffect || !slots) return;
 		const pickedEffect = active.profile.getEffectModuleById(selectedEffect);
@@ -64,19 +73,33 @@
 			alerts.push('All effect slots are full', 'ERROR');
 			return;
 		}
-		config.effects.push({ id: nanoid(), effect: pickedEffect });
+		config.effects.push({
+			id: nanoid(),
+			effect: pickedEffect,
+			...(pickedEffect.type !== 'fixed' ? { scaling: 1 } : {}),
+		});
+
+		// reset the selected effect since the picked Effect is now gone
+		if (pickedEffect.singleUse) selectedEffect = '';
+		// automatically select the last effect
+		if (selectableEffects && selectableEffects.length === 1)
+			selectedEffect = selectableEffects[0].id;
+		recalculateEdgeAmounts(active.profile, factory);
 	};
 
 	function deleteEffect(id: string) {
-		if (!active.profile || !config || !selectedEffect || !slots) return;
+		if (!active.profile || !config) return;
 		config.effects = config.effects.filter(x => x.id !== id);
+		if (selectableEffects && selectableEffects.length === 1)
+			selectedEffect = selectableEffects[0].id;
+		recalculateEdgeAmounts(active.profile, factory);
 	}
 
 	let editModifier = $state(false),
 		speedOverride = $state(0),
 		productivityOverride = $state(0);
 
-	type ModifierKey = 'speed' | 'productivity';
+	type ModifierKey = 'speedOverride' | 'productivityOverride';
 
 	const applyModifierOverride = (
 		key: ModifierKey,
@@ -97,19 +120,19 @@
 	const resetModifier = (key: ModifierKey) => {
 		if (!config) return;
 		config[key] = 1;
-		if (key === 'speed') {
+		if (key === 'speedOverride') {
 			speedOverride = Number(formatter.format(speedSum ?? 0));
-		} else if (key === 'productivity') {
+		} else if (key === 'productivityOverride') {
 			productivityOverride = Number(formatter.format(productivitySum ?? 0));
 		}
 	};
 
-	const onSpeedOverride = () => applyModifierOverride('speed', speedSum, speedOverride);
+	const onSpeedOverride = () => applyModifierOverride('speedOverride', speedSum, speedOverride);
 	const onProductivityOverride = () =>
-		applyModifierOverride('productivity', productivitySum, productivityOverride);
+		applyModifierOverride('productivityOverride', productivitySum, productivityOverride);
 
-	const onSpeedReset = () => resetModifier('speed');
-	const onProductivityReset = () => resetModifier('productivity');
+	const onSpeedReset = () => resetModifier('speedOverride');
+	const onProductivityReset = () => resetModifier('productivityOverride');
 
 	const onEditModifier = () => {
 		editModifier = !editModifier;
@@ -118,6 +141,11 @@
 			speedOverride = Number(formatter.format(speedSum ?? 0));
 			productivityOverride = Number(formatter.format(productivitySum ?? 0));
 		}
+	};
+
+	const onScalingChange = () => {
+		if (!active.profile || !factory) return;
+		recalculateEdgeAmounts(active.profile, factory);
 	};
 </script>
 
@@ -195,8 +223,17 @@
 						<li class="flex items-center justify-between gap-2">
 							<div class="grid flex-1 grid-cols-[170px_1fr] items-center gap-x-2">
 								<span class="truncate">{choice.effect.getDisplayName()}</span>
-								{#if choice.scaling}
-									<span>scaling: {choice.scaling}</span>
+								{#if choice.scaling != null}
+									<input
+										type="number"
+										min={choice.effect.minValue ?? 0}
+										max={choice.effect.maxValue ?? 10}
+										step={choice.effect.step ?? 0.1}
+										bind:value={choice.scaling}
+										onchange={onScalingChange}
+										class="input input-xs"
+										required
+									/>
 								{/if}
 							</div>
 							<button

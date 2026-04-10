@@ -47,14 +47,23 @@
 								<span class="text-right font-mono text-sm">
 									{#if modifier.valueScaling === 'exponential'}
 										x<sup>{modifier.value}</sup>
-									{:else if modifier.modifiable}
-										{modifier.minValue} - {modifier.maxValue}
+									{:else if effect.type !== 'fixed'}
+										{modifier.value * (effect.minValue ?? 1)} - {modifier.value *
+											(effect.maxValue ?? 1)}
 									{:else}
 										{modifier.value}
 									{/if}
 								</span>
 							</li>
 						{/each}
+						{#if effect.step}
+							<li class="grid grid-cols-[1fr_auto] items-center gap-x-4">
+								<span class="text-base-content/50 text-xs uppercase"> Steps: </span>
+								<span class="text-right font-mono text-sm">
+									{1 / effect.step}
+								</span>
+							</li>
+						{/if}
 					</ul>
 				</div>
 			</details>

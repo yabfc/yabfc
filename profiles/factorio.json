@@ -7003,8 +7003,8 @@
 					"modifiable": false
 				}
 			],
-			"perSlot": true,
-			"available": true
+			"available": true,
+			"type": "fixed"
 		},
 		{
 			"id": "speed-module-2",
@@ -7025,8 +7025,8 @@
 					"modifiable": false
 				}
 			],
-			"perSlot": true,
-			"available": true
+			"available": true,
+			"type": "fixed"
 		},
 		{
 			"id": "speed-module-3",
@@ -7047,8 +7047,8 @@
 					"modifiable": false
 				}
 			],
-			"perSlot": true,
-			"available": true
+			"available": true,
+			"type": "fixed"
 		},
 		{
 			"id": "efficiency-module-1",
@@ -7059,8 +7059,8 @@
 					"modifiable": false
 				}
 			],
-			"perSlot": true,
-			"available": true
+			"available": true,
+			"type": "fixed"
 		},
 		{
 			"id": "efficiency-module-2",
@@ -7071,8 +7071,8 @@
 					"modifiable": false
 				}
 			],
-			"perSlot": true,
-			"available": true
+			"available": true,
+			"type": "fixed"
 		},
 		{
 			"id": "efficiency-module-3",
@@ -7083,8 +7083,8 @@
 					"modifiable": false
 				}
 			],
-			"perSlot": true,
-			"available": true
+			"available": true,
+			"type": "fixed"
 		},
 		{
 			"id": "productivity-module-1",
@@ -7110,8 +7110,8 @@
 					"modifiable": false
 				}
 			],
-			"perSlot": true,
-			"available": true
+			"available": true,
+			"type": "fixed"
 		},
 		{
 			"id": "productivity-module-2",
@@ -7137,8 +7137,8 @@
 					"modifiable": false
 				}
 			],
-			"perSlot": true,
-			"available": true
+			"available": true,
+			"type": "fixed"
 		},
 		{
 			"id": "productivity-module-3",
@@ -7164,8 +7164,8 @@
 					"modifiable": false
 				}
 			],
-			"perSlot": true,
-			"available": true
+			"available": true,
+			"type": "fixed"
 		},
 		{
 			"id": "crafting-speed-stone-furnace",
@@ -7176,9 +7176,9 @@
 					"modifiable": false
 				}
 			],
-			"perSlot": true,
 			"available": true,
-			"hidden": true
+			"hidden": true,
+			"type": "fixed"
 		},
 		{
 			"id": "crafting-speed-electric-furnace",
@@ -7189,9 +7189,9 @@
 					"modifiable": false
 				}
 			],
-			"perSlot": true,
 			"available": true,
-			"hidden": true
+			"hidden": true,
+			"type": "fixed"
 		},
 		{
 			"id": "crafting-speed-steel-furnace",
@@ -7202,9 +7202,9 @@
 					"modifiable": false
 				}
 			],
-			"perSlot": true,
 			"available": true,
-			"hidden": true
+			"hidden": true,
+			"type": "fixed"
 		},
 		{
 			"id": "crafting-speed-assembling-machine-1",
@@ -7215,9 +7215,9 @@
 					"modifiable": false
 				}
 			],
-			"perSlot": true,
 			"available": true,
-			"hidden": true
+			"hidden": true,
+			"type": "fixed"
 		},
 		{
 			"id": "crafting-speed-assembling-machine-2",
@@ -7228,9 +7228,9 @@
 					"modifiable": false
 				}
 			],
-			"perSlot": true,
 			"available": true,
-			"hidden": true
+			"hidden": true,
+			"type": "fixed"
 		},
 		{
 			"id": "crafting-speed-assembling-machine-3",
@@ -7241,9 +7241,9 @@
 					"modifiable": false
 				}
 			],
-			"perSlot": true,
 			"available": true,
-			"hidden": true
+			"hidden": true,
+			"type": "fixed"
 		},
 		{
 			"id": "crafting-speed-oil-refinery",
@@ -7254,9 +7254,9 @@
 					"modifiable": false
 				}
 			],
-			"perSlot": true,
 			"available": true,
-			"hidden": true
+			"hidden": true,
+			"type": "fixed"
 		},
 		{
 			"id": "crafting-speed-chemical-plant",
@@ -7267,9 +7267,9 @@
 					"modifiable": false
 				}
 			],
-			"perSlot": true,
 			"available": true,
-			"hidden": true
+			"hidden": true,
+			"type": "fixed"
 		},
 		{
 			"id": "crafting-speed-centrifuge",
@@ -7280,9 +7280,9 @@
 					"modifiable": false
 				}
 			],
-			"perSlot": true,
 			"available": true,
-			"hidden": true
+			"hidden": true,
+			"type": "fixed"
 		},
 		{
 			"id": "crafting-speed-rocket-silo",
@@ -7293,9 +7293,9 @@
 					"modifiable": false
 				}
 			],
-			"perSlot": true,
 			"available": true,
-			"hidden": true
+			"hidden": true,
+			"type": "fixed"
 		}
 	],
 	"research": [
