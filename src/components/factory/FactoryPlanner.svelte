@@ -5,9 +5,12 @@
 	import ItemSelect from '@/components/shared/ItemSelect.svelte';
 	import { ZapIcon } from '@lucide/svelte';
 	import type Item from '@/lib/models/item';
+	import { NumberFormatter } from '@/lib/format/number';
 
 	let inputs = $state<{ item: Item; amount: number }[]>([]),
 		outputs = $state<{ item: Item; amount: number }[]>([]);
+
+	const formatter = new NumberFormatter(undefined, { maximumFractionDigits: 3 });
 
 	function clearFactory() {
 		factory.edges = [];
@@ -43,6 +46,20 @@
 			Object.values(factory.outputs),
 		);
 	}
+
+	const powerConsumption = $derived.by(() => {
+		if (!active.profile) return 0;
+		let power = 0;
+		Object.values(factory.recipeNodes).forEach(node => {
+			node.machines.forEach(config => {
+				if (!active.profile) return;
+				const machine = active.profile.getMachineById(config.machineId);
+				if (!machine) return;
+				power += machine.getPowerConsumption(config.effects) * config.machineCount;
+			});
+		});
+		return power;
+	});
 </script>
 
 <div
@@ -67,8 +84,10 @@
 			<li class="px-2">
 				<ZapIcon size="18" class="text-base-content/50 inline" />
 				<span class="sr-only">Electricity</span>
-				<b class="font-bold">13</b>
-				<span class="text-base-content/80">MW</span>
+				<b class="font-bold">{formatter.getPowerParts(powerConsumption ?? 0).value}</b>
+				<span class="text-base-content/80"
+					>{formatter.getPowerUnit(powerConsumption ?? 0)}</span
+				>
 			</li>
 		</ul>
 
