@@ -225,6 +225,10 @@
 						><PlusIcon size="13" />
 					</button>
 				</div>
+			{:else}
+				<p class="text-base-content/60 w-full items-center text-xs uppercase">
+					no effects available for this machine
+				</p>
 			{/if}
 		</div>
 	{/if}
