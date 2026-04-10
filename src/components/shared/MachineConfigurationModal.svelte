@@ -210,8 +210,16 @@
 						<li class="flex items-center justify-between gap-2">
 							<div class="grid flex-1 grid-cols-[170px_1fr] items-center gap-x-2">
 								<span class="truncate">{choice.effect.getDisplayName()}</span>
-								{#if choice.scaling}
-									<span>scaling: {choice.scaling}</span>
+								{#if choice.scaling != null}
+									<input
+										type="number"
+										min={choice.effect.minValue ?? 0}
+										max={choice.effect.maxValue ?? 10}
+										step={choice.effect.step ?? 0.1}
+										bind:value={choice.scaling}
+										class="input input-xs"
+										required
+									/>
 								{/if}
 							</div>
 							<button
