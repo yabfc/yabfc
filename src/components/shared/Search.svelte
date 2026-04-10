@@ -10,7 +10,7 @@
 	<label class="input input-sm w-full">
 		<SearchIcon size="14" />
 
-		<input type="search" bind:value placeholder="Search" class="grow" />
+		<input type="text" bind:value placeholder="Search" class="grow" />
 
 		<div class="size-6">
 			{#if value.length > 0}
