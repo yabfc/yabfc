@@ -239,22 +239,10 @@ export function calculateRecipeNodeModifier(
 	const runs = profile.settings.defaultDuration / recipe.duration;
 
 	const outputModifier = node.machines.reduce((sum, m) => {
-		const baseSpeed =
-			profile.getMachineById(m.machineId)?.getBaseCraftingSpeed(profile.machineEffects) ?? 1;
-
-		const machineSpeed = baseSpeed * m.speed * m.productivity;
-		const contribution = m.machineCount * machineSpeed;
-
-		return sum + contribution;
+		return sum + m.machineCount * m.speed * m.productivity;
 	}, 0);
 	const inputModifier = node.machines.reduce((sum, m) => {
-		const baseSpeed =
-			profile.getMachineById(m.machineId)?.getBaseCraftingSpeed(profile.machineEffects) ?? 1;
-
-		const machineSpeed = baseSpeed * m.speed;
-		const contribution = m.machineCount * machineSpeed;
-
-		return sum + contribution;
+		return sum + m.machineCount * m.speed;
 	}, 0);
 
 	modifier.output = outputModifier * runs;

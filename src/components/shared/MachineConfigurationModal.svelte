@@ -42,8 +42,9 @@
 
 	const [speedSum, productivitySum] = $derived.by(() => {
 		if (!usedEffects || !machine || !active.profile || !config) return [undefined, undefined];
-		let speed = machine.getBaseCraftingSpeed(active.profile.machineEffects) * config.speed,
-			productivity = 1 * config.productivity;
+		let speed =
+				machine.getBaseCraftingSpeed(active.profile.machineEffects) * config.speedOverride,
+			productivity = 1 * config.productivityOverride;
 		usedEffects.forEach(choice => {
 			const scaling = choice.scaling ?? 1;
 			choice.effect.modifiers.forEach(modifier => {
@@ -55,6 +56,13 @@
 			});
 		});
 		return [speed, productivity];
+	});
+
+	$effect(() => {
+		if (!config || speedSum == null || productivitySum == null) return;
+
+		config.speed = speedSum;
+		config.productivity = productivitySum;
 	});
 
 	const addEffect = () => {
@@ -91,7 +99,7 @@
 		speedOverride = $state(0),
 		productivityOverride = $state(0);
 
-	type ModifierKey = 'speed' | 'productivity';
+	type ModifierKey = 'speedOverride' | 'productivityOverride';
 
 	const applyModifierOverride = (
 		key: ModifierKey,
@@ -112,19 +120,19 @@
 	const resetModifier = (key: ModifierKey) => {
 		if (!config) return;
 		config[key] = 1;
-		if (key === 'speed') {
+		if (key === 'speedOverride') {
 			speedOverride = Number(formatter.format(speedSum ?? 0));
-		} else if (key === 'productivity') {
+		} else if (key === 'productivityOverride') {
 			productivityOverride = Number(formatter.format(productivitySum ?? 0));
 		}
 	};
 
-	const onSpeedOverride = () => applyModifierOverride('speed', speedSum, speedOverride);
+	const onSpeedOverride = () => applyModifierOverride('speedOverride', speedSum, speedOverride);
 	const onProductivityOverride = () =>
-		applyModifierOverride('productivity', productivitySum, productivityOverride);
+		applyModifierOverride('productivityOverride', productivitySum, productivityOverride);
 
-	const onSpeedReset = () => resetModifier('speed');
-	const onProductivityReset = () => resetModifier('productivity');
+	const onSpeedReset = () => resetModifier('speedOverride');
+	const onProductivityReset = () => resetModifier('productivityOverride');
 
 	const onEditModifier = () => {
 		editModifier = !editModifier;

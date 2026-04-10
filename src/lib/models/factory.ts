@@ -3,8 +3,10 @@ import type { EffectChoice } from '@/lib/models/effect';
 export interface MachineConfiguration {
 	machineId: string;
 	machineCount: number;
-	productivity: number;
+	productivityOverride: number;
+	speedOverride: number;
 	speed: number;
+	productivity: number;
 	effects: EffectChoice[];
 }
 

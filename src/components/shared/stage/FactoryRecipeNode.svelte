@@ -37,8 +37,10 @@
 		node.machines.push({
 			machineId: machine,
 			machineCount: 1,
-			productivity: 1,
+			productivityOverride: 1,
+			speedOverride: 1,
 			speed: 1,
+			productivity: 1,
 			effects: [],
 		});
 		recalculateEdgeAmounts(active.profile, factory);
