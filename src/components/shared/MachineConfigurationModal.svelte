@@ -21,23 +21,24 @@
 	};
 
 	let { dialog = $bindable(), config = $bindable(), onChange }: Props = $props();
-	let selectedEffect = $state<string>();
+	let selectedEffect = $state('');
 	const machine = $derived(config ? active.profile?.getMachineById(config.machineId) : undefined);
 
 	const formatter = new NumberFormatter(undefined, { maximumFractionDigits: 4 });
 
 	const [selectableEffects, slots] = $derived.by(() => {
 		if (!active.profile || !machine) return [undefined, undefined];
-		const effects = machine.getAllowedEffectModules(active.profile.machineEffects);
+		const effects = machine
+			.getAllowedEffectModules(active.profile.machineEffects)
+			.filter(x => !(x.singleUse && (usedEffectIds ?? []).includes(x.id)));
 		if (effects.length === 0) return [undefined, undefined];
-		const slots = machine.features
-			.filter(x => !x.modifiable)
-			.reduce((acc, x) => acc + x.itemSlots, 0);
+		const slots = machine.features.reduce((acc, x) => acc + x.itemSlots, 0);
 		if (slots === 0) return [effects, undefined];
 		return [effects, slots];
 	});
 
 	const usedEffects = $derived(config?.effects);
+	const usedEffectIds = $derived(config?.effects.map(x => x.effect.id));
 
 	const [speedSum, productivitySum] = $derived.by(() => {
 		if (!usedEffects || !machine || !active.profile || !config) return [undefined, undefined];
@@ -64,12 +65,26 @@
 			alerts.push('All effect slots are full', 'ERROR');
 			return;
 		}
-		config.effects.push({ id: nanoid(), effect: pickedEffect });
+		config.effects.push({
+			id: nanoid(),
+			effect: pickedEffect,
+			...(pickedEffect.type !== 'fixed' ? { scaling: 1 } : {}),
+		});
+
+		// reset the selected effect since the picked Effect is now gone
+		if (pickedEffect.singleUse) selectedEffect = '';
+		// automatically select the last effect
+		if (selectableEffects && selectableEffects.length === 1)
+			selectedEffect = selectableEffects[0].id;
+		recalculateEdgeAmounts(active.profile, factory);
 	};
 
 	function deleteEffect(id: string) {
-		if (!active.profile || !config || !selectedEffect || !slots) return;
+		if (!active.profile || !config) return;
 		config.effects = config.effects.filter(x => x.id !== id);
+		if (selectableEffects && selectableEffects.length === 1)
+			selectedEffect = selectableEffects[0].id;
+		recalculateEdgeAmounts(active.profile, factory);
 	}
 
 	let editModifier = $state(false),
