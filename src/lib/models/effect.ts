@@ -52,6 +52,7 @@ interface EffectModuleBase {
 	available: boolean;
 	modifiers: ModifierInterface[];
 	hidden: boolean;
+	singleUse?: boolean;
 }
 
 // standard factorio effects
@@ -89,6 +90,7 @@ export default class EffectModule {
 	maxValue?: number;
 	step?: number;
 	hidden: boolean;
+	singleUse?: boolean;
 
 	constructor(data: EffectModuleInterface) {
 		this.id = data.id;
@@ -97,6 +99,7 @@ export default class EffectModule {
 		this.modifiers = data.modifiers.map(modifier => new Modifier(modifier));
 		this.type = data.type;
 		this.hidden = data.hidden;
+		this.singleUse = data.singleUse;
 
 		if (data.type === 'modifiable' || data.type === 'stepped') {
 			this.minValue = data.minValue;
