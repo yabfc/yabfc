@@ -31,6 +31,7 @@
 		const effects = machine.getAllowedEffectModules(active.profile.machineEffects);
 		if (effects.length === 0) return [undefined, undefined];
 		const slots = machine.features.reduce((acc, x) => acc + x.itemSlots, 0);
+		if (slots === 0) return [effects, undefined];
 		return [effects, slots];
 	});
 
@@ -184,7 +185,8 @@
 
 			<div class="w-full pt-4">
 				<p class="text-base-content/60 pt-1 text-sm uppercase">
-					Used Effects ({usedEffects?.length ?? 0}/{slots ?? 0})
+					Used Effects {#if slots}({usedEffects?.length ?? 0}/{slots ?? 0})
+					{/if}
 				</p>
 				<ul class="list text-base-content/80 flex w-full flex-col gap-1 text-xs">
 					{#each usedEffects as choice}
