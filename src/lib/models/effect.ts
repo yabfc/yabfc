@@ -7,7 +7,6 @@ export interface EffectChoice {
 export interface BaseModifier {
 	id: 'speed' | 'power' | 'consumption' | 'productivity' | 'pollution' | 'quality';
 	name?: string;
-	onlyOutputScales?: boolean;
 	/** @defaults to linear scaling */
 	valueScaling?: 'exponential';
 }
@@ -30,7 +29,6 @@ export class Modifier {
 	name?: string;
 	value?: number;
 	modifiable: boolean;
-	onlyOutputScales?: boolean;
 	valueScaling?: 'exponential';
 	minValue?: number;
 	maxValue?: number;
@@ -39,7 +37,6 @@ export class Modifier {
 		this.id = modifier.id;
 		this.name = modifier.name;
 		this.modifiable = modifier.modifiable;
-		this.onlyOutputScales = modifier.onlyOutputScales;
 		this.valueScaling = modifier.valueScaling;
 
 		if (modifier.modifiable) {

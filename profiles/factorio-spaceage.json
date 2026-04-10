@@ -11724,20 +11724,17 @@
 				{
 					"id": "speed",
 					"value": 1.2,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				},
 				{
 					"id": "consumption",
 					"value": 1.5,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				},
 				{
 					"id": "quality",
 					"value": 0.9,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -11749,20 +11746,17 @@
 				{
 					"id": "speed",
 					"value": 1.3,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				},
 				{
 					"id": "consumption",
 					"value": 1.6,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				},
 				{
 					"id": "quality",
 					"value": 0.85,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -11774,20 +11768,17 @@
 				{
 					"id": "speed",
 					"value": 1.5,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				},
 				{
 					"id": "consumption",
 					"value": 1.7,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				},
 				{
 					"id": "quality",
 					"value": 0.75,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -11799,8 +11790,7 @@
 				{
 					"id": "consumption",
 					"value": 0.7,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -11812,8 +11802,7 @@
 				{
 					"id": "consumption",
 					"value": 0.6,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -11825,8 +11814,7 @@
 				{
 					"id": "consumption",
 					"value": 0.5,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -11838,26 +11826,22 @@
 				{
 					"id": "productivity",
 					"value": 1.04,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				},
 				{
 					"id": "consumption",
 					"value": 1.4,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				},
 				{
 					"id": "pollution",
 					"value": 1.05,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				},
 				{
 					"id": "speed",
 					"value": 0.95,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -11869,26 +11853,22 @@
 				{
 					"id": "productivity",
 					"value": 1.06,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				},
 				{
 					"id": "consumption",
 					"value": 1.6,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				},
 				{
 					"id": "pollution",
 					"value": 1.07,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				},
 				{
 					"id": "speed",
 					"value": 0.9,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -11900,26 +11880,22 @@
 				{
 					"id": "productivity",
 					"value": 1.1,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				},
 				{
 					"id": "consumption",
 					"value": 1.8,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				},
 				{
 					"id": "pollution",
 					"value": 1.1,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				},
 				{
 					"id": "speed",
 					"value": 0.85,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -11931,14 +11907,12 @@
 				{
 					"id": "quality",
 					"value": 1.1,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				},
 				{
 					"id": "speed",
 					"value": 0.95,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -11950,14 +11924,12 @@
 				{
 					"id": "quality",
 					"value": 1.2,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				},
 				{
 					"id": "speed",
 					"value": 0.95,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -11969,14 +11941,12 @@
 				{
 					"id": "quality",
 					"value": 1.25,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				},
 				{
 					"id": "speed",
 					"value": 0.95,
-					"modifiable": false,
-					"onlyOutputScales": false
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -11988,8 +11958,7 @@
 				{
 					"id": "speed",
 					"value": 1,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -12002,8 +11971,7 @@
 				{
 					"id": "speed",
 					"value": 2,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -12016,8 +11984,7 @@
 				{
 					"id": "speed",
 					"value": 2,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -12030,8 +11997,7 @@
 				{
 					"id": "speed",
 					"value": 0.5,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -12044,8 +12010,7 @@
 				{
 					"id": "speed",
 					"value": 0.5,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -12058,8 +12023,7 @@
 				{
 					"id": "speed",
 					"value": 0.75,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -12072,8 +12036,7 @@
 				{
 					"id": "speed",
 					"value": 1.25,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -12086,8 +12049,7 @@
 				{
 					"id": "speed",
 					"value": 1,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -12100,8 +12062,7 @@
 				{
 					"id": "speed",
 					"value": 1,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -12114,8 +12075,7 @@
 				{
 					"id": "speed",
 					"value": 1,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -12128,8 +12088,7 @@
 				{
 					"id": "speed",
 					"value": 2,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -12142,8 +12101,7 @@
 				{
 					"id": "speed",
 					"value": 1,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -12156,8 +12114,7 @@
 				{
 					"id": "speed",
 					"value": 4,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -12170,8 +12127,7 @@
 				{
 					"id": "speed",
 					"value": 1,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -12184,8 +12140,7 @@
 				{
 					"id": "speed",
 					"value": 2,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -12198,8 +12153,7 @@
 				{
 					"id": "speed",
 					"value": 2,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
@@ -12212,8 +12166,7 @@
 				{
 					"id": "speed",
 					"value": 1,
-					"modifiable": false,
-					"onlyOutputScales": true
+					"modifiable": false
 				}
 			],
 			"perSlot": true,
