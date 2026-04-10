@@ -30,7 +30,9 @@
 		if (!active.profile || !machine) return [undefined, undefined];
 		const effects = machine.getAllowedEffectModules(active.profile.machineEffects);
 		if (effects.length === 0) return [undefined, undefined];
-		const slots = machine.features.reduce((acc, x) => acc + x.itemSlots, 0);
+		const slots = machine.features
+			.filter(x => !x.modifiable)
+			.reduce((acc, x) => acc + x.itemSlots, 0);
 		if (slots === 0) return [effects, undefined];
 		return [effects, slots];
 	});

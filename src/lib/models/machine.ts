@@ -7,6 +7,7 @@ export interface MachineFeatureInterface {
 	effectPerSlot: string[];
 	disables?: string[];
 	hidden?: boolean;
+	modifiable?: boolean;
 }
 
 export class MachineFeature {
@@ -16,6 +17,7 @@ export class MachineFeature {
 	effectPerSlot: string[];
 	disables?: string[];
 	hidden?: boolean;
+	modifiable?: boolean;
 
 	constructor(feature: MachineFeatureInterface) {
 		this.id = feature.id;
@@ -24,6 +26,7 @@ export class MachineFeature {
 		this.effectPerSlot = feature.effectPerSlot;
 		this.disables = feature.disables;
 		this.hidden = feature.hidden;
+		this.modifiable = feature.modifiable;
 	}
 
 	getDisplayName(): string {

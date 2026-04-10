@@ -8943,15 +8943,17 @@
 			"features": [
 				{
 					"id": "overclocking",
-					"itemSlots": 3,
+					"itemSlots": 0,
 					"effectPerSlot": ["overclocking"],
-					"disables": ["underclocking"]
+					"disables": ["underclocking"],
+					"modifiable": true
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"],
-					"disables": ["overclocking"]
+					"disables": ["overclocking"],
+					"modifiable": true
 				}
 			],
 			"available": true
@@ -8969,15 +8971,17 @@
 				},
 				{
 					"id": "overclocking",
-					"itemSlots": 3,
+					"itemSlots": 0,
 					"effectPerSlot": ["overclocking"],
-					"disables": ["underclocking"]
+					"disables": ["underclocking"],
+					"modifiable": true
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"],
-					"disables": ["overclocking"]
+					"disables": ["overclocking"],
+					"modifiable": true
 				}
 			],
 			"available": true
@@ -8989,15 +8993,17 @@
 			"features": [
 				{
 					"id": "overclocking",
-					"itemSlots": 3,
+					"itemSlots": 0,
 					"effectPerSlot": ["overclocking"],
-					"disables": ["underclocking"]
+					"disables": ["underclocking"],
+					"modifiable": true
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"],
-					"disables": ["overclocking"]
+					"disables": ["overclocking"],
+					"modifiable": true
 				}
 			],
 			"available": true
@@ -9015,15 +9021,17 @@
 				},
 				{
 					"id": "overclocking",
-					"itemSlots": 3,
+					"itemSlots": 0,
 					"effectPerSlot": ["overclocking"],
-					"disables": ["underclocking"]
+					"disables": ["underclocking"],
+					"modifiable": true
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"],
-					"disables": ["overclocking"]
+					"disables": ["overclocking"],
+					"modifiable": true
 				}
 			],
 			"available": true
@@ -9040,15 +9048,17 @@
 				},
 				{
 					"id": "overclocking",
-					"itemSlots": 3,
+					"itemSlots": 0,
 					"effectPerSlot": ["overclocking"],
-					"disables": ["underclocking"]
+					"disables": ["underclocking"],
+					"modifiable": true
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"],
-					"disables": ["overclocking"]
+					"disables": ["overclocking"],
+					"modifiable": true
 				}
 			],
 			"available": true
@@ -9065,15 +9075,17 @@
 				},
 				{
 					"id": "overclocking",
-					"itemSlots": 3,
+					"itemSlots": 0,
 					"effectPerSlot": ["overclocking"],
-					"disables": ["underclocking"]
+					"disables": ["underclocking"],
+					"modifiable": true
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"],
-					"disables": ["overclocking"]
+					"disables": ["overclocking"],
+					"modifiable": true
 				}
 			],
 			"available": true
@@ -9085,15 +9097,17 @@
 			"features": [
 				{
 					"id": "overclocking",
-					"itemSlots": 3,
+					"itemSlots": 0,
 					"effectPerSlot": ["overclocking"],
-					"disables": ["underclocking"]
+					"disables": ["underclocking"],
+					"modifiable": true
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"],
-					"disables": ["overclocking"]
+					"disables": ["overclocking"],
+					"modifiable": true
 				}
 			],
 			"available": true
@@ -9110,15 +9124,17 @@
 				},
 				{
 					"id": "overclocking",
-					"itemSlots": 3,
+					"itemSlots": 0,
 					"effectPerSlot": ["overclocking"],
-					"disables": ["underclocking"]
+					"disables": ["underclocking"],
+					"modifiable": true
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"],
-					"disables": ["overclocking"]
+					"disables": ["overclocking"],
+					"modifiable": true
 				}
 			],
 			"available": true
@@ -9135,15 +9151,17 @@
 				},
 				{
 					"id": "overclocking",
-					"itemSlots": 3,
+					"itemSlots": 0,
 					"effectPerSlot": ["overclocking"],
-					"disables": ["underclocking"]
+					"disables": ["underclocking"],
+					"modifiable": true
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"],
-					"disables": ["overclocking"]
+					"disables": ["overclocking"],
+					"modifiable": true
 				}
 			],
 			"available": true
@@ -9160,15 +9178,17 @@
 				},
 				{
 					"id": "overclocking",
-					"itemSlots": 3,
+					"itemSlots": 0,
 					"effectPerSlot": ["overclocking"],
-					"disables": ["underclocking"]
+					"disables": ["underclocking"],
+					"modifiable": true
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"],
-					"disables": ["overclocking"]
+					"disables": ["overclocking"],
+					"modifiable": true
 				}
 			],
 			"available": true
@@ -9185,15 +9205,17 @@
 				},
 				{
 					"id": "overclocking",
-					"itemSlots": 3,
+					"itemSlots": 0,
 					"effectPerSlot": ["overclocking"],
-					"disables": ["underclocking"]
+					"disables": ["underclocking"],
+					"modifiable": true
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"],
-					"disables": ["overclocking"]
+					"disables": ["overclocking"],
+					"modifiable": true
 				}
 			],
 			"available": true
@@ -9205,15 +9227,17 @@
 			"features": [
 				{
 					"id": "overclocking",
-					"itemSlots": 3,
+					"itemSlots": 0,
 					"effectPerSlot": ["overclocking"],
-					"disables": ["underclocking"]
+					"disables": ["underclocking"],
+					"modifiable": true
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"],
-					"disables": ["overclocking"]
+					"disables": ["overclocking"],
+					"modifiable": true
 				}
 			],
 			"available": true
@@ -9225,15 +9249,17 @@
 			"features": [
 				{
 					"id": "overclocking",
-					"itemSlots": 3,
+					"itemSlots": 0,
 					"effectPerSlot": ["overclocking"],
-					"disables": ["underclocking"]
+					"disables": ["underclocking"],
+					"modifiable": true
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"],
-					"disables": ["overclocking"]
+					"disables": ["overclocking"],
+					"modifiable": true
 				}
 			],
 			"available": true
@@ -9245,15 +9271,17 @@
 			"features": [
 				{
 					"id": "overclocking-lin",
-					"itemSlots": 3,
+					"itemSlots": 0,
 					"effectPerSlot": ["overclocking-lin"],
-					"disables": ["underclocking-lin"]
+					"disables": ["underclocking-lin"],
+					"modifiable": true
 				},
 				{
 					"id": "underclocking-lin",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking-lin"],
-					"disables": ["overclocking-lin"]
+					"disables": ["overclocking-lin"],
+					"modifiable": true
 				}
 			],
 			"available": true
@@ -9270,15 +9298,17 @@
 				},
 				{
 					"id": "overclocking",
-					"itemSlots": 3,
+					"itemSlots": 0,
 					"effectPerSlot": ["overclocking"],
-					"disables": ["underclocking"]
+					"disables": ["underclocking"],
+					"modifiable": true
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"],
-					"disables": ["overclocking"]
+					"disables": ["overclocking"],
+					"modifiable": true
 				}
 			],
 			"available": true
@@ -9295,15 +9325,17 @@
 				},
 				{
 					"id": "overclocking",
-					"itemSlots": 3,
+					"itemSlots": 0,
 					"effectPerSlot": ["overclocking"],
-					"disables": ["underclocking"]
+					"disables": ["underclocking"],
+					"modifiable": true
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"],
-					"disables": ["overclocking"]
+					"disables": ["overclocking"],
+					"modifiable": true
 				}
 			],
 			"available": true
@@ -9320,15 +9352,17 @@
 				},
 				{
 					"id": "overclocking",
-					"itemSlots": 3,
+					"itemSlots": 0,
 					"effectPerSlot": ["overclocking"],
-					"disables": ["underclocking"]
+					"disables": ["underclocking"],
+					"modifiable": true
 				},
 				{
 					"id": "underclocking",
 					"itemSlots": 0,
 					"effectPerSlot": ["underclocking"],
-					"disables": ["overclocking"]
+					"disables": ["overclocking"],
+					"modifiable": true
 				}
 			],
 			"available": true
@@ -9517,11 +9551,11 @@
 					"type": "recipe",
 					"ids": [
 						"temporal-processor",
-						"space-elevator-part-12",
-						"dark-energy",
 						"quantum-encoder",
-						"quantum-energy",
 						"dark-matter",
+						"quantum-energy",
+						"dark-energy",
+						"space-elevator-part-12",
 						"superposition-oscillator"
 					]
 				}
@@ -9533,7 +9567,7 @@
 			"unlocks": [
 				{
 					"type": "recipe",
-					"ids": ["packaged-ionized-fuel", "unpackage-ionized-fuel", "ionized-fuel"]
+					"ids": ["unpackage-ionized-fuel", "packaged-ionized-fuel", "ionized-fuel"]
 				}
 			]
 		},
@@ -9555,14 +9589,14 @@
 				{
 					"type": "recipe",
 					"ids": [
-						"ficsite-ingot-iron",
-						"converter",
-						"diamond",
-						"space-elevator-part-10",
-						"time-crystal",
 						"ficsite-mesh",
+						"sam-fluctuator",
+						"diamond",
 						"ingot-sam",
-						"sam-fluctuator"
+						"converter",
+						"time-crystal",
+						"space-elevator-part-10",
+						"ficsite-ingot-iron"
 					]
 				}
 			]
@@ -9574,13 +9608,13 @@
 				{
 					"type": "recipe",
 					"ids": [
-						"rubber",
-						"petroleum-coke",
-						"circuit-board",
 						"oil-pump",
+						"oil-refinery",
+						"rubber",
 						"plastic",
+						"circuit-board",
 						"liquid-fuel",
-						"oil-refinery"
+						"petroleum-coke"
 					]
 				}
 			]
@@ -9591,7 +9625,7 @@
 			"unlocks": [
 				{
 					"type": "recipe",
-					"ids": ["alternate-turbofuel", "packaged-turbo-fuel"]
+					"ids": ["packaged-turbo-fuel", "alternate-turbofuel"]
 				}
 			]
 		},
@@ -9689,7 +9723,7 @@
 			"unlocks": [
 				{
 					"type": "recipe",
-					"ids": ["alternate-turbo-heavy-fuel", "unpackage-turbo-fuel", "packaged-turbo-fuel"]
+					"ids": ["packaged-turbo-fuel", "alternate-turbo-heavy-fuel", "unpackage-turbo-fuel"]
 				}
 			],
 			"prerequisites": ["schematic-5-1", "schematic-alternate-enriched-coal"]
@@ -9700,7 +9734,7 @@
 			"unlocks": [
 				{
 					"type": "recipe",
-					"ids": ["smelter-mk1", "steel-pipe", "ingot-steel", "steel-beam", "space-elevator-part-2"]
+					"ids": ["ingot-steel", "steel-pipe", "steel-beam", "smelter-mk1", "space-elevator-part-2"]
 				}
 			]
 		},
@@ -9722,14 +9756,14 @@
 				{
 					"type": "recipe",
 					"ids": [
-						"packaged-oil-residue",
-						"packaged-water",
-						"packager",
+						"fluid-canister",
 						"packaged-biofuel",
 						"fuel",
-						"fluid-canister",
+						"packaged-oil-residue",
+						"packaged-water",
 						"packaged-crude-oil",
-						"liquid-biofuel"
+						"liquid-biofuel",
+						"packager"
 					]
 				}
 			]
@@ -9839,12 +9873,12 @@
 				{
 					"type": "recipe",
 					"ids": [
-						"packaged-alumina",
+						"aluminum-scrap",
 						"aluminum-casing",
-						"alumina-solution",
+						"packaged-alumina",
 						"ingot-aluminum",
-						"aluminum-sheet",
-						"aluminum-scrap"
+						"alumina-solution",
+						"aluminum-sheet"
 					]
 				}
 			]
@@ -9889,10 +9923,10 @@
 				{
 					"type": "recipe",
 					"ids": [
-						"miner-mk2",
-						"encased-industrial-beam",
-						"motor",
 						"stator",
+						"motor",
+						"encased-industrial-beam",
+						"miner-mk2",
 						"space-elevator-part-3"
 					]
 				}
@@ -9937,11 +9971,11 @@
 				{
 					"type": "recipe",
 					"ids": [
-						"computer",
-						"space-elevator-part-4",
 						"modular-frame-heavy",
 						"manufacturer-mk1",
-						"space-elevator-part-5"
+						"computer",
+						"space-elevator-part-5",
+						"space-elevator-part-4"
 					]
 				}
 			]
@@ -10019,11 +10053,11 @@
 				{
 					"type": "recipe",
 					"ids": [
-						"rotor",
-						"modular-frame",
-						"assembler-mk1",
 						"space-elevator-part-1",
-						"copper-sheet"
+						"modular-frame",
+						"copper-sheet",
+						"rotor",
+						"assembler-mk1"
 					]
 				}
 			]
@@ -10123,16 +10157,16 @@
 				{
 					"type": "recipe",
 					"ids": [
-						"nitric-acid",
 						"hadron-collider",
-						"non-fissile-uranium",
-						"copper-dust",
-						"pressure-conversion-cube",
 						"packaged-nitric-acid",
-						"plutonium-fuel-rod",
-						"space-elevator-part-9",
+						"non-fissile-uranium",
+						"pressure-conversion-cube",
 						"plutonium",
-						"plutonium-cell"
+						"copper-dust",
+						"plutonium-fuel-rod",
+						"plutonium-cell",
+						"space-elevator-part-9",
+						"nitric-acid"
 					]
 				}
 			]
@@ -10155,13 +10189,13 @@
 				{
 					"type": "recipe",
 					"ids": [
-						"packaged-sulfuric-acid",
+						"radio-control-unit",
 						"sulfuric-acid",
-						"battery",
-						"blender",
-						"computer-super",
 						"space-elevator-part-7",
-						"radio-control-unit"
+						"blender",
+						"packaged-sulfuric-acid",
+						"computer-super",
+						"battery"
 					]
 				}
 			]
@@ -10172,7 +10206,7 @@
 			"unlocks": [
 				{
 					"type": "recipe",
-					"ids": ["unpackage-turbo-fuel", "packaged-turbo-fuel", "alternate-turbo-blend-fuel"]
+					"ids": ["packaged-turbo-fuel", "alternate-turbo-blend-fuel", "unpackage-turbo-fuel"]
 				}
 			],
 			"prerequisites": ["schematic-7-5"]
@@ -10184,11 +10218,11 @@
 				{
 					"type": "recipe",
 					"ids": [
-						"uranium-cell",
+						"electromagnetic-control-rod",
 						"generator-nuclear",
-						"space-elevator-part-6",
 						"nuclear-fuel-rod",
-						"electromagnetic-control-rod"
+						"uranium-cell",
+						"space-elevator-part-6"
 					]
 				}
 			]
@@ -10244,12 +10278,12 @@
 				{
 					"type": "recipe",
 					"ids": [
-						"packaged-nitrogen",
 						"gas-tank",
+						"packaged-nitrogen",
 						"heat-sink",
-						"fused-modular-frame",
 						"cooling-system",
-						"fracking-extractor"
+						"fracking-extractor",
+						"fused-modular-frame"
 					]
 				}
 			]
@@ -11946,7 +11980,7 @@
 			"unlocks": [
 				{
 					"type": "recipe",
-					"ids": ["iron-plate-reinforced", "concrete", "constructor-mk1", "screw"]
+					"ids": ["constructor-mk1", "iron-plate-reinforced", "screw", "concrete"]
 				}
 			],
 			"prerequisites": ["schematic-tutorial1-5"]
@@ -11979,7 +12013,7 @@
 			"unlocks": [
 				{
 					"type": "recipe",
-					"ids": ["biomass-wood", "biomass-leaves"]
+					"ids": ["biomass-leaves", "biomass-wood"]
 				}
 			],
 			"prerequisites": ["schematic-tutorial4"]
