@@ -1,12 +1,13 @@
-name: 🧪 Lint & Test
+name: 🏗️ Deploy on github pages
 
 on:
+  workflow_dispatch:
   push:
-    branches: [main]
-  pull_request:
+    tags:
+      - '*'
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-24.04
     steps:
       - name: Check out repository
@@ -26,8 +27,27 @@ jobs:
       - name: Install pnpm dependencies
         run: pnpm install
 
-      - name: Check
-        run: pnpm check
-
       - name: Build
         run: pnpm build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
