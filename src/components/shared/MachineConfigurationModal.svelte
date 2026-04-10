@@ -4,6 +4,7 @@
 
 <script lang="ts">
 	import Dialog from '@/components/shared/Dialog.svelte';
+	import { NumberFormatter } from '@/lib/format/number';
 	import type { MachineConfiguration } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
 	import alerts from '@/stores/alerts.svelte';
@@ -20,7 +21,7 @@
 	let effect = $state<string>();
 	const machine = $derived(config ? active.profile?.getMachineById(config.machineId) : undefined);
 
-	const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 4 });
+	const formatter = new NumberFormatter(undefined, { maximumFractionDigits: 4 });
 
 	const [selectableEffects, slots] = $derived.by(() => {
 		if (!active.profile || !machine) return [undefined, undefined];
@@ -99,6 +100,13 @@
 								'productivity'}:</span
 						>
 						<span>{formatter.format(productivitySum)}</span>
+					{/if}
+					{#if machine}
+						<span>Power:</span>
+						<span
+							>{formatter.formatPower(machine.getPowerConsumption(usedEffects || []))} (per
+							machine)</span
+						>
 					{/if}
 				</div>
 			</div>
