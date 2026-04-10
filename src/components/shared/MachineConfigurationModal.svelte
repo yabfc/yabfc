@@ -11,6 +11,8 @@
 	import { PlusIcon, Trash2Icon } from '@lucide/svelte';
 	import { nanoid } from 'nanoid';
 	import InputOverride from '@/components/shared/InputOverride.svelte';
+	import { recalculateEdgeAmounts } from '@/lib/factory/factory';
+	import factory from '@/stores/factory.svelte';
 
 	type Props = {
 		dialog?: HTMLDialogElement;
@@ -85,6 +87,8 @@
 		} else {
 			config[key] = (overrideValue / currentSum) * config[key];
 		}
+		if (!active.profile || !factory) return;
+		recalculateEdgeAmounts(active.profile, factory);
 	};
 
 	const resetModifier = (key: ModifierKey) => {
