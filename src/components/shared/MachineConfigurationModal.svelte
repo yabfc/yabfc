@@ -10,6 +10,7 @@
 	import alerts from '@/stores/alerts.svelte';
 	import { PlusIcon, Trash2Icon } from '@lucide/svelte';
 	import { nanoid } from 'nanoid';
+	import InputOverride from '@/components/shared/InputOverride.svelte';
 
 	type Props = {
 		dialog?: HTMLDialogElement;
@@ -18,7 +19,7 @@
 	};
 
 	let { dialog = $bindable(), config = $bindable(), onChange }: Props = $props();
-	let effect = $state<string>();
+	let selectedEffect = $state<string>();
 	const machine = $derived(config ? active.profile?.getMachineById(config.machineId) : undefined);
 
 	const formatter = new NumberFormatter(undefined, { maximumFractionDigits: 4 });
@@ -34,9 +35,9 @@
 	const usedEffects = $derived(config?.effects);
 
 	const [speedSum, productivitySum] = $derived.by(() => {
-		if (!usedEffects || !machine || !active.profile) return [undefined, undefined];
-		let speed = machine.getBaseCraftingSpeed(active.profile.machineEffects),
-			productivity = 1;
+		if (!usedEffects || !machine || !active.profile || !config) return [undefined, undefined];
+		let speed = machine.getBaseCraftingSpeed(active.profile.machineEffects) * config.speed,
+			productivity = 1 * config.productivity;
 		usedEffects.forEach(choice => {
 			const scaling = choice.scaling ?? 1;
 			choice.effect.modifiers.forEach(modifier => {
@@ -51,8 +52,8 @@
 	});
 
 	const addEffect = () => {
-		if (!active.profile || !config || !effect || !slots) return;
-		const pickedEffect = active.profile.getEffectModuleById(effect);
+		if (!active.profile || !config || !selectedEffect || !slots) return;
+		const pickedEffect = active.profile.getEffectModuleById(selectedEffect);
 		if (!pickedEffect) return;
 		if (slots <= config.effects.length) {
 			alerts.push('All effect slots are full', 'ERROR');
@@ -62,9 +63,50 @@
 	};
 
 	function deleteEffect(id: string) {
-		if (!active.profile || !config || !effect || !slots) return;
+		if (!active.profile || !config || !selectedEffect || !slots) return;
 		config.effects = config.effects.filter(x => x.id !== id);
 	}
+
+	let editModifier = $state(false),
+		speedOverride = $state(0),
+		productivityOverride = $state(0);
+
+	type ModifierKey = 'speed' | 'productivity';
+
+	const applyModifierOverride = (
+		key: ModifierKey,
+		currentSum: number | null | undefined,
+		overrideValue: number,
+	) => {
+		if (!config || currentSum == null) return;
+
+		if (currentSum === 0) {
+			config[key] = overrideValue;
+		} else {
+			config[key] = (overrideValue / currentSum) * config[key];
+		}
+	};
+
+	const resetModifier = (key: ModifierKey) => {
+		if (!config) return;
+		config[key] = 1;
+	};
+
+	const onSpeedOverride = () => applyModifierOverride('speed', speedSum, speedOverride);
+	const onProductivityOverride = () =>
+		applyModifierOverride('productivity', productivitySum, productivityOverride);
+
+	const onSpeedReset = () => resetModifier('speed');
+	const onProductivityReset = () => resetModifier('productivity');
+
+	const onEditModifier = () => {
+		editModifier = !editModifier;
+
+		if (editModifier) {
+			speedOverride = Number((speedSum ?? 0).toFixed(6));
+			productivityOverride = Number((productivitySum ?? 0).toFixed(6));
+		}
+	};
 </script>
 
 <Dialog bind:dialog extraClass="max-w-xs">
@@ -88,19 +130,39 @@
 				/>
 			</label>
 			<div class="w-full pt-4">
-				<p class="text-base-content/60 pt-1 text-sm uppercase">Applied Modifiers</p>
-				<div class="text-base-content/80 grid grid-cols-[auto_1fr] gap-x-2 text-xs">
-					{#if speedSum}
-						<span>{active.profile?.getSpeedOverrideName() || 'speed'}</span>
-						<span>{formatter.format(speedSum)}</span>
-					{/if}
-					{#if productivitySum}
-						<span
-							>{active.profile?.getProductivityOverrideName() ||
-								'productivity'}:</span
-						>
-						<span>{formatter.format(productivitySum)}</span>
-					{/if}
+				<div class="flex items-center justify-between">
+					<p class="text-base-content/60 text-sm uppercase">Applied Modifiers</p>
+					<label class="label">
+						<input
+							type="checkbox"
+							class="toggle toggle-xs duration-50"
+							checked={editModifier}
+							onchange={onEditModifier}
+						/>
+					</label>
+				</div>
+				<div
+					class="text-base-content/80 grid auto-rows-min grid-cols-[auto_1fr_auto] items-center gap-x-4 gap-y-1 text-xs"
+				>
+					<InputOverride
+						label={'Speed'}
+						edit={editModifier}
+						value={speedSum ?? 0}
+						bind:draft={speedOverride}
+						onChange={onSpeedOverride}
+						onReset={onSpeedReset}
+						format={value => formatter.format(value)}
+					/>
+					<InputOverride
+						label={'Productivity'}
+						edit={editModifier}
+						value={productivitySum ?? 0}
+						bind:draft={productivityOverride}
+						onChange={onProductivityOverride}
+						onReset={onProductivityReset}
+						format={value => formatter.format(value)}
+					/>
+
 					{#if machine}
 						<span>Power:</span>
 						<span
@@ -115,7 +177,7 @@
 				<p class="text-base-content/60 pt-1 text-sm uppercase">
 					Used Effects ({usedEffects?.length ?? 0}/{slots ?? 0})
 				</p>
-				<ul class="text-base-content/80 flex w-full flex-col gap-1 text-xs">
+				<ul class="list text-base-content/80 flex w-full flex-col gap-1 text-xs">
 					{#each usedEffects as choice}
 						<li class="flex items-center justify-between gap-2">
 							<div class="grid flex-1 grid-cols-[170px_1fr] items-center gap-x-2">
@@ -139,7 +201,7 @@
 
 			{#if selectableEffects}
 				<div class="join w-full pt-4">
-					<select bind:value={effect} class="select select-xs join-item w-full">
+					<select bind:value={selectedEffect} class="select select-xs join-item w-full">
 						<option disabled value="">Select effect</option>
 						{#each selectableEffects as effect}
 							<option value={effect.id}>{effect.getDisplayName()}</option>
