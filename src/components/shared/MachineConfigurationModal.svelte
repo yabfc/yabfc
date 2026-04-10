@@ -94,6 +94,11 @@
 	const resetModifier = (key: ModifierKey) => {
 		if (!config) return;
 		config[key] = 1;
+		if (key === 'speed') {
+			speedOverride = Number(formatter.format(speedSum ?? 0));
+		} else if (key === 'productivity') {
+			productivityOverride = Number(formatter.format(productivitySum ?? 0));
+		}
 	};
 
 	const onSpeedOverride = () => applyModifierOverride('speed', speedSum, speedOverride);
@@ -107,8 +112,8 @@
 		editModifier = !editModifier;
 
 		if (editModifier) {
-			speedOverride = Number((speedSum ?? 0).toFixed(6));
-			productivityOverride = Number((productivitySum ?? 0).toFixed(6));
+			speedOverride = Number(formatter.format(speedSum ?? 0));
+			productivityOverride = Number(formatter.format(productivitySum ?? 0));
 		}
 	};
 </script>
