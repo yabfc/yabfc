@@ -1,0 +1,441 @@
+import type {
+	Edge,
+	Factory,
+	InputItemIo,
+	ItemIo,
+	RecipeNode,
+	RecipeNodeTargets,
+} from '@/lib/models/factory';
+import type Profile from '@/lib/models/profile';
+import type Recipe from '@/lib/models/recipe';
+import { nanoid } from 'nanoid';
+
+export function calculateEdges(
+	profile: Profile,
+	recipeNodes: RecipeNode[],
+	inputs: ItemIo[],
+	outputs: ItemIo[],
+) {
+	let edges: Edge[] = [];
+
+	// connect inputs to recipe nodes
+	inputs.forEach(input => {
+		recipeNodes
+			.filter(x => profile.getRecipeById(x.recipeId)?.out.some(y => y.id === input.id))
+			.forEach(recipeNode => {
+				// TODO if item is sent to multiple recipe nodes, amount is wrong
+				edges.push({
+					from: input.id,
+					to: recipeNode.id,
+					actualAmount: input.amount,
+					targetAmount: input.amount,
+					itemId: input.id,
+				});
+			});
+	});
+
+	// connect recipe node outputs
+	recipeNodes.forEach(outputRecipeNode => {
+		const recipe = profile.getRecipeById(outputRecipeNode.recipeId);
+
+		if (!recipe) return;
+
+		recipe.out.forEach(output => {
+			recipeNodes
+				.filter(x => profile.getRecipeById(x.recipeId)?.in.some(y => y.id === output.id))
+				.forEach(inputNode => {
+					edges.push({
+						from: outputRecipeNode.id,
+						to: inputNode.id,
+						actualAmount: 0,
+						targetAmount: 0,
+						itemId: output.id,
+					});
+				});
+
+			outputs
+				.filter(x => x.id === output.id)
+				.forEach(outputNode => {
+					edges.push({
+						from: outputRecipeNode.id,
+						to: outputNode.id,
+						actualAmount: 0,
+						targetAmount: 0,
+						itemId: output.id,
+					});
+				});
+		});
+	});
+
+	return edges;
+}
+
+/** Get all recipes (sorted by priority) based on the given item */
+export function getRecipes(profile: Profile, itemOutput: string): Recipe[] {
+	let recipes = profile.getRecipesByItemOutputId(itemOutput);
+	recipes.sort((a, b) => (a.priority < b.priority ? -1 : 1));
+	return recipes;
+}
+
+/** @todo this is in early stage and subject to change */
+export function getRecipeChain(
+	profile: Profile,
+	itemOutputs: string[],
+	seenRecipes = new Set<string>(),
+): RecipeNode[] {
+	return itemOutputs.flatMap(itemOutput => {
+		const recipe = getRecipes(profile, itemOutput)[0];
+
+		if (!recipe) return []; // TODO do we need to handle this?
+		//if (recipe.in.length === 0) return [];
+		if (seenRecipes.has(recipe.id)) return [];
+
+		seenRecipes.add(recipe.id);
+
+		return [
+			{
+				id: nanoid(),
+				recipeId: recipe.id,
+				machines: [],
+			},
+			...getRecipeChain(
+				profile,
+				recipe.in.map(x => x.id),
+				seenRecipes,
+			),
+		];
+	});
+}
+
+export function getResourceInputs(
+	profile: Profile,
+	recipeChain: RecipeNode[],
+): Record<string, InputItemIo> {
+	const result: Record<string, InputItemIo> = {};
+	const inputs = recipeChain.filter(x => profile.getRecipeById(x.recipeId)?.in.length === 0);
+	for (const node of inputs) {
+		const recipe = profile.getRecipeById(node.recipeId);
+		if (!recipe) continue;
+
+		const output = recipe.out[0];
+		if (!output) continue;
+
+		if (!result[output.id]) {
+			result[output.id] = {
+				id: output.id,
+				amount: 0,
+				auto: true,
+			};
+		}
+	}
+	return result;
+}
+
+/** Rebuild the factory with the updated recipe */
+export function rebuildFactory(
+	profile: Profile,
+	factory: Factory,
+	nodeId: string,
+	newRecipeId: string,
+) {
+	const oldRecipeNodes = factory.recipeNodes;
+	const oldEdges = factory.edges;
+
+	const changedNode = oldRecipeNodes[nodeId];
+	if (!changedNode) return;
+
+	const newRecipe = profile.getRecipeById(newRecipeId);
+	if (!newRecipe) return;
+
+	changedNode.recipeId = newRecipeId;
+
+	const prunableNodeIds = collectPrunableNodeIds(nodeId, oldEdges);
+	const prunedRecipeNodes = Object.fromEntries(
+		Object.entries(oldRecipeNodes).filter(([key]) => !prunableNodeIds.has(key)),
+	);
+
+	const updatedRecipeChain = [
+		...Object.values(prunedRecipeNodes),
+		...getRecipeChain(
+			profile,
+			newRecipe.in.map(x => x.id),
+			new Set(Object.values(prunedRecipeNodes).map(x => x.recipeId)),
+		),
+	];
+
+	factory.edges = [];
+	factory.recipeNodes = Object.fromEntries(updatedRecipeChain.map(x => [x.id, x]));
+	factory.inputs = getResourceInputs(profile, updatedRecipeChain);
+	factory.edges = calculateEdges(
+		profile,
+		Object.values(factory.recipeNodes),
+		Object.values(factory.inputs),
+		Object.values(factory.outputs),
+	);
+}
+
+/** Get all Node IDs that can be safely deleted due to the recipe change */
+export function collectPrunableNodeIds(startNodeId: string, edges: Edge[]): Set<string> {
+	const upstreamIds = new Set<string>();
+	const stack = [startNodeId];
+
+	// this can contain nodes that are actually still needed e.g
+	// wire is required by the cable and stator recipe. If the cable recipe
+	// would be changed to the quickwire alternate, this would prune wire
+	// node and its upstreams even though they are still required for stators.
+	while (stack.length) {
+		const current = stack.pop()!;
+
+		for (const edge of edges) {
+			if (edge.to !== current) continue;
+
+			if (!upstreamIds.has(edge.from)) {
+				upstreamIds.add(edge.from);
+				stack.push(edge.from);
+			}
+		}
+	}
+
+	// find the cases where a node is actually still needed due to other dependencies downstream
+	const protectedIds = new Set<string>();
+	for (const nodeId of upstreamIds) {
+		const hasOutgoingOutsideSubtree = edges.some(edge => {
+			return edge.from === nodeId && edge.to !== startNodeId && !upstreamIds.has(edge.to);
+		});
+
+		if (hasOutgoingOutsideSubtree) {
+			protectedIds.add(nodeId);
+		}
+	}
+
+	// mark the upstream nodes of these protected nodes as also protected
+	const protectedStack = [...protectedIds];
+	while (protectedStack.length) {
+		const current = protectedStack.pop()!;
+
+		for (const edge of edges) {
+			if (edge.to !== current) continue;
+			if (!upstreamIds.has(edge.from)) continue;
+			if (protectedIds.has(edge.from)) continue;
+
+			protectedIds.add(edge.from);
+			protectedStack.push(edge.from);
+		}
+	}
+
+	return new Set([...upstreamIds].filter(x => !protectedIds.has(x)));
+}
+
+export function calculateRecipeNodeModifier(
+	profile: Profile | undefined,
+	node: RecipeNode | undefined,
+) {
+	let modifier = { input: 0, output: 0 };
+	if (!profile || !node) return modifier;
+
+	const recipe = profile.getRecipeById(node.recipeId);
+	if (!recipe) return modifier;
+
+	const runs = profile.settings.defaultDuration / recipe.duration;
+
+	const outputModifier = node.machines.reduce((sum, m) => {
+		const baseSpeed =
+			profile.getMachineById(m.machineId)?.getBaseCraftingSpeed(profile.machineEffects) ?? 1;
+
+		const machineSpeed = baseSpeed * m.speed * m.productivity;
+		const contribution = m.machineCount * machineSpeed;
+
+		return sum + contribution;
+	}, 0);
+	const inputModifier = node.machines.reduce((sum, m) => {
+		const baseSpeed =
+			profile.getMachineById(m.machineId)?.getBaseCraftingSpeed(profile.machineEffects) ?? 1;
+
+		const machineSpeed = baseSpeed * m.speed;
+		const contribution = m.machineCount * machineSpeed;
+
+		return sum + contribution;
+	}, 0);
+
+	modifier.output = outputModifier * runs;
+	modifier.input = inputModifier * runs;
+
+	return modifier;
+}
+
+/** Calculates the output for each output of a RecipeNode */
+export function calculateOutput(profile: Profile | undefined, node: RecipeNode | undefined) {
+	let outputs: { [key: string]: number } = {};
+	if (!profile || !node) return outputs;
+
+	const recipe = profile.getRecipeById(node.recipeId);
+	if (!recipe) return outputs;
+
+	const outputModifier = calculateRecipeNodeModifier(profile, node).output;
+
+	recipe.out.forEach(output => {
+		outputs[output.id] = output.amount * outputModifier;
+	});
+
+	return outputs;
+}
+
+/** Calculates the input for each input of a RecipeNode */
+export function calculateInput(profile: Profile | undefined, node: RecipeNode | undefined) {
+	let inputs: { [key: string]: number } = {};
+	if (!profile || !node) return inputs;
+
+	const recipe = profile.getRecipeById(node.recipeId);
+	if (!recipe) return inputs;
+
+	const inputModifier = calculateRecipeNodeModifier(profile, node).input;
+
+	recipe.in.forEach(input => {
+		inputs[input.id] = input.amount * inputModifier;
+	});
+
+	return inputs;
+}
+
+export function calculateRecipeNodeTargets(profile: Profile, factory: Factory): RecipeNodeTargets {
+	const targets: RecipeNodeTargets = {};
+	const edgesToId = factory.edges.reduce<Record<string, Edge[]>>((acc, edge) => {
+		(acc[edge.to] ??= []).push(edge);
+		return acc;
+	}, {});
+
+	for (const node of Object.values(factory.recipeNodes)) {
+		targets[node.id] = {
+			targetInputs: {},
+			targetOutputs: {},
+		};
+	}
+
+	function findUpstreamProducerEdge(consumerNodeId: string, itemId: string): Edge | undefined {
+		const edges = edgesToId[consumerNodeId];
+		if (!edges) return undefined;
+
+		for (const edge of edges) {
+			const sourceNode = factory.recipeNodes[edge.from];
+			if (!sourceNode) continue;
+
+			const sourceRecipe = profile.getRecipeById(sourceNode.recipeId);
+			if (!sourceRecipe) continue;
+
+			if (sourceRecipe.out.some(x => x.id === itemId)) {
+				return edge;
+			}
+		}
+
+		return undefined;
+	}
+
+	function propagateDemand(
+		nodeId: string,
+		requiredOutputItemId: string,
+		requiredOutputAmount: number,
+		path = new Set<string>(),
+	) {
+		if (path.has(nodeId)) return;
+		const node = factory.recipeNodes[nodeId];
+		if (!node) return;
+
+		const recipe = profile.getRecipeById(node.recipeId);
+		if (!recipe) return;
+
+		const producedPerCycle = recipe.out.find(x => x.id === requiredOutputItemId)?.amount ?? 0;
+		if (producedPerCycle <= 0) return;
+
+		const cyclesNeeded = requiredOutputAmount / producedPerCycle;
+
+		const nodeTargets = targets[nodeId];
+		if (!nodeTargets) return;
+
+		for (const output of recipe.out) {
+			const requiredOutputAmount = output.amount * cyclesNeeded;
+			nodeTargets.targetOutputs[output.id] =
+				(nodeTargets.targetOutputs[output.id] ?? 0) + requiredOutputAmount;
+		}
+
+		for (const input of recipe.in) {
+			const requiredInputAmount = input.amount * cyclesNeeded;
+			nodeTargets.targetInputs[input.id] =
+				(nodeTargets.targetInputs[input.id] ?? 0) + requiredInputAmount;
+		}
+
+		const nextPath = new Set(path);
+		nextPath.add(nodeId);
+
+		// propagate required inputs upstream
+		for (const input of recipe.in) {
+			const requiredInputAmount = input.amount * cyclesNeeded;
+			const upstreamEdge = findUpstreamProducerEdge(nodeId, input.id);
+			// no upstream recipe node => this is an input
+			if (!upstreamEdge) continue;
+
+			upstreamEdge.targetAmount = requiredInputAmount;
+			propagateDemand(upstreamEdge.from, input.id, requiredInputAmount, nextPath);
+		}
+	}
+
+	for (const output of Object.values(factory.outputs)) {
+		for (const edge of factory.edges) {
+			if (edge.to !== output.id) continue;
+
+			const sourceNode = factory.recipeNodes[edge.from];
+			if (!sourceNode) continue;
+
+			const sourceRecipe = profile.getRecipeById(sourceNode.recipeId);
+			if (!sourceRecipe) continue;
+
+			if (!sourceRecipe.out.some(x => x.id === output.id)) continue;
+
+			edge.targetAmount = output.amount;
+
+			propagateDemand(sourceNode.id, output.id, output.amount);
+		}
+	}
+
+	return targets;
+}
+
+export function recalculateEdgeAmounts(profile: Profile, factory: Factory) {
+	factory.edges = factory.edges.map(edge => {
+		const sourceNode = factory.recipeNodes[edge.from];
+		const targetNode = factory.recipeNodes[edge.to];
+
+		// input node to recipe node
+		if (!sourceNode && targetNode) {
+			const targetInputs = calculateInput(profile, targetNode);
+			return {
+				...edge,
+				actualAmount: targetInputs[edge.itemId] ?? 0,
+			};
+		}
+
+		// recipe node to outpud node
+		if (sourceNode && !targetNode) {
+			const sourceOutputs = calculateOutput(profile, sourceNode);
+			return {
+				...edge,
+				actualAmount: sourceOutputs[edge.itemId] ?? 0,
+			};
+		}
+
+		// recipe node to recipe node
+		if (sourceNode && targetNode) {
+			const sourceOutputs = calculateOutput(profile, sourceNode);
+			const targetInputs = calculateInput(profile, targetNode);
+
+			return {
+				...edge,
+				actualAmount: Math.min(
+					sourceOutputs[edge.itemId] ?? 0,
+					targetInputs[edge.itemId] ?? 0,
+				),
+			};
+		}
+
+		return { ...edge, amount: 0 };
+	});
+}
