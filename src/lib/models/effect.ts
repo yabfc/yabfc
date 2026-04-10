@@ -42,7 +42,7 @@ export class Modifier {
 			power *= Math.pow(scaling, this.value);
 			return power;
 		}
-		return power * this.value!;
+		return power * this.value * scaling;
 	}
 }
 
@@ -127,6 +127,7 @@ export default class EffectModule {
 
 	/** @returns power consumption with applied effect */
 	updatePowerConsumption(power: number, scaling: number): number {
+		if (this.type !== 'fixed' && scaling === 1) return power;
 		this.modifiers.forEach(modifier => {
 			power = modifier.updatePowerConsumption(power, scaling);
 		});
