@@ -214,9 +214,11 @@ export function calculateRecipeNodeTargets(profile: Profile, factory: Factory): 
 		};
 	}
 
-	function findUpstreamProducerEdge(consumerNodeId: string, itemId: string): Edge | undefined {
+	function findUpstreamProducerEdges(consumerNodeId: string, itemId: string): Edge[] {
 		const edges = edgesToId[consumerNodeId];
-		if (!edges) return undefined;
+		if (!edges) return [];
+
+		const upstreams: Edge[] = [];
 
 		for (const edge of edges) {
 			const sourceNode = factory.recipeNodes[edge.from];
@@ -226,13 +228,13 @@ export function calculateRecipeNodeTargets(profile: Profile, factory: Factory): 
 			if (!sourceRecipe) continue;
 
 			if (sourceRecipe.out.some(x => x.id === itemId)) {
-				return edge;
+				upstreams.push(edge);
 			}
 		}
-
-		return undefined;
+		return upstreams;
 	}
 
+	// todo needs some more work for scaling recipes with multiple in/outputs better
 	function propagateDemand(
 		nodeId: string,
 		requiredOutputItemId: string,
@@ -272,12 +274,16 @@ export function calculateRecipeNodeTargets(profile: Profile, factory: Factory): 
 		// propagate required inputs upstream
 		for (const input of recipe.in) {
 			const requiredInputAmount = input.amount * cyclesNeeded;
-			const upstreamEdge = findUpstreamProducerEdge(nodeId, input.id);
-			// no upstream recipe node => this is an input
-			if (!upstreamEdge) continue;
-
-			upstreamEdge.targetAmount = requiredInputAmount;
-			propagateDemand(upstreamEdge.from, input.id, requiredInputAmount, nextPath);
+			const upstreamEdges = findUpstreamProducerEdges(nodeId, input.id);
+			upstreamEdges.forEach(edge => {
+				edge.targetAmount = requiredInputAmount / upstreamEdges.length;
+				propagateDemand(
+					edge.from,
+					input.id,
+					requiredInputAmount / upstreamEdges.length,
+					nextPath,
+				);
+			});
 		}
 	}
 
