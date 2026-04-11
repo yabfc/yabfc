@@ -7,6 +7,7 @@ import Ajv from 'ajv';
 import schema from '@profiles/schema.json';
 import type SettingInterface from '@/lib/models/setting';
 import { Conveyor, type ConveyorInterface } from '@/lib/models/conveyor';
+import alerts from '@/stores/alerts.svelte';
 const ajv = new Ajv();
 const validate = ajv.compile(schema);
 
@@ -135,6 +136,7 @@ export default class Profile {
 			const errors = validate.errors
 				?.map(err => `${err.instancePath} ${err.message}`)
 				.join(', ');
+			alerts.push(`Profile JSON Schema validation error: ${errors ?? ''}`, 'ERROR');
 			return false;
 		}
 
@@ -155,6 +157,7 @@ export default class Profile {
 
 		for (let r of recipes) {
 			if (recipe_ids.includes(r.id)) {
+				alerts.push(`Profile validation error: duplicate Recipe id: ${r.id}`, 'ERROR');
 				return false;
 			} else {
 				recipe_ids.push(r.id);
@@ -168,6 +171,10 @@ export default class Profile {
 		const difference = new Set([...idsIn].filter(id => !idsOut.has(id)));
 
 		if (difference.size > 0) {
+			alerts.push(
+				`Profile validation error: the following item IDs can't be produced but are an input in another recipe: ${[...difference].join(', ')}`,
+				'ERROR',
+			);
 			return false;
 		}
 
@@ -185,6 +192,7 @@ export default class Profile {
 
 		for (let i of items) {
 			if (itemIds.has(i.id)) {
+				alerts.push(`Profile validation error: duplicate Item id: ${i.id}`, 'ERROR');
 				return false;
 			} else {
 				itemIds.add(i.id);
@@ -194,6 +202,10 @@ export default class Profile {
 		const difference = new Set([...idsRecipes].filter(id => !itemIds.has(id)));
 
 		if (difference.size > 0) {
+			alerts.push(
+				`Profile validation error: the following items cant be produced: ${[...difference].join(', ')}`,
+				'ERROR',
+			);
 			return false;
 		}
 
@@ -218,6 +230,10 @@ export default class Profile {
 		const difference = new Set([...categoriesRecipe].filter(id => !categoriesMachine.has(id)));
 
 		if (difference.size > 0) {
+			alerts.push(
+				`Profile validation error: the following recipe categories cant be produced by any machine: ${[...difference].join(', ')}`,
+				'ERROR',
+			);
 			return false;
 		}
 
