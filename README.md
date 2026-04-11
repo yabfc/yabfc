@@ -1,5 +1,17 @@
 # Yet Another Beautiful Factory Calculator
 
+## How can I create / modify a profile?
+
+- Generate a Satisfactory Profile with [satisfactory-profile-generator](https://github.com/yabfc/satisfactory-profile-generator)
+- Generate a Factorio Profile from a dump with [factorio-profile-generator](https://github.com/yabfc/factorio-profile-generator)
+- Grab a profile from this folder [this repo](profiles/)
+
+Then you can add Items / Recipes / Machines / Effects or general Settings like the default Duration. Once you got your new profile ready, you can upload it in your settings.
+
+> [!TIP]
+>
+> Change the `id` and `name` of your new profile so you can easily find it
+
 ## Run the Application with Docker
 
 1. Get yourself a copy of the `compose.yaml`

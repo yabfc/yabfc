@@ -1,12 +1,12 @@
-import EffectModule, { type EffectChoice, type EffectConfiguration } from '@/lib/models/effect';
+import EffectModule, { type EffectChoice } from '@/lib/models/effect';
 
 export interface MachineFeatureInterface {
 	id: string;
 	name?: string;
 	itemSlots: number;
 	effectPerSlot: string[];
-	disables?: string[];
 	hidden?: boolean;
+	modifiable?: boolean;
 }
 
 export class MachineFeature {
@@ -14,16 +14,16 @@ export class MachineFeature {
 	name?: string;
 	itemSlots: number;
 	effectPerSlot: string[];
-	disables?: string[];
 	hidden?: boolean;
+	modifiable?: boolean;
 
 	constructor(feature: MachineFeatureInterface) {
 		this.id = feature.id;
 		this.name = feature.name;
 		this.itemSlots = feature.itemSlots;
 		this.effectPerSlot = feature.effectPerSlot;
-		this.disables = feature.disables;
 		this.hidden = feature.hidden;
+		this.modifiable = feature.modifiable;
 	}
 
 	getDisplayName(): string {
@@ -35,14 +35,6 @@ export class MachineFeature {
 				.join(' ')
 		);
 	}
-}
-
-export interface MachineConfiguration {
-	id: string;
-	machineId: string;
-	usedEffects: EffectConfiguration[];
-	amount: number;
-	requiredPower: number;
 }
 
 export interface MachineInterface {
@@ -88,9 +80,9 @@ export default class Machine {
 		return this.features.map(x => x.effectPerSlot).flat();
 	}
 
-	getAllowedEffectMoules(effects: EffectModule[]): EffectModule[] {
+	getAllowedEffectModules(effects: EffectModule[]): EffectModule[] {
 		const allowed = this.getAllowedEffects();
-		return effects.filter(x => x.available && allowed.includes(x.id));
+		return effects.filter(x => x.available && allowed.includes(x.id) && !x.hidden);
 	}
 
 	getBaseCraftingSpeed(effects: EffectModule[]): number {
@@ -116,7 +108,7 @@ export default class Machine {
 	getPowerConsumption(effects: EffectChoice[]): number {
 		let power = this.requiredPower;
 		effects.forEach(choice => {
-			power = choice.effect.updatePowerConsumption(power, choice.scaling);
+			power = choice.effect.updatePowerConsumption(power, choice.scaling ?? 1);
 		});
 
 		return power;

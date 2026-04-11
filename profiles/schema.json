@@ -1,10 +1,57 @@
 {
-	"$ref": "#/definitions/ProfileInterface",
+	"$ref": "#/definitions/Profile",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"definitions": {
-		"ProfileInterface": {
+		"Profile": {
 			"additionalProperties": false,
 			"properties": {
+				"conveyors": {
+					"items": {
+						"additionalProperties": false,
+						"properties": {
+							"features": {
+								"items": {
+									"additionalProperties": false,
+									"properties": {
+										"effectPerSlot": {
+											"items": {
+												"type": "string"
+											},
+											"type": "array"
+										},
+										"hidden": {
+											"type": "boolean"
+										},
+										"id": {
+											"type": "string"
+										},
+										"itemSlots": {
+											"type": "number"
+										},
+										"modifiable": {
+											"type": "boolean"
+										},
+										"name": {
+											"type": "string"
+										}
+									},
+									"required": ["id", "itemSlots", "effectPerSlot"],
+									"type": "object"
+								},
+								"type": "array"
+							},
+							"id": {
+								"type": "string"
+							},
+							"speed": {
+								"type": "number"
+							}
+						},
+						"required": ["id", "speed"],
+						"type": "object"
+					},
+					"type": "array"
+				},
 				"id": {
 					"type": "string"
 				},
@@ -41,97 +88,56 @@
 							"available": {
 								"type": "boolean"
 							},
+							"hidden": {
+								"type": "boolean"
+							},
 							"id": {
 								"type": "string"
 							},
+							"maxValue": {
+								"type": "number"
+							},
+							"minValue": {
+								"type": "number"
+							},
 							"modifiers": {
 								"items": {
-									"anyOf": [
-										{
-											"additionalProperties": false,
-											"properties": {
-												"id": {
-													"enum": [
-														"speed",
-														"power",
-														"consumption",
-														"productivity",
-														"pollution",
-														"quality"
-													],
-													"type": "string"
-												},
-												"modifiable": {
-													"const": false,
-													"type": "boolean"
-												},
-												"name": {
-													"type": "string"
-												},
-												"onlyOutputScales": {
-													"type": "boolean"
-												},
-												"value": {
-													"type": "number"
-												},
-												"valueScaling": {
-													"const": "exponential",
-													"type": "string"
-												}
-											},
-											"required": ["id", "modifiable", "value"],
-											"type": "object"
+									"additionalProperties": false,
+									"properties": {
+										"id": {
+											"type": "string"
 										},
-										{
-											"additionalProperties": false,
-											"properties": {
-												"id": {
-													"enum": [
-														"speed",
-														"power",
-														"consumption",
-														"productivity",
-														"pollution",
-														"quality"
-													],
-													"type": "string"
-												},
-												"maxValue": {
-													"type": "number"
-												},
-												"minValue": {
-													"type": "number"
-												},
-												"modifiable": {
-													"const": true,
-													"type": "boolean"
-												},
-												"name": {
-													"type": "string"
-												},
-												"onlyOutputScales": {
-													"type": "boolean"
-												},
-												"valueScaling": {
-													"const": "exponential",
-													"type": "string"
-												}
-											},
-											"required": ["id", "maxValue", "minValue", "modifiable"],
-											"type": "object"
+										"name": {
+											"type": "string"
+										},
+										"value": {
+											"type": "number"
+										},
+										"valueScaling": {
+											"const": "exponential",
+											"type": "string"
 										}
-									]
+									},
+									"required": ["id", "value"],
+									"type": "object"
 								},
 								"type": "array"
 							},
 							"name": {
 								"type": "string"
 							},
-							"perSlot": {
+							"singleUse": {
 								"type": "boolean"
+							},
+							"step": {
+								"type": "number"
+							},
+							"type": {
+								"enum": ["fixed", "stepped", "modifiable"],
+								"type": "string"
 							}
 						},
-						"required": ["id", "available", "modifiers", "perSlot"],
+						"required": ["id", "available", "modifiers", "type", "hidden"],
 						"type": "object"
 					},
 					"type": "array"
@@ -147,12 +153,6 @@
 								"items": {
 									"additionalProperties": false,
 									"properties": {
-										"disables": {
-											"items": {
-												"type": "string"
-											},
-											"type": "array"
-										},
 										"effectPerSlot": {
 											"items": {
 												"type": "string"
@@ -167,6 +167,9 @@
 										},
 										"itemSlots": {
 											"type": "number"
+										},
+										"modifiable": {
+											"type": "boolean"
 										},
 										"name": {
 											"type": "string"
@@ -327,6 +330,19 @@
 						"defaultDuration": {
 							"type": "number"
 						},
+						"effectNameOverride": {
+							"additionalProperties": false,
+							"properties": {
+								"productivity": {
+									"type": "string"
+								},
+								"speed": {
+									"type": "string"
+								}
+							},
+							"required": ["speed", "productivity"],
+							"type": "object"
+						},
 						"limitations": {
 							"items": {
 								"type": "string"
@@ -344,6 +360,7 @@
 				"items",
 				"recipes",
 				"machines",
+				"conveyors",
 				"machineEffects",
 				"research",
 				"settings"

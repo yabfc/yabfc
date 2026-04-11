@@ -7,6 +7,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
 	plugins: [svelte(), tailwindcss()],
 	server: { port: 4321 },
+	base: process.env.VITE_BASE_PATH || '/',
 	resolve: {
 		alias: {
 			'@': path.resolve(__dirname, './src'),

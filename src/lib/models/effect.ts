@@ -1,58 +1,28 @@
 export interface EffectChoice {
+	id: string;
 	effect: EffectModule;
-	scaling: number;
+	scaling?: number;
 }
 
-export interface BaseModifier {
+export interface ModifierInterface {
 	id: 'speed' | 'power' | 'consumption' | 'productivity' | 'pollution' | 'quality';
 	name?: string;
-	onlyOutputScales?: boolean;
 	/** @defaults to linear scaling */
 	valueScaling?: 'exponential';
-}
-
-export interface FixedModifier extends BaseModifier {
-	modifiable: false;
 	value: number;
-}
-
-export interface VariableModifier extends BaseModifier {
-	modifiable: true;
-	minValue: number;
-	maxValue: number;
-}
-
-export type ModifierInterface = FixedModifier | VariableModifier;
-
-export interface EffectConfiguration {
-	id: string;
-	effectId: string;
-	scaling: number;
 }
 
 export class Modifier {
 	id: string;
 	name?: string;
-	value?: number;
-	modifiable: boolean;
-	onlyOutputScales?: boolean;
+	value: number;
 	valueScaling?: 'exponential';
-	minValue?: number;
-	maxValue?: number;
 
 	constructor(modifier: ModifierInterface) {
 		this.id = modifier.id;
 		this.name = modifier.name;
-		this.modifiable = modifier.modifiable;
-		this.onlyOutputScales = modifier.onlyOutputScales;
 		this.valueScaling = modifier.valueScaling;
-
-		if (modifier.modifiable) {
-			this.minValue = modifier.minValue;
-			this.maxValue = modifier.maxValue;
-		} else {
-			this.value = modifier.value;
-		}
+		this.value = modifier.value;
 	}
 
 	getDisplayName(): string {
@@ -69,35 +39,76 @@ export class Modifier {
 		if (!['consumption', 'power'].includes(this.id)) return power;
 
 		if (this.valueScaling === 'exponential') {
-			if (!this.modifiable && this.value !== undefined)
-				power *= Math.pow(scaling, this.value);
+			power *= Math.pow(scaling, this.value);
 			return power;
 		}
-		return power * this.value!;
+		return power * this.value * scaling;
 	}
 }
 
-export interface EffectModuleInterface {
+interface EffectModuleBase {
 	id: string;
 	name?: string;
 	available: boolean;
 	modifiers: ModifierInterface[];
-	perSlot: boolean;
+	hidden: boolean;
+	singleUse?: boolean;
 }
+
+// standard factorio effects
+export interface FixedEffectModuleInterface extends EffectModuleBase {
+	type: 'fixed';
+}
+
+// satisfactory summerslooping
+export interface SteppedEffectModuleInterface extends EffectModuleBase {
+	type: 'stepped';
+	minValue: number;
+	maxValue: number;
+	step: number;
+}
+
+// satisfactory over/underclocking
+export interface ModifiableEffectModuleInterface extends EffectModuleBase {
+	type: 'modifiable';
+	minValue: number;
+	maxValue: number;
+}
+
+export type EffectModuleInterface =
+	| FixedEffectModuleInterface
+	| SteppedEffectModuleInterface
+	| ModifiableEffectModuleInterface;
 
 export default class EffectModule {
 	id: string;
 	name?: string;
 	available: boolean;
 	modifiers: Modifier[];
-	perSlot: boolean;
+	type: 'fixed' | 'stepped' | 'modifiable';
+	minValue?: number;
+	maxValue?: number;
+	step?: number;
+	hidden: boolean;
+	singleUse?: boolean;
 
-	constructor(item: EffectModuleInterface) {
-		this.id = item.id;
-		this.name = item.name;
-		this.available = item.available;
-		this.modifiers = item.modifiers.map(x => new Modifier(x));
-		this.perSlot = item.perSlot;
+	constructor(data: EffectModuleInterface) {
+		this.id = data.id;
+		this.name = data.name;
+		this.available = data.available;
+		this.modifiers = data.modifiers.map(modifier => new Modifier(modifier));
+		this.type = data.type;
+		this.hidden = data.hidden;
+		this.singleUse = data.singleUse;
+
+		if (data.type === 'modifiable' || data.type === 'stepped') {
+			this.minValue = data.minValue;
+			this.maxValue = data.maxValue;
+		}
+
+		if (data.type === 'stepped') {
+			this.step = data.step;
+		}
 	}
 
 	getDisplayName(): string {
@@ -116,6 +127,7 @@ export default class EffectModule {
 
 	/** @returns power consumption with applied effect */
 	updatePowerConsumption(power: number, scaling: number): number {
+		if (this.type !== 'fixed' && scaling === 1) return power;
 		this.modifiers.forEach(modifier => {
 			power = modifier.updatePowerConsumption(power, scaling);
 		});
