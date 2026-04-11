@@ -17,6 +17,7 @@
 		"@tailwindcss/vite": "^4.2.2",
 		"@tsconfig/svelte": "^5.0.8",
 		"@xyflow/svelte": "^1.5.2",
+		"ajv": "^8.18.0",
 		"daisyui": "^5.5.19",
 		"highs": "^1.8.0",
 		"nanoid": "^5.1.7",

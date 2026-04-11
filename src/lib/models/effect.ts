@@ -51,7 +51,7 @@ interface EffectModuleBase {
 	name?: string;
 	available: boolean;
 	modifiers: ModifierInterface[];
-	hidden: boolean;
+	hidden?: boolean;
 	singleUse?: boolean;
 }
 
@@ -89,7 +89,7 @@ export default class EffectModule {
 	minValue?: number;
 	maxValue?: number;
 	step?: number;
-	hidden: boolean;
+	hidden?: boolean;
 	singleUse?: boolean;
 
 	constructor(data: EffectModuleInterface) {
