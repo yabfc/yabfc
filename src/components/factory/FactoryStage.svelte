@@ -3,11 +3,8 @@
 	import ItemInputNode from '@/components/shared/stage/ItemInputNode.svelte';
 	import ItemOutputNode from '@/components/shared/stage/ItemOutputNode.svelte';
 	import RecipeEdgeComponent from '@/components/shared/stage/RecipeEdge.svelte';
-	import {
-		calculateRecipeNodeTargets,
-		rebuildFactory,
-		recalculateEdgeAmounts,
-	} from '@/lib/factory/factory';
+	import { recalculateEdgeAmounts } from '@/lib/factory/edge';
+	import { calculateRecipeNodeTargets, rebuildFactory } from '@/lib/factory/factory';
 	import type { MachineConfiguration, RecipeNodeTargets } from '@/lib/models/factory';
 	import layout from '@/lib/stage/layout';
 	import active from '@/stores/active.svelte';

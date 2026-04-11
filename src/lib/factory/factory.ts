@@ -1,10 +1,9 @@
-import type {
-	Edge,
-	EdgeDemand,
-	Factory,
-	ItemIo,
-	RecipeNode,
-	RecipeNodeTargets,
+import {
+	type Edge,
+	type Factory,
+	type ItemIo,
+	type RecipeNode,
+	type RecipeNodeTargets,
 } from '@/lib/models/factory';
 import type Profile from '@/lib/models/profile';
 import type Recipe from '@/lib/models/recipe';
@@ -361,95 +360,4 @@ export function calculateRecipeNodeTargets(profile: Profile, factory: Factory): 
 	}
 
 	return targets;
-}
-
-export function recalculateEdgeAmounts(profile: Profile, factory: Factory) {
-	const sourceOutputsByNode: Record<string, Record<string, number>> = {};
-	const targetInputsByNode: Record<string, Record<string, number>> = {};
-
-	Object.values(factory.recipeNodes).forEach(node => {
-		sourceOutputsByNode[node.id] = calculateOutput(profile, node);
-		targetInputsByNode[node.id] = calculateInput(profile, node);
-	});
-
-	// calculate demand per edge
-	const edgeDemands = factory.edges.map(edge => {
-		const sourceNode = factory.recipeNodes[edge.from];
-		const targetNode = factory.recipeNodes[edge.to];
-
-		// input/recipe node -> recipe node
-		if (targetNode) {
-			return {
-				edge,
-				demand: targetInputsByNode[targetNode.id]?.[edge.itemId] ?? 0,
-			};
-		}
-
-		// recipe node -> output node
-		if (sourceNode && !targetNode) {
-			return {
-				edge,
-				demand: sourceOutputsByNode[sourceNode.id]?.[edge.itemId] ?? 0,
-			};
-		}
-
-		return {
-			edge,
-			demand: 0,
-		};
-	});
-
-	// group recipe->recipe and recipe->output edges by source + item
-	const outgoingBySourceAndItem = edgeDemands.reduce<Record<string, EdgeDemand[]>>(
-		(acc, entry) => {
-			const sourceNode = factory.recipeNodes[entry.edge.from];
-			if (!sourceNode) return acc;
-
-			const key = `${entry.edge.from}-${entry.edge.itemId}`;
-			(acc[key] ??= []).push(entry);
-			return acc;
-		},
-		{},
-	);
-
-	// second pass: assign actual amounts
-	factory.edges = edgeDemands.map(({ edge, demand }) => {
-		const sourceNode = factory.recipeNodes[edge.from];
-		const targetNode = factory.recipeNodes[edge.to];
-
-		// input node -> recipe node
-		if (!sourceNode && targetNode) {
-			return {
-				...edge,
-				actualAmount: demand,
-			};
-		}
-
-		// recipe node -> recipe/output node
-		if (sourceNode) {
-			const available = sourceOutputsByNode[sourceNode.id]?.[edge.itemId] ?? 0;
-			const group = outgoingBySourceAndItem[`${edge.from}-${edge.itemId}`] ?? [];
-			const totalDemand = group.reduce((sum, x) => sum + x.demand, 0);
-
-			let actualAmount = 0;
-
-			if (totalDemand <= 0) {
-				actualAmount = 0;
-			} else if (totalDemand <= available) {
-				actualAmount = demand;
-			} else {
-				actualAmount = available * (demand / totalDemand);
-			}
-
-			return {
-				...edge,
-				actualAmount,
-			};
-		}
-
-		return {
-			...edge,
-			actualAmount: 0,
-		};
-	});
 }

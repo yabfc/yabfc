@@ -1,11 +1,6 @@
 <script lang="ts">
-	import MachineConfigurationModal from '@/components/shared/MachineConfigurationModal.svelte';
-	import {
-		calculateInput,
-		calculateOutput,
-		getRecipes,
-		recalculateEdgeAmounts,
-	} from '@/lib/factory/factory';
+	import { recalculateEdgeAmounts } from '@/lib/factory/edge';
+	import { calculateInput, calculateOutput, getRecipes } from '@/lib/factory/factory';
 	import type { MachineConfiguration, RecipeNode, RecipeNodeData } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';

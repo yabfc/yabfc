@@ -50,6 +50,14 @@ export interface Edge {
 	itemId: string;
 }
 
+export function toEdgeKey(edge: Edge): string {
+	return `${edge.to}-${edge.itemId}`;
+}
+
+export function fromEdgeKey(edge: Edge): string {
+	return `${edge.from}-${edge.itemId}`;
+}
+
 export type EdgeDemand = {
 	edge: Edge;
 	demand: number;
