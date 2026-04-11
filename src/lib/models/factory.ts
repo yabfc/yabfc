@@ -32,7 +32,7 @@ export type RecipeNodeTargets = Record<
 	}
 >;
 
-export type ItemOutputNodeData = Record<string, unknown> & {
+export type ItemIoNodeData = Record<string, unknown> & {
 	item: ItemIo;
 	onAmountChange: (itemId: string, amount: number) => void;
 };
@@ -40,11 +40,6 @@ export type ItemOutputNodeData = Record<string, unknown> & {
 export interface ItemIo {
 	id: string;
 	amount: number;
-}
-
-export interface InputItemIo extends ItemIo {
-	/** whether input is auto-added or supplied by the user */
-	auto: boolean;
 }
 
 export interface Edge {
@@ -55,13 +50,21 @@ export interface Edge {
 	itemId: string;
 }
 
+export function toEdgeKey(edge: Edge): string {
+	return `${edge.to}-${edge.itemId}`;
+}
+
+export function fromEdgeKey(edge: Edge): string {
+	return `${edge.from}-${edge.itemId}`;
+}
+
 export type EdgeDemand = {
 	edge: Edge;
 	demand: number;
 };
 
 export interface Factory {
-	inputs: Record<string, InputItemIo>;
+	inputs: Record<string, ItemIo>;
 	outputs: Record<string, ItemIo>;
 	recipeNodes: Record<string, RecipeNode>;
 	edges: Edge[];

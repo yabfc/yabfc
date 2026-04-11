@@ -1,11 +1,6 @@
 <script lang="ts">
-	import MachineConfigurationModal from '@/components/shared/MachineConfigurationModal.svelte';
-	import {
-		calculateInput,
-		calculateOutput,
-		getRecipes,
-		recalculateEdgeAmounts,
-	} from '@/lib/factory/factory';
+	import { recalculateEdgeAmounts } from '@/lib/factory/edge';
+	import { calculateInput, calculateOutput, getRecipes } from '@/lib/factory/factory';
 	import type { MachineConfiguration, RecipeNode, RecipeNodeData } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
@@ -82,12 +77,13 @@
 	}
 </script>
 
-<Handle
-	type="target"
-	position={targetPosition}
-	class="border-base-content/50 rounded-full border [--xy-handle-background-color:color-mix(in_oklab,var(--color-base-content)_50%,transparent)]"
-/>
-
+{#if Object.keys(actualInputs).length !== 0}
+	<Handle
+		type="target"
+		position={targetPosition}
+		class="border-base-content/50 rounded-full border [--xy-handle-background-color:color-mix(in_oklab,var(--color-base-content)_50%,transparent)]"
+	/>
+{/if}
 <div
 	class="rounded-box bg-base-100 border-base-content/10 flex w-72 flex-col items-center gap-1 border p-4"
 	class:pt-10={alternatives}

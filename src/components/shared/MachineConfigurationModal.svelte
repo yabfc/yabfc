@@ -11,7 +11,7 @@
 	import { PlusIcon, Trash2Icon } from '@lucide/svelte';
 	import { nanoid } from 'nanoid';
 	import InputOverride from '@/components/shared/InputOverride.svelte';
-	import { recalculateEdgeAmounts } from '@/lib/factory/factory';
+	import { recalculateEdgeAmounts } from '@/lib/factory/edge';
 	import factory from '@/stores/factory.svelte';
 
 	type Props = {

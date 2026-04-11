@@ -1,10 +1,10 @@
 <script lang="ts">
-	import type { ItemIo, ItemOutputNodeData } from '@/lib/models/factory';
+	import type { ItemIo, ItemIoNodeData } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
 	import { AnvilIcon } from '@lucide/svelte';
 	import { Handle, Position, type Node, type NodeProps } from '@xyflow/svelte';
 
-	let { data, targetPosition = Position.Left }: NodeProps<Node<ItemOutputNodeData>> = $props();
+	let { data, targetPosition = Position.Left }: NodeProps<Node<ItemIoNodeData>> = $props();
 
 	const item = $derived(active.profile?.getItemById(data.item.id));
 

@@ -3,7 +3,7 @@
 	import FactoryStage from '@/components/factory/FactoryStage.svelte';
 	import OverviewWindow from '@/components/factory/overview/OverviewWindow.svelte';
 	import MachineConfigurationModal from '@/components/shared/MachineConfigurationModal.svelte';
-	import { recalculateEdgeAmounts } from '@/lib/factory/factory';
+	import { recalculateEdgeAmounts } from '@/lib/factory/edge';
 	import type { MachineConfiguration } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';

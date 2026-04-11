@@ -1,75 +1,14 @@
-import type {
-	Edge,
-	EdgeDemand,
-	Factory,
-	InputItemIo,
-	ItemIo,
-	RecipeNode,
-	RecipeNodeTargets,
+import {
+	type Edge,
+	type Factory,
+	type ItemIo,
+	type RecipeNode,
+	type RecipeNodeTargets,
 } from '@/lib/models/factory';
 import type Profile from '@/lib/models/profile';
 import type Recipe from '@/lib/models/recipe';
 import { nanoid } from 'nanoid';
-
-export function calculateEdges(
-	profile: Profile,
-	recipeNodes: RecipeNode[],
-	inputs: ItemIo[],
-	outputs: ItemIo[],
-) {
-	let edges: Edge[] = [];
-
-	// connect inputs to recipe nodes
-	inputs.forEach(input => {
-		recipeNodes
-			.filter(x => profile.getRecipeById(x.recipeId)?.out.some(y => y.id === input.id))
-			.forEach(recipeNode => {
-				// TODO if item is sent to multiple recipe nodes, amount is wrong
-				edges.push({
-					from: input.id,
-					to: recipeNode.id,
-					actualAmount: input.amount,
-					targetAmount: input.amount,
-					itemId: input.id,
-				});
-			});
-	});
-
-	// connect recipe node outputs
-	recipeNodes.forEach(outputRecipeNode => {
-		const recipe = profile.getRecipeById(outputRecipeNode.recipeId);
-
-		if (!recipe) return;
-
-		recipe.out.forEach(output => {
-			recipeNodes
-				.filter(x => profile.getRecipeById(x.recipeId)?.in.some(y => y.id === output.id))
-				.forEach(inputNode => {
-					edges.push({
-						from: outputRecipeNode.id,
-						to: inputNode.id,
-						actualAmount: 0,
-						targetAmount: 0,
-						itemId: output.id,
-					});
-				});
-
-			outputs
-				.filter(x => x.id === output.id)
-				.forEach(outputNode => {
-					edges.push({
-						from: outputRecipeNode.id,
-						to: outputNode.id,
-						actualAmount: 0,
-						targetAmount: 0,
-						itemId: output.id,
-					});
-				});
-		});
-	});
-
-	return edges;
-}
+import { connectEdges } from '@/lib/factory/edge';
 
 /** Get all recipes (sorted by priority) based on the given item */
 export function getRecipes(profile: Profile, itemOutput: string): Recipe[] {
@@ -108,30 +47,6 @@ export function getRecipeChain(
 	});
 }
 
-export function getResourceInputs(
-	profile: Profile,
-	recipeChain: RecipeNode[],
-): Record<string, InputItemIo> {
-	const result: Record<string, InputItemIo> = {};
-	const inputs = recipeChain.filter(x => profile.getRecipeById(x.recipeId)?.in.length === 0);
-	for (const node of inputs) {
-		const recipe = profile.getRecipeById(node.recipeId);
-		if (!recipe) continue;
-
-		const output = recipe.out[0];
-		if (!output) continue;
-
-		if (!result[output.id]) {
-			result[output.id] = {
-				id: output.id,
-				amount: 0,
-				auto: true,
-			};
-		}
-	}
-	return result;
-}
-
 /** Rebuild the factory with the updated recipe */
 export function rebuildFactory(
 	profile: Profile,
@@ -166,8 +81,7 @@ export function rebuildFactory(
 
 	factory.edges = [];
 	factory.recipeNodes = Object.fromEntries(updatedRecipeChain.map(x => [x.id, x]));
-	factory.inputs = getResourceInputs(profile, updatedRecipeChain);
-	factory.edges = calculateEdges(
+	factory.edges = connectEdges(
 		profile,
 		Object.values(factory.recipeNodes),
 		Object.values(factory.inputs),
@@ -386,95 +300,4 @@ export function calculateRecipeNodeTargets(profile: Profile, factory: Factory): 
 	}
 
 	return targets;
-}
-
-export function recalculateEdgeAmounts(profile: Profile, factory: Factory) {
-	const sourceOutputsByNode: Record<string, Record<string, number>> = {};
-	const targetInputsByNode: Record<string, Record<string, number>> = {};
-
-	Object.values(factory.recipeNodes).forEach(node => {
-		sourceOutputsByNode[node.id] = calculateOutput(profile, node);
-		targetInputsByNode[node.id] = calculateInput(profile, node);
-	});
-
-	// calculate demand per edge
-	const edgeDemands = factory.edges.map(edge => {
-		const sourceNode = factory.recipeNodes[edge.from];
-		const targetNode = factory.recipeNodes[edge.to];
-
-		// input/recipe node -> recipe node
-		if (targetNode) {
-			return {
-				edge,
-				demand: targetInputsByNode[targetNode.id]?.[edge.itemId] ?? 0,
-			};
-		}
-
-		// recipe node -> output node
-		if (sourceNode && !targetNode) {
-			return {
-				edge,
-				demand: sourceOutputsByNode[sourceNode.id]?.[edge.itemId] ?? 0,
-			};
-		}
-
-		return {
-			edge,
-			demand: 0,
-		};
-	});
-
-	// group recipe->recipe and recipe->output edges by source + item
-	const outgoingBySourceAndItem = edgeDemands.reduce<Record<string, EdgeDemand[]>>(
-		(acc, entry) => {
-			const sourceNode = factory.recipeNodes[entry.edge.from];
-			if (!sourceNode) return acc;
-
-			const key = `${entry.edge.from}-${entry.edge.itemId}`;
-			(acc[key] ??= []).push(entry);
-			return acc;
-		},
-		{},
-	);
-
-	// second pass: assign actual amounts
-	factory.edges = edgeDemands.map(({ edge, demand }) => {
-		const sourceNode = factory.recipeNodes[edge.from];
-		const targetNode = factory.recipeNodes[edge.to];
-
-		// input node -> recipe node
-		if (!sourceNode && targetNode) {
-			return {
-				...edge,
-				actualAmount: demand,
-			};
-		}
-
-		// recipe node -> recipe/output node
-		if (sourceNode) {
-			const available = sourceOutputsByNode[sourceNode.id]?.[edge.itemId] ?? 0;
-			const group = outgoingBySourceAndItem[`${edge.from}-${edge.itemId}`] ?? [];
-			const totalDemand = group.reduce((sum, x) => sum + x.demand, 0);
-
-			let actualAmount = 0;
-
-			if (totalDemand <= 0) {
-				actualAmount = 0;
-			} else if (totalDemand <= available) {
-				actualAmount = demand;
-			} else {
-				actualAmount = available * (demand / totalDemand);
-			}
-
-			return {
-				...edge,
-				actualAmount,
-			};
-		}
-
-		return {
-			...edge,
-			actualAmount: 0,
-		};
-	});
 }
