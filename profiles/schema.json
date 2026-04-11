@@ -137,7 +137,7 @@
 								"type": "string"
 							}
 						},
-						"required": ["id", "available", "modifiers", "type", "hidden"],
+						"required": ["id", "available", "modifiers", "type"],
 						"type": "object"
 					},
 					"type": "array"

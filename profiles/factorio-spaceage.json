@@ -11723,18 +11723,15 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 1.2,
-					"modifiable": false
+					"value": 1.2
 				},
 				{
 					"id": "consumption",
-					"value": 1.5,
-					"modifiable": false
+					"value": 1.5
 				},
 				{
 					"id": "quality",
-					"value": 0.9,
-					"modifiable": false
+					"value": 0.9
 				}
 			],
 			"available": true,
@@ -11745,18 +11742,15 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 1.3,
-					"modifiable": false
+					"value": 1.3
 				},
 				{
 					"id": "consumption",
-					"value": 1.6,
-					"modifiable": false
+					"value": 1.6
 				},
 				{
 					"id": "quality",
-					"value": 0.85,
-					"modifiable": false
+					"value": 0.85
 				}
 			],
 			"available": true,
@@ -11767,18 +11761,15 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 1.5,
-					"modifiable": false
+					"value": 1.5
 				},
 				{
 					"id": "consumption",
-					"value": 1.7,
-					"modifiable": false
+					"value": 1.7
 				},
 				{
 					"id": "quality",
-					"value": 0.75,
-					"modifiable": false
+					"value": 0.75
 				}
 			],
 			"available": true,
@@ -11789,8 +11780,7 @@
 			"modifiers": [
 				{
 					"id": "consumption",
-					"value": 0.7,
-					"modifiable": false
+					"value": 0.7
 				}
 			],
 			"available": true,
@@ -11801,8 +11791,7 @@
 			"modifiers": [
 				{
 					"id": "consumption",
-					"value": 0.6,
-					"modifiable": false
+					"value": 0.6
 				}
 			],
 			"available": true,
@@ -11813,8 +11802,7 @@
 			"modifiers": [
 				{
 					"id": "consumption",
-					"value": 0.5,
-					"modifiable": false
+					"value": 0.5
 				}
 			],
 			"available": true,
@@ -11825,23 +11813,19 @@
 			"modifiers": [
 				{
 					"id": "productivity",
-					"value": 1.04,
-					"modifiable": false
+					"value": 1.04
 				},
 				{
 					"id": "consumption",
-					"value": 1.4,
-					"modifiable": false
+					"value": 1.4
 				},
 				{
 					"id": "pollution",
-					"value": 1.05,
-					"modifiable": false
+					"value": 1.05
 				},
 				{
 					"id": "speed",
-					"value": 0.95,
-					"modifiable": false
+					"value": 0.95
 				}
 			],
 			"available": true,
@@ -11852,23 +11836,19 @@
 			"modifiers": [
 				{
 					"id": "productivity",
-					"value": 1.06,
-					"modifiable": false
+					"value": 1.06
 				},
 				{
 					"id": "consumption",
-					"value": 1.6,
-					"modifiable": false
+					"value": 1.6
 				},
 				{
 					"id": "pollution",
-					"value": 1.07,
-					"modifiable": false
+					"value": 1.07
 				},
 				{
 					"id": "speed",
-					"value": 0.9,
-					"modifiable": false
+					"value": 0.9
 				}
 			],
 			"available": true,
@@ -11879,23 +11859,19 @@
 			"modifiers": [
 				{
 					"id": "productivity",
-					"value": 1.1,
-					"modifiable": false
+					"value": 1.1
 				},
 				{
 					"id": "consumption",
-					"value": 1.8,
-					"modifiable": false
+					"value": 1.8
 				},
 				{
 					"id": "pollution",
-					"value": 1.1,
-					"modifiable": false
+					"value": 1.1
 				},
 				{
 					"id": "speed",
-					"value": 0.85,
-					"modifiable": false
+					"value": 0.85
 				}
 			],
 			"available": true,
@@ -11906,13 +11882,11 @@
 			"modifiers": [
 				{
 					"id": "quality",
-					"value": 1.1,
-					"modifiable": false
+					"value": 1.1
 				},
 				{
 					"id": "speed",
-					"value": 0.95,
-					"modifiable": false
+					"value": 0.95
 				}
 			],
 			"available": true,
@@ -11923,13 +11897,11 @@
 			"modifiers": [
 				{
 					"id": "quality",
-					"value": 1.2,
-					"modifiable": false
+					"value": 1.2
 				},
 				{
 					"id": "speed",
-					"value": 0.95,
-					"modifiable": false
+					"value": 0.95
 				}
 			],
 			"available": true,
@@ -11940,13 +11912,11 @@
 			"modifiers": [
 				{
 					"id": "quality",
-					"value": 1.25,
-					"modifiable": false
+					"value": 1.25
 				},
 				{
 					"id": "speed",
-					"value": 0.95,
-					"modifiable": false
+					"value": 0.95
 				}
 			],
 			"available": true,
@@ -11957,8 +11927,7 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 1,
-					"modifiable": false
+					"value": 1
 				}
 			],
 			"available": true,
@@ -11970,8 +11939,7 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 2,
-					"modifiable": false
+					"value": 2
 				}
 			],
 			"available": true,
@@ -11983,8 +11951,7 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 2,
-					"modifiable": false
+					"value": 2
 				}
 			],
 			"available": true,
@@ -11996,8 +11963,7 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 0.5,
-					"modifiable": false
+					"value": 0.5
 				}
 			],
 			"available": true,
@@ -12009,8 +11975,7 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 0.5,
-					"modifiable": false
+					"value": 0.5
 				}
 			],
 			"available": true,
@@ -12022,8 +11987,7 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 0.75,
-					"modifiable": false
+					"value": 0.75
 				}
 			],
 			"available": true,
@@ -12035,8 +11999,7 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 1.25,
-					"modifiable": false
+					"value": 1.25
 				}
 			],
 			"available": true,
@@ -12048,8 +12011,7 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 1,
-					"modifiable": false
+					"value": 1
 				}
 			],
 			"available": true,
@@ -12061,8 +12023,7 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 1,
-					"modifiable": false
+					"value": 1
 				}
 			],
 			"available": true,
@@ -12074,8 +12035,7 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 1,
-					"modifiable": false
+					"value": 1
 				}
 			],
 			"available": true,
@@ -12087,8 +12047,7 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 2,
-					"modifiable": false
+					"value": 2
 				}
 			],
 			"available": true,
@@ -12100,8 +12059,7 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 1,
-					"modifiable": false
+					"value": 1
 				}
 			],
 			"available": true,
@@ -12113,8 +12071,7 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 4,
-					"modifiable": false
+					"value": 4
 				}
 			],
 			"available": true,
@@ -12126,8 +12083,7 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 1,
-					"modifiable": false
+					"value": 1
 				}
 			],
 			"available": true,
@@ -12139,8 +12095,7 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 2,
-					"modifiable": false
+					"value": 2
 				}
 			],
 			"available": true,
@@ -12152,8 +12107,7 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 2,
-					"modifiable": false
+					"value": 2
 				}
 			],
 			"available": true,
@@ -12165,8 +12119,7 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 1,
-					"modifiable": false
+					"value": 1
 				}
 			],
 			"available": true,
