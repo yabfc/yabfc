@@ -12,6 +12,7 @@
 	import {
 		Background,
 		BackgroundVariant,
+		Controls,
 		SvelteFlow,
 		type Edge,
 		type Node,
@@ -128,6 +129,7 @@
 		fitView
 		class="[--background-color:var(--color-base-100)]"
 	>
+		<Controls />
 		<Background
 			variant={BackgroundVariant.Dots}
 			class="opacity-50 [--xy-background-pattern-color:var(--color-base-content)]"
