@@ -55,6 +55,11 @@ export interface Edge {
 	itemId: string;
 }
 
+export type EdgeDemand = {
+	edge: Edge;
+	demand: number;
+};
+
 export interface Factory {
 	inputs: Record<string, InputItemIo>;
 	outputs: Record<string, ItemIo>;
