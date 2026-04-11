@@ -82,12 +82,13 @@
 	}
 </script>
 
-<Handle
-	type="target"
-	position={targetPosition}
-	class="border-base-content/50 rounded-full border [--xy-handle-background-color:color-mix(in_oklab,var(--color-base-content)_50%,transparent)]"
-/>
-
+{#if Object.keys(targetInputs).length !== 0}
+	<Handle
+		type="target"
+		position={targetPosition}
+		class="border-base-content/50 rounded-full border [--xy-handle-background-color:color-mix(in_oklab,var(--color-base-content)_50%,transparent)]"
+	/>
+{/if}
 <div
 	class="rounded-box bg-base-100 border-base-content/10 flex w-72 flex-col items-center gap-1 border p-4"
 	class:pt-10={alternatives}
