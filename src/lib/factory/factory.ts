@@ -79,8 +79,18 @@ export function rebuildFactory(
 		),
 	];
 
+	// make sure that each recipe only exists once. Such a case exists
+	// when e.g switching the Uranium Processing recipe to Kovarex
+	// and then back to normal Uranium Processing (factorio)
+	const seenRecipes = new Set<string>();
+	const uniqueRecipeNodes = updatedRecipeChain.filter(node => {
+		if (seenRecipes.has(node.recipeId)) return false;
+		seenRecipes.add(node.recipeId);
+		return true;
+	});
+
 	factory.edges = [];
-	factory.recipeNodes = Object.fromEntries(updatedRecipeChain.map(x => [x.id, x]));
+	factory.recipeNodes = Object.fromEntries(uniqueRecipeNodes.map(x => [x.id, x]));
 	factory.edges = connectEdges(
 		profile,
 		Object.values(factory.recipeNodes),
