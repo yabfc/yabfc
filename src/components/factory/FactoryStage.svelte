@@ -3,7 +3,11 @@
 	import ItemInputNode from '@/components/shared/stage/ItemInputNode.svelte';
 	import ItemOutputNode from '@/components/shared/stage/ItemOutputNode.svelte';
 	import RecipeEdgeComponent from '@/components/shared/stage/RecipeEdge.svelte';
-	import { calculateRecipeNodeTargets, rebuildFactory } from '@/lib/factory/factory';
+	import {
+		calculateRecipeNodeTargets,
+		rebuildFactory,
+		recalculateEdgeAmounts,
+	} from '@/lib/factory/factory';
 	import type { MachineConfiguration, RecipeNodeTargets } from '@/lib/models/factory';
 	import layout from '@/lib/stage/layout';
 	import active from '@/stores/active.svelte';
@@ -25,13 +29,13 @@
 
 	let nodes = $state.raw<Node[]>([]),
 		edges = $state.raw<Edge[]>([]),
-		recipeNodeTargetIO = $state<RecipeNodeTargets>({});
+		recipeNodeTargetIo = $state<RecipeNodeTargets>({});
 
 	const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 3 });
 
 	$effect(() => {
 		if (!active.profile) return;
-		recipeNodeTargetIO = calculateRecipeNodeTargets(active.profile, factory);
+		recipeNodeTargetIo = calculateRecipeNodeTargets(active.profile, factory);
 	});
 
 	$effect(() => {
@@ -41,8 +45,8 @@
 			position: { x: 0, y: 0 },
 			data: {
 				recipeNode: x,
-				targetInputs: recipeNodeTargetIO[x.id]?.targetInputs ?? {},
-				targetOutputs: recipeNodeTargetIO[x.id]?.targetOutputs ?? {},
+				targetInputs: recipeNodeTargetIo[x.id]?.targetInputs ?? {},
+				targetOutputs: recipeNodeTargetIo[x.id]?.targetOutputs ?? {},
 				onRecipeChange: (nodeId: string, recipeId: string) => {
 					if (!active.profile) return;
 					rebuildFactory(active.profile, factory, nodeId, recipeId);
@@ -59,7 +63,17 @@
 				id: x.id,
 				type: 'itemInput',
 				position: { x: 0, y: 0 },
-				data: { item: x },
+				data: {
+					item: x,
+					onAmountChange: (itemId: string, amount: number) => {
+						if (!active.profile) return;
+						factory.inputs[itemId] = {
+							...factory.inputs[itemId],
+							amount: amount,
+						};
+						recalculateEdgeAmounts(active.profile, factory);
+					},
+				},
 			})),
 		);
 
@@ -77,7 +91,7 @@
 							...factory.outputs[itemId],
 							amount: amount,
 						};
-						recipeNodeTargetIO = calculateRecipeNodeTargets(active.profile, factory);
+						recipeNodeTargetIo = calculateRecipeNodeTargets(active.profile, factory);
 					},
 				},
 			})),

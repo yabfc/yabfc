@@ -32,7 +32,7 @@ export type RecipeNodeTargets = Record<
 	}
 >;
 
-export type ItemOutputNodeData = Record<string, unknown> & {
+export type ItemIoNodeData = Record<string, unknown> & {
 	item: ItemIo;
 	onAmountChange: (itemId: string, amount: number) => void;
 };
