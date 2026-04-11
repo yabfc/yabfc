@@ -8,66 +8,7 @@ import {
 import type Profile from '@/lib/models/profile';
 import type Recipe from '@/lib/models/recipe';
 import { nanoid } from 'nanoid';
-
-export function calculateEdges(
-	profile: Profile,
-	recipeNodes: RecipeNode[],
-	inputs: ItemIo[],
-	outputs: ItemIo[],
-) {
-	let edges: Edge[] = [];
-
-	// connect inputs to recipe nodes
-	inputs.forEach(input => {
-		recipeNodes
-			.filter(x => profile.getRecipeById(x.recipeId)?.in.some(y => y.id === input.id))
-			.forEach(recipeNode => {
-				// TODO if item is sent to multiple recipe nodes, amount is wrong
-				edges.push({
-					from: input.id,
-					to: recipeNode.id,
-					actualAmount: input.amount,
-					targetAmount: input.amount,
-					itemId: input.id,
-				});
-			});
-	});
-
-	// connect recipe node outputs
-	recipeNodes.forEach(outputRecipeNode => {
-		const recipe = profile.getRecipeById(outputRecipeNode.recipeId);
-
-		if (!recipe) return;
-
-		recipe.out.forEach(output => {
-			recipeNodes
-				.filter(x => profile.getRecipeById(x.recipeId)?.in.some(y => y.id === output.id))
-				.forEach(inputNode => {
-					edges.push({
-						from: outputRecipeNode.id,
-						to: inputNode.id,
-						actualAmount: 0,
-						targetAmount: 0,
-						itemId: output.id,
-					});
-				});
-
-			outputs
-				.filter(x => x.id === output.id)
-				.forEach(outputNode => {
-					edges.push({
-						from: outputRecipeNode.id,
-						to: outputNode.id,
-						actualAmount: 0,
-						targetAmount: 0,
-						itemId: output.id,
-					});
-				});
-		});
-	});
-
-	return edges;
-}
+import { connectEdges } from '@/lib/factory/edge';
 
 /** Get all recipes (sorted by priority) based on the given item */
 export function getRecipes(profile: Profile, itemOutput: string): Recipe[] {
@@ -140,8 +81,7 @@ export function rebuildFactory(
 
 	factory.edges = [];
 	factory.recipeNodes = Object.fromEntries(updatedRecipeChain.map(x => [x.id, x]));
-	//factory.inputs = getResourceInputs(profile, updatedRecipeChain);
-	factory.edges = calculateEdges(
+	factory.edges = connectEdges(
 		profile,
 		Object.values(factory.recipeNodes),
 		Object.values(factory.inputs),

@@ -4,9 +4,72 @@ import {
 	type Edge,
 	type EdgeDemand,
 	type Factory,
+	type ItemIo,
+	type RecipeNode,
 } from '@/lib/models/factory';
 import type Profile from '@/lib/models/profile';
-import { calculateInput, calculateOutput } from './factory';
+import { calculateInput, calculateOutput } from '@/lib/factory/factory';
+
+/** Connects nodes with edges  */
+export function connectEdges(
+	profile: Profile,
+	recipeNodes: RecipeNode[],
+	inputs: ItemIo[],
+	outputs: ItemIo[],
+) {
+	let edges: Edge[] = [];
+
+	// connect inputs to recipe nodes
+	inputs.forEach(input => {
+		recipeNodes
+			.filter(x => profile.getRecipeById(x.recipeId)?.in.some(y => y.id === input.id))
+			.forEach(recipeNode => {
+				// TODO if item is sent to multiple recipe nodes, amount is wrong
+				edges.push({
+					from: input.id,
+					to: recipeNode.id,
+					actualAmount: input.amount,
+					targetAmount: input.amount,
+					itemId: input.id,
+				});
+			});
+	});
+
+	// connect recipe node outputs
+	recipeNodes.forEach(outputRecipeNode => {
+		const recipe = profile.getRecipeById(outputRecipeNode.recipeId);
+
+		if (!recipe) return;
+
+		recipe.out.forEach(output => {
+			recipeNodes
+				.filter(x => profile.getRecipeById(x.recipeId)?.in.some(y => y.id === output.id))
+				.forEach(inputNode => {
+					edges.push({
+						from: outputRecipeNode.id,
+						to: inputNode.id,
+						actualAmount: 0,
+						targetAmount: 0,
+						itemId: output.id,
+					});
+				});
+
+			outputs
+				.filter(x => x.id === output.id)
+				.forEach(outputNode => {
+					edges.push({
+						from: outputRecipeNode.id,
+						to: outputNode.id,
+						actualAmount: 0,
+						targetAmount: 0,
+						itemId: output.id,
+					});
+				});
+		});
+	});
+
+	return edges;
+}
 
 /** Allocate amounts for incoming edges, grouped by target and item. */
 function allocateIncomingEdgeAmounts(

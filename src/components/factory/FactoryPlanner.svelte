@@ -1,11 +1,12 @@
 <script lang="ts">
-	import { calculateEdges, getRecipeChain } from '@/lib/factory/factory';
+	import { getRecipeChain } from '@/lib/factory/factory';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
 	import ItemSelect from '@/components/shared/ItemSelect.svelte';
 	import { ZapIcon } from '@lucide/svelte';
 	import type Item from '@/lib/models/item';
 	import { NumberFormatter } from '@/lib/format/number';
+	import { connectEdges } from '@/lib/factory/edge';
 
 	let inputs = $state<{ item: Item; amount: number }[]>([]),
 		outputs = $state<{ item: Item; amount: number }[]>([]);
@@ -41,7 +42,7 @@
 			inputs.map(io => [io.item.id, { id: io.item.id, amount: io.amount }]),
 		);
 
-		factory.edges = calculateEdges(
+		factory.edges = connectEdges(
 			active.profile,
 			Object.values(factory.recipeNodes),
 			Object.values(factory.inputs),
