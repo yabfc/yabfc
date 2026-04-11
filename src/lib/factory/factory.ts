@@ -2,7 +2,6 @@ import type {
 	Edge,
 	EdgeDemand,
 	Factory,
-	InputItemIo,
 	ItemIo,
 	RecipeNode,
 	RecipeNodeTargets,
@@ -22,7 +21,7 @@ export function calculateEdges(
 	// connect inputs to recipe nodes
 	inputs.forEach(input => {
 		recipeNodes
-			.filter(x => profile.getRecipeById(x.recipeId)?.out.some(y => y.id === input.id))
+			.filter(x => profile.getRecipeById(x.recipeId)?.in.some(y => y.id === input.id))
 			.forEach(recipeNode => {
 				// TODO if item is sent to multiple recipe nodes, amount is wrong
 				edges.push({
@@ -108,30 +107,6 @@ export function getRecipeChain(
 	});
 }
 
-export function getResourceInputs(
-	profile: Profile,
-	recipeChain: RecipeNode[],
-): Record<string, InputItemIo> {
-	const result: Record<string, InputItemIo> = {};
-	const inputs = recipeChain.filter(x => profile.getRecipeById(x.recipeId)?.in.length === 0);
-	for (const node of inputs) {
-		const recipe = profile.getRecipeById(node.recipeId);
-		if (!recipe) continue;
-
-		const output = recipe.out[0];
-		if (!output) continue;
-
-		if (!result[output.id]) {
-			result[output.id] = {
-				id: output.id,
-				amount: 0,
-				auto: true,
-			};
-		}
-	}
-	return result;
-}
-
 /** Rebuild the factory with the updated recipe */
 export function rebuildFactory(
 	profile: Profile,
@@ -166,7 +141,7 @@ export function rebuildFactory(
 
 	factory.edges = [];
 	factory.recipeNodes = Object.fromEntries(updatedRecipeChain.map(x => [x.id, x]));
-	factory.inputs = getResourceInputs(profile, updatedRecipeChain);
+	//factory.inputs = getResourceInputs(profile, updatedRecipeChain);
 	factory.edges = calculateEdges(
 		profile,
 		Object.values(factory.recipeNodes),

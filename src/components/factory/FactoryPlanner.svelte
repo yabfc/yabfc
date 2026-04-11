@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { calculateEdges, getRecipeChain, getResourceInputs } from '@/lib/factory/factory';
+	import { calculateEdges, getRecipeChain } from '@/lib/factory/factory';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
 	import ItemSelect from '@/components/shared/ItemSelect.svelte';
@@ -37,7 +37,9 @@
 		);
 
 		factory.recipeNodes = Object.fromEntries(recipeChain.map(x => [x.id, x]));
-		factory.inputs = getResourceInputs(active.profile, recipeChain);
+		factory.inputs = Object.fromEntries(
+			inputs.map(io => [io.item.id, { id: io.item.id, amount: io.amount }]),
+		);
 
 		factory.edges = calculateEdges(
 			active.profile,

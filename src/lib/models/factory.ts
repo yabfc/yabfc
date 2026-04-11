@@ -42,11 +42,6 @@ export interface ItemIo {
 	amount: number;
 }
 
-export interface InputItemIo extends ItemIo {
-	/** whether input is auto-added or supplied by the user */
-	auto: boolean;
-}
-
 export interface Edge {
 	from: string;
 	to: string;
@@ -61,7 +56,7 @@ export type EdgeDemand = {
 };
 
 export interface Factory {
-	inputs: Record<string, InputItemIo>;
+	inputs: Record<string, ItemIo>;
 	outputs: Record<string, ItemIo>;
 	recipeNodes: Record<string, RecipeNode>;
 	edges: Edge[];
