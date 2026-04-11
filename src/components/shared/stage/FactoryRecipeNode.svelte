@@ -77,7 +77,7 @@
 	}
 </script>
 
-{#if Object.keys(targetInputs).length !== 0}
+{#if Object.keys(actualInputs).length !== 0}
 	<Handle
 		type="target"
 		position={targetPosition}
