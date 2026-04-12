@@ -79,6 +79,10 @@ export default class Profile {
 		return this.machineEffects.find(x => x.id === id);
 	}
 
+	getConveyorById(id: string): Conveyor | undefined {
+		return this.conveyors.find(x => x.id === id);
+	}
+
 	getAllModifierIds(): string[] {
 		return [...new Set(this.machineEffects.map(x => x.getAllModifierIds()).flat())];
 	}
