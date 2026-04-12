@@ -8,10 +8,6 @@
 
 Then you can add Items / Recipes / Machines / Effects or general Settings like the default Duration. Once you got your new profile ready, you can upload it in your settings.
 
-> [!TIP]
->
-> Change the `id` and `name` of your new profile so you can easily find it
-
 ## Run the Application with Docker
 
 1. Get yourself a copy of the `compose.yaml`
