@@ -50,6 +50,11 @@ export interface Edge {
 	itemId: string;
 }
 
+export type EdgeData = Record<string, unknown> & {
+	edge: Edge;
+	onEdgeView: (edge: Edge) => void;
+};
+
 export function toEdgeKey(edge: Edge): string {
 	return `${edge.to}-${edge.itemId}`;
 }
