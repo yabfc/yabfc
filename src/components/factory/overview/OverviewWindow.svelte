@@ -2,52 +2,57 @@
 	import ItemOverview from '@/components/factory/overview/ItemOverview.svelte';
 	import MachineOverview from '@/components/factory/overview/MachineOverview.svelte';
 	import RecipeOverview from '@/components/factory/overview/RecipeOverview.svelte';
-	import ConveyorOverview from './ConveyorOverview.svelte';
-	import EffectOverview from './EffectOverview.svelte';
+	import ConveyorOverview from '@/components/factory/overview/ConveyorOverview.svelte';
+	import EffectOverview from '@/components/factory/overview/EffectOverview.svelte';
+	import { ChevronLeftIcon, ChevronRightIcon } from '@lucide/svelte';
+	const tabs = [
+		{ label: 'Items', component: ItemOverview },
+		{ label: 'Machines', component: MachineOverview },
+		{ label: 'Recipes', component: RecipeOverview },
+		{ label: 'Conveyors', component: ConveyorOverview },
+		{ label: 'Effects', component: EffectOverview },
+	];
+
+	let activeTab = $state<string>('Items');
+	let overviewHidden = $state(false);
 </script>
 
-<div
-	class="fixed top-24 right-4 bottom-4 z-10 flex h-fit max-h-[calc(100%-var(--spacing)*28)] w-80"
+<button
+	type="button"
+	class="btn btn-sm btn-circle fixed top-26 right-6 z-20 shadow"
+	onclick={() => (overviewHidden = !overviewHidden)}
 >
-	<div class="tabs tabs-box w-full shadow">
-		<input type="radio" name="profile-overview-tabs" class="tab" aria-label="Items" checked />
+	{#if overviewHidden}
+		<ChevronLeftIcon size="16" />
+	{:else}
+		<ChevronRightIcon size="16" />
+	{/if}
+</button>
 
-		<!--
-			There might be a daisyUI bug for tabs-box which requires us to forcefully override the
-			tab-content's height
-		-->
-		<div
-			class="tab-content bg-base-100 border-base-300 h-[calc(100%-var(--tab-height)-var(--spacing)-46px)]! overflow-auto"
-		>
-			<ItemOverview />
-		</div>
+{#if !overviewHidden}
+	<div
+		class="fixed top-24 right-4 bottom-4 z-10 flex h-fit max-h-[calc(100%-var(--spacing)*28)] w-80"
+	>
+		<div class="tabs tabs-box w-full shadow">
+			{#each tabs as tab}
+				{@const tabId = `profile-tab-${tab.label.toLowerCase()}`}
 
-		<input type="radio" name="profile-overview-tabs" class="tab" aria-label="Machines" />
-		<div
-			class="tab-content bg-base-100 border-base-300 h-[calc(100%-var(--tab-height)-var(--spacing)-46px)]! overflow-auto"
-		>
-			<MachineOverview />
-		</div>
+				<input
+					type="radio"
+					name="profile-overview-tabs"
+					id={tabId}
+					class="tab"
+					aria-label={tab.label}
+					checked={activeTab === tab.label}
+					onchange={() => (activeTab = tab.label)}
+				/>
 
-		<input type="radio" name="profile-overview-tabs" class="tab" aria-label="Recipes" />
-		<div
-			class="tab-content bg-base-100 border-base-300 h-[calc(100%-var(--tab-height)-var(--spacing)-46px)]! overflow-auto"
-		>
-			<RecipeOverview />
-		</div>
-
-		<input type="radio" name="profile-overview-tabs" class="tab" aria-label="Conveyors" />
-		<div
-			class="tab-content bg-base-100 border-base-300 h-[calc(100%-var(--tab-height)-var(--spacing)-46px)]! overflow-auto"
-		>
-			<ConveyorOverview />
-		</div>
-
-		<input type="radio" name="profile-overview-tabs" class="tab" aria-label="Effects" />
-		<div
-			class="tab-content bg-base-100 border-base-300 h-[calc(100%-var(--tab-height)-var(--spacing)-46px)]! overflow-auto"
-		>
-			<EffectOverview />
+				<div
+					class="tab-content bg-base-100 border-base-300 h-[calc(100%-var(--tab-height)-var(--spacing)-46px)]! overflow-auto"
+				>
+					<tab.component />
+				</div>
+			{/each}
 		</div>
 	</div>
-</div>
+{/if}

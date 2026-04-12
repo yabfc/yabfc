@@ -29,29 +29,13 @@
 		selectedEdge = edge;
 		edgeDialog?.showModal();
 	}
-
-	let overviewHidden = $state(false);
 </script>
 
 <FactoryPlanner />
 
 <FactoryStage onEditMachineConfig={openMachineConfigDialog} onEdgeView={openEdgeDialog} />
 
-<button
-	type="button"
-	class="btn btn-sm btn-circle fixed top-26 right-6 z-20 shadow"
-	onclick={() => (overviewHidden = !overviewHidden)}
->
-	{#if overviewHidden}
-		<ChevronLeftIcon size="16" />
-	{:else}
-		<ChevronRightIcon size="16" />
-	{/if}
-</button>
-
-{#if !overviewHidden}
-	<OverviewWindow />
-{/if}
+<OverviewWindow />
 
 <MachineConfigurationDialog
 	bind:dialog={machineConfigDialog}
