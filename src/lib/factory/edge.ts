@@ -28,7 +28,7 @@ export function connectEdges(
 				edges.push({
 					from: input.id,
 					to: recipeNode.id,
-					actualAmount: input.amount,
+					actualAmount: 0,
 					targetAmount: input.amount,
 					itemId: input.id,
 				});
