@@ -6,6 +6,7 @@
 	import factory from '@/stores/factory.svelte';
 	import { FactoryIcon, PencilIcon, PlusIcon, Trash2Icon } from '@lucide/svelte';
 	import { Handle, Position, type Node, type NodeProps } from '@xyflow/svelte';
+	import { nanoid } from 'nanoid';
 
 	let {
 		data,
@@ -25,12 +26,12 @@
 
 	const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 3 });
 
-	let machine = $state<string>();
+	let selectedMachine = $state<string>();
 	const addMachine = () => {
-		if (!machine || !node || !active.profile) return;
+		if (!selectedMachine || !node || !active.profile) return;
 
 		node.machines.push({
-			machineId: machine,
+			machineId: selectedMachine,
 			machineCount: 1,
 			productivityOverride: 1,
 			speedOverride: 1,
@@ -99,7 +100,7 @@
 			<p class="sr-only">Select recipe alternative</p>
 
 			<select
-				class="select select-xs"
+				class="select select-xs nodrag"
 				bind:value={selectedAlternativeRecipeId}
 				onchange={handleAlternativeChange}
 			>
@@ -227,7 +228,7 @@
 	</ul>
 
 	<div class="join w-full pt-4">
-		<select bind:value={machine} class="select select-xs join-item">
+		<select bind:value={selectedMachine} class="select select-xs join-item nodrag">
 			{#each active.profile?.getMachinesByRecipe(recipe?.category || '') as machine}
 				<option value={machine.id}>{machine.getDisplayName()}</option>
 			{:else}
