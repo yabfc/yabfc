@@ -35,6 +35,20 @@ export function connectEdges(
 			});
 	});
 
+	// nodes that have the same item as in and output (e.g kovarex enriching)
+	let intermediaryNodes: Record<string, string[]> = {};
+	recipeNodes.forEach(outputRecipeNode => {
+		const recipe = profile.getRecipeById(outputRecipeNode.recipeId);
+		if (!recipe) return;
+		const output = recipe.out.map(io => io.id);
+		recipe.in
+			.filter(io => output.includes(io.id))
+			.forEach(io => {
+				intermediaryNodes[io.id] ??= [];
+				intermediaryNodes[io.id].push(outputRecipeNode.id);
+			});
+	});
+
 	// connect recipe node outputs
 	recipeNodes.forEach(outputRecipeNode => {
 		const recipe = profile.getRecipeById(outputRecipeNode.recipeId);
@@ -42,8 +56,23 @@ export function connectEdges(
 		if (!recipe) return;
 
 		recipe.out.forEach(output => {
+			const currentIntermediaries = intermediaryNodes[output.id] ?? [];
+			const producerIsIntermediary = currentIntermediaries.includes(outputRecipeNode.id);
+
 			recipeNodes
-				.filter(x => profile.getRecipeById(x.recipeId)?.in.some(y => y.id === output.id))
+				.filter(node => {
+					if (!profile.getRecipeById(node.recipeId)?.in.some(y => y.id === output.id))
+						return false;
+					if (currentIntermediaries.length > 0) {
+						const nodeIsIntermediary = currentIntermediaries.includes(node.id);
+						// intermediary node is allowed to selfloop
+						if (producerIsIntermediary) {
+							return !nodeIsIntermediary || node.id === outputRecipeNode.id;
+						}
+						return nodeIsIntermediary;
+					}
+					return true;
+				})
 				.forEach(inputNode => {
 					edges.push({
 						from: outputRecipeNode.id,
@@ -55,7 +84,14 @@ export function connectEdges(
 				});
 
 			outputs
-				.filter(x => x.id === output.id)
+				.filter(outputNode => {
+					if (outputNode.id !== output.id) return false;
+					// only let the intermediary node connect to the output
+					if (currentIntermediaries.length > 0) {
+						return producerIsIntermediary;
+					}
+					return true;
+				})
 				.forEach(outputNode => {
 					edges.push({
 						from: outputRecipeNode.id,
