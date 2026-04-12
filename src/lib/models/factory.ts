@@ -1,6 +1,7 @@
 import type { EffectChoice } from '@/lib/models/effect';
 
 export interface MachineConfiguration {
+	id: string;
 	machineId: string;
 	machineCount: number;
 	productivityOverride: number;

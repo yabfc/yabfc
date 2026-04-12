@@ -31,6 +31,7 @@
 		if (!selectedMachine || !node || !active.profile) return;
 
 		node.machines.push({
+			id: nanoid(),
 			machineId: selectedMachine,
 			machineCount: 1,
 			productivityOverride: 1,
@@ -100,6 +101,7 @@
 			<p class="sr-only">Select recipe alternative</p>
 
 			<select
+				id={nanoid()}
 				class="select select-xs nodrag"
 				bind:value={selectedAlternativeRecipeId}
 				onchange={handleAlternativeChange}
@@ -187,9 +189,10 @@
 				<p class="flex-1 text-sm">{name}</p>
 
 				<div class="flex items-center gap-2">
-					<label class="floating-label flex-1">
+					<label id={config.id} class="floating-label flex-1">
 						<span>Amount</span>
 						<input
+							id={config.id}
 							type="number"
 							bind:value={config.machineCount}
 							onchange={updateMachineConfig}
@@ -228,7 +231,11 @@
 	</ul>
 
 	<div class="join w-full pt-4">
-		<select bind:value={selectedMachine} class="select select-xs join-item nodrag">
+		<select
+			id={nanoid()}
+			bind:value={selectedMachine}
+			class="select select-xs join-item nodrag"
+		>
 			{#each active.profile?.getMachinesByRecipe(recipe?.category || '') as machine}
 				<option value={machine.id}>{machine.getDisplayName()}</option>
 			{:else}

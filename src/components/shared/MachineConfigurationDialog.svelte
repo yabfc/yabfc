@@ -158,9 +158,10 @@
 		</div>
 
 		<div class="flex flex-col gap-4 pt-4">
-			<label class="floating-label">
+			<label class="floating-label" id="machineConfig-machineCount">
 				<span>Amount</span>
 				<input
+					id="machineConfig-machineCount"
 					type="number"
 					bind:value={config.machineCount}
 					onchange={onChange}
@@ -172,8 +173,9 @@
 			<div class="w-full pt-4">
 				<div class="flex items-center justify-between">
 					<p class="text-base-content/60 text-sm uppercase">Applied Modifiers</p>
-					<label class="label">
+					<label class="label" id="machineConfig-toggleEdit">
 						<input
+							id="machineConfig-toggleEdit"
 							type="checkbox"
 							class="toggle toggle-xs duration-50"
 							checked={editModifier}
@@ -225,6 +227,7 @@
 								<span class="truncate">{choice.effect.getDisplayName()}</span>
 								{#if choice.scaling != null}
 									<input
+										id={nanoid()}
 										type="number"
 										min={choice.effect.minValue ?? 0}
 										max={choice.effect.maxValue ?? 10}
@@ -251,7 +254,11 @@
 
 			{#if selectableEffects}
 				<div class="join w-full pt-4">
-					<select bind:value={selectedEffect} class="select select-xs join-item w-full">
+					<select
+						id={nanoid()}
+						bind:value={selectedEffect}
+						class="select select-xs join-item w-full"
+					>
 						<option disabled value="">Select effect</option>
 						{#each selectableEffects as effect}
 							<option value={effect.id}>{effect.getDisplayName()}</option>

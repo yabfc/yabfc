@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { ItemIo, ItemIoNodeData } from '@/lib/models/factory';
+	import type { ItemIoNodeData } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
 	import { AnvilIcon } from '@lucide/svelte';
 	import { Handle, Position, type Node, type NodeProps } from '@xyflow/svelte';
@@ -28,9 +28,10 @@
 	</span>
 
 	<div class="pt-4">
-		<label class="floating-label">
+		<label id={'in-' + data.item.id} class="floating-label">
 			<span>Amount</span>
 			<input
+				id={'in-' + data.item.id}
 				type="number"
 				bind:value={amount}
 				onchange={handleInput}

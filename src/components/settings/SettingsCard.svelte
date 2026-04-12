@@ -11,6 +11,7 @@
 
 			<div class="join">
 				<input
+					id="settingsThemeAuto"
 					type="radio"
 					bind:group={$settings.theme}
 					value=""
@@ -18,6 +19,7 @@
 					class="join-item btn"
 				/>
 				<input
+					id="settingsThemeLight"
 					type="radio"
 					bind:group={$settings.theme}
 					value="light"
@@ -25,6 +27,7 @@
 					class="join-item btn"
 				/>
 				<input
+					id="settingsThemeDark"
 					type="radio"
 					bind:group={$settings.theme}
 					value="dark"

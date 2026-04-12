@@ -1,16 +1,18 @@
 <script lang="ts">
 	import { SearchIcon, XIcon } from '@lucide/svelte';
+	import { nanoid } from 'nanoid';
 
 	let { value = $bindable() } = $props();
 
 	const clearSearch = () => (value = '');
+	const searchId = 'search' + nanoid();
 </script>
 
 <div class="bg-base-100 sticky top-0 z-10 p-3">
-	<label class="input input-sm w-full">
+	<label class="input input-sm w-full" id={searchId}>
 		<SearchIcon size="14" />
 
-		<input type="text" bind:value placeholder="Search" class="grow" />
+		<input id={searchId} type="text" bind:value placeholder="Search" class="grow" />
 
 		<div class="size-6">
 			{#if value.length > 0}

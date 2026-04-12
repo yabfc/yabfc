@@ -9,6 +9,7 @@ Renders a item multi-select with amount. Item selection via dialog.
 	import Item from '@/lib/models/item';
 	import active from '@/stores/active.svelte';
 	import { AnvilIcon, PlusIcon, Trash2Icon } from '@lucide/svelte';
+	import { nanoid } from 'nanoid';
 
 	let { items = $bindable([]) }: { items: { item: Item; amount: number }[] } = $props();
 
@@ -54,7 +55,13 @@ Renders a item multi-select with amount. Item selection via dialog.
 				{item.item.getDisplayName()}
 			</p>
 
-			<input type="number" bind:value={item.amount} min="1" class="input input-sm w-16" />
+			<input
+				id={nanoid()}
+				type="number"
+				bind:value={item.amount}
+				min="1"
+				class="input input-sm w-16"
+			/>
 
 			<button
 				onclick={removeItemAtIndexCreator(i)}

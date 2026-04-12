@@ -3,6 +3,7 @@
 -->
 <script lang="ts">
 	import { RotateCcwIcon } from '@lucide/svelte';
+	import { nanoid } from 'nanoid';
 
 	type Props = {
 		label: string;
@@ -39,6 +40,7 @@
 		data-tip="must be >= 0"
 	>
 		<input
+			id={nanoid()}
 			type="number"
 			min="0"
 			bind:value={draft}

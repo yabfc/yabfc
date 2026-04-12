@@ -35,9 +35,10 @@
 		<div class="card-title justify-between">
 			<h2>Profiles</h2>
 
-			<label class="btn btn-soft btn-primary">
+			<label id="fileInput" class="btn btn-soft btn-primary">
 				Upload new
 				<input
+					id="fileInput"
 					bind:this={uploadInput}
 					type="file"
 					accept=".json"
