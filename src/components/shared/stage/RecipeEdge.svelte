@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { BaseEdge, EdgeLabel, getBezierPath, type EdgeProps } from '@xyflow/svelte';
+	import type { EdgeData } from '@/lib/models/factory';
+	import { BaseEdge, EdgeLabel, getBezierPath, type EdgeProps, type Edge } from '@xyflow/svelte';
 
 	let {
 		id,
@@ -12,7 +13,8 @@
 		targetY,
 		sourcePosition,
 		targetPosition,
-	}: EdgeProps = $props();
+		data,
+	}: EdgeProps<Edge<EdgeData>> = $props();
 
 	const isSelfLoop = $derived(source === target);
 
@@ -45,12 +47,18 @@
 	let edgePath = $derived(isSelfLoop ? selfLoopPath : normalPath);
 	let labelX = $derived(isSelfLoop ? sourceX + 27 : normalLabelX);
 	let labelY = $derived(isSelfLoop ? sourceY - 25 : normalLabelY);
+
+	function onEdgeClick() {
+		if (!data) return;
+		data.onEdgeView(data.edge);
+	}
 </script>
 
 <BaseEdge
 	{id}
 	path={edgePath}
 	class="[--xy-edge-stroke-selected:var(--color-base-content)] [--xy-edge-stroke:color-mix(in_oklab,var(--color-base-content)_50%,transparent)]"
+	onclick={onEdgeClick}
 />
 
 {#if label}

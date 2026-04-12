@@ -5,7 +5,11 @@
 	import RecipeEdgeComponent from '@/components/shared/stage/RecipeEdge.svelte';
 	import { recalculateEdgeAmounts } from '@/lib/factory/edge';
 	import { calculateRecipeNodeTargets, rebuildFactory } from '@/lib/factory/factory';
-	import type { MachineConfiguration, RecipeNodeTargets } from '@/lib/models/factory';
+	import type {
+		MachineConfiguration,
+		RecipeNodeTargets,
+		Edge as EdgeModel,
+	} from '@/lib/models/factory';
 	import layout from '@/lib/stage/layout';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
@@ -21,8 +25,10 @@
 
 	let {
 		onEditMachineConfig,
+		onEdgeView,
 	}: {
 		onEditMachineConfig: (config: MachineConfiguration) => void;
+		onEdgeView: (edge: EdgeModel) => void;
 	} = $props();
 
 	let nodes = $state.raw<Node[]>([]),
@@ -101,6 +107,12 @@
 			source: x.from,
 			target: x.to,
 			label: `${formatter.format(x.actualAmount)}`,
+			data: {
+				edge: x,
+				onEdgeView: (edge: EdgeModel) => {
+					onEdgeView(edge);
+				},
+			},
 		}));
 
 		const layouted = layout(newNodes, newEdges);

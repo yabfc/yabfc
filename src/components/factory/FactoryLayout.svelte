@@ -2,13 +2,16 @@
 	import FactoryPlanner from '@/components/factory/FactoryPlanner.svelte';
 	import FactoryStage from '@/components/factory/FactoryStage.svelte';
 	import OverviewWindow from '@/components/factory/overview/OverviewWindow.svelte';
-	import MachineConfigurationModal from '@/components/shared/MachineConfigurationModal.svelte';
+	import MachineConfigurationDialog from '@/components/shared/MachineConfigurationDialog.svelte';
+	import EdgeDialog from '@/components/shared/EdgeDialog.svelte';
 	import { recalculateEdgeAmounts } from '@/lib/factory/edge';
-	import type { MachineConfiguration } from '@/lib/models/factory';
+	import { type Edge, type MachineConfiguration } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
 	import { ChevronLeftIcon, ChevronRightIcon } from '@lucide/svelte';
 
+	let edgeDialog = $state<HTMLDialogElement>();
+	let selectedEdge = $state<Edge | undefined>();
 	let machineConfigDialog = $state<HTMLDialogElement>();
 	let editingMachineConfig = $state<MachineConfiguration | undefined>();
 
@@ -22,12 +25,17 @@
 		recalculateEdgeAmounts(active.profile, factory);
 	}
 
+	function openEdgeDialog(edge: Edge) {
+		selectedEdge = edge;
+		edgeDialog?.showModal();
+	}
+
 	let overviewHidden = $state(false);
 </script>
 
 <FactoryPlanner />
 
-<FactoryStage onEditMachineConfig={openMachineConfigDialog} />
+<FactoryStage onEditMachineConfig={openMachineConfigDialog} onEdgeView={openEdgeDialog} />
 
 <button
 	type="button"
@@ -45,8 +53,9 @@
 	<OverviewWindow />
 {/if}
 
-<MachineConfigurationModal
+<MachineConfigurationDialog
 	bind:dialog={machineConfigDialog}
 	bind:config={editingMachineConfig}
 	onChange={updateMachineConfig}
 />
+<EdgeDialog bind:dialog={edgeDialog} bind:edge={selectedEdge} />
