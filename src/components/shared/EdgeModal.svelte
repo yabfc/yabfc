@@ -6,6 +6,7 @@
 	import Dialog from '@/components/shared/Dialog.svelte';
 	import type { Edge } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
+	import { TriangleAlertIcon, CheckIcon } from '@lucide/svelte';
 
 	type Props = {
 		dialog?: HTMLDialogElement;
@@ -54,7 +55,9 @@
 
 			<ul>
 				{#each conveyors as conveyor}
-					<li class="text-base-content/80 grid grid-cols-[auto_1fr] text-xs">
+					<li
+						class="text-base-content/80 grid grid-cols-[auto_1fr_auto] items-center gap-2 text-xs"
+					>
 						<span>
 							{active.profile?.getConveyorById(conveyor.id)?.getDisplayName() ??
 								conveyor.id}:
@@ -62,6 +65,16 @@
 						<span class="text-right"
 							>{formatter.format(conveyor.saturation * 100)}%</span
 						>
+
+						{#if conveyor.saturation <= 1}
+							<div class="badge badge-success badge-xs h-3 min-h-3 px-1">
+								<CheckIcon size="10" />
+							</div>
+						{:else}
+							<div class="badge badge-warning badge-xs h-3 min-h-3 px-1">
+								<TriangleAlertIcon size="10" />
+							</div>
+						{/if}
 					</li>
 				{:else}
 					<li class="text-base-content/80">No conveyors available</li>
