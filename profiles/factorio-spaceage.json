@@ -14485,21 +14485,30 @@
 			"prerequisites": ["cryogenic-science-pack"]
 		}
 	],
-	"conveyors": [
+	"logistics": [
+		{
+			"id": "pipe",
+			"type": "fluid",
+			"speed": 0
+		},
 		{
 			"id": "transport-belt",
+			"type": "item",
 			"speed": 15.0
 		},
 		{
 			"id": "fast-transport-belt",
+			"type": "item",
 			"speed": 30.0
 		},
 		{
 			"id": "express-transport-belt",
+			"type": "item",
 			"speed": 45.0
 		},
 		{
 			"id": "turbo-transport-belt",
+			"type": "item",
 			"speed": 60.0
 		}
 	],
