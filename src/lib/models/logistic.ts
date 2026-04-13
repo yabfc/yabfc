@@ -1,26 +1,28 @@
 import type { MachineFeature } from '@/lib/models/machine';
-import type Profile from './profile';
 
-export interface ConveyorInterface {
+export interface LogisticInterface {
 	id: string;
+	type: 'item' | 'fluid';
 	speed: number;
-	// e.g belt stacking
+	// todo e.g belt stacking
 	features?: MachineFeature[];
 }
 
-export interface ConveyorSaturation extends ConveyorInterface {
+export interface ConveyorSaturation extends LogisticInterface {
 	saturation: number;
 }
 
-export class Conveyor {
+export class Logistic {
 	id: string;
+	type: 'item' | 'fluid';
 	speed: number;
 	features?: MachineFeature[];
 
-	constructor(conveyor: ConveyorInterface) {
-		this.id = conveyor.id;
-		this.speed = conveyor.speed;
-		this.features = conveyor.features;
+	constructor(logistic: LogisticInterface) {
+		this.id = logistic.id;
+		this.type = logistic.type;
+		this.speed = logistic.speed;
+		this.features = logistic.features;
 	}
 
 	getDisplayName(): string {

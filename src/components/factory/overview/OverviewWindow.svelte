@@ -2,14 +2,14 @@
 	import ItemOverview from '@/components/factory/overview/ItemOverview.svelte';
 	import MachineOverview from '@/components/factory/overview/MachineOverview.svelte';
 	import RecipeOverview from '@/components/factory/overview/RecipeOverview.svelte';
-	import ConveyorOverview from '@/components/factory/overview/ConveyorOverview.svelte';
+	import LogisticOverview from '@/components/factory/overview/LogisticOverview.svelte';
 	import EffectOverview from '@/components/factory/overview/EffectOverview.svelte';
 	import { ChevronLeftIcon, ChevronRightIcon } from '@lucide/svelte';
 	const tabs = [
 		{ label: 'Items', component: ItemOverview },
 		{ label: 'Machines', component: MachineOverview },
 		{ label: 'Recipes', component: RecipeOverview },
-		{ label: 'Conveyors', component: ConveyorOverview },
+		{ label: 'Logistics', component: LogisticOverview },
 		{ label: 'Effects', component: EffectOverview },
 	];
 
@@ -31,7 +31,7 @@
 
 {#if !overviewHidden}
 	<div
-		class="fixed top-24 right-4 bottom-4 z-10 flex h-fit max-h-[calc(100%-var(--spacing)*28)] w-80"
+		class="fixed top-24 right-4 bottom-4 z-10 flex h-fit max-h-[calc(100%-var(--spacing)*28)] w-76"
 	>
 		<div class="tabs tabs-box w-full shadow">
 			{#each tabs as tab}
