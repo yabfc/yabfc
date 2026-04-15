@@ -5,7 +5,36 @@
 		"Profile": {
 			"additionalProperties": false,
 			"properties": {
-				"conveyors": {
+				"id": {
+					"type": "string"
+				},
+				"items": {
+					"items": {
+						"additionalProperties": false,
+						"properties": {
+							"category": {
+								"type": "string"
+							},
+							"id": {
+								"type": "string"
+							},
+							"name": {
+								"type": "string"
+							},
+							"stackSize": {
+								"type": "number"
+							},
+							"type": {
+								"enum": ["item", "fluid"],
+								"type": "string"
+							}
+						},
+						"required": ["id", "type", "category", "stackSize"],
+						"type": "object"
+					},
+					"type": "array"
+				},
+				"logistics": {
 					"items": {
 						"additionalProperties": false,
 						"properties": {
@@ -45,38 +74,13 @@
 							},
 							"speed": {
 								"type": "number"
-							}
-						},
-						"required": ["id", "speed"],
-						"type": "object"
-					},
-					"type": "array"
-				},
-				"id": {
-					"type": "string"
-				},
-				"items": {
-					"items": {
-						"additionalProperties": false,
-						"properties": {
-							"category": {
-								"type": "string"
-							},
-							"id": {
-								"type": "string"
-							},
-							"name": {
-								"type": "string"
-							},
-							"stackSize": {
-								"type": "number"
 							},
 							"type": {
 								"enum": ["item", "fluid"],
 								"type": "string"
 							}
 						},
-						"required": ["id", "type", "category", "stackSize"],
+						"required": ["id", "type", "speed"],
 						"type": "object"
 					},
 					"type": "array"
@@ -360,7 +364,7 @@
 				"items",
 				"recipes",
 				"machines",
-				"conveyors",
+				"logistics",
 				"machineEffects",
 				"research",
 				"settings"

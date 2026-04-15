@@ -21,13 +21,13 @@
 
 	const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 2 });
 
-	const conveyors = $derived.by(() => {
-		if (!edge || !active.profile) return;
+	const logistics = $derived.by(() => {
+		if (!edge || !active.profile || !item) return;
 		const multiplier = active.profile ? active.profile.settings.defaultDuration : 1;
-		const conveyors = active.profile.conveyors.map(conveyor =>
-			conveyor.getSaturation(multiplier, edge.actualAmount),
-		);
-		return conveyors.sort((a, b) => (a.speed < b.speed ? -1 : 1));
+		const logistics = active.profile.logistics
+			.filter(x => x.type === item.type)
+			.map(logistic => logistic.getSaturation(multiplier, edge.actualAmount));
+		return logistics.sort((a, b) => (a.speed < b.speed ? -1 : 1));
 	});
 </script>
 
@@ -50,23 +50,23 @@
 				{edge.actualAmount}
 			</div>
 		</div>
-		{#if conveyors}
+		{#if logistics}
 			<p class="text-base-content/60 pt-1 text-sm uppercase">Conveyor Saturation</p>
 
 			<ul>
-				{#each conveyors as conveyor}
+				{#each logistics as logistic}
 					<li
 						class="text-base-content/80 grid grid-cols-[auto_1fr_auto] items-center gap-2 text-xs"
 					>
 						<span>
-							{active.profile?.getConveyorById(conveyor.id)?.getDisplayName() ??
-								conveyor.id}:
+							{active.profile?.getLogisticById(logistic.id)?.getDisplayName() ??
+								logistic.id}:
 						</span>
 						<span class="text-right"
-							>{formatter.format(conveyor.saturation * 100)}%</span
+							>{formatter.format(logistic.saturation * 100)}%</span
 						>
 
-						{#if conveyor.saturation <= 1}
+						{#if logistic.saturation <= 1}
 							<div class="badge badge-success badge-xs h-3 min-h-3 px-1">
 								<CheckIcon size="10" />
 							</div>
