@@ -1,6 +1,9 @@
 <script lang="ts">
-	import { DownloadIcon, FullscreenIcon, ImportIcon, MinusIcon, PlusIcon } from '@lucide/svelte';
+	import FactoryStageImportExportDialog from '@/components/factory/FactoryStageImportExportDialog.svelte';
+	import { FullscreenIcon, ImportIcon, MinusIcon, PlusIcon } from '@lucide/svelte';
 	import { useStore } from '@xyflow/svelte';
+
+	let importExportDialog = $state<FactoryStageImportExportDialog>();
 
 	let store = $derived(useStore());
 
@@ -8,12 +11,8 @@
 		zoomOut = () => store.zoomOut(),
 		fitView = () => store.fitView();
 
-	const importFactory = () => {
-		//
-	};
-
-	const exportFactory = () => {
-		//
+	const openImportExportDialog = () => {
+		importExportDialog?.open();
 	};
 </script>
 
@@ -33,17 +32,13 @@
 			</button>
 		</div>
 
-		<div class="tooltip" data-tip="Import">
-			<button onclick={importFactory} class="join-item btn btn-ghost btn-sm btn-square">
+		<div class="tooltip" data-tip="Import/Export">
+			<button
+				onclick={openImportExportDialog}
+				class="join-item btn btn-ghost btn-sm btn-square"
+			>
 				<ImportIcon size="18" />
-				<span class="sr-only">Import</span>
-			</button>
-		</div>
-
-		<div class="tooltip" data-tip="Export">
-			<button onclick={exportFactory} class="join-item btn btn-ghost btn-sm btn-square">
-				<DownloadIcon size="18" />
-				<span class="sr-only">Export</span>
+				<span class="sr-only">Import/Export</span>
 			</button>
 		</div>
 
@@ -55,3 +50,5 @@
 		</div>
 	</div>
 </div>
+
+<FactoryStageImportExportDialog bind:this={importExportDialog} />
