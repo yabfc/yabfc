@@ -1,4 +1,5 @@
 <script lang="ts">
+	import FactoryStageControls from '@/components/factory/FactoryStageControls.svelte';
 	import FactoryRecipeNodeComponent from '@/components/shared/stage/FactoryRecipeNode.svelte';
 	import ItemInputNode from '@/components/shared/stage/ItemInputNode.svelte';
 	import ItemOutputNode from '@/components/shared/stage/ItemOutputNode.svelte';
@@ -16,7 +17,6 @@
 	import {
 		Background,
 		BackgroundVariant,
-		Controls,
 		SvelteFlow,
 		type Edge,
 		type Node,
@@ -141,7 +141,8 @@
 		fitView
 		class="[--background-color:var(--color-base-100)]"
 	>
-		<Controls />
+		<FactoryStageControls />
+
 		<Background
 			variant={BackgroundVariant.Dots}
 			class="opacity-50 [--xy-background-pattern-color:var(--color-base-content)]"
