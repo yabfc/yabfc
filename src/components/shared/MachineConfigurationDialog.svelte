@@ -13,6 +13,7 @@
 	import InputOverride from '@/components/shared/InputOverride.svelte';
 	import { recalculateEdgeAmounts } from '@/lib/factory/edge';
 	import factory from '@/stores/factory.svelte';
+	import { tick } from 'svelte';
 
 	type Props = {
 		dialog?: HTMLDialogElement;
@@ -21,16 +22,22 @@
 	};
 
 	let { dialog = $bindable(), config = $bindable(), onChange }: Props = $props();
-	let selectedEffect = $state('');
+	let selectedEffect = $state(''),
+		selectedQuality = $state('');
 	const machine = $derived(config ? active.profile?.getMachineById(config.machineId) : undefined);
 
 	const formatter = new NumberFormatter(undefined, { maximumFractionDigits: 4 });
+
+	const selectableQualities = $derived.by(() => {
+		if (!active.profile || !machine) return undefined;
+		return machine.getQualityTiers(active.profile.machineEffects);
+	});
 
 	const [selectableEffects, slots] = $derived.by(() => {
 		if (!active.profile || !machine) return [undefined, undefined];
 		const effects = machine
 			.getAllowedEffectModules(active.profile.machineEffects)
-			.filter(x => !(x.singleUse && (usedEffectIds ?? []).includes(x.id)));
+			.filter(x => !x.hidden && !(x.singleUse && (usedEffectIds ?? []).includes(x.id)));
 		if (effects.length === 0) return [undefined, undefined];
 		const slots = machine.features.reduce((acc, x) => acc + x.itemSlots, 0);
 		if (slots === 0) return [effects, undefined];
@@ -69,7 +76,7 @@
 		if (!active.profile || !config || !selectedEffect || !slots) return;
 		const pickedEffect = active.profile.getEffectModuleById(selectedEffect);
 		if (!pickedEffect) return;
-		if (slots <= config.effects.length) {
+		if (slots <= config.effects.filter(x => x.id !== 'quality-tier').length) {
 			alerts.push('All effect slots are full', 'ERROR');
 			return;
 		}
@@ -114,7 +121,6 @@
 			config[key] = (overrideValue / currentSum) * config[key];
 		}
 		if (!active.profile || !factory) return;
-		recalculateEdgeAmounts(active.profile, factory);
 	};
 
 	const resetModifier = (key: ModifierKey) => {
@@ -145,6 +151,22 @@
 
 	const onScalingChange = () => {
 		if (!active.profile || !factory) return;
+		recalculateEdgeAmounts(active.profile, factory);
+	};
+
+	const onQualityChange = async () => {
+		if (!active.profile || !factory || !config) return;
+		const pickedEffect = active.profile.getEffectModuleById(selectedQuality);
+		if (!pickedEffect) return;
+		config.effects = [
+			...config.effects.filter(x => x.id !== 'quality-tier'),
+			{
+				id: 'quality-tier',
+				effect: pickedEffect,
+			},
+		];
+		// wait for SpeedSum and config.speed to update. Otherwise the Edges 'lag' behind
+		await tick();
 		recalculateEdgeAmounts(active.profile, factory);
 	};
 </script>
@@ -211,6 +233,23 @@
 							>{formatter.formatPower(machine.getPowerConsumption(usedEffects || []))} (per
 							machine)</span
 						>
+						<span></span>
+						{#if selectableQualities}
+							<span>Quality</span>
+							<select
+								id={nanoid()}
+								bind:value={selectedQuality}
+								onchange={onQualityChange}
+								class="select select-xs join-item w-full"
+							>
+								<option disabled value="">Select quality</option>
+								{#each selectableQualities as qualityTier}
+									<option value={qualityTier.id}
+										>{qualityTier.getDisplayName()}</option
+									>
+								{/each}
+							</select>
+						{/if}
 					{/if}
 				</div>
 			</div>
@@ -221,7 +260,7 @@
 					{/if}
 				</p>
 				<ul class="list text-base-content/80 flex w-full flex-col gap-1 text-xs">
-					{#each usedEffects as choice}
+					{#each (usedEffects ?? []).filter(x => !x.effect.hidden) as choice}
 						<li class="flex items-center justify-between gap-2">
 							<div class="grid flex-1 grid-cols-[170px_1fr] items-center gap-x-2">
 								<span class="truncate">{choice.effect.getDisplayName()}</span>
