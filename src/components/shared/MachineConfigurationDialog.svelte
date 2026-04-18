@@ -80,7 +80,7 @@
 		config.productivity = productivitySum;
 	});
 
-	const addEffect = () => {
+	const addEffect = async () => {
 		if (!active.profile || !config || !selectedEffect || !slots) return;
 		const pickedEffect = active.profile.getEffectModuleById(selectedEffect);
 		if (!pickedEffect) return;
@@ -99,14 +99,18 @@
 		// automatically select the last effect
 		if (selectableEffects && selectableEffects.length === 1)
 			selectedEffect = selectableEffects[0].id;
+		// wait for SpeedSum and config.speed to update. Otherwise the Edges 'lag' behind
+		await tick();
 		recalculateEdgeAmounts(active.profile, factory);
 	};
 
-	function deleteEffect(id: string) {
+	async function deleteEffect(id: string) {
 		if (!active.profile || !config) return;
 		config.effects = config.effects.filter(x => x.id !== id);
 		if (selectableEffects && selectableEffects.length === 1)
 			selectedEffect = selectableEffects[0].id;
+		// wait for SpeedSum and config.speed to update. Otherwise the Edges 'lag' behind
+		await tick();
 		recalculateEdgeAmounts(active.profile, factory);
 	}
 
@@ -157,8 +161,10 @@
 		}
 	};
 
-	const onScalingChange = () => {
+	const onScalingChange = async () => {
 		if (!active.profile || !factory) return;
+		// wait for SpeedSum and config.speed to update. Otherwise the Edges 'lag' behind
+		await tick();
 		recalculateEdgeAmounts(active.profile, factory);
 	};
 
