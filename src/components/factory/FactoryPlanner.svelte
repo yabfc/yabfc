@@ -58,7 +58,9 @@
 				if (!active.profile) return;
 				const machine = active.profile.getMachineById(config.machineId);
 				if (!machine) return;
-				power += machine.getPowerConsumption(config.effects) * config.machineCount;
+				power +=
+					machine.getPowerConsumption(config.effects, active.profile.machineEffects) *
+					config.machineCount;
 			});
 		});
 		return power;

@@ -105,10 +105,12 @@ export default class Machine {
 		return speed;
 	}
 
-	getPowerConsumption(effects: EffectChoice[]): number {
+	getPowerConsumption(choices: EffectChoice[], effects: EffectModule[]): number {
 		let power = this.requiredPower;
-		effects.forEach(choice => {
-			power = choice.effect.updatePowerConsumption(power, choice.scaling ?? 1);
+		choices.forEach(choice => {
+			const effect = effects.find(x => x.id === choice.effectId);
+			if (!effect) return;
+			power = effect.updatePowerConsumption(power, choice.scaling ?? 1);
 		});
 
 		return power;

@@ -45,7 +45,13 @@
 	});
 
 	const usedEffects = $derived(config?.effects);
-	const usedEffectIds = $derived(config?.effects.map(x => x.effect.id));
+	const usedEffectIds = $derived(config?.effects.map(x => x.effectId));
+	const usedVisibleEffects = $derived.by(() => {
+		return (usedEffects ?? []).filter(choice => {
+			const effect = active.profile?.getEffectModuleById(choice.effectId);
+			return effect && !effect.hidden;
+		});
+	});
 
 	const [speedSum, productivitySum] = $derived.by(() => {
 		if (!usedEffects || !machine || !active.profile || !config) return [undefined, undefined];
@@ -54,7 +60,9 @@
 			productivity = 1 * config.productivityOverride;
 		usedEffects.forEach(choice => {
 			const scaling = choice.scaling ?? 1;
-			choice.effect.modifiers.forEach(modifier => {
+			const effect = active.profile?.getEffectModuleById(choice.effectId);
+			if (!effect) return;
+			effect.modifiers.forEach(modifier => {
 				if (modifier.id === 'speed') {
 					speed *= (modifier.value ?? 1) * scaling;
 				} else if (modifier.id === 'productivity') {
@@ -82,7 +90,7 @@
 		}
 		config.effects.push({
 			id: nanoid(),
-			effect: pickedEffect,
+			effectId: pickedEffect.id,
 			...(pickedEffect.type !== 'fixed' ? { scaling: 1 } : {}),
 		});
 
@@ -162,7 +170,7 @@
 			...config.effects.filter(x => x.id !== 'quality-tier'),
 			{
 				id: 'quality-tier',
-				effect: pickedEffect,
+				effectId: pickedEffect.id,
 			},
 		];
 		// wait for SpeedSum and config.speed to update. Otherwise the Edges 'lag' behind
@@ -230,8 +238,12 @@
 					{#if machine}
 						<span>Power:</span>
 						<span
-							>{formatter.formatPower(machine.getPowerConsumption(usedEffects || []))} (per
-							machine)</span
+							>{formatter.formatPower(
+								machine.getPowerConsumption(
+									usedEffects ?? [],
+									active.profile?.machineEffects ?? [],
+								),
+							)} (per machine)</span
 						>
 						<span></span>
 						{#if selectableQualities}
@@ -256,35 +268,38 @@
 
 			<div class="w-full pt-4">
 				<p class="text-base-content/60 pt-1 text-sm uppercase">
-					Used Effects {#if slots}({usedEffects?.length ?? 0}/{slots ?? 0})
+					Used Effects {#if slots}({usedVisibleEffects?.length ?? 0}/{slots ?? 0})
 					{/if}
 				</p>
 				<ul class="list text-base-content/80 flex w-full flex-col gap-1 text-xs">
-					{#each (usedEffects ?? []).filter(x => !x.effect.hidden) as choice}
-						<li class="flex items-center justify-between gap-2">
-							<div class="grid flex-1 grid-cols-[170px_1fr] items-center gap-x-2">
-								<span class="truncate">{choice.effect.getDisplayName()}</span>
-								{#if choice.scaling != null}
-									<input
-										id={nanoid()}
-										type="number"
-										min={choice.effect.minValue ?? 0}
-										max={choice.effect.maxValue ?? 10}
-										step={choice.effect.step ?? 0.1}
-										bind:value={choice.scaling}
-										onchange={onScalingChange}
-										class="input input-xs"
-										required
-									/>
-								{/if}
-							</div>
-							<button
-								class="btn btn-ghost btn-xs btn-square text-error shrink-0"
-								onclick={() => deleteEffect(choice.id)}
-							>
-								<Trash2Icon size="12" />
-							</button>
-						</li>
+					{#each usedVisibleEffects ?? [] as choice}
+						{@const effect = active.profile?.getEffectModuleById(choice.effectId)}
+						{#if effect}
+							<li class="flex items-center justify-between gap-2">
+								<div class="grid flex-1 grid-cols-[170px_1fr] items-center gap-x-2">
+									<span class="truncate">{effect.getDisplayName()}</span>
+									{#if choice.scaling != null}
+										<input
+											id={nanoid()}
+											type="number"
+											min={effect.minValue ?? 0}
+											max={effect.maxValue ?? 10}
+											step={effect.step ?? 0.1}
+											bind:value={choice.scaling}
+											onchange={onScalingChange}
+											class="input input-xs"
+											required
+										/>
+									{/if}
+								</div>
+								<button
+									class="btn btn-ghost btn-xs btn-square text-error shrink-0"
+									onclick={() => deleteEffect(choice.id)}
+								>
+									<Trash2Icon size="12" />
+								</button>
+							</li>
+						{/if}
 					{:else}
 						<li>No effect used</li>
 					{/each}

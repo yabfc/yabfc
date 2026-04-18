@@ -1,6 +1,6 @@
 export interface EffectChoice {
 	id: string;
-	effect: EffectModule;
+	effectId: string;
 	scaling?: number;
 }
 
