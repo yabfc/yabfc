@@ -113,4 +113,9 @@ export default class Machine {
 
 		return power;
 	}
+
+	getQualityTiers(effects: EffectModule[]): EffectModule[] {
+		const ids = this.features.find(x => x.id === 'quality-tiers')?.effectPerSlot || [];
+		return effects.filter(x => ids.includes(x.id));
+	}
 }

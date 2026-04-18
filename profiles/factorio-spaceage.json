@@ -11055,6 +11055,18 @@
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-stone-furnace"],
 					"hidden": true
+				},
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
+					"hidden": true
 				}
 			],
 			"available": true,
@@ -11094,6 +11106,18 @@
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-electric-furnace"],
 					"hidden": true
+				},
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -11107,6 +11131,18 @@
 					"id": "crafting-speed",
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-steel-furnace"],
+					"hidden": true
+				},
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
 					"hidden": true
 				}
 			],
@@ -11144,6 +11180,18 @@
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-recycler"],
 					"hidden": true
+				},
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -11163,6 +11211,18 @@
 					"id": "crafting-speed",
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-assembling-machine-1"],
+					"hidden": true
+				},
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
 					"hidden": true
 				}
 			],
@@ -11210,6 +11270,18 @@
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-assembling-machine-2"],
 					"hidden": true
+				},
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -11256,6 +11328,18 @@
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-assembling-machine-3"],
 					"hidden": true
+				},
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -11281,6 +11365,18 @@
 					"id": "crafting-speed",
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-oil-refinery"],
+					"hidden": true
+				},
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
 					"hidden": true
 				}
 			],
@@ -11314,6 +11410,18 @@
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-chemical-plant"],
 					"hidden": true
+				},
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -11345,6 +11453,18 @@
 					"id": "crafting-speed",
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-centrifuge"],
+					"hidden": true
+				},
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
 					"hidden": true
 				}
 			],
@@ -11383,6 +11503,18 @@
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-biochamber"],
 					"hidden": true
+				},
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -11414,6 +11546,18 @@
 					"id": "crafting-speed",
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-crusher"],
+					"hidden": true
+				},
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
 					"hidden": true
 				}
 			],
@@ -11452,6 +11596,18 @@
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-foundry"],
 					"hidden": true
+				},
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -11465,6 +11621,18 @@
 					"id": "crafting-speed",
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-captive-biter-spawner"],
+					"hidden": true
+				},
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
 					"hidden": true
 				}
 			],
@@ -11504,6 +11672,18 @@
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-electromagnetic-plant"],
 					"hidden": true
+				},
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -11535,6 +11715,18 @@
 					"id": "crafting-speed",
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-cryogenic-plant"],
+					"hidden": true
+				},
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
 					"hidden": true
 				}
 			],
@@ -11596,6 +11788,18 @@
 						"productivity-module-2",
 						"productivity-module-3"
 					]
+				},
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -11656,6 +11860,18 @@
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-rocket-silo"],
 					"hidden": true
+				},
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
+					"hidden": true
 				}
 			],
 			"available": true,
@@ -11671,14 +11887,40 @@
 			"id": "offshore-pump",
 			"recipeCategories": ["offshore-pump"],
 			"requiredPower": 60000,
-			"features": [],
+			"features": [
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
+					"hidden": true
+				}
+			],
 			"available": true
 		},
 		{
 			"id": "boiler",
 			"recipeCategories": ["boiler"],
 			"requiredPower": 1800000,
-			"features": [],
+			"features": [
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
+					"hidden": true
+				}
+			],
 			"available": true,
 			"limitations": [
 				"planet:nauvis",
@@ -11692,14 +11934,40 @@
 			"id": "heat-exchanger",
 			"recipeCategories": ["heat-exchanger"],
 			"requiredPower": 10000000,
-			"features": [],
+			"features": [
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
+					"hidden": true
+				}
+			],
 			"available": true
 		},
 		{
 			"id": "nuclear-reactor",
 			"recipeCategories": ["nuclear-reactor"],
 			"requiredPower": 40000000,
-			"features": [],
+			"features": [
+				{
+					"id": "quality-tiers",
+					"itemSlots": 0,
+					"effectPerSlot": [
+						"quality-normal",
+						"quality-uncommon",
+						"quality-rare",
+						"quality-epic",
+						"quality-legendary"
+					],
+					"hidden": true
+				}
+			],
 			"available": true
 		},
 		{
@@ -12120,6 +12388,71 @@
 				{
 					"id": "speed",
 					"value": 1
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-normal",
+			"name": "Normal",
+			"modifiers": [
+				{
+					"id": "speed",
+					"value": 1.0
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-uncommon",
+			"name": "Uncommon",
+			"modifiers": [
+				{
+					"id": "speed",
+					"value": 1.3
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-rare",
+			"name": "Rare",
+			"modifiers": [
+				{
+					"id": "speed",
+					"value": 1.6
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-epic",
+			"name": "Epic",
+			"modifiers": [
+				{
+					"id": "speed",
+					"value": 1.9
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-legendary",
+			"name": "Legendary",
+			"modifiers": [
+				{
+					"id": "speed",
+					"value": 2.5
 				}
 			],
 			"available": true,
