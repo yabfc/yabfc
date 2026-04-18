@@ -8,7 +8,6 @@
 	import { type Edge, type MachineConfiguration } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
-	import { ChevronLeftIcon, ChevronRightIcon } from '@lucide/svelte';
 
 	let edgeDialog = $state<HTMLDialogElement>();
 	let selectedEdge = $state<Edge | undefined>();
