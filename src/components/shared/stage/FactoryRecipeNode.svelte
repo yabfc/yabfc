@@ -29,6 +29,8 @@
 	let selectedMachine = $state<string>();
 	const addMachine = () => {
 		if (!selectedMachine || !node || !active.profile) return;
+		const machine = active.profile.getMachineById(selectedMachine);
+		if (!machine) return;
 
 		node.machines.push({
 			id: nanoid(),
@@ -36,7 +38,7 @@
 			machineCount: 1,
 			productivityOverride: 1,
 			speedOverride: 1,
-			speed: 1,
+			speed: machine.getBaseCraftingSpeed(active.profile.machineEffects),
 			productivity: 1,
 			effects: [],
 		});
