@@ -3,7 +3,7 @@ import Profile from '@/lib/models/profile';
 import factorioSpaceage from '@profiles/factorio-spaceage.json';
 import factorio from '@profiles/factorio.json';
 import satisfactory from '@profiles/satisfactory.json';
-
+import factorioQuality from '@profiles/factorio-quality.json';
 import { writable } from 'svelte/store';
 
 const PROFILES_LOCAL_STORAGE_KEY = 'profiles';
@@ -12,6 +12,7 @@ const defaultProfiles = [
 	new Profile(satisfactory as ProfileInterface),
 	new Profile(factorio as ProfileInterface),
 	new Profile(factorioSpaceage as ProfileInterface),
+	new Profile(factorioQuality as ProfileInterface),
 ];
 
 const profiles = writable([...defaultProfiles]);
