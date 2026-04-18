@@ -3,6 +3,7 @@
 	import active from '@/stores/active.svelte';
 	import { AnvilIcon } from '@lucide/svelte';
 	import { Handle, Position, type Node, type NodeProps } from '@xyflow/svelte';
+	import AmountStepControls from '@/components/shared/AmountStepControls.svelte';
 
 	let { data, sourcePosition = Position.Right }: NodeProps<Node<ItemIoNodeData>> = $props();
 
@@ -38,6 +39,7 @@
 				class="input input-sm"
 			/>
 		</label>
+		<AmountStepControls bind:value={amount} />
 	</div>
 </div>
 
