@@ -13,7 +13,6 @@
 	import InputOverride from '@/components/shared/InputOverride.svelte';
 	import { recalculateEdgeAmounts } from '@/lib/factory/edge';
 	import factory from '@/stores/factory.svelte';
-	import { tick } from 'svelte';
 	import { formattedLimitations } from '@/lib/format/limitation';
 
 	type Props = {
@@ -75,13 +74,15 @@
 	});
 
 	$effect(() => {
-		if (!config || speedSum == null || productivitySum == null) return;
+		if (!config || speedSum == null || productivitySum == null || !active.profile) return;
+		if (config.speed === speedSum && config.productivity === productivitySum) return;
 
 		config.speed = speedSum;
 		config.productivity = productivitySum;
+		recalculateEdgeAmounts(active.profile, factory);
 	});
 
-	const addEffect = async () => {
+	const addEffect = () => {
 		if (!active.profile || !config || !selectedEffect || !slots) return;
 		const pickedEffect = active.profile.getEffectModuleById(selectedEffect);
 		if (!pickedEffect) return;
@@ -100,19 +101,13 @@
 		// automatically select the last effect
 		if (selectableEffects && selectableEffects.length === 1)
 			selectedEffect = selectableEffects[0].id;
-		// wait for SpeedSum and config.speed to update. Otherwise the Edges 'lag' behind
-		await tick();
-		recalculateEdgeAmounts(active.profile, factory);
 	};
 
-	async function deleteEffect(id: string) {
-		if (!active.profile || !config) return;
+	function deleteEffect(id: string) {
+		if (!config) return;
 		config.effects = config.effects.filter(x => x.id !== id);
 		if (selectableEffects && selectableEffects.length === 1)
 			selectedEffect = selectableEffects[0].id;
-		// wait for SpeedSum and config.speed to update. Otherwise the Edges 'lag' behind
-		await tick();
-		recalculateEdgeAmounts(active.profile, factory);
 	}
 
 	let editModifier = $state(false),
@@ -133,7 +128,6 @@
 		} else {
 			config[key] = (overrideValue / currentSum) * config[key];
 		}
-		if (!active.profile || !factory) return;
 	};
 
 	const resetModifier = (key: ModifierKey) => {
@@ -162,15 +156,8 @@
 		}
 	};
 
-	const onScalingChange = async () => {
-		if (!active.profile || !factory) return;
-		// wait for SpeedSum and config.speed to update. Otherwise the Edges 'lag' behind
-		await tick();
-		recalculateEdgeAmounts(active.profile, factory);
-	};
-
-	const onQualityChange = async () => {
-		if (!active.profile || !factory || !config) return;
+	const onQualityChange = () => {
+		if (!active.profile || !config) return;
 		const pickedEffect = active.profile.getEffectModuleById(selectedQuality);
 		if (!pickedEffect) return;
 		config.effects = [
@@ -180,9 +167,6 @@
 				effectId: pickedEffect.id,
 			},
 		];
-		// wait for SpeedSum and config.speed to update. Otherwise the Edges 'lag' behind
-		await tick();
-		recalculateEdgeAmounts(active.profile, factory);
 	};
 </script>
 
@@ -293,7 +277,6 @@
 											max={effect.maxValue ?? 10}
 											step={effect.step ?? 0.1}
 											bind:value={choice.scaling}
-											onchange={onScalingChange}
 											class="input input-xs"
 											required
 										/>
