@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { recalculateEdgeAmounts } from '@/lib/factory/edge';
 	import { calculateInput, calculateOutput, getRecipes } from '@/lib/factory/factory';
+	import { formattedLimitations } from '@/lib/format/limitation';
 	import type { MachineConfiguration, RecipeNode, RecipeNodeData } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
@@ -232,7 +233,14 @@
 		{/each}
 	</ul>
 
-	<div class="join w-full pt-4">
+	{#if recipe && recipe.limitations}
+		{#each formattedLimitations(recipe.limitations) as limit}
+			<div class="alert alert-warning alert-soft mt-2 w-full py-1 text-xs">
+				<span class="-ml-1">{limit}</span>
+			</div>
+		{/each}
+	{/if}
+	<div class="join w-full pt-2">
 		<select
 			id={nanoid()}
 			bind:value={selectedMachine}

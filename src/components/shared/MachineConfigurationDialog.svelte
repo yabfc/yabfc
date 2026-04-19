@@ -14,6 +14,7 @@
 	import { recalculateEdgeAmounts } from '@/lib/factory/edge';
 	import factory from '@/stores/factory.svelte';
 	import { tick } from 'svelte';
+	import { formattedLimitations } from '@/lib/format/limitation';
 
 	type Props = {
 		dialog?: HTMLDialogElement;
@@ -311,6 +312,13 @@
 					{/each}
 				</ul>
 			</div>
+			{#if machine && machine.limitations}
+				{#each formattedLimitations(machine.limitations) as limit}
+					<div class="alert alert-warning alert-soft mt-2 w-full py-1 text-xs">
+						<span class="-ml-1">{limit}</span>
+					</div>
+				{/each}
+			{/if}
 
 			{#if selectableEffects}
 				<div class="join w-full pt-4">
