@@ -11048,7 +11048,7 @@
 		{
 			"id": "stone-furnace",
 			"recipeCategories": ["smelting"],
-			"requiredPower": 90000,
+			"requiredPower": 93000,
 			"features": [
 				{
 					"id": "crafting-speed",
@@ -11081,7 +11081,7 @@
 		{
 			"id": "electric-furnace",
 			"recipeCategories": ["smelting"],
-			"requiredPower": 180000,
+			"requiredPower": 186000,
 			"features": [
 				{
 					"id": "modules",
@@ -11125,7 +11125,7 @@
 		{
 			"id": "steel-furnace",
 			"recipeCategories": ["smelting"],
-			"requiredPower": 90000,
+			"requiredPower": 93000,
 			"features": [
 				{
 					"id": "crafting-speed",
@@ -11158,7 +11158,7 @@
 		{
 			"id": "recycler",
 			"recipeCategories": ["recycling", "recycling-or-hand-crafting"],
-			"requiredPower": 180000,
+			"requiredPower": 186000,
 			"features": [
 				{
 					"id": "modules",
@@ -11205,7 +11205,7 @@
 				"electronics",
 				"pressing"
 			],
-			"requiredPower": 75000,
+			"requiredPower": 77500,
 			"features": [
 				{
 					"id": "crafting-speed",
@@ -11245,7 +11245,7 @@
 				"cryogenics-or-assembling",
 				"crafting-with-fluid-or-metallurgy"
 			],
-			"requiredPower": 150000,
+			"requiredPower": 155000,
 			"features": [
 				{
 					"id": "modules",
@@ -11303,7 +11303,7 @@
 				"cryogenics-or-assembling",
 				"crafting-with-fluid-or-metallurgy"
 			],
-			"requiredPower": 375000,
+			"requiredPower": 387500,
 			"features": [
 				{
 					"id": "modules",
@@ -11347,7 +11347,7 @@
 		{
 			"id": "oil-refinery",
 			"recipeCategories": ["oil-processing"],
-			"requiredPower": 420000,
+			"requiredPower": 434000,
 			"features": [
 				{
 					"id": "modules",
@@ -11385,7 +11385,7 @@
 		{
 			"id": "chemical-plant",
 			"recipeCategories": ["chemistry", "chemistry-or-cryogenics", "organic-or-chemistry"],
-			"requiredPower": 210000,
+			"requiredPower": 217000,
 			"features": [
 				{
 					"id": "modules",
@@ -11429,7 +11429,7 @@
 		{
 			"id": "centrifuge",
 			"recipeCategories": ["centrifuging"],
-			"requiredPower": 350000,
+			"requiredPower": 361666,
 			"features": [
 				{
 					"id": "modules",
@@ -11478,7 +11478,7 @@
 				"organic-or-assembling",
 				"organic-or-chemistry"
 			],
-			"requiredPower": 500000,
+			"requiredPower": 516666,
 			"features": [
 				{
 					"id": "modules",
@@ -11522,7 +11522,7 @@
 		{
 			"id": "crusher",
 			"recipeCategories": ["crushing"],
-			"requiredPower": 540000,
+			"requiredPower": 558000,
 			"features": [
 				{
 					"id": "modules",
@@ -11571,7 +11571,7 @@
 				"crafting-with-fluid-or-metallurgy",
 				"metallurgy-or-assembling"
 			],
-			"requiredPower": 2500000,
+			"requiredPower": 2583333,
 			"features": [
 				{
 					"id": "modules",
@@ -11615,7 +11615,7 @@
 		{
 			"id": "captive-biter-spawner",
 			"recipeCategories": ["captive-spawner-process"],
-			"requiredPower": 100000,
+			"requiredPower": 103333,
 			"features": [
 				{
 					"id": "crafting-speed",
@@ -11647,7 +11647,7 @@
 				"electronics-with-fluid",
 				"electronics-or-assembling"
 			],
-			"requiredPower": 2000000,
+			"requiredPower": 2066666,
 			"features": [
 				{
 					"id": "modules",
@@ -11691,7 +11691,7 @@
 		{
 			"id": "cryogenic-plant",
 			"recipeCategories": ["cryogenics", "chemistry-or-cryogenics", "cryogenics-or-assembling"],
-			"requiredPower": 1500000,
+			"requiredPower": 1550000,
 			"features": [
 				{
 					"id": "modules",
@@ -11735,7 +11735,7 @@
 		{
 			"id": "electric-mining-drill",
 			"recipeCategories": ["basic-solid"],
-			"requiredPower": 90000,
+			"requiredPower": 93000,
 			"features": [
 				{
 					"id": "modules",
@@ -11761,7 +11761,7 @@
 		{
 			"id": "burner-mining-drill",
 			"recipeCategories": ["basic-solid"],
-			"requiredPower": 150000,
+			"requiredPower": 155000,
 			"features": [],
 			"available": true,
 			"limitations": [
@@ -11775,7 +11775,7 @@
 		{
 			"id": "pumpjack",
 			"recipeCategories": ["basic-fluid"],
-			"requiredPower": 90000,
+			"requiredPower": 93000,
 			"features": [
 				{
 					"id": "modules",
@@ -11807,7 +11807,7 @@
 		{
 			"id": "big-mining-drill",
 			"recipeCategories": ["basic-solid", "hard-solid"],
-			"requiredPower": 300000,
+			"requiredPower": 310000,
 			"features": [
 				{
 					"id": "modules",
@@ -11833,7 +11833,7 @@
 		{
 			"id": "asteroid-collector",
 			"recipeCategories": ["asteroid-collector"],
-			"requiredPower": 1200,
+			"requiredPower": 1240,
 			"features": [],
 			"available": true,
 			"limitations": ["planet:space-platform"]
@@ -11841,7 +11841,7 @@
 		{
 			"id": "rocket-silo",
 			"recipeCategories": ["rocket-building"],
-			"requiredPower": 250000,
+			"requiredPower": 258333,
 			"features": [
 				{
 					"id": "modules",
@@ -11886,7 +11886,7 @@
 		{
 			"id": "offshore-pump",
 			"recipeCategories": ["offshore-pump"],
-			"requiredPower": 60000,
+			"requiredPower": 62000,
 			"features": [
 				{
 					"id": "quality-tiers",
@@ -11906,7 +11906,7 @@
 		{
 			"id": "boiler",
 			"recipeCategories": ["boiler"],
-			"requiredPower": 1800000,
+			"requiredPower": 1860000,
 			"features": [
 				{
 					"id": "quality-tiers",
@@ -11933,7 +11933,7 @@
 		{
 			"id": "heat-exchanger",
 			"recipeCategories": ["heat-exchanger"],
-			"requiredPower": 10000000,
+			"requiredPower": 10333333,
 			"features": [
 				{
 					"id": "quality-tiers",
@@ -11953,7 +11953,7 @@
 		{
 			"id": "nuclear-reactor",
 			"recipeCategories": ["nuclear-reactor"],
-			"requiredPower": 40000000,
+			"requiredPower": 41333333,
 			"features": [
 				{
 					"id": "quality-tiers",
@@ -11973,7 +11973,7 @@
 		{
 			"id": "heating-tower",
 			"recipeCategories": ["heating-tower"],
-			"requiredPower": 40000000,
+			"requiredPower": 41333333,
 			"features": [],
 			"available": true,
 			"limitations": [
