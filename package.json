@@ -11,8 +11,8 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"@dagrejs/dagre": "^1.1.8",
-		"@lucide/svelte": "^0.545.0",
+		"@dagrejs/dagre": "^3.0.0",
+		"@lucide/svelte": "^1.11.0",
 		"@sveltejs/vite-plugin-svelte": "^6.2.4",
 		"@tailwindcss/vite": "^4.2.4",
 		"@tsconfig/svelte": "^5.0.8",
