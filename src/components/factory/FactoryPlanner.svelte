@@ -35,6 +35,7 @@
 		const recipeChain = getRecipeChain(
 			active.profile,
 			outputs.map(io => io.item.id),
+			inputs.map(io => io.item.id),
 		);
 
 		factory.recipeNodes = Object.fromEntries(recipeChain.map(x => [x.id, x]));

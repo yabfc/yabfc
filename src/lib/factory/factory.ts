@@ -23,6 +23,7 @@ export function getRecipes(profile: Profile, itemOutput: string): Recipe[] {
 export function getRecipeChain(
 	profile: Profile,
 	itemOutputs: string[],
+	inputs: string[],
 	seenRecipes = new Set<string>(),
 ): RecipeNode[] {
 	return itemOutputs.flatMap(itemOutput => {
@@ -59,7 +60,8 @@ export function getRecipeChain(
 			},
 			...getRecipeChain(
 				profile,
-				recipe.in.map(x => x.id),
+				recipe.in.filter(x => !inputs.includes(x.id)).map(x => x.id),
+				inputs,
 				seenRecipes,
 			),
 		];
@@ -94,6 +96,7 @@ export function rebuildFactory(
 		...getRecipeChain(
 			profile,
 			newRecipe.in.map(x => x.id),
+			Object.values(factory.inputs).map(x => x.id),
 			new Set(Object.values(prunedRecipeNodes).map(x => x.recipeId)),
 		),
 	];
