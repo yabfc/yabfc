@@ -1,7 +1,6 @@
 import {
 	type Edge,
 	type Factory,
-	type MachineConfiguration,
 	type RecipeNode,
 	type RecipeNodeTargets,
 } from '@/lib/models/factory';
@@ -32,29 +31,12 @@ export function getRecipeChain(
 		if (seenRecipes.has(recipe.id)) return [];
 
 		seenRecipes.add(recipe.id);
-		const availableMachines = profile.getMachinesByRecipe(recipe.category);
-		const defaultMachine = availableMachines[0];
-
-		const machines: MachineConfiguration[] = defaultMachine
-			? [
-					{
-						id: nanoid(),
-						machineId: defaultMachine.id,
-						machineCount: 1,
-						productivityOverride: 1,
-						speedOverride: 1,
-						speed: defaultMachine.getBaseCraftingSpeed(profile.machineEffects),
-						productivity: 1,
-						effects: [],
-					},
-				]
-			: [];
 
 		return [
 			{
 				id: nanoid(),
 				recipeId: recipe.id,
-				machines,
+				machines: profile.getDefaultMachineConfiguration(recipe.category),
 			},
 			...getRecipeChain(
 				profile,
@@ -81,6 +63,15 @@ export function rebuildFactory(
 
 	const newRecipe = profile.getRecipeById(newRecipeId);
 	if (!newRecipe) return;
+
+	const availableMachines = profile.getMachinesByRecipe(newRecipe.category).map(x => x.id);
+	changedNode.machines = changedNode.machines.filter(x =>
+		availableMachines.includes(x.machineId),
+	);
+
+	// readd a default machine
+	if (changedNode.machines.length === 0)
+		changedNode.machines = profile.getDefaultMachineConfiguration(newRecipe.category);
 
 	changedNode.recipeId = newRecipeId;
 

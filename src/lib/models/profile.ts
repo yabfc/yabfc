@@ -8,6 +8,8 @@ import schema from '@profiles/schema.json';
 import type SettingInterface from '@/lib/models/setting';
 import { Logistic, type LogisticInterface } from '@/lib/models/logistic';
 import alerts from '@/stores/alerts.svelte';
+import type { MachineConfiguration } from '@/lib/models/factory';
+import { nanoid } from 'nanoid';
 const ajv = new Ajv();
 const validate = ajv.compile(schema);
 
@@ -118,6 +120,24 @@ export default class Profile {
 
 	getSpeedOverrideName(): string {
 		return this.settings.effectNameOverride?.speed ?? 'Speed';
+	}
+
+	getDefaultMachineConfiguration(recipeCategory: string): MachineConfiguration[] {
+		const availableMachines = this.getMachinesByRecipe(recipeCategory);
+		if (!availableMachines[0]) return [];
+		const defaultMachine = availableMachines[0];
+		return [
+			{
+				id: nanoid(),
+				machineId: defaultMachine.id,
+				machineCount: 1,
+				productivityOverride: 1,
+				speedOverride: 1,
+				speed: defaultMachine.getBaseCraftingSpeed(this.machineEffects),
+				productivity: 1,
+				effects: [],
+			},
+		];
 	}
 
 	formatDefaultDuration(): string | undefined {
