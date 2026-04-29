@@ -2,6 +2,7 @@ import {
 	type Edge,
 	type Factory,
 	type ItemIo,
+	type MachineConfiguration,
 	type RecipeNode,
 	type RecipeNodeTargets,
 } from '@/lib/models/factory';
@@ -32,12 +33,29 @@ export function getRecipeChain(
 		if (seenRecipes.has(recipe.id)) return [];
 
 		seenRecipes.add(recipe.id);
+		const availableMachines = profile.getMachinesByRecipe(recipe.category);
+		const defaultMachine = availableMachines[0];
+
+		const machines: MachineConfiguration[] = defaultMachine
+			? [
+					{
+						id: nanoid(),
+						machineId: defaultMachine.id,
+						machineCount: 1,
+						productivityOverride: 1,
+						speedOverride: 1,
+						speed: defaultMachine.getBaseCraftingSpeed(profile.machineEffects),
+						productivity: 1,
+						effects: [],
+					},
+				]
+			: [];
 
 		return [
 			{
 				id: nanoid(),
 				recipeId: recipe.id,
-				machines: [],
+				machines,
 			},
 			...getRecipeChain(
 				profile,
