@@ -21,7 +21,7 @@
 		type Edge,
 		type Node,
 	} from '@xyflow/svelte';
-	import { nanoid } from 'nanoid';
+	import { untrack } from 'svelte';
 
 	let {
 		onEditMachineConfig,
@@ -102,7 +102,7 @@
 		);
 
 		const newEdges = factory.edges.map(x => ({
-			id: nanoid(),
+			id: `${x.from}-${x.to}`,
 			type: 'recipe',
 			source: x.from,
 			target: x.to,
@@ -115,10 +115,30 @@
 			},
 		}));
 
-		const layouted = layout(newNodes, newEdges);
+		const hasNewNodes = untrack(() => {
+			const oldIds = new Set(nodes.map(node => node.id));
+			return newNodes.some(node => !oldIds.has(node.id));
+		});
 
-		nodes = layouted.nodes;
-		edges = layouted.edges;
+		// only reset the layout if new nodes were added
+		if (hasNewNodes && newNodes.length > 0) {
+			const layouted = layout(newNodes, newEdges);
+
+			nodes = layouted.nodes;
+			edges = layouted.edges;
+			return;
+		}
+
+		const existingPositions = untrack(() => {
+			return new Map(nodes.map(node => [node.id, node.position]));
+		});
+
+		nodes = newNodes.map(node => ({
+			...node,
+			position: existingPositions.get(node.id) ?? node.position,
+		}));
+
+		edges = newEdges;
 	});
 
 	const nodeTypes = {
@@ -131,8 +151,8 @@
 
 <div class="h-screen w-screen">
 	<SvelteFlow
-		{nodes}
-		{edges}
+		bind:nodes
+		bind:edges
 		{nodeTypes}
 		{edgeTypes}
 		proOptions={{ hideAttribution: true }}
