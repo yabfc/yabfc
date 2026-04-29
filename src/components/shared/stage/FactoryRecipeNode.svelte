@@ -201,7 +201,7 @@
 							onchange={updateMachineConfig}
 							min="1"
 							step="1"
-							class="input input-sm w-full"
+							class="input input-sm nodrag nopan w-full"
 						/>
 					</label>
 

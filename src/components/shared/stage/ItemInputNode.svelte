@@ -36,7 +36,7 @@
 				type="number"
 				bind:value={amount}
 				onchange={handleInput}
-				class="input input-sm"
+				class="input input-sm nodrag nopan"
 			/>
 		</label>
 		<AmountStepControls bind:value={amount} />
