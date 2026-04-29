@@ -1,6 +1,7 @@
 <script lang="ts">
 	import FactoryLayout from '@/components/factory/FactoryLayout.svelte';
 	import active from '@/stores/active.svelte';
+	import factory from '@/stores/factory.svelte';
 	import profiles from '@/stores/profiles.svelte';
 	import { CableCarIcon } from '@lucide/svelte';
 
@@ -9,6 +10,12 @@
 	$effect(() => {
 		// update active profile
 		active.profile = $profiles.find(x => x.id === pathParams[0]);
+		Object.assign(factory, {
+			inputs: {},
+			outputs: {},
+			recipeNodes: {},
+			edges: [],
+		});
 	});
 </script>
 
