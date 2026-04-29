@@ -1,7 +1,6 @@
 import {
 	type Edge,
 	type Factory,
-	type ItemIo,
 	type MachineConfiguration,
 	type RecipeNode,
 	type RecipeNodeTargets,
@@ -10,7 +9,6 @@ import type Profile from '@/lib/models/profile';
 import type Recipe from '@/lib/models/recipe';
 import { nanoid } from 'nanoid';
 import { connectEdges, recalculateEdgeAmounts } from '@/lib/factory/edge';
-import active from '@/stores/active.svelte';
 
 /** Get all recipes (sorted by priority) based on the given item */
 export function getRecipes(profile: Profile, itemOutput: string): Recipe[] {
