@@ -8,7 +8,8 @@ import {
 import type Profile from '@/lib/models/profile';
 import type Recipe from '@/lib/models/recipe';
 import { nanoid } from 'nanoid';
-import { connectEdges } from '@/lib/factory/edge';
+import { connectEdges, recalculateEdgeAmounts } from '@/lib/factory/edge';
+import active from '@/stores/active.svelte';
 
 /** Get all recipes (sorted by priority) based on the given item */
 export function getRecipes(profile: Profile, itemOutput: string): Recipe[] {
@@ -97,6 +98,7 @@ export function rebuildFactory(
 		Object.values(factory.inputs),
 		Object.values(factory.outputs),
 	);
+	recalculateEdgeAmounts(profile, factory);
 }
 
 /** Get all Node IDs that can be safely deleted due to the recipe change */
