@@ -1,6 +1,6 @@
-import type { StringLiteral } from 'typescript';
-
 const POWER_FACTORS = {
+	PW: 1_000_000_000_000_000,
+	TW: 1_000_000_000_000,
 	GW: 1_000_000_000,
 	MW: 1_000_000,
 	kW: 1_000,
@@ -27,7 +27,7 @@ export class NumberFormatter {
 	}
 
 	getPowerUnit(watts: number): PowerUnit {
-		const units: PowerUnit[] = ['GW', 'MW', 'kW', 'W'];
+		const units: PowerUnit[] = ['PW', 'TW', 'GW', 'MW', 'kW', 'W'];
 		const absWatts = Math.abs(watts);
 		return units.find(unit => absWatts >= POWER_FACTORS[unit]) ?? 'W';
 	}
