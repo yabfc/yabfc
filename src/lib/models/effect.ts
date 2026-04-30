@@ -13,13 +13,13 @@ export interface ModifierInterface {
 }
 
 export class Modifier {
-	id: string;
+	id: 'speed' | 'power' | 'productivity' | 'pollution' | 'quality';
 	name?: string;
 	value: number;
 	valueScaling?: 'exponential';
 
 	constructor(modifier: ModifierInterface) {
-		this.id = modifier.id;
+		this.id = modifier.id === 'consumption' ? 'power' : modifier.id;
 		this.name = modifier.name;
 		this.valueScaling = modifier.valueScaling;
 		this.value = modifier.value;
@@ -36,7 +36,7 @@ export class Modifier {
 	}
 
 	updatePowerConsumption(power: number, scaling: number): number {
-		if (!['consumption', 'power'].includes(this.id)) return power;
+		if (this.id !== 'power') return power;
 
 		if (this.valueScaling === 'exponential') {
 			power *= Math.pow(scaling, this.value);

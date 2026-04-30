@@ -67,7 +67,7 @@ export default class Machine {
 		this.features = machine.features.map(x => new MachineFeature(x));
 		this.limitations = machine.limitations;
 
-		const limit = this.getModifierLimit('consumption', effects);
+		const limit = this.getModifierLimit('power', effects);
 		if (!limit) return;
 		if (limit.max) this.maxPower = limit.max * this.requiredPower;
 		if (limit.min) this.minPower = limit.min * this.requiredPower;
