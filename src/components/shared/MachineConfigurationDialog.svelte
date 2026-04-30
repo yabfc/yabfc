@@ -246,7 +246,7 @@
 						>
 						<span></span>
 						{#if selectableQualities}
-							<span>Quality</span>
+							<span>{active.profile?.getQualityOverrideName() ?? 'Quality'}</span>
 							<select
 								id={nanoid()}
 								bind:value={selectedQuality}

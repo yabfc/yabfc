@@ -114,12 +114,8 @@ export default class Profile {
 		return this.machines.find(x => x.id === id);
 	}
 
-	getProductivityOverrideName(): string {
-		return this.settings.effectNameOverride?.productivity ?? 'Productivity';
-	}
-
-	getSpeedOverrideName(): string {
-		return this.settings.effectNameOverride?.speed ?? 'Speed';
+	getQualityOverrideName(): string {
+		return this.settings.nameOverride?.quality ?? 'Quality';
 	}
 
 	getDefaultMachineConfiguration(recipeCategory: string): MachineConfiguration[] {
