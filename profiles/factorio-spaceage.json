@@ -10397,7 +10397,7 @@
 			"category": "offshore-pump",
 			"priority": 10,
 			"available": true,
-			"limitations": ["planet:nauvis", "planet:gleba"]
+			"limitations": ["planet:gleba", "planet:nauvis"]
 		},
 		{
 			"id": "lava",
@@ -11102,6 +11102,12 @@
 					]
 				},
 				{
+					"id": "limit",
+					"itemSlots": 0,
+					"effectPerSlot": ["consumption-limit"],
+					"hidden": true
+				},
+				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-electric-furnace"],
@@ -11174,6 +11180,12 @@
 						"quality-module-2",
 						"quality-module-3"
 					]
+				},
+				{
+					"id": "limit",
+					"itemSlots": 0,
+					"effectPerSlot": ["consumption-limit"],
+					"hidden": true
 				},
 				{
 					"id": "crafting-speed",
@@ -11266,6 +11278,12 @@
 					]
 				},
 				{
+					"id": "limit",
+					"itemSlots": 0,
+					"effectPerSlot": ["consumption-limit"],
+					"hidden": true
+				},
+				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-assembling-machine-2"],
@@ -11324,6 +11342,12 @@
 					]
 				},
 				{
+					"id": "limit",
+					"itemSlots": 0,
+					"effectPerSlot": ["consumption-limit"],
+					"hidden": true
+				},
+				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-assembling-machine-3"],
@@ -11360,6 +11384,12 @@
 						"productivity-module-2",
 						"productivity-module-3"
 					]
+				},
+				{
+					"id": "limit",
+					"itemSlots": 0,
+					"effectPerSlot": ["consumption-limit"],
+					"hidden": true
 				},
 				{
 					"id": "crafting-speed",
@@ -11406,6 +11436,12 @@
 					]
 				},
 				{
+					"id": "limit",
+					"itemSlots": 0,
+					"effectPerSlot": ["consumption-limit"],
+					"hidden": true
+				},
+				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-chemical-plant"],
@@ -11448,6 +11484,12 @@
 						"quality-module-2",
 						"quality-module-3"
 					]
+				},
+				{
+					"id": "limit",
+					"itemSlots": 0,
+					"effectPerSlot": ["consumption-limit"],
+					"hidden": true
 				},
 				{
 					"id": "crafting-speed",
@@ -11499,6 +11541,12 @@
 					]
 				},
 				{
+					"id": "limit",
+					"itemSlots": 0,
+					"effectPerSlot": ["consumption-limit"],
+					"hidden": true
+				},
+				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-biochamber"],
@@ -11541,6 +11589,12 @@
 						"quality-module-2",
 						"quality-module-3"
 					]
+				},
+				{
+					"id": "limit",
+					"itemSlots": 0,
+					"effectPerSlot": ["consumption-limit"],
+					"hidden": true
 				},
 				{
 					"id": "crafting-speed",
@@ -11590,6 +11644,12 @@
 						"quality-module-2",
 						"quality-module-3"
 					]
+				},
+				{
+					"id": "limit",
+					"itemSlots": 0,
+					"effectPerSlot": ["consumption-limit"],
+					"hidden": true
 				},
 				{
 					"id": "crafting-speed",
@@ -11668,6 +11728,12 @@
 					]
 				},
 				{
+					"id": "limit",
+					"itemSlots": 0,
+					"effectPerSlot": ["consumption-limit"],
+					"hidden": true
+				},
+				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-electromagnetic-plant"],
@@ -11712,6 +11778,12 @@
 					]
 				},
 				{
+					"id": "limit",
+					"itemSlots": 0,
+					"effectPerSlot": ["consumption-limit"],
+					"hidden": true
+				},
+				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
 					"effectPerSlot": ["crafting-speed-cryogenic-plant"],
@@ -11754,6 +11826,12 @@
 						"quality-module-2",
 						"quality-module-3"
 					]
+				},
+				{
+					"id": "limit",
+					"itemSlots": 0,
+					"effectPerSlot": ["consumption-limit"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -11788,6 +11866,12 @@
 						"productivity-module-2",
 						"productivity-module-3"
 					]
+				},
+				{
+					"id": "limit",
+					"itemSlots": 0,
+					"effectPerSlot": ["consumption-limit"],
+					"hidden": true
 				},
 				{
 					"id": "quality-tiers",
@@ -11826,6 +11910,12 @@
 						"quality-module-2",
 						"quality-module-3"
 					]
+				},
+				{
+					"id": "limit",
+					"itemSlots": 0,
+					"effectPerSlot": ["consumption-limit"],
+					"hidden": true
 				}
 			],
 			"available": true
@@ -11854,6 +11944,12 @@
 						"productivity-module-2",
 						"productivity-module-3"
 					]
+				},
+				{
+					"id": "limit",
+					"itemSlots": 0,
+					"effectPerSlot": ["consumption-limit"],
+					"hidden": true
 				},
 				{
 					"id": "crafting-speed",
@@ -11986,6 +12082,19 @@
 		}
 	],
 	"machineEffects": [
+		{
+			"id": "consumption-limit",
+			"modifiers": [
+				{
+					"id": "consumption",
+					"value": 0
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"minValue": 0.2,
+			"type": "limited"
+		},
 		{
 			"id": "speed-module-1",
 			"modifiers": [

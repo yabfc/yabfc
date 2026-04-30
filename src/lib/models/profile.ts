@@ -53,9 +53,9 @@ export default class Profile {
 
 		this.items = profile.items.map(x => new Item(x));
 		this.recipes = profile.recipes.map(x => new Recipe(x));
-		this.machines = profile.machines.map(x => new Machine(x));
 		this.logistics = profile.logistics.map(x => new Logistic(x));
 		this.machineEffects = profile.machineEffects.map(x => new EffectModule(x));
+		this.machines = profile.machines.map(x => new Machine(x, this.machineEffects));
 		this.research = profile.research.map(x => new Research(x));
 		this.settings = profile.settings;
 	}

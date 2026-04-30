@@ -55,8 +55,10 @@ export default class Machine {
 	requiredPower: number;
 	features: MachineFeature[];
 	limitations?: string[];
+	minPower: number | undefined;
+	maxPower: number | undefined;
 
-	constructor(machine: MachineInterface) {
+	constructor(machine: MachineInterface, effects: EffectModule[]) {
 		this.id = machine.id;
 		this.name = machine.name;
 		this.available = machine.available;
@@ -64,6 +66,11 @@ export default class Machine {
 		this.requiredPower = machine.requiredPower;
 		this.features = machine.features.map(x => new MachineFeature(x));
 		this.limitations = machine.limitations;
+
+		const limit = this.getModifierLimit('consumption', effects);
+		if (!limit) return;
+		if (limit.max) this.maxPower = limit.max * this.requiredPower;
+		if (limit.min) this.minPower = limit.min * this.requiredPower;
 	}
 
 	getDisplayName(): string {
@@ -83,6 +90,18 @@ export default class Machine {
 	getAllowedEffectModules(effects: EffectModule[]): EffectModule[] {
 		const allowed = this.getAllowedEffects();
 		return effects.filter(x => x.available && allowed.includes(x.id) && !x.hidden);
+	}
+
+	getModifierLimit(
+		modifierId: string,
+		effects: EffectModule[],
+	): { min: number | undefined; max: number | undefined } | undefined {
+		const limit = this.features.find(x => x.id === 'limit');
+		if (!limit) return;
+		const limitEffects = effects.filter(x => limit.effectPerSlot.includes(x.id));
+		const effect = limitEffects.find(effect => effect.modifiers.some(x => x.id === modifierId));
+		if (!effect) return;
+		return { min: effect.minValue, max: effect.maxValue };
 	}
 
 	getBaseCraftingSpeed(effects: EffectModule[]): number {
@@ -112,7 +131,8 @@ export default class Machine {
 			if (!effect) return;
 			power = effect.updatePowerConsumption(power, choice.scaling ?? 1);
 		});
-
+		if (this.minPower && this.minPower > power) return this.minPower;
+		if (this.maxPower && this.maxPower < power) return this.maxPower;
 		return power;
 	}
 

@@ -137,7 +137,7 @@
 								"type": "number"
 							},
 							"type": {
-								"enum": ["fixed", "stepped", "modifiable"],
+								"enum": ["fixed", "stepped", "modifiable", "limited"],
 								"type": "string"
 							}
 						},
@@ -192,6 +192,12 @@
 									"type": "string"
 								},
 								"type": "array"
+							},
+							"maxPower": {
+								"type": "number"
+							},
+							"minPower": {
+								"type": "number"
 							},
 							"name": {
 								"type": "string"

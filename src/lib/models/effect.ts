@@ -75,17 +75,25 @@ export interface ModifiableEffectModuleInterface extends EffectModuleBase {
 	maxValue: number;
 }
 
+// limit factorio modifiers
+export interface LimitedEffectModule extends EffectModuleBase {
+	type: 'limited';
+	minValue: number | undefined;
+	maxValue: number | undefined;
+}
+
 export type EffectModuleInterface =
 	| FixedEffectModuleInterface
 	| SteppedEffectModuleInterface
-	| ModifiableEffectModuleInterface;
+	| ModifiableEffectModuleInterface
+	| LimitedEffectModule;
 
 export default class EffectModule {
 	id: string;
 	name?: string;
 	available: boolean;
 	modifiers: Modifier[];
-	type: 'fixed' | 'stepped' | 'modifiable';
+	type: 'fixed' | 'stepped' | 'modifiable' | 'limited';
 	minValue?: number;
 	maxValue?: number;
 	step?: number;
@@ -101,7 +109,7 @@ export default class EffectModule {
 		this.hidden = data.hidden;
 		this.singleUse = data.singleUse;
 
-		if (data.type === 'modifiable' || data.type === 'stepped') {
+		if (data.type === 'modifiable' || data.type === 'stepped' || data.type === 'limited') {
 			this.minValue = data.minValue;
 			this.maxValue = data.maxValue;
 		}
