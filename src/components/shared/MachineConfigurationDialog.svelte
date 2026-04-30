@@ -245,7 +245,7 @@
 							)} (per machine)</span
 						>
 						<span></span>
-						{#if selectableQualities}
+						{#if selectableQualities && selectableQualities.length > 0}
 							<span>{active.profile?.getQualityOverrideName() ?? 'Quality'}</span>
 							<select
 								id={nanoid()}
