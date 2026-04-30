@@ -33,6 +33,15 @@
 		return machine.getQualityTiers(active.profile.machineEffects);
 	});
 
+	$effect(() => {
+		if (!selectedQuality && selectableQualities && selectableQualities.length > 0) {
+			const defaultQuality = selectableQualities.find(quality =>
+				quality.modifiers?.some(modifier => modifier.value === 1),
+			);
+			selectedQuality = defaultQuality?.id ?? '';
+		}
+	});
+
 	const [selectableEffects, slots] = $derived.by(() => {
 		if (!active.profile || !machine) return [undefined, undefined];
 		const effects = machine
