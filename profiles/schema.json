@@ -1,8 +1,8 @@
 {
-	"$ref": "#/definitions/Profile",
+	"$ref": "#/definitions/ProfileInterface",
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"definitions": {
-		"Profile": {
+		"ProfileInterface": {
 			"additionalProperties": false,
 			"properties": {
 				"id": {
@@ -87,62 +87,265 @@
 				},
 				"machineEffects": {
 					"items": {
-						"additionalProperties": false,
-						"properties": {
-							"available": {
-								"type": "boolean"
-							},
-							"hidden": {
-								"type": "boolean"
-							},
-							"id": {
-								"type": "string"
-							},
-							"maxValue": {
-								"type": "number"
-							},
-							"minValue": {
-								"type": "number"
-							},
-							"modifiers": {
-								"items": {
-									"additionalProperties": false,
-									"properties": {
-										"id": {
-											"type": "string"
-										},
-										"name": {
-											"type": "string"
-										},
-										"value": {
-											"type": "number"
-										},
-										"valueScaling": {
-											"const": "exponential",
-											"type": "string"
-										}
+						"anyOf": [
+							{
+								"additionalProperties": false,
+								"properties": {
+									"available": {
+										"type": "boolean"
 									},
-									"required": ["id", "value"],
-									"type": "object"
+									"hidden": {
+										"type": "boolean"
+									},
+									"id": {
+										"type": "string"
+									},
+									"modifiers": {
+										"items": {
+											"additionalProperties": false,
+											"properties": {
+												"id": {
+													"enum": [
+														"speed",
+														"power",
+														"consumption",
+														"productivity",
+														"pollution",
+														"quality"
+													],
+													"type": "string"
+												},
+												"name": {
+													"type": "string"
+												},
+												"value": {
+													"type": "number"
+												},
+												"valueScaling": {
+													"const": "exponential",
+													"type": "string"
+												}
+											},
+											"required": ["id", "value"],
+											"type": "object"
+										},
+										"type": "array"
+									},
+									"name": {
+										"type": "string"
+									},
+									"singleUse": {
+										"type": "boolean"
+									},
+									"type": {
+										"const": "fixed",
+										"type": "string"
+									}
 								},
-								"type": "array"
+								"required": ["available", "id", "modifiers", "type"],
+								"type": "object"
 							},
-							"name": {
-								"type": "string"
+							{
+								"additionalProperties": false,
+								"properties": {
+									"available": {
+										"type": "boolean"
+									},
+									"hidden": {
+										"type": "boolean"
+									},
+									"id": {
+										"type": "string"
+									},
+									"maxValue": {
+										"type": "number"
+									},
+									"minValue": {
+										"type": "number"
+									},
+									"modifiers": {
+										"items": {
+											"additionalProperties": false,
+											"properties": {
+												"id": {
+													"enum": [
+														"speed",
+														"power",
+														"consumption",
+														"productivity",
+														"pollution",
+														"quality"
+													],
+													"type": "string"
+												},
+												"name": {
+													"type": "string"
+												},
+												"value": {
+													"type": "number"
+												},
+												"valueScaling": {
+													"const": "exponential",
+													"type": "string"
+												}
+											},
+											"required": ["id", "value"],
+											"type": "object"
+										},
+										"type": "array"
+									},
+									"name": {
+										"type": "string"
+									},
+									"singleUse": {
+										"type": "boolean"
+									},
+									"step": {
+										"type": "number"
+									},
+									"type": {
+										"const": "stepped",
+										"type": "string"
+									}
+								},
+								"required": [
+									"available",
+									"id",
+									"maxValue",
+									"minValue",
+									"modifiers",
+									"step",
+									"type"
+								],
+								"type": "object"
 							},
-							"singleUse": {
-								"type": "boolean"
+							{
+								"additionalProperties": false,
+								"properties": {
+									"available": {
+										"type": "boolean"
+									},
+									"hidden": {
+										"type": "boolean"
+									},
+									"id": {
+										"type": "string"
+									},
+									"maxValue": {
+										"type": "number"
+									},
+									"minValue": {
+										"type": "number"
+									},
+									"modifiers": {
+										"items": {
+											"additionalProperties": false,
+											"properties": {
+												"id": {
+													"enum": [
+														"speed",
+														"power",
+														"consumption",
+														"productivity",
+														"pollution",
+														"quality"
+													],
+													"type": "string"
+												},
+												"name": {
+													"type": "string"
+												},
+												"value": {
+													"type": "number"
+												},
+												"valueScaling": {
+													"const": "exponential",
+													"type": "string"
+												}
+											},
+											"required": ["id", "value"],
+											"type": "object"
+										},
+										"type": "array"
+									},
+									"name": {
+										"type": "string"
+									},
+									"singleUse": {
+										"type": "boolean"
+									},
+									"type": {
+										"const": "modifiable",
+										"type": "string"
+									}
+								},
+								"required": ["available", "id", "maxValue", "minValue", "modifiers", "type"],
+								"type": "object"
 							},
-							"step": {
-								"type": "number"
-							},
-							"type": {
-								"enum": ["fixed", "stepped", "modifiable", "limited"],
-								"type": "string"
+							{
+								"additionalProperties": false,
+								"properties": {
+									"available": {
+										"type": "boolean"
+									},
+									"hidden": {
+										"type": "boolean"
+									},
+									"id": {
+										"type": "string"
+									},
+									"maxValue": {
+										"type": "number"
+									},
+									"minValue": {
+										"type": "number"
+									},
+									"modifiers": {
+										"items": {
+											"additionalProperties": false,
+											"properties": {
+												"id": {
+													"enum": [
+														"speed",
+														"power",
+														"consumption",
+														"productivity",
+														"pollution",
+														"quality"
+													],
+													"type": "string"
+												},
+												"name": {
+													"type": "string"
+												},
+												"value": {
+													"type": "number"
+												},
+												"valueScaling": {
+													"const": "exponential",
+													"type": "string"
+												}
+											},
+											"required": ["id", "value"],
+											"type": "object"
+										},
+										"type": "array"
+									},
+									"name": {
+										"type": "string"
+									},
+									"singleUse": {
+										"type": "boolean"
+									},
+									"type": {
+										"const": "limited",
+										"type": "string"
+									}
+								},
+								"required": ["available", "id", "modifiers", "type"],
+								"type": "object"
 							}
-						},
-						"required": ["id", "available", "modifiers", "type"],
-						"type": "object"
+						]
 					},
 					"type": "array"
 				},
@@ -192,12 +395,6 @@
 									"type": "string"
 								},
 								"type": "array"
-							},
-							"maxPower": {
-								"type": "number"
-							},
-							"minPower": {
-								"type": "number"
 							},
 							"name": {
 								"type": "string"
@@ -340,24 +537,20 @@
 						"defaultDuration": {
 							"type": "number"
 						},
-						"effectNameOverride": {
-							"additionalProperties": false,
-							"properties": {
-								"productivity": {
-									"type": "string"
-								},
-								"speed": {
-									"type": "string"
-								}
-							},
-							"required": ["speed", "productivity"],
-							"type": "object"
-						},
 						"limitations": {
 							"items": {
 								"type": "string"
 							},
 							"type": "array"
+						},
+						"nameOverride": {
+							"additionalProperties": false,
+							"properties": {
+								"quality": {
+									"type": "string"
+								}
+							},
+							"type": "object"
 						}
 					},
 					"required": ["defaultDuration", "allRecipesUnlocked"],
