@@ -6,7 +6,7 @@
 	import { ZapIcon } from '@lucide/svelte';
 	import type Item from '@/lib/models/item';
 	import { NumberFormatter } from '@/lib/format/number';
-	import { connectEdges } from '@/lib/factory/edge';
+	import { connectEdges, recalculateEdgeAmounts } from '@/lib/factory/edge';
 
 	let inputs = $state<{ item: Item; amount: number }[]>([]),
 		outputs = $state<{ item: Item; amount: number }[]>([]);
@@ -49,6 +49,7 @@
 			Object.values(factory.inputs),
 			Object.values(factory.outputs),
 		);
+		recalculateEdgeAmounts(active.profile, factory);
 	}
 
 	const powerConsumption = $derived.by(() => {
