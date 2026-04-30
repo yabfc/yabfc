@@ -253,7 +253,9 @@
 								onchange={onQualityChange}
 								class="select select-xs join-item w-full"
 							>
-								<option disabled value="">Select quality</option>
+								{#if selectedQuality === ''}
+									<option disabled value="">Select quality</option>
+								{/if}
 								{#each selectableQualities as qualityTier}
 									<option value={qualityTier.id}
 										>{qualityTier.getDisplayName()}</option
