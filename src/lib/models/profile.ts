@@ -133,7 +133,7 @@ export default class Profile {
 				machineCount: 1,
 				productivityOverride: 1,
 				speedOverride: 1,
-				speed: defaultMachine.getBaseCraftingSpeed(this.machineEffects),
+				speed: defaultMachine.baseCraftingSpeed,
 				productivity: 1,
 				effects: [],
 			},

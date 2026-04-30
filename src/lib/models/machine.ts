@@ -55,6 +55,7 @@ export default class Machine {
 	requiredPower: number;
 	features: MachineFeature[];
 	limitations?: string[];
+	baseCraftingSpeed: number;
 	minPower: number | undefined;
 	maxPower: number | undefined;
 
@@ -67,6 +68,7 @@ export default class Machine {
 		this.features = machine.features.map(x => new MachineFeature(x));
 		this.limitations = machine.limitations;
 
+		this.baseCraftingSpeed = this.getBaseCraftingSpeed(effects);
 		const limit = this.getModifierLimit('power', effects);
 		if (!limit) return;
 		if (limit.max) this.maxPower = limit.max * this.requiredPower;

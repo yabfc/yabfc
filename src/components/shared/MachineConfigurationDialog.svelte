@@ -55,8 +55,7 @@
 
 	const [speedSum, productivitySum] = $derived.by(() => {
 		if (!usedEffects || !machine || !active.profile || !config) return [undefined, undefined];
-		let speed =
-				machine.getBaseCraftingSpeed(active.profile.machineEffects) * config.speedOverride,
+		let speed = machine.baseCraftingSpeed * config.speedOverride,
 			productivity = 1 * config.productivityOverride;
 		usedEffects.forEach(choice => {
 			const scaling = choice.scaling ?? 1;

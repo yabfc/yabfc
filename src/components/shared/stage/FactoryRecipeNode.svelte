@@ -39,7 +39,7 @@
 			machineCount: 1,
 			productivityOverride: 1,
 			speedOverride: 1,
-			speed: machine.getBaseCraftingSpeed(active.profile.machineEffects),
+			speed: machine.baseCraftingSpeed,
 			productivity: 1,
 			effects: [],
 		});
