@@ -1,9 +1,11 @@
 <script lang="ts">
 	import type { ItemIoNodeData } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
-	import { AnvilIcon } from '@lucide/svelte';
+	import { AnvilIcon, SendHorizontalIcon } from '@lucide/svelte';
 	import { Handle, Position, type Node, type NodeProps } from '@xyflow/svelte';
 	import AmountStepControls from '@/components/shared/AmountStepControls.svelte';
+	import { propagateResources, type PropagationDirection } from '@/lib/factory/propagation';
+	import factory from '@/stores/factory.svelte';
 
 	let { data, targetPosition = Position.Left }: NodeProps<Node<ItemIoNodeData>> = $props();
 
@@ -16,6 +18,11 @@
 
 	function handleInput() {
 		data.onAmountChange(data.item.id, Number(amount) || 0);
+	}
+	function propagateNodeResources(direction: PropagationDirection) {
+		if (!item || !active.profile) return;
+		handleInput();
+		propagateResources(active.profile, factory, item.id, direction);
 	}
 </script>
 
@@ -46,5 +53,13 @@
 			/>
 		</label>
 		<AmountStepControls bind:value={amount} />
+		<button
+			type="button"
+			class="btn btn-xs nodrag nopan mt-1 w-full items-center gap-1"
+			onclick={() => propagateNodeResources('left')}
+		>
+			<SendHorizontalIcon class="size-3.5 rotate-180" />
+			<span class="leading-none">Propagate</span>
+		</button>
 	</div>
 </div>

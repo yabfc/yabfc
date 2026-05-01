@@ -128,16 +128,29 @@ function propagateLeftFromNode(
 	if (path.has(nodeId) || options.blockedNodeId === nodeId) return;
 
 	const node = factory.recipeNodes[nodeId];
-	if (!node) return;
+
+	let requiredInputs: Record<string, number>;
+	let currentNodeId = nodeId;
+
+	if (node) {
+		requiredInputs = calculateInput(profile, node);
+		currentNodeId = node.id;
+	} else if (factory.outputs[nodeId]) {
+		requiredInputs = {
+			[nodeId]: factory.outputs[nodeId].amount,
+		};
+	} else {
+		return;
+	}
 
 	const nextPath = new Set(path);
 	nextPath.add(nodeId);
 
-	for (const [itemId, requiredAmount] of Object.entries(calculateInput(profile, node))) {
+	for (const [itemId, requiredAmount] of Object.entries(requiredInputs)) {
 		if (options.skippedInputItemIds?.has(itemId)) continue;
 
-		const producerEdges = getRecipeProducerEdges(factory, lookup, node.id, itemId);
-		const inputEdges = getInputEdges(factory, lookup, node.id, itemId);
+		const producerEdges = getRecipeProducerEdges(factory, lookup, currentNodeId, itemId);
+		const inputEdges = getInputEdges(factory, lookup, currentNodeId, itemId);
 
 		if (producerEdges.length === 0) {
 			increaseInputNodes(factory, inputEdges, requiredAmount);
@@ -153,13 +166,17 @@ function propagateLeftFromNode(
 			)
 				continue;
 
-			const demand = getTotalProducerDemand(
+			const downstreamRecipeDemand = getTotalProducerDemand(
 				profile,
 				factory,
 				lookup,
 				producerNode.id,
 				itemId,
 			);
+
+			const demand = factory.outputs[currentNodeId]
+				? requiredAmount + downstreamRecipeDemand
+				: downstreamRecipeDemand;
 
 			scaleNodeToItemAmount(profile, producerNode, itemId, demand, 'output', true);
 			propagateLeftFromNode(profile, factory, lookup, producerNode.id, nextPath, options);
@@ -178,13 +195,26 @@ function propagateRightFromNode(
 	if (path.has(nodeId)) return;
 
 	const node = factory.recipeNodes[nodeId];
-	if (!node) return;
+
+	let availableOutputs: Record<string, number>;
+	let currentNodeId = nodeId;
+
+	if (node) {
+		availableOutputs = calculateOutput(profile, node);
+		currentNodeId = node.id;
+	} else if (factory.inputs[nodeId]) {
+		availableOutputs = {
+			[nodeId]: factory.inputs[nodeId].amount,
+		};
+	} else {
+		return;
+	}
 
 	const nextPath = new Set(path);
 	nextPath.add(nodeId);
 
-	for (const [itemId, availableAmount] of Object.entries(calculateOutput(profile, node))) {
-		const consumerEdges = (lookup.outgoing.get(node.id) ?? []).filter(edge => {
+	for (const [itemId, availableAmount] of Object.entries(availableOutputs)) {
+		const consumerEdges = (lookup.outgoing.get(currentNodeId) ?? []).filter(edge => {
 			return edge.itemId === itemId && factory.recipeNodes[edge.to];
 		});
 
@@ -249,9 +279,15 @@ export function propagateResources(
 	const adjustedNodeIds = new Set<string>();
 	propagateRightFromNode(profile, factory, lookup, nodeId, adjustedNodeIds);
 
-	const sourceOutputItemIds = new Set(
-		Object.keys(calculateOutput(profile, factory.recipeNodes[nodeId])),
-	);
+	const sourceOutputItemIds = new Set<string>();
+	if (factory.inputs[nodeId]) {
+		sourceOutputItemIds.add(nodeId);
+	} else {
+		Object.keys(calculateOutput(profile, factory.recipeNodes[nodeId])).forEach(itemId => {
+			sourceOutputItemIds.add(itemId);
+		});
+	}
+
 	const backfillOptions = {
 		blockedNodeId: nodeId,
 		skippedInputItemIds: new Set([...sourceOutputItemIds, ...adjustedNodeIds]),
