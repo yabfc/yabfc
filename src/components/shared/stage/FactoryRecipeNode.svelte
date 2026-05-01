@@ -1,11 +1,18 @@
 <script lang="ts">
 	import { recalculateEdgeAmounts } from '@/lib/factory/edge';
 	import { calculateInput, calculateOutput, getRecipes } from '@/lib/factory/factory';
+	import { propagateResources, type PropagationDirection } from '@/lib/factory/propagation';
 	import { formattedLimitations } from '@/lib/format/limitation';
 	import type { MachineConfiguration, RecipeNode, RecipeNodeData } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
-	import { FactoryIcon, PencilIcon, PlusIcon, Trash2Icon } from '@lucide/svelte';
+	import {
+		FactoryIcon,
+		PencilIcon,
+		PlusIcon,
+		Trash2Icon,
+		SendHorizontalIcon,
+	} from '@lucide/svelte';
 	import { Handle, Position, type Node, type NodeProps } from '@xyflow/svelte';
 	import { nanoid } from 'nanoid';
 
@@ -50,6 +57,11 @@
 		if (!active.profile) return;
 		recalculateEdgeAmounts(active.profile, factory);
 	};
+
+	function propagateNodeResources(direction: PropagationDirection) {
+		if (!node || !active.profile) return;
+		propagateResources(active.profile, factory, node.id, direction);
+	}
 
 	function deleteMachine(config: MachineConfiguration) {
 		if (!node || !active.profile) return;
@@ -257,8 +269,33 @@
 			><PlusIcon size="13" />
 		</button>
 	</div>
-</div>
+	<div
+		class="border-base-content/10 mt-2 grid w-full grid-cols-[1fr_auto_1fr] items-center border-t pt-2"
+	>
+		{#if Object.keys(actualInputs).length !== 0}
+			<button
+				type="button"
+				class="btn btn-xs nodrag nopan items-center gap-1 justify-self-start"
+				onclick={() => propagateNodeResources('left')}
+			>
+				<SendHorizontalIcon class="size-3.5 rotate-180" />
+				<span class="leading-none">Left</span>
+			</button>
+		{:else}
+			<span></span>
+		{/if}
+		<span class="text-base-content/50 text-xs"> Propagate </span>
 
+		<button
+			type="button"
+			class="btn btn-xs nodrag nopan items-center gap-1 justify-self-end"
+			onclick={() => propagateNodeResources('right')}
+		>
+			<span>Right</span>
+			<SendHorizontalIcon class="size-3.5" />
+		</button>
+	</div>
+</div>
 <Handle
 	type="source"
 	position={sourcePosition}

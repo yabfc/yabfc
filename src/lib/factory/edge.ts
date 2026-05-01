@@ -10,6 +10,34 @@ import {
 import type Profile from '@/lib/models/profile';
 import { calculateInput, calculateOutput } from '@/lib/factory/factory';
 
+type EdgeAmountMode = 'actual' | 'required';
+
+export type EdgeLookup = {
+	incoming: Map<string, Edge[]>;
+	outgoing: Map<string, Edge[]>;
+};
+
+export type EdgeAmountContext = {
+	sourceOutputsByNode: Record<string, Record<string, number>>;
+	targetInputsByNode: Record<string, Record<string, number>>;
+	edgeDemands: EdgeDemand[];
+	incomingByTargetAndItem: Record<string, EdgeDemand[]>;
+	recipeNodeIds: string[];
+	initialSupply: Map<string, number>;
+};
+
+export function createEdgeLookup(edges: Edge[]): EdgeLookup {
+	const incoming = new Map<string, Edge[]>();
+	const outgoing = new Map<string, Edge[]>();
+
+	for (const edge of edges) {
+		incoming.set(edge.to, [...(incoming.get(edge.to) ?? []), edge]);
+		outgoing.set(edge.from, [...(outgoing.get(edge.from) ?? []), edge]);
+	}
+
+	return { incoming, outgoing };
+}
+
 /** Connects nodes with edges  */
 export function connectEdges(
 	profile: Profile,
@@ -112,6 +140,7 @@ function allocateIncomingEdgeAmounts(
 	incomingByTargetAndItem: Record<string, EdgeDemand[]>,
 	recipeNodeIds: string[],
 	remainingSupply: Map<string, number>,
+	mode: EdgeAmountMode = 'actual',
 ): Map<Edge, number> {
 	const actualAmounts = new Map<Edge, number>();
 
@@ -144,7 +173,8 @@ function allocateIncomingEdgeAmounts(
 
 			if (totalRecipeAvailable <= 0) {
 				for (const { edge } of recipeEntries) {
-					actualAmounts.set(edge, 0);
+					const used = mode === 'required' ? remainingDemand / recipeEntries.length : 0;
+					actualAmounts.set(edge, used);
 				}
 			} else {
 				for (const { edge } of recipeEntries) {
@@ -152,15 +182,20 @@ function allocateIncomingEdgeAmounts(
 					const available = remainingSupply.get(key) ?? 0;
 
 					const share = remainingDemand * (available / totalRecipeAvailable);
-					const used = Math.min(available, share);
+					const used = mode === 'actual' ? Math.min(available, share) : share;
 
 					actualAmounts.set(edge, used);
-					remainingSupply.set(key, available - used);
+					if (mode === 'actual') remainingSupply.set(key, available - used);
 				}
 			}
 		} else {
 			for (const { edge } of recipeEntries) {
-				if (!actualAmounts.has(edge)) actualAmounts.set(edge, 0);
+				if (actualAmounts.has(edge)) continue;
+				const used =
+					mode === 'required' && remainingDemand > 0 && recipeEntries.length > 0
+						? remainingDemand / recipeEntries.length
+						: 0;
+				actualAmounts.set(edge, used);
 			}
 		}
 	});
@@ -186,7 +221,7 @@ function allocateOutputEdgeAmounts(
 	});
 }
 
-export function recalculateEdgeAmounts(profile: Profile, factory: Factory) {
+export function createEdgeAmountContext(profile: Profile, factory: Factory): EdgeAmountContext {
 	const sourceOutputsByNode: Record<string, Record<string, number>> = {};
 	const targetInputsByNode: Record<string, Record<string, number>> = {};
 
@@ -253,13 +288,44 @@ export function recalculateEdgeAmounts(profile: Profile, factory: Factory) {
 	);
 
 	const recipeNodeIds = Object.keys(factory.recipeNodes);
-	const amounts = allocateIncomingEdgeAmounts(
+
+	return {
+		sourceOutputsByNode,
+		targetInputsByNode,
+		edgeDemands,
 		incomingByTargetAndItem,
 		recipeNodeIds,
+		initialSupply: remainingSupply,
+	};
+}
+
+export function calculateRequiredIncomingEdgeAmounts(
+	context: EdgeAmountContext,
+): Map<Edge, number> {
+	return allocateIncomingEdgeAmounts(
+		context.incomingByTargetAndItem,
+		context.recipeNodeIds,
+		new Map(context.initialSupply),
+		'required',
+	);
+}
+
+export function calculateEdgeAmounts(profile: Profile, factory: Factory): Map<Edge, number> {
+	const context = createEdgeAmountContext(profile, factory);
+	const remainingSupply = new Map(context.initialSupply);
+	const amounts = allocateIncomingEdgeAmounts(
+		context.incomingByTargetAndItem,
+		context.recipeNodeIds,
 		remainingSupply,
 	);
 
-	allocateOutputEdgeAmounts(edgeDemands, recipeNodeIds, remainingSupply, amounts);
+	allocateOutputEdgeAmounts(context.edgeDemands, context.recipeNodeIds, remainingSupply, amounts);
+
+	return amounts;
+}
+
+export function recalculateEdgeAmounts(profile: Profile, factory: Factory) {
+	const amounts = calculateEdgeAmounts(profile, factory);
 
 	factory.edges = factory.edges.map(edge => ({
 		...edge,
