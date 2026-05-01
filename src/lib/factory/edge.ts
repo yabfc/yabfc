@@ -275,7 +275,7 @@ export function createEdgeAmountContext(profile: Profile, factory: Factory): Edg
 		if (sourceNode && !targetNode) {
 			return {
 				edge,
-				demand: sourceOutputsByNode[sourceNode.id]?.[edge.itemId] ?? 0,
+				demand: factory.outputs[edge.to]?.amount ?? 0,
 			};
 		}
 
