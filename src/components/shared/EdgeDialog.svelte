@@ -4,9 +4,11 @@
 
 <script lang="ts">
 	import Dialog from '@/components/shared/Dialog.svelte';
+	import { recalculateEdgeAmounts } from '@/lib/factory/edge';
 	import type { Edge } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
-	import { TriangleAlertIcon, CheckIcon } from '@lucide/svelte';
+	import factory from '@/stores/factory.svelte';
+	import { TriangleAlertIcon, CheckIcon, LockIcon, LockOpenIcon } from '@lucide/svelte';
 
 	type Props = {
 		dialog?: HTMLDialogElement;
@@ -18,6 +20,25 @@
 		if (!edge || !active.profile) return;
 		return active.profile.getItemById(edge.itemId);
 	});
+
+	let lockedLogisticId = $state<string | undefined>(undefined);
+
+	function toggleLogisticLock(logisticId: string) {
+		if (!edge || !active.profile) return;
+		const logistic = active.profile.getLogisticById(logisticId);
+		if (!logistic) return;
+
+		if (lockedLogisticId === logisticId) {
+			lockedLogisticId = undefined;
+			edge.maxAmount = undefined;
+			recalculateEdgeAmounts(active.profile, factory);
+			return;
+		}
+
+		lockedLogisticId = logisticId;
+		edge.maxAmount = logistic.speed * active.profile.settings.defaultDuration;
+		recalculateEdgeAmounts(active.profile, factory);
+	}
 
 	const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 2 });
 
@@ -56,7 +77,7 @@
 			<ul>
 				{#each logistics as logistic}
 					<li
-						class="text-base-content/80 grid grid-cols-[auto_1fr_auto] items-center gap-2 text-xs"
+						class="text-base-content/80 grid grid-cols-[auto_1fr_auto_auto] items-center gap-2 text-xs"
 					>
 						<span>
 							{active.profile?.getLogisticById(logistic.id)?.getDisplayName() ??
@@ -75,6 +96,17 @@
 								<TriangleAlertIcon size="10" />
 							</div>
 						{/if}
+						<button
+							type="button"
+							class="btn btn-circle btn-xs"
+							onclick={() => toggleLogisticLock(logistic.id)}
+						>
+							{#if logistic.id === lockedLogisticId}
+								<LockIcon class="size-4" />
+							{:else}
+								<LockOpenIcon class="size-4" />
+							{/if}
+						</button>
 					</li>
 				{:else}
 					<li class="text-base-content/80">No conveyors available</li>

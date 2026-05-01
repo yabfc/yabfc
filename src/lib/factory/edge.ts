@@ -85,7 +85,6 @@ export function connectEdges(
 					from: input.id,
 					to: recipeNode.id,
 					actualAmount: 0,
-					targetAmount: input.amount,
 					itemId: input.id,
 				});
 			});
@@ -134,7 +133,6 @@ export function connectEdges(
 						from: outputRecipeNode.id,
 						to: inputNode.id,
 						actualAmount: 0,
-						targetAmount: 0,
 						itemId: output.id,
 					});
 				});
@@ -153,7 +151,6 @@ export function connectEdges(
 						from: outputRecipeNode.id,
 						to: outputNode.id,
 						actualAmount: 0,
-						targetAmount: 0,
 						itemId: output.id,
 					});
 				});
@@ -161,6 +158,10 @@ export function connectEdges(
 	});
 
 	return edges;
+}
+
+function getEdgeMaxAmount(edge: Edge): number {
+	return edge.maxAmount === undefined ? Number.POSITIVE_INFINITY : edge.maxAmount;
 }
 
 /** Allocate amounts for incoming edges, grouped by target and item. */
@@ -186,7 +187,7 @@ function allocateIncomingEdgeAmounts(
 			const key = fromEdgeKey(edge);
 			const available = remainingSupply.get(key) ?? 0;
 
-			const used = Math.min(available, remainingDemand);
+			const used = Math.min(available, remainingDemand, getEdgeMaxAmount(edge));
 			actualAmounts.set(edge, used);
 			remainingSupply.set(key, available - used);
 
@@ -201,7 +202,13 @@ function allocateIncomingEdgeAmounts(
 
 			if (totalRecipeAvailable <= 0) {
 				for (const { edge } of recipeEntries) {
-					const used = mode === 'required' ? remainingDemand / recipeEntries.length : 0;
+					const used =
+						mode === 'required'
+							? Math.min(
+									remainingDemand / recipeEntries.length,
+									getEdgeMaxAmount(edge),
+								)
+							: 0;
 					actualAmounts.set(edge, used);
 				}
 			} else {
@@ -210,7 +217,10 @@ function allocateIncomingEdgeAmounts(
 					const available = remainingSupply.get(key) ?? 0;
 
 					const share = remainingDemand * (available / totalRecipeAvailable);
-					const used = mode === 'actual' ? Math.min(available, share) : share;
+					const used =
+						mode === 'actual'
+							? Math.min(available, share, getEdgeMaxAmount(edge))
+							: Math.min(share, getEdgeMaxAmount(edge));
 
 					actualAmounts.set(edge, used);
 					if (mode === 'actual') remainingSupply.set(key, available - used);
@@ -221,7 +231,7 @@ function allocateIncomingEdgeAmounts(
 				if (actualAmounts.has(edge)) continue;
 				const used =
 					mode === 'required' && remainingDemand > 0 && recipeEntries.length > 0
-						? remainingDemand / recipeEntries.length
+						? Math.min(remainingDemand / recipeEntries.length, getEdgeMaxAmount(edge))
 						: 0;
 				actualAmounts.set(edge, used);
 			}
@@ -242,7 +252,7 @@ function allocateOutputEdgeAmounts(
 
 		const key = fromEdgeKey(edge);
 		const available = remainingSupply.get(key) ?? 0;
-		const used = Math.min(available, demand);
+		const used = Math.min(available, demand, getEdgeMaxAmount(edge));
 
 		amounts.set(edge, used);
 		remainingSupply.set(key, available - used);
@@ -355,8 +365,8 @@ export function calculateEdgeAmounts(profile: Profile, factory: Factory): Map<Ed
 export function recalculateEdgeAmounts(profile: Profile, factory: Factory) {
 	const amounts = calculateEdgeAmounts(profile, factory);
 
-	factory.edges = factory.edges.map(edge => ({
-		...edge,
-		actualAmount: amounts.get(edge) ?? 0,
-	}));
+	for (const edge of factory.edges) {
+		edge.actualAmount = amounts.get(edge) ?? 0;
+	}
+	factory.edges = [...factory.edges];
 }

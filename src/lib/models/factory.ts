@@ -47,8 +47,8 @@ export interface Edge {
 	from: string;
 	to: string;
 	actualAmount: number;
-	targetAmount: number;
 	itemId: string;
+	maxAmount?: number;
 }
 
 export type EdgeData = Record<string, unknown> & {
