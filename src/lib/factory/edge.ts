@@ -6,6 +6,7 @@ import {
 	type Factory,
 	type ItemIo,
 	type RecipeNode,
+	type RecipeNodeEdgeAmounts,
 } from '@/lib/models/factory';
 import type Profile from '@/lib/models/profile';
 import { calculateInput, calculateOutput } from '@/lib/factory/factory';
@@ -19,7 +20,7 @@ export type EdgeLookup = {
 
 export type EdgeAmountContext = {
 	sourceOutputsByNode: Record<string, Record<string, number>>;
-	targetInputsByNode: Record<string, Record<string, number>>;
+	requiredInputsByNode: Record<string, Record<string, number>>;
 	edgeDemands: EdgeDemand[];
 	incomingByTargetAndItem: Record<string, EdgeDemand[]>;
 	recipeNodeIds: string[];
@@ -36,6 +37,33 @@ export function createEdgeLookup(edges: Edge[]): EdgeLookup {
 	}
 
 	return { incoming, outgoing };
+}
+
+export function calculateRecipeNodeEdgeAmounts(factory: Factory): RecipeNodeEdgeAmounts {
+	const amounts: RecipeNodeEdgeAmounts = {};
+
+	for (const node of Object.values(factory.recipeNodes)) {
+		amounts[node.id] = {
+			usedInputs: {},
+			usedOutputs: {},
+		};
+	}
+
+	for (const edge of factory.edges) {
+		const targetAmounts = amounts[edge.to];
+		if (targetAmounts) {
+			targetAmounts.usedInputs[edge.itemId] =
+				(targetAmounts.usedInputs[edge.itemId] ?? 0) + edge.actualAmount;
+		}
+
+		const sourceAmounts = amounts[edge.from];
+		if (sourceAmounts) {
+			sourceAmounts.usedOutputs[edge.itemId] =
+				(sourceAmounts.usedOutputs[edge.itemId] ?? 0) + edge.actualAmount;
+		}
+	}
+
+	return amounts;
 }
 
 /** Connects nodes with edges  */
@@ -223,11 +251,11 @@ function allocateOutputEdgeAmounts(
 
 export function createEdgeAmountContext(profile: Profile, factory: Factory): EdgeAmountContext {
 	const sourceOutputsByNode: Record<string, Record<string, number>> = {};
-	const targetInputsByNode: Record<string, Record<string, number>> = {};
+	const requiredInputsByNode: Record<string, Record<string, number>> = {};
 
 	Object.values(factory.recipeNodes).forEach(node => {
 		sourceOutputsByNode[node.id] = calculateOutput(profile, node);
-		targetInputsByNode[node.id] = calculateInput(profile, node);
+		requiredInputsByNode[node.id] = calculateInput(profile, node);
 	});
 
 	// calculate demand per edge
@@ -239,7 +267,7 @@ export function createEdgeAmountContext(profile: Profile, factory: Factory): Edg
 		if (targetNode) {
 			return {
 				edge,
-				demand: targetInputsByNode[targetNode.id]?.[edge.itemId] ?? 0,
+				demand: requiredInputsByNode[targetNode.id]?.[edge.itemId] ?? 0,
 			};
 		}
 
@@ -291,7 +319,7 @@ export function createEdgeAmountContext(profile: Profile, factory: Factory): Edg
 
 	return {
 		sourceOutputsByNode,
-		targetInputsByNode,
+		requiredInputsByNode,
 		edgeDemands,
 		incomingByTargetAndItem,
 		recipeNodeIds,

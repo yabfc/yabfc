@@ -19,17 +19,17 @@ export interface RecipeNode {
 
 export type RecipeNodeData = Record<string, unknown> & {
 	recipeNode: RecipeNode;
-	targetInputs: { [key: string]: number };
-	targetOutputs: { [key: string]: number };
+	usedInputs: { [key: string]: number };
+	usedOutputs: { [key: string]: number };
 	onRecipeChange: (nodeId: string, recipeId: string) => void;
 	onEditMachineConfig: (config: MachineConfiguration) => void;
 };
 
-export type RecipeNodeTargets = Record<
+export type RecipeNodeEdgeAmounts = Record<
 	string,
 	{
-		targetInputs: Record<string, number>;
-		targetOutputs: Record<string, number>;
+		usedInputs: Record<string, number>;
+		usedOutputs: Record<string, number>;
 	}
 >;
 

@@ -4,12 +4,12 @@
 	import ItemInputNode from '@/components/shared/stage/ItemInputNode.svelte';
 	import ItemOutputNode from '@/components/shared/stage/ItemOutputNode.svelte';
 	import RecipeEdgeComponent from '@/components/shared/stage/RecipeEdge.svelte';
-	import { recalculateEdgeAmounts } from '@/lib/factory/edge';
-	import { calculateRecipeNodeTargets, rebuildFactory } from '@/lib/factory/factory';
+	import { calculateRecipeNodeEdgeAmounts, recalculateEdgeAmounts } from '@/lib/factory/edge';
+	import { rebuildFactory } from '@/lib/factory/factory';
 	import type {
-		MachineConfiguration,
-		RecipeNodeTargets,
 		Edge as EdgeModel,
+		MachineConfiguration,
+		RecipeNodeEdgeAmounts,
 	} from '@/lib/models/factory';
 	import layout from '@/lib/stage/layout';
 	import active from '@/stores/active.svelte';
@@ -33,13 +33,12 @@
 
 	let nodes = $state.raw<Node[]>([]),
 		edges = $state.raw<Edge[]>([]),
-		recipeNodeTargetIo = $state<RecipeNodeTargets>({});
+		recipeNodeEdgeAmounts = $state<RecipeNodeEdgeAmounts>({});
 
 	const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 3 });
 
 	$effect(() => {
-		if (!active.profile) return;
-		recipeNodeTargetIo = calculateRecipeNodeTargets(active.profile, factory);
+		recipeNodeEdgeAmounts = calculateRecipeNodeEdgeAmounts(factory);
 	});
 
 	$effect(() => {
@@ -49,8 +48,8 @@
 			position: { x: 0, y: 0 },
 			data: {
 				recipeNode: x,
-				targetInputs: recipeNodeTargetIo[x.id]?.targetInputs ?? {},
-				targetOutputs: recipeNodeTargetIo[x.id]?.targetOutputs ?? {},
+				usedInputs: recipeNodeEdgeAmounts[x.id]?.usedInputs ?? {},
+				usedOutputs: recipeNodeEdgeAmounts[x.id]?.usedOutputs ?? {},
 				onRecipeChange: (nodeId: string, recipeId: string) => {
 					if (!active.profile) return;
 					rebuildFactory(active.profile, factory, nodeId, recipeId);
@@ -95,7 +94,7 @@
 							...factory.outputs[itemId],
 							amount: amount,
 						};
-						recipeNodeTargetIo = calculateRecipeNodeTargets(active.profile, factory);
+						recalculateEdgeAmounts(active.profile, factory);
 					},
 				},
 			})),

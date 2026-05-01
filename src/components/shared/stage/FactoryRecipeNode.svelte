@@ -26,11 +26,28 @@
 
 	let node = $derived<RecipeNode | undefined>(factory.recipeNodes[data.recipeNode.id]);
 
-	let actualInputs = $derived(calculateInput(active.profile, node)),
-		actualOutputs = $derived(calculateOutput(active.profile, node));
+	type ResourceAmountRow = {
+		itemId: string;
+		used: number;
+		capacity: number;
+	};
 
-	let targetInputs = $derived(data.targetInputs),
-		targetOutputs = $derived(data.targetOutputs);
+	function toResourceRows(
+		usedAmounts: Record<string, number>,
+		capacityAmounts: Record<string, number>,
+	): ResourceAmountRow[] {
+		const itemIds = new Set([...Object.keys(capacityAmounts), ...Object.keys(usedAmounts)]);
+		return [...itemIds].map(itemId => ({
+			itemId,
+			used: usedAmounts[itemId] ?? 0,
+			capacity: capacityAmounts[itemId] ?? 0,
+		}));
+	}
+
+	let inputRows = $derived(toResourceRows(data.usedInputs, calculateInput(active.profile, node))),
+		outputRows = $derived(
+			toResourceRows(data.usedOutputs, calculateOutput(active.profile, node)),
+		);
 
 	const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 3 });
 
@@ -94,7 +111,7 @@
 	}
 </script>
 
-{#if Object.keys(actualInputs).length !== 0}
+{#if inputRows.length !== 0}
 	<Handle
 		type="target"
 		position={targetPosition}
@@ -132,16 +149,15 @@
 		</div>
 	{/if}
 
-	<p class="text-base-content/75 flex self-start text-xs font-bold">Target production</p>
 	<div class="flex w-full justify-between gap-2 p-2 text-xs">
 		<div>
 			<p class="text-base-content/50 font-bold uppercase">Input</p>
 
 			<ul>
-				{#each Object.entries(targetInputs) as input}
+				{#each inputRows as input}
 					<li class="text-base-content/80">
-						{active.profile?.getItemById(input[0])?.getDisplayName()}:
-						{formatter.format(input[1])}
+						{active.profile?.getItemById(input.itemId)?.getDisplayName()}:
+						{formatter.format(input.used)} / {formatter.format(input.capacity)}
 					</li>
 				{:else}
 					<li class="text-base-content/80">No input available</li>
@@ -153,43 +169,10 @@
 			<p class="text-base-content/50 font-bold uppercase">Output</p>
 
 			<ul>
-				{#each Object.entries(targetOutputs) as output}
+				{#each outputRows as output}
 					<li class="text-base-content/80">
-						{active.profile?.getItemById(output[0])?.getDisplayName()}:
-						{formatter.format(output[1])}
-					</li>
-				{:else}
-					<li class="text-base-content/80">No output available</li>
-				{/each}
-			</ul>
-		</div>
-	</div>
-
-	<p class="text-base-content/75 flex self-start text-xs font-bold">Actual production</p>
-	<div class="flex w-full justify-between gap-2 p-2 text-xs">
-		<div>
-			<p class="text-base-content/50 font-bold uppercase">Input</p>
-
-			<ul>
-				{#each Object.entries(actualInputs) as input}
-					<li class="text-base-content/80">
-						{active.profile?.getItemById(input[0])?.getDisplayName()}:
-						{formatter.format(input[1])}
-					</li>
-				{:else}
-					<li class="text-base-content/80">No input available</li>
-				{/each}
-			</ul>
-		</div>
-
-		<div>
-			<p class="text-base-content/50 font-bold uppercase">Output</p>
-
-			<ul>
-				{#each Object.entries(actualOutputs) as output}
-					<li class="text-base-content/80">
-						{active.profile?.getItemById(output[0])?.getDisplayName()}:
-						{formatter.format(output[1])}
+						{active.profile?.getItemById(output.itemId)?.getDisplayName()}:
+						{formatter.format(output.used)} / {formatter.format(output.capacity)}
 					</li>
 				{:else}
 					<li class="text-base-content/80">No output available</li>
@@ -274,7 +257,7 @@
 	<div
 		class="border-base-content/10 mt-2 grid w-full grid-cols-[1fr_auto_1fr] items-center border-t pt-2"
 	>
-		{#if Object.keys(actualInputs).length !== 0}
+		{#if inputRows.length !== 0}
 			<button
 				type="button"
 				class="btn btn-xs nodrag nopan items-center gap-1 justify-self-start"
