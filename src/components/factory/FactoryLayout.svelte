@@ -8,6 +8,7 @@
 	import { type Edge, type MachineConfiguration } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
 	import factory from '@/stores/factory.svelte';
+	import alerts from '@/stores/alerts.svelte';
 
 	let edgeDialog = $state<HTMLDialogElement>();
 	let selectedEdge = $state<Edge | undefined>();
@@ -19,8 +20,12 @@
 		machineConfigDialog?.showModal();
 	}
 
-	function updateMachineConfig() {
-		if (!active.profile) return;
+	function updateMachineConfig(config?: MachineConfiguration) {
+		if (!active.profile || !config) return;
+		if (config.machineCount < 0) {
+			config.machineCount = 0;
+			alerts.push("You can't have less than 0 machines");
+		}
 		recalculateEdgeAmounts(active.profile, factory);
 	}
 

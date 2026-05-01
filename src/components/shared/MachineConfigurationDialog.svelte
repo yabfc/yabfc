@@ -18,7 +18,7 @@
 	type Props = {
 		dialog?: HTMLDialogElement;
 		config?: MachineConfiguration;
-		onChange: () => void;
+		onChange: (config?: MachineConfiguration) => void;
 	};
 
 	let { dialog = $bindable(), config = $bindable(), onChange }: Props = $props();
@@ -193,7 +193,7 @@
 					id="machineConfig-machineCount"
 					type="number"
 					bind:value={config.machineCount}
-					onchange={onChange}
+					onchange={() => onChange(config)}
 					min="1"
 					step="1"
 					class="input input-bordered w-full"

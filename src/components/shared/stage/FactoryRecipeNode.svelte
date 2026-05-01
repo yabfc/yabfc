@@ -5,6 +5,7 @@
 	import { formattedLimitations } from '@/lib/format/limitation';
 	import type { MachineConfiguration, RecipeNode, RecipeNodeData } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
+	import alerts from '@/stores/alerts.svelte';
 	import factory from '@/stores/factory.svelte';
 	import {
 		FactoryIcon,
@@ -70,10 +71,14 @@
 		recalculateEdgeAmounts(active.profile, factory);
 	};
 
-	const updateMachineConfig = () => {
+	function updateMachineConfig(config: MachineConfiguration) {
 		if (!active.profile) return;
+		if (config.machineCount < 0) {
+			config.machineCount = 0;
+			alerts.push("You can't have less than 0 machines");
+		}
 		recalculateEdgeAmounts(active.profile, factory);
-	};
+	}
 
 	function propagateNodeResources(direction: PropagationDirection) {
 		if (!node || !active.profile) return;
@@ -195,7 +200,7 @@
 							id={config.id}
 							type="number"
 							bind:value={config.machineCount}
-							onchange={updateMachineConfig}
+							onchange={() => updateMachineConfig(config)}
 							min="1"
 							step="1"
 							class="input input-sm nodrag nopan w-full"
