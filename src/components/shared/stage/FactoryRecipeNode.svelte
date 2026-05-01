@@ -198,7 +198,9 @@
 		</div>
 	</div>
 
-	<ul class="text-base-content/80 flex w-full flex-col gap-1 text-sm">
+	<ul
+		class="border-base-content/10 text-base-content/80 flex w-full flex-col gap-1 border-t pt-2 text-sm"
+	>
 		{#snippet factory(name: string, config: MachineConfiguration)}
 			<li class="flex flex-col gap-2">
 				<p class="flex-1 text-sm">{name}</p>
