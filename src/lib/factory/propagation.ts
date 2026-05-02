@@ -16,6 +16,23 @@ type LeftPropagationOptions = {
 	skippedInputItemIds?: Set<string>;
 };
 
+const MAX_PROPAGATION_PASSES = 100;
+const PROPAGATION_ACCURACY = 1e-9;
+
+function getPropagationState(factory: Factory): string {
+	return JSON.stringify({
+		inputs: Object.entries(factory.inputs)
+			.sort(([a], [b]) => a.localeCompare(b))
+			.map(([id, input]) => [id, input.amount]),
+		outputs: Object.entries(factory.outputs)
+			.sort(([a], [b]) => a.localeCompare(b))
+			.map(([id, output]) => [id, output.amount]),
+		machines: Object.values(factory.recipeNodes)
+			.sort((a, b) => a.id.localeCompare(b.id))
+			.map(node => [node.id, node.machines.map(config => [config.id, config.machineCount])]),
+	});
+}
+
 function getNodeItemAmount(
 	profile: Profile,
 	node: RecipeNode,
@@ -26,6 +43,35 @@ function getNodeItemAmount(
 		side === 'input' ? calculateInput(profile, node) : calculateOutput(profile, node);
 
 	return amounts[itemId] ?? 0;
+}
+
+function getActualIncomingAmount(factory: Factory, nodeId: string, itemId: string): number {
+	return factory.edges
+		.filter(edge => edge.to === nodeId && edge.itemId === itemId)
+		.reduce((sum, edge) => sum + edge.actualAmount, 0);
+}
+
+function getOutputNodeDemand(factory: Factory, lookup: EdgeLookup, nodeId: string, itemId: string) {
+	return (lookup.outgoing.get(nodeId) ?? [])
+		.filter(edge => edge.itemId === itemId && factory.outputs[edge.to])
+		.reduce((sum, edge) => sum + (factory.outputs[edge.to]?.amount ?? 0), 0);
+}
+
+function isLeftPropagationSatisfied(profile: Profile, factory: Factory, nodeId: string): boolean {
+	const output = factory.outputs[nodeId];
+	if (output) {
+		return (
+			getActualIncomingAmount(factory, nodeId, output.id) + PROPAGATION_ACCURACY >=
+			output.amount
+		);
+	}
+
+	const node = factory.recipeNodes[nodeId];
+	if (!node) return true;
+
+	return Object.entries(calculateInput(profile, node)).every(([itemId, amount]) => {
+		return getActualIncomingAmount(factory, nodeId, itemId) + PROPAGATION_ACCURACY >= amount;
+	});
 }
 
 function scaleNodeToItemAmount(
@@ -92,16 +138,37 @@ function getTotalProducerDemand(
 	profile: Profile,
 	factory: Factory,
 	lookup: EdgeLookup,
-	producerNodeId: string,
+	producerNode: RecipeNode,
 	itemId: string,
+	externalDemand: number,
 ): number {
 	const requiredIncomingAmounts = calculateRequiredIncomingEdgeAmounts(
 		createEdgeAmountContext(profile, factory),
 	);
 
-	return (lookup.outgoing.get(producerNodeId) ?? [])
-		.filter(edge => edge.itemId === itemId && factory.recipeNodes[edge.to])
-		.reduce((sum, edge) => sum + (requiredIncomingAmounts.get(edge) ?? 0), 0);
+	let downstreamDemand = externalDemand;
+	let selfDemand = 0;
+
+	for (const edge of lookup.outgoing.get(producerNode.id) ?? []) {
+		if (edge.itemId !== itemId || !factory.recipeNodes[edge.to]) continue;
+
+		const amount = requiredIncomingAmounts.get(edge) ?? 0;
+		if (edge.to === producerNode.id) {
+			selfDemand += amount;
+		} else {
+			downstreamDemand += amount;
+		}
+	}
+
+	if (selfDemand <= 0) return downstreamDemand;
+	if (downstreamDemand <= 0) return 0;
+
+	const currentOutput = getNodeItemAmount(profile, producerNode, itemId, 'output');
+	const recyclableOutput = currentOutput - selfDemand;
+	if (recyclableOutput <= 0) return 0;
+
+	// Positive-net recycle recipes need to be sized by their net output, not gross output.
+	return (downstreamDemand * currentOutput) / recyclableOutput;
 }
 
 function increaseInputNodes(factory: Factory, edges: Edge[], requiredAmount: number): void {
@@ -151,36 +218,82 @@ function propagateLeftFromNode(
 
 		const producerEdges = getRecipeProducerEdges(factory, lookup, currentNodeId, itemId);
 		const inputEdges = getInputEdges(factory, lookup, currentNodeId, itemId);
+		const pathProducerEdges = producerEdges.filter(edge => nextPath.has(edge.from));
+		const nonPathProducerEdges = producerEdges.filter(edge => !nextPath.has(edge.from));
 
 		if (producerEdges.length === 0) {
 			increaseInputNodes(factory, inputEdges, requiredAmount);
 			continue;
 		}
 
+		const pathProducerSupply = pathProducerEdges.reduce((sum, edge) => {
+			const producerNode = factory.recipeNodes[edge.from];
+			if (!producerNode) return sum;
+
+			const outputAmount = getNodeItemAmount(profile, producerNode, itemId, 'output');
+			const outputDemand = getOutputNodeDemand(factory, lookup, producerNode.id, itemId);
+
+			return sum + Math.max(outputAmount - outputDemand, 0);
+		}, 0);
+		const nonPathDemand =
+			pathProducerEdges.length > 0 ? Math.max(requiredAmount - pathProducerSupply, 0) : 0;
+		const nonPathDemandShares = new Map(
+			distributeAmount(nonPathDemand, nonPathProducerEdges, edge => {
+				const producerNode = factory.recipeNodes[edge.from];
+				if (!producerNode) return 0;
+
+				return getNodeItemAmount(profile, producerNode, itemId, 'output');
+			}).map(({ entry, amount }) => [entry, amount]),
+		);
+
 		for (const edge of producerEdges) {
 			const producerNode = factory.recipeNodes[edge.from];
-			if (
-				!producerNode ||
-				nextPath.has(producerNode.id) ||
-				options.blockedNodeId === producerNode.id
-			)
-				continue;
+			if (!producerNode || options.blockedNodeId === producerNode.id) continue;
 
-			const downstreamRecipeDemand = getTotalProducerDemand(
+			const externalDemand = factory.outputs[currentNodeId] ? requiredAmount : 0;
+			const demand = getTotalProducerDemand(
 				profile,
 				factory,
 				lookup,
-				producerNode.id,
+				producerNode,
 				itemId,
+				externalDemand,
 			);
 
-			const demand = factory.outputs[currentNodeId]
-				? requiredAmount + downstreamRecipeDemand
-				: downstreamRecipeDemand;
+			scaleNodeToItemAmount(
+				profile,
+				producerNode,
+				itemId,
+				Math.max(demand, nonPathDemandShares.get(edge) ?? 0),
+				'output',
+				true,
+			);
+			if (nextPath.has(producerNode.id)) continue;
 
-			scaleNodeToItemAmount(profile, producerNode, itemId, demand, 'output', true);
 			propagateLeftFromNode(profile, factory, lookup, producerNode.id, nextPath, options);
 		}
+	}
+}
+
+function propagateLeftUntilStable(
+	profile: Profile,
+	factory: Factory,
+	lookup: EdgeLookup,
+	nodeId: string,
+	options: LeftPropagationOptions = {},
+): void {
+	recalculateEdgeAmounts(profile, factory);
+	if (isLeftPropagationSatisfied(profile, factory, nodeId)) return;
+
+	// rerun this propagation so e.g kovarex actually works
+	for (let i = 0; i < MAX_PROPAGATION_PASSES; i++) {
+		const before = getPropagationState(factory);
+
+		propagateLeftFromNode(profile, factory, lookup, nodeId, new Set<string>(), options);
+		recalculateEdgeAmounts(profile, factory);
+
+		if (isLeftPropagationSatisfied(profile, factory, nodeId)) return;
+		if (getPropagationState(factory) === before) return;
 	}
 }
 
@@ -286,8 +399,7 @@ export function propagateResources(
 	const lookup = createEdgeLookup(factory.edges);
 
 	if (direction === 'left') {
-		propagateLeftFromNode(profile, factory, lookup, nodeId);
-		recalculateEdgeAmounts(profile, factory);
+		propagateLeftUntilStable(profile, factory, lookup, nodeId);
 		return;
 	}
 
