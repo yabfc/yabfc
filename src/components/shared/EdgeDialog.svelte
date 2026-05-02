@@ -68,7 +68,7 @@
 		>
 			<p>Throughput:</p>
 			<div class="text-right">
-				{edge.actualAmount}
+				{formatter.format(edge.actualAmount)}
 			</div>
 		</div>
 		{#if logistics}
