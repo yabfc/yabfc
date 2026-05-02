@@ -243,12 +243,20 @@ function propagateRightFromNode(
 	}
 }
 
-function updateOutputNodesFromActualEdges(factory: Factory, changedNodeIds: Set<string>) {
-	const changedOutputIds = new Set(
+function getOutputIdsForChangedNodes(factory: Factory, changedNodeIds: Set<string>) {
+	return new Set(
 		factory.edges
 			.filter(edge => changedNodeIds.has(edge.from) && factory.outputs[edge.to])
 			.map(edge => edge.to),
 	);
+}
+
+function updateOutputNodesFromAvailableSupply(
+	profile: Profile,
+	factory: Factory,
+	changedNodeIds: Set<string>,
+) {
+	const changedOutputIds = getOutputIdsForChangedNodes(factory, changedNodeIds);
 
 	for (const outputId of changedOutputIds) {
 		const output = factory.outputs[outputId];
@@ -256,7 +264,12 @@ function updateOutputNodesFromActualEdges(factory: Factory, changedNodeIds: Set<
 
 		const amount = factory.edges
 			.filter(edge => edge.to === outputId)
-			.reduce((sum, edge) => sum + edge.actualAmount, 0);
+			.reduce((sum, edge) => {
+				const sourceNode = factory.recipeNodes[edge.from];
+				if (!sourceNode) return sum;
+
+				return sum + (calculateOutput(profile, sourceNode)[edge.itemId] ?? 0);
+			}, 0);
 
 		factory.outputs[outputId] = { ...output, amount };
 	}
@@ -304,6 +317,6 @@ export function propagateResources(
 		);
 	}
 
+	updateOutputNodesFromAvailableSupply(profile, factory, new Set([nodeId, ...adjustedNodeIds]));
 	recalculateEdgeAmounts(profile, factory);
-	updateOutputNodesFromActualEdges(factory, new Set([nodeId, ...adjustedNodeIds]));
 }
