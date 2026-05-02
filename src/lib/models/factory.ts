@@ -43,11 +43,14 @@ export interface ItemIo {
 	amount: number;
 }
 
+export type EdgeKind = 'input' | 'recipe' | 'output';
+
 export interface Edge {
 	from: string;
 	to: string;
 	actualAmount: number;
 	itemId: string;
+	kind: EdgeKind;
 	maxAmount?: number;
 }
 

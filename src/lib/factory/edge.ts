@@ -86,6 +86,7 @@ export function connectEdges(
 					to: recipeNode.id,
 					actualAmount: 0,
 					itemId: input.id,
+					kind: 'input',
 				});
 			});
 	});
@@ -134,6 +135,7 @@ export function connectEdges(
 						to: inputNode.id,
 						actualAmount: 0,
 						itemId: output.id,
+						kind: 'recipe',
 					});
 				});
 
@@ -152,6 +154,7 @@ export function connectEdges(
 						to: outputNode.id,
 						actualAmount: 0,
 						itemId: output.id,
+						kind: 'output',
 					});
 				});
 		});
@@ -164,13 +167,310 @@ function getEdgeMaxAmount(edge: Edge): number {
 	return edge.maxAmount === undefined ? Number.POSITIVE_INFINITY : edge.maxAmount;
 }
 
+function createInitialSupply(
+	factory: Factory,
+	edgeDemands: EdgeDemand[],
+	sourceOutputsByNode: Record<string, Record<string, number>>,
+	outputRatios: Record<string, number> = {},
+): Map<string, number> {
+	const initialSupply = new Map<string, number>();
+
+	edgeDemands.forEach(demand => {
+		const key = fromEdgeKey(demand.edge);
+		if (initialSupply.has(key)) return;
+
+		if (demand.edge.kind === 'input') {
+			initialSupply.set(key, factory.inputs[demand.edge.from]?.amount ?? 0);
+			return;
+		}
+
+		const outputRatio = outputRatios[demand.edge.from] ?? 1;
+		const maxOutput = sourceOutputsByNode[demand.edge.from]?.[demand.edge.itemId] ?? 0;
+		initialSupply.set(key, maxOutput * outputRatio);
+	});
+
+	return initialSupply;
+}
+
+function getRecipeOutputRatios(
+	sourceOutputsByNode: Record<string, Record<string, number>>,
+	requiredInputsByNode: Record<string, Record<string, number>>,
+	recipeNodeIds: string[],
+	amounts: Map<Edge, number>,
+): Record<string, number> {
+	const actualInputsByNode: Record<string, Record<string, number>> = {};
+	const actualOutputsByNode: Record<string, Record<string, number>> = {};
+
+	for (const nodeId of recipeNodeIds) {
+		actualInputsByNode[nodeId] = {};
+		actualOutputsByNode[nodeId] = {};
+	}
+
+	for (const [edge, amount] of amounts) {
+		if (edge.kind !== 'output') {
+			const actualInputs = actualInputsByNode[edge.to];
+			if (actualInputs) {
+				actualInputs[edge.itemId] = (actualInputs[edge.itemId] ?? 0) + amount;
+			}
+		}
+
+		if (edge.kind !== 'input') {
+			const actualOutputs = actualOutputsByNode[edge.from];
+			if (actualOutputs) {
+				actualOutputs[edge.itemId] = (actualOutputs[edge.itemId] ?? 0) + amount;
+			}
+		}
+	}
+
+	const outputRatios: Record<string, number> = {};
+	for (const nodeId of recipeNodeIds) {
+		const requiredInputs = Object.entries(requiredInputsByNode[nodeId] ?? {}).filter(
+			([, amount]) => amount > 0,
+		);
+
+		const actualInputs = actualInputsByNode[nodeId] ?? {};
+		const inputRatio =
+			requiredInputs.length === 0
+				? 1
+				: requiredInputs.reduce((ratio, [itemId, requiredAmount]) => {
+						return Math.min(ratio, (actualInputs[itemId] ?? 0) / requiredAmount);
+					}, 1);
+		const outputRatio = Object.entries(sourceOutputsByNode[nodeId] ?? {}).reduce(
+			(ratio, [itemId, outputAmount]) => {
+				if (outputAmount <= 0) return ratio;
+				return Math.max(ratio, (actualOutputsByNode[nodeId]?.[itemId] ?? 0) / outputAmount);
+			},
+			0,
+		);
+
+		outputRatios[nodeId] = Math.min(inputRatio, outputRatio, 1);
+	}
+
+	return outputRatios;
+}
+
+function limitRecipeDemandRatios(
+	recipeNodeIds: string[],
+	recipeDemandRatios: Record<string, number>,
+	outputRatios: Record<string, number>,
+): Map<string, number> {
+	const limitedRatios = new Map<string, number>();
+
+	for (const nodeId of recipeNodeIds) {
+		limitedRatios.set(
+			nodeId,
+			Math.min(recipeDemandRatios[nodeId] ?? 0, outputRatios[nodeId] ?? 1),
+		);
+	}
+
+	return limitedRatios;
+}
+
+function getRequiredOutputAmounts(
+	edgeDemands: EdgeDemand[],
+	requiredIncomingAmounts: Map<Edge, number>,
+): Map<string, number> {
+	const requiredOutputAmounts = new Map<string, number>();
+
+	for (const { edge, demand } of edgeDemands) {
+		if (!(edge.kind !== 'input')) continue;
+
+		const amount = edge.kind !== 'output' ? (requiredIncomingAmounts.get(edge) ?? 0) : demand;
+		const key = fromEdgeKey(edge);
+
+		requiredOutputAmounts.set(key, (requiredOutputAmounts.get(key) ?? 0) + amount);
+	}
+
+	return requiredOutputAmounts;
+}
+
+function getRecipeDemandRatios(
+	recipeNodeIds: string[],
+	sourceOutputsByNode: Record<string, Record<string, number>>,
+	requiredOutputAmounts: Map<string, number>,
+): Record<string, number> {
+	const demandRatios: Record<string, number> = {};
+
+	for (const nodeId of recipeNodeIds) {
+		let ratio = 0;
+
+		for (const [itemId, outputAmount] of Object.entries(sourceOutputsByNode[nodeId] ?? {})) {
+			if (outputAmount <= 0) continue;
+
+			const outputDemand = requiredOutputAmounts.get(`${nodeId}-${itemId}`) ?? 0;
+			ratio = Math.max(ratio, Math.min(outputDemand / outputAmount, 1));
+		}
+
+		demandRatios[nodeId] = ratio;
+	}
+
+	return demandRatios;
+}
+
+function createTargetDemandMap(
+	incomingByTargetAndItem: Record<string, EdgeDemand[]>,
+	recipeDemandRatios: Map<string, number>,
+	potentialSupply: Map<string, number>,
+): Map<string, number> {
+	const demandByTargetAndItem = new Map<string, number>();
+	const availableByTargetAndItem = new Map<string, number>();
+	const targetItemsByNode = new Map<string, Set<string>>();
+
+	for (const entries of Object.values(incomingByTargetAndItem)) {
+		if (entries.length === 0) continue;
+
+		const { edge, demand } = entries[0];
+		const key = toEdgeKey(edge);
+		const targetItems = targetItemsByNode.get(edge.to) ?? new Set<string>();
+
+		targetItems.add(key);
+		targetItemsByNode.set(edge.to, targetItems);
+		demandByTargetAndItem.set(key, demand * (recipeDemandRatios.get(edge.to) ?? 1));
+		availableByTargetAndItem.set(
+			key,
+			entries.reduce((sum, { edge }) => {
+				const available = potentialSupply.get(fromEdgeKey(edge)) ?? 0;
+				return sum + Math.min(available, getEdgeMaxAmount(edge));
+			}, 0),
+		);
+	}
+
+	for (const [nodeId, itemKeys] of targetItemsByNode) {
+		for (const key of itemKeys) {
+			const demand = demandByTargetAndItem.get(key) ?? 0;
+			let ratioFromOtherInputs = 1;
+
+			for (const otherKey of itemKeys) {
+				if (otherKey === key) continue;
+
+				const otherDemand = demandByTargetAndItem.get(otherKey) ?? 0;
+				if (otherDemand <= 0) continue;
+
+				ratioFromOtherInputs = Math.min(
+					ratioFromOtherInputs,
+					(availableByTargetAndItem.get(otherKey) ?? 0) / otherDemand,
+				);
+			}
+
+			demandByTargetAndItem.set(key, demand * Math.min(Math.max(ratioFromOtherInputs, 0), 1));
+		}
+
+		if ((recipeDemandRatios.get(nodeId) ?? 0) <= 0) {
+			for (const key of itemKeys) {
+				demandByTargetAndItem.set(key, 0);
+			}
+		}
+	}
+
+	return demandByTargetAndItem;
+}
+
+function allocateEntriesBySource(
+	entries: EdgeDemand[],
+	targetDemand: Map<string, number>,
+	remainingSupply: Map<string, number>,
+	actualAmounts: Map<Edge, number>,
+): void {
+	const entriesBySource = entries.reduce<Record<string, EdgeDemand[]>>((acc, entry) => {
+		const key = fromEdgeKey(entry.edge);
+		(acc[key] ??= []).push(entry);
+		return acc;
+	}, {});
+
+	for (const [sourceKey, sourceEntries] of Object.entries(entriesBySource)) {
+		let sourceRemaining = remainingSupply.get(sourceKey) ?? 0;
+		let activeEntries = sourceEntries.filter(({ edge }) => {
+			const targetRemaining = targetDemand.get(toEdgeKey(edge)) ?? 0;
+			return targetRemaining > 0 && getEdgeMaxAmount(edge) > 0;
+		});
+
+		while (sourceRemaining > 0 && activeEntries.length > 0) {
+			const totalDemand = activeEntries.reduce((sum, { edge }) => {
+				return sum + (targetDemand.get(toEdgeKey(edge)) ?? 0);
+			}, 0);
+			if (totalDemand <= 0) break;
+
+			let usedInPass = 0;
+
+			for (const { edge } of activeEntries) {
+				const targetKey = toEdgeKey(edge);
+				const targetRemaining = targetDemand.get(targetKey) ?? 0;
+				const currentAmount = actualAmounts.get(edge) ?? 0;
+				const edgeRemaining = getEdgeMaxAmount(edge) - currentAmount;
+				if (targetRemaining <= 0 || edgeRemaining <= 0) continue;
+
+				const share = sourceRemaining * (targetRemaining / totalDemand);
+				const used = Math.min(share, targetRemaining, edgeRemaining);
+
+				actualAmounts.set(edge, currentAmount + used);
+				targetDemand.set(targetKey, targetRemaining - used);
+				usedInPass += used;
+			}
+
+			if (usedInPass <= 0) break;
+
+			sourceRemaining -= usedInPass;
+			activeEntries = activeEntries.filter(({ edge }) => {
+				const targetRemaining = targetDemand.get(toEdgeKey(edge)) ?? 0;
+				const currentAmount = actualAmounts.get(edge) ?? 0;
+				return targetRemaining > 0 && currentAmount < getEdgeMaxAmount(edge);
+			});
+		}
+
+		remainingSupply.set(sourceKey, sourceRemaining);
+	}
+}
+
+function allocateActualIncomingEdgeAmounts(
+	incomingByTargetAndItem: Record<string, EdgeDemand[]>,
+	remainingSupply: Map<string, number>,
+	targetDemands: Map<string, number>,
+): Map<Edge, number> {
+	const actualAmounts = new Map<Edge, number>();
+	const entriesByItem = Object.values(incomingByTargetAndItem)
+		.flat()
+		.reduce<Record<string, EdgeDemand[]>>((acc, entry) => {
+			(acc[entry.edge.itemId] ??= []).push(entry);
+			return acc;
+		}, {});
+
+	for (const entries of Object.values(entriesByItem)) {
+		const targetDemand = new Map<string, number>();
+
+		for (const { edge, demand } of entries) {
+			const key = toEdgeKey(edge);
+			targetDemand.set(key, targetDemands.get(key) ?? demand);
+		}
+
+		const inputEntries = entries.filter(({ edge }) => !(edge.kind !== 'input'));
+		const recipeEntries = entries.filter(({ edge }) => edge.kind !== 'input');
+
+		allocateEntriesBySource(inputEntries, targetDemand, remainingSupply, actualAmounts);
+		allocateEntriesBySource(recipeEntries, targetDemand, remainingSupply, actualAmounts);
+
+		for (const { edge } of entries) {
+			if (!actualAmounts.has(edge)) actualAmounts.set(edge, 0);
+		}
+	}
+
+	return actualAmounts;
+}
+
 /** Allocate amounts for incoming edges, grouped by target and item. */
 function allocateIncomingEdgeAmounts(
 	incomingByTargetAndItem: Record<string, EdgeDemand[]>,
-	recipeNodeIds: string[],
 	remainingSupply: Map<string, number>,
 	mode: EdgeAmountMode = 'actual',
+	targetDemands = new Map<string, number>(),
 ): Map<Edge, number> {
+	if (mode === 'actual') {
+		return allocateActualIncomingEdgeAmounts(
+			incomingByTargetAndItem,
+			remainingSupply,
+			targetDemands,
+		);
+	}
+
 	const actualAmounts = new Map<Edge, number>();
 
 	Object.values(incomingByTargetAndItem).forEach(entries => {
@@ -179,8 +479,8 @@ function allocateIncomingEdgeAmounts(
 		const totalDemand = entries[0].demand;
 		let remainingDemand = totalDemand;
 
-		const inputEntries = entries.filter(({ edge }) => !recipeNodeIds.includes(edge.from));
-		const recipeEntries = entries.filter(({ edge }) => recipeNodeIds.includes(edge.from));
+		const inputEntries = entries.filter(({ edge }) => !(edge.kind !== 'input'));
+		const recipeEntries = entries.filter(({ edge }) => edge.kind !== 'input');
 
 		// consume input supply first
 		for (const { edge } of inputEntries) {
@@ -202,13 +502,10 @@ function allocateIncomingEdgeAmounts(
 
 			if (totalRecipeAvailable <= 0) {
 				for (const { edge } of recipeEntries) {
-					const used =
-						mode === 'required'
-							? Math.min(
-									remainingDemand / recipeEntries.length,
-									getEdgeMaxAmount(edge),
-								)
-							: 0;
+					const used = Math.min(
+						remainingDemand / recipeEntries.length,
+						getEdgeMaxAmount(edge),
+					);
 					actualAmounts.set(edge, used);
 				}
 			} else {
@@ -217,20 +514,16 @@ function allocateIncomingEdgeAmounts(
 					const available = remainingSupply.get(key) ?? 0;
 
 					const share = remainingDemand * (available / totalRecipeAvailable);
-					const used =
-						mode === 'actual'
-							? Math.min(available, share, getEdgeMaxAmount(edge))
-							: Math.min(share, getEdgeMaxAmount(edge));
+					const used = Math.min(share, getEdgeMaxAmount(edge));
 
 					actualAmounts.set(edge, used);
-					if (mode === 'actual') remainingSupply.set(key, available - used);
 				}
 			}
 		} else {
 			for (const { edge } of recipeEntries) {
 				if (actualAmounts.has(edge)) continue;
 				const used =
-					mode === 'required' && remainingDemand > 0 && recipeEntries.length > 0
+					remainingDemand > 0 && recipeEntries.length > 0
 						? Math.min(remainingDemand / recipeEntries.length, getEdgeMaxAmount(edge))
 						: 0;
 				actualAmounts.set(edge, used);
@@ -243,12 +536,11 @@ function allocateIncomingEdgeAmounts(
 /** Allocates amounts for edges that go to output nodes */
 function allocateOutputEdgeAmounts(
 	edgeDemands: EdgeDemand[],
-	recipeNodeIds: string[],
 	remainingSupply: Map<string, number>,
 	amounts: Map<Edge, number>,
 ) {
 	edgeDemands.forEach(({ edge, demand }) => {
-		if (recipeNodeIds.includes(edge.to)) return;
+		if (edge.kind !== 'output') return;
 
 		const key = fromEdgeKey(edge);
 		const available = remainingSupply.get(key) ?? 0;
@@ -270,53 +562,28 @@ export function createEdgeAmountContext(profile: Profile, factory: Factory): Edg
 
 	// calculate demand per edge
 	const edgeDemands = factory.edges.map(edge => {
-		const sourceNode = factory.recipeNodes[edge.from];
-		const targetNode = factory.recipeNodes[edge.to];
+		if (edge.kind === 'output') {
+			const outputDemand = factory.outputs[edge.to]?.amount ?? 0;
+			const sourceCapacity = sourceOutputsByNode[edge.from]?.[edge.itemId] ?? 0;
 
-		// input/recipe node -> recipe node
-		if (targetNode) {
 			return {
 				edge,
-				demand: requiredInputsByNode[targetNode.id]?.[edge.itemId] ?? 0,
-			};
-		}
-
-		// recipe node -> output node
-		if (sourceNode && !targetNode) {
-			return {
-				edge,
-				demand: factory.outputs[edge.to]?.amount ?? 0,
+				demand: Math.max(outputDemand, sourceCapacity),
 			};
 		}
 
 		return {
 			edge,
-			demand: 0,
+			demand: requiredInputsByNode[edge.to]?.[edge.itemId] ?? 0,
 		};
 	});
 
-	function getInitialEdgeSupply(edge: Edge): number {
-		const sourceNode = factory.recipeNodes[edge.from];
-		// input node
-		if (!sourceNode) return factory.inputs[edge.from]?.amount ?? 0;
-		// recipe node output
-		return sourceOutputsByNode[sourceNode.id]?.[edge.itemId] ?? 0;
-	}
-
-	// remaining available supply by source & item
-	const remainingSupply = new Map<string, number>();
-	edgeDemands.forEach(demand => {
-		const key = fromEdgeKey(demand.edge);
-		if (!remainingSupply.has(key)) {
-			remainingSupply.set(key, getInitialEdgeSupply(demand.edge));
-		}
-	});
+	const initialSupply = createInitialSupply(factory, edgeDemands, sourceOutputsByNode);
 
 	// group incoming edges by target & item
 	const incomingByTargetAndItem = edgeDemands.reduce<Record<string, EdgeDemand[]>>(
 		(acc, entry) => {
-			const targetNode = factory.recipeNodes[entry.edge.to];
-			if (!targetNode) return acc;
+			if (entry.edge.kind === 'output') return acc;
 
 			const key = toEdgeKey(entry.edge);
 			(acc[key] ??= []).push(entry);
@@ -333,7 +600,7 @@ export function createEdgeAmountContext(profile: Profile, factory: Factory): Edg
 		edgeDemands,
 		incomingByTargetAndItem,
 		recipeNodeIds,
-		initialSupply: remainingSupply,
+		initialSupply,
 	};
 }
 
@@ -342,7 +609,6 @@ export function calculateRequiredIncomingEdgeAmounts(
 ): Map<Edge, number> {
 	return allocateIncomingEdgeAmounts(
 		context.incomingByTargetAndItem,
-		context.recipeNodeIds,
 		new Map(context.initialSupply),
 		'required',
 	);
@@ -350,14 +616,47 @@ export function calculateRequiredIncomingEdgeAmounts(
 
 export function calculateEdgeAmounts(profile: Profile, factory: Factory): Map<Edge, number> {
 	const context = createEdgeAmountContext(profile, factory);
-	const remainingSupply = new Map(context.initialSupply);
-	const amounts = allocateIncomingEdgeAmounts(
-		context.incomingByTargetAndItem,
-		context.recipeNodeIds,
-		remainingSupply,
+	const requiredIncomingAmounts = calculateRequiredIncomingEdgeAmounts(context);
+	const requiredOutputAmounts = getRequiredOutputAmounts(
+		context.edgeDemands,
+		requiredIncomingAmounts,
 	);
+	const recipeDemandRatios = getRecipeDemandRatios(
+		context.recipeNodeIds,
+		context.sourceOutputsByNode,
+		requiredOutputAmounts,
+	);
+	let amounts = new Map<Edge, number>();
+	let outputRatios: Record<string, number> = {};
 
-	allocateOutputEdgeAmounts(context.edgeDemands, context.recipeNodeIds, remainingSupply, amounts);
+	// make sure that reduced amounts cascade correctly through all nodes
+	for (let i = 0; i < context.recipeNodeIds.length + 1; i++) {
+		const remainingSupply = createInitialSupply(
+			factory,
+			context.edgeDemands,
+			context.sourceOutputsByNode,
+			outputRatios,
+		);
+		const targetDemands = createTargetDemandMap(
+			context.incomingByTargetAndItem,
+			limitRecipeDemandRatios(context.recipeNodeIds, recipeDemandRatios, outputRatios),
+			remainingSupply,
+		);
+
+		amounts = allocateIncomingEdgeAmounts(
+			context.incomingByTargetAndItem,
+			remainingSupply,
+			'actual',
+			targetDemands,
+		);
+		allocateOutputEdgeAmounts(context.edgeDemands, remainingSupply, amounts);
+		outputRatios = getRecipeOutputRatios(
+			context.sourceOutputsByNode,
+			context.requiredInputsByNode,
+			context.recipeNodeIds,
+			amounts,
+		);
+	}
 
 	return amounts;
 }

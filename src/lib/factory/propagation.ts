@@ -219,6 +219,8 @@ function propagateRightFromNode(
 		});
 
 		const shares = distributeAmount(availableAmount, consumerEdges, edge => {
+			if (edge.actualAmount > 0) return edge.actualAmount;
+
 			const consumerNode = factory.recipeNodes[edge.to];
 			if (!consumerNode) return 0;
 
@@ -301,9 +303,17 @@ export function propagateResources(
 		});
 	}
 
+	for (const adjustedNodeId of [...adjustedNodeIds].reverse()) {
+		Object.keys(calculateOutput(profile, factory.recipeNodes[adjustedNodeId])).forEach(
+			itemId => {
+				sourceOutputItemIds.add(itemId);
+			},
+		);
+	}
+
 	const backfillOptions = {
 		blockedNodeId: nodeId,
-		skippedInputItemIds: new Set([...sourceOutputItemIds, ...adjustedNodeIds]),
+		skippedInputItemIds: sourceOutputItemIds,
 	};
 
 	for (const adjustedNodeId of [...adjustedNodeIds].reverse()) {
