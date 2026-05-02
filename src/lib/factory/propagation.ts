@@ -57,6 +57,24 @@ function getOutputNodeDemand(factory: Factory, lookup: EdgeLookup, nodeId: strin
 		.reduce((sum, edge) => sum + (factory.outputs[edge.to]?.amount ?? 0), 0);
 }
 
+function isSingleOutputProducer(profile: Profile, node: RecipeNode, itemId: string): boolean {
+	const outputs = profile.getRecipeById(node.recipeId)?.out ?? [];
+	return outputs.length === 1 && outputs[0].id === itemId;
+}
+
+function getAvailableRecipeOutput(
+	profile: Profile,
+	factory: Factory,
+	lookup: EdgeLookup,
+	node: RecipeNode,
+	itemId: string,
+): number {
+	const outputAmount = getNodeItemAmount(profile, node, itemId, 'output');
+	const outputDemand = getOutputNodeDemand(factory, lookup, node.id, itemId);
+
+	return Math.max(outputAmount - outputDemand, 0);
+}
+
 function isLeftPropagationSatisfied(profile: Profile, factory: Factory, nodeId: string): boolean {
 	const output = factory.outputs[nodeId];
 	if (output) {
@@ -184,6 +202,48 @@ function increaseInputNodes(factory: Factory, edges: Edge[], requiredAmount: num
 	}
 }
 
+/** Assigns missing demand to single-output producers after using byproduct supply. */
+function getSingleOutputProducerDemands(
+	profile: Profile,
+	factory: Factory,
+	lookup: EdgeLookup,
+	producerEdges: Edge[],
+	itemId: string,
+	requiredAmount: number,
+): Map<Edge, number> | undefined {
+	const singleOutputEdges = producerEdges.filter(edge => {
+		const producerNode = factory.recipeNodes[edge.from];
+		return producerNode && isSingleOutputProducer(profile, producerNode, itemId);
+	});
+
+	if (singleOutputEdges.length === 0 || singleOutputEdges.length === producerEdges.length) {
+		return;
+	}
+
+	const byproductEdges = producerEdges.filter(edge => !singleOutputEdges.includes(edge));
+	const byproductSupply = byproductEdges.reduce((sum, edge) => {
+		const producerNode = factory.recipeNodes[edge.from];
+		if (!producerNode) return sum;
+
+		return sum + getAvailableRecipeOutput(profile, factory, lookup, producerNode, itemId);
+	}, 0);
+	const remainingDemand = Math.max(requiredAmount - byproductSupply, 0);
+	const demands = new Map<Edge, number>();
+
+	for (const edge of byproductEdges) {
+		demands.set(edge, 0);
+	}
+
+	for (const { entry, amount } of distributeAmount(remainingDemand, singleOutputEdges, edge => {
+		const producerNode = factory.recipeNodes[edge.from];
+		return producerNode ? getNodeItemAmount(profile, producerNode, itemId, 'output') : 0;
+	})) {
+		demands.set(entry, amount);
+	}
+
+	return demands;
+}
+
 function propagateLeftFromNode(
 	profile: Profile,
 	factory: Factory,
@@ -220,6 +280,14 @@ function propagateLeftFromNode(
 		const inputEdges = getInputEdges(factory, lookup, currentNodeId, itemId);
 		const pathProducerEdges = producerEdges.filter(edge => nextPath.has(edge.from));
 		const nonPathProducerEdges = producerEdges.filter(edge => !nextPath.has(edge.from));
+		const singleOutputProducerDemands = getSingleOutputProducerDemands(
+			profile,
+			factory,
+			lookup,
+			producerEdges,
+			itemId,
+			requiredAmount,
+		);
 
 		if (producerEdges.length === 0) {
 			increaseInputNodes(factory, inputEdges, requiredAmount);
@@ -250,6 +318,9 @@ function propagateLeftFromNode(
 			const producerNode = factory.recipeNodes[edge.from];
 			if (!producerNode || options.blockedNodeId === producerNode.id) continue;
 
+			const singleOutputDemand = singleOutputProducerDemands?.get(edge);
+			if (singleOutputDemand === 0) continue;
+
 			const externalDemand = factory.outputs[currentNodeId] ? requiredAmount : 0;
 			const demand = getTotalProducerDemand(
 				profile,
@@ -259,12 +330,13 @@ function propagateLeftFromNode(
 				itemId,
 				externalDemand,
 			);
+			const targetDemand = singleOutputDemand ?? demand;
 
 			scaleNodeToItemAmount(
 				profile,
 				producerNode,
 				itemId,
-				Math.max(demand, nonPathDemandShares.get(edge) ?? 0),
+				Math.max(targetDemand, nonPathDemandShares.get(edge) ?? 0),
 				'output',
 				true,
 			);
