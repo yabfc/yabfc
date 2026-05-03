@@ -37,6 +37,17 @@
 
 	const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 3 });
 
+	function groupEdgesByConnection(edges: EdgeModel[]) {
+		const groups = new Map<string, EdgeModel[]>();
+
+		for (const edge of edges) {
+			const key = `${edge.from}-${edge.to}`;
+			groups.set(key, [...(groups.get(key) ?? []), edge]);
+		}
+
+		return [...groups.entries()];
+	}
+
 	$effect(() => {
 		recipeNodeEdgeAmounts = calculateRecipeNodeEdgeAmounts(factory);
 	});
@@ -100,19 +111,30 @@
 			})),
 		);
 
-		const newEdges = factory.edges.map(x => ({
-			id: `${x.from}-${x.to}`,
-			type: 'recipe',
-			source: x.from,
-			target: x.to,
-			label: `${formatter.format(x.actualAmount)}`,
-			data: {
-				edge: x,
-				onEdgeView: (edge: EdgeModel) => {
-					onEdgeView(edge);
+		const newEdges = groupEdgesByConnection(factory.edges).map(([id, group]) => {
+			const firstEdge = group[0];
+
+			return {
+				id,
+				type: 'recipe',
+				source: firstEdge.from,
+				target: firstEdge.to,
+				selectable: group.length === 1,
+				data: {
+					edge: firstEdge,
+					edgeLabels: group.map(edge => ({
+						edge,
+						itemName:
+							active.profile?.getItemById(edge.itemId)?.getDisplayName() ??
+							edge.itemId,
+						amount: formatter.format(edge.actualAmount),
+					})),
+					onEdgeView: (edge: EdgeModel) => {
+						onEdgeView(edge);
+					},
 				},
-			},
-		}));
+			};
+		});
 
 		const hasNewNodes = untrack(() => {
 			const oldIds = new Set(nodes.map(node => node.id));

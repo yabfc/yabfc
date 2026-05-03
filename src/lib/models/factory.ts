@@ -54,8 +54,15 @@ export interface Edge {
 	maxAmount?: number;
 }
 
+export type EdgeLabelData = {
+	edge: Edge;
+	itemName: string;
+	amount: string;
+};
+
 export type EdgeData = Record<string, unknown> & {
 	edge: Edge;
+	edgeLabels: EdgeLabelData[];
 	onEdgeView: (edge: Edge) => void;
 };
 

@@ -1,10 +1,9 @@
 <script lang="ts">
-	import type { EdgeData } from '@/lib/models/factory';
+	import type { EdgeData, Edge as EdgeModel } from '@/lib/models/factory';
 	import { BaseEdge, EdgeLabel, getBezierPath, type EdgeProps, type Edge } from '@xyflow/svelte';
 
 	let {
 		id,
-		label,
 		source,
 		sourceX,
 		sourceY,
@@ -17,6 +16,10 @@
 	}: EdgeProps<Edge<EdgeData>> = $props();
 
 	const isSelfLoop = $derived(source === target);
+	const edgeLabels = $derived(data?.edgeLabels ?? []);
+	const isMultiEdge = $derived(edgeLabels.length > 1);
+	const loopOut = 36,
+		loopUp = 50;
 
 	let [normalPath, normalLabelX, normalLabelY] = $derived(
 		getBezierPath({
@@ -30,9 +33,6 @@
 	);
 
 	let selfLoopPath = $derived.by(() => {
-		const loopOut = 36;
-		const loopUp = 50;
-
 		return `
 			M ${sourceX} ${sourceY}
 			C ${sourceX + loopOut} ${sourceY},
@@ -45,12 +45,19 @@
 		`;
 	});
 	let edgePath = $derived(isSelfLoop ? selfLoopPath : normalPath);
-	let labelX = $derived(isSelfLoop ? sourceX + 27 : normalLabelX);
+	let labelX = $derived(isSelfLoop ? sourceX + loopOut : normalLabelX);
 	let labelY = $derived(isSelfLoop ? sourceY - 25 : normalLabelY);
 
 	function onEdgeClick() {
 		if (!data) return;
-		data.onEdgeView(data.edge);
+		if (edgeLabels.length !== 1) return;
+
+		data.onEdgeView(edgeLabels[0].edge);
+	}
+
+	function onEdgeLabelClick(event: MouseEvent, edge: EdgeModel) {
+		event.stopPropagation();
+		data?.onEdgeView(edge);
 	}
 </script>
 
@@ -61,8 +68,27 @@
 	onclick={onEdgeClick}
 />
 
-{#if label}
-	<EdgeLabel x={labelX} y={labelY} selectEdgeOnClick class="badge badge-soft badge-xs">
-		{label}
+{#if edgeLabels.length > 0}
+	<EdgeLabel x={labelX} y={labelY}>
+		<div
+			class={[
+				'flex max-w-64 flex-col gap-1',
+				isSelfLoop ? 'translate-x-1/2 items-start' : 'items-center',
+			]}
+		>
+			{#each edgeLabels as edgeLabel}
+				<button
+					type="button"
+					class="badge badge-soft badge-xs nodrag nopan h-auto min-h-4 max-w-full cursor-pointer gap-1 px-1.5 py-0.5"
+					title={edgeLabel.itemName}
+					onclick={(event: MouseEvent) => onEdgeLabelClick(event, edgeLabel.edge)}
+				>
+					{#if isMultiEdge}
+						<span class="max-w-32 truncate">{edgeLabel.itemName}:</span>
+					{/if}
+					<span class="tabular-nums">{edgeLabel.amount}</span>
+				</button>
+			{/each}
+		</div>
 	</EdgeLabel>
 {/if}
