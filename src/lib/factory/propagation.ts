@@ -102,9 +102,6 @@ function scaleNodeToItemAmount(
 	const targetAmount = Math.max(amount, 0);
 	const currentAmount = getNodeItemAmount(profile, node, itemId, side);
 	if (targetAmount <= PROPAGATION_ACCURACY) {
-		for (const config of node.machines) {
-			config.machineCount = 0;
-		}
 		return;
 	}
 
@@ -132,7 +129,8 @@ function scaleNodeToItemAmount(
 	const scale = targetAmount / currentAmount;
 
 	for (const config of node.machines) {
-		config.machineCount = Math.ceil(config.machineCount * scale);
+		if (config.machineCount <= 0) continue;
+		config.machineCount = Math.max(1, Math.ceil(config.machineCount * scale));
 	}
 }
 
