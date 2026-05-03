@@ -179,36 +179,40 @@
 		{recipe?.getDisplayName() || data.recipeNode.recipeId}
 	</span>
 
-	<div class="flex w-full justify-between gap-2 p-2 text-xs">
-		<div>
-			<p class="text-base-content/50 font-bold uppercase">Input</p>
+	<div class="flex w-full flex-col gap-2 p-2 text-xs">
+		<p class="text-base-content/50 font-bold uppercase">Input</p>
 
-			<ul>
-				{#each inputRows as input}
-					<li class="text-base-content/80">
-						{active.profile?.getItemById(input.itemId)?.getDisplayName()}:
+		<ul>
+			{#each inputRows as input}
+				<li class="text-base-content/80 flex gap-2">
+					<span class="min-w-0 flex-1 truncate">
+						{active.profile?.getItemById(input.itemId)?.getDisplayName()}
+					</span>
+					<span class="shrink-0 text-right">
 						{formatter.format(input.used)} / {formatter.format(input.capacity)}
-					</li>
-				{:else}
-					<li class="text-base-content/80">No input available</li>
-				{/each}
-			</ul>
-		</div>
+					</span>
+				</li>
+			{:else}
+				<li class="text-base-content/80">No input available</li>
+			{/each}
+		</ul>
 
-		<div>
-			<p class="text-base-content/50 font-bold uppercase">Output</p>
+		<p class="text-base-content/50 font-bold uppercase">Output</p>
 
-			<ul>
-				{#each outputRows as output}
-					<li class="text-base-content/80">
-						{active.profile?.getItemById(output.itemId)?.getDisplayName()}:
+		<ul>
+			{#each outputRows as output}
+				<li class="text-base-content/80 flex gap-2">
+					<span class="min-w-0 flex-1 truncate">
+						{active.profile?.getItemById(output.itemId)?.getDisplayName()}
+					</span>
+					<span class="shrink-0 text-right">
 						{formatter.format(output.used)} / {formatter.format(output.capacity)}
-					</li>
-				{:else}
-					<li class="text-base-content/80">No output available</li>
-				{/each}
-			</ul>
-		</div>
+					</span>
+				</li>
+			{:else}
+				<li class="text-base-content/80">No output available</li>
+			{/each}
+		</ul>
 	</div>
 
 	<ul
