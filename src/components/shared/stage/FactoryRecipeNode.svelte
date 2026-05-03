@@ -50,6 +50,14 @@
 			toResourceRows(data.usedOutputs, calculateOutput(active.profile, node)),
 		);
 
+	let utilizationPercent = $derived.by(() => {
+		if (inputRows.length > 0) {
+			return (inputRows[0].used / inputRows[0].capacity) * 100;
+		} else {
+			return (outputRows[0].used / outputRows[0].capacity) * 100;
+		}
+	});
+
 	const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 3 });
 
 	let selectedMachine = $state<string>();
@@ -125,34 +133,51 @@
 {/if}
 <div
 	class="rounded-box bg-base-100 border-base-content/10 flex w-72 flex-col items-center gap-1 border p-4"
-	class:pt-10={alternatives}
 >
+	<div class="flex w-full items-center gap-2">
+		<div
+			class="tooltip tooltip-bottom leading-tight before:text-xs before:transition-none after:transition-none"
+			// transition is set to none since the tooltip 'tail' moves slighltly to the left when opening the tooltip. Very unsatisfying
+			data-tip="Utilization"
+		>
+			<span
+				class={{
+					'badge badge-xs min-h-5': true,
+					'bg-success/50': Math.abs(utilizationPercent - 100) < 1e-9,
+					'bg-warning/50': Math.abs(utilizationPercent - 100) >= 1e-9,
+				}}
+			>
+				{formatter.format(utilizationPercent)}%
+			</span>
+		</div>
+		{#if alternatives}
+			<div class="ml-auto w-40 shrink-0">
+				<p class="sr-only">Select recipe alternative</p>
+
+				<select
+					id={nanoid()}
+					class="select select-xs nodrag"
+					bind:value={selectedAlternativeRecipeId}
+					onchange={handleAlternativeChange}
+				>
+					<option disabled value="">Select alternative</option>
+
+					{#each alternatives as r}
+						<option value={r.id}>
+							{r.getDisplayName()}
+						</option>
+					{/each}
+				</select>
+			</div>
+		{:else}
+			<span></span>
+		{/if}
+	</div>
 	<FactoryIcon size="32" class="text-secondary/70" />
 
 	<span class="w-full overflow-hidden text-center text-lg font-bold text-ellipsis">
 		{recipe?.getDisplayName() || data.recipeNode.recipeId}
 	</span>
-
-	{#if alternatives}
-		<div class="absolute top-2 right-2 ml-2">
-			<p class="sr-only">Select recipe alternative</p>
-
-			<select
-				id={nanoid()}
-				class="select select-xs nodrag"
-				bind:value={selectedAlternativeRecipeId}
-				onchange={handleAlternativeChange}
-			>
-				<option disabled value="">Select alternative</option>
-
-				{#each alternatives as r}
-					<option value={r.id}>
-						{r.getDisplayName()}
-					</option>
-				{/each}
-			</select>
-		</div>
-	{/if}
 
 	<div class="flex w-full justify-between gap-2 p-2 text-xs">
 		<div>
