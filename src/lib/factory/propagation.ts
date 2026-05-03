@@ -98,11 +98,38 @@ function scaleNodeToItemAmount(
 	itemId: string,
 	amount: number,
 	side: 'input' | 'output',
-	onlyIncrease = false,
 ): void {
+	const targetAmount = Math.max(amount, 0);
 	const currentAmount = getNodeItemAmount(profile, node, itemId, side);
-	if (onlyIncrease && currentAmount >= amount) return;
-	const scale = amount / currentAmount;
+	if (targetAmount <= PROPAGATION_ACCURACY) {
+		for (const config of node.machines) {
+			config.machineCount = 0;
+		}
+		return;
+	}
+
+	if (currentAmount <= PROPAGATION_ACCURACY) {
+		for (const config of node.machines) {
+			const probeNode = {
+				...node,
+				machines: node.machines.map(machineConfig => ({
+					...machineConfig,
+					machineCount: machineConfig === config ? 1 : 0,
+				})),
+			};
+			const singleMachineAmount = getNodeItemAmount(profile, probeNode, itemId, side);
+			if (singleMachineAmount <= PROPAGATION_ACCURACY) continue;
+
+			for (const machineConfig of node.machines) {
+				machineConfig.machineCount =
+					machineConfig === config ? Math.ceil(targetAmount / singleMachineAmount) : 0;
+			}
+			return;
+		}
+		return;
+	}
+
+	const scale = targetAmount / currentAmount;
 
 	for (const config of node.machines) {
 		config.machineCount = Math.ceil(config.machineCount * scale);
@@ -338,7 +365,6 @@ function propagateLeftFromNode(
 				itemId,
 				Math.max(targetDemand, nonPathDemandShares.get(edge) ?? 0),
 				'output',
-				true,
 			);
 			if (nextPath.has(producerNode.id)) continue;
 
@@ -355,7 +381,6 @@ function propagateLeftUntilStable(
 	options: LeftPropagationOptions = {},
 ): void {
 	recalculateEdgeAmounts(profile, factory);
-	if (isLeftPropagationSatisfied(profile, factory, nodeId)) return;
 
 	// rerun this propagation so e.g kovarex actually works
 	for (let i = 0; i < MAX_PROPAGATION_PASSES; i++) {
