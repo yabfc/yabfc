@@ -91,6 +91,12 @@
 							{
 								"additionalProperties": false,
 								"properties": {
+									"allowedEffects": {
+										"items": {
+											"type": "string"
+										},
+										"type": "array"
+									},
 									"available": {
 										"type": "boolean"
 									},
@@ -148,6 +154,12 @@
 							{
 								"additionalProperties": false,
 								"properties": {
+									"allowedEffects": {
+										"items": {
+											"type": "string"
+										},
+										"type": "array"
+									},
 									"available": {
 										"type": "boolean"
 									},
@@ -222,6 +234,12 @@
 							{
 								"additionalProperties": false,
 								"properties": {
+									"allowedEffects": {
+										"items": {
+											"type": "string"
+										},
+										"type": "array"
+									},
 									"available": {
 										"type": "boolean"
 									},
@@ -285,6 +303,12 @@
 							{
 								"additionalProperties": false,
 								"properties": {
+									"allowedEffects": {
+										"items": {
+											"type": "string"
+										},
+										"type": "array"
+									},
 									"available": {
 										"type": "boolean"
 									},

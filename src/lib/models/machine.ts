@@ -1,4 +1,4 @@
-import EffectModule, { type EffectChoice } from '@/lib/models/effect';
+import EffectModule, { getAttachedQualityEffect, type EffectChoice } from '@/lib/models/effect';
 
 export interface MachineFeatureInterface {
 	id: string;
@@ -129,9 +129,14 @@ export default class Machine {
 	getPowerConsumption(choices: EffectChoice[], effects: EffectModule[]): number {
 		let power = this.requiredPower;
 		choices.forEach(choice => {
+			if (choice.sourceId) return;
 			const effect = effects.find(x => x.id === choice.effectId);
 			if (!effect) return;
-			power = effect.updatePowerConsumption(power, choice.scaling ?? 1);
+			power = effect.updatePowerConsumption(
+				power,
+				choice.scaling ?? 1,
+				getAttachedQualityEffect(effects, choice, choices),
+			);
 		});
 		if (this.minPower && this.minPower > power) return this.minPower;
 		if (this.maxPower && this.maxPower < power) return this.maxPower;

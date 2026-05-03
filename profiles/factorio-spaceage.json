@@ -10397,7 +10397,7 @@
 			"category": "offshore-pump",
 			"priority": 10,
 			"available": true,
-			"limitations": ["planet:gleba", "planet:nauvis"]
+			"limitations": ["planet:nauvis", "planet:gleba"]
 		},
 		{
 			"id": "lava",
@@ -11060,11 +11060,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -11117,11 +11117,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -11143,11 +11143,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -11197,11 +11197,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -11229,11 +11229,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -11293,11 +11293,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -11357,11 +11357,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -11401,11 +11401,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -11451,11 +11451,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -11501,11 +11501,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -11556,11 +11556,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -11606,11 +11606,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -11661,11 +11661,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -11687,11 +11687,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -11743,11 +11743,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -11793,11 +11793,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -11877,11 +11877,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -11961,11 +11961,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -11988,11 +11988,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -12008,11 +12008,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -12035,11 +12035,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -12055,11 +12055,11 @@
 					"id": "quality-tiers",
 					"itemSlots": 0,
 					"effectPerSlot": [
-						"quality-normal",
-						"quality-uncommon",
-						"quality-rare",
-						"quality-epic",
-						"quality-legendary"
+						"quality-normal-speed",
+						"quality-uncommon-speed",
+						"quality-rare-speed",
+						"quality-epic-speed",
+						"quality-legendary-speed"
 					],
 					"hidden": true
 				}
@@ -12112,6 +12112,13 @@
 				}
 			],
 			"available": true,
+			"allowedEffects": [
+				"quality-normal-speed",
+				"quality-uncommon-speed",
+				"quality-rare-speed",
+				"quality-epic-speed",
+				"quality-legendary-speed"
+			],
 			"type": "fixed"
 		},
 		{
@@ -12131,6 +12138,13 @@
 				}
 			],
 			"available": true,
+			"allowedEffects": [
+				"quality-normal-speed",
+				"quality-uncommon-speed",
+				"quality-rare-speed",
+				"quality-epic-speed",
+				"quality-legendary-speed"
+			],
 			"type": "fixed"
 		},
 		{
@@ -12150,6 +12164,13 @@
 				}
 			],
 			"available": true,
+			"allowedEffects": [
+				"quality-normal-speed",
+				"quality-uncommon-speed",
+				"quality-rare-speed",
+				"quality-epic-speed",
+				"quality-legendary-speed"
+			],
 			"type": "fixed"
 		},
 		{
@@ -12161,6 +12182,13 @@
 				}
 			],
 			"available": true,
+			"allowedEffects": [
+				"quality-normal-consumption",
+				"quality-uncommon-consumption",
+				"quality-rare-consumption",
+				"quality-epic-consumption",
+				"quality-legendary-consumption"
+			],
 			"type": "fixed"
 		},
 		{
@@ -12172,6 +12200,13 @@
 				}
 			],
 			"available": true,
+			"allowedEffects": [
+				"quality-normal-consumption",
+				"quality-uncommon-consumption",
+				"quality-rare-consumption",
+				"quality-epic-consumption",
+				"quality-legendary-consumption"
+			],
 			"type": "fixed"
 		},
 		{
@@ -12183,6 +12218,13 @@
 				}
 			],
 			"available": true,
+			"allowedEffects": [
+				"quality-normal-consumption",
+				"quality-uncommon-consumption",
+				"quality-rare-consumption",
+				"quality-epic-consumption",
+				"quality-legendary-consumption"
+			],
 			"type": "fixed"
 		},
 		{
@@ -12206,6 +12248,13 @@
 				}
 			],
 			"available": true,
+			"allowedEffects": [
+				"quality-normal-productivity",
+				"quality-uncommon-productivity",
+				"quality-rare-productivity",
+				"quality-epic-productivity",
+				"quality-legendary-productivity"
+			],
 			"type": "fixed"
 		},
 		{
@@ -12229,6 +12278,13 @@
 				}
 			],
 			"available": true,
+			"allowedEffects": [
+				"quality-normal-productivity",
+				"quality-uncommon-productivity",
+				"quality-rare-productivity",
+				"quality-epic-productivity",
+				"quality-legendary-productivity"
+			],
 			"type": "fixed"
 		},
 		{
@@ -12252,6 +12308,13 @@
 				}
 			],
 			"available": true,
+			"allowedEffects": [
+				"quality-normal-productivity",
+				"quality-uncommon-productivity",
+				"quality-rare-productivity",
+				"quality-epic-productivity",
+				"quality-legendary-productivity"
+			],
 			"type": "fixed"
 		},
 		{
@@ -12267,6 +12330,13 @@
 				}
 			],
 			"available": true,
+			"allowedEffects": [
+				"quality-normal-quality",
+				"quality-uncommon-quality",
+				"quality-rare-quality",
+				"quality-epic-quality",
+				"quality-legendary-quality"
+			],
 			"type": "fixed"
 		},
 		{
@@ -12282,6 +12352,13 @@
 				}
 			],
 			"available": true,
+			"allowedEffects": [
+				"quality-normal-quality",
+				"quality-uncommon-quality",
+				"quality-rare-quality",
+				"quality-epic-quality",
+				"quality-legendary-quality"
+			],
 			"type": "fixed"
 		},
 		{
@@ -12297,6 +12374,13 @@
 				}
 			],
 			"available": true,
+			"allowedEffects": [
+				"quality-normal-quality",
+				"quality-uncommon-quality",
+				"quality-rare-quality",
+				"quality-epic-quality",
+				"quality-legendary-quality"
+			],
 			"type": "fixed"
 		},
 		{
@@ -12504,7 +12588,7 @@
 			"type": "fixed"
 		},
 		{
-			"id": "quality-normal",
+			"id": "quality-normal-speed",
 			"name": "Normal",
 			"modifiers": [
 				{
@@ -12517,7 +12601,46 @@
 			"type": "fixed"
 		},
 		{
-			"id": "quality-uncommon",
+			"id": "quality-normal-productivity",
+			"name": "Normal",
+			"modifiers": [
+				{
+					"id": "productivity",
+					"value": 1.0
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-normal-quality",
+			"name": "Normal",
+			"modifiers": [
+				{
+					"id": "quality",
+					"value": 1.0
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-normal-consumption",
+			"name": "Normal",
+			"modifiers": [
+				{
+					"id": "consumption",
+					"value": 1.0
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-uncommon-speed",
 			"name": "Uncommon",
 			"modifiers": [
 				{
@@ -12530,7 +12653,46 @@
 			"type": "fixed"
 		},
 		{
-			"id": "quality-rare",
+			"id": "quality-uncommon-productivity",
+			"name": "Uncommon",
+			"modifiers": [
+				{
+					"id": "productivity",
+					"value": 1.3
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-uncommon-quality",
+			"name": "Uncommon",
+			"modifiers": [
+				{
+					"id": "quality",
+					"value": 1.3
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-uncommon-consumption",
+			"name": "Uncommon",
+			"modifiers": [
+				{
+					"id": "consumption",
+					"value": 1.3
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-rare-speed",
 			"name": "Rare",
 			"modifiers": [
 				{
@@ -12543,7 +12705,46 @@
 			"type": "fixed"
 		},
 		{
-			"id": "quality-epic",
+			"id": "quality-rare-productivity",
+			"name": "Rare",
+			"modifiers": [
+				{
+					"id": "productivity",
+					"value": 1.6
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-rare-quality",
+			"name": "Rare",
+			"modifiers": [
+				{
+					"id": "quality",
+					"value": 1.6
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-rare-consumption",
+			"name": "Rare",
+			"modifiers": [
+				{
+					"id": "consumption",
+					"value": 1.6
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-epic-speed",
 			"name": "Epic",
 			"modifiers": [
 				{
@@ -12556,11 +12757,89 @@
 			"type": "fixed"
 		},
 		{
-			"id": "quality-legendary",
+			"id": "quality-epic-productivity",
+			"name": "Epic",
+			"modifiers": [
+				{
+					"id": "productivity",
+					"value": 1.9
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-epic-quality",
+			"name": "Epic",
+			"modifiers": [
+				{
+					"id": "quality",
+					"value": 1.9
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-epic-consumption",
+			"name": "Epic",
+			"modifiers": [
+				{
+					"id": "consumption",
+					"value": 1.9
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-legendary-speed",
 			"name": "Legendary",
 			"modifiers": [
 				{
 					"id": "speed",
+					"value": 2.5
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-legendary-productivity",
+			"name": "Legendary",
+			"modifiers": [
+				{
+					"id": "productivity",
+					"value": 2.5
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-legendary-quality",
+			"name": "Legendary",
+			"modifiers": [
+				{
+					"id": "quality",
+					"value": 2.5
+				}
+			],
+			"available": true,
+			"hidden": true,
+			"type": "fixed"
+		},
+		{
+			"id": "quality-legendary-consumption",
+			"name": "Legendary",
+			"modifiers": [
+				{
+					"id": "consumption",
 					"value": 2.5
 				}
 			],

@@ -14,7 +14,8 @@
 	import { recalculateEdgeAmounts } from '@/lib/factory/edge';
 	import factory from '@/stores/factory.svelte';
 	import { formattedLimitations } from '@/lib/format/limitation';
-
+	import EffectItem from '@/components/shared/EffectItem.svelte';
+	import { getAttachedQualityEffect, type EffectChoice } from '@/lib/models/effect';
 	type Props = {
 		dialog?: HTMLDialogElement;
 		config?: MachineConfiguration;
@@ -67,14 +68,27 @@
 		let speed = machine.baseCraftingSpeed * config.speedOverride,
 			productivity = 1 * config.productivityOverride;
 		usedEffects.forEach(choice => {
+			if (choice.sourceId || !active.profile) return;
+
 			const scaling = choice.scaling ?? 1;
-			const effect = active.profile?.getEffectModuleById(choice.effectId);
+			const effect = active.profile.getEffectModuleById(choice.effectId);
 			if (!effect) return;
+			const qualityEffect = getAttachedQualityEffect(
+				active.profile.machineEffects,
+				choice,
+				usedEffects,
+			);
+
 			effect.modifiers.forEach(modifier => {
+				const qualityScaling = qualityEffect?.modifiers.find(
+					x => x.id === modifier.id,
+				)?.value;
+				const value = modifier.getValue(qualityScaling);
+
 				if (modifier.id === 'speed') {
-					speed *= (modifier.value ?? 1) * scaling;
+					speed *= value * scaling;
 				} else if (modifier.id === 'productivity') {
-					productivity *= (modifier.value ?? 1) * scaling;
+					productivity *= value * scaling;
 				}
 			});
 		});
@@ -94,7 +108,7 @@
 		if (!active.profile || !config || !selectedEffect || !slots) return;
 		const pickedEffect = active.profile.getEffectModuleById(selectedEffect);
 		if (!pickedEffect) return;
-		if (slots <= config.effects.filter(x => x.id !== 'quality-tier').length) {
+		if (slots <= config.effects.filter(x => x.id !== 'quality-tier' && !x.sourceId).length) {
 			alerts.push('All effect slots are full', 'ERROR');
 			return;
 		}
@@ -113,7 +127,7 @@
 
 	function deleteEffect(id: string) {
 		if (!config) return;
-		config.effects = config.effects.filter(x => x.id !== id);
+		config.effects = config.effects.filter(x => x.id !== id && x.sourceId !== id);
 		if (selectableEffects && selectableEffects.length === 1)
 			selectedEffect = selectableEffects[0].id;
 	}
@@ -164,10 +178,21 @@
 		}
 	};
 
-	const onQualityChange = () => {
+	function onQualityChange(selectedId: string, choice?: EffectChoice) {
 		if (!active.profile || !config) return;
-		const pickedEffect = active.profile.getEffectModuleById(selectedQuality);
+		const pickedEffect = active.profile.getEffectModuleById(selectedId);
 		if (!pickedEffect) return;
+		if (choice) {
+			config.effects = [
+				...config.effects.filter(x => x.sourceId !== choice.id),
+				{
+					id: nanoid(),
+					effectId: pickedEffect.id,
+					sourceId: choice.id,
+				},
+			];
+			return;
+		}
 		config.effects = [
 			...config.effects.filter(x => x.id !== 'quality-tier'),
 			{
@@ -175,10 +200,10 @@
 				effectId: pickedEffect.id,
 			},
 		];
-	};
+	}
 </script>
 
-<Dialog bind:dialog extraClass="max-w-xs">
+<Dialog bind:dialog extraClass="max-w-sm">
 	{#if config}
 		<h3 class="text-lg font-bold">Edit machine configuration</h3>
 
@@ -250,7 +275,7 @@
 							<select
 								id={nanoid()}
 								bind:value={selectedQuality}
-								onchange={onQualityChange}
+								onchange={() => onQualityChange(selectedQuality)}
 								class="select select-xs join-item w-full"
 							>
 								{#if selectedQuality === ''}
@@ -273,33 +298,12 @@
 					{/if}
 				</p>
 				<ul class="list text-base-content/80 flex w-full flex-col gap-1 text-xs">
-					{#each usedVisibleEffects ?? [] as choice}
-						{@const effect = active.profile?.getEffectModuleById(choice.effectId)}
-						{#if effect}
-							<li class="flex items-center justify-between gap-2">
-								<div class="grid flex-1 grid-cols-[170px_1fr] items-center gap-x-2">
-									<span class="truncate">{effect.getDisplayName()}</span>
-									{#if choice.scaling != null}
-										<input
-											id={nanoid()}
-											type="number"
-											min={effect.minValue ?? 0}
-											max={effect.maxValue ?? 10}
-											step={effect.step ?? 0.1}
-											bind:value={choice.scaling}
-											class="input input-xs"
-											required
-										/>
-									{/if}
-								</div>
-								<button
-									class="btn btn-ghost btn-xs btn-square text-error shrink-0"
-									onclick={() => deleteEffect(choice.id)}
-								>
-									<Trash2Icon size="12" />
-								</button>
-							</li>
-						{/if}
+					{#each config.effects as _, i}
+						<EffectItem
+							bind:choice={config.effects[i]}
+							{deleteEffect}
+							{onQualityChange}
+						/>
 					{:else}
 						<li>No effect used</li>
 					{/each}

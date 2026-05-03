@@ -1,7 +1,11 @@
+import type Profile from './profile';
+
 export interface EffectChoice {
 	id: string;
 	effectId: string;
 	scaling?: number;
+	/** used for 'attaching' quality effects to other effects */
+	sourceId?: string;
 }
 
 export interface ModifierInterface {
@@ -35,14 +39,19 @@ export class Modifier {
 		);
 	}
 
-	updatePowerConsumption(power: number, scaling: number): number {
+	getValue(qualityScaling = 1): number {
+		if (this.valueScaling === 'exponential') return this.value;
+		return 1 + (this.value - 1) * qualityScaling;
+	}
+
+	updatePowerConsumption(power: number, scaling: number, qualityScaling = 1): number {
 		if (this.id !== 'power') return power;
 
 		if (this.valueScaling === 'exponential') {
 			power *= Math.pow(scaling, this.value);
 			return power;
 		}
-		return power * this.value * scaling;
+		return power * this.getValue(qualityScaling) * scaling;
 	}
 }
 
@@ -53,6 +62,7 @@ interface EffectModuleBase {
 	modifiers: ModifierInterface[];
 	hidden?: boolean;
 	singleUse?: boolean;
+	allowedEffects?: string[];
 }
 
 // standard factorio effects
@@ -99,6 +109,7 @@ export default class EffectModule {
 	step?: number;
 	hidden?: boolean;
 	singleUse?: boolean;
+	allowedEffects?: string[];
 
 	constructor(data: EffectModuleInterface) {
 		this.id = data.id;
@@ -108,6 +119,7 @@ export default class EffectModule {
 		this.type = data.type;
 		this.hidden = data.hidden;
 		this.singleUse = data.singleUse;
+		this.allowedEffects = data.allowedEffects;
 
 		if (data.type === 'modifiable' || data.type === 'stepped' || data.type === 'limited') {
 			this.minValue = data.minValue;
@@ -134,11 +146,22 @@ export default class EffectModule {
 	}
 
 	/** @returns power consumption with applied effect */
-	updatePowerConsumption(power: number, scaling: number): number {
+	updatePowerConsumption(power: number, scaling: number, qualityEffect?: EffectModule): number {
 		if (this.type !== 'fixed' && scaling === 1) return power;
 		this.modifiers.forEach(modifier => {
-			power = modifier.updatePowerConsumption(power, scaling);
+			const qualityModifier = qualityEffect?.modifiers.find(x => x.id === modifier.id);
+			power = modifier.updatePowerConsumption(power, scaling, qualityModifier?.value);
 		});
 		return power;
 	}
+}
+
+export function getAttachedQualityEffect(
+	effects: EffectModule[],
+	choice: EffectChoice,
+	allChoices: EffectChoice[],
+): EffectModule | undefined {
+	const qualityChoice = allChoices.find(x => x.sourceId === choice.id);
+	if (!qualityChoice) return;
+	return effects.find(x => x.id === qualityChoice.effectId);
 }
