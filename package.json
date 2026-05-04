@@ -7,7 +7,8 @@
 		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview",
-		"check": "svelte-check && prettier --check .",
+		"check": "svelte-check && prettier --check .  && pnpm run check:console-log",
+		"check:console-log": "git diff --cached -- '*.svelte' '*.ts' | grep -q '^+.*console\\.log[[:space:]]*(' && { echo 'console.log found'; exit 1; } || exit 0",
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
