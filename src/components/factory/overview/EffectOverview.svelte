@@ -40,6 +40,7 @@
 				<div class="collapse-content">
 					<ul class="px-2">
 						{#each effect.modifiers as modifier (modifier.id)}
+							{@const displayOffset = effect.displayOffset ?? 0}
 							<li class="grid grid-cols-[1fr_auto] items-center gap-x-4">
 								<span class="text-base-content/50 text-xs uppercase">
 									{modifier.getDisplayName()}
@@ -48,8 +49,8 @@
 									{#if modifier.valueScaling === 'exponential'}
 										x<sup>{modifier.value}</sup>
 									{:else if effect.type !== 'fixed'}
-										{modifier.value * (effect.minValue ?? 1)} - {modifier.value *
-											(effect.maxValue ?? 1)}
+										{displayOffset + modifier.value * (effect.minValue ?? 1)} - {displayOffset +
+											modifier.value * (effect.maxValue ?? 1)}
 									{:else}
 										{modifier.value}
 									{/if}

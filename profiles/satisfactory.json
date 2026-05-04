@@ -9342,8 +9342,9 @@
 			"available": true,
 			"name": "Over/Underclocking",
 			"singleUse": true,
-			"minValue": 0,
-			"maxValue": 2.5,
+			"displayOffset": 1,
+			"minValue": -1,
+			"maxValue": 1.5,
 			"type": "modifiable"
 		},
 		{
@@ -9361,8 +9362,9 @@
 			"available": true,
 			"name": "Over/Underclocking (linear)",
 			"singleUse": true,
-			"minValue": 0,
-			"maxValue": 2.5,
+			"displayOffset": 1,
+			"minValue": -1,
+			"maxValue": 1.5,
 			"type": "modifiable"
 		},
 		{
@@ -9380,8 +9382,9 @@
 			"available": true,
 			"name": "Summerslooping",
 			"singleUse": true,
-			"minValue": 1,
-			"maxValue": 2,
+			"displayOffset": 1,
+			"minValue": 0,
+			"maxValue": 1,
 			"step": 1.0,
 			"type": "stepped"
 		},
@@ -9400,8 +9403,9 @@
 			"available": true,
 			"name": "Summerslooping",
 			"singleUse": true,
-			"minValue": 1,
-			"maxValue": 2,
+			"displayOffset": 1,
+			"minValue": 0,
+			"maxValue": 1,
 			"step": 0.5,
 			"type": "stepped"
 		},
@@ -9420,8 +9424,9 @@
 			"available": true,
 			"name": "Summerslooping",
 			"singleUse": true,
-			"minValue": 1,
-			"maxValue": 2,
+			"displayOffset": 1,
+			"minValue": 0,
+			"maxValue": 1,
 			"step": 0.25,
 			"type": "stepped"
 		},
@@ -9521,7 +9526,7 @@
 			"unlocks": [
 				{
 					"type": "recipe",
-					"ids": ["unpackage-rocket-fuel", "rocket-fuel", "packaged-rocket-fuel"]
+					"ids": ["packaged-rocket-fuel", "rocket-fuel", "unpackage-rocket-fuel"]
 				}
 			]
 		},
@@ -9544,12 +9549,12 @@
 					"type": "recipe",
 					"ids": [
 						"dark-matter",
-						"quantum-encoder",
-						"space-elevator-part-12",
-						"dark-energy",
 						"superposition-oscillator",
+						"quantum-encoder",
 						"temporal-processor",
-						"quantum-energy"
+						"quantum-energy",
+						"space-elevator-part-12",
+						"dark-energy"
 					]
 				}
 			]
@@ -9560,7 +9565,7 @@
 			"unlocks": [
 				{
 					"type": "recipe",
-					"ids": ["ionized-fuel", "packaged-ionized-fuel", "unpackage-ionized-fuel"]
+					"ids": ["ionized-fuel", "unpackage-ionized-fuel", "packaged-ionized-fuel"]
 				}
 			]
 		},
@@ -9587,9 +9592,9 @@
 						"ficsite-ingot-iron",
 						"space-elevator-part-10",
 						"ingot-sam",
+						"converter",
 						"ficsite-mesh",
-						"sam-fluctuator",
-						"converter"
+						"sam-fluctuator"
 					]
 				}
 			]
@@ -9601,13 +9606,13 @@
 				{
 					"type": "recipe",
 					"ids": [
-						"circuit-board",
 						"oil-refinery",
+						"rubber",
+						"plastic",
+						"circuit-board",
 						"oil-pump",
 						"liquid-fuel",
-						"plastic",
-						"petroleum-coke",
-						"rubber"
+						"petroleum-coke"
 					]
 				}
 			]
@@ -9618,7 +9623,7 @@
 			"unlocks": [
 				{
 					"type": "recipe",
-					"ids": ["alternate-turbofuel", "packaged-turbo-fuel"]
+					"ids": ["packaged-turbo-fuel", "alternate-turbofuel"]
 				}
 			]
 		},
@@ -9727,7 +9732,7 @@
 			"unlocks": [
 				{
 					"type": "recipe",
-					"ids": ["steel-pipe", "ingot-steel", "steel-beam", "space-elevator-part-2", "smelter-mk1"]
+					"ids": ["space-elevator-part-2", "steel-pipe", "ingot-steel", "steel-beam", "smelter-mk1"]
 				}
 			]
 		},
@@ -9749,14 +9754,14 @@
 				{
 					"type": "recipe",
 					"ids": [
-						"fluid-canister",
-						"packaged-crude-oil",
-						"packaged-water",
-						"packaged-biofuel",
+						"fuel",
 						"packager",
+						"packaged-biofuel",
+						"packaged-water",
 						"packaged-oil-residue",
-						"liquid-biofuel",
-						"fuel"
+						"packaged-crude-oil",
+						"fluid-canister",
+						"liquid-biofuel"
 					]
 				}
 			]
@@ -9866,12 +9871,12 @@
 				{
 					"type": "recipe",
 					"ids": [
-						"packaged-alumina",
-						"aluminum-scrap",
-						"aluminum-sheet",
 						"aluminum-casing",
+						"aluminum-scrap",
+						"alumina-solution",
+						"packaged-alumina",
 						"ingot-aluminum",
-						"alumina-solution"
+						"aluminum-sheet"
 					]
 				}
 			]
@@ -9916,11 +9921,11 @@
 				{
 					"type": "recipe",
 					"ids": [
-						"encased-industrial-beam",
-						"motor",
-						"space-elevator-part-3",
 						"stator",
-						"miner-mk2"
+						"miner-mk2",
+						"space-elevator-part-3",
+						"motor",
+						"encased-industrial-beam"
 					]
 				}
 			]
@@ -9964,11 +9969,11 @@
 				{
 					"type": "recipe",
 					"ids": [
-						"space-elevator-part-5",
-						"space-elevator-part-4",
-						"computer",
 						"manufacturer-mk1",
-						"modular-frame-heavy"
+						"modular-frame-heavy",
+						"space-elevator-part-4",
+						"space-elevator-part-5",
+						"computer"
 					]
 				}
 			]
@@ -10047,8 +10052,8 @@
 					"type": "recipe",
 					"ids": [
 						"rotor",
-						"assembler-mk1",
 						"space-elevator-part-1",
+						"assembler-mk1",
 						"modular-frame",
 						"copper-sheet"
 					]
@@ -10150,16 +10155,16 @@
 				{
 					"type": "recipe",
 					"ids": [
-						"non-fissile-uranium",
-						"packaged-nitric-acid",
+						"plutonium-fuel-rod",
+						"hadron-collider",
+						"pressure-conversion-cube",
+						"copper-dust",
 						"plutonium",
+						"non-fissile-uranium",
+						"space-elevator-part-9",
 						"plutonium-cell",
 						"nitric-acid",
-						"plutonium-fuel-rod",
-						"space-elevator-part-9",
-						"hadron-collider",
-						"copper-dust",
-						"pressure-conversion-cube"
+						"packaged-nitric-acid"
 					]
 				}
 			]
@@ -10183,11 +10188,11 @@
 					"type": "recipe",
 					"ids": [
 						"battery",
-						"packaged-sulfuric-acid",
-						"space-elevator-part-7",
 						"sulfuric-acid",
 						"blender",
 						"radio-control-unit",
+						"space-elevator-part-7",
+						"packaged-sulfuric-acid",
 						"computer-super"
 					]
 				}
@@ -10213,9 +10218,9 @@
 					"ids": [
 						"uranium-cell",
 						"generator-nuclear",
-						"space-elevator-part-6",
 						"nuclear-fuel-rod",
-						"electromagnetic-control-rod"
+						"electromagnetic-control-rod",
+						"space-elevator-part-6"
 					]
 				}
 			]
@@ -10271,12 +10276,12 @@
 				{
 					"type": "recipe",
 					"ids": [
-						"fracking-extractor",
-						"packaged-nitrogen",
-						"cooling-system",
-						"gas-tank",
 						"heat-sink",
-						"fused-modular-frame"
+						"fused-modular-frame",
+						"fracking-extractor",
+						"gas-tank",
+						"cooling-system",
+						"packaged-nitrogen"
 					]
 				}
 			]
@@ -11052,7 +11057,7 @@
 			"unlocks": [
 				{
 					"type": "recipe",
-					"ids": ["ficsonium", "ficsonium-fuel-rod"]
+					"ids": ["ficsonium-fuel-rod", "ficsonium"]
 				}
 			]
 		},
@@ -11362,7 +11367,7 @@
 			"unlocks": [
 				{
 					"type": "recipe",
-					"ids": ["alien-dna-capsule", "biomass-alien-protein"]
+					"ids": ["biomass-alien-protein", "alien-dna-capsule"]
 				}
 			]
 		},
@@ -11962,7 +11967,7 @@
 			"unlocks": [
 				{
 					"type": "recipe",
-					"ids": ["wire", "ingot-copper", "cable"]
+					"ids": ["ingot-copper", "wire", "cable"]
 				}
 			],
 			"prerequisites": ["schematic-tutorial1"]
@@ -12006,7 +12011,7 @@
 			"unlocks": [
 				{
 					"type": "recipe",
-					"ids": ["biomass-wood", "biomass-leaves"]
+					"ids": ["biomass-leaves", "biomass-wood"]
 				}
 			],
 			"prerequisites": ["schematic-tutorial4"]

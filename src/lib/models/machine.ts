@@ -127,17 +127,19 @@ export default class Machine {
 	}
 
 	getPowerConsumption(choices: EffectChoice[], effects: EffectModule[]): number {
-		let power = this.requiredPower;
+		let powerAcc = 1;
 		choices.forEach(choice => {
 			if (choice.sourceId) return;
 			const effect = effects.find(x => x.id === choice.effectId);
 			if (!effect) return;
-			power = effect.updatePowerConsumption(
-				power,
+			powerAcc = effect.updatePowerConsumption(
+				powerAcc,
 				choice.scaling ?? 1,
 				getAttachedQualityEffect(effects, choice, choices),
 			);
 		});
+		console.log(this.id, powerAcc, this.requiredPower);
+		const power = powerAcc * this.requiredPower;
 		if (this.minPower && this.minPower > power) return this.minPower;
 		if (this.maxPower && this.maxPower < power) return this.maxPower;
 		return power;

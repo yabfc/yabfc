@@ -1509,7 +1509,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 19,
 			"available": true
@@ -2282,7 +2282,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 10,
 			"available": true
@@ -2305,7 +2305,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 13,
 			"available": true
@@ -2324,7 +2324,7 @@
 					"amount": 2
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 13,
 			"available": true
@@ -2343,7 +2343,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 10,
 			"available": true
@@ -2366,7 +2366,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 10,
 			"available": true
@@ -2393,7 +2393,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 10,
 			"available": true
@@ -2412,7 +2412,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 10,
 			"available": true
@@ -2435,7 +2435,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 10,
 			"available": true
@@ -2458,7 +2458,7 @@
 					"amount": 2
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 10,
 			"available": true
@@ -2539,7 +2539,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 10,
 			"available": true
@@ -2566,7 +2566,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 12,
 			"available": true
@@ -2593,7 +2593,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 12,
 			"available": true
@@ -2616,7 +2616,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 10,
 			"available": true
@@ -2635,7 +2635,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 10,
 			"available": true
@@ -2658,7 +2658,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 10,
 			"available": true
@@ -2677,7 +2677,7 @@
 					"amount": 2
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 10,
 			"available": true
@@ -2700,7 +2700,7 @@
 					"amount": 2
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 10,
 			"available": true
@@ -2792,7 +2792,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 12,
 			"available": true
@@ -2819,7 +2819,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 12,
 			"available": true
@@ -2842,7 +2842,7 @@
 					"amount": 2
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 10,
 			"available": true
@@ -2869,7 +2869,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 12,
 			"available": true
@@ -2892,7 +2892,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 12,
 			"available": true
@@ -2984,7 +2984,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 12,
 			"available": true
@@ -3015,7 +3015,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 13,
 			"available": true
@@ -3138,7 +3138,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 10,
 			"available": true
@@ -3165,7 +3165,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 13,
 			"available": true
@@ -3192,7 +3192,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 13,
 			"available": true
@@ -3346,7 +3346,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 14,
 			"available": true
@@ -3388,7 +3388,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 12,
 			"available": true
@@ -3576,7 +3576,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 13,
 			"available": true
@@ -3630,7 +3630,7 @@
 					"amount": 2
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 14,
 			"available": true
@@ -3707,7 +3707,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 15,
 			"available": true
@@ -3730,7 +3730,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 15,
 			"available": true
@@ -3761,7 +3761,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 15,
 			"available": true
@@ -3860,7 +3860,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 13,
 			"available": true
@@ -3883,7 +3883,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 13,
 			"available": true
@@ -3906,7 +3906,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 13,
 			"available": true
@@ -3929,7 +3929,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 20,
 			"available": true
@@ -4468,7 +4468,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting-with-fluid",
 			"priority": 22,
 			"available": true
@@ -4491,7 +4491,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 23,
 			"available": true
@@ -5067,7 +5067,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 24,
 			"available": true
@@ -5090,7 +5090,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 24,
 			"available": true
@@ -5117,7 +5117,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 24,
 			"available": true
@@ -5144,7 +5144,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 25,
 			"available": true
@@ -5171,7 +5171,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 24,
 			"available": true
@@ -5198,7 +5198,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 25,
 			"available": true
@@ -5225,7 +5225,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 25,
 			"available": true
@@ -5341,7 +5341,7 @@
 					"amount": 1
 				}
 			],
-			"duration": 1,
+			"duration": 0.5,
 			"category": "crafting",
 			"priority": 20,
 			"available": true
@@ -7056,15 +7056,15 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 1.2
+					"value": 0.2
 				},
 				{
 					"id": "consumption",
-					"value": 1.5
+					"value": 0.5
 				},
 				{
 					"id": "quality",
-					"value": 0.9
+					"value": -0.1
 				}
 			],
 			"available": true,
@@ -7075,15 +7075,15 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 1.3
+					"value": 0.3
 				},
 				{
 					"id": "consumption",
-					"value": 1.6
+					"value": 0.6
 				},
 				{
 					"id": "quality",
-					"value": 0.85
+					"value": -0.15
 				}
 			],
 			"available": true,
@@ -7094,15 +7094,15 @@
 			"modifiers": [
 				{
 					"id": "speed",
-					"value": 1.5
+					"value": 0.5
 				},
 				{
 					"id": "consumption",
-					"value": 1.7
+					"value": 0.7
 				},
 				{
 					"id": "quality",
-					"value": 0.75
+					"value": -0.25
 				}
 			],
 			"available": true,
@@ -7113,7 +7113,7 @@
 			"modifiers": [
 				{
 					"id": "consumption",
-					"value": 0.7
+					"value": -0.3
 				}
 			],
 			"available": true,
@@ -7124,7 +7124,7 @@
 			"modifiers": [
 				{
 					"id": "consumption",
-					"value": 0.6
+					"value": -0.4
 				}
 			],
 			"available": true,
@@ -7135,7 +7135,7 @@
 			"modifiers": [
 				{
 					"id": "consumption",
-					"value": 0.5
+					"value": -0.5
 				}
 			],
 			"available": true,
@@ -7146,19 +7146,19 @@
 			"modifiers": [
 				{
 					"id": "productivity",
-					"value": 1.04
+					"value": 0.04
 				},
 				{
 					"id": "consumption",
-					"value": 1.4
+					"value": 0.4
 				},
 				{
 					"id": "pollution",
-					"value": 1.05
+					"value": 0.05
 				},
 				{
 					"id": "speed",
-					"value": 0.95
+					"value": -0.05
 				}
 			],
 			"available": true,
@@ -7169,19 +7169,19 @@
 			"modifiers": [
 				{
 					"id": "productivity",
-					"value": 1.06
+					"value": 0.06
 				},
 				{
 					"id": "consumption",
-					"value": 1.6
+					"value": 0.6
 				},
 				{
 					"id": "pollution",
-					"value": 1.07
+					"value": 0.07
 				},
 				{
 					"id": "speed",
-					"value": 0.9
+					"value": -0.1
 				}
 			],
 			"available": true,
@@ -7192,19 +7192,19 @@
 			"modifiers": [
 				{
 					"id": "productivity",
-					"value": 1.1
+					"value": 0.1
 				},
 				{
 					"id": "consumption",
-					"value": 1.8
+					"value": 0.8
 				},
 				{
 					"id": "pollution",
-					"value": 1.1
+					"value": 0.1
 				},
 				{
 					"id": "speed",
-					"value": 0.85
+					"value": -0.15
 				}
 			],
 			"available": true,

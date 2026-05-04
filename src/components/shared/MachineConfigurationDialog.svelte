@@ -67,12 +67,29 @@
 		if (!usedEffects || !machine || !active.profile || !config) return [undefined, undefined];
 		let speed = machine.baseCraftingSpeed * config.speedOverride,
 			productivity = 1 * config.productivityOverride;
+
+		// quality needs to be applied directly to the baseCraftingSpeed
+		if (selectedQuality !== '') {
+			const machineQuality = active.profile.getEffectModuleById(selectedQuality);
+			if (machineQuality) {
+				machineQuality?.modifiers.forEach(modifier => {
+					if (modifier.id === 'speed') {
+						speed *= modifier.value;
+					} else if (modifier.id === 'productivity') {
+						productivity *= modifier.value;
+					}
+				});
+			}
+		}
+
+		let speedAcc = 0,
+			productivityAcc = 0;
 		usedEffects.forEach(choice => {
 			if (choice.sourceId || !active.profile) return;
 
-			const scaling = choice.scaling ?? 1;
 			const effect = active.profile.getEffectModuleById(choice.effectId);
 			if (!effect) return;
+			const scaling = (choice.scaling ?? 1) - (effect.displayOffset ?? 0);
 			const qualityEffect = getAttachedQualityEffect(
 				active.profile.machineEffects,
 				choice,
@@ -86,12 +103,14 @@
 				const value = modifier.getValue(qualityScaling);
 
 				if (modifier.id === 'speed') {
-					speed *= value * scaling;
+					speedAcc += value * scaling;
 				} else if (modifier.id === 'productivity') {
-					productivity *= value * scaling;
+					productivityAcc += value * scaling;
 				}
 			});
 		});
+		speed *= 1 + speedAcc;
+		productivity *= 1 + productivityAcc;
 		return [speed, productivity];
 	});
 
@@ -198,6 +217,7 @@
 			{
 				id: 'quality-tier',
 				effectId: pickedEffect.id,
+				sourceId: config.machineId,
 			},
 		];
 	}

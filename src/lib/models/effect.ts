@@ -1,5 +1,3 @@
-import type Profile from './profile';
-
 export interface EffectChoice {
 	id: string;
 	effectId: string;
@@ -41,17 +39,17 @@ export class Modifier {
 
 	getValue(qualityScaling = 1): number {
 		if (this.valueScaling === 'exponential') return this.value;
-		return 1 + (this.value - 1) * qualityScaling;
+		return this.value * qualityScaling;
 	}
 
 	updatePowerConsumption(power: number, scaling: number, qualityScaling = 1): number {
 		if (this.id !== 'power') return power;
 
 		if (this.valueScaling === 'exponential') {
-			power *= Math.pow(scaling, this.value);
+			power += Math.pow(scaling, this.value);
 			return power;
 		}
-		return power * this.getValue(qualityScaling) * scaling;
+		return power + this.getValue(qualityScaling) * scaling;
 	}
 }
 
@@ -63,6 +61,7 @@ interface EffectModuleBase {
 	hidden?: boolean;
 	singleUse?: boolean;
 	allowedEffects?: string[];
+	displayOffset?: number;
 }
 
 // standard factorio effects
@@ -110,6 +109,7 @@ export default class EffectModule {
 	hidden?: boolean;
 	singleUse?: boolean;
 	allowedEffects?: string[];
+	displayOffset?: number;
 
 	constructor(data: EffectModuleInterface) {
 		this.id = data.id;
@@ -120,6 +120,7 @@ export default class EffectModule {
 		this.hidden = data.hidden;
 		this.singleUse = data.singleUse;
 		this.allowedEffects = data.allowedEffects;
+		this.displayOffset = data.displayOffset;
 
 		if (data.type === 'modifiable' || data.type === 'stepped' || data.type === 'limited') {
 			this.minValue = data.minValue;

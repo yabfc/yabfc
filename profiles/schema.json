@@ -100,6 +100,9 @@
 									"available": {
 										"type": "boolean"
 									},
+									"displayOffset": {
+										"type": "number"
+									},
 									"hidden": {
 										"type": "boolean"
 									},
@@ -162,6 +165,9 @@
 									},
 									"available": {
 										"type": "boolean"
+									},
+									"displayOffset": {
+										"type": "number"
 									},
 									"hidden": {
 										"type": "boolean"
@@ -243,6 +249,9 @@
 									"available": {
 										"type": "boolean"
 									},
+									"displayOffset": {
+										"type": "number"
+									},
 									"hidden": {
 										"type": "boolean"
 									},
@@ -311,6 +320,9 @@
 									},
 									"available": {
 										"type": "boolean"
+									},
+									"displayOffset": {
+										"type": "number"
 									},
 									"hidden": {
 										"type": "boolean"

@@ -41,8 +41,8 @@
 				<input
 					id={nanoid()}
 					type="number"
-					min={currentEffect.minValue ?? 0}
-					max={currentEffect.maxValue ?? 10}
+					min={(currentEffect.minValue ?? 0) + (currentEffect.displayOffset ?? 0)}
+					max={(currentEffect.maxValue ?? 10) + (currentEffect.displayOffset ?? 0)}
 					step={currentEffect.step ?? 0.1}
 					bind:value={choice.scaling}
 					class="input input-xs"
