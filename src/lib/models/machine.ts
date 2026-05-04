@@ -138,7 +138,6 @@ export default class Machine {
 				getAttachedQualityEffect(effects, choice, choices),
 			);
 		});
-		console.log(this.id, powerAcc, this.requiredPower);
 		const power = powerAcc * this.requiredPower;
 		if (this.minPower && this.minPower > power) return this.minPower;
 		if (this.maxPower && this.maxPower < power) return this.maxPower;
