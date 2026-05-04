@@ -25,9 +25,9 @@
 		format = (value: number) => String(value),
 	}: Props = $props();
 
-	const handleChange = () => {
+	function handleChange() {
 		onChange(draft);
-	};
+	}
 </script>
 
 <span>{label}:</span>

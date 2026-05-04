@@ -5,14 +5,14 @@
 
 	let { value = $bindable() }: Props = $props();
 
-	const divideBy = (factor: number) => {
+	function divideBy(factor: number) {
 		if (value === 0) return;
 		value /= factor;
-	};
+	}
 
-	const multiplyBy = (factor: number) => {
+	function multiplyBy(factor: number) {
 		value *= factor;
-	};
+	}
 </script>
 
 <div class={`mt-1 grid grid-cols-2 gap-1`}>

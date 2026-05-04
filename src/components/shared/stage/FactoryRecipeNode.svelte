@@ -63,7 +63,7 @@
 	const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 3 });
 
 	let selectedMachine = $state<string>();
-	const addMachine = () => {
+	function addMachine() {
 		if (!selectedMachine || !node || !active.profile) return;
 		const machine = active.profile.getMachineById(selectedMachine);
 		if (!machine) return;
@@ -79,7 +79,7 @@
 			effects: [],
 		});
 		recalculateEdgeAmounts(active.profile, factory);
-	};
+	}
 
 	function updateMachineConfig(config: MachineConfiguration) {
 		if (!active.profile) return;

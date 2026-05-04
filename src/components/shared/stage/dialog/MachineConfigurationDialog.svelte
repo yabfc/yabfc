@@ -123,7 +123,7 @@
 		recalculateEdgeAmounts(active.profile, factory);
 	});
 
-	const addEffect = () => {
+	function addEffect() {
 		if (!active.profile || !config || !selectedEffect || !slots) return;
 		const pickedEffect = active.profile.getEffectModuleById(selectedEffect);
 		if (!pickedEffect) return;
@@ -142,7 +142,7 @@
 		// automatically select the last effect
 		if (selectableEffects && selectableEffects.length === 1)
 			selectedEffect = selectableEffects[0].id;
-	};
+	}
 
 	function deleteEffect(id: string) {
 		if (!config) return;
@@ -157,11 +157,11 @@
 
 	type ModifierKey = 'speedOverride' | 'productivityOverride';
 
-	const applyModifierOverride = (
+	function applyModifierOverride(
 		key: ModifierKey,
 		currentSum: number | null | undefined,
 		overrideValue: number,
-	) => {
+	) {
 		if (!config || currentSum == null) return;
 
 		if (currentSum === 0) {
@@ -169,9 +169,9 @@
 		} else {
 			config[key] = (overrideValue / currentSum) * config[key];
 		}
-	};
+	}
 
-	const resetModifier = (key: ModifierKey) => {
+	function resetModifier(key: ModifierKey) {
 		if (!config) return;
 		config[key] = 1;
 		if (key === 'speedOverride') {
@@ -179,7 +179,7 @@
 		} else if (key === 'productivityOverride') {
 			productivityOverride = Number(formatter.format(productivitySum ?? 0));
 		}
-	};
+	}
 
 	const onSpeedOverride = () => applyModifierOverride('speedOverride', speedSum, speedOverride);
 	const onProductivityOverride = () =>
@@ -188,14 +188,14 @@
 	const onSpeedReset = () => resetModifier('speedOverride');
 	const onProductivityReset = () => resetModifier('productivityOverride');
 
-	const onEditModifier = () => {
+	function onEditModifier() {
 		editModifier = !editModifier;
 
 		if (editModifier) {
 			speedOverride = Number(formatter.format(speedSum ?? 0));
 			productivityOverride = Number(formatter.format(productivitySum ?? 0));
 		}
-	};
+	}
 
 	function onQualityChange(selectedId: string, choice?: EffectChoice) {
 		if (!active.profile || !config) return;
