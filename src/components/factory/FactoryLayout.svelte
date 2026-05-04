@@ -2,8 +2,8 @@
 	import FactoryPlanner from '@/components/factory/FactoryPlanner.svelte';
 	import FactoryStage from '@/components/factory/FactoryStage.svelte';
 	import OverviewWindow from '@/components/factory/overview/OverviewWindow.svelte';
-	import MachineConfigurationDialog from '@/components/shared/MachineConfigurationDialog.svelte';
-	import EdgeDialog from '@/components/shared/EdgeDialog.svelte';
+	import MachineConfigurationDialog from '@/components/shared/stage/dialog/MachineConfigurationDialog.svelte';
+	import EdgeDialog from '@/components/shared/stage/dialog/EdgeDialog.svelte';
 	import { recalculateEdgeAmounts } from '@/lib/factory/edge';
 	import { type Edge, type MachineConfiguration } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
