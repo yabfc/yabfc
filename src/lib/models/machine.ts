@@ -126,6 +126,18 @@ export default class Machine {
 		return speed;
 	}
 
+	getIdleConsumption(effects: EffectModule[]): number {
+		const idleFeature = this.features.find(x => x.id === 'idle');
+		if (!idleFeature) return 0;
+		let powerAcc = 0;
+		idleFeature.effectPerSlot.forEach(x => {
+			const effect = effects.find(e => e.id === x);
+			if (!effect) return;
+			powerAcc = effect.updatePowerConsumption(powerAcc, 1);
+		});
+		return this.requiredPower * powerAcc;
+	}
+
 	getPowerConsumption(choices: EffectChoice[], effects: EffectModule[]): number {
 		let powerAcc = 1;
 		choices.forEach(choice => {
@@ -141,7 +153,7 @@ export default class Machine {
 		const power = powerAcc * this.requiredPower;
 		if (this.minPower && this.minPower > power) return this.minPower;
 		if (this.maxPower && this.maxPower < power) return this.maxPower;
-		return power;
+		return power + this.getIdleConsumption(effects);
 	}
 
 	getQualityTiers(effects: EffectModule[]): EffectModule[] {

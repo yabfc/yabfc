@@ -6787,8 +6787,14 @@
 		{
 			"id": "stone-furnace",
 			"recipeCategories": ["smelting"],
-			"requiredPower": 93000,
+			"requiredPower": 90000,
 			"features": [
+				{
+					"id": "idle",
+					"itemSlots": 0,
+					"effectPerSlot": ["idle-default"],
+					"hidden": true
+				},
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
@@ -6813,8 +6819,14 @@
 		{
 			"id": "electric-furnace",
 			"recipeCategories": ["smelting"],
-			"requiredPower": 186000,
+			"requiredPower": 180000,
 			"features": [
+				{
+					"id": "idle",
+					"itemSlots": 0,
+					"effectPerSlot": ["idle-default"],
+					"hidden": true
+				},
 				{
 					"id": "modules",
 					"itemSlots": 2,
@@ -6863,8 +6875,14 @@
 		{
 			"id": "steel-furnace",
 			"recipeCategories": ["smelting"],
-			"requiredPower": 93000,
+			"requiredPower": 90000,
 			"features": [
+				{
+					"id": "idle",
+					"itemSlots": 0,
+					"effectPerSlot": ["idle-default"],
+					"hidden": true
+				},
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
@@ -6889,8 +6907,14 @@
 		{
 			"id": "recycler",
 			"recipeCategories": ["recycling", "recycling-or-hand-crafting"],
-			"requiredPower": 186000,
+			"requiredPower": 180000,
 			"features": [
+				{
+					"id": "idle",
+					"itemSlots": 0,
+					"effectPerSlot": ["idle-default"],
+					"hidden": true
+				},
 				{
 					"id": "modules",
 					"itemSlots": 4,
@@ -6936,8 +6960,14 @@
 		{
 			"id": "assembling-machine-1",
 			"recipeCategories": ["crafting", "basic-crafting", "advanced-crafting"],
-			"requiredPower": 77500,
+			"requiredPower": 75000,
 			"features": [
+				{
+					"id": "idle",
+					"itemSlots": 0,
+					"effectPerSlot": ["idle-default"],
+					"hidden": true
+				},
 				{
 					"id": "crafting-speed",
 					"itemSlots": 0,
@@ -6967,8 +6997,14 @@
 				"advanced-crafting",
 				"crafting-with-fluid"
 			],
-			"requiredPower": 155000,
+			"requiredPower": 150000,
 			"features": [
+				{
+					"id": "idle",
+					"itemSlots": 0,
+					"effectPerSlot": ["idle-default"],
+					"hidden": true
+				},
 				{
 					"id": "modules",
 					"itemSlots": 2,
@@ -7022,8 +7058,14 @@
 				"advanced-crafting",
 				"crafting-with-fluid"
 			],
-			"requiredPower": 387500,
+			"requiredPower": 375000,
 			"features": [
+				{
+					"id": "idle",
+					"itemSlots": 0,
+					"effectPerSlot": ["idle-default"],
+					"hidden": true
+				},
 				{
 					"id": "modules",
 					"itemSlots": 4,
@@ -7072,8 +7114,14 @@
 		{
 			"id": "oil-refinery",
 			"recipeCategories": ["oil-processing"],
-			"requiredPower": 434000,
+			"requiredPower": 420000,
 			"features": [
+				{
+					"id": "idle",
+					"itemSlots": 0,
+					"effectPerSlot": ["idle-default"],
+					"hidden": true
+				},
 				{
 					"id": "modules",
 					"itemSlots": 3,
@@ -7116,8 +7164,14 @@
 		{
 			"id": "chemical-plant",
 			"recipeCategories": ["chemistry"],
-			"requiredPower": 217000,
+			"requiredPower": 210000,
 			"features": [
+				{
+					"id": "idle",
+					"itemSlots": 0,
+					"effectPerSlot": ["idle-default"],
+					"hidden": true
+				},
 				{
 					"id": "modules",
 					"itemSlots": 3,
@@ -7166,8 +7220,14 @@
 		{
 			"id": "centrifuge",
 			"recipeCategories": ["centrifuging"],
-			"requiredPower": 361666,
+			"requiredPower": 350000,
 			"features": [
+				{
+					"id": "idle",
+					"itemSlots": 0,
+					"effectPerSlot": ["idle-default"],
+					"hidden": true
+				},
 				{
 					"id": "modules",
 					"itemSlots": 2,
@@ -7216,8 +7276,14 @@
 		{
 			"id": "electric-mining-drill",
 			"recipeCategories": ["basic-solid"],
-			"requiredPower": 93000,
+			"requiredPower": 90000,
 			"features": [
+				{
+					"id": "idle",
+					"itemSlots": 0,
+					"effectPerSlot": ["idle-default"],
+					"hidden": true
+				},
 				{
 					"id": "modules",
 					"itemSlots": 3,
@@ -7248,15 +7314,28 @@
 		{
 			"id": "burner-mining-drill",
 			"recipeCategories": ["basic-solid"],
-			"requiredPower": 155000,
-			"features": [],
+			"requiredPower": 150000,
+			"features": [
+				{
+					"id": "idle",
+					"itemSlots": 0,
+					"effectPerSlot": ["idle-default"],
+					"hidden": true
+				}
+			],
 			"available": true
 		},
 		{
 			"id": "pumpjack",
 			"recipeCategories": ["basic-fluid"],
-			"requiredPower": 93000,
+			"requiredPower": 90000,
 			"features": [
+				{
+					"id": "idle",
+					"itemSlots": 0,
+					"effectPerSlot": ["idle-default"],
+					"hidden": true
+				},
 				{
 					"id": "modules",
 					"itemSlots": 2,
@@ -7293,8 +7372,14 @@
 		{
 			"id": "rocket-silo",
 			"recipeCategories": ["rocket-building"],
-			"requiredPower": 258333,
+			"requiredPower": 250000,
 			"features": [
+				{
+					"id": "idle",
+					"itemSlots": 0,
+					"effectPerSlot": ["idle-default"],
+					"hidden": true
+				},
 				{
 					"id": "modules",
 					"itemSlots": 4,
@@ -7337,8 +7422,14 @@
 		{
 			"id": "offshore-pump",
 			"recipeCategories": ["offshore-pump"],
-			"requiredPower": 62000,
+			"requiredPower": 60000,
 			"features": [
+				{
+					"id": "idle",
+					"itemSlots": 0,
+					"effectPerSlot": ["idle-default"],
+					"hidden": true
+				},
 				{
 					"id": "quality-tiers",
 					"itemSlots": 0,
@@ -7357,8 +7448,14 @@
 		{
 			"id": "boiler",
 			"recipeCategories": ["boiler"],
-			"requiredPower": 1860000,
+			"requiredPower": 1800000,
 			"features": [
+				{
+					"id": "idle",
+					"itemSlots": 0,
+					"effectPerSlot": ["idle-default"],
+					"hidden": true
+				},
 				{
 					"id": "quality-tiers",
 					"itemSlots": 0,
@@ -7377,8 +7474,14 @@
 		{
 			"id": "heat-exchanger",
 			"recipeCategories": ["heat-exchanger"],
-			"requiredPower": 10333333,
+			"requiredPower": 10000000,
 			"features": [
+				{
+					"id": "idle",
+					"itemSlots": 0,
+					"effectPerSlot": ["idle-default"],
+					"hidden": true
+				},
 				{
 					"id": "quality-tiers",
 					"itemSlots": 0,
@@ -7397,8 +7500,14 @@
 		{
 			"id": "nuclear-reactor",
 			"recipeCategories": ["nuclear-reactor"],
-			"requiredPower": 41333333,
+			"requiredPower": 40000000,
 			"features": [
+				{
+					"id": "idle",
+					"itemSlots": 0,
+					"effectPerSlot": ["idle-default"],
+					"hidden": true
+				},
 				{
 					"id": "quality-tiers",
 					"itemSlots": 0,
@@ -7715,6 +7824,18 @@
 				"quality-epic-quality",
 				"quality-legendary-quality"
 			],
+			"type": "fixed"
+		},
+		{
+			"id": "idle-default",
+			"modifiers": [
+				{
+					"id": "consumption",
+					"value": 0.03333333333333333
+				}
+			],
+			"available": true,
+			"hidden": true,
 			"type": "fixed"
 		},
 		{
