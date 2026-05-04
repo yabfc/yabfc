@@ -10,13 +10,16 @@
 	import factory from '@/stores/factory.svelte';
 	import alerts from '@/stores/alerts.svelte';
 
-	let edgeDialog = $state<HTMLDialogElement>();
-	let selectedEdge = $state<Edge | undefined>();
-	let machineConfigDialog = $state<HTMLDialogElement>();
-	let editingMachineConfig = $state<MachineConfiguration | undefined>();
+	let edgeDialog = $state<HTMLDialogElement>(),
+		selectedEdge = $state<Edge | undefined>(),
+		machineConfigDialog = $state<HTMLDialogElement>(),
+		machineConfigDialogOpen = $state(false),
+		editingMachineConfig = $state<MachineConfiguration | undefined>();
 
 	function openMachineConfigDialog(config: MachineConfiguration) {
 		editingMachineConfig = config;
+		// machineConfigDialog.open somehow was always falsy so we'll use some more state instead
+		machineConfigDialogOpen = true;
 		machineConfigDialog?.showModal();
 	}
 
@@ -44,6 +47,7 @@
 <MachineConfigurationDialog
 	bind:dialog={machineConfigDialog}
 	bind:config={editingMachineConfig}
+	bind:dialogOpen={machineConfigDialogOpen}
 	onChange={updateMachineConfig}
 />
 <EdgeDialog bind:dialog={edgeDialog} bind:edge={selectedEdge} />

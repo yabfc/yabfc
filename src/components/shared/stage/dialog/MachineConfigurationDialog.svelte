@@ -20,14 +20,33 @@
 		dialog?: HTMLDialogElement;
 		config?: MachineConfiguration;
 		onChange: (config?: MachineConfiguration) => void;
+		dialogOpen: boolean;
 	};
 
-	let { dialog = $bindable(), config = $bindable(), onChange }: Props = $props();
+	let {
+		dialog = $bindable(),
+		config = $bindable(),
+		onChange,
+		dialogOpen = $bindable(),
+	}: Props = $props();
+
 	let selectedEffect = $state(''),
-		selectedQuality = $state('');
+		selectedQuality = $state(''),
+		editModifier = $state(false),
+		speedOverride = $state(0),
+		productivityOverride = $state(0);
 	const machine = $derived(config ? active.profile?.getMachineById(config.machineId) : undefined);
 
 	const formatter = new NumberFormatter(undefined, { maximumFractionDigits: 4 });
+
+	function onCloseDialog() {
+		dialogOpen = false;
+		editModifier = false;
+		speedOverride = 0;
+		productivityOverride = 0;
+		selectedEffect = '';
+		selectedQuality = '';
+	}
 
 	const selectableQualities = $derived.by(() => {
 		if (!active.profile || !machine) return undefined;
@@ -35,7 +54,13 @@
 	});
 
 	$effect(() => {
-		if (!selectedQuality && selectableQualities && selectableQualities.length > 0) {
+		if (!dialogOpen) return;
+		if (config && !selectedQuality && selectableQualities && selectableQualities.length > 0) {
+			const currentQuality = config.effects.find(x => x.id === 'quality-tier');
+			if (currentQuality) {
+				selectedQuality = currentQuality.effectId;
+				return;
+			}
 			const defaultQuality = selectableQualities.find(quality =>
 				quality.modifiers?.some(modifier => modifier.value === 1),
 			);
@@ -64,7 +89,8 @@
 	});
 
 	const [speedSum, productivitySum] = $derived.by(() => {
-		if (!usedEffects || !machine || !active.profile || !config) return [undefined, undefined];
+		if (!dialogOpen || !usedEffects || !machine || !active.profile || !config)
+			return [undefined, undefined];
 		let speed = machine.baseCraftingSpeed * config.speedOverride,
 			productivity = 1 * config.productivityOverride;
 
@@ -151,10 +177,6 @@
 			selectedEffect = selectableEffects[0].id;
 	}
 
-	let editModifier = $state(false),
-		speedOverride = $state(0),
-		productivityOverride = $state(0);
-
 	type ModifierKey = 'speedOverride' | 'productivityOverride';
 
 	function applyModifierOverride(
@@ -223,7 +245,7 @@
 	}
 </script>
 
-<Dialog bind:dialog extraClass="max-w-sm">
+<Dialog bind:dialog extraClass="max-w-sm" onClose={onCloseDialog}>
 	{#if config}
 		<h3 class="text-lg font-bold">Edit machine configuration</h3>
 

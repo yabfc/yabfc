@@ -5,10 +5,16 @@
 		dialog = $bindable(),
 		children,
 		extraClass = '',
-	}: { children?: Snippet; dialog?: HTMLDialogElement; extraClass?: string } = $props();
+		onClose,
+	}: {
+		children?: Snippet;
+		dialog?: HTMLDialogElement;
+		extraClass?: string;
+		onClose?: () => void;
+	} = $props();
 </script>
 
-<dialog bind:this={dialog} class="modal">
+<dialog bind:this={dialog} onclose={() => onClose?.()} class="modal">
 	<div class="modal-box {extraClass}">
 		{@render children?.()}
 	</div>
