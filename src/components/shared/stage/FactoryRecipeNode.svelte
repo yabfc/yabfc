@@ -52,8 +52,10 @@
 
 	let utilizationPercent = $derived.by(() => {
 		if (inputRows.length > 0) {
+			if (inputRows[0].capacity === 0) return 0;
 			return (inputRows[0].used / inputRows[0].capacity) * 100;
 		} else {
+			if (outputRows[0].capacity === 0) return 0;
 			return (outputRows[0].used / outputRows[0].capacity) * 100;
 		}
 	});
