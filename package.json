@@ -11,6 +11,7 @@
 		"check:console-log": "git diff --cached -- '*.svelte' '*.ts' | grep -q '^+.*console\\.log[[:space:]]*(' && { echo 'console.log found'; exit 1; } || exit 0",
 		"format": "prettier --write ."
 	},
+	"packageManager": "pnpm@10.33.0",
 	"devDependencies": {
 		"@dagrejs/dagre": "^3.0.0",
 		"@lucide/svelte": "^1.14.0",
