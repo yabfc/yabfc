@@ -15,3 +15,9 @@ All of these are dynamic, i.e they just point to the actual Effects saved in the
 | field                   | what is it doing                              | Example                                                                                 |
 | ----------------------- | --------------------------------------------- | --------------------------------------------------------------------------------------- |
 | `effect.allowedEffects` | Make other effects selectable for this effect | Factorio: quality for modules/effects (=> speed-module-1 can be of different qualities) |
+
+### Logistics
+
+| field = value        | what is it doing              | Example                                                                                                                                                              |
+| -------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `logistic.speed = 0` | this equals to no speed limit | Factorio: pipes do not have a static limit, maximum throughput depends on the pipe network and attached machines / tanks, see https://factorio.com/blog/post/fff-416 |

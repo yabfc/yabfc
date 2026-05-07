@@ -36,7 +36,9 @@
 		}
 
 		lockedLogisticId = logisticId;
-		edge.maxAmount = logistic.speed * active.profile.settings.defaultDuration;
+		const amount = logistic.speed * active.profile.settings.defaultDuration;
+		if (amount <= 0) return;
+		edge.maxAmount = amount;
 		recalculateEdgeAmounts(active.profile, factory);
 	}
 
