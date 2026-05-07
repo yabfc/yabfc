@@ -1,7 +1,10 @@
 <script lang="ts">
 	import SearchInput from '@/components/shared/Search.svelte';
+	import { NumberFormatter } from '@/lib/format/number';
 	import active from '@/stores/active.svelte';
 	import { HammerIcon } from '@lucide/svelte';
+
+	const formatter = new NumberFormatter(undefined, { maximumFractionDigits: 3 });
 
 	let searchQuery = $state('');
 
@@ -13,6 +16,7 @@
 				x.recipeCategories.some(x => x.includes(searchQuery.toLowerCase())),
 		) ?? [],
 	);
+	const effects = $derived(active.profile?.machineEffects);
 </script>
 
 <SearchInput bind:value={searchQuery} />
@@ -43,7 +47,12 @@
 							<span class="text-base-content/50 text-xs uppercase">
 								Required Power:
 							</span>
-							<span class="font-mono text-sm">{machine.requiredPower ?? 'N/A'}</span>
+							<span class="font-mono text-sm"
+								>{formatter.formatPower(
+									machine.requiredPower +
+										machine.getIdleConsumption(effects ?? []),
+								)}</span
+							>
 						</li>
 						<li>
 							<span class="text-base-content/50 text-xs uppercase">Features:</span>
