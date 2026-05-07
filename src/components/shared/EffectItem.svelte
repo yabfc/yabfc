@@ -31,6 +31,25 @@
 			selectedQuality = defaultQuality?.id ?? '';
 		}
 	});
+
+	function clamp(value: number | undefined, min: number, max: number) {
+		if (value == null || Number.isNaN(value)) return min;
+		return Math.min(Math.max(value, min), max);
+	}
+
+	const scalingMin = $derived(
+		(currentEffect?.minValue ?? 0) + (currentEffect?.displayOffset ?? 0),
+	);
+
+	const scalingMax = $derived(
+		(currentEffect?.maxValue ?? 10) + (currentEffect?.displayOffset ?? 0),
+	);
+
+	const scalingStep = $derived(currentEffect?.step ?? 0.1);
+
+	function updateScaling(value: number | undefined) {
+		choice.scaling = clamp(value, scalingMin, scalingMax);
+	}
 </script>
 
 {#if currentEffect && !currentEffect.hidden}
@@ -41,10 +60,10 @@
 				<input
 					id={nanoid()}
 					type="number"
-					min={(currentEffect.minValue ?? 0) + (currentEffect.displayOffset ?? 0)}
-					max={(currentEffect.maxValue ?? 10) + (currentEffect.displayOffset ?? 0)}
-					step={currentEffect.step ?? 0.1}
-					bind:value={choice.scaling}
+					min={scalingMin}
+					max={scalingMax}
+					step={scalingStep}
+					bind:value={() => choice.scaling, updateScaling}
 					class="input input-xs"
 					required
 				/>
