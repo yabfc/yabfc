@@ -22,14 +22,14 @@
 		"ajv": "^8.20.0",
 		"daisyui": "^5.5.19",
 		"highs": "^1.8.0",
-		"nanoid": "^5.1.9",
+		"nanoid": "^5.1.11",
 		"prettier": "^3.8.3",
 		"prettier-plugin-svelte": "^3.5.1",
 		"prettier-plugin-tailwindcss": "^0.8.0",
 		"svelte": "^5.55.5",
-		"svelte-check": "^4.4.6",
+		"svelte-check": "^4.4.8",
 		"tailwindcss": "^4.2.4",
 		"typescript": "~6.0.3",
-		"vite": "^7.3.2"
+		"vite": "^7.3.3"
 	}
 }
