@@ -131,7 +131,7 @@
 													"type": "number"
 												},
 												"valueScaling": {
-													"const": "exponential",
+													"enum": ["exponential", "squared"],
 													"type": "string"
 												}
 											},
@@ -203,7 +203,7 @@
 													"type": "number"
 												},
 												"valueScaling": {
-													"const": "exponential",
+													"enum": ["exponential", "squared"],
 													"type": "string"
 												}
 											},
@@ -286,7 +286,7 @@
 													"type": "number"
 												},
 												"valueScaling": {
-													"const": "exponential",
+													"enum": ["exponential", "squared"],
 													"type": "string"
 												}
 											},
@@ -358,7 +358,7 @@
 													"type": "number"
 												},
 												"valueScaling": {
-													"const": "exponential",
+													"enum": ["exponential", "squared"],
 													"type": "string"
 												}
 											},

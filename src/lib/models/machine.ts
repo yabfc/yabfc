@@ -144,11 +144,17 @@ export default class Machine {
 			if (choice.sourceId) return;
 			const effect = effects.find(x => x.id === choice.effectId);
 			if (!effect) return;
-			powerAcc = effect.updatePowerConsumption(
-				powerAcc,
+
+			const newPowerAcc = effect.updatePowerConsumption(
+				0,
 				choice.scaling ?? 1,
 				getAttachedQualityEffect(effects, choice, choices),
 			);
+			if (effect.type === 'fixed') {
+				powerAcc += newPowerAcc;
+			} else {
+				powerAcc *= newPowerAcc;
+			}
 		});
 		const power = powerAcc * this.requiredPower;
 		if (this.minPower && this.minPower > power) return this.minPower;

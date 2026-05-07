@@ -10,7 +10,7 @@ export interface ModifierInterface {
 	id: 'speed' | 'power' | 'consumption' | 'productivity' | 'pollution' | 'quality';
 	name?: string;
 	/** @defaults to linear scaling */
-	valueScaling?: 'exponential';
+	valueScaling?: 'exponential' | 'squared';
 	value: number;
 }
 
@@ -18,7 +18,7 @@ export class Modifier {
 	id: 'speed' | 'power' | 'productivity' | 'pollution' | 'quality';
 	name?: string;
 	value: number;
-	valueScaling?: 'exponential';
+	valueScaling?: 'exponential' | 'squared';
 
 	constructor(modifier: ModifierInterface) {
 		this.id = modifier.id === 'consumption' ? 'power' : modifier.id;
@@ -48,6 +48,9 @@ export class Modifier {
 		if (this.valueScaling === 'exponential') {
 			power += Math.pow(scaling, this.value);
 			return power;
+		}
+		if (this.valueScaling === 'squared') {
+			return power + Math.pow(this.value * scaling, 2);
 		}
 		return power + this.getValue(qualityScaling) * scaling;
 	}
@@ -148,7 +151,6 @@ export default class EffectModule {
 
 	/** @returns power consumption with applied effect */
 	updatePowerConsumption(power: number, scaling: number, qualityEffect?: EffectModule): number {
-		if (this.type !== 'fixed' && scaling === 1) return power;
 		this.modifiers.forEach(modifier => {
 			const qualityModifier = qualityEffect?.modifiers.find(x => x.id === modifier.id);
 			power = modifier.updatePowerConsumption(power, scaling, qualityModifier?.value);

@@ -9376,7 +9376,8 @@
 				},
 				{
 					"id": "power",
-					"value": 2
+					"value": 1,
+					"valueScaling": "squared"
 				}
 			],
 			"available": true,
@@ -9397,7 +9398,8 @@
 				},
 				{
 					"id": "power",
-					"value": 2
+					"value": 1,
+					"valueScaling": "squared"
 				}
 			],
 			"available": true,
@@ -9418,7 +9420,8 @@
 				},
 				{
 					"id": "power",
-					"value": 2
+					"value": 1,
+					"valueScaling": "squared"
 				}
 			],
 			"available": true,
