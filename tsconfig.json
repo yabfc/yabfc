@@ -9,10 +9,9 @@
 		"noEmit": true,
 		"checkJs": true,
 		"moduleDetection": "force",
-		"baseUrl": "./",
 		"paths": {
-			"@/*": ["src/*"],
-			"@profiles/*": ["profiles/*"]
+			"@/*": ["./src/*"],
+			"@profiles/*": ["./profiles/*"]
 		},
 		"resolveJsonModule": true,
 		"allowSyntheticDefaultImports": true
