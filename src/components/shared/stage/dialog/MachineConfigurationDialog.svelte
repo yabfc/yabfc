@@ -8,14 +8,14 @@
 	import type { MachineConfiguration } from '@/lib/models/factory';
 	import active from '@/stores/active.svelte';
 	import alerts from '@/stores/alerts.svelte';
-	import { PlusIcon, Trash2Icon } from '@lucide/svelte';
+	import { PlusIcon } from '@lucide/svelte';
 	import { nanoid } from 'nanoid';
 	import InputOverride from '@/components/shared/InputOverride.svelte';
 	import { recalculateEdgeAmounts } from '@/lib/factory/edge';
 	import factory from '@/stores/factory.svelte';
-	import { formattedLimitations } from '@/lib/format/limitation';
 	import EffectItem from '@/components/shared/EffectItem.svelte';
 	import { getAttachedQualityEffect, type EffectChoice } from '@/lib/models/effect';
+	import Limitation from '@/components/shared/Limitation.svelte';
 	type Props = {
 		dialog?: HTMLDialogElement;
 		config?: MachineConfiguration;
@@ -352,11 +352,7 @@
 				</ul>
 			</div>
 			{#if machine && machine.limitations}
-				{#each formattedLimitations(machine.limitations) as limit}
-					<div class="alert alert-warning alert-soft mt-2 w-full py-1 text-xs">
-						<span class="-ml-1">{limit}</span>
-					</div>
-				{/each}
+				<Limitation limitations={machine.limitations ?? []} />
 			{/if}
 
 			{#if selectableEffects}
