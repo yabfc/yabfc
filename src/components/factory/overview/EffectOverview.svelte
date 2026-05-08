@@ -48,6 +48,8 @@
 								<span class="text-right font-mono text-sm">
 									{#if modifier.valueScaling === 'exponential'}
 										x<sup>{modifier.value}</sup>
+									{:else if modifier.valueScaling === 'squared'}
+										x<sup>2</sup>
 									{:else if effect.type !== 'fixed'}
 										{displayOffset + modifier.value * (effect.minValue ?? 1)} - {displayOffset +
 											modifier.value * (effect.maxValue ?? 1)}
