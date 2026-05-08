@@ -12,6 +12,7 @@
 		PlusIcon,
 		Trash2Icon,
 		SendHorizontalIcon,
+		TriangleAlertIcon,
 	} from '@lucide/svelte';
 	import { Handle, Position, type Node, type NodeProps } from '@xyflow/svelte';
 	import { nanoid } from 'nanoid';
@@ -50,13 +51,13 @@
 			toResourceRows(data.usedOutputs, calculateOutput(active.profile, node)),
 		);
 
-	let utilizationPercent = $derived.by(() => {
+	let utilization = $derived.by(() => {
 		if (inputRows.length > 0) {
 			if (inputRows[0].capacity === 0) return 0;
-			return (inputRows[0].used / inputRows[0].capacity) * 100;
+			return inputRows[0].used / inputRows[0].capacity;
 		} else {
 			if (outputRows[0].capacity === 0) return 0;
-			return (outputRows[0].used / outputRows[0].capacity) * 100;
+			return outputRows[0].used / outputRows[0].capacity;
 		}
 	});
 
@@ -145,11 +146,11 @@
 			<span
 				class={{
 					'badge badge-xs min-h-5': true,
-					'bg-success/50': Math.abs(utilizationPercent - 100) < 1e-9,
-					'bg-warning/50': Math.abs(utilizationPercent - 100) >= 1e-9,
+					'bg-success/50': Math.abs(utilization - 1) < 1e-9,
+					'bg-warning/50': Math.abs(utilization - 1) >= 1e-9,
 				}}
 			>
-				{formatter.format(utilizationPercent)}%
+				{formatter.format(utilization * 100)}%
 			</span>
 		</div>
 		{#if alternatives}
@@ -203,10 +204,18 @@
 
 		<ul>
 			{#each outputRows as output}
-				<li class="text-base-content/80 flex gap-2">
+				<li class="text-base-content/80 flex items-center gap-2">
 					<span class="min-w-0 flex-1 truncate">
 						{active.profile?.getItemById(output.itemId)?.getDisplayName()}
 					</span>
+					{#if output.used / output.capacity !== utilization}
+						<span
+							class="tooltip tooltip-top shrink-0"
+							data-tip="Not all produced output is used"
+						>
+							<TriangleAlertIcon size="12" />
+						</span>
+					{/if}
 					<span class="shrink-0 text-right">
 						{formatter.format(output.used)} / {formatter.format(output.capacity)}
 					</span>
