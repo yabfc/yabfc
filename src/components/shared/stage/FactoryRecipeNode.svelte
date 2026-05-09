@@ -63,7 +63,19 @@
 
 	const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 3 });
 
+	const compatibleMachines = $derived(
+		active.profile?.getMachinesByRecipe(recipe?.category || '') ?? [],
+	);
+
 	let selectedMachine = $state<string>();
+	$effect(() => {
+		const defaultMachine = compatibleMachines[0]?.id;
+		if (selectedMachine === defaultMachine) return;
+		if (compatibleMachines.some(machine => machine.id === selectedMachine)) return;
+
+		selectedMachine = defaultMachine;
+	});
+
 	function addMachine() {
 		if (!selectedMachine || !node || !active.profile) return;
 		const machine = active.profile.getMachineById(selectedMachine);
@@ -284,7 +296,7 @@
 			bind:value={selectedMachine}
 			class="select select-xs join-item nodrag"
 		>
-			{#each active.profile?.getMachinesByRecipe(recipe?.category || '') as machine}
+			{#each compatibleMachines as machine}
 				<option value={machine.id}>{machine.getDisplayName()}</option>
 			{:else}
 				<option disabled value={undefined}>No machine available</option>
