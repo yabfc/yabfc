@@ -220,7 +220,7 @@
 					<span class="min-w-0 flex-1 truncate">
 						{active.profile?.getItemById(output.itemId)?.getDisplayName()}
 					</span>
-					{#if output.used / output.capacity !== utilization}
+					{#if Math.abs(output.used / output.capacity - utilization) > 1e-9}
 						<span
 							class="tooltip tooltip-top shrink-0"
 							data-tip="Not all produced output is used"
