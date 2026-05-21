@@ -20,7 +20,7 @@
 		"@tsconfig/svelte": "^5.0.8",
 		"@xyflow/svelte": "^1.5.2",
 		"ajv": "^8.20.0",
-		"daisyui": "^5.5.19",
+		"daisyui": "^5.5.20",
 		"highs": "^1.8.0",
 		"nanoid": "^5.1.11",
 		"prettier": "^3.8.3",

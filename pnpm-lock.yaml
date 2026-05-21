@@ -30,8 +30,8 @@ importers:
         specifier: ^8.20.0
         version: 8.20.0
       daisyui:
-        specifier: ^5.5.19
-        version: 5.5.19
+        specifier: ^5.5.20
+        version: 5.5.20
       highs:
         specifier: ^1.8.0
         version: 1.8.0
@@ -612,8 +612,8 @@ packages:
     resolution: {integrity: sha512-b8AmV3kfQaqWAuacbPuNbL6vahnOJflOhexLzMMNLga62+/nh0JzvJ0aO/5a5MVgUFGS7Hu1P9P03o3fJkDCyw==}
     engines: {node: '>=12'}
 
-  daisyui@5.5.19:
-    resolution: {integrity: sha512-pbFAkl1VCEh/MPCeclKL61I/MqRIFFhNU7yiXoDDRapXN4/qNCoMxeCCswyxEEhqL5eiTTfwHvucFtOE71C9sA==}
+  daisyui@5.5.20:
+    resolution: {integrity: sha512-HemJcjl0Gk9rQ8BcgofN6p+EURrqftQG9wK1Hkxs98i49xe68+QxpNvry+PyxwkIUgrbMpNmZ5ZWjmtffAjfhQ==}
 
   deepmerge@4.3.1:
     resolution: {integrity: sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==}
@@ -1346,7 +1346,7 @@ snapshots:
       d3-selection: 3.0.0
       d3-transition: 3.0.1(d3-selection@3.0.0)
 
-  daisyui@5.5.19: {}
+  daisyui@5.5.20: {}
 
   deepmerge@4.3.1: {}
 
